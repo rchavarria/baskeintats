@@ -1,0 +1,97 @@
+import { useParams, Link } from "react-router-dom";
+import { useGames } from "../hooks/useGames";
+import { useTeams } from "../hooks/useTeams";
+import { totalPoints, derivePlayerStats } from "../lib/stats";
+import { EmptyState } from "../components/ui/EmptyState";
+
+export function GameDetailPage() {
+  const { gameId } = useParams<{ gameId: string }>();
+  const games = useGames();
+  const { teamsMap } = useTeams();
+
+  const game = games.find((g) => g.id === gameId);
+
+  if (!game) {
+    return <EmptyState message="Partido no encontrado" />;
+  }
+
+  const homeTeam = teamsMap[game.home.team];
+  const awayTeam = teamsMap[game.away.team];
+  const homeScore = totalPoints(game.home.scores);
+  const awayScore = totalPoints(game.away.scores);
+  const derived = game.playerStats ? derivePlayerStats(game.playerStats) : null;
+
+  return (
+    <div>
+      <Link to="/games" className="text-sm text-orange-500 hover:underline mb-4 inline-block">
+        ← Volver a partidos
+      </Link>
+
+      <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
+        <div className="text-xs text-gray-400 text-center mb-4">
+          {game.date} · {game.time} · {game.venue}
+        </div>
+        <div className="text-xs text-gray-400 text-center mb-6">
+          {game.competition} · {game.phase} · Jornada {game.round}
+        </div>
+
+        <div className="flex items-center justify-center gap-8">
+          <div className="text-center flex-1">
+            <p className="font-bold text-lg text-gray-900">{homeTeam?.name ?? game.home.team}</p>
+            <div className="flex justify-center gap-1 mt-1 text-xs text-gray-400">
+              {game.home.scores.map((s, i) => <span key={i}>Q{i + 1}: {s}</span>)}
+            </div>
+          </div>
+          <div className="text-4xl font-black text-gray-900">
+            {homeScore} — {awayScore}
+          </div>
+          <div className="text-center flex-1">
+            <p className="font-bold text-lg text-gray-900">{awayTeam?.name ?? game.away.team}</p>
+            <div className="flex justify-center gap-1 mt-1 text-xs text-gray-400">
+              {game.away.scores.map((s, i) => <span key={i}>Q{i + 1}: {s}</span>)}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {derived && (
+        <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
+          <h2 className="font-semibold text-gray-700 mb-4">Estadísticas del jugador</h2>
+          <div className="grid grid-cols-3 gap-4 text-center">
+            <div><p className="text-2xl font-bold text-gray-900">{derived.points}</p><p className="text-xs text-gray-400">Puntos</p></div>
+            <div><p className="text-2xl font-bold text-gray-900">{derived.rebounds}</p><p className="text-xs text-gray-400">Rebotes</p></div>
+            <div><p className="text-2xl font-bold text-gray-900">{derived.assists}</p><p className="text-xs text-gray-400">Asistencias</p></div>
+            <div><p className="text-2xl font-bold text-gray-900">{derived.steals}</p><p className="text-xs text-gray-400">Robos</p></div>
+            <div><p className="text-2xl font-bold text-gray-900">{derived.blocks}</p><p className="text-xs text-gray-400">Tapones</p></div>
+            <div><p className="text-2xl font-bold text-gray-900">{derived.turnovers}</p><p className="text-xs text-gray-400">Pérdidas</p></div>
+            <div><p className="text-lg font-bold text-gray-900">{derived.fgm}/{derived.fga}</p><p className="text-xs text-gray-400">TC ({derived.fgPct}%)</p></div>
+            <div><p className="text-lg font-bold text-gray-900">{derived.tpm}/{derived.tpa}</p><p className="text-xs text-gray-400">3P ({derived.tpPct}%)</p></div>
+            <div><p className="text-lg font-bold text-gray-900">{derived.ftm}/{derived.fta}</p><p className="text-xs text-gray-400">TL ({derived.ftPct}%)</p></div>
+          </div>
+        </div>
+      )}
+
+      {game.recap && (
+        <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
+          <h2 className="font-semibold text-gray-700 mb-3">Crónica</h2>
+          <p className="text-gray-600 leading-relaxed whitespace-pre-line">{game.recap}</p>
+        </div>
+      )}
+
+      {(game.videos?.length || game.social?.length || game.articles?.length) && (
+        <div className="bg-white rounded-xl shadow p-6 border border-gray-100">
+          <h2 className="font-semibold text-gray-700 mb-3">Multimedia</h2>
+          {game.videos?.map((url, i) => (
+            <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="block text-sm text-orange-500 hover:underline mb-1">🎬 Video {i + 1}</a>
+          ))}
+          {game.social?.map((url, i) => (
+            <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="block text-sm text-blue-500 hover:underline mb-1">💬 Social {i + 1}</a>
+          ))}
+          {game.articles?.map((url, i) => (
+            <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="block text-sm text-green-500 hover:underline mb-1">📰 Artículo {i + 1}</a>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
