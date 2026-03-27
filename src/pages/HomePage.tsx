@@ -17,10 +17,10 @@ export function HomePage() {
         <div className="flex flex-col gap-4">
           {recent.map((game) => (
             <GameCard
-              key={game.id}
+              key={game.season}
               game={game}
-              homeTeam={teamsMap[game.home.team]}
-              awayTeam={teamsMap[game.away.team]}
+              homeTeam={teamsMap[game.home.club.name]}
+              awayTeam={teamsMap[game.away.club.name]}
             />
           ))}
         </div>
