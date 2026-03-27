@@ -1,4 +1,6 @@
 import {z} from "zod";
+import {VenueSchema} from "./VenueSchema.ts";
+import {TeamSchema} from "./TeamSchema.ts";
 
 export const GameSchema = z.object({
     id: z.string(),
@@ -14,25 +16,16 @@ export const GameSchema = z.object({
         round: z.string(),
     }),
 
-    venue: z.object({
-        name: z.string(),
-        address: z.url(),
-    }),
+    venue: VenueSchema,
 
     home: z.object({
-        club: z.object({
-            name: z.string(),
-            logo: z.url(),
-        }),
+        club: TeamSchema,
         category: z.enum([ "U13M", "U14M", "U15M", "U16M", "U17M", "U18M" ]),
         scores: z.array(z.number().int().positive()),
     }),
 
     away: z.object({
-        club: z.object({
-            name: z.string(),
-            logo: z.url(),
-        }),
+        club: TeamSchema,
         category: z.enum([ "U13M", "U14M", "U15M", "U16M", "U17M", "U18M" ]),
         scores: z.array(z.number().int().positive()),
     }),
