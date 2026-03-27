@@ -1,5 +1,7 @@
 import {GameSchema} from "../../model/GameSchema.ts";
 import type {Game} from "../../model/GameSchema.ts";
+import {teams} from "../teams.ts";
+import {venues} from "../venues.ts";
 
 export const game_2026_03_17_canoe: Game = GameSchema.parse({
   id: "S5/6-league-f2-j10",
@@ -14,25 +16,16 @@ export const game_2026_03_17_canoe: Game = GameSchema.parse({
     round: "21",
   },
 
-  venue: {
-    name: "Pabellón Municipal",
-    address: "https://maps.google.com/?q=Pabell%C3%B3n+Municipal",
-  },
+  venue: venues["antela"],
 
   home: {
-    club: {
-      name: "CB Alcobendas",
-      logo: "https://example.com/logos/distrito.png",
-    },
+    club: teams["alcobendas"],
     category: "U15M",
     scores: [ 30, 19, 24, 15 ],
   },
 
   away: {
-    club: {
-      name: "Real Canoe",
-      logo: "https://example.com/logos/lasrozas.png",
-    },
+    club: teams["canoe"],
     category: "U16M",
     scores: [ 15, 14, 20, 18 ],
   },

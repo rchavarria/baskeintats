@@ -1,5 +1,7 @@
 import {GameSchema} from "../../model/GameSchema.ts";
 import type {Game} from "../../model/GameSchema.ts";
+import {venues} from "../venues.ts";
+import {teams} from "../teams.ts";
 
 export const game_2026_03_12_distrito: Game = GameSchema.parse({
   id: "S5/6-league-play-in-j1",
@@ -14,25 +16,16 @@ export const game_2026_03_12_distrito: Game = GameSchema.parse({
     round: "21",
   },
 
-  venue: {
-    name: "Pabellón Municipal",
-    address: "https://maps.google.com/?q=Pabell%C3%B3n+Municipal",
-  },
+  venue: venues["antela"],
 
   home: {
-    club: {
-      name: "CB Distrito Olímpico",
-      logo: "https://example.com/logos/distrito.png",
-    },
+    club: teams["distrito"],
     category: "U16M",
     scores: [ 18, 19, 24, 15 ],
   },
 
   away: {
-    club: {
-      name: "CB Las Rozas",
-      logo: "https://example.com/logos/lasrozas.png",
-    },
+    club: teams["alcobendas"],
     category: "U16M",
     scores: [ 22, 14, 20, 18 ],
   },
