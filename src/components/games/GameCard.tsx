@@ -15,7 +15,7 @@ export function GameCard({ game, homeTeam, awayTeam }: GameCardProps) {
 
   return (
     <Link
-      to={`/games/${game.season}`}
+      to={`/games/${game.id}`}
       className="block bg-white rounded-xl shadow hover:shadow-md transition p-4 border border-gray-100"
     >
       <div className="flex items-center justify-between text-xs text-gray-400 mb-3">

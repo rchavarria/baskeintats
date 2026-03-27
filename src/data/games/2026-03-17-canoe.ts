@@ -2,6 +2,7 @@ import {GameSchema} from "../../model/GameSchema.ts";
 import type {Game} from "../../model/GameSchema.ts";
 
 export const game_2026_03_17_canoe: Game = GameSchema.parse({
+  id: "S5/6-league-f2-j10",
   season: "2025-26",
   date: "2026-03-17T13:30:00Z",
   status: "played",

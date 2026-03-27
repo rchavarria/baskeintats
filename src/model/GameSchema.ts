@@ -1,6 +1,7 @@
 import {z} from "zod";
 
 export const GameSchema = z.object({
+    id: z.string(),
     season: z.string(),
     date: z.iso.datetime(),
     status: z.enum([ "scheduled", "played", "postponed" ]),
