@@ -6,11 +6,9 @@ import { DateDisplay } from "../ui/DateDisplay";
 
 interface GameCardProps {
   game: Game;
-  homeTeam?: Team;
-  awayTeam?: Team;
 }
 
-export function GameCard({ game, homeTeam, awayTeam }: GameCardProps) {
+export function GameCard({ game }: GameCardProps) {
   const homeScore = totalPoints(game.home.scores);
   const awayScore = totalPoints(game.away.scores);
 
@@ -21,7 +19,7 @@ export function GameCard({ game, homeTeam, awayTeam }: GameCardProps) {
     >
       <div className="flex items-center justify-between text-xs text-gray-400 mb-3">
         <DateDisplay isoDate={game.date} />
-        <span>{game.competition.name} · {game.competition.phase} · J{game.competition.round}</span>
+        <span>{game.competition.name} · {game.competition.phase} · {game.competition.round}</span>
       </div>
       <div className="flex items-center justify-between gap-4">
         <div className="flex-1 flex items-center justify-end gap-2">

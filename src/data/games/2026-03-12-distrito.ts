@@ -10,10 +10,10 @@ export const game_2026_03_12_distrito: Game = GameSchema.parse({
   status: "played",
 
   competition: {
-    name: "Liga Provincial",
+    name: "Liga Ahorramás",
     category: "U16M",
-    phase: "Regular",
-    round: "21",
+    phase: "F2",
+    round: "J9",
   },
 
   venue: venues["antela"],

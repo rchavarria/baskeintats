@@ -10,10 +10,10 @@ export const game_2026_03_17_canoe: Game = GameSchema.parse({
   status: "played",
 
   competition: {
-    name: "Liga Provincial",
-    category: "U16M",
-    phase: "Regular",
-    round: "21",
+    name: "Liga Ahorramás",
+    category: "U15M",
+    phase: "F2",
+    round: "J10",
   },
 
   venue: venues["antela"],

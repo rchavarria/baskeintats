@@ -19,8 +19,6 @@ export function HomePage() {
             <GameCard
               key={game.id}
               game={game}
-              homeTeam={teamsMap[game.home.club.name]}
-              awayTeam={teamsMap[game.away.club.name]}
             />
           ))}
         </div>
