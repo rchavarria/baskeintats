@@ -1,5 +1,5 @@
 import type { Game } from "../../model/GameSchema";
-import type { Team } from "../../types/team";
+import type { Team } from "../../model/TeamSchema";
 import { totalPoints } from "../../lib/stats";
 import { Link } from "react-router-dom";
 
@@ -24,13 +24,13 @@ export function GameCard({ game, homeTeam, awayTeam }: GameCardProps) {
       </div>
       <div className="flex items-center justify-between gap-4">
         <div className="flex-1 text-right">
-          <p className="font-semibold text-gray-800">{homeTeam?.name ?? game.home.team}</p>
+          <p className="font-semibold text-gray-800">{game.home.club.name}</p>
         </div>
         <div className="text-center font-bold text-lg text-gray-900 w-20">
           {homeScore} — {awayScore}
         </div>
         <div className="flex-1">
-          <p className="font-semibold text-gray-800">{awayTeam?.name ?? game.away.team}</p>
+          <p className="font-semibold text-gray-800">{game.away.club.name}</p>
         </div>
       </div>
       <div className="mt-2 text-center text-xs text-gray-400">
