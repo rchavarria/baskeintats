@@ -29,4 +29,17 @@ export const game_2026_03_12_distrito: Game = GameSchema.parse({
     category: "U16M",
     scores: [ 22, 14, 20, 18 ],
   },
+
+  playerStats: {
+    time: 15 * 60 + 32,
+    fieldGoals: 8,
+    threePointers: 2,
+    freeThrows: {
+      made: 4,
+      attempted: 6,
+    },
+    faults: 3,
+    plusMinus: -5,
+    efficiency: 12,
+  },
 });
