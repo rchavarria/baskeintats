@@ -3,26 +3,26 @@ import {VenueSchema} from "./VenueSchema.ts";
 import {TeamSchema} from "./TeamSchema.ts";
 
 export const GameSchema = z.object({
-    id: z.string(),
-    season: z.string(),
-    date: z.iso.datetime(),
-    status: z.enum([ "scheduled", "played", "postponed" ]),
+  id: z.string(),
+  season: z.string(),
+  date: z.iso.datetime(),
+  status: z.enum(["scheduled", "played", "postponed"]),
 
-    competition: z.object({
-        name: z.string(),
-        category: z.enum([ "U13M", "U14M", "U15M", "U16M", "U17M", "U18M" ]),
-        phase: z.string(),
-        // "J1", "J2", "3º-4º", "Semis", "Playoffs"
-        round: z.string(),
-    }),
+  competition: z.object({
+    name: z.string(),
+    category: z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]),
+    phase: z.string(),
+    // "J1", "J2", "3º-4º", "Semis", "Playoffs"
+    round: z.string(),
+  }),
 
-    venue: VenueSchema,
+  venue: VenueSchema,
 
-    home: z.object({
-        club: TeamSchema,
-        category: z.enum([ "U13M", "U14M", "U15M", "U16M", "U17M", "U18M" ]),
-        scores: z.array(z.number().int().positive()),
-    }),
+  home: z.object({
+    club: TeamSchema,
+    category: z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]),
+    scores: z.array(z.number().int().positive()),
+  }),
 
     away: z.object({
         club: TeamSchema,
