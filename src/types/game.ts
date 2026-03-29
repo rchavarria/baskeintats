@@ -7,17 +7,29 @@ export interface GameTeamResult {
 }
 
 export interface PlayerStats {
+  /** Total points scored by the player */
   points: number;
+  /** Total rebounds (offensive + defensive) */
   rebounds: number;
+  /** Total assists */
   assists: number;
+  /** Total steals */
   steals: number;
+  /** Total blocks */
   blocks: number;
+  /** Total turnovers committed */
   turnovers: number;
+  /** Field goals made */
   fgm: number;
+  /** Field goals attempted */
   fga: number;
+  /** Three-pointers made */
   tpm: number;
+  /** Three-pointers attempted */
   tpa: number;
+  /** Free throws made */
   ftm: number;
+  /** Free throws attempted */
   fta: number;
 }
 
@@ -49,8 +61,11 @@ export interface GameWithTeams extends Game {
 }
 
 export interface DerivedPlayerStats extends PlayerStats {
+  /** Field goal percentage (FGM/FGA) */
   fgPct: number;
+  /** Three-point percentage (TPM/TPA) */
   tpPct: number;
+  /** Free throw percentage (FTM/FTA) */
   ftPct: number;
   totalScore: number;
 }
