@@ -73,27 +73,27 @@ export function GameDetailPage() {
         </div>
       )}
 
-      {game.recap && (
-        <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
-          <h2 className="font-semibold text-gray-700 mb-3">Crónica</h2>
-          <p className="text-gray-600 leading-relaxed whitespace-pre-line">{game.recap}</p>
-        </div>
-      )}
+      {/*{game.recap && (*/}
+      {/*  <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">*/}
+      {/*    <h2 className="font-semibold text-gray-700 mb-3">Crónica</h2>*/}
+      {/*    <p className="text-gray-600 leading-relaxed whitespace-pre-line">{game.recap}</p>*/}
+      {/*  </div>*/}
+      {/*)}*/}
 
-      {(game.videos?.length || game.social?.length || game.articles?.length) && (
-        <div className="bg-white rounded-xl shadow p-6 border border-gray-100">
-          <h2 className="font-semibold text-gray-700 mb-3">Multimedia</h2>
-          {game.videos?.map((url, i) => (
-            <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="block text-sm text-orange-500 hover:underline mb-1">🎬 Video {i + 1}</a>
-          ))}
-          {game.social?.map((url, i) => (
-            <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="block text-sm text-blue-500 hover:underline mb-1">💬 Social {i + 1}</a>
-          ))}
-          {game.articles?.map((url, i) => (
-            <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="block text-sm text-green-500 hover:underline mb-1">📰 Artículo {i + 1}</a>
-          ))}
-        </div>
-      )}
+      {/*{(game.videos?.length || game.social?.length || game.articles?.length) && (*/}
+      {/*  <div className="bg-white rounded-xl shadow p-6 border border-gray-100">*/}
+      {/*    <h2 className="font-semibold text-gray-700 mb-3">Multimedia</h2>*/}
+      {/*    {game.videos?.map((url, i) => (*/}
+      {/*      <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="block text-sm text-orange-500 hover:underline mb-1">🎬 Video {i + 1}</a>*/}
+      {/*    ))}*/}
+      {/*    {game.social?.map((url, i) => (*/}
+      {/*      <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="block text-sm text-blue-500 hover:underline mb-1">💬 Social {i + 1}</a>*/}
+      {/*    ))}*/}
+      {/*    {game.articles?.map((url, i) => (*/}
+      {/*      <a key={i} href={url} target="_blank" rel="noopener noreferrer" className="block text-sm text-green-500 hover:underline mb-1">📰 Artículo {i + 1}</a>*/}
+      {/*    ))}*/}
+      {/*  </div>*/}
+      {/*)}*/}
     </div>
   );
 }
