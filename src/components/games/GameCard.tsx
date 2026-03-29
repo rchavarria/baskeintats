@@ -1,5 +1,4 @@
-import type {Game} from "../../model/GameSchema";
-import {totalPoints} from "../../lib/stats";
+import type {Game, totalPoints} from "../../model/GameSchema";
 import {Link} from "react-router-dom";
 import {DateDisplay} from "../ui/DateDisplay";
 

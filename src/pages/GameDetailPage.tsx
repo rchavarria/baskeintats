@@ -1,7 +1,8 @@
 import { useParams, Link } from "react-router-dom";
 import { useGames } from "../hooks/useGames";
 import { useTeams } from "../hooks/useTeams";
-import { totalPoints, derivePlayerStats } from "../lib/stats";
+import { totalPoints } from "../model/GameSchema";
+import { derivePlayerStats } from "../model/PlayerSchema";
 import { EmptyState } from "../components/ui/EmptyState";
 import {DateDisplay} from "../components/ui/DateDisplay.tsx";
 
