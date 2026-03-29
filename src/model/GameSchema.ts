@@ -36,6 +36,20 @@ export const GameSchema = z.object({
   }),
 
   playerStats: PlayerStatsSchema,
+
+  videos: z.object({
+    official: z.url(),
+    others: z.array(z.object({
+      label: z.string(),
+      url: z.url(),
+    })).optional(),
+  }),
+
+  references: z.array(z.object({
+    icon: z.string().max(2),
+    label: z.string(),
+    url: z.url(),
+  })),
 });
 
 export type Game = z.infer<typeof GameSchema>;

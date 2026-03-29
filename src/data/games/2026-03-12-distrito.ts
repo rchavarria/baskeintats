@@ -42,4 +42,16 @@ export const game_2026_03_12_distrito: Game = GameSchema.parse({
     plusMinus: -5,
     efficiency: 12,
   },
+
+  videos: {
+    official: "https://youtu.be/P9CNSvRLeyo",
+  },
+
+  references: [
+    {
+      icon: "📰",
+      label: "Crónica del partido",
+      url: "https://www.example.com/cronica-partido",
+    },
+  ],
 });

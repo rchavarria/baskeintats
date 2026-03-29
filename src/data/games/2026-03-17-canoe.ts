@@ -42,4 +42,16 @@ export const game_2026_03_17_canoe: Game = GameSchema.parse({
     plusMinus: -5,
     efficiency: 12,
   },
+
+  videos: {
+    official: "https://www.youtube.com/watch?v=example",
+  },
+
+  references: [
+    {
+      icon: "📰",
+      label: "Crónica del partido",
+      url: "https://www.example.com/cronica-partido",
+    },
+  ],
 });

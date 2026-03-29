@@ -1,3 +1,5 @@
+import {z} from "zod";
+
 function safePercentage(made: number, attempted: number): number {
   if (attempted === 0) return 0;
   return Math.round((made / attempted) * 1000) / 10;
