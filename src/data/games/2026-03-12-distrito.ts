@@ -4,7 +4,7 @@ import {venues} from "../venues.ts";
 import {teams} from "../teams.ts";
 
 export const game_2026_03_12_distrito: Game = GameSchema.parse({
-  id: "S5/6-league-play-in-j1",
+  id: "S56-league-play-in-j1",
   season: "2025-26",
   date: "2026-03-12T17:00:00Z",
   status: "played",

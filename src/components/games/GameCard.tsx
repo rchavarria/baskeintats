@@ -1,8 +1,7 @@
-import type { Game } from "../../model/GameSchema";
-import type { Team } from "../../model/TeamSchema";
-import { totalPoints } from "../../lib/stats";
-import { Link } from "react-router-dom";
-import { DateDisplay } from "../ui/DateDisplay";
+import type {Game} from "../../model/GameSchema";
+import {totalPoints} from "../../lib/stats";
+import {Link} from "react-router-dom";
+import {DateDisplay} from "../ui/DateDisplay";
 
 interface GameCardProps {
   game: Game;
