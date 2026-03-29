@@ -2,6 +2,31 @@ import {z} from "zod";
 import {VenueSchema} from "./VenueSchema.ts";
 import {TeamSchema} from "./TeamSchema.ts";
 
+export const PlayerStatsSchema = z.object({
+  time: z.number().int().nonnegative(),
+  fieldGoals: z.number().int().nonnegative(),
+  threePointers: z.number().int().nonnegative(),
+  freeThrows: z.object({
+    made: z.number().int().nonnegative(),
+    attempted: z.number().int().nonnegative(),
+  }),
+  faults: z.number().int().nonnegative(),
+  plusMinus: z.number().int(),
+  efficiency: z.number().int(),
+});
+
+export type PlayerStats = z.infer<typeof PlayerStatsSchema>;
+
+export interface DerivedPlayerStats extends PlayerStats {
+  points: number;
+
+  percentage: {
+    fieldGoals: number;
+    threePointers: number;
+    freeThrows: number;
+  };
+}
+
 export const GameSchema = z.object({
   id: z.string(),
   season: z.string(),
@@ -30,20 +55,7 @@ export const GameSchema = z.object({
     scores: z.array(z.number().int().positive()),
   }),
 
-  playerStats: z.array(z.object({
-    time: z.number().int().nonnegative(),
-    throws: z.object({
-      free: z.object({
-        successful: z.number().int().nonnegative(),
-        total: z.number().int().nonnegative(),
-      }),
-      two: z.number().int().nonnegative(),
-      three: z.number().int().nonnegative(),
-    }),
-    faults: z.number().int().nonnegative(),
-    plusMinus: z.number().int(),
-    efficiency: z.number().int(),
-  })),
+  playerStats: PlayerStatsSchema,
 });
 
 export type Game = z.infer<typeof GameSchema>;

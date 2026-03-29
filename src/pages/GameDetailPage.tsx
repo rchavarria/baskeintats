@@ -61,14 +61,9 @@ export function GameDetailPage() {
           <h2 className="font-semibold text-gray-700 mb-4">Estadísticas del jugador</h2>
           <div className="grid grid-cols-3 gap-4 text-center">
             <div><p className="text-2xl font-bold text-gray-900">{derived.points}</p><p className="text-xs text-gray-400">Puntos</p></div>
-            <div><p className="text-2xl font-bold text-gray-900">{derived.rebounds}</p><p className="text-xs text-gray-400">Rebotes</p></div>
-            <div><p className="text-2xl font-bold text-gray-900">{derived.assists}</p><p className="text-xs text-gray-400">Asistencias</p></div>
-            <div><p className="text-2xl font-bold text-gray-900">{derived.steals}</p><p className="text-xs text-gray-400">Robos</p></div>
-            <div><p className="text-2xl font-bold text-gray-900">{derived.blocks}</p><p className="text-xs text-gray-400">Tapones</p></div>
-            <div><p className="text-2xl font-bold text-gray-900">{derived.turnovers}</p><p className="text-xs text-gray-400">Pérdidas</p></div>
-            <div><p className="text-lg font-bold text-gray-900">{derived.fgm}/{derived.fga}</p><p className="text-xs text-gray-400">TC ({derived.fgPct}%)</p></div>
-            <div><p className="text-lg font-bold text-gray-900">{derived.tpm}/{derived.tpa}</p><p className="text-xs text-gray-400">3P ({derived.tpPct}%)</p></div>
-            <div><p className="text-lg font-bold text-gray-900">{derived.ftm}/{derived.fta}</p><p className="text-xs text-gray-400">TL ({derived.ftPct}%)</p></div>
+            <div><p className="text-lg font-bold text-gray-900">{derived.fieldGoals}/-</p><p className="text-xs text-gray-400">TC ({derived.percentage.fieldGoals}%)</p></div>
+            <div><p className="text-lg font-bold text-gray-900">{derived.threePointers}/-</p><p className="text-xs text-gray-400">3P ({derived.percentage.threePointers}%)</p></div>
+            <div><p className="text-lg font-bold text-gray-900">{derived.freeThrows.made}/{derived.freeThrows.attempted}</p><p className="text-xs text-gray-400">TL ({derived.percentage.freeThrows}%)</p></div>
           </div>
         </div>
       )}
