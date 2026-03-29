@@ -45,16 +45,16 @@ export const GameSchema = z.object({
     })).optional(),
   }),
 
+  recap: z.object({
+    title: z.string(),
+    lines: z.array(z.string()),
+  }),
+
   references: z.array(z.object({
     icon: z.string().max(2),
     label: z.string(),
     url: z.url(),
   })),
-
-  recap: z.object({
-    title: z.string(),
-    lines: z.array(z.string()),
-  }),
 
 });
 

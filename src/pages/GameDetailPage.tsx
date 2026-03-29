@@ -87,6 +87,18 @@ export function GameDetailPage() {
         </a>
       </div>
 
+      {game.recap && (
+        <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
+          <h2 className="font-semibold text-gray-700 mb-3">🏀 Crónica</h2>
+          <h3>{game.recap.title}</h3>
+          {
+            game.recap.lines.map(((line, i) => (
+              <p key={i} className="text-gray-600 leading-relaxed whitespace-pre-line">{line}</p>
+            )))
+          }
+        </div>
+      )}
+
       <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
         <h2 className="font-semibold text-gray-700 mb-3">📱 Referencias</h2>
         {game.references?.map((ref, i) => (
@@ -99,18 +111,6 @@ export function GameDetailPage() {
           </a>
         ))}
       </div>
-
-      {game.recap && (
-        <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
-          <h2 className="font-semibold text-gray-700 mb-3">🏀 Crónica</h2>
-          <h3>{game.recap.title}</h3>
-          {
-            game.recap.lines.map(((line, i) => (
-              <p key={i} className="text-gray-600 leading-relaxed whitespace-pre-line">{line}</p>
-            )))
-          }
-        </div>
-      )}
 
     </div>
   );
