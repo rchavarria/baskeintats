@@ -4,15 +4,15 @@ import {teams} from "../teams.ts";
 import {venues} from "../venues.ts";
 
 export const game_2026_03_17_canoe: Game = GameSchema.parse({
-  id: "S56-league-f2-j10",
+  id: "S56-league-f2-gb-j10",
   season: "2025-26",
-  date: "2026-03-17T13:30:00Z",
+  date: "2026-03-22T13:30:00Z",
   status: "played",
 
   competition: {
     name: "Liga Ahorramás",
-    category: "U15M",
-    phase: "F2",
+    category: "U16M",
+    phase: "Fase 2 - Grupo B",
     round: "J10",
   },
 
@@ -21,48 +21,72 @@ export const game_2026_03_17_canoe: Game = GameSchema.parse({
   home: {
     club: teams["alcobendas"],
     category: "U15M",
-    scores: [ 30, 19, 24, 15 ],
+    scores: [ 29, 18, 17, 18 ],
   },
 
   away: {
     club: teams["canoe"],
     category: "U16M",
-    scores: [ 15, 14, 20, 18 ],
+    scores: [ 16, 20, 19, 19 ],
   },
 
   playerStats: {
-    time: 15 * 60 + 32,
-    fieldGoals: 8,
-    threePointers: 2,
+    time: 25 * 60 + 23,
+    fieldGoals: 3,
+    threePointers: 0,
     freeThrows: {
-      made: 4,
-      attempted: 6,
+      made: 0,
+      attempted: 1,
     },
-    faults: 3,
-    plusMinus: -5,
-    efficiency: 12,
+    faults: 4,
+    plusMinus: 15,
+    efficiency: 1,
   },
 
   videos: {
-    official: "https://www.youtube.com/watch?v=example",
+    official: "https://youtu.be/S4PAe14PO0A",
+    others: [
+      {
+        label: "Canal CBA",
+        url: "https://youtu.be/9O2cUhSormM",
+      }
+    ]
+  },
+
+  recap: {
+    title: "¡Whoohoo!",
+    lines: [
+      "Menuda pasada. Solo nos valía la victoria, contra un equipo Oro. Y los cachorros lo han conseguido.",
+      "Tuvimos un gran susto en el tercer cuarto, donde nos remontaron e incluso se pusieron por delante, pero reaccionaron justo a tiempo y volvieron a recuperar la diferencia",
+      "Al final, victoria super importante, que gracias a los empates nos deja terceros de grupo y nos mete en el play-in",
+    ],
   },
 
   references: [
     {
+      icon: "📸",
+      label: "FBM mes de marzo",
+      url: "https://www.flickr.com/photos/fbmadrid/albums/72177720332315809",
+    },
+    {
+      icon: "💼",
+      label: "Informe",
+      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15326&informe=resultados-clasificacion-proxima&ultima_jornada=103476&proxima_jornada=103477",
+    },
+    {
       icon: "📰",
-      label: "Crónica del partido",
-      url: "https://www.example.com/cronica-partido",
+      label: "Previa",
+      url: "https://www.fbm.es/noticia-104-13157/liga-ahorramas-arrancan-los-pre-playoff",
+    },
+    {
+      icon: "📰",
+      label: "Crónica",
+      url: "https://www.fbm.es/noticia-104-13169/liga-ahorramas-un-espectacular-fin-de-semana-dicta-sentencia",
+    },
+    {
+      icon: "📸",
+      label: "Fotos del club",
+      url: "https://www.flickr.com/gp/cbalcobendas/Sm59c2q869",
     },
   ],
-
-  recap: {
-    title: "Resumen del partido",
-    lines: [
-      "El partido comenzó con un ritmo intenso, con ambos equipos intercambiando canastas en los primeros minutos.",
-      "Distrito logró una ventaja de 5 puntos al final del primer cuarto gracias a su defensa sólida y tiros efectivos desde el perímetro.",
-      "En el segundo cuarto, Alcobendas ajustó su estrategia defensiva, lo que les permitió reducir la diferencia a solo 2 puntos al descanso.",
-      "El tercer cuarto fue decisivo, con Distrito aumentando su intensidad defensiva y capitalizando las oportunidades de contraataque para ampliar su ventaja a 9 puntos.",
-      "Alcobendas intentó una remontada en el último cuarto, pero Distrito mantuvo la calma y controló el ritmo del juego para asegurar la victoria.",
-    ],
-  },
 });
