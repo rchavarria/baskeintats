@@ -1,4 +1,4 @@
-import type { PlayerStats, DerivedPlayerStats } from "../types/game";
+import type { PlayerStats, DerivedPlayerStats } from "../model/GameSchema";
 
 function safePct(made: number, attempted: number): number {
   if (attempted === 0) return 0;
@@ -8,10 +8,14 @@ function safePct(made: number, attempted: number): number {
 export function derivePlayerStats(stats: PlayerStats): DerivedPlayerStats {
   return {
     ...stats,
-    fgPct: safePct(stats.fgm, stats.fga),
-    tpPct: safePct(stats.tpm, stats.tpa),
-    ftPct: safePct(stats.ftm, stats.fta),
-    totalScore: stats.points,
+
+    percentage: {
+      fieldGoals: safePct(stats.fieldGoals, 0),
+      threePointers: safePct(stats.threePointers, 0),
+      freeThrows: safePct(stats.freeThrows.made, stats.freeThrows.attempted),
+    },
+
+    points: 3 * stats.threePointers + 2 * stats.fieldGoals + stats.freeThrows.made,
   };
 }
 
