@@ -50,6 +50,12 @@ export const GameSchema = z.object({
     label: z.string(),
     url: z.url(),
   })),
+
+  recap: z.object({
+    title: z.string(),
+    lines: z.array(z.string()),
+  }),
+
 });
 
 export type Game = z.infer<typeof GameSchema>;

@@ -60,7 +60,7 @@ export function GameDetailPage() {
 
       {derived && (
         <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
-          <h2 className="font-semibold text-gray-700 mb-4">Estadísticas del jugador</h2>
+          <h2 className="font-semibold text-gray-700 mb-4">📈 Estadísticas del jugador</h2>
           <div className="grid grid-cols-3 gap-4 text-center">
             <div><p className="text-2xl font-bold text-gray-900">{derived.points}</p><p
               className="text-xs text-gray-400">Puntos</p></div>
@@ -87,8 +87,8 @@ export function GameDetailPage() {
         </a>
       </div>
 
-      <div className="bg-white rounded-xl shadow p-6 border border-gray-100">
-        <h2 className="font-semibold text-gray-700 mb-3">Referencias</h2>
+      <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
+        <h2 className="font-semibold text-gray-700 mb-3">📱 Referencias</h2>
         {game.references?.map((ref, i) => (
           <a key={i}
              href={ref.url}
@@ -100,12 +100,17 @@ export function GameDetailPage() {
         ))}
       </div>
 
-      {/*{game.recap && (*/}
-      {/*  <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">*/}
-      {/*    <h2 className="font-semibold text-gray-700 mb-3">Crónica</h2>*/}
-      {/*    <p className="text-gray-600 leading-relaxed whitespace-pre-line">{game.recap}</p>*/}
-      {/*  </div>*/}
-      {/*)}*/}
+      {game.recap && (
+        <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
+          <h2 className="font-semibold text-gray-700 mb-3">🏀 Crónica</h2>
+          <h3>{game.recap.title}</h3>
+          {
+            game.recap.lines.map(((line, i) => (
+              <p key={i} className="text-gray-600 leading-relaxed whitespace-pre-line">{line}</p>
+            )))
+          }
+        </div>
+      )}
 
     </div>
   );

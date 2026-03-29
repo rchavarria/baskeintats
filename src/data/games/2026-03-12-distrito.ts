@@ -54,4 +54,16 @@ export const game_2026_03_12_distrito: Game = GameSchema.parse({
       url: "https://www.example.com/cronica-partido",
     },
   ],
+
+  recap: {
+    title: "Resumen del partido",
+    lines: [
+      "El partido comenzó con un ritmo intenso, con ambos equipos intercambiando canastas en los primeros minutos.",
+      "Distrito logró una ventaja de 5 puntos al final del primer cuarto gracias a su defensa sólida y tiros efectivos desde el perímetro.",
+      "En el segundo cuarto, Alcobendas ajustó su estrategia defensiva, lo que les permitió reducir la diferencia a solo 2 puntos al descanso.",
+      "El tercer cuarto fue decisivo, con Distrito aumentando su intensidad defensiva y capitalizando las oportunidades de contraataque para ampliar su ventaja a 9 puntos.",
+      "Alcobendas intentó una remontada en el último cuarto, pero Distrito mantuvo la calma y controló el ritmo del juego para asegurar la victoria.",
+    ],
+  },
+
 });
