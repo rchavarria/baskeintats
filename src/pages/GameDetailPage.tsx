@@ -37,23 +37,29 @@ export function GameDetailPage() {
           <DateDisplay isoDate={game.date}/> · {game.venue.name}
         </div>
 
-        <div className="flex items-center justify-center gap-8">
-          <div className="text-center flex-1">
-            <img src={game.home.club.logo} alt={game.home.club.name} className="w-8 h-8 object-contain"/>
-            <p className="font-bold text-lg text-gray-900">{game.home.club.name}</p>
-            <div className="flex justify-center gap-1 mt-1 text-xs text-gray-400">
-              {game.home.scores.map((s, i) => <span key={i}>Q{i + 1}: {s}</span>)}
+        <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center gap-3 flex-1 justify-end">
+            <img src={game.home.club.logo} alt={game.home.club.name} className="w-12 h-12 object-contain"/>
+            <div className="text-right">
+              <p className="font-bold text-lg text-gray-900">{game.home.club.name}</p>
+              <div className="flex justify-end gap-1 mt-1 text-xs text-gray-400">
+                {game.home.scores.map((s, i) => <span key={i}>Q{i + 1}: {s}</span>)}
+              </div>
             </div>
           </div>
+
           <div className="text-4xl font-black text-gray-900">
             {homeScore} — {awayScore}
           </div>
-          <div className="text-center flex-1">
-            <img src={game.away.club.logo} alt={game.away.club.name} className="w-8 h-8 object-contain"/>
-            <p className="font-bold text-lg text-gray-900">{game.away.club.name}</p>
-            <div className="flex justify-center gap-1 mt-1 text-xs text-gray-400">
-              {game.away.scores.map((s, i) => <span key={i}>Q{i + 1}: {s}</span>)}
+
+          <div className="flex items-center gap-3 flex-1 justify-start">
+            <div className="text-left">
+              <p className="font-bold text-lg text-gray-900">{game.away.club.name}</p>
+              <div className="flex justify-start gap-1 mt-1 text-xs text-gray-400">
+                {game.away.scores.map((s, i) => <span key={i}>Q{i + 1}: {s}</span>)}
+              </div>
             </div>
+            <img src={game.away.club.logo} alt={game.away.club.name} className="w-12 h-12 object-contain"/>
           </div>
         </div>
       </div>
