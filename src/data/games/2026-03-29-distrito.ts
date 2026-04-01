@@ -3,7 +3,7 @@ import type {Game} from "../../model/GameSchema.ts";
 import {venues} from "../venues.ts";
 import {teams} from "../teams.ts";
 
-export const game_2026_03_22_distrito: Game = GameSchema.parse({
+export const game_2026_03_29_distrito: Game = GameSchema.parse({
   id: "S56-u15-league-silver-play-in",
   season: "2025-26",
   date: "2026-03-29T13:30:00Z",
