@@ -12,6 +12,11 @@ const venuesList: Venue[] = [
     name: "Pabellón Antela Parada",
     maps: "https://maps.google.com/?q=Pabell%C3%B3n+Municipal+de+Alcobendas",
   },
+  {
+    id: "circular",
+    name: "Pabellón Circular",
+    maps: "https://maps.app.goo.gl/iUNpmyC491SGmAdM8",
+  },
 ];
 
 export const venues: Record<string, Venue> = venuesList.reduce((acc, venue) => {
