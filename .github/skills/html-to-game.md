@@ -86,13 +86,14 @@ The `<h1>` follows format: `🏆 {name} - {phase} - {group} - {round}`
 
 | Field | Source | Example |
 |-------|--------|---------|
-| `name` | Always fixed | `"Liga Ahorramás"` |
+| `name` | First segment from `<h1>` | `"Liga Ahorramás"` |
 | `category` | CSS class on root div | `"U16M"` |
-| `phase` | Second segment from `<h1>` | `"Plata"` |
+| `phase` | Middle segments (phase + group) from `<h1>` | `"Plata - Grupo D"` |
 | `round` | Last segment from `<h1>` | `"J10"` |
 
 ### Field: `competition.name`
-- Always `"Liga Ahorramás"` (hardcoded)
+- First segment from `<h1>` after the 🏆 emoji
+- Example: `🏆 Liga Ahorramás - Plata - Grupo D - J10` → `"Liga Ahorramás"`
 
 ### Field: `competition.category`
 - Extract from CSS class on root `<div>`: `u13`, `u14`, `u15`, `u16`, `u17`, `u18`
@@ -100,9 +101,9 @@ The `<h1>` follows format: `🏆 {name} - {phase} - {group} - {round}`
 - Example: `<div class="timeline-item u16"` → `"U16M"`
 
 ### Field: `competition.phase`
-- Second segment from `<h1>` (after `Liga Ahorramás - `)
-- Common values: `"Oro"`, `"Plata"`, `"Play-in"`, `"Playoffs"`, `"Final"`
-- Example: `Liga Ahorramás - Plata - Grupo D - J10` → `"Plata"`
+- Middle segments from `<h1>` (between name and round)
+- Combine phase and group with ` - `
+- Example: `Liga Ahorramás - Plata - Grupo D - J10` → `"Plata - Grupo D"`
 
 ### Field: `competition.round`
 - Last segment from `<h1>` after the last ` - `
@@ -122,7 +123,7 @@ The `<h1>` follows format: `🏆 {name} - {phase} - {group} - {round}`
 competition: {
   name: "Liga Ahorramás",
   category: "U16M",
-  phase: "Plata",
+  phase: "Plata - Grupo D",
   round: "J10",
 },
 ```
