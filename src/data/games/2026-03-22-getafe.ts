@@ -4,53 +4,62 @@ import {venues} from "../venues.ts";
 import {teams} from "../teams.ts";
 
 export const game_2026_03_22_getafe: Game = GameSchema.parse({
-  id: "S56-u15-league-silver-play-in",
+  id: "S56-liga-plata-f2-gd-j10",
   season: "2025-26",
-  date: "2026-03-29T13:30:00Z",
+  date: "2026-03-22T16:15:00Z",
   status: "played",
 
   competition: {
     name: "Liga Ahorramás - Plata",
-    category: "U15M",
-    phase: "Play-in",
-    round: "J1",
+    category: "U16M",
+    phase: "Fase 2 - Grupo D",
+    round: "J10",
   },
 
-  venue: venues["circular"],
+  venue: venues["felipe-reyes"],
 
   home: {
-    club: teams["alcobendas"],
-    category: "U15M",
-    scores: [17, 10, 20, 17],
+    club: teams["getafe"],
+    category: "U16M",
+    scores: [11, 13, 16, 10],
   },
 
   away: {
-    club: teams["distrito"],
+    club: teams["alcobendas"],
     category: "U16M",
-    scores: [16, 27, 22, 25],
+    scores: [9, 21, 20, 17],
   },
 
   playerStats: {
-    time: 24 * 60 + 14,
-    fieldGoals: 4,
-    threePointers: 1,
+    time: 6 * 60 + 11,
+    fieldGoals: 1,
+    threePointers: 0,
     freeThrows: {
-      made: 1,
-      attempted: 3,
+      made: 0,
+      attempted: 0,
     },
-    faults: 2,
-    plusMinus: -22,
-    efficiency: 8,
+    faults: 1,
+    plusMinus: 1,
+    efficiency: 1,
   },
 
   videos: {
-    official: "https://youtu.be/-",
+    official: "https://youtu.be/8H2vv1SERWA",
     others: [
       {
-        label: "Canal CBA",
-        url: "https://youtu.be/-",
-      }
-    ]
+        label: "Canal Pou",
+        url: "https://youtu.be/vvTSmRUZSec",
+      },
+    ],
+  },
+
+  recap: {
+    title: "¡Un mero trámite!",
+    lines: [
+      "Partido de trámite, nada más, un sopor de partido",
+      "Los más pequeños jugaron poco, venían de hacer un partidazo contra Canoe. Jugaron un poquito para que descansaran los compañeros, pero nada más",
+      "El ritmo fue muy bajo, con pocos puntos, aunque nunca dió la impresión de peligrar",
+    ],
   },
 
   references: [
@@ -62,28 +71,18 @@ export const game_2026_03_22_getafe: Game = GameSchema.parse({
     {
       icon: "💼",
       label: "Informe de la jornada",
-      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15621&informe=resultados-clasificacion-proxima&ultima_jornada=104770&proxima_jornada=-1",
+      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15328&informe=resultados-clasificacion-proxima&ultima_jornada=103536&proxima_jornada=103537",
     },
     {
       icon: "📰",
       label: "Previa del partido",
-      url: "https://www.fbm.es/noticia-104-13173/liga-ahorramas-j%C3%BAnior-busca-los-primeros-finalistas",
+      url: "https://www.fbm.es/noticia-104-13157/liga-ahorramas-arrancan-los-pre-playoff",
     },
     {
       icon: "📰",
       label: "Crónica del partido",
-      url: "https://www.fbm.es/noticia-104-13182/la-liga-ahorramas-j%C3%BAnior-ya-tiene-finalistas",
+      url: "https://www.fbm.es/noticia-104-13169/liga-ahorramas-un-espectacular-fin-de-semana-dicta-sentencia",
     },
   ],
-
-  recap: {
-    title: "¡Se acabó el sueño!",
-    lines: [
-      "Sabíamos que era muy complicado, casi imposible, pero durante el primer cuarto, todavía creíamos.",
-      "Hasta que llegó el segundo, y la realidad nos pegó en toda la cara.",
-      "Después del descanso, aún peleamos un poco, pero era imposible hacer nada contra las 3 torres (o más) suyas, imposible. Tirábamos mucho de 3, pero no teníamos acierto.",
-      "Y hasta aquí ha llegado la competición. Creo que podemos estar muy contentos con el resultado.",
-    ],
-  },
 
 });
