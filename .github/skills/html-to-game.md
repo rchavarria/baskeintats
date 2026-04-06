@@ -651,3 +651,10 @@ Where `opponent` is the away team ID if we're home, or home team ID if we're awa
 Examples:
 - `2026-03-22-getafe.ts` (we played at home vs Getafe)
 - `2026-04-05-canoe.ts` (we played away at Canoe)
+
+## Add the new game to the game list
+
+After generating the new game file, update `src/hooks/useGames.ts`:
+
+- add an import statement for it
+- include it in the returned array
