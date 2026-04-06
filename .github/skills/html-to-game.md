@@ -295,6 +295,120 @@ away: {
 
 ---
 
+## Parsing Player Stats
+
+### HTML Source
+
+```html
+<div class="match-stats">
+    <div class="stats">
+        <div class="stat-column small">
+            <div class="title" title="Minutos">M</div>
+            <div>6:11</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Puntos">PTS</div>
+            <div>2</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Tiros libres">TL</div>
+            <div>0/0</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="2 puntos">2PT</div>
+            <div>1</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Triples">3PT</div>
+            <div>0</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Faltas personales">FP</div>
+            <div>1</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Más / Menos">+/-</div>
+            <div>1</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Eficiencia">EFF</div>
+            <div>1</div>
+        </div>
+    </div>
+</div>
+```
+
+### Column Mapping
+
+Identify each column by the `title` attribute of its inner `<div class="title">`:
+
+| HTML `title` | Label | TypeScript field | Format |
+|---|---|---|---|
+| `"Minutos"` | M | `time` | `"MM:SS"` → `MM * 60 + SS` |
+| `"Puntos"` | PTS | *(validation only, not written)* | integer |
+| `"Tiros libres"` | TL | `freeThrows: { made, attempted }` | `"made/attempted"` |
+| `"2 puntos"` | 2PT | `fieldGoals` | integer |
+| `"Triples"` | 3PT | `threePointers` | integer |
+| `"Faltas personales"` | FP | `faults` | integer |
+| `"Más / Menos"` | +/- | `plusMinus` | signed integer |
+| `"Eficiencia"` | EFF | `efficiency` | integer |
+
+### Field: `time`
+- Value format: `"MM:SS"` (minutes and seconds)
+- Write as arithmetic expression: `MM * 60 + SS`
+- Example: `"6:11"` → `6 * 60 + 11`
+
+### Field: `freeThrows`
+- Value format: `"made/attempted"`
+- Split by `/`, parse both as integers
+- Example: `"1/3"` → `freeThrows: { made: 1, attempted: 3 }`
+
+### Field: `plusMinus`
+- Can be negative — parse as signed integer
+- Example: `"-22"` → `plusMinus: -22`
+
+### Validation: Points
+- `PTS` from HTML is **not written** to TypeScript — it can be derived
+- Use it to verify the other stats are consistent:
+  ```
+  expected_points = 2 * fieldGoals + 3 * threePointers + freeThrows.made
+  ```
+- If `expected_points !== PTS`, log a warning before generating the file
+
+### Example
+
+**Input HTML:**
+```html
+<div class="stat-column small"><div class="title" title="Minutos">M</div><div>6:11</div></div>
+<div class="stat-column small"><div class="title" title="Puntos">PTS</div><div>2</div></div>
+<div class="stat-column small"><div class="title" title="Tiros libres">TL</div><div>0/0</div></div>
+<div class="stat-column small"><div class="title" title="2 puntos">2PT</div><div>1</div></div>
+<div class="stat-column small"><div class="title" title="Triples">3PT</div><div>0</div></div>
+<div class="stat-column small"><div class="title" title="Faltas personales">FP</div><div>1</div></div>
+<div class="stat-column small"><div class="title" title="Más / Menos">+/-</div><div>1</div></div>
+<div class="stat-column small"><div class="title" title="Eficiencia">EFF</div><div>1</div></div>
+```
+
+**Validation:** `2 * 1 + 3 * 0 + 0 = 2` ✓ matches PTS
+
+**Output TypeScript:**
+```typescript
+playerStats: {
+  time: 6 * 60 + 11,
+  fieldGoals: 1,
+  threePointers: 0,
+  freeThrows: {
+    made: 0,
+    attempted: 0,
+  },
+  faults: 1,
+  plusMinus: 1,
+  efficiency: 1,
+},
+```
+
+---
+
 ## File Naming Convention
 
 ```
