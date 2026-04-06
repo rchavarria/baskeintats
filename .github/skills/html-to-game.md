@@ -529,6 +529,117 @@ recap: {
 
 ---
 
+## Parsing References
+
+### HTML Source
+
+```html
+<p>
+    📸
+    Fotos del
+    <a href="https://www.flickr.com/photos/fbmadrid/albums/72177720332315809">
+        mes de marzo
+    </a>
+</p>
+
+<p>
+    💼
+    Publicaciones de la jornada:
+    <a href="https://fbm.es/informes.aspx?...">informe</a>
+    <span class="space">|</span>
+    <a href="https://www.fbm.es/noticia-104-13157/...">previa</a>
+    <span class="space">|</span>
+    <a href="https://www.fbm.es/noticia-104-13169/...">crónica</a>
+    📰
+</p>
+
+<p style="display: none">
+    📰
+    Otros:
+    <a href="">otros enlaces</a>
+</p>
+```
+
+### Extraction Rules
+
+1. Find all `<p>` blocks whose text content starts with one of: 📸, 💼, 📰, 📱
+2. **Skip** any `<p>` with `style="display: none"`
+3. **Skip** any `<a>` with an empty `href`
+4. For each valid `<a>` inside a qualifying block, produce one `references` entry:
+   - `icon`: from the **link type table** below (by link text keyword), or fall back to the paragraph's leading emoji
+   - `label`: from the **link type table** below, or constructed from paragraph text + link text
+   - `url`: `href` attribute value
+
+### Link Type Table
+
+Match against the link text (case-insensitive, trimmed):
+
+| Link text keyword | `icon` | `label` |
+|---|---|---|
+| `informe` | `"💼"` | `"Informe de la jornada"` |
+| `previa` | `"📰"` | `"Previa del partido"` |
+| `crónica` / `cronica` | `"📰"` | `"Crónica del partido"` |
+| Social media URL (twitter.com, x.com, instagram.com) | `"📱"` | link text, trimmed |
+| Inside a `📸` paragraph | `"📸"` | paragraph text before `<a>` + link text, trimmed and joined with a space |
+| Any other link | paragraph's leading emoji | link text, trimmed |
+
+### Example
+
+**Input HTML:**
+```html
+<p>
+    📸
+    Fotos del
+    <a href="https://www.flickr.com/photos/fbmadrid/albums/72177720332315809">
+        mes de marzo
+    </a>
+</p>
+<p>
+    💼
+    Publicaciones de la jornada:
+    <a href="https://fbm.es/informes.aspx?...">informe</a>
+    <span class="space">|</span>
+    <a href="https://www.fbm.es/noticia-104-13157/...">previa</a>
+    <span class="space">|</span>
+    <a href="https://www.fbm.es/noticia-104-13169/...">crónica</a>
+    📰
+</p>
+<p style="display: none">
+    📰
+    Otros:
+    <a href="">otros enlaces</a>
+</p>
+```
+
+**Output TypeScript:**
+```typescript
+references: [
+  {
+    icon: "📸",
+    label: "Fotos del mes de marzo",
+    url: "https://www.flickr.com/photos/fbmadrid/albums/72177720332315809",
+  },
+  {
+    icon: "💼",
+    label: "Informe de la jornada",
+    url: "https://fbm.es/informes.aspx?...",
+  },
+  {
+    icon: "📰",
+    label: "Previa del partido",
+    url: "https://www.fbm.es/noticia-104-13157/...",
+  },
+  {
+    icon: "📰",
+    label: "Crónica del partido",
+    url: "https://www.fbm.es/noticia-104-13169/...",
+  },
+  // ↑ the hidden block and the empty-href link are skipped entirely
+],
+```
+
+---
+
 ## File Naming Convention
 
 ```
