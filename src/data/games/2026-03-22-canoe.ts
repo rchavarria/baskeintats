@@ -10,9 +10,9 @@ export const game_2026_03_22_canoe: Game = GameSchema.parse({
   status: "played",
 
   competition: {
-    name: "Liga Ahorramás",
+    name: "Liga Ahorramás - Plata",
     category: "U15M",
-    phase: "Plata - Grupo B",
+    phase: "Fase 2 - Grupo B",
     round: "J10",
   },
 

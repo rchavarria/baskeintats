@@ -10,9 +10,9 @@ export const game_2026_03_17_distrito: Game = GameSchema.parse({
   status: "played",
 
   competition: {
-    name: "Liga Ahorramás",
+    name: "Liga Ahorramás - Plata",
     category: "U16M",
-    phase: "Plata - Grupo D",
+    phase: "Fase 2 - Grupo D",
     round: "J9",
   },
 
