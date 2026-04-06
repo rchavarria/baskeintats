@@ -6,7 +6,7 @@ import {venues} from "../venues.ts";
 export const game_2026_03_17_canoe: Game = GameSchema.parse({
   id: "S56-league-f2-gb-j10",
   season: "2025-26",
-  date: "2026-03-22T13:30:00Z",
+  date: "2026-03-22T12:30:00Z",
   status: "played",
 
   competition: {
