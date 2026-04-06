@@ -14,14 +14,21 @@ const teamList: Team[] = [
     name: "Real Canoe",
     logo: "/logos/canoe-transparent.png",
     web: "https://canoe.com",
-    venue: venues["default"],
+    venue: venues["pez-volador"],
   },
   {
     id: "distrito",
     name: "Distrito Olímpico",
     logo: "/logos/distrito-olimpico-transparent.png",
     web: "https://distrito.com",
-    venue: venues["default"],
+    venue: venues["circular"],
+  },
+  {
+    id: "getafe",
+    name: "CB Getafe",
+    logo: "/logos/getafe-transparent.png",
+    web: "https://cbgetafe.es",
+    venue: venues["juan-cierva"],
   },
 ];
 
