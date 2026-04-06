@@ -465,6 +465,70 @@ videos: {
 
 ---
 
+## Parsing Recap
+
+### HTML Source
+
+```html
+<p>
+    🏀
+    ¡Un mero trámite!
+</p>
+<p class="description">
+    Partido de trámite, nada más, un sopor de partido
+</p>
+<p class="description">
+    Los más pequeños jugaron poco, venían de hacer un partidazo contra
+    Canoe. Jugaron un poquito para que descansaran los compañeros, pero nada más
+</p>
+<p class="description">
+    El ritmo fue muy bajo, con pocos puntos, aunque nunca dió la impresión
+    de peligrar
+</p>
+```
+
+### Extraction Rules
+
+1. Find the `<p>` paragraph that starts with the 🏀 emoji → `recap.title`
+   - Use the text content after the emoji, trimmed
+2. Collect all subsequent `<p class="description">` paragraphs → `recap.lines`
+   - Use the text content of each, trimmed and with internal whitespace normalized to a single space
+
+### Example
+
+**Input HTML:**
+```html
+<p>
+    🏀
+    ¡Un mero trámite!
+</p>
+<p class="description">
+    Partido de trámite, nada más, un sopor de partido
+</p>
+<p class="description">
+    Los más pequeños jugaron poco, venían de hacer un partidazo contra
+    Canoe. Jugaron un poquito para que descansaran los compañeros, pero nada más
+</p>
+<p class="description">
+    El ritmo fue muy bajo, con pocos puntos, aunque nunca dió la impresión
+    de peligrar
+</p>
+```
+
+**Output TypeScript:**
+```typescript
+recap: {
+  title: "¡Un mero trámite!",
+  lines: [
+    "Partido de trámite, nada más, un sopor de partido",
+    "Los más pequeños jugaron poco, venían de hacer un partidazo contra Canoe. Jugaron un poquito para que descansaran los compañeros, pero nada más",
+    "El ritmo fue muy bajo, con pocos puntos, aunque nunca dió la impresión de peligrar",
+  ],
+},
+```
+
+---
+
 ## File Naming Convention
 
 ```
