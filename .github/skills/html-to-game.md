@@ -130,6 +130,75 @@ competition: {
 
 ---
 
+## Parsing Venue
+
+### HTML Source
+
+```html
+<p>
+    🏟️
+    <a href="https://maps.app.goo.gl/sbVMtZWNUpSEAv7V6">
+        Pabellón Felipe Reyes
+    </a>
+</p>
+```
+
+### Extraction Rules
+
+1. Find the `<p>` paragraph that starts with the 🏟️ emoji
+2. Extract the venue name (text content of the `<a>` tag, trimmed)
+3. Extract the Google Maps URL (`href` attribute)
+4. Match against the known venues table below — first by **name**, then by **maps URL**
+5. If no match is found, fall back to `venues["default"]`
+
+### Known Venues
+
+| `id` | `name` |
+|------|--------|
+| `default` | Pabellón Municipal |
+| `antela` | Pabellón Antela Parada |
+| `circular` | Pabellón Circular |
+| `felipe-reyes` | Pabellón Felipe Reyes |
+| `ferrandiz` | Pabellón Pedro Ferrándiz |
+| `arroyo` | Polideportivo El Arroyo |
+| `valdebebas` | Ciudad Deportiva Real Madrid |
+| `luz` | Polideportivo de La Luz |
+| `club-baloncesto-juan-de-austria` | Club Baloncesto Juan de Austria |
+| `juan-cierva` | Pabellón Juan de la Cierva |
+| `pez-volador` | Pez Volador |
+| `ceip-san-jose` | CEIP San José |
+| `wurzburg` | Pabellón municipal de Würzburg |
+| `mora` | Mora de Rubielos |
+| `manzanera` | Polideportivo Municipal de Manzanera |
+| `alcala-selva` | Pabellón Municipal Alcalá de la Selva |
+| `rubielos` | Pabellón Municipal de Rubielos de Mora |
+| `norte` | Pabellón Norte |
+| `antonio-diaz-miguel` | Polideportivo Antonio Diaz Miguel |
+| `plantio` | Polideportivo El Plantío |
+| `triangulo-oro` | Triángulo de Oro, Madrid |
+| `espiniella` | Pabellón Alfredo Espiniella |
+| `valcude` | Club Deportivo Valcude |
+| `canaleja` | Polideportivo La Canaleja |
+
+### Example
+
+**Input HTML:**
+```html
+<p>
+    🏟️
+    <a href="https://maps.app.goo.gl/sbVMtZWNUpSEAv7V6">
+        Pabellón Felipe Reyes
+    </a>
+</p>
+```
+
+**Output TypeScript:**
+```typescript
+venue: venues["felipe-reyes"],
+```
+
+---
+
 ## File Naming Convention
 
 ```
