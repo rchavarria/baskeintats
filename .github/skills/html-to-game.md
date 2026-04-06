@@ -199,6 +199,102 @@ venue: venues["felipe-reyes"],
 
 ---
 
+## Parsing Home & Away Teams
+
+### HTML Source
+
+```html
+<div class="match-results">
+    <div class="team visit">
+        <div class="team-name">Getafe</div>
+        <div class="quarters">
+            <div class="quarter"><div class="title">P1</div><div class="score">11</div></div>
+            <div class="quarter"><div class="title">P2</div><div class="score">13</div></div>
+            <div class="quarter"><div class="title">P3</div><div class="score">16</div></div>
+            <div class="quarter"><div class="title">P4</div><div class="score">10</div></div>
+        </div>
+        <div class="total-score">50</div>
+    </div>
+    <div class="team home">
+        <div class="team-name">Alcobendas</div>
+        <div class="quarters">
+            <div class="quarter"><div class="title">P1</div><div class="score">9</div></div>
+            <div class="quarter"><div class="title">P2</div><div class="score">21</div></div>
+            <div class="quarter"><div class="title">P3</div><div class="score">20</div></div>
+            <div class="quarter"><div class="title">P4</div><div class="score">17</div></div>
+        </div>
+        <div class="total-score">67</div>
+    </div>
+</div>
+```
+
+### Extraction Rules
+
+#### Which div maps to `home` and which to `away`
+
+| CSS class on wrapper `<div>` | Output field |
+|-----------------------------|--------------|
+| `team home` | `home` |
+| `team visit` | `away` |
+
+#### Field: `club`
+- Extract the text from `<div class="team-name">` (trimmed)
+- Normalize the name to a team ID: lowercase, replace spaces with `-`, strip accents
+  - Example: `"Alcobendas"` → `teams["alcobendas"]`
+  - Example: `"Getafe"` → `teams["getafe"]`
+- Look up in `teams` using the normalized ID
+- If the team does not exist in `teams`, **add it to `src/data/teams.ts`** before generating the file
+
+#### Field: `category`
+- Default value: `"U15M"`
+- Exception: if the team name (inside `<div class="team-name">`) contains `"2010"`, use `"U16M"`
+
+#### Field: `scores`
+- Read the `<div class="score">` inside each `<div class="quarter">` in order (P1 → P4)
+- Parse as integers
+- Result is an array of 4 numbers: `[p1, p2, p3, p4]`
+
+### Example
+
+**Input HTML:**
+```html
+<div class="team visit">
+    <div class="team-name">Getafe</div>
+    <div class="quarters">
+        <div class="quarter"><div class="score">11</div></div>
+        <div class="quarter"><div class="score">13</div></div>
+        <div class="quarter"><div class="score">16</div></div>
+        <div class="quarter"><div class="score">10</div></div>
+    </div>
+</div>
+<div class="team home">
+    <div class="team-name">Alcobendas</div>
+    <div class="quarters">
+        <div class="quarter"><div class="score">9</div></div>
+        <div class="quarter"><div class="score">21</div></div>
+        <div class="quarter"><div class="score">20</div></div>
+        <div class="quarter"><div class="score">17</div></div>
+    </div>
+</div>
+```
+
+**Output TypeScript:**
+```typescript
+home: {
+  club: teams["alcobendas"],
+  category: "U15M",
+  scores: [9, 21, 20, 17],
+},
+
+away: {
+  club: teams["getafe"],
+  category: "U15M",
+  scores: [11, 13, 16, 10],
+},
+```
+
+---
+
 ## File Naming Convention
 
 ```
