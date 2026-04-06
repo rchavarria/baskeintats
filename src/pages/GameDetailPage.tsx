@@ -69,6 +69,10 @@ export function GameDetailPage() {
           <h2 className="font-semibold text-gray-700 mb-4">📈 Estadísticas del jugador</h2>
           <div className="grid grid-cols-4 gap-4 text-center">
             <div>
+              <p className="text-2xl font-bold text-gray-900">{Math.floor(derived.time / 60)}:{derived.time % 60}</p>
+              <p className="text-xs text-gray-400">Tiempo</p>
+            </div>
+            <div>
               <p className="text-2xl font-bold text-gray-900">{derived.points}</p>
               <p className="text-xs text-gray-400">Puntos</p>
             </div>
