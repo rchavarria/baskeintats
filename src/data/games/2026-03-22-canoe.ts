@@ -1,18 +1,18 @@
 import {GameSchema} from "../../model/GameSchema.ts";
 import type {Game} from "../../model/GameSchema.ts";
-import {teams} from "../teams.ts";
 import {venues} from "../venues.ts";
+import {teams} from "../teams.ts";
 
-export const game_2026_03_17_canoe: Game = GameSchema.parse({
-  id: "S56-league-f2-gb-j10",
+export const game_2026_03_22_canoe: Game = GameSchema.parse({
+  id: "S56-liga-u15-f2-j10",
   season: "2025-26",
   date: "2026-03-22T12:30:00Z",
   status: "played",
 
   competition: {
     name: "Liga Ahorramás",
-    category: "U16M",
-    phase: "Fase 2 - Grupo B",
+    category: "U15M",
+    phase: "Plata - Grupo B",
     round: "J10",
   },
 
@@ -21,13 +21,13 @@ export const game_2026_03_17_canoe: Game = GameSchema.parse({
   home: {
     club: teams["alcobendas"],
     category: "U15M",
-    scores: [ 29, 18, 17, 18 ],
+    scores: [29, 18, 17, 18],
   },
 
   away: {
     club: teams["canoe"],
     category: "U16M",
-    scores: [ 16, 20, 19, 19 ],
+    scores: [16, 20, 19, 19],
   },
 
   playerStats: {
@@ -47,10 +47,10 @@ export const game_2026_03_17_canoe: Game = GameSchema.parse({
     official: "https://youtu.be/S4PAe14PO0A",
     others: [
       {
-        label: "Canal CBA",
+        label: "canal CBA",
         url: "https://youtu.be/9O2cUhSormM",
-      }
-    ]
+      },
+    ],
   },
 
   recap: {
@@ -65,28 +65,29 @@ export const game_2026_03_17_canoe: Game = GameSchema.parse({
   references: [
     {
       icon: "📸",
-      label: "FBM mes de marzo",
+      label: "Fotos del mes de marzo",
       url: "https://www.flickr.com/photos/fbmadrid/albums/72177720332315809",
     },
     {
       icon: "💼",
-      label: "Informe",
+      label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15326&informe=resultados-clasificacion-proxima&ultima_jornada=103476&proxima_jornada=103477",
     },
     {
       icon: "📰",
-      label: "Previa",
+      label: "Previa del partido",
       url: "https://www.fbm.es/noticia-104-13157/liga-ahorramas-arrancan-los-pre-playoff",
     },
     {
       icon: "📰",
-      label: "Crónica",
+      label: "Crónica del partido",
       url: "https://www.fbm.es/noticia-104-13169/liga-ahorramas-un-espectacular-fin-de-semana-dicta-sentencia",
     },
     {
       icon: "📸",
-      label: "Fotos del club",
+      label: "Fotos realizadas por el club",
       url: "https://www.flickr.com/gp/cbalcobendas/Sm59c2q869",
     },
   ],
 });
+
