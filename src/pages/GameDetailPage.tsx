@@ -5,6 +5,7 @@ import { totalPoints } from "../model/GameSchema";
 import { derivePlayerStats } from "../model/PlayerSchema";
 import { EmptyState } from "../components/ui/EmptyState";
 import {DateDisplay} from "../components/ui/DateDisplay.tsx";
+import { GameVideos } from "../components/games/GameVideos";
 
 export function GameDetailPage() {
   const { gameId } = useParams<{ gameId: string }>();
@@ -104,17 +105,7 @@ export function GameDetailPage() {
         </div>
       )}
 
-      <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
-        <h2 className="font-semibold text-gray-700 mb-3">
-          🎥
-          Video
-        </h2>
-        <a href={game.videos.official}
-           className="block text-sm text-blue-500 hover:underline mb-1">
-        🆚
-        {rival.name}
-        </a>
-      </div>
+      <GameVideos videos={game.videos} rival={rival.name} />
 
       {game.recap && (
         <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
