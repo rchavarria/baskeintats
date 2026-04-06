@@ -409,6 +409,62 @@ playerStats: {
 
 ---
 
+## Parsing Videos
+
+### HTML Source
+
+```html
+<p>
+    🎥
+    <a href="https://youtu.be/8H2vv1SERWA">
+        🆚
+        Getafe
+    </a>
+    <span class="space">|</span>
+    <a href="https://youtu.be/vvTSmRUZSec">
+        canal Pou
+    </a>
+</p>
+```
+
+### Extraction Rules
+
+1. Find the `<p>` paragraph that starts with the 🎥 emoji
+2. Collect all `<a>` tags inside it whose `href` contains `youtu.be` or `youtube.com`
+3. **First link** → `videos.official`: use only the `href` URL
+4. **Remaining links** → `videos.others` array, one entry per link:
+   - `label`: text content of the `<a>` tag, trimmed (remove surrounding whitespace and emojis)
+   - `url`: `href` attribute value
+
+> If there is only one link, `videos.others` is an empty array `[]`.
+
+### Example
+
+**Input HTML:**
+```html
+<p>
+    🎥
+    <a href="https://youtu.be/8H2vv1SERWA">🆚 Getafe</a>
+    <span class="space">|</span>
+    <a href="https://youtu.be/vvTSmRUZSec">canal Pou</a>
+</p>
+```
+
+**Output TypeScript:**
+```typescript
+videos: {
+  official: "https://youtu.be/8H2vv1SERWA",
+  others: [
+    {
+      label: "canal Pou",
+      url: "https://youtu.be/vvTSmRUZSec",
+    },
+  ],
+},
+```
+
+---
+
 ## File Naming Convention
 
 ```
