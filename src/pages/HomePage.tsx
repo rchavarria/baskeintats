@@ -1,12 +1,10 @@
-import { useGames } from "../hooks/useGames";
-import { useTeams } from "../hooks/useTeams";
-import { GameCard } from "../components/games/GameCard";
-import { EmptyState } from "../components/ui/EmptyState";
+import {useGames} from "../hooks/useGames";
+import {GameCard} from "../components/games/GameCard";
+import {EmptyState} from "../components/ui/EmptyState";
 
 export function HomePage() {
   const games = useGames();
-  const { teamsMap } = useTeams();
-  const recent = games.slice(0, 5);
+  const recent = games;
 
   return (
     <div>
