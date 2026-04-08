@@ -37,6 +37,13 @@ const teamList: Team[] = [
     web: "https://cbfuenlabrada.es",
     venue: venues["default"],
   },
+  {
+    id: "real-madrid",
+    name: "Real Madrid",
+    logo: "/logos/real-madrid-transparent.png",
+    web: "https://realmadridbasket.com",
+    venue: venues["valdebebas"],
+  },
 ];
 
 export const teams: Record<string, Team> = teamList.reduce((acc, team) => {
