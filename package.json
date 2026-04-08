@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "generate": "tsx scripts/generate-data.ts",
-    "dev": "npm run generate && vite",
-    "build": "npm run generate && tsc && vite build",
+    "validate": "tsx scripts/validate-data.ts",
+    "dev": "vite",
+    "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

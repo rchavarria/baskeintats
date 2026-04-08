@@ -2,7 +2,8 @@
 
 ## 1. General Project Guidelines
 
-You are assisting with **Baskeintats**, a Basketball Statistics SPA for tracking youth basketball games and player performance.
+You are assisting with **Baskeintats**, a Basketball Statistics SPA for tracking youth basketball games and player
+performance.
 
 ### Technology Stack
 
