@@ -232,10 +232,13 @@ venue: venues["felipe-reyes"],
 
 #### Which div maps to `home` and which to `away`
 
-The div with CSS class `match-results` contains two child divs with class `team`.
-The **first** child is always the `home` team, regardless of its CSS classes, even if
-CSS classes say `visit`. The **second** child is always the `away` team,
-even if CSS classes say `home`.
+The div with CSS class `match-results` contains two child divs with classes 
+`team home` or `team visit`. However, **do not rely on the CSS classes** to
+determine which team is home or away. Instead, use the order of the divs:
+
+- The **first** child is always the `home` team, regardless of its CSS classes, even if
+CSS classes say `team visit`.
+- The **second** child is always the `away` team, even if CSS classes say `team home`.
 
 #### Field: `club`
 - Extract the text from `<div class="team-name">` (trimmed)
