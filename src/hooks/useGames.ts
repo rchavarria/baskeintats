@@ -13,6 +13,7 @@ import {game_2026_02_15_getafe} from "../data/games/2026-02-15-getafe.ts";
 import {game_2026_02_08_canoe} from "../data/games/2026-02-08-canoe.ts";
 import {game_2026_02_07_getafe} from "../data/games/2026-02-07-getafe.ts";
 import {game_2026_02_01_fuenlabrada} from "../data/games/2026-02-01-fuenlabrada.ts";
+import {game_2026_01_31_distrito} from "../data/games/2026-01-31-distrito.ts";
 
 export function useGames(): Game[] {
   return [
@@ -30,5 +31,6 @@ export function useGames(): Game[] {
     game_2026_02_08_canoe,
     game_2026_02_07_getafe,
     game_2026_02_01_fuenlabrada,
+    game_2026_01_31_distrito,
   ];
 }
