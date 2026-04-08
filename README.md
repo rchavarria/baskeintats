@@ -1,6 +1,7 @@
 # Baskeintats
 
-Basketball statistics SPA. It shows game data and statistics, updated manually every week through YAML files.
+Basketball statistics SPA. It shows game data and statistics, updated manually every week through data
+formatted as TypeScript code, parsed from Zod schemas.
 
 ## Getting started
 
@@ -10,10 +11,10 @@ Install dependencies:
 npm clean-install
 ```
 
-Transform YAML data into TypeScript, loadable, code:
+Validates TypeScript code runs correctly so it can be loaded into the React app:
 
 ```bash
-npm run generate
+npm run validate
 ```
 
 Start development server:
@@ -24,17 +25,20 @@ npm run dev
 
 ## Add new games data
 
-Create a YAML file in `data/games/<season>/` named
-`YYYY-MM-DD-away-team.yaml`.
+Create a TypeScript file in `data/games/` named `YYYY-MM-DD-away-team.ts`
+with content conforming to the `Game` Zod schema.
+The file should export a default object with the game data.
+
+Edit `useGames.ts` to import the new game data and include it in the returned array.
 
 ## Folder structure
 
 ```text
 baskeintats/
-├── data/                  # YAML data (edited manually)
-│   ├── teams/
-│   └── games/
-├── scripts/               # YAML → TS generation script
+├── data/                  # TypeScript data conforming Zod schemas (edited manually)
+│   ├── games/
+│   ├── teams.ts
+│   └── venues.ts
 ├── src/
 │   ├── generated/         # Auto-generated (do not edit)
 │   ├── types/             # TypeScript interfaces

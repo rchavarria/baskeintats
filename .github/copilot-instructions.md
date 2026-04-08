@@ -11,17 +11,23 @@ You are assisting with **Baskeintats**, a Basketball Statistics SPA for tracking
 - **React Router 7** for navigation
 - **Chart.js 4** + **react-chartjs-2** for charts (pending implementation)
 - **Zod 4** for runtime schema validation
-- **js-yaml** to parse YAML data files at build time
 - **tsx** to run TypeScript scripts directly
+
+## File paths
+
+Use paths like `\\wsl.localhost\Ubuntu\home\username\project\file` to read or write project files from
+the IDE
+
+Use relative Unix-style paths like `~/project/file` when executing CLI commands
 
 ## Available Scripts
 
-| Script             | Description                                      |
-|--------------------|--------------------------------------------------|
-| `npm run generate` | Parses YAML files and generates `src/generated/` |
-| `npm run dev`      | Generates data and starts the development server |
-| `npm run build`    | Generates data and builds for production         |
-| `npm run preview`  | Serves the production build                      |
+| Script             | Description                                       |
+|--------------------|---------------------------------------------------|
+| `npm run validate` | Validates TypeScript data can be correctly loaded |
+| `npm run dev`      | Generates data and starts the development server  |
+| `npm run build`    | Generates data and builds for production          |
+| `npm run preview`  | Serves the production build                       |
 
 ## Key Requirements
 
@@ -42,11 +48,10 @@ You are assisting with **Baskeintats**, a Basketball Statistics SPA for tracking
 
 ```
 baskeintats/
-├── data/                    # YAML source data (teams, games)
-│   ├── teams/               # One YAML file per team
-│   └── games/               # Organized by season (e.g., 2025-26/)
-├── scripts/
-│   └── generate-data.ts     # Transforms YAML → TypeScript
+├── data/                    # TypeScript source data (teams, games)
+│   ├── games/               # Organized by season (e.g., 2025-26/)
+│   ├── teams.ts             # TypeScript data for Teams
+│   └── venues.ts            # TypeScript data for Venues
 ├── src/
 │   ├── components/          # React components
 │   │   ├── filters/         # Filter UI components
@@ -54,7 +59,6 @@ baskeintats/
 │   │   ├── layout/          # Header, Footer, Layout
 │   │   └── ui/              # Reusable UI primitives
 │   ├── context/             # React Context providers
-│   ├── generated/           # Auto-generated from YAML (DO NOT EDIT)
 │   ├── hooks/               # Custom React hooks
 │   ├── lib/                 # Utility functions
 │   ├── model/               # Zod schemas (validation)
@@ -64,82 +68,18 @@ baskeintats/
     └── logos/               # Team logo images
 ```
 
-### Data Flow
-
-1. **YAML files** in `data/` define teams and games
-2. **`npm run generate`** runs `scripts/generate-data.ts`
-3. **Generated TypeScript** is written to `src/generated/`
-4. **React app** imports from `src/generated/` at runtime
-
----
-
-## 3. Data Models
-
-### Team (YAML: `data/teams/{team-id}.yaml`)
-
-```yaml
-name: CB Example Team
-logo: /logos/example-transparent.png
-venue: Municipal Sports Center
-color: "#E63946"
-```
-
-### Game (YAML: `data/games/{season}/{date}-{home}-vs-{away}.yaml`)
-
-```yaml
-season: "2025-26"
-category: U14M            # U13M, U14M, U15M, U16M, U17M, U18M
-date: 2026-03-08
-time: "17:00"
-competition: Liga Provincial
-phase: Regular            # Regular, Playoffs, Final
-round: 21                 # Match day number
-venue: Municipal Sports Center
-status: played            # scheduled, played, postponed, cancelled
-
-home:
-  team: team-id           # References data/teams/{team-id}.yaml
-  scores: [22, 18, 20, 25]  # Points per quarter
-away:
-  team: opponent-id
-  scores: [19, 20, 17, 21]
-
-playerStats:              # Optional: player performance
-  points: 22
-  rebounds: 8
-  assists: 5
-  # ... more stats
-
-recap: >                  # Optional: game summary
-  Multi-line description of the game highlights.
-
-videos:                   # Optional: video links
-  - https://youtube.com/watch?v=example
-
-social:                   # Optional: social media posts
-  - https://twitter.com/team/status/123
-```
-
-### TypeScript Types
-
-- **`src/types/team.ts`**: `Team` interface
-- **`src/types/game.ts`**: `Game`, `GameTeamResult`, `PlayerStats`, `GameStatus`
-- **`src/model/`**: Zod schemas for runtime validation
-
----
-
-## 4. Naming Conventions
+## 3. Naming Conventions
 
 ### Files
 
-| Type | Convention | Example |
-|------|------------|---------|
-| React Component | PascalCase | `GameCard.tsx` |
-| Hook | camelCase with `use` prefix | `useGames.ts` |
-| Utility | camelCase | `filters.ts` |
-| Type file | camelCase | `game.ts` |
-| Zod Schema | PascalCase with `Schema` suffix | `GameSchema.ts` |
-| YAML data | kebab-case | `2026-03-08-team-a-vs-team-b.yaml` |
+| Type            | Convention                      | Example              |
+|-----------------|---------------------------------|----------------------|
+| React Component | PascalCase                      | `GameCard.tsx`       |
+| Hook            | camelCase with `use` prefix     | `useGames.ts`        |
+| Utility         | camelCase                       | `filters.ts`         |
+| Type file       | camelCase                       | `game.ts`            |
+| Zod Schema      | PascalCase with `Schema` suffix | `GameSchema.ts`      |
+| TypeScript data | kebab-case                      | `2026-03-08-team.ts` |
 
 ### Code
 
@@ -151,7 +91,7 @@ social:                   # Optional: social media posts
 
 ---
 
-## 5. Component Patterns
+## 4. Component Patterns
 
 ### Page Component
 
@@ -203,7 +143,7 @@ export function useExample() {
 
 ---
 
-## 6. Working with Data
+## 5. Working with Data
 
 ### Adding a New Team
 
@@ -225,7 +165,7 @@ export function useExample() {
 
 ---
 
-## 7. Basketball Domain Knowledge
+## 6. Basketball Domain Knowledge
 
 ### Categories (Age Groups)
 
@@ -266,7 +206,7 @@ export function useExample() {
 
 ---
 
-## 8. Routes
+## 7. Routes
 
 | Path | Component | Description |
 |------|-----------|-------------|
@@ -276,7 +216,7 @@ export function useExample() {
 
 ---
 
-## 9. Common Tasks
+## 8. Common Tasks
 
 ### Add a new page
 
@@ -298,7 +238,7 @@ export function useExample() {
 
 ---
 
-## 10. Testing
+## 9. Testing
 
 - Use Vitest for unit tests
 - Test files: `*.test.ts` or `*.test.tsx`
@@ -307,7 +247,7 @@ export function useExample() {
 
 ---
 
-## 11. Styling Guidelines
+## 10. Styling Guidelines
 
 - Use Tailwind CSS utility classes
 - Follow mobile-first responsive design
