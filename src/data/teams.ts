@@ -44,6 +44,13 @@ const teamList: Team[] = [
     web: "https://realmadridbasket.com",
     venue: venues["valdebebas"],
   },
+  {
+    id: "tres-cantos",
+    name: "Tres Cantos",
+    logo: "/logos/tres-cantos-transparent.png",
+    web: "https://cbtrrescantos.es",
+    venue: venues["luz"],
+  },
 ];
 
 export const teams: Record<string, Team> = teamList.reduce((acc, team) => {
