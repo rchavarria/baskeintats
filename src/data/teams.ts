@@ -52,6 +52,13 @@ const teamList: Team[] = [
     venue: venues["valdebebas"],
   },
   {
+    id: "rozas",
+    name: "Las Rozas",
+    logo: "/logos/rozas-transparent.png",
+    web: "https://cbrozas.es",
+    venue: venues["espiniella"],
+  },
+  {
     id: "tres-cantos",
     name: "Tres Cantos",
     logo: "/logos/tres-cantos-transparent.png",
