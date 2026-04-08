@@ -10,6 +10,13 @@ const teamList: Team[] = [
     venue: venues["antela"],
   },
   {
+    id: "alcorcon",
+    name: "CB Alcorcón",
+    logo: "/logos/alcorcon-transparent.png",
+    web: "https://cbalcorcon.es",
+    venue: venues["canaleja"],
+  },
+  {
     id: "canoe",
     name: "Real Canoe",
     logo: "/logos/canoe-transparent.png",
