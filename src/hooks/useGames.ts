@@ -16,6 +16,10 @@ import {game_2026_02_01_fuenlabrada} from "../data/games/2026-02-01-fuenlabrada.
 import {game_2026_01_31_distrito} from "../data/games/2026-01-31-distrito.ts";
 import {game_2026_01_25_tres_cantos} from "../data/games/2026-01-25-tres-cantos.ts";
 import {game_2026_01_24_real_madrid} from "../data/games/2026-01-24-real-madrid.ts";
+import {game_2026_01_18_rozas} from "../data/games/2026-01-18-rozas.ts";
+import {game_2026_01_17_juande} from "../data/games/2026-01-17-juande.ts";
+import {game_2026_01_11_alcorcon} from "../data/games/2026-01-11-alcorcon.ts";
+import {game_2026_01_10_getafe} from "../data/games/2026-01-10-getafe.ts";
 
 export function useGames(): Game[] {
   return [
@@ -36,5 +40,9 @@ export function useGames(): Game[] {
     game_2026_01_31_distrito,
     game_2026_01_25_tres_cantos,
     game_2026_01_24_real_madrid,
+    game_2026_01_18_rozas,
+    game_2026_01_17_juande,
+    game_2026_01_11_alcorcon,
+    game_2026_01_10_getafe,
   ];
 }
