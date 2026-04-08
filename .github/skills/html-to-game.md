@@ -44,12 +44,12 @@ The HTML input follows this structure:
 
 ### Metadata Extraction Rules
 
-| Field | HTML Source | Example |
-|-------|-------------|---------|
-| `id` | `"S56-"` + `<div id="...">` | `"S56-liga-u16-f2-j10"` |
-| `season` | Always fixed | `"2025-26"` |
-| `date` | `date-is` attr + `🕜` paragraph | `"2026-03-22T17:15:00Z"` |
-| `status` | Has `match-results` div? | `"played"` or `"scheduled"` |
+| Field    | HTML Source                     | Example                      |
+|----------|---------------------------------|------------------------------|
+| `id`     | `"S56-"` + `<div id="...">`     | `"S56-liga-plata-f2-gd-j10"` |
+| `season` | Always fixed                    | `"2025-26"`                  |
+| `date`   | `date-is` attr + `🕜` paragraph | `"2026-03-22T17:15:00Z"`     |
+| `status` | Has `match-results` div?        | `"played"` or `"scheduled"`  |
 
 ### Field: `id`
 - Prefix `"S56-"` followed by the `id` attribute of the root `<div class="timeline-item">`
@@ -60,8 +60,8 @@ The HTML input follows this structure:
 
 ### Field: `date`
 - Combine `date-is` attribute with time from `🕜` paragraph
-- Convert from `DD-MM-YYYY` to ISO format, keep original time (no timezone conversion)
-- Example: `date-is="22-03-2026"` + `🕜 17:15` → `"2026-03-22T17:15:00Z"`
+- Convert from `DD-MM-YYYY` to ISO format, convert to UTC timezone
+- Example: `date-is="22-03-2026"` + `🕜 17:15` → `"2026-03-22T16:15:00Z"`
 
 ### Field: `status`
 - Check if `<div class="match-results">` exists with scores
@@ -77,23 +77,23 @@ The HTML input follows this structure:
 
 ```html
 <div class="timeline-item u16" ...>
-    <h1>🏆 Liga Ahorramás - Plata - Grupo D - J10</h1>
+    <h1>🏆 Liga Ahorramás - Plata - Fase 2 - Grupo D - J10</h1>
 ```
 
-The `<h1>` follows format: `🏆 {name} - {phase} - {group} - {round}`
+The `<h1>` follows format: `🏆 {name} - {level} - {phase} - {group} - {round}`
 
 ### Extraction Rules
 
-| Field | Source | Example |
-|-------|--------|---------|
-| `name` | First segment from `<h1>` | `"Liga Ahorramás"` |
-| `category` | CSS class on root div | `"U16M"` |
-| `phase` | Middle segments (phase + group) from `<h1>` | `"Plata - Grupo D"` |
-| `round` | Last segment from `<h1>` | `"J10"` |
+| Field      | Source                                      | Example                    |
+|------------|---------------------------------------------|----------------------------|
+| `name`     | First two segments from `<h1>`              | `"Liga Ahorramás - Plata"` |
+| `category` | CSS class on root div                       | `"U16M"`                   |
+| `phase`    | Middle segments (phase + group) from `<h1>` | `"Fase 2 - Grupo D"`       |
+| `round`    | Last segment from `<h1>`                    | `"J10"`                    |
 
 ### Field: `competition.name`
-- First segment from `<h1>` after the 🏆 emoji
-- Example: `🏆 Liga Ahorramás - Plata - Grupo D - J10` → `"Liga Ahorramás"`
+- First two segments from `<h1>` after the 🏆 emoji
+- Example: `🏆 Liga Ahorramás - Plata - Grupo D - J10` → `"Liga Ahorramás - Plata"`
 
 ### Field: `competition.category`
 - Extract from CSS class on root `<div>`: `u13`, `u14`, `u15`, `u16`, `u17`, `u18`
@@ -101,9 +101,9 @@ The `<h1>` follows format: `🏆 {name} - {phase} - {group} - {round}`
 - Example: `<div class="timeline-item u16"` → `"U16M"`
 
 ### Field: `competition.phase`
-- Middle segments from `<h1>` (between name and round)
+- Middle segments from `<h1>` (between level and round)
 - Combine phase and group with ` - `
-- Example: `Liga Ahorramás - Plata - Grupo D - J10` → `"Plata - Grupo D"`
+- Example: `Liga Ahorramás - Plata - Fase 2 - Grupo D - J10` → `"Fase 2 - Grupo D"`
 
 ### Field: `competition.round`
 - Last segment from `<h1>` after the last ` - `
@@ -115,15 +115,15 @@ The `<h1>` follows format: `🏆 {name} - {phase} - {group} - {round}`
 **Input HTML:**
 ```html
 <div class="timeline-item u16" date-is="22-03-2026" id="liga-u16-f2-j10">
-    <h1>🏆 Liga Ahorramás - Plata - Grupo D - J10</h1>
+    <h1>🏆 Liga Ahorramás - Plata - Fase 2 - Grupo D - J10</h1>
 ```
 
 **Output TypeScript:**
 ```typescript
 competition: {
-  name: "Liga Ahorramás",
+  name: "Liga Ahorramás - Plata",
   category: "U16M",
-  phase: "Plata - Grupo D",
+  phase: "Fase 2 - Grupo D",
   round: "J10",
 },
 ```
@@ -153,32 +153,32 @@ competition: {
 
 ### Known Venues
 
-| `id` | `name` |
-|------|--------|
-| `default` | Pabellón Municipal |
-| `antela` | Pabellón Antela Parada |
-| `circular` | Pabellón Circular |
-| `felipe-reyes` | Pabellón Felipe Reyes |
-| `ferrandiz` | Pabellón Pedro Ferrándiz |
-| `arroyo` | Polideportivo El Arroyo |
-| `valdebebas` | Ciudad Deportiva Real Madrid |
-| `luz` | Polideportivo de La Luz |
-| `club-baloncesto-juan-de-austria` | Club Baloncesto Juan de Austria |
-| `juan-cierva` | Pabellón Juan de la Cierva |
-| `pez-volador` | Pez Volador |
-| `ceip-san-jose` | CEIP San José |
-| `wurzburg` | Pabellón municipal de Würzburg |
-| `mora` | Mora de Rubielos |
-| `manzanera` | Polideportivo Municipal de Manzanera |
-| `alcala-selva` | Pabellón Municipal Alcalá de la Selva |
-| `rubielos` | Pabellón Municipal de Rubielos de Mora |
-| `norte` | Pabellón Norte |
-| `antonio-diaz-miguel` | Polideportivo Antonio Diaz Miguel |
-| `plantio` | Polideportivo El Plantío |
-| `triangulo-oro` | Triángulo de Oro, Madrid |
-| `espiniella` | Pabellón Alfredo Espiniella |
-| `valcude` | Club Deportivo Valcude |
-| `canaleja` | Polideportivo La Canaleja |
+| `id`            | `name`                                 |
+|-----------------|----------------------------------------|
+| `default`       | Pabellón Municipal                     |
+| `antela`        | Pabellón Antela Parada                 |
+| `circular`      | Pabellón Circular                      |
+| `felipe-reyes`  | Pabellón Felipe Reyes                  |
+| `ferrandiz`     | Pabellón Pedro Ferrándiz               |
+| `arroyo`        | Polideportivo El Arroyo                |
+| `valdebebas`    | Ciudad Deportiva Real Madrid           |
+| `luz`           | Polideportivo de La Luz                |
+| `juande`        | Club Baloncesto Juan de Austria        |
+| `juan-cierva`   | Pabellón Juan de la Cierva             |
+| `pez-volador`   | Pez Volador                            |
+| `ceip-san-jose` | CEIP San José                          |
+| `wurzburg`      | Pabellón municipal de Würzburg         |
+| `mora`          | Mora de Rubielos                       |
+| `manzanera`     | Polideportivo Municipal de Manzanera   |
+| `alcala-selva`  | Pabellón Municipal Alcalá de la Selva  |
+| `rubielos`      | Pabellón Municipal de Rubielos de Mora |
+| `norte`         | Pabellón Norte                         |
+| `diaz-miguel`   | Polideportivo Antonio Diaz Miguel      |
+| `plantio`       | Polideportivo El Plantío               |
+| `triangulo-oro` | Triángulo de Oro, Madrid               |
+| `espiniella`    | Pabellón Alfredo Espiniella            |
+| `valcude`       | Club Deportivo Valcude                 |
+| `canaleja`      | Polideportivo La Canaleja              |
 
 ### Example
 
@@ -342,16 +342,16 @@ away: {
 
 Identify each column by the `title` attribute of its inner `<div class="title">`:
 
-| HTML `title` | Label | TypeScript field | Format |
-|---|---|---|---|
-| `"Minutos"` | M | `time` | `"MM:SS"` → `MM * 60 + SS` |
-| `"Puntos"` | PTS | *(validation only, not written)* | integer |
-| `"Tiros libres"` | TL | `freeThrows: { made, attempted }` | `"made/attempted"` |
-| `"2 puntos"` | 2PT | `fieldGoals` | integer |
-| `"Triples"` | 3PT | `threePointers` | integer |
-| `"Faltas personales"` | FP | `faults` | integer |
-| `"Más / Menos"` | +/- | `plusMinus` | signed integer |
-| `"Eficiencia"` | EFF | `efficiency` | integer |
+| HTML `title`          | Label | TypeScript field                  | Format                     |
+|-----------------------|-------|-----------------------------------|----------------------------|
+| `"Minutos"`           | M     | `time`                            | `"MM:SS"` → `MM * 60 + SS` |
+| `"Puntos"`            | PTS   | *(validation only, not written)*  | integer                    |
+| `"Tiros libres"`      | TL    | `freeThrows: { made, attempted }` | `"made/attempted"`         |
+| `"2 puntos"`          | 2PT   | `fieldGoals`                      | integer                    |
+| `"Triples"`           | 3PT   | `threePointers`                   | integer                    |
+| `"Faltas personales"` | FP    | `faults`                          | integer                    |
+| `"Más / Menos"`       | +/-   | `plusMinus`                       | signed integer             |
+| `"Eficiencia"`        | EFF   | `efficiency`                      | integer                    |
 
 ### Field: `time`
 - Value format: `"MM:SS"` (minutes and seconds)
@@ -574,14 +574,14 @@ recap: {
 
 Match against the link text (case-insensitive, trimmed):
 
-| Link text keyword | `icon` | `label` |
-|---|---|---|
-| `informe` | `"💼"` | `"Informe de la jornada"` |
-| `previa` | `"📰"` | `"Previa del partido"` |
-| `crónica` / `cronica` | `"📰"` | `"Crónica del partido"` |
-| Social media URL (twitter.com, x.com, instagram.com) | `"📱"` | link text, trimmed |
-| Inside a `📸` paragraph | `"📸"` | paragraph text before `<a>` + link text, trimmed and joined with a space |
-| Any other link | paragraph's leading emoji | link text, trimmed |
+| Link text keyword                                    | `icon`                    | `label`                                                                  |
+|------------------------------------------------------|---------------------------|--------------------------------------------------------------------------|
+| `informe`                                            | `"💼"`                    | `"Informe de la jornada"`                                                |
+| `previa`                                             | `"📰"`                    | `"Previa del partido"`                                                   |
+| `crónica` / `cronica`                                | `"📰"`                    | `"Crónica del partido"`                                                  |
+| Social media URL (twitter.com, x.com, instagram.com) | `"📱"`                    | link text, trimmed                                                       |
+| Inside a `📸` paragraph                              | `"📸"`                    | paragraph text before `<a>` + link text, trimmed and joined with a space |
+| Any other link                                       | paragraph's leading emoji | link text, trimmed                                                       |
 
 ### Example
 
