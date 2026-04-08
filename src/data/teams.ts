@@ -24,18 +24,25 @@ const teamList: Team[] = [
     venue: venues["circular"],
   },
   {
-    id: "getafe",
-    name: "CB Getafe",
-    logo: "/logos/getafe-transparent.png",
-    web: "https://cbgetafe.es",
-    venue: venues["juan-cierva"],
-  },
-  {
     id: "fuenlabrada",
     name: "CB Fuenlabrada",
     logo: "/logos/fuenlabrada.jpg",
     web: "https://cbfuenlabrada.es",
     venue: venues["default"],
+  },
+  {
+    id: "juande",
+    name: "CB Juan de Austria",
+    logo: "/logos/juande-transparent.png",
+    web: "https://juandealcala.es",
+    venue: venues["juande"],
+  },
+  {
+    id: "getafe",
+    name: "CB Getafe",
+    logo: "/logos/getafe-transparent.png",
+    web: "https://cbgetafe.es",
+    venue: venues["juan-cierva"],
   },
   {
     id: "real-madrid",
