@@ -72,6 +72,13 @@ const teamList: Team[] = [
     web: "https://cbtrrescantos.es",
     venue: venues["luz"],
   },
+  {
+    id: "zentro",
+    name: "Zentro Basket",
+    logo: "/logos/zentro-transparent.png",
+    web: "https://zentrobasket.com",
+    venue: venues["diaz-miguel"],
+  },
 ];
 
 export const teams: Record<string, Team> = teamList.reduce((acc, team) => {

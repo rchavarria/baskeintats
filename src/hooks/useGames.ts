@@ -20,6 +20,7 @@ import {game_2026_01_18_rozas} from "../data/games/2026-01-18-rozas.ts";
 import {game_2026_01_17_juande} from "../data/games/2026-01-17-juande.ts";
 import {game_2026_01_11_alcorcon} from "../data/games/2026-01-11-alcorcon.ts";
 import {game_2026_01_10_getafe} from "../data/games/2026-01-10-getafe.ts";
+import {game_2026_01_04_zentro} from "../data/games/2026-01-04-zentro.ts";
 
 export function useGames(): Game[] {
   return [
@@ -44,5 +45,6 @@ export function useGames(): Game[] {
     game_2026_01_17_juande,
     game_2026_01_11_alcorcon,
     game_2026_01_10_getafe,
+    game_2026_01_04_zentro,
   ];
 }
