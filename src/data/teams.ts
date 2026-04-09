@@ -79,6 +79,13 @@ const teamList: Team[] = [
     web: "https://zentrobasket.com",
     venue: venues["diaz-miguel"],
   },
+  {
+    id: "laso",
+    name: "Laso Academy",
+    logo: "/logos/laso-transparent.png",
+    web: "https://lasoacademy.com",
+    venue: venues["default"],
+  },
 ];
 
 export const teams: Record<string, Team> = teamList.reduce((acc, team) => {
