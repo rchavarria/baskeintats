@@ -410,6 +410,28 @@ playerStats: {
 },
 ```
 
+### No Match Stats Available
+
+If the HTML does not contain a `<div class="match-stats">` section, or it's hidden, set all `playerStats` fields to zero:
+
+```typescript
+playerStats: {
+  time: 0,
+  fieldGoals: 0,
+  threePointers: 0,
+  freeThrows: {
+    made: 0,
+    attempted: 0,
+  },
+  faults: 0,
+  plusMinus: 0,
+  efficiency: 0,
+},
+```
+
+This ensures the data satisfies the `GameSchema` requirement that `playerStats` is mandatory, even when individual
+match statistics are not available in the HTML.
+
 ---
 
 ## Parsing Videos
