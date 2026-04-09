@@ -1,24 +1,28 @@
-import {useGames} from "../hooks/useGames";
+import {useEvents} from "../hooks/useEvents.ts";
 import {GameCard} from "../components/games/GameCard";
 import {EmptyState} from "../components/ui/EmptyState";
 
 export function HomePage() {
-  const games = useGames();
-  const recent = games;
+  const events = useEvents();
 
   return (
     <div>
       <h1 className="text-2xl font-bold text-gray-900 mb-6">Últimos partidos</h1>
-      {recent.length === 0 ? (
+      {events.length === 0 ? (
         <EmptyState message="No hay partidos recientes" />
       ) : (
         <div className="flex flex-col gap-4">
-          {recent.map((game) => (
-            <GameCard
-              key={game.id}
-              game={game}
-            />
-          ))}
+          {
+            events.map(e => {
+              switch (e.type) {
+              case 'announcement':
+                return <div>Announcement: {e.id}</div>;
+              case 'game':
+              default:
+                return <GameCard key={e.id} game={e} />;
+              }
+            })
+          }
         </div>
       )}
     </div>
