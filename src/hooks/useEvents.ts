@@ -1,4 +1,6 @@
 import type {Game} from "../model/GameSchema.ts";
+import type {Announcement} from "../model/AnnouncementSchema.ts";
+import {game_2026_04_09_canoe} from "../data/games/2026-04-09-canoe.ts";
 import {game_2026_03_29_distrito} from "../data/games/2026-03-29-distrito.ts";
 import {game_2026_03_22_getafe} from "../data/games/2026-03-22-getafe.ts";
 import {game_2026_03_22_canoe} from "../data/games/2026-03-22-canoe.ts";
@@ -24,9 +26,14 @@ import {game_2026_01_04_zentro} from "../data/games/2026-01-04-zentro.ts";
 import {game_2026_01_03_laso} from "../data/games/2026-01-03-laso.ts";
 import {game_2026_01_02_zentro} from "../data/games/2026-01-02-zentro.ts";
 import {game_2026_01_02_fuenlabrada} from "../data/games/2026-01-02-fuenlabrada.ts";
+import {game_2026_01_01_torneo_reyes} from "../data/games/2026-01-01-torneo-reyes.ts";
 
-export function useGames(): Game[] {
+type Event = Announcement | Game;
+
+export function useEvents(): Event[] {
   return [
+    game_2026_01_01_torneo_reyes,
+    game_2026_04_09_canoe,
     game_2026_03_29_distrito,
     game_2026_03_22_getafe,
     game_2026_03_22_canoe,

@@ -1,4 +1,4 @@
-import { useGames } from "../hooks/useGames";
+import { useEvents } from "../hooks/useEvents.ts";
 import { useTeams } from "../hooks/useTeams";
 import { useFilters } from "../hooks/useFilters";
 import { filterGames } from "../lib/filters";
@@ -7,7 +7,7 @@ import { FilterBar } from "../components/filters/FilterBar";
 import { EmptyState } from "../components/ui/EmptyState";
 
 export function GamesPage() {
-  const games = useGames();
+  const games = useEvents();
   const { teamsMap } = useTeams();
   const { filters } = useFilters();
   const filtered = filterGames(games, filters);

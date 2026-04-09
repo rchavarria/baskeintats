@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { useGames } from "../hooks/useGames";
+import { useEvents } from "../hooks/useEvents.ts";
 import { useTeams } from "../hooks/useTeams";
 import { totalPoints } from "../model/GameSchema";
 import { derivePlayerStats } from "../model/PlayerSchema";
@@ -9,7 +9,7 @@ import { GameVideos } from "../components/games/GameVideos";
 
 export function GameDetailPage() {
   const { gameId } = useParams<{ gameId: string }>();
-  const games = useGames();
+  const games = useEvents();
   const { teamsMap } = useTeams();
 
   const game = games.find(g => g.id === gameId);
