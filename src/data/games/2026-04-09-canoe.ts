@@ -1,11 +1,11 @@
-import type {ScheduledGame} from "../../model/GameSchema.ts";
-import {ScheduledGameSchema} from "../../model/GameSchema.ts";
+import type {Game} from "../../model/GameSchema.ts";
+import {GameSchema} from "../../model/GameSchema.ts";
 import {venues} from "../venues.ts";
 import {teams} from "../teams.ts";
 
-export const game_2026_04_09_canoe: ScheduledGame = ScheduledGameSchema.parse({
-  id: "S56-u15-league-silver-pre-playoff",
-  type: "scheduled",
+export const game_2026_04_09_canoe: Game = GameSchema.parse({
+  id: "S56-liga-plata-pre-playoff-j1",
+  type: "played",
   season: "2025-26",
   date: "2026-03-29T12:30:00Z",
 
@@ -21,35 +21,39 @@ export const game_2026_04_09_canoe: ScheduledGame = ScheduledGameSchema.parse({
   home: {
     club: teams["canoe"],
     category: "U16M",
-    scores: [],
+    scores: [ 16, 23, 25, 20 ],
   },
 
   away: {
     club: teams["alcobendas"],
     category: "U16M",
-    scores: [],
+    scores: [ 27, 11, 21, 20 ],
   },
 
   playerStats: {
-    time: 0,
-    fieldGoals: 0,
+    time: 24 * 60 + 28,
+    fieldGoals: 1,
     threePointers: 0,
     freeThrows: {
-      made: 0,
-      attempted: 0,
+      made: 1,
+      attempted: 2,
     },
-    faults: 0,
-    plusMinus: 0,
+    faults: 2,
+    plusMinus: -6,
     efficiency: 0,
   },
 
   videos: {
-    official: "https://youtu.be/-",
+    official: "https://youtu.be/MlD9jhlmjTo",
     others: [
       {
-        label: "Canal CBA",
+        label: "Canal Pou",
         url: "https://youtu.be/-",
-      }
+      },
+      {
+        label: "Canal CBA/Zilberman",
+        url: "https://youtu.be/-",
+      },
     ]
   },
 
@@ -62,8 +66,7 @@ export const game_2026_04_09_canoe: ScheduledGame = ScheduledGameSchema.parse({
     {
       icon: "💼",
       label: "Informe de la jornada",
-      // url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15621&informe=resultados-clasificacion-proxima&ultima_jornada=104770&proxima_jornada=-1",
-      url: "https://fbm.es/informes.aspx?-",
+      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15632&informe=resultados-clasificacion-proxima&ultima_jornada=106408&proxima_jornada=106408",
     },
     {
       icon: "📰",
@@ -78,12 +81,12 @@ export const game_2026_04_09_canoe: ScheduledGame = ScheduledGameSchema.parse({
   ],
 
   recap: {
-    title: "¡xxx!",
+    title: "¡No hombre noooo!",
     lines: [
-      "yyy",
-      "yyy",
-      "yyy",
-      "yyy",
+      "Arrancamos super bien, rápidos, contraatacando, aprovechando la falta de acierto del rival...",
+      "Pero nos duró poco la alegría, en el segundo cuarto nos alcanzaron y superaron",
+      "El resto del partido fue bastante igualado, pero no conseguimos recuperar la ventaja y nos quedamos con la miel en los labios",
+      "Ahora nos quedan dos finales, si perdemos, para casa",
     ],
   },
 
