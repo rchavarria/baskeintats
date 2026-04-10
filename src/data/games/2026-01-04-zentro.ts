@@ -7,7 +7,7 @@ export const game_2026_01_04_zentro: Game = GameSchema.parse({
   id: "S56-torneo-reyes-final",
   season: "2025-26",
   date: "2026-01-04T11:30:00Z",
-  status: "played",
+  type: "game",
 
   competition: {
     name: "I Torneo de Reyes",

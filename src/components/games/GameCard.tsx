@@ -34,7 +34,7 @@ export function GameCard({ game }: GameCardProps) {
         </div>
       </div>
       <div className="mt-2 text-center text-xs text-gray-400">
-        {game.status === "played" ? "Jugado" : game.status}
+        {game.type === "game" ? "Jugado" : game.type}
       </div>
     </Link>
   );

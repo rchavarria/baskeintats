@@ -33,7 +33,7 @@ export interface PlayerStats {
   fta: number;
 }
 
-export type GameStatus = "scheduled" | "played" | "postponed" | "cancelled";
+export type GameType = "game" | "scheduled";
 
 export interface Game {
   id: string;
@@ -45,7 +45,7 @@ export interface Game {
   phase: string;
   round: number;
   venue: string;
-  status: GameStatus;
+  type: GameType;
   home: GameTeamResult;
   away: GameTeamResult;
   playerStats?: PlayerStats;

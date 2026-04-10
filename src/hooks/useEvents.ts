@@ -1,4 +1,4 @@
-import type {Game} from "../model/GameSchema.ts";
+import type {Game, ScheduledGame} from "../model/GameSchema.ts";
 import type {Announcement} from "../model/AnnouncementSchema.ts";
 import {game_2026_04_09_canoe} from "../data/games/2026-04-09-canoe.ts";
 import {game_2026_03_29_distrito} from "../data/games/2026-03-29-distrito.ts";
@@ -28,7 +28,7 @@ import {game_2026_01_02_zentro} from "../data/games/2026-01-02-zentro.ts";
 import {game_2026_01_02_fuenlabrada} from "../data/games/2026-01-02-fuenlabrada.ts";
 import {game_2026_01_01_torneo_reyes} from "../data/games/2026-01-01-torneo-reyes.ts";
 
-type Event = Announcement | Game;
+type Event = Announcement | Game | ScheduledGame;
 
 export function useEvents(): Event[] {
   return [

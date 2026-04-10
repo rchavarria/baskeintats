@@ -7,7 +7,7 @@ export const game_2026_03_22_canoe: Game = GameSchema.parse({
   id: "S56-liga-u15-f2-j10",
   season: "2025-26",
   date: "2026-03-22T12:30:00Z",
-  status: "played",
+  type: "game",
 
   competition: {
     name: "Liga Ahorramás - Plata",

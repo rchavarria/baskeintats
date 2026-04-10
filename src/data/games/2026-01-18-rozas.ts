@@ -7,7 +7,7 @@ export const game_2026_01_18_rozas: Game = GameSchema.parse({
   id: "S56-liga-plata-f2-gb-j2",
   season: "2025-26",
   date: "2026-01-18T10:30:00Z",
-  status: "played",
+  type: "game",
 
   competition: {
     name: "Liga Ahorramás - Plata",

@@ -9,9 +9,9 @@ export function totalPoints(scores: number[]): number {
 
 export const GameSchema = z.object({
   id: z.string(),
+  type: z.literal("game"),
   season: z.string(),
   date: z.iso.datetime(),
-  status: z.enum(["scheduled", "played", "postponed"]),
 
   competition: z.object({
     name: z.string(),
@@ -59,3 +59,11 @@ export const GameSchema = z.object({
 });
 
 export type Game = z.infer<typeof GameSchema>;
+
+// scheduled game is an incomplete one, with different `type`
+export const ScheduledGameSchema = GameSchema
+  .partial()
+  .extend({
+    type: z.literal("scheduled"),
+  });
+export type ScheduledGame = z.infer<typeof ScheduledGameSchema>;

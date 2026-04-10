@@ -7,7 +7,7 @@ export const game_2026_03_07_tres_cantos: Game = GameSchema.parse({
   id: "S56-liga-plata-f2-gd-j8",
   season: "2025-26",
   date: "2026-03-07T09:45:00Z",
-  status: "played",
+  type: "game",
 
   competition: {
     name: "Liga Ahorramás",
