@@ -3,15 +3,15 @@ import {GameSchema} from "../../model/GameSchema.ts";
 import {venues} from "../venues.ts";
 import {teams} from "../teams.ts";
 
-export const game_2026_04_09_canoe: Game = GameSchema.parse({
+export const game_2026_04_09_canoe: ScheduledGame = ScheduledGameSchema.parse({
   id: "S56-liga-plata-pre-playoff-j1",
-  type: "played",
+  type: "scheduled",
   season: "2025-26",
   date: "2026-03-29T12:30:00Z",
 
   competition: {
     name: "Liga Ahorramás - Plata",
-    category: "U15M",
+    category: "U16M",
     phase: "Pre-Playoff",
     round: "J1",
   },
