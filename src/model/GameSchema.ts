@@ -1,5 +1,5 @@
 import {z} from "zod";
-import {PlayerStatsSchema} from "./PlayerSchema.ts";
+import {PlayerStatsSchema, AdvancedPlayerStatsSchema} from "./PlayerSchema.ts";
 import {TeamSchema} from "./TeamSchema.ts";
 import {VenueSchema} from "./VenueSchema.ts";
 
@@ -67,3 +67,12 @@ export const ScheduledGameSchema = GameSchema
     type: z.literal("scheduled"),
   });
 export type ScheduledGame = z.infer<typeof ScheduledGameSchema>;
+
+// advanced game has the same structure as Game, but with advanced player stats
+export const AdvancedGameSchema = GameSchema
+  .extend({
+    type: z.literal("advanced-game"),
+    playerStats: AdvancedPlayerStatsSchema,
+  });
+export type AdvancedGame = z.infer<typeof AdvancedGameSchema>;
+

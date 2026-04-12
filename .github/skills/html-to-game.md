@@ -1,6 +1,7 @@
 # Skill: HTML to Game Object
 
-Convert HTML content into a TypeScript `Game` object that validates against `GameSchema`.
+Convert HTML content into a TypeScript `Game` or `AdvancedGame` object that validates against
+`GameSchema` or `AdvancedGameSchema`.
 
 ## When to Use
 
@@ -10,7 +11,10 @@ Use this skill when the user provides:
 
 ## Output Format
 
-Generate a TypeScript file in `src/data/games/` with this structure:
+### Simple stats → `GameSchema`
+
+When the HTML stats section uses the **simple format** (no rebounds, assists, steals, turnovers, or blocks columns),
+generate a file using `GameSchema`:
 
 ```typescript
 import {GameSchema} from "../../model/GameSchema.ts";
@@ -19,9 +23,28 @@ import {venues} from "../venues.ts";
 import {teams} from "../teams.ts";
 
 export const game_YYYY_MM_DD_opponent: Game = GameSchema.parse({
-  // ... parsed data
+  // ... parsed data with type: "game"
 });
 ```
+
+### Advanced stats → `AdvancedGameSchema`
+
+When the HTML stats section uses the **advanced format** (contains columns for rebounds, assists, steals, turnovers,
+blocks, and fouls as committed+received), generate a file using `AdvancedGameSchema`:
+
+```typescript
+import {AdvancedGameSchema} from "../../model/GameSchema.ts";
+import type {AdvancedGame} from "../../model/GameSchema.ts";
+import {venues} from "../venues.ts";
+import {teams} from "../teams.ts";
+
+export const game_YYYY_MM_DD_opponent: AdvancedGame = AdvancedGameSchema.parse({
+  // ... parsed data with type: "advanced-game"
+});
+```
+
+See [Parsing Player Stats → How to Detect the Format](#how-to-detect-the-format) for how to determine which format
+to use.
 
 ---
 
@@ -50,6 +73,7 @@ The HTML input follows this structure:
 | `season` | Always fixed                    | `"2025-26"`                  |
 | `date`   | `date-is` attr + `🕜` paragraph | `"2026-03-22T17:15:00Z"`     |
 | `status` | Has `match-results` div?        | `"played"` or `"scheduled"`  |
+| `type`   | Simple or advanced stats?       | `"game"` or `"advanced-game"` |
 
 ### Field: `id`
 - Prefix `"S56-"` followed by the `id` attribute of the root `<div class="timeline-item">`
@@ -474,11 +498,11 @@ slightly (e.g. `"Faltas personales"` vs `"Faltas personales (cometidas + recibid
   - Example: `"1/1"` → `threePointers: 1`
 
 ### Field: `faults`
-- **Simple format**: value is a single integer
+- **Simple format**: value is a single integer → maps to `faults` as a plain number
   - Example: `"1"` → `faults: 1`
-- **Advanced format**: value is `"committed + received"` (separated by ` + `)
-  - Split by ` + `, use only the **first** number (committed) for `faults`
-  - Example: `"0 + 0"` → `faults: 0`
+- **Advanced format**: value is `"committed + received"` (separated by ` + `) → maps to `faults` as an object
+  - Split by ` + `, parse both as integers
+  - Example: `"0 + 0"` → `faults: { made: 0, received: 0 }`
 
 ### Field: `rebounds` (advanced format only)
 - Value format: `"offensive+defensive"` (separated by `+`, no spaces)
@@ -593,7 +617,10 @@ playerStats: {
     made: 1,
     received: 0,
   },
-  faults: 0,
+  faults: {
+    made: 0,
+    received: 0,
+  },
   plusMinus: -2,
   efficiency: 5,
 },
@@ -868,7 +895,7 @@ Examples:
 
 ## Add the new game to the game list
 
-After generating the new game file, update `src/hooks/useGames.ts`:
+After generating the new game file, update `src/hooks/useEvents.ts`:
 
 - add an import statement for it
 - include it in the returned array
