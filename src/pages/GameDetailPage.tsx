@@ -23,8 +23,8 @@ export function GameDetailPage() {
 
   return (
     <div>
-      <Link to="/games" className="text-sm text-orange-500 hover:underline mb-4 inline-block">
-        ← Volver a partidos
+      <Link to="/" className="text-sm text-orange-500 hover:underline mb-4 inline-block">
+        ← Volver al inicio
       </Link>
 
       <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
