@@ -24,6 +24,13 @@ const teamList: Team[] = [
     venue: venues["pez-volador"],
   },
   {
+    id: "coslada",
+    name: "CB Coslada",
+    logo: "/logos/coslada-transparent.png",
+    web: "https://cbcoslada.es",
+    venue: venues["plantio"],
+  },
+  {
     id: "distrito",
     name: "Distrito Olímpico",
     logo: "/logos/distrito-olimpico-transparent.png",
@@ -52,6 +59,13 @@ const teamList: Team[] = [
     venue: venues["juan-cierva"],
   },
   {
+    id: "laso",
+    name: "Laso Academy",
+    logo: "/logos/laso-transparent.png",
+    web: "https://lasoacademy.com",
+    venue: venues["default"],
+  },
+  {
     id: "real-madrid",
     name: "Real Madrid",
     logo: "/logos/real-madrid-transparent.png",
@@ -66,6 +80,13 @@ const teamList: Team[] = [
     venue: venues["espiniella"],
   },
   {
+    id: "san-jorge",
+    name: "San Jorge",
+    logo: "/logos/san-jorge.jpg",
+    web: "https://sanjorge.es",
+    venue: venues["diaz-miguel"],
+  },
+  {
     id: "tres-cantos",
     name: "Tres Cantos",
     logo: "/logos/tres-cantos-transparent.png",
@@ -73,18 +94,18 @@ const teamList: Team[] = [
     venue: venues["luz"],
   },
   {
+    id: "valcude",
+    name: "CD Valcude",
+    logo: "/logos/valcude-transparent.png",
+    web: "https://cdvalcude.es",
+    venue: venues["valcude"],
+  },
+  {
     id: "zentro",
     name: "Zentro Basket",
     logo: "/logos/zentro-transparent.png",
     web: "https://zentrobasket.com",
     venue: venues["diaz-miguel"],
-  },
-  {
-    id: "laso",
-    name: "Laso Academy",
-    logo: "/logos/laso-transparent.png",
-    web: "https://lasoacademy.com",
-    venue: venues["default"],
   },
 ];
 
