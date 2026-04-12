@@ -1,5 +1,6 @@
 import type {Game, ScheduledGame} from "../model/GameSchema.ts";
 import type {Announcement} from "../model/AnnouncementSchema.ts";
+import {game_2026_04_11_canoe} from "../data/games/2026-04-11-canoe.ts";
 import {game_2026_04_09_canoe} from "../data/games/2026-04-09-canoe.ts";
 import {game_2026_03_29_distrito} from "../data/games/2026-03-29-distrito.ts";
 import {game_2026_03_22_getafe} from "../data/games/2026-03-22-getafe.ts";
@@ -42,7 +43,7 @@ type Event = Announcement | Game | ScheduledGame;
 
 export function useEvents(): Event[] {
   return [
-    game_2026_01_01_torneo_reyes,
+    game_2026_04_11_canoe,
     game_2026_04_09_canoe,
     game_2026_03_29_distrito,
     game_2026_03_22_getafe,
@@ -69,6 +70,7 @@ export function useEvents(): Event[] {
     game_2026_01_03_laso,
     game_2026_01_02_zentro,
     game_2026_01_02_fuenlabrada,
+    game_2026_01_01_torneo_reyes,
     game_2025_12_13_san_jorge,
     game_2025_11_30_valcude,
     game_2025_11_27_coslada,
