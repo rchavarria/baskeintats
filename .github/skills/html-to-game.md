@@ -300,7 +300,11 @@ away: {
 
 ## Parsing Player Stats
 
-### HTML Source
+The HTML stats section comes in two variants: **simple** (fewer columns) and **advanced** (more columns with
+made/attempted breakdowns). Both share the same container structure, but differ in which columns are present and their
+value formats.
+
+### HTML Source — Simple Format
 
 ```html
 <div class="match-stats">
@@ -341,20 +345,109 @@ away: {
 </div>
 ```
 
+### HTML Source — Advanced Format
+
+The advanced format includes more columns and uses `made/attempted` for shooting stats, `offensive+defensive` for
+rebounds, and `committed + received` for blocks and fouls.
+
+```html
+<div class="match-stats">
+    <div class="stats">
+        <div class="stat-column small">
+            <div class="title" title="Minutos">M</div>
+            <div>24:20</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Puntos">PTS</div>
+            <div>7</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Tiros libres">TL</div>
+            <div>2/2</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="2 puntos">2PT</div>
+            <div>1/2</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Triples">3PT</div>
+            <div>1/1</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Rebotes (ofensivos + defensivos)">REB (O+D)</div>
+            <div>1+2</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Asistencias">AST</div>
+            <div>1</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Robos de balón (steals)">STL</div>
+            <div>0</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Pérdidas de balón (turnovers)">TOV</div>
+            <div>3</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Tapones (cometidos + recibidos)">BLK</div>
+            <div>1 + 0</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Faltas personales (cometidas + recibidas)">FP</div>
+            <div>0 + 0</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Más / Menos">+/-</div>
+            <div>-2</div>
+        </div>
+        <div class="stat-column small">
+            <div class="title" title="Eficiencia">EFF</div>
+            <div>5</div>
+        </div>
+    </div>
+</div>
+```
+
+### How to Detect the Format
+
+Look at the `title` attribute of every `<div class="title">` inside the stats section. If the stat section contains
+columns with titles starting with `"Rebotes"`, `"Asistencias"`, `"Robos"`, `"Pérdidas"`, or `"Tapones"`, it is the
+**advanced format**. Otherwise, it is the **simple format**.
+
 ### Column Mapping
 
-Identify each column by the `title` attribute of its inner `<div class="title">`:
+Identify each column by the `title` attribute of its inner `<div class="title">`. The `title` attribute may vary
+slightly (e.g. `"Faltas personales"` vs `"Faltas personales (cometidas + recibidas)"`), so match by **prefix** or
+**keyword** rather than exact string.
 
-| HTML `title`          | Label | TypeScript field                  | Format                     |
-|-----------------------|-------|-----------------------------------|----------------------------|
-| `"Minutos"`           | M     | `time`                            | `"MM:SS"` → `MM * 60 + SS` |
-| `"Puntos"`            | PTS   | *(validation only, not written)*  | integer                    |
-| `"Tiros libres"`      | TL    | `freeThrows: { made, attempted }` | `"made/attempted"`         |
-| `"2 puntos"`          | 2PT   | `fieldGoals`                      | integer                    |
-| `"Triples"`           | 3PT   | `threePointers`                   | integer                    |
-| `"Faltas personales"` | FP    | `faults`                          | integer                    |
-| `"Más / Menos"`       | +/-   | `plusMinus`                       | signed integer             |
-| `"Eficiencia"`        | EFF   | `efficiency`                      | integer                    |
+#### Columns present in both formats
+
+| HTML `title` keyword  | Label | TypeScript field                  | Simple format               | Advanced format |
+|-----------------------|-------|-----------------------------------|-----------------------------|-----------------|
+| `"Minutos"`           | M     | `time`                            | `"MM:SS"` → `MM * 60 + SS` | same            |
+| `"Puntos"`            | PTS   | *(validation only, not written)*  | integer                     | same            |
+| `"Tiros libres"`      | TL    | `freeThrows: { made, attempted }` | `"made/attempted"`          | same            |
+| `"Más / Menos"`       | +/-   | `plusMinus`                       | signed integer              | same            |
+| `"Eficiencia"`        | EFF   | `efficiency`                      | integer                     | same            |
+
+#### Columns with format differences between simple and advanced
+
+| HTML `title` keyword    | Label | TypeScript field | Simple format  | Advanced format          |
+|-------------------------|-------|------------------|----------------|--------------------------|
+| `"2 puntos"`            | 2PT   | `fieldGoals`     | integer        | `"made/attempted"`       |
+| `"Triples"`             | 3PT   | `threePointers`  | integer        | `"made/attempted"`       |
+| `"Faltas personales"`   | FP    | `faults`         | integer        | `"committed + received"` |
+
+#### Columns only in the advanced format
+
+| HTML `title` keyword                 | Label     | TypeScript field | Format                  |
+|--------------------------------------|-----------|------------------|-------------------------|
+| `"Rebotes"`                          | REB (O+D) | `rebounds`       | `"offensive+defensive"` |
+| `"Asistencias"`                      | AST       | `assists`        | integer                 |
+| `"Robos de balón"` / `"steals"`     | STL       | `steals`         | integer                 |
+| `"Pérdidas de balón"` / `"turnovers"` | TOV     | `turnovers`      | integer                 |
+| `"Tapones"`                          | BLK       | `blocks`         | `"committed + received"` |
 
 ### Field: `time`
 - Value format: `"MM:SS"` (minutes and seconds)
@@ -365,6 +458,54 @@ Identify each column by the `title` attribute of its inner `<div class="title">`
 - Value format: `"made/attempted"`
 - Split by `/`, parse both as integers
 - Example: `"1/3"` → `freeThrows: { made: 1, attempted: 3 }`
+
+### Field: `fieldGoals`
+- **Simple format**: value is a single integer (made count only)
+  - Example: `"1"` → `fieldGoals: 1`
+- **Advanced format**: value is `"made/attempted"`
+  - Split by `/`, use only the **first** number (made count) for `fieldGoals`
+  - Example: `"1/2"` → `fieldGoals: 1`
+
+### Field: `threePointers`
+- **Simple format**: value is a single integer (made count only)
+  - Example: `"0"` → `threePointers: 0`
+- **Advanced format**: value is `"made/attempted"`
+  - Split by `/`, use only the **first** number (made count) for `threePointers`
+  - Example: `"1/1"` → `threePointers: 1`
+
+### Field: `faults`
+- **Simple format**: value is a single integer
+  - Example: `"1"` → `faults: 1`
+- **Advanced format**: value is `"committed + received"` (separated by ` + `)
+  - Split by ` + `, use only the **first** number (committed) for `faults`
+  - Example: `"0 + 0"` → `faults: 0`
+
+### Field: `rebounds` (advanced format only)
+- Value format: `"offensive+defensive"` (separated by `+`, no spaces)
+- Split by `+`, parse both as integers
+- Example: `"1+2"` → `rebounds: { offensive: 1, defensive: 2 }`
+- **When absent** (simple format): omit the field entirely
+
+### Field: `assists` (advanced format only)
+- Value is a single integer
+- Example: `"1"` → `assists: 1`
+- **When absent** (simple format): omit the field entirely
+
+### Field: `steals` (advanced format only)
+- Value is a single integer
+- Example: `"0"` → `steals: 0`
+- **When absent** (simple format): omit the field entirely
+
+### Field: `turnovers` (advanced format only)
+- Value is a single integer
+- Example: `"3"` → `turnovers: 3`
+- **When absent** (simple format): omit the field entirely
+
+### Field: `blocks` (advanced format only)
+- Value format: `"committed + received"` (separated by ` + `)
+- Split by ` + `, parse both as integers
+- Example: `"1 + 0"` → `blocks: { made: 1, received: 0 }`
+- **When absent** (simple format): omit the field entirely
 
 ### Field: `plusMinus`
 - Can be negative — parse as signed integer
@@ -378,7 +519,7 @@ Identify each column by the `title` attribute of its inner `<div class="title">`
   ```
 - If `expected_points !== PTS`, log a warning before generating the file
 
-### Example
+### Example — Simple Format
 
 **Input HTML:**
 ```html
@@ -407,6 +548,54 @@ playerStats: {
   faults: 1,
   plusMinus: 1,
   efficiency: 1,
+},
+```
+
+### Example — Advanced Format
+
+**Input HTML:**
+```html
+<div class="stat-column small"><div class="title" title="Minutos">M</div><div>24:20</div></div>
+<div class="stat-column small"><div class="title" title="Puntos">PTS</div><div>7</div></div>
+<div class="stat-column small"><div class="title" title="Tiros libres">TL</div><div>2/2</div></div>
+<div class="stat-column small"><div class="title" title="2 puntos">2PT</div><div>1/2</div></div>
+<div class="stat-column small"><div class="title" title="Triples">3PT</div><div>1/1</div></div>
+<div class="stat-column small"><div class="title" title="Rebotes (ofensivos + defensivos)">REB (O+D)</div><div>1+2</div></div>
+<div class="stat-column small"><div class="title" title="Asistencias">AST</div><div>1</div></div>
+<div class="stat-column small"><div class="title" title="Robos de balón (steals)">STL</div><div>0</div></div>
+<div class="stat-column small"><div class="title" title="Pérdidas de balón (turnovers)">TOV</div><div>3</div></div>
+<div class="stat-column small"><div class="title" title="Tapones (cometidos + recibidos)">BLK</div><div>1 + 0</div></div>
+<div class="stat-column small"><div class="title" title="Faltas personales (cometidas + recibidas)">FP</div><div>0 + 0</div></div>
+<div class="stat-column small"><div class="title" title="Más / Menos">+/-</div><div>-2</div></div>
+<div class="stat-column small"><div class="title" title="Eficiencia">EFF</div><div>5</div></div>
+```
+
+**Validation:** `2 * 1 + 3 * 1 + 2 = 7` ✓ matches PTS
+
+**Output TypeScript:**
+```typescript
+playerStats: {
+  time: 24 * 60 + 20,
+  fieldGoals: 1,
+  threePointers: 1,
+  freeThrows: {
+    made: 2,
+    attempted: 2,
+  },
+  rebounds: {
+    offensive: 1,
+    defensive: 2,
+  },
+  assists: 1,
+  steals: 0,
+  turnovers: 3,
+  blocks: {
+    made: 1,
+    received: 0,
+  },
+  faults: 0,
+  plusMinus: -2,
+  efficiency: 5,
 },
 ```
 

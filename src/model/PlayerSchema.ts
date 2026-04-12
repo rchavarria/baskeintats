@@ -13,6 +13,17 @@ export const PlayerStatsSchema = z.object({
     made: z.number().int().nonnegative(),
     attempted: z.number().int().nonnegative(),
   }),
+  rebounds: z.object({
+    offensive: z.number().int().nonnegative(),
+    defensive: z.number().int().nonnegative(),
+  }).optional(),
+  assists: z.number().int().nonnegative().optional(),
+  steals: z.number().int().nonnegative().optional(),
+  turnovers: z.number().int().nonnegative().optional(),
+  blocks: z.object({
+    made: z.number().int().nonnegative(),
+    received: z.number().int().nonnegative(),
+  }).optional(),
   faults: z.number().int().nonnegative(),
   plusMinus: z.number().int(),
   efficiency: z.number().int(),
@@ -31,11 +42,16 @@ export function derivePlayerStats(stats: PlayerStats): DerivedPlayerStats {
     },
 
     points: 3 * stats.threePointers + 2 * stats.fieldGoals + stats.freeThrows.made,
+
+    totalRebounds: stats.rebounds
+      ? stats.rebounds.offensive + stats.rebounds.defensive
+      : undefined,
   };
 }
 
 export interface DerivedPlayerStats extends PlayerStats {
   points: number;
+  totalRebounds?: number;
 
   percentage: {
     fieldGoals: number;
