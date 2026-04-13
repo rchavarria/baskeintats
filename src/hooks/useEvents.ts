@@ -29,16 +29,26 @@ import {game_2026_01_03_laso} from "../data/games/2026-01-03-laso.ts";
 import {game_2026_01_02_zentro} from "../data/games/2026-01-02-zentro.ts";
 import {game_2026_01_02_fuenlabrada} from "../data/games/2026-01-02-fuenlabrada.ts";
 import {game_2026_01_01_torneo_reyes} from "../data/games/2026-01-01-torneo-reyes.ts";
+import {game_2025_12_14_fuenlabrada} from "../data/games/2025-12-14-fuenlabrada.ts";
 import {game_2025_12_13_san_jorge} from "../data/games/2025-12-13-san-jorge.ts";
+import {game_2025_12_13_patrocinio} from "../data/games/2025-12-13-patrocinio.ts";
 import {game_2025_11_30_valcude} from "../data/games/2025-11-30-valcude.ts";
+import {game_2025_11_30_estudiantes} from "../data/games/2025-11-30-estudiantes.ts";
 import {game_2025_11_27_coslada} from "../data/games/2025-11-27-coslada.ts";
+import {game_2025_11_16_rozas} from "../data/games/2025-11-16-rozas.ts";
 import {game_2025_11_15_zentro} from "../data/games/2025-11-15-zentro.ts";
 import {game_2025_11_09_alcorcon} from "../data/games/2025-11-09-alcorcon.ts";
+import {game_2025_11_09_real_madrid} from "../data/games/2025-11-09-real-madrid.ts";
+import {game_2025_10_26_fuenlabrada} from "../data/games/2025-10-26-fuenlabrada.ts";
 import {game_2025_10_25_san_jorge} from "../data/games/2025-10-25-san-jorge.ts";
 import {game_2025_10_19_valcude} from "../data/games/2025-10-19-valcude.ts";
+import {game_2025_10_18_estudiantes} from "../data/games/2025-10-18-estudiantes.ts";
+import {game_2025_10_05_patrocinio} from "../data/games/2025-10-05-patrocinio.ts";
 import {game_2025_10_04_coslada} from "../data/games/2025-10-04-coslada.ts";
 import {game_2025_09_28_zentro} from "../data/games/2025-09-28-zentro.ts";
+import {game_2025_09_28_rozas} from "../data/games/2025-09-28-rozas.ts";
 import {game_2025_09_20_alcorcon} from "../data/games/2025-09-20-alcorcon.ts";
+import {game_2025_09_20_real_madrid} from "../data/games/2025-09-20-real-madrid.ts";
 
 type Event = Announcement | Game | ScheduledGame | AdvancedGame;
 
@@ -73,15 +83,25 @@ export function useEvents(): Event[] {
     game_2026_01_02_zentro,
     game_2026_01_02_fuenlabrada,
     game_2026_01_01_torneo_reyes,
+    game_2025_12_14_fuenlabrada,
     game_2025_12_13_san_jorge,
+    game_2025_12_13_patrocinio,
     game_2025_11_30_valcude,
+    game_2025_11_30_estudiantes,
     game_2025_11_27_coslada,
+    game_2025_11_16_rozas,
     game_2025_11_15_zentro,
     game_2025_11_09_alcorcon,
+    game_2025_11_09_real_madrid,
+    game_2025_10_26_fuenlabrada,
     game_2025_10_25_san_jorge,
     game_2025_10_19_valcude,
+    game_2025_10_18_estudiantes,
+    game_2025_10_05_patrocinio,
     game_2025_10_04_coslada,
     game_2025_09_28_zentro,
+    game_2025_09_28_rozas,
     game_2025_09_20_alcorcon,
+    game_2025_09_20_real_madrid,
   ];
 }
