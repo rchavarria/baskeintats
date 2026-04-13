@@ -1,6 +1,6 @@
 # Backlog
 
-- revisar partidos convertidos de la primera fase
+- revisar partidos convertidos de la primera fase (del 2010 y del 2011)
 - parsear HTML de partidos con estadisticas avanzadas y crear advancedPlayerStats en cada GameSchema
 - convertir varios anuncios a AnnouncementSchema
 - convertir partidos del torneo de Reyes
