@@ -38,6 +38,13 @@ const teamList: Team[] = [
     venue: venues["circular"],
   },
   {
+    id: "estudiantes",
+    name: "Estudiantes",
+    logo: "/logos/estudiantes.png",
+    web: "https://movistarestudiantes.com",
+    venue: venues["caja-magica"],
+  },
+  {
     id: "fuenlabrada",
     name: "CB Fuenlabrada",
     logo: "/logos/fuenlabrada.jpg",
@@ -64,6 +71,13 @@ const teamList: Team[] = [
     logo: "/logos/laso-transparent.png",
     web: "https://lasoacademy.com",
     venue: venues["default"],
+  },
+  {
+    id: "patrocinio",
+    name: "Patrocinio San José",
+    logo: "/logos/patrocinio-transparent.png",
+    web: "https://patrocinio.es",
+    venue: venues["triangulo-oro"],
   },
   {
     id: "real-madrid",
