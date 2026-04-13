@@ -1,5 +1,6 @@
-import type {Game, ScheduledGame, AdvancedGame} from "../model/GameSchema.ts";
+import type {AdvancedGame, Game, ScheduledGame} from "../model/GameSchema.ts";
 import type {Announcement} from "../model/AnnouncementSchema.ts";
+import {game_2026_04_12_canoe} from "../data/games/2026-04-12-canoe.ts";
 import {game_2026_04_11_canoe} from "../data/games/2026-04-11-canoe.ts";
 import {game_2026_04_09_canoe} from "../data/games/2026-04-09-canoe.ts";
 import {game_2026_03_29_distrito} from "../data/games/2026-03-29-distrito.ts";
@@ -43,6 +44,7 @@ type Event = Announcement | Game | ScheduledGame | AdvancedGame;
 
 export function useEvents(): Event[] {
   return [
+    game_2026_04_12_canoe,
     game_2026_04_11_canoe,
     game_2026_04_09_canoe,
     game_2026_03_29_distrito,

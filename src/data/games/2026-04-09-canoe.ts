@@ -66,7 +66,7 @@ export const game_2026_04_09_canoe: Game = GameSchema.parse({
     {
       icon: "💼",
       label: "Informe de la jornada",
-      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15632&informe=resultados-clasificacion-proxima&ultima_jornada=106408&proxima_jornada=106408",
+      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15632&informe=resultados-clasificacion-proxima&ultima_jornada=106410&proxima_jornada=-1",
     },
     {
       icon: "📰",
@@ -76,7 +76,7 @@ export const game_2026_04_09_canoe: Game = GameSchema.parse({
     {
       icon: "📰",
       label: "Crónica del partido",
-      url: "https://www.fbm.es/noticia-",
+      url: "https://fbm.es/noticia-123-13212/cadetes-e-infantiles-aseguran-la-emoci%C3%B3n",
     },
   ],
 
