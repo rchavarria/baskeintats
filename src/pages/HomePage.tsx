@@ -17,6 +17,7 @@ export function HomePage() {
               switch (e.type) {
               case 'announcement':
                 return <div>Announcement: {e.id}</div>;
+              case 'advanced-game':
               case 'game':
               default:
                 return <GameCard key={e.id} game={e} />;
