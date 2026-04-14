@@ -29,6 +29,9 @@ import {game_2026_01_03_laso} from "../data/games/2026-01-03-laso.ts";
 import {game_2026_01_02_zentro} from "../data/games/2026-01-02-zentro.ts";
 import {game_2026_01_02_fuenlabrada} from "../data/games/2026-01-02-fuenlabrada.ts";
 import {announcement_2026_01_01_torneo_reyes} from "../data/games/2026-01-01-torneo-reyes.ts";
+import {announcement_2025_12_26_torneo_cyl} from "../data/games/2025-12-26-torneo-cyl.ts";
+import {announcement_2025_12_19_torneo_teruel} from "../data/games/2025-12-19-torneo-teruel.ts";
+import {announcement_2025_12_17_convocatoria_fbm_1} from "../data/games/2025-12-17-convocatoria-fbm-1.ts";
 import {game_2025_12_14_fuenlabrada} from "../data/games/2025-12-14-fuenlabrada.ts";
 import {game_2025_12_13_san_jorge} from "../data/games/2025-12-13-san-jorge.ts";
 import {game_2025_12_13_patrocinio} from "../data/games/2025-12-13-patrocinio.ts";
@@ -37,6 +40,7 @@ import {game_2025_11_30_estudiantes} from "../data/games/2025-11-30-estudiantes.
 import {game_2025_11_27_coslada} from "../data/games/2025-11-27-coslada.ts";
 import {game_2025_11_16_rozas} from "../data/games/2025-11-16-rozas.ts";
 import {game_2025_11_15_zentro} from "../data/games/2025-11-15-zentro.ts";
+import {announcement_2025_11_18_torneo_fll} from "../data/games/2025-11-18-torneo-fll.ts";
 import {game_2025_11_09_alcorcon} from "../data/games/2025-11-09-alcorcon.ts";
 import {game_2025_11_09_real_madrid} from "../data/games/2025-11-09-real-madrid.ts";
 import {game_2025_10_26_fuenlabrada} from "../data/games/2025-10-26-fuenlabrada.ts";
@@ -49,6 +53,7 @@ import {game_2025_09_28_zentro} from "../data/games/2025-09-28-zentro.ts";
 import {game_2025_09_28_rozas} from "../data/games/2025-09-28-rozas.ts";
 import {game_2025_09_20_alcorcon} from "../data/games/2025-09-20-alcorcon.ts";
 import {game_2025_09_20_real_madrid} from "../data/games/2025-09-20-real-madrid.ts";
+import {announcement_2025_08_26_comienzo_temporada} from "../data/games/2025-08-26-comienzo-temporada.ts";
 
 type Event = Announcement | Game | ScheduledGame | AdvancedGame;
 
@@ -83,6 +88,9 @@ export function useEvents(): Event[] {
     game_2026_01_02_zentro,
     game_2026_01_02_fuenlabrada,
     announcement_2026_01_01_torneo_reyes,
+    announcement_2025_12_26_torneo_cyl,
+    announcement_2025_12_19_torneo_teruel,
+    announcement_2025_12_17_convocatoria_fbm_1,
     game_2025_12_14_fuenlabrada,
     game_2025_12_13_san_jorge,
     game_2025_12_13_patrocinio,
@@ -91,6 +99,7 @@ export function useEvents(): Event[] {
     game_2025_11_27_coslada,
     game_2025_11_16_rozas,
     game_2025_11_15_zentro,
+    announcement_2025_11_18_torneo_fll,
     game_2025_11_09_alcorcon,
     game_2025_11_09_real_madrid,
     game_2025_10_26_fuenlabrada,
@@ -103,5 +112,6 @@ export function useEvents(): Event[] {
     game_2025_09_28_rozas,
     game_2025_09_20_alcorcon,
     game_2025_09_20_real_madrid,
+    announcement_2025_08_26_comienzo_temporada,
   ];
 }
