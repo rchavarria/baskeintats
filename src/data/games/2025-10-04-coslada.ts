@@ -45,7 +45,12 @@ export const game_2025_10_04_coslada: Game = GameSchema.parse({
 
   videos: {
     official: "https://youtu.be/5d3blbxuQ6k",
-    others: [],
+    others: [
+      {
+        label: "Canal CBA",
+        url: "https://youtu.be/Hw6a0Z-qNyU",
+      },
+    ],
   },
 
   recap: {

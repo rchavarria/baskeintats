@@ -45,7 +45,12 @@ export const game_2025_11_09_alcorcon: Game = GameSchema.parse({
 
   videos: {
     official: "https://youtu.be/_sLqayLdhh8",
-    others: [],
+    others: [
+      {
+        label: "Canal CBA",
+        url: "https://youtu.be/y9BfzuewGg0",
+      },
+    ],
   },
 
   recap: {

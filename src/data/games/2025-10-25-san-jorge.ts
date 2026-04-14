@@ -45,7 +45,12 @@ export const game_2025_10_25_san_jorge: Game = GameSchema.parse({
 
   videos: {
     official: "https://youtu.be/aXnS3mihzK4",
-    others: [],
+    others: [
+      {
+        label: "Canal CBA",
+        url: "https://youtu.be/hXp_GfSsPf8",
+      },
+    ],
   },
 
   recap: {

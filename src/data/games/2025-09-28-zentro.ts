@@ -45,7 +45,12 @@ export const game_2025_09_28_zentro: Game = GameSchema.parse({
 
   videos: {
     official: "https://youtu.be/FTDcywtaAY8",
-    others: [],
+    others: [
+      {
+        label: "Canal CBA",
+        url: "https://youtu.be/F02GHRZduq8",
+      },
+    ],
   },
 
   recap: {

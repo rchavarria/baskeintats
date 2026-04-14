@@ -45,7 +45,12 @@ export const game_2025_10_19_valcude: Game = GameSchema.parse({
 
   videos: {
     official: "https://youtu.be/Zib5XHcfqlU",
-    others: [],
+    others: [
+      {
+        label: "Canal CBA",
+        url: "https://youtu.be/dYcS0p8eyy0",
+      },
+    ],
   },
 
   recap: {
