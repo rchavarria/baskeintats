@@ -1,7 +1,7 @@
 # Backlog
 
 - convertir varios anuncios a AnnouncementSchema
-  - leucemia y linfoma, podría añadir el schedule, algunos partidos al menos, los priemeros de "fase de grupos"
+  - :2026-04-14 ✅ leucemia y linfoma, podría añadir el schedule, algunos partidos al menos, los primeros de "fase de grupos"
   - en el detalle, las fechas de los schedules, mostrarlas mejor, no ahí al bulto
 - convertir partidos del torneo de Reyes
 - convertir partidos del torneo de Teruel

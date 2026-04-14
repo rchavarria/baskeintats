@@ -21,6 +21,25 @@ export const announcement_2025_11_18_torneo_fll: Announcement = AnnouncementSche
     "Allí estuvimos el año pasado, con la Selección Infantil de Madrid",
   ],
 
+  schedule: [
+    {
+      label: "Grupos: Real Madrid",
+      date: "2025-11-21T17:45:00Z",
+    },
+    {
+      label: "Grupos: Joventut",
+      date: "2025-11-22T09:15:00Z",
+    },
+    {
+      label: "3º-4º Puesto",
+      date: "2025-11-23T07:00:00Z",
+    },
+    {
+      label: "Final",
+      date: "2025-11-23T10:45:00Z",
+    },
+  ],
+
   references: [
     {
       type: "social-media",
