@@ -2,9 +2,10 @@ import {Link, useParams} from "react-router-dom";
 import {useEvents} from "../hooks/useEvents.ts";
 import {EmptyState} from "../components/ui/EmptyState";
 import {DateTimeDisplay} from "../components/ui/DateTimeDisplay.tsx";
-import type {Announcement} from "../model/AnnouncementSchema.ts";
+import {TimeDisplay} from "../components/ui/TimeDisplay.tsx";
 import {AnnouncementTypeEmoji} from "../components/events/AnnouncementEmojis.tsx";
 import {ReferenceList} from "../components/events/ReferenceList.tsx";
+import {DateDisplay} from "../components/ui/DateDisplay.tsx";
 
 export function AnnouncementDetailPage() {
   const { announcementId } = useParams<{ announcementId: string }>();
@@ -51,12 +52,21 @@ export function AnnouncementDetailPage() {
       {announcement.schedule && announcement.schedule.length > 0 && (
         <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
           <h2 className="font-semibold text-gray-700 mb-3">📆 Calendario</h2>
-          <div className="space-y-2">
+          <div className="space-y-3 flex flex-col items-center">
             {announcement.schedule.map((entry, i) => (
-              <div key={i} className="flex items-center gap-3 text-sm text-gray-700">
-                <DateTimeDisplay isoDate={entry.date}/>
-                {entry.label && <span className="text-gray-500">· {entry.label}</span>}
-                {entry.opponent && <span className="text-gray-500">vs {entry.opponent}</span>}
+              <div key={i} className="flex flex-col gap-1 min-w-[40%] border border-gray-200 rounded-lg p-3">
+                {entry.label && (
+                  <span className="text-base font-semibold text-gray-800 text-center">{entry.label}</span>
+                )}
+                <span className="text-sm text-gray-600">
+                  <DateDisplay isoDate={entry.date}/>
+                </span>
+                <span className="text-sm text-gray-500">
+                  <TimeDisplay isoDate={entry.date}/>
+                </span>
+                {entry.opponent && (
+                  <span className="text-sm text-gray-500">🆚 {entry.opponent}</span>
+                )}
               </div>
             ))}
           </div>

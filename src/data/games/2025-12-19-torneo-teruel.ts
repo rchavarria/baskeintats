@@ -26,14 +26,17 @@ export const announcement_2025_12_19_torneo_teruel: Announcement = AnnouncementS
     {
       label: "Fase de grupos - J1",
       date: "2025-12-19T10:00:00Z",
+      opponent: "Unicaja Málaga",
     },
     {
       label: "Fase de grupos - J2",
       date: "2025-12-19T17:00:00Z",
+      opponent: "NB Torrent",
     },
     {
       label: "Fase de grupos - J3",
       date: "2025-12-20T10:00:00Z",
+      opponent: "El Olivar",
     },
     {
       label: "Cuartos",

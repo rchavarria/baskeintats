@@ -18,19 +18,22 @@ export const announcement_2025_12_26_torneo_cyl: Announcement = AnnouncementSche
   description: [
     "Torneo cadete de segundo año, con las selecciones cadete de Castilla y León y Canarias para su preparación para el CESA 2026",
     "Nosotros somos un año menos, pero seguro que les vamos a dar guerra",
+    "Es un torneo en formato copa (semis y final)",
   ],
 
   schedule: [
     {
-      label: "Es un torneo en formato copa (semis y final)",
+      label: "Semifinal",
       date: "2025-12-27T18:45:00Z",
       opponent: "Canarias",
     },
     {
+      label: "3º-4º Puesto",
       date: "2025-12-28T10:00:00Z",
       opponent: "Castilla y León / Oporto",
     },
     {
+      label: "Final",
       date: "2025-12-28T12:00:00Z",
       opponent: "Castilla y León / Oporto",
     },

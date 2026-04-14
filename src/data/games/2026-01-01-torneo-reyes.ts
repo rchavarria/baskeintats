@@ -24,10 +24,12 @@ export const announcement_2026_01_01_torneo_reyes: Announcement = AnnouncementSc
     {
       label: "Fase de grupos - J1",
       date: "2026-01-02T10:30:00Z",
+      opponent: "Fuenlabrada",
     },
     {
       label: "Fase de grupos - J2",
       date: "2026-01-02T18:30:00Z",
+      opponent: "Zentro",
     },
     {
       label: "Semifinal #1",
