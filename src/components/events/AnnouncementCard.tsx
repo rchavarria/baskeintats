@@ -1,21 +1,13 @@
 import {Link} from "react-router-dom";
 import type {Announcement} from "../../model/AnnouncementSchema.ts";
 import {DateDisplay} from "../ui/DateDisplay.tsx";
-
-const emojiMap: Record<Announcement["announcementType"], string> = {
-  "tournament": "🏆",
-  "friendly-game": "🫂",
-  "call-up": "📢",
-  "milestone": "🚀",
-};
+import {AnnouncementTypeEmoji} from "./AnnouncementEmojis.tsx";
 
 interface AnnouncementCardProps {
   announcement: Announcement;
 }
 
 export function AnnouncementCard({ announcement }: AnnouncementCardProps) {
-  const emoji = emojiMap[announcement.announcementType] || "❌➡️❓"
-
   return (
     <Link
       to={`/announcements/${announcement.id}`}
@@ -26,7 +18,7 @@ export function AnnouncementCard({ announcement }: AnnouncementCardProps) {
         <span>{announcement.category}</span>
       </div>
       <div className="flex items-center justify-center gap-3">
-        <span className="text-2xl">{emoji}</span>
+        <AnnouncementTypeEmoji type={announcement.announcementType} className="text-2xl" />
         <p className="font-semibold text-gray-800 text-center">{announcement.title}</p>
       </div>
       <div className="mt-2 text-center text-xs text-gray-400">

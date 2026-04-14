@@ -3,21 +3,7 @@ import {useEvents} from "../hooks/useEvents.ts";
 import {EmptyState} from "../components/ui/EmptyState";
 import {DateTimeDisplay} from "../components/ui/DateTimeDisplay.tsx";
 import type {Announcement} from "../model/AnnouncementSchema.ts";
-
-const emojiMap: Record<Announcement["announcementType"], string> = {
-  "tournament": "🏆",
-  "friendly-game": "🫂",
-  "call-up": "📢",
-  "milestone": "🚀",
-};
-
-const referenceEmoji: Record<string, string> = {
-  "social-media": "📱",
-  "article": "📰",
-  "document": "💼",
-  "photo": "📸",
-  "video": "🎥",
-};
+import {AnnouncementTypeEmoji, ReferenceTypeEmoji} from "../components/events/AnnouncementEmojis.tsx";
 
 export function AnnouncementDetailPage() {
   const { announcementId } = useParams<{ announcementId: string }>();
@@ -27,8 +13,6 @@ export function AnnouncementDetailPage() {
   if (!announcement || announcement.type !== "announcement") {
     return <EmptyState message="Anuncio no encontrado" />;
   }
-
-  const emoji = emojiMap[announcement.announcementType];
 
   return (
     <div>
@@ -44,7 +28,7 @@ export function AnnouncementDetailPage() {
         </div>
 
         <div className="flex items-center justify-center gap-3 mb-4">
-          <span className="text-3xl">{emoji}</span>
+          <AnnouncementTypeEmoji type={announcement.announcementType} className="text-3xl" />
           <h1 className="text-xl font-bold text-gray-900 text-center">{announcement.title}</h1>
         </div>
 
@@ -86,7 +70,7 @@ export function AnnouncementDetailPage() {
              href={ref.url}
              target="_blank" rel="noopener noreferrer"
              className="block text-sm text-blue-500 hover:underline mb-1">
-            {referenceEmoji[ref.type]} {ref.label}
+            <ReferenceTypeEmoji type={ref.type} /> {ref.label}
           </a>
         ))}
       </div>
