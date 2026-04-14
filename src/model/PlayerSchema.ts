@@ -22,8 +22,14 @@ export type PlayerStats = z.infer<typeof PlayerStatsSchema>;
 
 export const AdvancedPlayerStatsSchema = z.object({
   time: z.number().int().nonnegative(),
-  fieldGoals: z.number().int().nonnegative(),
-  threePointers: z.number().int().nonnegative(),
+  fieldGoals: z.object({
+    made: z.number().int().nonnegative(),
+    attempted: z.number().int().nonnegative(),
+  }),
+  threePointers: z.object({
+    made: z.number().int().nonnegative(),
+    attempted: z.number().int().nonnegative(),
+  }),
   freeThrows: z.object({
     made: z.number().int().nonnegative(),
     attempted: z.number().int().nonnegative(),
@@ -78,12 +84,12 @@ export function deriveAdvancedPlayerStats(stats: AdvancedPlayerStats): DerivedAd
     ...stats,
 
     percentage: {
-      fieldGoals: safePercentage(stats.fieldGoals, 0),
-      threePointers: safePercentage(stats.threePointers, 0),
+      fieldGoals: safePercentage(stats.fieldGoals.made, stats.fieldGoals.attempted),
+      threePointers: safePercentage(stats.threePointers.made, stats.threePointers.attempted),
       freeThrows: safePercentage(stats.freeThrows.made, stats.freeThrows.attempted),
     },
 
-    points: 3 * stats.threePointers + 2 * stats.fieldGoals + stats.freeThrows.made,
+    points: 3 * stats.threePointers.made + 2 * stats.fieldGoals.made + stats.freeThrows.made,
     totalRebounds: stats.rebounds.offensive + stats.rebounds.defensive,
   };
 }

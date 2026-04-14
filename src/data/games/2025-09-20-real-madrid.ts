@@ -4,7 +4,7 @@ import {venues} from "../venues.ts";
 import {teams} from "../teams.ts";
 
 export const game_2025_09_20_real_madrid: AdvancedGame = AdvancedGameSchema.parse({
-  id: "S56-liga-u16-j1",
+  id: "S56-liga-oro-j1",
   type: "advanced-game",
   season: "2025-26",
   date: "2025-09-20T09:00:00Z",
@@ -12,7 +12,7 @@ export const game_2025_09_20_real_madrid: AdvancedGame = AdvancedGameSchema.pars
   competition: {
     name: "Liga Ahorramás - Oro",
     category: "U16M",
-    phase: "",
+    phase: "Fase 1 - Grupo 1",
     round: "J1",
   },
 
@@ -32,8 +32,14 @@ export const game_2025_09_20_real_madrid: AdvancedGame = AdvancedGameSchema.pars
 
   playerStats: {
     time: 17 * 60 + 48,
-    fieldGoals: 2,
-    threePointers: 0,
+    fieldGoals: {
+      made: 2,
+      attempted: 5,
+    },
+    threePointers: {
+      made: 0,
+      attempted: 1,
+    },
     freeThrows: {
       made: 0,
       attempted: 0,

@@ -487,15 +487,15 @@ slightly (e.g. `"Faltas personales"` vs `"Faltas personales (cometidas + recibid
 - **Simple format**: value is a single integer (made count only)
   - Example: `"1"` → `fieldGoals: 1`
 - **Advanced format**: value is `"made/attempted"`
-  - Split by `/`, use only the **first** number (made count) for `fieldGoals`
-  - Example: `"1/2"` → `fieldGoals: 1`
+  - Split by `/`, parse both as integers
+  - Example: `"1/2"` → `fieldGoals: { made: 1, attempted: 2 }`
 
 ### Field: `threePointers`
 - **Simple format**: value is a single integer (made count only)
   - Example: `"0"` → `threePointers: 0`
 - **Advanced format**: value is `"made/attempted"`
-  - Split by `/`, use only the **first** number (made count) for `threePointers`
-  - Example: `"1/1"` → `threePointers: 1`
+  - Split by `/`, parse both as integers
+  - Example: `"1/1"` → `threePointers: { made: 1, attempted: 1 }`
 
 ### Field: `faults`
 - **Simple format**: value is a single integer → maps to `faults` as a plain number
@@ -538,9 +538,14 @@ slightly (e.g. `"Faltas personales"` vs `"Faltas personales (cometidas + recibid
 ### Validation: Points
 - `PTS` from HTML is **not written** to TypeScript — it can be derived
 - Use it to verify the other stats are consistent:
-  ```
-  expected_points = 2 * fieldGoals + 3 * threePointers + freeThrows.made
-  ```
+  - **Simple format:**
+    ```
+    expected_points = 2 * fieldGoals + 3 * threePointers + freeThrows.made
+    ```
+  - **Advanced format:**
+    ```
+    expected_points = 2 * fieldGoals.made + 3 * threePointers.made + freeThrows.made
+    ```
 - If `expected_points !== PTS`, log a warning before generating the file
 
 ### Example — Simple Format
@@ -600,8 +605,14 @@ playerStats: {
 ```typescript
 playerStats: {
   time: 24 * 60 + 20,
-  fieldGoals: 1,
-  threePointers: 1,
+  fieldGoals: {
+    made: 1,
+    attempted: 2,
+  },
+  threePointers: {
+    made: 1,
+    attempted: 1,
+  },
   freeThrows: {
     made: 2,
     attempted: 2,

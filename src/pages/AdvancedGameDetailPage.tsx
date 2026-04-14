@@ -79,11 +79,11 @@ export function AdvancedGameDetailPage() {
               <p className="text-xs text-gray-400">Puntos</p>
             </div>
             <div>
-              <p className="text-lg font-bold text-gray-900">{derived.fieldGoals}/-</p>
+              <p className="text-lg font-bold text-gray-900">{derived.fieldGoals.made}/{derived.fieldGoals.attempted}</p>
               <p className="text-xs text-gray-400">TC ({derived.percentage.fieldGoals}%)</p>
             </div>
             <div>
-              <p className="text-lg font-bold text-gray-900">{derived.threePointers}/-</p>
+              <p className="text-lg font-bold text-gray-900">{derived.threePointers.made}/{derived.threePointers.attempted}</p>
               <p className="text-xs text-gray-400">3P ({derived.percentage.threePointers}%)</p>
             </div>
             <div>
