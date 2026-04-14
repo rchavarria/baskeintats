@@ -49,14 +49,14 @@ The HTML input follows this structure:
 
 ### Metadata Extraction Rules
 
-| Field    | HTML Source                | Example                      |
-|----------|----------------------------|------------------------------|
-| `id`     | `"S56-"` + `<div id="...">` | `"S56-torneo-reyes"`         |
-| `type`   | Always fixed               | `"announcement"`             |
-| `season` | Always fixed               | `"2025-26"`                  |
-| `date`   | `date-is` attr             | `"2026-01-01T00:00:00Z"`    |
-| `title`  | `<h1>` text after emoji    | `"I Torneo de Reyes"`        |
-| `emoji`  | Leading emoji from `<h1>`  | `"🏆"`                       |
+| Field              | HTML Source                | Example                      |
+|--------------------|----------------------------|------------------------------|
+| `id`               | `"S56-"` + `<div id="...">` | `"S56-torneo-reyes"`         |
+| `type`             | Always fixed               | `"announcement"`             |
+| `season`           | Always fixed               | `"2025-26"`                  |
+| `date`             | `date-is` attr             | `"2026-01-01T00:00:00Z"`    |
+| `title`            | `<h1>` text after emoji    | `"I Torneo de Reyes"`        |
+| `announcementType` | Leading emoji from `<h1>`  | `"tournament"`               |
 
 ### Field: `id`
 - Prefix `"S56-"` followed by the `id` attribute of the root `<div class="timeline-item">`
@@ -77,10 +77,18 @@ The HTML input follows this structure:
 - Extract text from `<h1>`, remove the leading emoji and trim whitespace
 - Example: `<h1>🏆 I Torneo de Reyes</h1>` → `"I Torneo de Reyes"`
 
-### Field: `emoji`
-- Extract the first emoji character(s) from `<h1>`
-- Common emojis: `🏆` (tournament), `🫂` (friendly), `📢` (call-up), `🚀` (milestone)
-- Example: `<h1>🏆 I Torneo de Reyes</h1>` → `"🏆"`
+### Field: `announcementType`
+- Determine the type from the first emoji character(s) in `<h1>` using this mapping:
+
+| `<h1>` emoji | `announcementType` |
+|--------------|---------------------|
+| 🏆           | `"tournament"`      |
+| 🫂           | `"friendly-game"`   |
+| 📢           | `"call-up"`         |
+| 🚀           | `"milestone"`       |
+
+- Example: `<h1>🏆 I Torneo de Reyes</h1>` → `"tournament"`
+- Example: `<h1>📢 Convocatoria</h1>` → `"call-up"`
 
 ### Example
 
@@ -97,7 +105,7 @@ type: "announcement",
 season: "2025-26",
 date: "2026-01-01T00:00:00Z",
 title: "I Torneo de Reyes",
-emoji: "🏆",
+announcementType: "tournament",
 ```
 
 ---
@@ -208,39 +216,6 @@ venue: venues["antela"],
 
 ---
 
-## Parsing Date Range
-
-### HTML Source
-
-```html
-<p>📆 Del 2 al 4 de enero de 2026</p>
-```
-
-### Extraction Rules
-
-1. Find `<p>` paragraphs starting with the 📆 emoji
-2. Look for paragraphs that describe a **range** — they typically contain "Del ... al ..." or describe a multi-day
-   span (e.g., `"Del 2 al 4 de enero de 2026"`, `"Del 27 al 28 de diciembre de 2025"`)
-3. **Distinguish** date-range paragraphs from schedule-date paragraphs:
-   - Date-range: contains "Del" or describes multiple days → maps to `dateRange`
-   - Schedule-date: contains a weekday name (Lunes, Martes, Miércoles, Jueves, Viernes, Sábado, Domingo) → maps to
-     `schedule[].date`
-4. Extract the text after the 📆 emoji, trimmed
-5. If no date-range paragraph is found, **omit the field**
-
-### Example
-
-**Input HTML:**
-```html
-<p>📆 Del 2 al 4 de enero de 2026</p>
-```
-
-**Output TypeScript:**
-```typescript
-dateRange: "Del 2 al 4 de enero de 2026",
-```
-
----
 
 ## Parsing Description
 
@@ -336,13 +311,51 @@ paragraph and/or followed by a `⛹️‍♂️` opponent paragraph.
 
 ### Extraction Rules
 
-1. Scan paragraphs sequentially after the date-range paragraph (or after description paragraphs)
+1. Scan paragraphs sequentially looking for schedule patterns
 2. For each `📆` paragraph that contains a **weekday name** (Lunes, Martes, Miércoles, Jueves, Viernes, Sábado,
-   Domingo), start a new schedule entry
-3. The next `🕜` paragraph provides the `time`
-4. If a `🏀` paragraph appears **before** a `📆` paragraph, use its text as the `label` for the next schedule entry
-5. If a `⛹️‍♂️` paragraph appears **after** the `🕜` paragraph, use its text as the `opponent`
-6. If no schedule entries are found, **omit the field** entirely
+   Domingo), start a new schedule entry. **Ignore** `📆` paragraphs that describe date ranges (e.g., "Del 2 al 4 de
+   enero de 2026")
+3. The next `🕜` paragraph provides the time
+4. **Combine** the date from `📆` and the time from `🕜` into a single ISO datetime string (see below)
+5. If a `🏀` paragraph appears **before** a `📆` paragraph, use its text as the `label` for the next schedule entry
+6. If a `⛹️‍♂️` paragraph appears **after** the `🕜` paragraph, use its text as the `opponent`
+7. If no schedule entries are found, **omit the field** entirely
+
+### Field: `date` (ISO datetime)
+
+Combine the date from the `📆` paragraph and the time from the `🕜` paragraph into an ISO datetime string.
+
+**Parsing the date**: Extract the day, month, and year from the Spanish text.
+- `"Viernes, 2 de enero de 2026"` → `2026-01-02`
+- `"Sábado, 27 de diciembre de 2025"` → `2025-12-27`
+
+**Spanish month mapping**:
+
+| Spanish      | Number |
+|-------------|--------|
+| enero       | 01     |
+| febrero     | 02     |
+| marzo       | 03     |
+| abril       | 04     |
+| mayo        | 05     |
+| junio       | 06     |
+| julio       | 07     |
+| agosto      | 08     |
+| septiembre  | 09     |
+| octubre     | 10     |
+| noviembre   | 11     |
+| diciembre   | 12     |
+
+**Parsing the time**: Extract the time from the `🕜` paragraph. Handle these cases:
+
+| Time format            | Action                                                        | Example                          |
+|------------------------|---------------------------------------------------------------|----------------------------------|
+| Simple: `"HH:MM"`      | Combine directly                                              | `"10:30"` → `T10:30:00Z`        |
+| Multiple: `"HH:MM \| HH:MM"` | Create **one entry per time** (same date, label, opponent) | `"18:00 \| 20:30"` → 2 entries  |
+| Range: `"HH:MM - HH:MM"` | Use the **start time** only                                | `"18:45 - 21:00"` → `T18:45:00Z` |
+| Unconfirmed: `"(por confirmar)"` | Use `T00:00:00Z`                                     | → `T00:00:00Z`                   |
+
+**Result**: `"YYYY-MM-DDTHH:MM:00Z"`
 
 ### Field: `label`
 - Text content of the `🏀` paragraph that precedes a schedule entry, trimmed
@@ -351,32 +364,23 @@ paragraph and/or followed by a `⛹️‍♂️` opponent paragraph.
 - **Important**: only `🏀` paragraphs that are followed by `📆` paragraphs are labels. A `🏀` paragraph at the very
   start of the block (before any schedule) should be included in the `description` array instead
 
-### Field: `date`
-- Text content of the `📆` paragraph, trimmed, emoji removed
-- Example: `📆 Viernes, 2 de enero de 2026` → `"Viernes, 2 de enero de 2026"`
-
-### Field: `time`
-- Text content of the `🕜` paragraph, trimmed, emoji removed
-- Preserve the format as-is (simple, range, or multiple)
-- Examples: `"10:30"`, `"18:45 - 21:00"`, `"18:00 | 20:30"`, `"(por confirmar)"`
-
 ### Field: `opponent`
 - Text content of the `⛹️‍♂️` paragraph, trimmed, emoji removed
 - Example: `⛹️‍♂️ Canarias` → `"Canarias"`
 - Only present when there's a `⛹️‍♂️` paragraph immediately after the `🕜` paragraph
 
-### How to Distinguish Date-Range from Schedule-Date
+### How to Distinguish Schedule-Date from Date-Range
 
-Both use the 📆 emoji, but:
+Both use the 📆 emoji. Only schedule dates should be extracted; date ranges should be **ignored**.
 
-| Type            | Pattern                           | Example                             |
-|-----------------|-----------------------------------|-------------------------------------|
-| Date range      | `"Del X al Y de ..."`            | `"Del 2 al 4 de enero de 2026"`    |
-| Schedule date   | `"Weekday, DD de month de YYYY"` | `"Viernes, 2 de enero de 2026"`    |
+| Type            | Pattern                           | Example                             | Action   |
+|-----------------|-----------------------------------|-------------------------------------|----------|
+| Date range      | `"Del X al Y de ..."`            | `"Del 2 al 4 de enero de 2026"`    | **Skip** |
+| Schedule date   | `"Weekday, DD de month de YYYY"` | `"Viernes, 2 de enero de 2026"`    | Extract  |
 
-**Rule**: If the 📆 text starts with a weekday name, it's a schedule date. Otherwise, it's a date range.
+**Rule**: If the 📆 text starts with a weekday name, it's a schedule date. Otherwise, skip it.
 
-### Example
+### Example — Simple times
 
 **Input HTML:**
 ```html
@@ -386,7 +390,24 @@ Both use the 📆 emoji, but:
 
 <p>📆 Viernes, 2 de enero de 2026</p>
 <p>🕜 18:30</p>
+```
 
+**Output TypeScript:**
+```typescript
+schedule: [
+  {
+    date: "2026-01-02T10:30:00Z",
+  },
+  {
+    date: "2026-01-02T18:30:00Z",
+  },
+],
+```
+
+### Example — Multiple times (split into separate entries)
+
+**Input HTML:**
+```html
 <p>📆 Sábado, 3 de enero de 2026</p>
 <p>🕜 18:00 | 20:30</p>
 
@@ -398,25 +419,38 @@ Both use the 📆 emoji, but:
 ```typescript
 schedule: [
   {
-    date: "Viernes, 2 de enero de 2026",
-    time: "10:30",
+    date: "2026-01-03T18:00:00Z",
   },
   {
-    date: "Viernes, 2 de enero de 2026",
-    time: "18:30",
+    date: "2026-01-03T20:30:00Z",
   },
   {
-    date: "Sábado, 3 de enero de 2026",
-    time: "18:00 | 20:30",
+    date: "2026-01-04T10:30:00Z",
   },
   {
-    date: "Domingo, 4 de enero de 2026",
-    time: "10:30 | 12:30",
+    date: "2026-01-04T12:30:00Z",
   },
 ],
 ```
 
-### Example with Labels and Opponents
+### Example — Time ranges (use start time)
+
+**Input HTML:**
+```html
+<p>📆 Lunes, 22 de diciembre de 2025</p>
+<p>🕜 18:45 - 21:00</p>
+```
+
+**Output TypeScript:**
+```typescript
+schedule: [
+  {
+    date: "2025-12-22T18:45:00Z",
+  },
+],
+```
+
+### Example — With labels
 
 **Input HTML:**
 ```html
@@ -434,18 +468,16 @@ schedule: [
 schedule: [
   {
     label: "¡Selección de Canarias!",
-    date: "Sábado, 27 de diciembre de 2025",
-    time: "16:30",
+    date: "2025-12-27T16:30:00Z",
   },
   {
     label: "¡Castilla y León!",
-    date: "Domingo, 28 de diciembre de 2025",
-    time: "(por confirmar)",
+    date: "2025-12-28T00:00:00Z",
   },
 ],
 ```
 
-### Example with Opponents (no labels)
+### Example — With opponents
 
 **Input HTML:**
 ```html
@@ -462,13 +494,15 @@ schedule: [
 ```typescript
 schedule: [
   {
-    date: "Sábado, 27 de diciembre de 2025",
-    time: "18:45",
+    date: "2025-12-27T18:45:00Z",
     opponent: "Canarias",
   },
   {
-    date: "Domingo, 28 de diciembre de 2025",
-    time: "10:00 | 12:00",
+    date: "2025-12-28T10:00:00Z",
+    opponent: "Castilla y León / Oporto",
+  },
+  {
+    date: "2025-12-28T12:00:00Z",
     opponent: "Castilla y León / Oporto",
   },
 ],
@@ -505,20 +539,20 @@ References come from paragraphs starting with emojis: 📸, 💼, 📰, 📱, �
 2. **Skip** any `<p>` with `style="display: none"`
 3. **Skip** any `<a>` with an empty `href`
 4. For each valid `<a>` inside a qualifying block, produce one `references` entry:
-   - `icon`: the paragraph's leading emoji
+   - `type`: the paragraph's leading emoji mapped to a type value (see table below)
    - `label`: constructed from paragraph text before `<a>` + link text, trimmed and joined with a space.
      Remove the leading emoji from the label.
    - `url`: `href` attribute value
 
-### Icon Mapping
+### Emoji to Type Mapping
 
-| Paragraph emoji | `icon` |
-|-----------------|--------|
-| 📸              | `"📸"` |
-| 💼              | `"💼"` |
-| 📰              | `"📰"` |
-| 📱              | `"📱"` |
-| 🎥              | `"🎥"` |
+| Paragraph emoji | `type`           |
+|-----------------|------------------|
+| 📱              | `"social-media"` |
+| 📰              | `"article"`      |
+| 💼              | `"document"`     |
+| 📸              | `"photo"`        |
+| 🎥              | `"video"`        |
 
 ### Label Construction
 
@@ -580,27 +614,27 @@ If the pre-link text is empty or only whitespace, use just the link text.
 ```typescript
 references: [
   {
-    icon: "🎥",
+    type: "video",
     label: "Todos los partidos se retransmitirán por el canal de CB Alcobendas",
     url: "https://www.youtube.com/@ClubBaloncestoAlcobendas",
   },
   {
-    icon: "📱",
+    type: "social-media",
     label: "Anuncio en del torneo",
     url: "https://www.instagram.com/p/DS2YdVzjAoo",
   },
   {
-    icon: "📱",
+    type: "social-media",
     label: "Anuncio general del Torneo de selecciones CyL",
     url: "https://x.com/FBCyL/status/2004529249236189619",
   },
   {
-    icon: "📱",
+    type: "social-media",
     label: "Horarios",
     url: "https://x.com/FBCyL/status/2004842187142615441",
   },
   {
-    icon: "📸",
+    type: "photo",
     label: "Galería de fotos",
     url: "https://www.flickr.com/photos/fbmadrid/54938959883/in/album-72177720330472562",
   },
@@ -717,13 +751,12 @@ export const announcement_2026_01_01_torneo_reyes: Announcement = AnnouncementSc
   date: "2026-01-01T00:00:00Z",
 
   title: "I Torneo de Reyes",
-  emoji: "🏆",
+  announcementType: "tournament",
 
   category: "U15M",
 
   venue: venues["antela"],
 
-  dateRange: "Del 2 al 4 de enero de 2026",
 
   description: [
     "Torneo cadete de primer año organizado por el club donde han invitado a equipos U15 de muy alto nivel, sobre todo de Madrid",
@@ -732,31 +765,33 @@ export const announcement_2026_01_01_torneo_reyes: Announcement = AnnouncementSc
 
   schedule: [
     {
-      date: "Viernes, 2 de enero de 2026",
-      time: "10:30",
+      date: "2026-01-02T10:30:00Z",
     },
     {
-      date: "Viernes, 2 de enero de 2026",
-      time: "18:30",
+      date: "2026-01-02T18:30:00Z",
     },
     {
-      date: "Sábado, 3 de enero de 2026",
-      time: "18:00 | 20:30",
+      date: "2026-01-03T18:00:00Z",
     },
     {
-      date: "Domingo, 4 de enero de 2026",
-      time: "10:30 | 12:30",
+      date: "2026-01-03T20:30:00Z",
+    },
+    {
+      date: "2026-01-04T10:30:00Z",
+    },
+    {
+      date: "2026-01-04T12:30:00Z",
     },
   ],
 
   references: [
     {
-      icon: "🎥",
+      type: "video",
       label: "Todos los partidos se retransmitirán por el canal de CB Alcobendas",
       url: "https://www.youtube.com/@ClubBaloncestoAlcobendas",
     },
     {
-      icon: "📱",
+      type: "social-media",
       label: "Anuncio en del torneo",
       url: "https://www.instagram.com/p/DS2YdVzjAoo",
     },
@@ -837,7 +872,7 @@ export const announcement_2025_12_17_convocatoria_fbm_1: Announcement = Announce
   date: "2025-12-17T00:00:00Z",
 
   title: "Convocatoria",
-  emoji: "📢",
+  announcementType: "call-up",
 
   venue: venues["norte"],
 
@@ -848,42 +883,37 @@ export const announcement_2025_12_17_convocatoria_fbm_1: Announcement = Announce
 
   schedule: [
     {
-      date: "Lunes, 22 de diciembre de 2025",
-      time: "18:45 - 21:00",
+      date: "2025-12-22T18:45:00Z",
     },
     {
-      date: "Martes, 23 de diciembre de 2025",
-      time: "18:45 - 21:00",
+      date: "2025-12-23T18:45:00Z",
     },
     {
-      date: "Viernes, 26 de diciembre de 2025",
-      time: "18:45 - 21:00",
+      date: "2025-12-26T18:45:00Z",
     },
     {
       label: "¡Selección de Canarias!",
-      date: "Sábado, 27 de diciembre de 2025",
-      time: "16:30",
+      date: "2025-12-27T16:30:00Z",
     },
     {
       label: "¡Castilla y León!",
-      date: "Domingo, 28 de diciembre de 2025",
-      time: "(por confirmar)",
+      date: "2025-12-28T00:00:00Z",
     },
   ],
 
   references: [
     {
-      icon: "📰",
+      type: "article",
       label: "Nota de prensa de la convocatoria",
       url: "https://www.fbm.es/noticia-87-12994/...",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "La federación de Castilla y León anuncia el torneo",
       url: "https://www.fbcyl.es/noticias/2136/...",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "El club recompensa el esfuerzo",
       url: "https://x.com/cbalcobendas/status/2001980957205918111",
     },
@@ -928,7 +958,7 @@ export const announcement_2025_08_26_comienzo_temporada: Announcement = Announce
   date: "2025-08-26T00:00:00Z",
 
   title: "Arranca la Temporada",
-  emoji: "🚀",
+  announcementType: "milestone",
 
   description: [
     "Primer entrenamiento del equipo, casi todos los jugadores se reúnen con el entrenador",
@@ -937,7 +967,7 @@ export const announcement_2025_08_26_comienzo_temporada: Announcement = Announce
 
   references: [
     {
-      icon: "📰",
+      type: "article",
       label: "Noticia sobre el arranque de la temporada",
       url: "https://www.fbm.es/noticia-104-12825/liga-ahorramas-arranca-un-nuevo-curso",
     },
@@ -945,6 +975,6 @@ export const announcement_2025_08_26_comienzo_temporada: Announcement = Announce
 });
 ```
 
-> **Note**: When neither `venue` nor `category` nor `dateRange` nor `schedule` are present in the HTML, simply omit
+> **Note**: When neither `venue` nor `category` nor `schedule` are present in the HTML, simply omit
 > those fields from the output. The schema marks them as optional.
 

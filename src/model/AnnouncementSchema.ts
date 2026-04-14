@@ -1,10 +1,10 @@
 import {z} from "zod";
 import {VenueSchema} from "./VenueSchema.ts";
+import {ReferenceSchema} from "./ReferenceSchema.ts";
 
 export const ScheduleEntrySchema = z.object({
   label: z.string().optional(),
-  date: z.string(),
-  time: z.string(),
+  date: z.iso.datetime(),
   opponent: z.string().optional(),
 });
 
@@ -17,23 +17,22 @@ export const AnnouncementSchema = z.object({
   date: z.iso.datetime(),
 
   title: z.string(),
-  emoji: z.string(),
+  announcementType: z.enum([
+    "tournament",    // 🏆
+    "friendly-game", // 🫂
+    "call-up",       // 📢
+    "milestone",     // 🚀
+  ]),
 
   category: z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]).optional(),
 
   venue: VenueSchema.optional(),
 
-  dateRange: z.string().optional(),
-
   description: z.array(z.string()),
 
   schedule: z.array(ScheduleEntrySchema).optional(),
 
-  references: z.array(z.object({
-    icon: z.string().max(2),
-    label: z.string(),
-    url: z.url(),
-  })),
+  references: z.array(ReferenceSchema),
 });
 
 export type Announcement = z.infer<typeof AnnouncementSchema>;
