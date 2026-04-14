@@ -23,8 +23,7 @@ export const AnnouncementSchema = z.object({
     "call-up",       // 📢
     "milestone",     // 🚀
   ]),
-
-  category: z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]).optional(),
+  category: z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]),
 
   venue: VenueSchema.optional(),
 

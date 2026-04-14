@@ -8,8 +8,9 @@ export const announcement_2025_12_17_convocatoria_fbm_1: Announcement = Announce
   season: "2025-26",
   date: "2025-12-17T00:00:00Z",
 
-  title: "Convocatoria",
+  title: "Convocatoria de la Federación de Baloncesto de Madrid",
   announcementType: "call-up",
+  category: "U15M",
 
   venue: venues["norte"],
 

@@ -10,7 +10,6 @@ export const announcement_2025_11_18_torneo_fll: Announcement = AnnouncementSche
 
   title: "XVI Torneo Fundación Leucemia y Linfoma",
   announcementType: "tournament",
-
   category: "U15M",
 
   venue: venues["triangulo-oro"],

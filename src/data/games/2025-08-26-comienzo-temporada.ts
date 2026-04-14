@@ -9,6 +9,7 @@ export const announcement_2025_08_26_comienzo_temporada: Announcement = Announce
 
   title: "Arranca la Temporada",
   announcementType: "milestone",
+  category: "U15M",
 
   description: [
     "Primer entrenamiento del equipo, casi todos los jugadores se reúnen con el entrenador",
