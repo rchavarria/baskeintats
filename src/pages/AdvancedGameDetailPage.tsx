@@ -75,10 +75,6 @@ export function AdvancedGameDetailPage() {
               <p className="text-xs text-gray-400">Tiempo</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-gray-900">{derived.points}</p>
-              <p className="text-xs text-gray-400">Puntos</p>
-            </div>
-            <div>
               <p className="text-lg font-bold text-gray-900">{derived.fieldGoals.made}/{derived.fieldGoals.attempted}</p>
               <p className="text-xs text-gray-400">TC ({derived.percentage.fieldGoals}%)</p>
             </div>
@@ -91,12 +87,36 @@ export function AdvancedGameDetailPage() {
               <p className="text-xs text-gray-400">TL ({derived.percentage.freeThrows}%)</p>
             </div>
             <div>
-              <p className="text-lg font-bold text-gray-900">{derived.faults.made}/{derived.faults.received}</p>
-              <p className="text-xs text-gray-400">Faltas (C/R)</p>
+              <p className="text-2xl font-bold text-gray-900">{derived.points}</p>
+              <p className="text-xs text-gray-400">Puntos</p>
+            </div>
+            <div>
+              <p className="text-lg font-bold text-gray-900">{game.playerStats.assists}</p>
+              <p className="text-xs text-gray-400">Assistencias</p>
+            </div>
+            <div>
+              <p className="text-lg font-bold text-gray-900">{game.playerStats.steals}</p>
+              <p className="text-xs text-gray-400">Robos</p>
+            </div>
+            <div>
+              <p className="text-lg font-bold text-gray-900">{game.playerStats.turnovers}</p>
+              <p className="text-xs text-gray-400">Pérdidas</p>
             </div>
             <div>
               <p className="text-lg font-bold text-gray-900">{derived.plusMinus}</p>
               <p className="text-xs text-gray-400">+/-</p>
+            </div>
+            <div>
+              <p className="text-lg font-bold text-gray-900">{derived.rebounds.offensive}/{derived.rebounds.defensive}</p>
+              <p className="text-xs text-gray-400">Rebotes (O/D)</p>
+            </div>
+            <div>
+              <p className="text-lg font-bold text-gray-900">{derived.blocks.made}/{derived.blocks.received}</p>
+              <p className="text-xs text-gray-400">Tapones (H/R)</p>
+            </div>
+            <div>
+              <p className="text-lg font-bold text-gray-900">{derived.faults.made}/{derived.faults.received}</p>
+              <p className="text-xs text-gray-400">Faltas (C/R)</p>
             </div>
             <div>
               <p className="text-lg font-bold text-gray-900">{derived.efficiency}</p>
