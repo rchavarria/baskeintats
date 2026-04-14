@@ -28,7 +28,7 @@ import {game_2026_01_04_zentro} from "../data/games/2026-01-04-zentro.ts";
 import {game_2026_01_03_laso} from "../data/games/2026-01-03-laso.ts";
 import {game_2026_01_02_zentro} from "../data/games/2026-01-02-zentro.ts";
 import {game_2026_01_02_fuenlabrada} from "../data/games/2026-01-02-fuenlabrada.ts";
-import {game_2026_01_01_torneo_reyes} from "../data/games/2026-01-01-torneo-reyes.ts";
+import {announcement_2026_01_01_torneo_reyes} from "../data/games/2026-01-01-torneo-reyes.ts";
 import {game_2025_12_14_fuenlabrada} from "../data/games/2025-12-14-fuenlabrada.ts";
 import {game_2025_12_13_san_jorge} from "../data/games/2025-12-13-san-jorge.ts";
 import {game_2025_12_13_patrocinio} from "../data/games/2025-12-13-patrocinio.ts";
@@ -82,7 +82,7 @@ export function useEvents(): Event[] {
     game_2026_01_03_laso,
     game_2026_01_02_zentro,
     game_2026_01_02_fuenlabrada,
-    game_2026_01_01_torneo_reyes,
+    announcement_2026_01_01_torneo_reyes,
     game_2025_12_14_fuenlabrada,
     game_2025_12_13_san_jorge,
     game_2025_12_13_patrocinio,

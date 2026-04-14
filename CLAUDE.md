@@ -7,6 +7,7 @@ Basketball Statistics SPA for tracking youth basketball games.
 Use these skills by referencing them with `@` or asking to "use skill X":
 
 - **@.github/skills/html-to-game.md** - Convert HTML from FBM to Game objects
+- **@.github/skills/html-to-announcement.md** - Convert HTML from timeline to Announcement objects (tournaments, call-ups, milestones)
 
 ## Quick Commands
 
