@@ -20,13 +20,13 @@ export const game_2025_09_20_real_madrid: AdvancedGame = AdvancedGameSchema.pars
 
   home: {
     club: teams["real-madrid"],
-    category: "U15M",
+    category: "U16M",
     scores: [38, 38, 30, 26],
   },
 
   away: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U16M",
     scores: [9, 12, 9, 7],
   },
 

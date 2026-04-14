@@ -4,7 +4,7 @@ import {venues} from "../venues.ts";
 import {teams} from "../teams.ts";
 
 export const game_2025_09_28_rozas: AdvancedGame = AdvancedGameSchema.parse({
-  id: "S56-liga-u16-j2",
+  id: "S56-liga-oro-j2",
   type: "advanced-game",
   season: "2025-26",
   date: "2025-09-28T09:30:00Z",
@@ -12,7 +12,7 @@ export const game_2025_09_28_rozas: AdvancedGame = AdvancedGameSchema.parse({
   competition: {
     name: "Liga Ahorramás - Oro",
     category: "U16M",
-    phase: "",
+    phase: "Fase 1 - Grupo 1",
     round: "J2",
   },
 
@@ -20,13 +20,13 @@ export const game_2025_09_28_rozas: AdvancedGame = AdvancedGameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U16M",
     scores: [15, 25, 17, 14, 13],
   },
 
   away: {
     club: teams["rozas"],
-    category: "U15M",
+    category: "U16M",
     scores: [20, 18, 20, 13, 14],
   },
 
