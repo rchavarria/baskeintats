@@ -115,7 +115,7 @@ export function ExamplePage() {
 ### Feature Component
 
 ```tsx
-// src/components/games/GameCard.tsx
+// src/components/events/GameCard.tsx
 import type { Game, Team } from "../../types";
 
 interface GameCardProps {
