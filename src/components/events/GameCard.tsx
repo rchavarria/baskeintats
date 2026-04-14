@@ -1,7 +1,7 @@
 import {totalPoints} from "../../model/GameSchema";
 import type {AdvancedGame, Game} from "../../model/GameSchema";
 import {Link} from "react-router-dom";
-import {DateDisplay} from "../ui/DateDisplay";
+import {DateTimeDisplay} from "../ui/DateTimeDisplay.tsx";
 
 function gameLink(game: Game | AdvancedGame): string {
   if (game.type === 'advanced-game') {
@@ -25,7 +25,7 @@ export function GameCard({ game }: GameCardProps) {
       className="block bg-white rounded-xl shadow hover:shadow-md transition p-4 border border-gray-100"
     >
       <div className="flex items-center justify-between text-xs text-gray-400 mb-3">
-        <DateDisplay isoDate={game.date} />
+        <DateTimeDisplay isoDate={game.date} />
         <span>{game.competition.name} · {game.competition.phase} · {game.competition.round}</span>
       </div>
       <div className="flex items-center justify-between gap-4">

@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {OnlyDateDisplay} from "../ui/OnlyDateDisplay.tsx";
+import {DateDisplay} from "../ui/DateDisplay.tsx";
 
 const emojiMap: Record<Announcement["announcementType"], string> = {
   "tournament": "🏆",
@@ -22,7 +22,7 @@ export function AnnouncementCard({ announcement }: AnnouncementCardProps) {
       className="block bg-white rounded-xl shadow hover:shadow-md transition p-4 border border-gray-100"
     >
       <div className="flex items-center justify-between text-xs text-gray-400 mb-3">
-        <OnlyDateDisplay isoDate={announcement.date} />
+        <DateDisplay isoDate={announcement.date} />
         <span>{announcement.category}</span>
       </div>
       <div className="flex items-center justify-center gap-3">

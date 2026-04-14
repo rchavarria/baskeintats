@@ -1,7 +1,7 @@
 import {Link, useParams} from "react-router-dom";
 import {useEvents} from "../hooks/useEvents.ts";
 import {EmptyState} from "../components/ui/EmptyState";
-import {DateDisplay} from "../components/ui/DateDisplay.tsx";
+import {DateTimeDisplay} from "../components/ui/DateTimeDisplay.tsx";
 
 export function AnnouncementDetailPage() {
   const { announcementId } = useParams<{ announcementId: string }>();
@@ -25,7 +25,7 @@ export function AnnouncementDetailPage() {
         </div>
 
         <div className="text-xs text-gray-400 text-center mb-4">
-          <DateDisplay isoDate={announcement.date}/> · {announcement.venue?.name}
+          <DateTimeDisplay isoDate={announcement.date}/> · {announcement.venue?.name}
         </div>
 
       </div>

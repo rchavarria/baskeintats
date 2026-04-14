@@ -3,7 +3,7 @@ import { useEvents } from "../hooks/useEvents.ts";
 import { totalPoints } from "../model/GameSchema";
 import { derivePlayerStats } from "../model/PlayerSchema";
 import { EmptyState } from "../components/ui/EmptyState";
-import {DateDisplay} from "../components/ui/DateDisplay.tsx";
+import {DateTimeDisplay} from "../components/ui/DateTimeDisplay.tsx";
 import { GameVideos } from "../components/events/GameVideos";
 
 export function GameDetailPage() {
@@ -33,7 +33,7 @@ export function GameDetailPage() {
         </div>
 
         <div className="text-xs text-gray-400 text-center mb-4">
-          <DateDisplay isoDate={game.date}/> · {game.venue.name}
+          <DateTimeDisplay isoDate={game.date}/> · {game.venue.name}
         </div>
 
         <div className="flex items-center justify-center gap-4">
