@@ -5,6 +5,7 @@ import { derivePlayerStats } from "../model/PlayerSchema";
 import { EmptyState } from "../components/ui/EmptyState";
 import {DateTimeDisplay} from "../components/ui/DateTimeDisplay.tsx";
 import { GameVideos } from "../components/events/GameVideos";
+import {ReferenceList} from "../components/events/ReferenceList.tsx";
 
 export function GameDetailPage() {
   const { gameId } = useParams<{ gameId: string }>();
@@ -121,18 +122,7 @@ export function GameDetailPage() {
         </div>
       )}
 
-      <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
-        <h2 className="font-semibold text-gray-700 mb-3">📱 Referencias</h2>
-        {game.references?.map((ref, i) => (
-          <a key={i}
-             href={ref.url}
-             target="_blank" rel="noopener noreferrer"
-             className="block text-sm text-blue-500 hover:underline mb-1">
-            {ref.icon}
-            {ref.label}
-          </a>
-        ))}
-      </div>
+      <ReferenceList references={game.references} />
 
     </div>
   );
