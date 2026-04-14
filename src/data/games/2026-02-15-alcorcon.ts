@@ -65,22 +65,22 @@ export const game_2026_02_15_alcorcon: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de febrero",
       url: "https://www.flickr.com/photos/fbmadrid/sets/72177720331775796/",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15328&informe=resultados-clasificacion-proxima&ultima_jornada=103532&proxima_jornada=103533",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://www.fbm.es/noticia-104-13088/liga-ahorramas-comienza-la-segunda-vuelta",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://www.fbm.es/noticia-104-13096/comienza-la-cuenta-atr%C3%A1s-en-la-liga-ahorramas",
     },

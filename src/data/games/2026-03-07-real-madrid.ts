@@ -66,22 +66,22 @@ export const game_2026_03_07_real_madrid: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de marzo",
       url: "https://www.flickr.com/photos/fbmadrid/albums/72177720332315809",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15326&informe=resultados-clasificacion-proxima&ultima_jornada=103474&proxima_jornada=103475",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://fbm.es/noticia-104-13128/liga-ahorramas-los-favoritos-toman-posiciones",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://fbm.es/noticia-123-13141/liga-ahorramas-llega-la-hora-de-la-verdad!",
     },

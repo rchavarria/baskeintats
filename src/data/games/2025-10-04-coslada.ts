@@ -63,22 +63,22 @@ export const game_2025_10_04_coslada: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de octubre",
       url: "https://www.flickr.com/photos/fbmadrid/albums/72177720329467187/with/54834936079",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=14618&informe=resultados-clasificacion-proxima&ultima_jornada=93834&proxima_jornada=93835",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://www.fbm.es/noticia-104-12854/primeros-grandes-duelos-en-la-liga-ahorramas",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://www.fbm.es/noticia-104-12862/liga-ahorramas-emoci%C3%B3n-hasta-el-%C3%BAltimo-segundo",
     },

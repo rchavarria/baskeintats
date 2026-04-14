@@ -67,22 +67,22 @@ export const game_2026_03_17_distrito: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de marzo",
       url: "https://www.flickr.com/photos/fbmadrid/albums/72177720332315809",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15328&informe=resultados-clasificacion-proxima&ultima_jornada=103535&proxima_jornada=103536",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://www.fbm.es/noticia-104-13142/liga-ahorramas-solo-vale-ganar",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://www.fbm.es/noticia-104-13155/la-liga-ahorramas-est%C3%A1-desatada!",
     },

@@ -59,22 +59,22 @@ export const game_2026_04_12_canoe: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de abril",
       url: "https://www.flickr.com/photos/fbmadrid/albums/72177720332315809",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15632&informe=resultados-clasificacion-proxima&ultima_jornada=106410&proxima_jornada=-1",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://www.fbm.es/noticia-104-13200/cadete-e-infantil-enfilan-la-recta-final",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://fbm.es/noticia-123-13212/cadetes-e-infantiles-aseguran-la-emoci%C3%B3n",
     },

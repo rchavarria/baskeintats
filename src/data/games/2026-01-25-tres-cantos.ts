@@ -66,22 +66,22 @@ export const game_2026_01_25_tres_cantos: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de enero",
       url: "https://www.flickr.com/photos/fbmadrid/sets/72177720331399343/",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15328&informe=resultados-clasificacion-proxima&ultima_jornada=103529&proxima_jornada=103530",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://www.fbm.es/noticia-104-13041/crece-la-emoci%C3%B3n-en-la-liga-ahorramas",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://fbm.es/noticia-123-13057/sube-la-temperatura-en-la-liga-ahorramas",
     },

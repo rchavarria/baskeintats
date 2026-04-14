@@ -66,22 +66,22 @@ export const game_2025_09_28_zentro: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de septiembre",
       url: "https://www.flickr.com/photos/fbmadrid/albums/72177720329176624",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=14618&informe=resultados-clasificacion-proxima&ultima_jornada=93833&proxima_jornada=93834",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://www.fbm.es/noticia-104-12842/liga-ahorramas-m%C3%A1xima-exigencia-desde-el-inicio",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://www.fbm.es/noticia-104-12851/liga-ahorramas-la-emoci%C3%B3n-est%C3%A1-servida",
     },

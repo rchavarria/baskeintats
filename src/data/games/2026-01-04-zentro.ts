@@ -65,7 +65,7 @@ export const game_2026_01_04_zentro: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Galería fotográfica",
       url: "https://www.instagram.com/p/DTGIjnBjH2O/?img_index=12",
     },

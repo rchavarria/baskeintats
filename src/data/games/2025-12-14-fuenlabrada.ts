@@ -80,22 +80,22 @@ export const game_2025_12_14_fuenlabrada: AdvancedGame = AdvancedGameSchema.pars
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de diciembre",
       url: "https://www.flickr.com/photos/fbmadrid/albums/72177720330932743",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=14615&informe=resultados-clasificacion-proxima&ultima_jornada=93801&proxima_jornada=93802",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://fbm.es/noticia-123-12977/liga-ahorramas-suspense-hasta-el-final",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://www.fbm.es/noticia-104-12989/concluye-la-primera-fase-de-la-liga-ahorramas",
     },

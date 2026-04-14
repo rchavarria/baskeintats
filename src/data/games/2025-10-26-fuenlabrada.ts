@@ -79,22 +79,22 @@ export const game_2025_10_26_fuenlabrada: AdvancedGame = AdvancedGameSchema.pars
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de octubre",
       url: "https://www.flickr.com/photos/fbmadrid/albums/72177720329467187/with/54834936079",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=14615&informe=resultados-clasificacion-proxima&ultima_jornada=93796&proxima_jornada=93797",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://www.fbm.es/noticia-104-12888/concluye-la-primera-vuelta-de-la-liga-ahorramas",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://www.fbm.es/noticia-104-12902/finaliz%C3%B3-la-primera-vuelta-de-la-liga-ahorramas",
     },

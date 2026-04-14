@@ -65,7 +65,7 @@ export const game_2026_01_03_laso: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📱",
+      type: "social-media",
       label: "Y después de estas eliminatorias, nos vamos a las finales",
       url: "https://www.instagram.com/p/DTELPY0jZaa",
     },

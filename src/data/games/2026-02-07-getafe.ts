@@ -65,22 +65,22 @@ export const game_2026_02_07_getafe: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de febrero",
       url: "https://www.flickr.com/photos/fbmadrid/sets/72177720331775796/",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15328&informe=resultados-clasificacion-proxima&ultima_jornada=103531&proxima_jornada=103532",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://www.fbm.es/noticia-104-13074/duelos-de-altura-en-la-liga-ahorramas",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://www.fbm.es/noticia-104-13082/liga-ahorramas-que-el-ritmo-no-pare",
     },

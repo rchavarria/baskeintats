@@ -55,22 +55,22 @@ export const game_2025_12_13_patrocinio: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de diciembre",
       url: "https://www.flickr.com/photos/fbmadrid/albums/72177720330932743",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=14615&informe=resultados-clasificacion-proxima&ultima_jornada=93799&proxima_jornada=93800",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://fbm.es/noticia-123-12977/liga-ahorramas-suspense-hasta-el-final",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://www.fbm.es/noticia-104-12989/concluye-la-primera-fase-de-la-liga-ahorramas",
     },

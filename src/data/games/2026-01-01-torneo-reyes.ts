@@ -9,13 +9,12 @@ export const announcement_2026_01_01_torneo_reyes: Announcement = AnnouncementSc
   date: "2026-01-01T00:00:00Z",
 
   title: "I Torneo de Reyes",
-  emoji: "🏆",
+  announcementType: "tournament",
 
   category: "U15M",
 
   venue: venues["antela"],
 
-  dateRange: "Del 2 al 4 de enero de 2026",
 
   description: [
     "Torneo cadete de primer año organizado por el club donde han invitado a equipos U15 de muy alto nivel, sobre todo de Madrid",
@@ -24,31 +23,33 @@ export const announcement_2026_01_01_torneo_reyes: Announcement = AnnouncementSc
 
   schedule: [
     {
-      date: "Viernes, 2 de enero de 2026",
-      time: "10:30",
+      date: "2026-01-02T10:30:00Z",
     },
     {
-      date: "Viernes, 2 de enero de 2026",
-      time: "18:30",
+      date: "2026-01-02T18:30:00Z",
     },
     {
-      date: "Sábado, 3 de enero de 2026",
-      time: "18:00 | 20:30",
+      date: "2026-01-03T18:00:00Z",
     },
     {
-      date: "Domingo, 4 de enero de 2026",
-      time: "10:30 | 12:30",
+      date: "2026-01-03T20:30:00Z",
+    },
+    {
+      date: "2026-01-04T10:30:00Z",
+    },
+    {
+      date: "2026-01-04T12:30:00Z",
     },
   ],
 
   references: [
     {
-      icon: "🎥",
+      type: "video",
       label: "Todos los partidos se retransmitirán por el canal de CB Alcobendas",
       url: "https://www.youtube.com/@ClubBaloncestoAlcobendas",
     },
     {
-      icon: "📱",
+      type: "social-media",
       label: "Anuncio en del torneo",
       url: "https://www.instagram.com/p/DS2YdVzjAoo",
     },

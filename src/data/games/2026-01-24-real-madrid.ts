@@ -66,27 +66,27 @@ export const game_2026_01_24_real_madrid: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de enero",
       url: "https://www.flickr.com/photos/fbmadrid/sets/72177720331399343/",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15326&informe=resultados-clasificacion-proxima&ultima_jornada=103469&proxima_jornada=103470",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://www.fbm.es/noticia-104-13041/crece-la-emoci%C3%B3n-en-la-liga-ahorramas",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://fbm.es/noticia-123-13057/sube-la-temperatura-en-la-liga-ahorramas",
     },
     {
-      icon: "📱",
+      type: "social-media",
       label: "De público en la Liga U22",
       url: "https://x.com/BaloncestoESP/status/2015817506686960101",
     },

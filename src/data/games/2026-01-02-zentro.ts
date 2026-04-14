@@ -59,12 +59,12 @@ export const game_2026_01_02_zentro: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Algunas fotos durante la fase de grupos",
       url: "https://www.instagram.com/p/DTEKeIYDSr9",
     },
     {
-      icon: "📱",
+      type: "social-media",
       label: "Así quedan los cruces después de la fase de grupos",
       url: "https://www.instagram.com/p/DTDN-zajHgV",
     },

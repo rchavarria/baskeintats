@@ -80,27 +80,27 @@ export const game_2025_11_09_real_madrid: AdvancedGame = AdvancedGameSchema.pars
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de noviembre",
       url: "https://www.flickr.com/photos/fbmadrid/sets/72177720330208384/",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=14615&informe=resultados-clasificacion-proxima&ultima_jornada=93797&proxima_jornada=93798",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://fbm.es/noticia-123-12908/ya-ha-empezado-la-segunda-vuelta-de-la-liga-ahorramas",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://www.fbm.es/noticia-104-12918/liga-ahorramas-menos-invictos,-m%C3%A1s-emoci%C3%B3n",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "los 2010 estaban convocados con la Madrileña",
       url: "https://www.fbm.es/noticia-88-12905/concentraci%C3%B3n-de-las-preselecciones-auton%C3%B3micas",
     },

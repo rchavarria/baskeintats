@@ -81,22 +81,22 @@ export const game_2025_11_30_estudiantes: AdvancedGame = AdvancedGameSchema.pars
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de noviembre",
       url: "https://www.flickr.com/photos/fbmadrid/sets/72177720330208384/",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=14615&informe=resultados-clasificacion-proxima&ultima_jornada=93800&proxima_jornada=93801",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://www.fbm.es/noticia-104-12956/liga-ahorramas-nadie-quiere-quedarse-atr%C3%A1s",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://www.fbm.es/noticia-123-12967/liga-ahorramas-emoci%C3%B3n-hasta-el-final",
     },

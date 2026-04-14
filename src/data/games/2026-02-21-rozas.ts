@@ -65,22 +65,22 @@ export const game_2026_02_21_rozas: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de febrero",
       url: "https://www.flickr.com/photos/fbmadrid/sets/72177720331775796/",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15326&informe=resultados-clasificacion-proxima&ultima_jornada=103473&proxima_jornada=103474",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://fbm.es/noticia-123-13101/liga-ahorramas-que-el-espect%C3%A1culo-no-pare",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://fbm.es/noticia-123-13113/liga-ahorramas-%C3%BAltimo-sprint!",
     },

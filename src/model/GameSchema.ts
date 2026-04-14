@@ -2,6 +2,7 @@ import {z} from "zod";
 import {PlayerStatsSchema, AdvancedPlayerStatsSchema} from "./PlayerSchema.ts";
 import {TeamSchema} from "./TeamSchema.ts";
 import {VenueSchema} from "./VenueSchema.ts";
+import {ReferenceSchema} from "./ReferenceSchema.ts";
 
 export function totalPoints(scores: number[]): number {
   return scores.reduce((sum, s) => sum + s, 0);
@@ -50,11 +51,7 @@ export const GameSchema = z.object({
     lines: z.array(z.string()),
   }),
 
-  references: z.array(z.object({
-    icon: z.string().max(2),
-    label: z.string(),
-    url: z.url(),
-  })),
+  references: z.array(ReferenceSchema),
 
 });
 

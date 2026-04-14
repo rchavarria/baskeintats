@@ -65,27 +65,27 @@ export const game_2026_03_04_juande: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de marzo",
       url: "https://www.flickr.com/photos/fbmadrid/albums/72177720332315809",
     },
     {
-      icon: "📸",
+      type: "photo",
       label: "¡¡ Nosotros !!",
       url: "https://www.flickr.com/photos/fbmadrid/55128581652/in/album-72177720332315809",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15328&informe=resultados-clasificacion-proxima&ultima_jornada=103533&proxima_jornada=103534",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://fbm.es/noticia-123-13101/liga-ahorramas-que-el-espect%C3%A1culo-no-pare",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://fbm.es/noticia-123-13113/liga-ahorramas-%C3%BAltimo-sprint!",
     },

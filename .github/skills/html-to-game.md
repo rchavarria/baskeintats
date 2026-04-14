@@ -818,22 +818,32 @@ recap: {
 2. **Skip** any `<p>` with `style="display: none"`
 3. **Skip** any `<a>` with an empty `href`
 4. For each valid `<a>` inside a qualifying block, produce one `references` entry:
-   - `icon`: from the **link type table** below (by link text keyword), or fall back to the paragraph's leading emoji
+   - `type`: from the **link type table** below (by link text keyword), or fall back to the paragraph's leading emoji mapping
    - `label`: from the **link type table** below, or constructed from paragraph text + link text
    - `url`: `href` attribute value
+
+### Emoji to Type Mapping
+
+| Emoji | `type`           |
+|-------|------------------|
+| 📱    | `"social-media"` |
+| 📰    | `"article"`      |
+| 💼    | `"document"`     |
+| 📸    | `"photo"`        |
+| 🎥    | `"video"`        |
 
 ### Link Type Table
 
 Match against the link text (case-insensitive, trimmed):
 
-| Link text keyword                                    | `icon`                    | `label`                                                                  |
-|------------------------------------------------------|---------------------------|--------------------------------------------------------------------------|
-| `informe`                                            | `"💼"`                    | `"Informe de la jornada"`                                                |
-| `previa`                                             | `"📰"`                    | `"Previa del partido"`                                                   |
-| `crónica` / `cronica`                                | `"📰"`                    | `"Crónica del partido"`                                                  |
-| Social media URL (twitter.com, x.com, instagram.com) | `"📱"`                    | link text, trimmed                                                       |
-| Inside a `📸` paragraph                              | `"📸"`                    | paragraph text before `<a>` + link text, trimmed and joined with a space |
-| Any other link                                       | paragraph's leading emoji | link text, trimmed                                                       |
+| Link text keyword                                    | `type`           | `label`                                                                  |
+|------------------------------------------------------|------------------|--------------------------------------------------------------------------|
+| `informe`                                            | `"document"`     | `"Informe de la jornada"`                                                |
+| `previa`                                             | `"article"`      | `"Previa del partido"`                                                   |
+| `crónica` / `cronica`                                | `"article"`      | `"Crónica del partido"`                                                  |
+| Social media URL (twitter.com, x.com, instagram.com) | `"social-media"` | link text, trimmed                                                       |
+| Inside a `📸` paragraph                              | `"photo"`        | paragraph text before `<a>` + link text, trimmed and joined with a space |
+| Any other link                                       | paragraph's emoji mapping | link text, trimmed                                              |
 
 ### Example
 
@@ -867,22 +877,22 @@ Match against the link text (case-insensitive, trimmed):
 ```typescript
 references: [
   {
-    icon: "📸",
+    type: "photo",
     label: "Fotos del mes de marzo",
     url: "https://www.flickr.com/photos/fbmadrid/albums/72177720332315809",
   },
   {
-    icon: "💼",
+    type: "document",
     label: "Informe de la jornada",
     url: "https://fbm.es/informes.aspx?...",
   },
   {
-    icon: "📰",
+    type: "article",
     label: "Previa del partido",
     url: "https://www.fbm.es/noticia-104-13157/...",
   },
   {
-    icon: "📰",
+    type: "article",
     label: "Crónica del partido",
     url: "https://www.fbm.es/noticia-104-13169/...",
   },

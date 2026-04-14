@@ -64,27 +64,27 @@ export const game_2026_03_22_canoe: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de marzo",
       url: "https://www.flickr.com/photos/fbmadrid/albums/72177720332315809",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15326&informe=resultados-clasificacion-proxima&ultima_jornada=103476&proxima_jornada=103477",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://www.fbm.es/noticia-104-13157/liga-ahorramas-arrancan-los-pre-playoff",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://www.fbm.es/noticia-104-13169/liga-ahorramas-un-espectacular-fin-de-semana-dicta-sentencia",
     },
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos realizadas por el club",
       url: "https://www.flickr.com/gp/cbalcobendas/Sm59c2q869",
     },

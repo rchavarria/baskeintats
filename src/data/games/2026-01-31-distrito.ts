@@ -65,22 +65,22 @@ export const game_2026_01_31_distrito: Game = GameSchema.parse({
 
   references: [
     {
-      icon: "📸",
+      type: "photo",
       label: "Fotos del mes de enero",
       url: "https://www.flickr.com/photos/fbmadrid/sets/72177720331399343/",
     },
     {
-      icon: "💼",
+      type: "document",
       label: "Informe de la jornada",
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15328&informe=resultados-clasificacion-proxima&ultima_jornada=103530&proxima_jornada=103531",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Previa del partido",
       url: "https://www.fbm.es/noticia-104-13061/la-liga-ahorramas-ya-apunta-a-la-cima",
     },
     {
-      icon: "📰",
+      type: "article",
       label: "Crónica del partido",
       url: "https://www.fbm.es/noticia-123-13069/liga-ahorramas-el-espect%C3%A1culo-contin%C3%BAa",
     },
