@@ -4,7 +4,7 @@ import { totalPoints } from "../model/GameSchema";
 import { derivePlayerStats } from "../model/PlayerSchema";
 import { EmptyState } from "../components/ui/EmptyState";
 import {DateDisplay} from "../components/ui/DateDisplay.tsx";
-import { GameVideos } from "../components/games/GameVideos";
+import { GameVideos } from "../components/events/GameVideos";
 
 export function GameDetailPage() {
   const { gameId } = useParams<{ gameId: string }>();

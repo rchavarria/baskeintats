@@ -3,7 +3,7 @@ import {useEvents} from "../hooks/useEvents.ts";
 import {totalPoints} from "../model/GameSchema";
 import {deriveAdvancedPlayerStats} from "../model/PlayerSchema";
 import {EmptyState} from "../components/ui/EmptyState";
-import {GameVideos} from "../components/games/GameVideos.tsx";
+import {GameVideos} from "../components/events/GameVideos.tsx";
 import {DateDisplay} from "../components/ui/DateDisplay.tsx";
 
 export function AdvancedGameDetailPage() {

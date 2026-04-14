@@ -1,6 +1,7 @@
 import {useEvents} from "../hooks/useEvents.ts";
-import {GameCard} from "../components/games/GameCard";
+import {GameCard} from "../components/events/GameCard";
 import {EmptyState} from "../components/ui/EmptyState";
+import {AnnouncementCard} from "../components/events/AnnouncementCard.tsx";
 
 export function HomePage() {
   const events = useEvents();
@@ -16,7 +17,7 @@ export function HomePage() {
             events.map(e => {
               switch (e.type) {
               case 'announcement':
-                return <div>Announcement: {e.id}</div>;
+                return <AnnouncementCard key={e.id} announcement={e} />;
               case 'advanced-game':
               case 'game':
               default:
