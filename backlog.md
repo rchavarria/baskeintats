@@ -1,8 +1,5 @@
 # Backlog
 
-- convertir varios anuncios a AnnouncementSchema
-  - :2026-04-14 ✅ leucemia y linfoma, podría añadir el schedule, algunos partidos al menos, los primeros de "fase de grupos"
-  - en el detalle, las fechas de los schedules, mostrarlas mejor, no ahí al bulto
 - convertir partidos del torneo de Reyes
 - convertir partidos del torneo de Teruel
 - convertir partidos del torneo FLL
@@ -11,6 +8,7 @@
 
 ## Done
 
+- 2026-04-14: convertir varios anuncios a AnnouncementSchema
 - 2026-04-14: revisar partidos convertidos de la primera fase (del 2010 y del 2011)
 - 2026-04-13: parsear HTML de partidos con estadisticas avanzadas y crear advancedPlayerStats en cada GameSchema
 - 2026-04-08: `npm run validate` validates data can be correctly parsed
