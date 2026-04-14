@@ -4,7 +4,7 @@ import { venues } from "../venues.ts";
 import { teams } from "../teams.ts";
 
 export const game_2025_12_13_san_jorge: Game = GameSchema.parse({
-  id: "S56-liga-u15-j10",
+  id: "S56-liga-plata-f1-g4-j10",
   season: "2025-26",
   date: "2025-12-13T19:15:00Z",
   type: "game",
@@ -12,7 +12,7 @@ export const game_2025_12_13_san_jorge: Game = GameSchema.parse({
   competition: {
     name: "Liga Ahorramás - Plata",
     category: "U15M",
-    phase: "",
+    phase: "Fase 1 - Grupo 4",
     round: "J10",
   },
 
@@ -20,7 +20,7 @@ export const game_2025_12_13_san_jorge: Game = GameSchema.parse({
 
   home: {
     club: teams["san-jorge"],
-    category: "U15M",
+    category: "U16M",
     scores: [19, 25, 18, 20],
   },
 

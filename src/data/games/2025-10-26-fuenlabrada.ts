@@ -4,7 +4,7 @@ import {venues} from "../venues.ts";
 import {teams} from "../teams.ts";
 
 export const game_2025_10_26_fuenlabrada: AdvancedGame = AdvancedGameSchema.parse({
-  id: "S56-liga-oro-j5",
+  id: "S56-liga-oro-f1-g1-j5",
   type: "advanced-game",
   season: "2025-26",
   date: "2025-10-26T11:00:00Z",

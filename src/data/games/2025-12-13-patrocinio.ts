@@ -4,7 +4,7 @@ import {venues} from "../venues.ts";
 import {teams} from "../teams.ts";
 
 export const game_2025_12_13_patrocinio: Game = GameSchema.parse({
-  id: "S56-liga-oro-j8",
+  id: "S56-liga-oro-f1-g1-j8",
   type: "game",
   season: "2025-26",
   date: "2025-12-13T12:15:00Z",

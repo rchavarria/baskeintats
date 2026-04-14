@@ -4,7 +4,7 @@ import { venues } from "../venues.ts";
 import { teams } from "../teams.ts";
 
 export const game_2025_11_27_coslada: Game = GameSchema.parse({
-  id: "S56-liga-u15-j8",
+  id: "S56-liga-plata-f1-g4-j8",
   season: "2025-26",
   date: "2025-11-27T18:45:00Z",
   type: "game",
@@ -12,7 +12,7 @@ export const game_2025_11_27_coslada: Game = GameSchema.parse({
   competition: {
     name: "Liga Ahorramás - Plata",
     category: "U15M",
-    phase: "",
+    phase: "Fase 1 - Grupo 4",
     round: "J8",
   },
 
@@ -20,7 +20,7 @@ export const game_2025_11_27_coslada: Game = GameSchema.parse({
 
   home: {
     club: teams["coslada"],
-    category: "U15M",
+    category: "U16M",
     scores: [11, 28, 20, 25],
   },
 

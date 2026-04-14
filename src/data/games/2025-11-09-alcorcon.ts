@@ -4,7 +4,7 @@ import { venues } from "../venues.ts";
 import { teams } from "../teams.ts";
 
 export const game_2025_11_09_alcorcon: Game = GameSchema.parse({
-  id: "S56-liga-u15-j6",
+  id: "S56-liga-plata-f1-g4-j6",
   season: "2025-26",
   date: "2025-11-09T12:30:00Z",
   type: "game",
@@ -12,7 +12,7 @@ export const game_2025_11_09_alcorcon: Game = GameSchema.parse({
   competition: {
     name: "Liga Ahorramás - Plata",
     category: "U15M",
-    phase: "",
+    phase: "Fase 1 - Grupo 4",
     round: "J6",
   },
 
