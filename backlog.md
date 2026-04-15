@@ -1,11 +1,8 @@
 # Backlog
 
-- tests para la UI, al menos, para algunos casos
-  - un partido normal
-  - un partido con estadisticas avanzadas
-  - un anuncio
-  - partido amistoso (para después)
 - convertir partidos del Torneo amistoso en Castilla y León, Salamanca
+- tests para la UI, al menos, para algunos casos
+  - partido amistoso (para después)
 - convertir partidos del torneo de Teruel
 - cuando el tiempo jugado sea 0, mostrar "Estadísticas no disponibles" en vez de mostrar 0 minutos, 0 puntos, 0 tiros, etc.
 - añadir un Event que sea las estadisticas de una fase o de un torneo, de un grupo de Games vamos
@@ -13,6 +10,10 @@
 
 ## Done
 
+- 2026-04-15: tests para la UI, al menos, para algunos casos
+  - un partido normal
+  - un partido con estadisticas avanzadas
+  - un anuncio
 - 2026-04-15: convertir partidos del torneo FLL
 - 2026-04-14: convertir varios anuncios a AnnouncementSchema
 - 2026-04-14: revisar partidos convertidos de la primera fase (del 2010 y del 2011)
