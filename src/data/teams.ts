@@ -108,6 +108,13 @@ const teamList: Team[] = [
     venue: venues["diaz-miguel"],
   },
   {
+    id: "seleccion-madrid",
+    name: "Selección de Madrid",
+    logo: "/logos/seleccion-madrid-transparent.png",
+    web: "https://fbm.es",
+    venue: venues["caja-magica"],
+  },
+  {
     id: "tres-cantos",
     name: "Tres Cantos",
     logo: "/logos/tres-cantos-transparent.png",
