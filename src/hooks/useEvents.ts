@@ -38,6 +38,9 @@ import {game_2025_12_13_patrocinio} from "../data/games/2025-12-13-patrocinio.ts
 import {game_2025_11_30_valcude} from "../data/games/2025-11-30-valcude.ts";
 import {game_2025_11_30_estudiantes} from "../data/games/2025-11-30-estudiantes.ts";
 import {game_2025_11_27_coslada} from "../data/games/2025-11-27-coslada.ts";
+import {game_2025_11_23_seleccion_madrid} from "../data/games/2025-11-23-seleccion-madrid.ts";
+import {game_2025_11_22_joventut} from "../data/games/2025-11-22-joventut.ts";
+import {game_2025_11_21_real_madrid} from "../data/games/2025-11-21-real-madrid.ts";
 import {game_2025_11_16_rozas} from "../data/games/2025-11-16-rozas.ts";
 import {game_2025_11_15_zentro} from "../data/games/2025-11-15-zentro.ts";
 import {announcement_2025_11_18_torneo_fll} from "../data/games/2025-11-18-torneo-fll.ts";
@@ -97,9 +100,12 @@ export function useEvents(): Event[] {
     game_2025_11_30_valcude,
     game_2025_11_30_estudiantes,
     game_2025_11_27_coslada,
+    game_2025_11_23_seleccion_madrid,
+    game_2025_11_22_joventut,
+    game_2025_11_21_real_madrid,
+    announcement_2025_11_18_torneo_fll,
     game_2025_11_16_rozas,
     game_2025_11_15_zentro,
-    announcement_2025_11_18_torneo_fll,
     game_2025_11_09_alcorcon,
     game_2025_11_09_real_madrid,
     game_2025_10_26_fuenlabrada,
