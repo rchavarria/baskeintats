@@ -28,6 +28,7 @@ Use relative Unix-style paths like `~/project/file` when executing CLI commands
 | `npm run validate` | Validates TypeScript data can be correctly loaded |
 | `npm run dev`      | Generates data and starts the development server  |
 | `npm run build`    | Generates data and builds for production          |
+| `npm run build`    | Executes unit tests                               |
 | `npm run preview`  | Serves the production build                       |
 
 ## Key Requirements
@@ -186,17 +187,17 @@ export function useExample() {
 
 ### Player Statistics
 
-| Stat | Description |
-|------|-------------|
-| `points` | Total points scored |
-| `rebounds` | Total rebounds (off + def) |
-| `assists` | Assists |
-| `steals` | Steals |
-| `blocks` | Blocked shots |
-| `turnovers` | Turnovers committed |
-| `fgm/fga` | Field goals made/attempted |
-| `tpm/tpa` | Three-pointers made/attempted |
-| `ftm/fta` | Free throws made/attempted |
+| Stat        | Description                   |
+|-------------|-------------------------------|
+| `points`    | Total points scored           |
+| `rebounds`  | Total rebounds (off + def)    |
+| `assists`   | Assists                       |
+| `steals`    | Steals                        |
+| `blocks`    | Blocked shots                 |
+| `turnovers` | Turnovers committed           |
+| `fgm/fga`   | Field goals made/attempted    |
+| `tpm/tpa`   | Three-pointers made/attempted |
+| `ftm/fta`   | Free throws made/attempted    |
 
 ### Scoring
 
@@ -209,11 +210,11 @@ export function useExample() {
 
 ## 7. Routes
 
-| Path | Component | Description |
-|------|-----------|-------------|
-| `/` | `HomePage` | Landing page |
-| `/games` | `GamesPage` | List all games (filterable) |
-| `/games/:gameId` | `GameDetailPage` | Single game details |
+| Path             | Component        | Description                 |
+|------------------|------------------|-----------------------------|
+| `/`              | `HomePage`       | Landing page                |
+| `/games`         | `GamesPage`      | List all games (filterable) |
+| `/games/:gameId` | `GameDetailPage` | Single game details         |
 
 ---
 
@@ -245,6 +246,7 @@ export function useExample() {
 - Test files: `*.test.ts` or `*.test.tsx`
 - Focus on: data transformations, utility functions, hooks
 - Run tests: `npm run test`
+- Run tests for a specific UI component: `npm run test -- UIComponentName.test.tsx` 
 
 ---
 
