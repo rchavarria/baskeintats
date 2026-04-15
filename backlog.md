@@ -10,6 +10,7 @@
 
 ## Done
 
+- 2026-04-15: cuando el tiempo jugado sea 0, mostrar "Estadísticas no disponibles" en vez de mostrar 0 minutos, 0 puntos, 0 tiros, etc.
 - 2026-04-15: convertir partidos del Torneo amistoso en Castilla y León, Salamanca
 - 2026-04-15: tests para la UI, al menos, para algunos casos
   - un partido normal
