@@ -80,6 +80,13 @@ const teamList: Team[] = [
     venue: venues["default"],
   },
   {
+    id: "oporto",
+    name: "Oporto",
+    logo: "/logos/default.png",
+    web: "https://example.com",
+    venue: venues["default"],
+  },
+  {
     id: "patrocinio",
     name: "Patrocinio San José",
     logo: "/logos/patrocinio-transparent.png",
@@ -106,6 +113,13 @@ const teamList: Team[] = [
     logo: "/logos/san-jorge.jpg",
     web: "https://sanjorge.es",
     venue: venues["diaz-miguel"],
+  },
+  {
+    id: "seleccion-canarias",
+    name: "Selección de Canarias",
+    logo: "/logos/federacion-canaria-baloncesto.png",
+    web: "https://example.com",
+    venue: venues["default"],
   },
   {
     id: "seleccion-madrid",
