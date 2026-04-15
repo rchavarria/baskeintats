@@ -1,11 +1,11 @@
 import { useParams, Link } from "react-router-dom";
 import { useEvents } from "../hooks/useEvents.ts";
 import { totalPoints } from "../model/GameSchema";
-import { derivePlayerStats } from "../model/PlayerSchema";
 import { EmptyState } from "../components/ui/EmptyState";
 import {DateTimeDisplay} from "../components/ui/DateTimeDisplay.tsx";
 import { GameVideos } from "../components/events/GameVideos";
 import {ReferenceList} from "../components/events/ReferenceList.tsx";
+import { PlayerStats } from "../components/stats/PlayerStats";
 
 export function GameDetailPage() {
   const { gameId } = useParams<{ gameId: string }>();
@@ -20,7 +20,6 @@ export function GameDetailPage() {
   const rival = game.home.club.id === "alcobendas" ? game.away.club : game.home.club;
   const homeScore = totalPoints(game.home.scores);
   const awayScore = totalPoints(game.away.scores);
-  const derived = game.playerStats ? derivePlayerStats(game.playerStats) : null;
 
   return (
     <div>
@@ -64,49 +63,7 @@ export function GameDetailPage() {
         </div>
       </div>
 
-      {derived && (
-        <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
-          <h2 className="font-semibold text-gray-700 mb-4">📈 Estadísticas del jugador</h2>
-          <div className="grid grid-cols-4 gap-4 text-center">
-            <div>
-              <p className="text-2xl font-bold text-gray-900">
-                {Math.floor(derived.time / 60).toString().padStart(2, '0')}
-                :
-                {(derived.time % 60).toString().padStart(2, '0')}
-              </p>
-              <p className="text-xs text-gray-400">Tiempo</p>
-            </div>
-            <div>
-              <p className="text-2xl font-bold text-gray-900">{derived.points}</p>
-              <p className="text-xs text-gray-400">Puntos</p>
-            </div>
-            <div>
-              <p className="text-lg font-bold text-gray-900">{derived.fieldGoals}/-</p>
-              <p className="text-xs text-gray-400">TC ({derived.percentage.fieldGoals}%)</p>
-            </div>
-            <div>
-              <p className="text-lg font-bold text-gray-900">{derived.threePointers}/-</p>
-              <p className="text-xs text-gray-400">3P ({derived.percentage.threePointers}%)</p>
-            </div>
-            <div>
-              <p className="text-lg font-bold text-gray-900">{derived.freeThrows.made}/{derived.freeThrows.attempted}</p>
-              <p className="text-xs text-gray-400">TL ({derived.percentage.freeThrows}%)</p>
-            </div>
-            <div>
-              <p className="text-lg font-bold text-gray-900">{derived.faults}</p>
-              <p className="text-xs text-gray-400">Faltas</p>
-            </div>
-            <div>
-              <p className="text-lg font-bold text-gray-900">{derived.plusMinus}</p>
-              <p className="text-xs text-gray-400">+/-</p>
-            </div>
-            <div>
-              <p className="text-lg font-bold text-gray-900">{derived.efficiency}</p>
-              <p className="text-xs text-gray-400">Valoración</p>
-            </div>
-          </div>
-        </div>
-      )}
+      {game.playerStats && <PlayerStats stats={game.playerStats} />}
 
       <GameVideos videos={game.videos} rival={rival.name} />
 
