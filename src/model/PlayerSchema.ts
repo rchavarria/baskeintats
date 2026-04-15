@@ -60,8 +60,6 @@ export function derivePlayerStats(stats: PlayerStats): DerivedPlayerStats {
     ...stats,
 
     percentage: {
-      fieldGoals: safePercentage(stats.fieldGoals, 0),
-      threePointers: safePercentage(stats.threePointers, 0),
       freeThrows: safePercentage(stats.freeThrows.made, stats.freeThrows.attempted),
     },
 
@@ -73,8 +71,6 @@ export interface DerivedPlayerStats extends PlayerStats {
   points: number;
 
   percentage: {
-    fieldGoals: number;
-    threePointers: number;
     freeThrows: number;
   };
 }
