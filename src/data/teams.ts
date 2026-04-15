@@ -52,6 +52,13 @@ const teamList: Team[] = [
     venue: venues["default"],
   },
   {
+    id: "joventut",
+    name: "Joventut de Badalona",
+    logo: "/logos/joventut-transparent.png",
+    web: "https://joventutbadalona.com",
+    venue: venues["default"],
+  },
+  {
     id: "juande",
     name: "CB Juan de Austria",
     logo: "/logos/juande-transparent.png",
