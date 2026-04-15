@@ -44,12 +44,16 @@ export const game_2026_03_29_distrito: Game = GameSchema.parse({
   },
 
   videos: {
-    official: "https://youtu.be/-",
+    official: "https://youtu.be/W8iJqnZrX4c",
     others: [
+      {
+        label: "Alper",
+        url: "https://youtu.be/Vh_B1M5fp1k",
+      },
       {
         label: "Canal CBA",
         url: "https://youtu.be/-",
-      }
+      },
     ]
   },
 
