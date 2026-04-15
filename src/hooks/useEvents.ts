@@ -35,6 +35,8 @@ import {announcement_2025_12_17_convocatoria_fbm_1} from "../data/games/2025-12-
 import {game_2025_12_14_fuenlabrada} from "../data/games/2025-12-14-fuenlabrada.ts";
 import {game_2025_12_13_san_jorge} from "../data/games/2025-12-13-san-jorge.ts";
 import {game_2025_12_13_patrocinio} from "../data/games/2025-12-13-patrocinio.ts";
+import {game_2025_12_28_oporto} from "../data/games/2025-12-28-oporto.ts";
+import {game_2025_12_27_canarias} from "../data/games/2025-12-27-canarias.ts";
 import {game_2025_11_30_valcude} from "../data/games/2025-11-30-valcude.ts";
 import {game_2025_11_30_estudiantes} from "../data/games/2025-11-30-estudiantes.ts";
 import {game_2025_11_27_coslada} from "../data/games/2025-11-27-coslada.ts";
@@ -91,6 +93,8 @@ export function useEvents(): Event[] {
     game_2026_01_02_zentro,
     game_2026_01_02_fuenlabrada,
     announcement_2026_01_01_torneo_reyes,
+    game_2025_12_28_oporto,
+    game_2025_12_27_canarias,
     announcement_2025_12_26_torneo_cyl,
     announcement_2025_12_19_torneo_teruel,
     announcement_2025_12_17_convocatoria_fbm_1,
