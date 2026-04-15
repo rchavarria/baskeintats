@@ -14,8 +14,6 @@ const fakeAnnouncement: Announcement = {
   category: "U14M",
   description: [
     "Gran torneo durante las fiestas de Reyes.",
-    "Participan 8 equipos de la comunidad.",
-    "Fase de grupos + eliminatorias.",
   ],
   references: [],
 };
@@ -25,23 +23,53 @@ function renderWithRouter(ui: React.ReactElement) {
 }
 
 describe("AnnouncementCard", () => {
-  it("renders title, category, truncated description and links to detail", () => {
+  it("renders title and category", () => {
     renderWithRouter(<AnnouncementCard announcement={fakeAnnouncement} />);
 
-    // Title and category
     expect(screen.getByText("Torneo de Reyes")).toBeInTheDocument();
     expect(screen.getByText("U14M")).toBeInTheDocument();
+  });
 
-    // Tournament emoji
+  it("renders the tournament emoji", () => {
+    renderWithRouter(<AnnouncementCard announcement={fakeAnnouncement} />);
+
     expect(screen.getByText("🏆")).toBeInTheDocument();
+  });
 
-    // Only first 2 description lines shown, plus ellipsis
+  it("renders the description", () => {
+    renderWithRouter(<AnnouncementCard announcement={fakeAnnouncement} />);
+
     expect(screen.getByText("Gran torneo durante las fiestas de Reyes.")).toBeInTheDocument();
-    expect(screen.getByText("Participan 8 equipos de la comunidad.")).toBeInTheDocument();
-    expect(screen.getByText("· · ·")).toBeInTheDocument();
-    expect(screen.queryByText("Fase de grupos + eliminatorias.")).not.toBeInTheDocument();
+    expect(screen.queryByText("· · ·")).not.toBeInTheDocument();
+  });
 
-    // Link to announcement detail
+  it("truncates description to 2 lines with ellipsis when more than 2", () => {
+    const longAnnouncement: Announcement = {
+      ...fakeAnnouncement,
+      description: [
+        "Primera línea visible.",
+        "Segunda línea visible.",
+        "Tercera línea oculta.",
+      ],
+    };
+
+    renderWithRouter(<AnnouncementCard announcement={longAnnouncement} />);
+
+    expect(screen.getByText("Primera línea visible.")).toBeInTheDocument();
+    expect(screen.getByText("Segunda línea visible.")).toBeInTheDocument();
+    expect(screen.getByText("· · ·")).toBeInTheDocument();
+    expect(screen.queryByText("Tercera línea oculta.")).not.toBeInTheDocument();
+  });
+
+  it("renders the announcement date", () => {
+    renderWithRouter(<AnnouncementCard announcement={fakeAnnouncement} />);
+
+    expect(screen.getByText(/1.*ene.*2026/i)).toBeInTheDocument();
+  });
+
+  it("links to the announcement detail page", () => {
+    renderWithRouter(<AnnouncementCard announcement={fakeAnnouncement} />);
+
     const link = screen.getByRole("link");
     expect(link).toHaveAttribute("href", "/announcements/torneo-reyes-2026");
   });
