@@ -82,20 +82,35 @@ function renderWithRouter(ui: React.ReactElement) {
 }
 
 describe("GameCard", () => {
-  it("renders team names, score, competition info and links to game detail", () => {
+  it("renders team names", () => {
     renderWithRouter(<GameCard game={fakeGame} />);
 
-    // Team names
     expect(screen.getByText("CB Alcobendas")).toBeInTheDocument();
     expect(screen.getByText("Movistar Estudiantes")).toBeInTheDocument();
+  });
 
-    // Score: 17+14+16+13=60 vs 29+22+20+26=97
+  it("renders the total score from quarter scores", () => {
+    renderWithRouter(<GameCard game={fakeGame} />);
+
+    // 17+14+16+13=60 vs 29+22+20+26=97
     expect(screen.getByText("60 — 97")).toBeInTheDocument();
+  });
 
-    // Competition info
+  it("renders competition info", () => {
+    renderWithRouter(<GameCard game={fakeGame} />);
+
     expect(screen.getByText(/Liga Ahorramás - Oro · Fase 1 - Grupo 1 · J4/)).toBeInTheDocument();
+  });
 
-    // Link to game detail page
+  it("renders the game date", () => {
+    renderWithRouter(<GameCard game={fakeGame} />);
+
+    expect(screen.getByText(/18.*oct.*2025/i)).toBeInTheDocument();
+  });
+
+  it("links to the game detail page", () => {
+    renderWithRouter(<GameCard game={fakeGame} />);
+
     const link = screen.getByRole("link");
     expect(link).toHaveAttribute("href", "/games/test-game-01");
   });
