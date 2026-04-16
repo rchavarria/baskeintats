@@ -3,9 +3,12 @@
 - tests para la UI, al menos, para algunos casos
   - partido amistoso (para después)
 - convertir partidos del torneo de Teruel
-- eliminar codigo duplicado al mostrar detalles de partidos (normal Vs avanzado)
-- añadir un Event que sea las estadisticas de una fase o de un torneo, de un grupo de Games vamos
-- mostrar 🤩 o 😭 según el resultado del partido, aunque no se exactamente donde
+- añadir un campo "favourite" a GameSchema
+- añadir un campo "opponent" a GameSchema, para mostrarlo en la UI, aunque no se pueda calcular automáticamente, puede ser un flag en uno de los dos equipos
+- convertir partidos amistosos de la temporada 2025-2026
+- eliminar código duplicado al mostrar detalles de partidos (normal Vs avanzado)
+- añadir un Event que sea las estadísticas de una fase o de un torneo, de un grupo de Games vamos
+- mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - va a ser complicado calcular el rival si cambiamos de equipo, añadir nuevo campo en GameSchema para guardar el rival, rellenarlo a mano
 
 ## Done
