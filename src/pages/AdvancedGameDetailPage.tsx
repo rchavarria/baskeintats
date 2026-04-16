@@ -16,7 +16,7 @@ export function AdvancedGameDetailPage() {
     return <EmptyState message="Partido (avanzado) no encontrado" />;
   }
 
-  const rival = game.home.club.id === "alcobendas" ? game.away.club : game.home.club;
+  const opponent = game.home.opponent ? game.home.club : game.away.club;
   const homeScore = totalPoints(game.home.scores);
   const awayScore = totalPoints(game.away.scores);
 
@@ -64,7 +64,7 @@ export function AdvancedGameDetailPage() {
 
       {game.playerStats && <AdvancedPlayerStats stats={game.playerStats} />}
 
-      <GameVideos videos={game.videos} rival={rival.name} />
+      <GameVideos videos={game.videos} opponent={opponent.name} />
 
       {game.recap && (
         <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">

@@ -13,6 +13,7 @@ export const GameSchema = z.object({
   type: z.literal("game"),
   season: z.string(),
   date: z.iso.datetime(),
+  favourite: z.boolean().optional().default(false),
 
   competition: z.object({
     name: z.string(),
@@ -27,12 +28,14 @@ export const GameSchema = z.object({
   home: z.object({
     club: TeamSchema,
     category: z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]),
+    opponent: z.boolean().optional().default(false),
     scores: z.array(z.number().int().nonnegative()),
   }),
 
   away: z.object({
     club: TeamSchema,
     category: z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]),
+    opponent: z.boolean().optional().default(false),
     scores: z.array(z.number().int().nonnegative()),
   }),
 
