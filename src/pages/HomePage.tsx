@@ -2,6 +2,8 @@ import {useEvents} from "../hooks/useEvents.ts";
 import {GameCard} from "../components/events/GameCard";
 import {EmptyState} from "../components/ui/EmptyState";
 import {AnnouncementCard} from "../components/events/AnnouncementCard.tsx";
+import {DefaultCard} from "../components/events/DefaultCard.tsx";
+import {FriendlyGameCard} from "../components/events/FriendlyGameCard.tsx";
 
 export function HomePage() {
   const events = useEvents();
@@ -18,10 +20,13 @@ export function HomePage() {
               switch (e.type) {
               case 'announcement':
                 return <AnnouncementCard key={e.id} announcement={e} />;
+              case 'friendly-game':
+                return <FriendlyGameCard key={e.id} game={e} />;
               case 'advanced-game':
               case 'game':
-              default:
                 return <GameCard key={e.id} game={e} />;
+              default:
+                return <DefaultCard key={e.id} game={e} />;
               }
             })
           }

@@ -1,11 +1,11 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
+import {FriendlyGameSchema} from "../../model/GameSchema.ts";
+import type {FriendlyGame} from "../../model/GameSchema.ts";
 import {venues} from "../venues.ts";
 import {teams} from "../teams.ts";
 
-export const game_2025_09_07_godella: Game = GameSchema.parse({
+export const game_2025_09_07_godella: FriendlyGame = FriendlyGameSchema.parse({
   id: "S56-amistoso-godella",
-  type: "game",
+  type: "friendly-game",
   season: "2025-26",
   date: "2025-09-07T09:15:00Z",
 

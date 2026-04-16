@@ -76,3 +76,9 @@ export const AdvancedGameSchema = GameSchema
   });
 export type AdvancedGame = z.infer<typeof AdvancedGameSchema>;
 
+// friendly game has the same structure as Game, but with a different type
+export const FriendlyGameSchema = GameSchema
+  .extend({
+    type: z.literal("friendly-game"),
+  });
+export type FriendlyGame = z.infer<typeof FriendlyGameSchema>;

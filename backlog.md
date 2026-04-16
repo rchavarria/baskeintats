@@ -1,6 +1,9 @@
 # Backlog
 
 - convertir partidos amistosos de la temporada 2025-2026
+  - 1-mar-26, amistoso contra UCAM Murcia, en casa, pero no hay muchos datos que digamos, solo el video, si quieres más, tienes que analizarlo
+    - no merece ni la pena, el video son 10 minutos
+  - marcar los partidos amistosos como tales para poder filtrarlos en la UI, poner un emoji adecuado...
 - tests para la UI, al menos, para algunos casos
   - partido amistoso (para después)
 - eliminar código duplicado al mostrar detalles de partidos (normal Vs avanzado)
