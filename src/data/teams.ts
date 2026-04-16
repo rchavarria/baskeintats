@@ -73,6 +73,13 @@ const teamList: Team[] = [
     venue: venues["juande"],
   },
   {
+    id: "godella",
+    name: "L'Horta Godella",
+    logo: "/logos/godella-transparent.png",
+    web: "https://cblhortagodella.es/",
+    venue: venues["default"],
+  },
+  {
     id: "getafe",
     name: "CB Getafe",
     logo: "/logos/getafe-transparent.png",
