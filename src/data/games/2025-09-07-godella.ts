@@ -52,7 +52,7 @@ export const game_2025_09_07_godella: Game = GameSchema.parse({
   recap: {
     title: "Amistoso contra un buen equipo valenciano",
     lines: [
-      "Partido igualado hasta falta de 5 minutos, luego ya, entraror un par de triples seguidos y Godella no pudo hacer nada",
+      "Partido igualado hasta falta de 5 minutos, luego ya, entraron un par de triples seguidos y Godella no pudo hacer nada",
       "El entrenador salió contento, diciendo que las jugadas iban saliendo según las iba marcando",
     ],
   },
