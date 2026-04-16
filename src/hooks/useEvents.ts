@@ -63,6 +63,10 @@ import {game_2025_09_28_zentro} from "../data/games/2025-09-28-zentro.ts";
 import {game_2025_09_28_rozas} from "../data/games/2025-09-28-rozas.ts";
 import {game_2025_09_20_alcorcon} from "../data/games/2025-09-20-alcorcon.ts";
 import {game_2025_09_20_real_madrid} from "../data/games/2025-09-20-real-madrid.ts";
+import {game_2025_09_18_distrito} from "../data/games/2025-09-18-distrito.ts";
+import {game_2025_09_13_canoe} from "../data/games/2025-09-13-canoe.ts";
+import {game_2025_09_07_godella} from "../data/games/2025-09-07-godella.ts";
+import {game_2025_09_06_rozas} from "../data/games/2025-09-06-rozas.ts";
 import {announcement_2025_08_26_comienzo_temporada} from "../data/games/2025-08-26-comienzo-temporada.ts";
 
 type Event = Announcement | Game | ScheduledGame | AdvancedGame;
@@ -132,6 +136,10 @@ export function useEvents(): Event[] {
     game_2025_09_28_rozas,
     game_2025_09_20_alcorcon,
     game_2025_09_20_real_madrid,
+    game_2025_09_18_distrito,
+    game_2025_09_13_canoe,
+    game_2025_09_07_godella,
+    game_2025_09_06_rozas,
     announcement_2025_08_26_comienzo_temporada,
   ];
 }
