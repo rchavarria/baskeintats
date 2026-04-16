@@ -7,7 +7,7 @@ export const game_2025_12_19_malaga: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-torneo-teruel-j1",
   type: "advanced-game",
   season: "2025-26",
-  date: "2025-12-19T10:00:00Z",
+  date: "2025-12-19T09:00:00Z",
 
   competition: {
     name: "XVII Torneo Tocando las Estrellas",

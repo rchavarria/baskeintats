@@ -80,7 +80,7 @@ export const game_2025_12_21_elche: AdvancedGame = AdvancedGameSchema.parse({
     lines: [
       "¡Partidazo! Comenzó justo lo contrario que el anterior. En esta ocasión, fueron ellos los que empezaron arrasando, consiguiendo una ventada de hasta 21 puntos",
       "Era increíble, les entraba todo, no conseguíamos defenderles, no llegábamos a puntear los triples",
-      "Pero volvió a aparecer la garra del equipo",
+      "🤩 Pero volvió a aparecer la garra del equipo",
       "Lucharon, lucharon y volvieron a luchar. Poco a poco fuimos recortando distancia, como una gota malaya, con muchísimo esfuerzo, sobre todo en defensa",
       "Y a falta de 3 minutos, nos pusimos por delante",
       "Ya no sabían qué hacer, defendíamos como leones, ya no tenían tanto acierto",

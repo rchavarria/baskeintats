@@ -78,7 +78,7 @@ export const game_2025_12_20_sevilla: AdvancedGame = AdvancedGameSchema.parse({
     lines: [
       "El partido comenzó con muy pocos puntos, pero luego conseguimos despegarnos, sacando una ventaja considerable, que parecía insalvable",
       "Pero no lo fue, los sevillanos redoblaron sus esfuerzos y, no solo consiguieron remontar, sino que llegaron a ponerse por delante",
-      "Y ahí apareció la garra del equipo",
+      "🤩 Y ahí apareció la garra del equipo",
       "No se amedrentaron, siguieron luchando y consiguieron darle la vuelta",
       "El final fue apoteósico, un final de auténtica competición. Pocos puntos por delante, ellos haciendo faltas rápidas y jugándose triples",
       "Pero no pudieron contra nosotros. Incluso en la última jugada, con 4 puntos de ventaja y 3 o 4 segundos restantes, ni siquiera defendimos al tirador, dejándole un tiro cómodo que falló",

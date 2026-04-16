@@ -7,7 +7,7 @@ export const game_2025_12_20_olivar: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-torneo-teruel-j3",
   type: "advanced-game",
   season: "2025-26",
-  date: "2025-12-20T10:00:00Z",
+  date: "2025-12-20T09:00:00Z",
 
   competition: {
     name: "XVII Torneo Tocando las Estrellas",
@@ -80,7 +80,7 @@ export const game_2025_12_20_olivar: AdvancedGame = AdvancedGameSchema.parse({
       "Muy mal partido del cachorro",
       "Hay días buenos y días malos. Esta noche ha descansado muy mal, y eso se ha notado en el partido de la mañana",
       "Pero no hay que bajar los brazos, hay que seguir y apoyarse en los compañeros que han hecho un trabajo excepcional",
-      "Y con este partido, termina la fase de grupos",
+      "➡️ Y con este partido, termina la fase de grupos",
       "Pasamos segundos y lucharemos por el 5º puesto del campeonato",
     ],
   },
