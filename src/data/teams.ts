@@ -38,6 +38,13 @@ const teamList: Team[] = [
     venue: venues["circular"],
   },
   {
+    id: "elche",
+    name: "Elche",
+    logo: "/logos/elche.png",
+    web: "https://www.instagram.com/cbielche",
+    venue: venues["default"],
+  },
+  {
     id: "estudiantes",
     name: "Estudiantes",
     logo: "/logos/estudiantes.png",
@@ -77,6 +84,20 @@ const teamList: Team[] = [
     name: "Laso Academy",
     logo: "/logos/laso-transparent.png",
     web: "https://lasoacademy.com",
+    venue: venues["default"],
+  },
+  {
+    id: "malaga",
+    name: "Unicaja Málaga",
+    logo: "/logos/malaga.png",
+    web: "https://www.unicajabaloncesto.com/",
+    venue: venues["default"],
+  },
+  {
+    id: "olivar",
+    name: "El Olivar",
+    logo: "/logos/olivar.png",
+    web: "https://elolivar.com/baloncesto",
     venue: venues["default"],
   },
   {
@@ -127,6 +148,20 @@ const teamList: Team[] = [
     logo: "/logos/seleccion-madrid-transparent.png",
     web: "https://fbm.es",
     venue: venues["caja-magica"],
+  },
+  {
+    id: "sevilla",
+    name: "Caja87 Sevilla",
+    logo: "/logos/sevilla.png",
+    web: "https://caja87baloncesto.es",
+    venue: venues["default"],
+  },
+  {
+    id: "torrent",
+    name: "NB Torrent",
+    logo: "/logos/nb-torrent.png",
+    web: "https://www.nbtorrent.net",
+    venue: venues["default"],
   },
   {
     id: "tres-cantos",
