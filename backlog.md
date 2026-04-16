@@ -2,7 +2,6 @@
 
 - tests para la UI, al menos, para algunos casos
   - partido amistoso (para después)
-- convertir partidos del torneo de Teruel
 - añadir un campo "favourite" a GameSchema
 - añadir un campo "opponent" a GameSchema, para mostrarlo en la UI, aunque no se pueda calcular automáticamente, puede ser un flag en uno de los dos equipos
 - convertir partidos amistosos de la temporada 2025-2026
@@ -13,6 +12,7 @@
 
 ## Done
 
+- 2026-04-16: convertir partidos del torneo de Teruel
 - 2026-04-15: cuando el tiempo jugado sea 0, mostrar "Estadísticas no disponibles" en vez de mostrar 0 minutos, 0 puntos, 0 tiros, etc.
 - 2026-04-15: convertir partidos del Torneo amistoso en Castilla y León, Salamanca
 - 2026-04-15: tests para la UI, al menos, para algunos casos
