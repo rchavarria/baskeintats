@@ -1,9 +1,5 @@
 # Backlog
 
-- convertir partidos amistosos de la temporada 2025-2026
-  - 1-mar-26, amistoso contra UCAM Murcia, en casa, pero no hay muchos datos que digamos, solo el video, si quieres más, tienes que analizarlo
-    - no merece ni la pena, el video son 10 minutos
-  - marcar los partidos amistosos como tales para poder filtrarlos en la UI, poner un emoji adecuado...
 - tests para la UI, al menos, para algunos casos
   - partido amistoso (para después)
 - eliminar código duplicado al mostrar detalles de partidos (normal Vs avanzado)
@@ -13,6 +9,10 @@
 
 ## Done
 
+- 2026-04-16: convertir partidos amistosos de la temporada 2025-2026
+  - 1-mar-26, amistoso contra UCAM Murcia, en casa, pero no hay muchos datos que digamos, solo el video, si quieres más, tienes que analizarlo
+    - no merece ni la pena, el video son 10 minutos
+  - marcar los partidos amistosos como tales para poder filtrarlos en la UI, poner un emoji adecuado...
 - 2026-04-16: añadir un campo "favourite" a GameSchema
 - 2026-04-16: añadir un campo "opponent" a GameSchema, para mostrarlo en la UI, aunque no se pueda calcular automáticamente, puede ser un flag en uno de los dos equipos
 - 2026-04-16: convertir partidos del torneo de Teruel
