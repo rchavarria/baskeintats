@@ -310,13 +310,89 @@ CSS classes say `team visit`.
 home: {
   club: teams["alcobendas"],
   category: "U15M",
+  opponent: false,
   scores: [9, 21, 20, 17],
 },
 
 away: {
   club: teams["getafe"],
   category: "U15M",
+  opponent: true,
   scores: [11, 13, 16, 10],
+},
+```
+
+---
+
+## Parsing Opponent Flag
+
+### Overview
+
+The `opponent` flag marks which team is the **rival/opponent** (not our team). This flag is **optional** in the schema (defaults to `false`) but should be explicitly set using these rules:
+
+### Rules for Setting the `opponent` Flag
+
+1. **If Alcobendas is one of the teams:**
+   - Mark `opponent: true` on the **other team** (the one that is not Alcobendas)
+   - Mark `opponent: false` (or omit) on Alcobendas
+
+2. **If neither team is Alcobendas:**
+   - Mark `opponent: true` on the team that is **not Selección Madrid**
+   - Mark `opponent: false` (or omit) on Selección Madrid
+
+3. **If both are the same team** (rare tournament scenario):
+   - Mark both as `opponent: false` (or omit)
+
+### Examples
+
+#### Example 1: Alcobendas vs Getafe
+```typescript
+home: {
+  club: teams["alcobendas"],
+  category: "U15M",
+  // opponent is false or omitted (Alcobendas is "our" team)
+  scores: [9, 21, 20, 17],
+},
+
+away: {
+  club: teams["getafe"],
+  category: "U15M",
+  opponent: true,  // Getafe is the opponent
+  scores: [11, 13, 16, 10],
+},
+```
+
+#### Example 2: Real Madrid vs Alcobendas
+```typescript
+home: {
+  club: teams["real-madrid"],
+  category: "U15M",
+  opponent: true,  // Real Madrid is the opponent
+  scores: [38, 38, 30, 26],
+},
+
+away: {
+  club: teams["alcobendas"],
+  category: "U15M",
+  // opponent is false or omitted (Alcobendas is "our" team)
+  scores: [9, 12, 9, 7],
+},
+```
+
+#### Example 3: Selección Madrid vs Other Team (no Alcobendas)
+```typescript
+home: {
+  club: teams["seleccion-madrid"],
+  category: "U15M",
+  // opponent is false or omitted
+  scores: [60, 50, 40, 45],
+},
+
+away: {
+  club: teams["some-other-team"],
+  category: "U15M",
+  opponent: true,  // Not Selección Madrid, so it's the opponent
+  scores: [30, 25, 20, 18],
 },
 ```
 
