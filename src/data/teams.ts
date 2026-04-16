@@ -39,7 +39,7 @@ const teamList: Team[] = [
   },
   {
     id: "elche",
-    name: "Elche",
+    name: "CBI Elche",
     logo: "/logos/elche.png",
     web: "https://www.instagram.com/cbielche",
     venue: venues["default"],
