@@ -3,7 +3,7 @@ import type { AdvancedGame } from "../../model/GameSchema.ts";
 import { venues } from "../venues.ts";
 import { teams } from "../teams.ts";
 
-export const game_2025_12_19_unicaja_malaga: AdvancedGame = AdvancedGameSchema.parse({
+export const game_2025_12_19_malaga: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-torneo-teruel-j1",
   type: "advanced-game",
   season: "2025-26",

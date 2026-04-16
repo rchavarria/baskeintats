@@ -31,10 +31,10 @@ import {game_2026_01_02_fuenlabrada} from "../data/games/2026-01-02-fuenlabrada.
 import {announcement_2026_01_01_torneo_reyes} from "../data/games/2026-01-01-torneo-reyes.ts";
 import {announcement_2025_12_26_torneo_cyl} from "../data/games/2025-12-26-torneo-cyl.ts";
 import {game_2025_12_21_elche} from "../data/games/2025-12-21-elche.ts";
-import {game_2025_12_20_caja_87_sevilla} from "../data/games/2025-12-20-caja-87-sevilla.ts";
-import {game_2025_12_20_el_olivar} from "../data/games/2025-12-20-el-olivar.ts";
+import {game_2025_12_20_sevilla} from "../data/games/2025-12-20-sevilla.ts";
+import {game_2025_12_20_olivar} from "../data/games/2025-12-20-olivar.ts";
 import {game_2025_12_19_torrent} from "../data/games/2025-12-19-torrent.ts";
-import {game_2025_12_19_unicaja_malaga} from "../data/games/2025-12-19-unicaja-malaga.ts";
+import {game_2025_12_19_malaga} from "../data/games/2025-12-19-malaga.ts";
 import {announcement_2025_12_19_torneo_teruel} from "../data/games/2025-12-19-torneo-teruel.ts";
 import {announcement_2025_12_17_convocatoria_fbm_1} from "../data/games/2025-12-17-convocatoria-fbm-1.ts";
 import {game_2025_12_14_fuenlabrada} from "../data/games/2025-12-14-fuenlabrada.ts";
@@ -102,10 +102,10 @@ export function useEvents(): Event[] {
     game_2025_12_27_canarias,
     announcement_2025_12_26_torneo_cyl,
     game_2025_12_21_elche,
-    game_2025_12_20_caja_87_sevilla,
-    game_2025_12_20_el_olivar,
+    game_2025_12_20_sevilla,
+    game_2025_12_20_olivar,
     game_2025_12_19_torrent,
-    game_2025_12_19_unicaja_malaga,
+    game_2025_12_19_malaga,
     announcement_2025_12_19_torneo_teruel,
     announcement_2025_12_17_convocatoria_fbm_1,
     game_2025_12_14_fuenlabrada,
