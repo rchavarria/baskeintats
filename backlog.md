@@ -1,7 +1,5 @@
 # Backlog
 
-- tests para la UI, al menos, para algunos casos
-  - partido amistoso (para después)
 - eliminar código duplicado al mostrar detalles de partidos (normal Vs avanzado)
 - añadir un Event que sea las estadísticas de una fase o de un torneo, de un grupo de Games vamos
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
@@ -9,6 +7,7 @@
 
 ## Done
 
+- 2026-04-16: tests para la UI para partidos amistosos
 - 2026-04-16: convertir partidos amistosos de la temporada 2025-2026
   - 1-mar-26, amistoso contra UCAM Murcia, en casa, pero no hay muchos datos que digamos, solo el video, si quieres más, tienes que analizarlo
     - no merece ni la pena, el video son 10 minutos
