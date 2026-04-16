@@ -2,10 +2,10 @@ import type { Game } from "../../model/GameSchema";
 
 interface GameVideosProps {
   videos: Game["videos"];
-  rival: string;
+  opponent: string;
 }
 
-export function GameVideos({ videos, rival }: GameVideosProps) {
+export function GameVideos({ videos, opponent }: GameVideosProps) {
   const hasOtherVideos = (videos.others?.length ?? 0) > 0;
 
   return (
@@ -18,7 +18,7 @@ export function GameVideos({ videos, rival }: GameVideosProps) {
         rel="noopener noreferrer"
         className="block text-sm text-blue-500 hover:underline mb-1"
       >
-        🆚 {rival}
+        🆚 {opponent}
       </a>
 
       {hasOtherVideos && (
