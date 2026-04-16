@@ -27,6 +27,7 @@ export const game_2025_09_20_alcorcon: Game = GameSchema.parse({
   away: {
     club: teams["alcorcon"],
     category: "U16M",
+    opponent: true,
     scores: [30, 25, 12, 18],
   },
 

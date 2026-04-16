@@ -21,6 +21,7 @@ export const game_2026_03_07_tres_cantos: Game = GameSchema.parse({
   home: {
     club: teams["tres-cantos"],
     category: "U16M",
+    opponent: true,
     scores: [17, 10, 25, 16, 5],
   },
 

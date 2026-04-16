@@ -21,6 +21,7 @@ export const game_2025_11_21_real_madrid: AdvancedGame = AdvancedGameSchema.pars
   home: {
     club: teams["real-madrid"],
     category: "U15M",
+    opponent: true,
     scores: [24, 19, 27, 18],
   },
 

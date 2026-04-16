@@ -27,6 +27,7 @@ export const game_2025_12_27_canarias: Game = GameSchema.parse({
   away: {
     club: teams["seleccion-canarias"],
     category: "U16M",
+    opponent: true,
     scores: [54, 0, 0, 22], // TODO check score for each quarter (only 22 is a checked value)
   },
 

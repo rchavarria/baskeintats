@@ -21,6 +21,7 @@ export const game_2025_11_30_estudiantes: AdvancedGame = AdvancedGameSchema.pars
   home: {
     club: teams["estudiantes"],
     category: "U16M",
+    opponent: true,
     scores: [31, 32, 22, 18],
   },
 

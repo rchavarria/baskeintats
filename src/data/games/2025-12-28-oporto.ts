@@ -27,6 +27,7 @@ export const game_2025_12_28_oporto: Game = GameSchema.parse({
   away: {
     club: teams["oporto"],
     category: "U16M",
+    opponent: true,
     scores: [0, 41, 0, 30],
   },
 

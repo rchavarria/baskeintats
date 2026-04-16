@@ -27,6 +27,7 @@ export const game_2025_12_13_patrocinio: Game = GameSchema.parse({
   away: {
     club: teams["patrocinio"],
     category: "U16M",
+    opponent: true,
     scores: [27, 18, 20, 15],
   },
 

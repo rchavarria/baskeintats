@@ -21,6 +21,7 @@ export const game_2025_10_26_fuenlabrada: AdvancedGame = AdvancedGameSchema.pars
   home: {
     club: teams["fuenlabrada"],
     category: "U16M",
+    opponent: true,
     scores: [25, 27, 17, 17],
   },
 

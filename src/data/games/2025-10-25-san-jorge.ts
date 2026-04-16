@@ -27,6 +27,7 @@ export const game_2025_10_25_san_jorge: Game = GameSchema.parse({
   away: {
     club: teams["san-jorge"],
     category: "U16M",
+    opponent: true,
     scores: [24, 9, 16, 28],
   },
 

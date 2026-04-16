@@ -27,6 +27,7 @@ export const game_2026_01_24_real_madrid: Game = GameSchema.parse({
   away: {
     club: teams["real-madrid"],
     category: "U15M",
+    opponent: true,
     scores: [17, 23, 15, 21],
   },
 

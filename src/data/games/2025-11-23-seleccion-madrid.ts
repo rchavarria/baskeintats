@@ -27,6 +27,7 @@ export const game_2025_11_23_seleccion_madrid: AdvancedGame = AdvancedGameSchema
   away: {
     club: teams["seleccion-madrid"],
     category: "U14M",
+    opponent: true,
     scores: [15, 17, 13, 27],
   },
 

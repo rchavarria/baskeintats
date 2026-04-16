@@ -21,6 +21,7 @@ export const game_2026_03_15_fuenlabrada: Game = GameSchema.parse({
   home: {
     club: teams["fuenlabrada"],
     category: "U15M",
+    opponent: true,
     scores: [18, 20, 21, 26],
   },
 

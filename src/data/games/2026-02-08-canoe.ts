@@ -21,6 +21,7 @@ export const game_2026_02_08_canoe: Game = GameSchema.parse({
   home: {
     club: teams["canoe"],
     category: "U16M",
+    opponent: true,
     scores: [17, 17, 17, 30],
   },
 

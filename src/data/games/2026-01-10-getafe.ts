@@ -27,6 +27,7 @@ export const game_2026_01_10_getafe: Game = GameSchema.parse({
   away: {
     club: teams["getafe"],
     category: "U16M",
+    opponent: true,
     scores: [11, 19, 7, 20],
   },
 

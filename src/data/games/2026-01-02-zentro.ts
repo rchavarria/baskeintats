@@ -27,6 +27,7 @@ export const game_2026_01_02_zentro: Game = GameSchema.parse({
   away: {
     club: teams["zentro"],
     category: "U15M",
+    opponent: true,
     scores: [15, 15, 14, 20],
   },
 

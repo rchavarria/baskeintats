@@ -27,6 +27,7 @@ export const game_2025_12_14_fuenlabrada: AdvancedGame = AdvancedGameSchema.pars
   away: {
     club: teams["fuenlabrada"],
     category: "U16M",
+    opponent: true,
     scores: [15, 22, 27, 18],
   },
 

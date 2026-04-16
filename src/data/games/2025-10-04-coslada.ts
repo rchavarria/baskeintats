@@ -27,6 +27,7 @@ export const game_2025_10_04_coslada: Game = GameSchema.parse({
   away: {
     club: teams["coslada"],
     category: "U16M",
+    opponent: true,
     scores: [13, 11, 13, 6],
   },
 

@@ -27,6 +27,7 @@ export const game_2025_12_20_sevilla: AdvancedGame = AdvancedGameSchema.parse({
   away: {
     club: teams["sevilla"],
     category: "U15M",
+    opponent: true,
     scores: [5, 19, 15, 18],
   },
 
