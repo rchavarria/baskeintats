@@ -9,6 +9,10 @@ interface StatsCardProps {
   stats: Stats;
 }
 
+function hasAdvancedPlayerStats(game: Game | AdvancedGame): game is AdvancedGame {
+  return typeof game.playerStats.fieldGoals === "object";
+}
+
 function getOpponent(game: Game | AdvancedGame): string {
   if (game.home.opponent) return game.home.club.name;
   if (game.away.opponent) return game.away.club.name;
@@ -16,14 +20,11 @@ function getOpponent(game: Game | AdvancedGame): string {
 }
 
 function getPoints(game: Game | AdvancedGame): number {
-  const s = game.playerStats;
-  if ("made" in s.fieldGoals) {
-    // AdvancedPlayerStats
-    const adv = s as AdvancedGame["playerStats"];
+  if (hasAdvancedPlayerStats(game)) {
+    const adv = game.playerStats;
     return 3 * adv.threePointers.made + 2 * adv.fieldGoals.made + adv.freeThrows.made;
   }
-  // PlayerStats
-  const ps = s as Game["playerStats"];
+  const ps = game.playerStats;
   return 3 * ps.threePointers + 2 * ps.fieldGoals + ps.freeThrows.made;
 }
 
@@ -32,21 +33,19 @@ function getFt(game: Game | AdvancedGame): string {
 }
 
 function getTwoPointers(game: Game | AdvancedGame): string {
-  const s = game.playerStats;
-  if ("made" in s.fieldGoals) {
-    const adv = s as AdvancedGame["playerStats"];
+  if (hasAdvancedPlayerStats(game)) {
+    const adv = game.playerStats;
     return `${adv.fieldGoals.made}/${adv.fieldGoals.attempted}`;
   }
-  return `${(s as Game["playerStats"]).fieldGoals}`;
+  return `${game.playerStats.fieldGoals}`;
 }
 
 function getThreePointers(game: Game | AdvancedGame): string {
-  const s = game.playerStats;
-  if ("made" in s.threePointers) {
-    const adv = s as AdvancedGame["playerStats"];
+  if (hasAdvancedPlayerStats(game)) {
+    const adv = game.playerStats;
     return `${adv.threePointers.made}/${adv.threePointers.attempted}`;
   }
-  return `${(s as Game["playerStats"]).threePointers}`;
+  return `${game.playerStats.threePointers}`;
 }
 
 export function StatsCard({ stats }: StatsCardProps) {

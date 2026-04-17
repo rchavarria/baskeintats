@@ -32,12 +32,12 @@ function renderWithRouter(ui: React.ReactElement) {
  */
 describe("StatsCard", () => {
   it.each([
-    // [ stat_2026_03_23_liga_plata_f2_gd ],
-    // [ stat_2026_03_23_liga_plata_f2_gb ],
-    // [ stat_2026_01_05_torneo_reyes ],
+    [ stat_2026_03_23_liga_plata_f2_gd ],
+    [ stat_2026_03_23_liga_plata_f2_gb ],
+    [ stat_2026_01_05_torneo_reyes ],
     [ stat_2025_12_22_torneo_teruel ],
-    // [ stat_2025_12_15_liga_oro_f1_g1 ],
-    // [ stat_2025_12_15_liga_plata_f1_g4 ],
+    [ stat_2025_12_15_liga_oro_f1_g1 ],
+    [ stat_2025_12_15_liga_plata_f1_g4 ],
     [ stat_2025_11_23_torneo_fll ],
   ])("renders stats metadata and links to the stats detail page", (stats) => {
     renderWithRouter(<StatsCard stats={stats} />);
