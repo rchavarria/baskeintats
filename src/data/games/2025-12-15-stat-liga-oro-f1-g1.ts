@@ -12,7 +12,7 @@ import {game_2025_12_13_patrocinio} from "./2025-12-13-patrocinio.ts";
 import {game_2025_12_14_fuenlabrada} from "./2025-12-14-fuenlabrada.ts";
 
 export const stat_2025_12_15_liga_oro_f1_g1: Stats = StatsSchema.parse({
-  id: "S56-stats-liga-oro-f1-g1",
+  id: "S56-stat-liga-oro-f1-g1",
   type: "stats",
   season: "2025-26",
   date: "2025-12-15T00:00:00Z",
