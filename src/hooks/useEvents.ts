@@ -5,8 +5,6 @@ import {game_2026_04_12_canoe} from "../data/games/2026-04-12-canoe.ts";
 import {game_2026_04_11_canoe} from "../data/games/2026-04-11-canoe.ts";
 import {game_2026_04_09_canoe} from "../data/games/2026-04-09-canoe.ts";
 import {game_2026_03_29_distrito} from "../data/games/2026-03-29-distrito.ts";
-import {stat_2026_03_23_liga_plata_f2_gd} from "../data/games/2026-03-23-stat-liga-plata-f2-gd.ts";
-import {stat_2026_03_23_liga_plata_f2_gb} from "../data/games/2026-03-23-stat-liga-plata-f2-gb.ts";
 import {game_2026_03_22_getafe} from "../data/games/2026-03-22-getafe.ts";
 import {game_2026_03_22_canoe} from "../data/games/2026-03-22-canoe.ts";
 import {game_2026_03_17_distrito} from "../data/games/2026-03-17-distrito.ts";
@@ -27,7 +25,6 @@ import {game_2026_01_18_rozas} from "../data/games/2026-01-18-rozas.ts";
 import {game_2026_01_17_juande} from "../data/games/2026-01-17-juande.ts";
 import {game_2026_01_11_alcorcon} from "../data/games/2026-01-11-alcorcon.ts";
 import {game_2026_01_10_getafe} from "../data/games/2026-01-10-getafe.ts";
-import {stat_2026_01_05_torneo_reyes} from "../data/games/2026-01-05-stat-torneo-reyes.ts";
 import {game_2026_01_04_zentro} from "../data/games/2026-01-04-zentro.ts";
 import {game_2026_01_03_laso} from "../data/games/2026-01-03-laso.ts";
 import {game_2026_01_02_zentro} from "../data/games/2026-01-02-zentro.ts";
@@ -42,9 +39,7 @@ import {game_2025_12_19_torrent} from "../data/games/2025-12-19-torrent.ts";
 import {game_2025_12_19_malaga} from "../data/games/2025-12-19-malaga.ts";
 import {announcement_2025_12_19_torneo_teruel} from "../data/games/2025-12-19-torneo-teruel.ts";
 import {announcement_2025_12_17_convocatoria_fbm_1} from "../data/games/2025-12-17-convocatoria-fbm-1.ts";
-import {stats_2025_11_23_torneo_fll} from "../data/games/2025-11-23-stats-torneo-fll.ts";
-import {stat_2025_12_15_liga_oro_f1_g1} from "../data/games/2025-12-15-stat-liga-oro-f1-g1.ts";
-import {stat_2025_12_15_liga_plata_f1_g4} from "../data/games/2025-12-15-stat-liga-plata-f1-g4.ts";
+import {stat_2025_11_23_torneo_fll} from "../data/games/2025-11-23-stat-torneo-fll.ts";
 import {game_2025_12_14_fuenlabrada} from "../data/games/2025-12-14-fuenlabrada.ts";
 import {game_2025_12_13_san_jorge} from "../data/games/2025-12-13-san-jorge.ts";
 import {game_2025_12_13_patrocinio} from "../data/games/2025-12-13-patrocinio.ts";
@@ -85,8 +80,8 @@ export function useEvents(): EventItem[] {
     game_2026_04_11_canoe,
     game_2026_04_09_canoe,
     game_2026_03_29_distrito,
-    stat_2026_03_23_liga_plata_f2_gd,
-    stat_2026_03_23_liga_plata_f2_gb,
+    // stat_2026_03_23_liga_plata_f2_gd,
+    // stat_2026_03_23_liga_plata_f2_gb,
     game_2026_03_22_getafe,
     game_2026_03_22_canoe,
     game_2026_03_17_distrito,
@@ -107,7 +102,7 @@ export function useEvents(): EventItem[] {
     game_2026_01_17_juande,
     game_2026_01_11_alcorcon,
     game_2026_01_10_getafe,
-    stat_2026_01_05_torneo_reyes,
+    // stat_2026_01_05_torneo_reyes,
     game_2026_01_04_zentro,
     game_2026_01_03_laso,
     game_2026_01_02_zentro,
@@ -124,15 +119,15 @@ export function useEvents(): EventItem[] {
     game_2025_12_19_malaga,
     announcement_2025_12_19_torneo_teruel,
     announcement_2025_12_17_convocatoria_fbm_1,
-    stat_2025_12_15_liga_oro_f1_g1,
-    stat_2025_12_15_liga_plata_f1_g4,
+    // stat_2025_12_15_liga_oro_f1_g1,
+    // stat_2025_12_15_liga_plata_f1_g4,
     game_2025_12_14_fuenlabrada,
     game_2025_12_13_san_jorge,
     game_2025_12_13_patrocinio,
     game_2025_11_30_valcude,
     game_2025_11_30_estudiantes,
     game_2025_11_27_coslada,
-    stats_2025_11_23_torneo_fll,
+    stat_2025_11_23_torneo_fll,
     game_2025_11_23_seleccion_madrid,
     game_2025_11_22_joventut,
     game_2025_11_21_real_madrid,
