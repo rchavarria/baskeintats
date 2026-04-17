@@ -4,8 +4,8 @@ import {game_2025_11_21_real_madrid} from "./2025-11-21-real-madrid.ts";
 import {game_2025_11_22_joventut} from "./2025-11-22-joventut.ts";
 import {game_2025_11_23_seleccion_madrid} from "./2025-11-23-seleccion-madrid.ts";
 
-export const stats_2025_11_23_torneo_fll: Stats = StatsSchema.parse({
-  id: "S56-stats-torneo-fll",
+export const stat_2025_11_23_torneo_fll: Stats = StatsSchema.parse({
+  id: "S56-stat-torneo-fll",
   type: "stats",
   season: "2025-26",
   date: "2025-11-23T00:00:00Z",
