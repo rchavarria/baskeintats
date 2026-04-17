@@ -1,5 +1,6 @@
 import type {AdvancedGame, Game, ScheduledGame} from "../model/GameSchema.ts";
 import type {Announcement} from "../model/AnnouncementSchema.ts";
+import type {Stats} from "../model/StatsSchema.ts";
 import {game_2026_04_12_canoe} from "../data/games/2026-04-12-canoe.ts";
 import {game_2026_04_11_canoe} from "../data/games/2026-04-11-canoe.ts";
 import {game_2026_04_09_canoe} from "../data/games/2026-04-09-canoe.ts";
@@ -37,6 +38,7 @@ import {game_2025_12_19_torrent} from "../data/games/2025-12-19-torrent.ts";
 import {game_2025_12_19_malaga} from "../data/games/2025-12-19-malaga.ts";
 import {announcement_2025_12_19_torneo_teruel} from "../data/games/2025-12-19-torneo-teruel.ts";
 import {announcement_2025_12_17_convocatoria_fbm_1} from "../data/games/2025-12-17-convocatoria-fbm-1.ts";
+import {stats_2025_11_23_torneo_fll} from "../data/games/2025-11-23-stats-torneo-fll.ts";
 import {game_2025_12_14_fuenlabrada} from "../data/games/2025-12-14-fuenlabrada.ts";
 import {game_2025_12_13_san_jorge} from "../data/games/2025-12-13-san-jorge.ts";
 import {game_2025_12_13_patrocinio} from "../data/games/2025-12-13-patrocinio.ts";
@@ -69,7 +71,7 @@ import {game_2025_09_07_godella} from "../data/games/2025-09-07-godella.ts";
 import {game_2025_09_06_rozas} from "../data/games/2025-09-06-rozas.ts";
 import {announcement_2025_08_26_comienzo_temporada} from "../data/games/2025-08-26-comienzo-temporada.ts";
 
-type Event = Announcement | Game | ScheduledGame | AdvancedGame;
+type Event = Announcement | Game | ScheduledGame | AdvancedGame | Stats;
 
 export function useEvents(): Event[] {
   return [
@@ -118,6 +120,7 @@ export function useEvents(): Event[] {
     game_2025_11_30_valcude,
     game_2025_11_30_estudiantes,
     game_2025_11_27_coslada,
+    stats_2025_11_23_torneo_fll,
     game_2025_11_23_seleccion_madrid,
     game_2025_11_22_joventut,
     game_2025_11_21_real_madrid,
