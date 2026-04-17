@@ -2,6 +2,7 @@ import {Link} from "react-router-dom";
 import type {Stats} from "../../model/StatsSchema.ts";
 import type {AdvancedGame, Game} from "../../model/GameSchema.ts";
 import {DateDisplay} from "../ui/DateDisplay.tsx";
+import {PlayedTimeDisplay} from "../ui/PlayedTimeDisplay.tsx";
 import {ShortDateDisplay} from "../ui/ShortDateDisplay.tsx";
 
 interface StatsCardProps {
@@ -46,10 +47,6 @@ function getThreePointers(game: Game | AdvancedGame): string {
     return `${adv.threePointers.made}/${adv.threePointers.attempted}`;
   }
   return `${(s as Game["playerStats"]).threePointers}`;
-}
-
-function formatTime(minutes: number): string {
-  return `${minutes}'`;
 }
 
 export function StatsCard({ stats }: StatsCardProps) {
@@ -103,7 +100,7 @@ export function StatsCard({ stats }: StatsCardProps) {
               <tr key={game.id} className="border-b border-gray-100">
                 <td className={td}><ShortDateDisplay isoDate={game.date} /></td>
                 <td className={td}>{getOpponent(game)}</td>
-                <td className={td}>{formatTime(game.playerStats.time)}</td>
+                <td className={td}><PlayedTimeDisplay time={game.playerStats.time} /></td>
                 <td className={td}>{getPoints(game)}</td>
                 <td className={td}>{getThreePointers(game)}</td>
                 <td className={td}>{getTwoPointers(game)}</td>
@@ -114,7 +111,7 @@ export function StatsCard({ stats }: StatsCardProps) {
             ))}
             <tr className="bg-gray-50">
               <td className={summaryTd} colSpan={2}>Total</td>
-              <td className={summaryTd}>{formatTime(totalTime)}</td>
+              <td className={summaryTd}><PlayedTimeDisplay time={totalTime} /></td>
               <td className={summaryTd}>{totalPoints}</td>
               <td className={summaryTd} />
               <td className={summaryTd} />
@@ -124,7 +121,7 @@ export function StatsCard({ stats }: StatsCardProps) {
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50">
               <td className={summaryTd} colSpan={2}>Media</td>
-              <td className={summaryTd}>{formatTime(Math.round(totalTime / n))}</td>
+              <td className={summaryTd}><PlayedTimeDisplay time={Math.round(totalTime / n)} /></td>
               <td className={summaryTd}>{(totalPoints / n).toFixed(1)}</td>
               <td className={summaryTd} />
               <td className={summaryTd} />
