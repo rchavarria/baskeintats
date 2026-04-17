@@ -71,6 +71,11 @@ import {game_2025_09_13_canoe} from "../data/games/2025-09-13-canoe.ts";
 import {game_2025_09_07_godella} from "../data/games/2025-09-07-godella.ts";
 import {game_2025_09_06_rozas} from "../data/games/2025-09-06-rozas.ts";
 import {announcement_2025_08_26_comienzo_temporada} from "../data/games/2025-08-26-comienzo-temporada.ts";
+import {stat_2026_03_23_liga_plata_f2_gd} from "../data/games/2026-03-23-stat-liga-plata-f2-gd.ts";
+import {stat_2026_03_23_liga_plata_f2_gb} from "../data/games/2026-03-23-stat-liga-plata-f2-gb.ts";
+import {stat_2026_01_05_torneo_reyes} from "../data/games/2026-01-05-stat-torneo-reyes.ts";
+import {stat_2025_12_15_liga_oro_f1_g1} from "../data/games/2025-12-15-stat-liga-oro-f1-g1.ts";
+import {stat_2025_12_15_liga_plata_f1_g4} from "../data/games/2025-12-15-stat-liga-plata-f1-g4.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats;
 
@@ -80,8 +85,8 @@ export function useEvents(): EventItem[] {
     game_2026_04_11_canoe,
     game_2026_04_09_canoe,
     game_2026_03_29_distrito,
-    // stat_2026_03_23_liga_plata_f2_gd,
-    // stat_2026_03_23_liga_plata_f2_gb,
+    stat_2026_03_23_liga_plata_f2_gd,
+    stat_2026_03_23_liga_plata_f2_gb,
     game_2026_03_22_getafe,
     game_2026_03_22_canoe,
     game_2026_03_17_distrito,
@@ -102,7 +107,7 @@ export function useEvents(): EventItem[] {
     game_2026_01_17_juande,
     game_2026_01_11_alcorcon,
     game_2026_01_10_getafe,
-    // stat_2026_01_05_torneo_reyes,
+    stat_2026_01_05_torneo_reyes,
     game_2026_01_04_zentro,
     game_2026_01_03_laso,
     game_2026_01_02_zentro,
@@ -119,8 +124,8 @@ export function useEvents(): EventItem[] {
     game_2025_12_19_malaga,
     announcement_2025_12_19_torneo_teruel,
     announcement_2025_12_17_convocatoria_fbm_1,
-    // stat_2025_12_15_liga_oro_f1_g1,
-    // stat_2025_12_15_liga_plata_f1_g4,
+    stat_2025_12_15_liga_oro_f1_g1,
+    stat_2025_12_15_liga_plata_f1_g4,
     game_2025_12_14_fuenlabrada,
     game_2025_12_13_san_jorge,
     game_2025_12_13_patrocinio,
