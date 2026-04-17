@@ -1,18 +1,18 @@
 # Backlog
 
-- evento de estadísticas para: fase 1 plata
-- evento de estadísticas para: fase 1 oro
-- evento de estadísticas para: teruel
-- evento de estadísticas para: reyes
-- evento de estadísticas para: fase 2 oro
-- evento de estadísticas para: fase 2 plata
-- añadir un Event que sea las estadísticas de una fase o de un torneo, de un grupo de Games vamos
 - eliminar código duplicado al mostrar detalles de partidos (normal Vs avanzado)
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
-- va a ser complicado calcular el rival si cambiamos de equipo, añadir nuevo campo en GameSchema para guardar el rival, rellenarlo a mano
 
 ## Done
 
+- 2026-04-17: añadir un Event que sea las estadísticas de una fase o de un torneo, de un grupo de Games vamos
+- 2026-04-17: evento de estadísticas para: fase 1 plata
+- 2026-04-17: evento de estadísticas para: fase 1 oro
+- 2026-04-17: evento de estadísticas para: teruel
+- 2026-04-17: evento de estadísticas para: reyes
+- 2026-04-17: evento de estadísticas para: fase 2 oro
+- 2026-04-17: evento de estadísticas para: fase 2 plata
+- 2026-04-17: va a ser complicado calcular el rival si cambiamos de equipo, añadir nuevo campo en GameSchema para guardar el rival, rellenarlo a mano
 - 2026-04-17: evento de estadísticas para: fll
   - la StatsCard tiene que pintar una tabla con los partidos
     - el tiempo jugado en la tabla se debe mostrar como 09:43, crear componente UI para ello y reulizarlo por ahí
