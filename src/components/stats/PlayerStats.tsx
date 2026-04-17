@@ -1,5 +1,6 @@
 import type { PlayerStats as PlayerStatsType } from "../../model/PlayerSchema";
 import { derivePlayerStats } from "../../model/PlayerSchema";
+import { PlayedTimeDisplay } from "../ui/PlayedTimeDisplay";
 
 interface PlayerStatsProps {
   stats: PlayerStatsType;
@@ -27,9 +28,7 @@ export function PlayerStats({ stats }: PlayerStatsProps) {
       <div className="grid grid-cols-4 gap-4 text-center">
         <div title="Minutos y segundos jugados en el partido">
           <p className="text-3xl font-bold text-gray-900">
-            {Math.floor(derived.time / 60).toString().padStart(2, '0')}
-            :
-            {(derived.time % 60).toString().padStart(2, '0')}
+            <PlayedTimeDisplay time={derived.time} />
           </p>
           <p className="text-xs text-gray-400">Tiempo</p>
         </div>
