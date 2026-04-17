@@ -2,6 +2,7 @@
 
 - eliminar código duplicado al mostrar detalles de partidos (normal Vs avanzado)
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
+- comenzar a transformar los partidos de la temporada 2024-2025
 
 ## Done
 
