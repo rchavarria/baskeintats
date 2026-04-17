@@ -73,7 +73,6 @@ import {game_2025_09_06_rozas} from "../data/games/2025-09-06-rozas.ts";
 import {announcement_2025_08_26_comienzo_temporada} from "../data/games/2025-08-26-comienzo-temporada.ts";
 import {stat_2026_03_23_liga_plata_f2_gd} from "../data/games/2026-03-23-stat-liga-plata-f2-gd.ts";
 import {stat_2026_03_23_liga_plata_f2_gb} from "../data/games/2026-03-23-stat-liga-plata-f2-gb.ts";
-import {stat_2026_01_05_torneo_reyes} from "../data/games/2026-01-05-stat-torneo-reyes.ts";
 import {stat_2025_12_15_liga_oro_f1_g1} from "../data/games/2025-12-15-stat-liga-oro-f1-g1.ts";
 import {stat_2025_12_15_liga_plata_f1_g4} from "../data/games/2025-12-15-stat-liga-plata-f1-g4.ts";
 
@@ -107,7 +106,6 @@ export function useEvents(): EventItem[] {
     game_2026_01_17_juande,
     game_2026_01_11_alcorcon,
     game_2026_01_10_getafe,
-    stat_2026_01_05_torneo_reyes,
     game_2026_01_04_zentro,
     game_2026_01_03_laso,
     game_2026_01_02_zentro,
