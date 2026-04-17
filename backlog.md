@@ -1,12 +1,14 @@
 # Backlog
 
 - eliminar código duplicado al mostrar detalles de partidos (normal Vs avanzado)
-- añadir un Event que sea las estadísticas de una fase o de un torneo, de un grupo de Games vamos
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - va a ser complicado calcular el rival si cambiamos de equipo, añadir nuevo campo en GameSchema para guardar el rival, rellenarlo a mano
 
 ## Done
 
+- 2026-04-17: evento de estadísticas para: fll
+  - la StatsCard tiene que pintar una tabla con los partidos
+    - el tiempo jugado en la tabla se debe mostrar como 09:43, crear componente UI para ello y reulizarlo por ahí
 - 2026-04-16: tests para la UI para partidos amistosos
 - 2026-04-16: convertir partidos amistosos de la temporada 2025-2026
   - 1-mar-26, amistoso contra UCAM Murcia, en casa, pero no hay muchos datos que digamos, solo el video, si quieres más, tienes que analizarlo
