@@ -12,7 +12,7 @@ import {game_2025_11_30_valcude} from "./2025-11-30-valcude.ts";
 import {game_2025_12_13_san_jorge} from "./2025-12-13-san-jorge.ts";
 
 export const stat_2025_12_15_liga_plata_f1_g4: Stats = StatsSchema.parse({
-  id: "S56-stats-liga-plata-f1-g4",
+  id: "S56-stat-liga-plata-f1-g4",
   type: "stats",
   season: "2025-26",
   date: "2025-12-15T00:00:00Z",
