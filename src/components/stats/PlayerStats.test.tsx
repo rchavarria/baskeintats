@@ -35,7 +35,7 @@ describe("PlayerStats", () => {
 
     expect(screen.getByText("📈 Estadísticas del jugador")).toBeInTheDocument();
     expect(screen.getByText("14:27")).toBeInTheDocument(); // 867 segundos = 14:27
-    expect(screen.getByText("17")).toBeInTheDocument(); // puntos: 3*1 + 2*5 + 4 = 17
+    expect(screen.getByText("15")).toBeInTheDocument(); // puntos: 3*1 + 2*4 + 4 = 15 (fieldGoals total - threePointers = 5-1 = 4 dobles)
   });
 
 });
