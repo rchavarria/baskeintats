@@ -1,5 +1,6 @@
 # Backlog
 
+- unificar Game y AdvancedGame detail page, en uno solo, lo único que cambia es la parte de estadísticas, y debería poder apoyarse en los 3 formatters
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - comenzar a transformar los partidos de la temporada 2024-2025
 
