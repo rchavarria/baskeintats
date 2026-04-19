@@ -1,10 +1,5 @@
 import {z} from "zod";
 
-function safePercentage(made: number, attempted: number): number {
-  if (attempted === 0) return 0;
-  return Math.round((made / attempted) * 1000) / 10;
-}
-
 export const PlayerStatsSchema = z.object({
   time: z.number().int().nonnegative(),
   fieldGoals: z.number().int().nonnegative(),
@@ -55,48 +50,3 @@ export const AdvancedPlayerStatsSchema = z.object({
 
 export type AdvancedPlayerStats = z.infer<typeof AdvancedPlayerStatsSchema>;
 
-export function derivePlayerStats(stats: PlayerStats): DerivedPlayerStats {
-  return {
-    ...stats,
-
-    percentage: {
-      freeThrows: safePercentage(stats.freeThrows.made, stats.freeThrows.attempted),
-    },
-
-    points: 3 * stats.threePointers + 2 * stats.fieldGoals + stats.freeThrows.made,
-  };
-}
-
-export interface DerivedPlayerStats extends PlayerStats {
-  points: number;
-
-  percentage: {
-    freeThrows: number;
-  };
-}
-
-export function deriveAdvancedPlayerStats(stats: AdvancedPlayerStats): DerivedAdvancedPlayerStats {
-  return {
-    ...stats,
-
-    percentage: {
-      fieldGoals: safePercentage(stats.fieldGoals.made, stats.fieldGoals.attempted),
-      threePointers: safePercentage(stats.threePointers.made, stats.threePointers.attempted),
-      freeThrows: safePercentage(stats.freeThrows.made, stats.freeThrows.attempted),
-    },
-
-    points: 3 * stats.threePointers.made + 2 * stats.fieldGoals.made + stats.freeThrows.made,
-    totalRebounds: stats.rebounds.offensive + stats.rebounds.defensive,
-  };
-}
-
-export interface DerivedAdvancedPlayerStats extends AdvancedPlayerStats {
-  points: number;
-  totalRebounds: number;
-
-  percentage: {
-    fieldGoals: number;
-    threePointers: number;
-    freeThrows: number;
-  };
-}
