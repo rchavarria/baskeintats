@@ -1,15 +1,8 @@
 import {totalPoints} from "../../model/GameSchema";
-import type {AdvancedGame, Game} from "../../model/GameSchema";
+import type {Game} from "../../model/GameSchema";
 import {Link} from "react-router-dom";
 import {DateTimeDisplay} from "../ui/DateTimeDisplay.tsx";
 
-function gameLink(game: Game | AdvancedGame): string {
-  if (game.type === 'advanced-game') {
-    return `/games/advanced/${game.id}`;
-  }
-
-  return `/games/${game.id}`;
-}
 
 interface GameCardProps {
   game: Game;
@@ -21,7 +14,7 @@ export function GameCard({ game }: GameCardProps) {
 
   return (
     <Link
-      to={gameLink(game)}
+      to={`/games/${game.id}`}
       className="block bg-white rounded-xl shadow hover:shadow-md transition p-4 border border-gray-100"
     >
       <div className="flex items-center justify-between text-xs text-gray-400 mb-3">
