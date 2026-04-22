@@ -1,6 +1,5 @@
 # Backlog
 
-- unificar Game y AdvancedGame detail page, en uno solo, lo único que cambia es la parte de estadísticas, y debería poder apoyarse en los 3 formatters
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - comenzar a transformar los partidos de la temporada 2024-2025
 
@@ -13,6 +12,7 @@
 
 ## Done
 
+- 2026-04-22: unificar Game y AdvancedGame detail page, en uno solo, lo único que cambia es la parte de estadísticas, y debería poder apoyarse en los 3 formatters
 - 2026-04-19: eliminar código duplicado al mostrar detalles de partidos (normal Vs avanzado)
 - 2026-04-17: añadir un Event que sea las estadísticas de una fase o de un torneo, de un grupo de Games vamos
 - 2026-04-17: evento de estadísticas para: fase 1 plata
