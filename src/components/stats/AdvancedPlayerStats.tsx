@@ -1,5 +1,5 @@
-import type { AdvancedPlayerStats as AdvancedPlayerStatsType } from "../../model/PlayerSchema";
-import { createPlayerStatsFormatter } from "../../lib/player-stats";
+import type {AdvancedPlayerStats as AdvancedPlayerStatsType} from "../../model/PlayerSchema";
+import {AdvancedPlayerStatsFormatterImpl} from "../../lib/player-stats";
 
 interface AdvancedPlayerStatsProps {
   stats: AdvancedPlayerStatsType;
@@ -10,7 +10,7 @@ interface AdvancedPlayerStatsProps {
  * Use PlayerStatsSelector when the stats validity is unknown.
  */
 export function AdvancedPlayerStats({ stats }: AdvancedPlayerStatsProps) {
-  const formatter = createPlayerStatsFormatter(stats);
+  const formatter = new AdvancedPlayerStatsFormatterImpl(stats);
 
 
   return (

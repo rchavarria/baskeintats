@@ -1,5 +1,5 @@
-import type { PlayerStats as PlayerStatsType } from "../../model/PlayerSchema";
-import { createPlayerStatsFormatter } from "../../lib/player-stats";
+import type {PlayerStats as PlayerStatsType} from "../../model/PlayerSchema";
+import {PlayerStatsFormatterImpl} from "../../lib/player-stats";
 
 interface PlayerStatsProps {
   stats: PlayerStatsType;
@@ -10,7 +10,7 @@ interface PlayerStatsProps {
  * Use PlayerStatsSelector when the stats validity is unknown.
  */
 export function PlayerStats({ stats }: PlayerStatsProps) {
-  const formatter = createPlayerStatsFormatter(stats);
+  const formatter = new PlayerStatsFormatterImpl(stats);
 
 
   return (
