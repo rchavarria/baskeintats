@@ -4,21 +4,6 @@ import { PlayerStats } from "./PlayerStats";
 import type { PlayerStats as PlayerStatsType } from "../../model/PlayerSchema";
 
 describe("PlayerStats", () => {
-  it("displays the no stats message when time is 0 and points is 0", () => {
-    const emptyStats: PlayerStatsType = {
-      time: 0,
-      fieldGoals: 0,
-      threePointers: 0,
-      freeThrows: { made: 0, attempted: 0 },
-      faults: 0,
-      plusMinus: 0,
-      efficiency: 0,
-    };
-
-    render(<PlayerStats stats={emptyStats} />);
-
-    expect(screen.getByText("No hay estadísticas disponibles para este partido")).toBeInTheDocument();
-  });
 
   it("displays player stats when there is data", () => {
     const stats: PlayerStatsType = {

@@ -1,24 +1,17 @@
 import type { PlayerStats as PlayerStatsType } from "../../model/PlayerSchema";
 import { createPlayerStatsFormatter } from "../../lib/player-stats";
-import { PlayedTimeDisplay } from "../ui/PlayedTimeDisplay";
 
 interface PlayerStatsProps {
   stats: PlayerStatsType;
 }
 
+/**
+ * Precondition: stats must have time > 0 or points > 0.
+ * Use PlayerStatsSelector when the stats validity is unknown.
+ */
 export function PlayerStats({ stats }: PlayerStatsProps) {
   const formatter = createPlayerStatsFormatter(stats);
 
-  // Check if stats are available using formatter
-  if (!formatter.hasStats()) {
-    return (
-      <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
-        <p className="text-gray-500 text-center">
-          No hay estadísticas disponibles para este partido
-        </p>
-      </div>
-    );
-  }
 
   return (
     <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
