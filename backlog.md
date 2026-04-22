@@ -4,6 +4,13 @@
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - comenzar a transformar los partidos de la temporada 2024-2025
 
+- Temporada 2024-25
+  - _publicar_ videos del Torneig Nord
+    - ✅ J1 Sabadell
+    - J2 Joventut
+    - Semis Barça
+    - 3-4 Mataró
+
 ## Done
 
 - 2026-04-19: eliminar código duplicado al mostrar detalles de partidos (normal Vs avanzado)
