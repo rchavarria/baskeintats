@@ -12,6 +12,12 @@
 
 ## Done
 
+- 2026-04-22: Temporada 2024-25
+  - _publicar_ videos del Torneig Nord
+    - J1 Sabadell
+    - J2 Joventut
+    - Semis Barça
+    - 3-4 Mataró
 - 2026-04-22: unificar Game y AdvancedGame detail page, en uno solo, lo único que cambia es la parte de estadísticas, y debería poder apoyarse en los 3 formatters
 - 2026-04-19: eliminar código duplicado al mostrar detalles de partidos (normal Vs avanzado)
 - 2026-04-17: añadir un Event que sea las estadísticas de una fase o de un torneo, de un grupo de Games vamos
