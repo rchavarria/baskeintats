@@ -1,19 +1,23 @@
 /**
  * Player Stats Formatter Module
  *
- * API pública del módulo de formatters de estadísticas de jugador.
+ * Public API for player stats formatting and variant classification.
  *
- * Exports controlados:
- * - Público: createPlayerStatsFormatter, PlayerStatsFormatter, AdvancedStatsFormatter
- * - Privado: implementaciones concretas (Impl, NoStats)
+ * Exported (public):
+ * - createPlayerStatsFormatter  factory that returns the right formatter
+ * - getPlayerStatsVariant        classifies stats into a discriminated union
+ * - PlayerStatsVariant           discriminated union type for variant selection
+ * - PlayerStatsFormatter         base formatter interface
+ * - AdvancedStatsFormatter       extended formatter interface (advanced stats)
+ *
+ * Private (not exported):
+ * - Concrete implementations (PlayerStatsFormatterImpl, AdvancedPlayerStatsFormatterImpl, NoStatsFormatter)
  */
 
-// Exports públicos: interfaz base y factoría
 export { createPlayerStatsFormatter } from './createPlayerStatsFormatter';
+export { getPlayerStatsVariant } from './getPlayerStatsVariant';
+export type { PlayerStatsVariant } from './getPlayerStatsVariant';
 export type { PlayerStatsFormatter } from './PlayerStatsFormatter';
 export type { AdvancedStatsFormatter } from './AdvancedStatsFormatter';
 
-// Nota: Las implementaciones concretas (PlayerStatsFormatterImpl, AdvancedPlayerStatsFormatterImpl, NoStatsFormatter)
-// se mantienen privadas dentro del módulo. Los consumidores deben usar createPlayerStatsFormatter()
-// para obtener instancias.
 

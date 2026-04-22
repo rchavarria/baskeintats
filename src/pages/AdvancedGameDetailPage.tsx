@@ -5,7 +5,7 @@ import {EmptyState} from "../components/ui/EmptyState";
 import {GameVideos} from "../components/events/GameVideos.tsx";
 import {DateTimeDisplay} from "../components/ui/DateTimeDisplay.tsx";
 import {ReferenceList} from "../components/events/ReferenceList.tsx";
-import {AdvancedPlayerStats} from "../components/stats/AdvancedPlayerStats.tsx";
+import {PlayerStatsSelector} from "../components/stats/PlayerStatsSelector.tsx";
 
 export function AdvancedGameDetailPage() {
   const { gameId } = useParams<{ gameId: string }>();
@@ -62,7 +62,7 @@ export function AdvancedGameDetailPage() {
         </div>
       </div>
 
-      {game.playerStats && <AdvancedPlayerStats stats={game.playerStats} />}
+      <PlayerStatsSelector stats={game.playerStats} />
 
       <GameVideos videos={game.videos} opponent={opponent.name} />
 
