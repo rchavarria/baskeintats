@@ -53,7 +53,7 @@ export const game_2026_03_29_distrito: Game = GameSchema.parse({
       },
       {
         label: "Canal CBA",
-        url: "https://youtu.be/-",
+        url: "https://youtu.be/HarLceE-9_s",
       },
     ]
   },
