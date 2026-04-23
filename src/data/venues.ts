@@ -13,6 +13,16 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/zCaer2Euadh2ZgWv6"
   },
   {
+    id: "aljaraque",
+    name: "Pabellón Municipal de Aljaraque (Huelva)",
+    maps: "https://maps.app.goo.gl/dDMxTLFs2Z8YuQxJ9"
+  },
+  {
+    id: "andres-estrada",
+    name: "Polideportivo Andrés Estrada",
+    maps: "https://maps.app.goo.gl/L5Hdm9CX26WjGzhu8"
+  },
+  {
     id: "antela",
     name: "Pabellón Antela Parada",
     maps: "https://maps.app.goo.gl/NbqDdrLkJhzSXW1s8"
@@ -56,6 +66,11 @@ const venuesList: Venue[] = [
     id: "ferrandiz",
     name: "Pabellón Pedro Ferrándiz",
     maps: "https://maps.app.goo.gl/LSdx5g85nvRf4yye8"
+  },
+  {
+    id: "gil-hernandez",
+    name: "Polideportivo Antonio Gil Hernández",
+    maps: "https://maps.app.goo.gl/R7abEFTb3G8s6K7eA"
   },
   {
     id: "juan-cierva",
@@ -121,7 +136,7 @@ const venuesList: Venue[] = [
     id: "wurzburg",
     name: "Pabellón municipal de Würzburg",
     maps: "https://maps.app.goo.gl/vgHRCJLh93nF5Pqn8"
-  }
+  },
 ];
 
 export const venues: Record<string, Venue> = venuesList.reduce((acc, venue) => {
