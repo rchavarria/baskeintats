@@ -1,6 +1,15 @@
 import type {AdvancedGame, FriendlyGame, Game, ScheduledGame} from "../model/GameSchema.ts";
 import type {Announcement} from "../model/AnnouncementSchema.ts";
 import type {Stats} from "../model/StatsSchema.ts";
+import {game_2025_06_04_joventut} from "../data/games/2025-06-04-joventut.ts";
+import {game_2025_06_03_barca} from "../data/games/2025-06-03-barca.ts";
+import {game_2025_06_02_elche} from "../data/games/2025-06-02-elche.ts";
+import {game_2025_06_01_obradoiro} from "../data/games/2025-06-01-obradoiro.ts";
+import {game_2025_05_18_real_madrid} from "../data/games/2025-05-18-real-madrid.ts";
+import {game_2025_05_17_rozas} from "../data/games/2025-05-17-rozas.ts";
+import {game_2025_05_11_alcorcon} from "../data/games/2025-05-11-alcorcon.ts";
+import {game_2025_05_10_alcorcon} from "../data/games/2025-05-10-alcorcon.ts";
+import {game_2025_04_27_alcorcon} from "../data/games/2025-04-27-alcorcon.ts";
 import {game_2026_04_20_zentro} from "../data/games/2026-04-20-zentro.ts";
 import {game_2026_04_12_canoe} from "../data/games/2026-04-12-canoe.ts";
 import {game_2026_04_11_canoe} from "../data/games/2026-04-11-canoe.ts";
@@ -156,6 +165,15 @@ export function useEvents(): EventItem[] {
     game_2025_09_07_godella,
     game_2025_09_06_rozas,
     announcement_2025_08_26_comienzo_temporada,
+    game_2025_06_04_joventut,
+    game_2025_06_03_barca,
+    game_2025_06_02_elche,
+    game_2025_06_01_obradoiro,
+    game_2025_05_18_real_madrid,
+    game_2025_05_17_rozas,
+    game_2025_05_11_alcorcon,
+    game_2025_05_10_alcorcon,
+    game_2025_04_27_alcorcon,
   ];
 
   return events;
