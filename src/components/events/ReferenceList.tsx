@@ -1,10 +1,11 @@
 import type {Reference} from "../../model/ReferenceSchema.ts";
 
 const referenceTypeEmojiMap: Record<Reference["type"], string> = {
-  "social-media": "📱",
   "article": "📰",
   "document": "💼",
   "photo": "📸",
+  "stats": "📈",
+  "social-media": "📱",
   "video": "🎥",
 };
 
