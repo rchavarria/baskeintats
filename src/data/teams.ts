@@ -17,6 +17,13 @@ const teamList: Team[] = [
     venue: venues["canaleja"],
   },
   {
+    id: "barca",
+    name: "FC Barcelona",
+    logo: "/logos/barcelona.png",
+    web: "https://www.fcbarcelona.es/es/baloncesto",
+    venue: venues["default"],
+  },
+  {
     id: "canoe",
     name: "Real Canoe",
     logo: "/logos/canoe-transparent.png",
@@ -98,6 +105,13 @@ const teamList: Team[] = [
     name: "Unicaja Málaga",
     logo: "/logos/malaga.png",
     web: "https://www.unicajabaloncesto.com/",
+    venue: venues["default"],
+  },
+  {
+    id: "obradoiro",
+    name: "Obradoiro CAB",
+    logo: "/logos/obradoiro.png",
+    web: "https://obradoirocab.com",
     venue: venues["default"],
   },
   {
