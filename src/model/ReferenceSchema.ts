@@ -2,10 +2,11 @@ import {z} from "zod";
 
 export const ReferenceSchema = z.object({
   type: z.enum([
-    "social-media", // 📱
     "article",      // 📰
     "document",     // 💼
     "photo",        // 📸
+    "stats",        // 📈
+    "social-media", // 📱
     "video",        // 🎥
   ]),
   label: z.string(),
