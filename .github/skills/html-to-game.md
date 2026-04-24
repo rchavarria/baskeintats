@@ -79,8 +79,16 @@ The HTML input follows this structure:
 - Prefix `"S56-"` followed by the `id` attribute of the root `<div class="timeline-item">`
 - Example: `id="liga-u16-f2-j10"` → `"S56-liga-u16-f2-j10"`
 
+Compute prefix from `season` field. Examples:
+- Season `"2025-26"` → prefix `"S56-"`
+- Season `"2024-25"` → prefix `"S45-"`
+- Season `"2023-24"` → prefix `"S34-"`
+
 ### Field: `season`
-- Always `"2025-26"` (hardcoded for current season)
+Compute it based on the `date` field:
+- If `date` is between September 1, 2025 and June 30, 2026 → season is `"2025-26"`
+- If `date` is between September 1, 2024 and June 30, 2025 → season is `"2024-25"`
+- If `date` is between September 1, 2023 and June 30, 2024 → season is `"2023-24"`
 
 ### Field: `date`
 - Combine `date-is` attribute with time from `🕜` paragraph
