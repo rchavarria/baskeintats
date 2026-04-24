@@ -94,10 +94,24 @@ const teamList: Team[] = [
     venue: venues["juan-cierva"],
   },
   {
+    id: "alicante",
+    name: "CB Lucentum Alicante",
+    logo: "/logos/default.png",
+    web: "https://example.com",
+    venue: venues["default"],
+  },
+  {
     id: "laso",
     name: "Laso Academy",
     logo: "/logos/laso-transparent.png",
     web: "https://lasoacademy.com",
+    venue: venues["default"],
+  },
+  {
+    id: "lleida",
+    name: "Força Lleida",
+    logo: "/logos/default.png",
+    web: "https://example.com",
     venue: venues["default"],
   },
   {
@@ -176,6 +190,20 @@ const teamList: Team[] = [
     logo: "/logos/sevilla.png",
     web: "https://caja87baloncesto.es",
     venue: venues["default"],
+  },
+  {
+    id: "tarragona",
+    name: "CB Tarragona",
+    logo: "/logos/default.png",
+    web: "https://example.com",
+    venue: venues["default"],
+  },
+  {
+    id: "torrelodones",
+    name: "CB Torrelodones",
+    logo: "/logos/torrelodones.png",
+    web: "https://www.btorrelodones.com/es",
+    venue: venues["torrelodones"],
   },
   {
     id: "torrent",

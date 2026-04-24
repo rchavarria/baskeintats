@@ -10,6 +10,12 @@ import {game_2025_05_17_rozas} from "../data/games/2025-05-17-rozas.ts";
 import {game_2025_05_11_alcorcon} from "../data/games/2025-05-11-alcorcon.ts";
 import {game_2025_05_10_alcorcon} from "../data/games/2025-05-10-alcorcon.ts";
 import {game_2025_04_27_alcorcon} from "../data/games/2025-04-27-alcorcon.ts";
+import {game_2025_04_20_laso} from "../data/games/2025-04-20-laso.ts";
+import {game_2025_04_19_rozas} from "../data/games/2025-04-19-rozas.ts";
+import {game_2025_04_19_lleida} from "../data/games/2025-04-19-lleida.ts";
+import {game_2025_04_18_tarragona} from "../data/games/2025-04-18-tarragona.ts";
+import {game_2025_04_18_alicante} from "../data/games/2025-04-18-alicante.ts";
+import {game_2025_04_17_torrelodones} from "../data/games/2025-04-17-torrelodones.ts";
 import {game_2026_04_20_zentro} from "../data/games/2026-04-20-zentro.ts";
 import {game_2026_04_12_canoe} from "../data/games/2026-04-12-canoe.ts";
 import {game_2026_04_11_canoe} from "../data/games/2026-04-11-canoe.ts";
@@ -174,6 +180,12 @@ export function useEvents(): EventItem[] {
     game_2025_05_11_alcorcon,
     game_2025_05_10_alcorcon,
     game_2025_04_27_alcorcon,
+    game_2025_04_20_laso,
+    game_2025_04_19_rozas,
+    game_2025_04_19_lleida,
+    game_2025_04_18_tarragona,
+    game_2025_04_18_alicante,
+    game_2025_04_17_torrelodones,
   ];
 
   return events;

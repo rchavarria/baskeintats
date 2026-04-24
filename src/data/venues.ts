@@ -93,6 +93,11 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/zgkjCxwTECKA3ioA6"
   },
   {
+    id: "alberto-maestro",
+    name: "CDM Alberto Maestro, Zaragoza",
+    maps: "https://maps.app.goo.gl/esNz3j423BjMt2La6"
+  },
+  {
     id: "mora",
     name: "Mora de Rubielos",
     maps: "https://maps.app.goo.gl/NbqDdrLkJhzSXW1s8"
@@ -118,9 +123,19 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/xJY19tZfk9JZoCtz8"
   },
   {
+    id: "torrelodones",
+    name: "Polideportivo Municipal Torrelodones (José Antonio Mur Capelo)",
+    maps: "https://maps.app.goo.gl/iUnZhjReYBsBe4vi9"
+  },
+  {
     id: "triangulo-oro",
     name: "Triángulo de Oro, Madrid",
     maps: "https://maps.app.goo.gl/GeTR1VyHre3BrNwQA"
+  },
+  {
+    id: "san-agustin",
+    name: "Polideportivo San Agustín, Zaragoza",
+    maps: "https://maps.app.goo.gl/9DTopGuwRh6sRjGw7"
   },
   {
     id: "valcude",
