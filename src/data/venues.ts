@@ -18,6 +18,11 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/dDMxTLFs2Z8YuQxJ9"
   },
   {
+    id: "almendros",
+    name: "Pabellón Deportivo Los Almendros",
+    maps: "https://maps.app.goo.gl/xPSFDvMuG2M2NvfLA"
+  },
+  {
     id: "andres-estrada",
     name: "Polideportivo Andrés Estrada",
     maps: "https://maps.app.goo.gl/L5Hdm9CX26WjGzhu8"

@@ -213,6 +213,13 @@ const teamList: Team[] = [
     venue: venues["default"],
   },
   {
+    id: "uros",
+    name: "Uros de Rivas",
+    logo: "/logos/uros.png",
+    web: "https://www.urosderivas.com/es",
+    venue: venues["almendros"],
+  },
+  {
     id: "tres-cantos",
     name: "Tres Cantos",
     logo: "/logos/tres-cantos-transparent.png",

@@ -16,6 +16,16 @@ import {game_2025_04_19_lleida} from "../data/games/2025-04-19-lleida.ts";
 import {game_2025_04_18_tarragona} from "../data/games/2025-04-18-tarragona.ts";
 import {game_2025_04_18_alicante} from "../data/games/2025-04-18-alicante.ts";
 import {game_2025_04_17_torrelodones} from "../data/games/2025-04-17-torrelodones.ts";
+import {game_2025_03_16_tres_cantos} from "../data/games/2025-03-16-tres-cantos.ts";
+import {game_2025_03_09_uros} from "../data/games/2025-03-09-uros.ts";
+import {game_2025_03_02_real_madrid} from "../data/games/2025-03-02-real-madrid.ts";
+import {game_2025_02_23_rozas} from "../data/games/2025-02-23-rozas.ts";
+import {game_2025_02_16_estudiantes} from "../data/games/2025-02-16-estudiantes.ts";
+import {game_2025_02_09_tres_cantos} from "../data/games/2025-02-09-tres-cantos.ts";
+import {game_2025_02_02_uros} from "../data/games/2025-02-02-uros.ts";
+import {game_2025_01_29_real_madrid} from "../data/games/2025-01-29-real-madrid.ts";
+import {game_2025_01_19_rozas} from "../data/games/2025-01-19-rozas.ts";
+import {game_2025_01_12_estudiantes} from "../data/games/2025-01-12-estudiantes.ts";
 import {game_2026_04_20_zentro} from "../data/games/2026-04-20-zentro.ts";
 import {game_2026_04_12_canoe} from "../data/games/2026-04-12-canoe.ts";
 import {game_2026_04_11_canoe} from "../data/games/2026-04-11-canoe.ts";
@@ -186,6 +196,16 @@ export function useEvents(): EventItem[] {
     game_2025_04_18_tarragona,
     game_2025_04_18_alicante,
     game_2025_04_17_torrelodones,
+    game_2025_03_16_tres_cantos,
+    game_2025_03_09_uros,
+    game_2025_03_02_real_madrid,
+    game_2025_02_23_rozas,
+    game_2025_02_16_estudiantes,
+    game_2025_02_09_tres_cantos,
+    game_2025_02_02_uros,
+    game_2025_01_29_real_madrid,
+    game_2025_01_19_rozas,
+    game_2025_01_12_estudiantes,
   ];
 
   return events;
