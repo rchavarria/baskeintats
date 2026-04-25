@@ -111,16 +111,16 @@ describe('PlayerStatsFormatterImpl', () => {
     it('should calculate total points: 3*threePointers + 2*fieldGoals + freeThrows', () => {
       const stats: PlayerStats = {
         time: 0,
-        fieldGoals: 8, // 5 dobles + 3 triples
+        fieldGoals: 8,
         threePointers: 3,
         freeThrows: { made: 2, attempted: 3 },
         faults: 0,
         plusMinus: 0,
         efficiency: 0,
       };
-      // Points: 3*3 + 2*5 + 2 = 9 + 10 + 2 = 21
+      // Points: 3*3 + 2*8 + 2 = 9 + 16 + 2 = 27
       const formatter = new PlayerStatsFormatterImpl(stats);
-      expect(formatter.formatPoints()).toBe('21');
+      expect(formatter.formatPoints()).toBe('27');
     });
   });
 

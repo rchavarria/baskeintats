@@ -81,12 +81,11 @@ export class PlayerStatsFormatterImpl implements PlayerStatsFormatter {
 
   /**
    * Calcula puntos totales: 3*triples + 2*dobles + libres
-   * En basic, fieldGoals es número simple (total de 2pt + 3pt)
+   * En basic, fieldGoals es número simple (total de 2pt)
    * threePointers es número simple (total de 3pt)
-   * Entonces: 2pt = fieldGoals - threePointers
    */
   private getTotalPoints(): number {
-    const twoPointers = this.stats.fieldGoals - this.stats.threePointers;
+    const twoPointers = this.stats.fieldGoals;
     return (
       3 * this.stats.threePointers +
       2 * twoPointers +
