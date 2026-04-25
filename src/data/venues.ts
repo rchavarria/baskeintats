@@ -113,6 +113,11 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/NbqDdrLkJhzSXW1s8"
   },
   {
+    id: "palos",
+    name: "Pabellón Nuevo Frontón, Palos de la Frontera",
+    maps: "https://maps.app.goo.gl/UCyS55ZUaJrK6zcCA"
+  },
+  {
     id: "paraiso",
     name: "Polideportivo José Antonio Paraíso",
     maps: "https://maps.app.goo.gl/tNQ4RDSwCFeK8Yvb6"
@@ -131,6 +136,11 @@ const venuesList: Venue[] = [
     id: "plantio",
     name: "Polideportivo El Plantío",
     maps: "https://maps.app.goo.gl/fxf4qD9A851t9SHMA"
+  },
+  {
+    id: "punto-umbria",
+    name: "Pabellón Hernández Albarracín, Punta Umbría",
+    maps: "https://maps.app.goo.gl/5o949jVRT1Cdkmrt6"
   },
   {
     id: "roser-llop",
