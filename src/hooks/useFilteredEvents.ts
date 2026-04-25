@@ -18,20 +18,51 @@ function getOpponentTeamId(event: WithTeams): string | undefined {
   return undefined;
 }
 
+function bySeason(season: string) {
+  return (event: { season: string }) => {
+    if (!season) {
+      return true;
+    }
+
+    return event.season === season;
+  };
+}
+
+function byEventType(eventType: string) {
+  return (event: { type: string }) => {
+    if (!eventType) {
+      return true;
+    }
+
+    return event.type === eventType;
+  };
+}
+
+function byOpponentTeam(opponentTeamId: string) {
+  return (event: unknown) => {
+    if (!opponentTeamId) {
+      return true;
+    }
+
+    if (!hasTeams(event)) {
+      return false;
+    }
+
+    return getOpponentTeamId(event) === opponentTeamId;
+  };
+}
+
 export function useFilteredEvents() {
   const events = useEvents();
   const { filters } = useFiltersContext();
 
-  return useMemo(() => {
-    return events.filter((event) => {
-      if (filters.season && event.season !== filters.season) return false;
-      if (filters.eventType && event.type !== filters.eventType) return false;
-      if (filters.opponentTeam) {
-        if (!hasTeams(event)) return false;
-        if (getOpponentTeamId(event) !== filters.opponentTeam) return false;
-      }
-      return true;
-    });
-  }, [events, filters.season, filters.eventType, filters.opponentTeam]);
+  return useMemo(
+    () =>
+      events
+        .filter(bySeason(filters.season))
+        .filter(byEventType(filters.eventType))
+        .filter(byOpponentTeam(filters.opponentTeam)),
+    [events, filters.season, filters.eventType, filters.opponentTeam],
+  );
 }
 
