@@ -10,10 +10,10 @@ export const game_2024_12_15_alcobendas: FriendlyGame = FriendlyGameSchema.parse
   date: "2024-12-15T18:00:00Z",
 
   competition: {
-    name: "Amistoso de la Selección de Madrid",
+    name: "Preparación Selección de Madrid para CESA",
     category: "U14M",
-    phase: "Alcobendas 2009",
-    round: "Amistoso",
+    phase: "Amistosos",
+    round: "J1",
   },
 
   venue: venues["caja-magica"],
