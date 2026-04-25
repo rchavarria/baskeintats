@@ -44,7 +44,7 @@ const venuesList: Venue[] = [
   },
   {
     id: "caja-magica",
-    name: "Pabellón Norte",
+    name: "Caja Mágica, Pabellón Norte",
     maps: "https://maps.app.goo.gl/vXg8X8bE22Vd9PVWA"
   },
   {
