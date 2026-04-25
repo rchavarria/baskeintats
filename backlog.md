@@ -2,6 +2,7 @@
 
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - comenzar a transformar los partidos de la temporada 2024-2025
+- los filtros, en lugar de por equipo, por titulo de la ocmpetición: liga ahorramas, fll, torneig nord...
 
 - [Temporada 2024-25](s45-timeline-items.md)
   - Hay 95 items, llevo 0
