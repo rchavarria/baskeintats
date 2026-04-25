@@ -164,6 +164,13 @@ const teamList: Team[] = [
     venue: venues["espiniella"],
   },
   {
+    id: "sba",
+    name: "Spanish Basketball Academy",
+    logo: "/logos/sba.png",
+    web: "https://www.spanishbasketballacademy.com/",
+    venue: venues["sba-arena"],
+  },
+  {
     id: "san-jorge",
     name: "San Jorge",
     logo: "/logos/san-jorge.jpg",

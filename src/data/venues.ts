@@ -143,6 +143,11 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/9DTopGuwRh6sRjGw7"
   },
   {
+    id: "sba-arena",
+    name: "SBA Arena",
+    maps: "https://maps.app.goo.gl/VuXT5q4kwEMsbGQL9"
+  },
+  {
     id: "valcude",
     name: "Club Deportivo Valcude",
     maps: "https://maps.app.goo.gl/6JpchRmwCPqjvab36"
