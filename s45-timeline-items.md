@@ -2,7 +2,6 @@
 
 ## Overview
 
-- [ ] Torneig Nord (06-09-2024)
 - [ ] Torneo FLL (19-11-2024)
 - [ ] Copa Ahorramas (05-12-2024)
 - [ ] CESA (03-01-2025)
@@ -58,10 +57,6 @@
 - [ ] `convocatoria-fbclm-1` (18-09-2024)
 - [ ] `amistoso-pretemporada-estudiantes` (15-09-2024)
 - [ ] `torneig-nord-stats` (08-09-2024)
-- [ ] `torneig-nord-j4` (08-09-2024)
-- [ ] `torneig-nord-j3` (07-09-2024)
-- [ ] `torneig-nord-j2` (07-09-2024)
-- [ ] `torneig-nord-j1` (06-09-2024)
 - [ ] `torneig-nord` (06-09-2024)
 - [ ] `campus-pro-camp-dia-5` (31-08-2024)
 - [ ] `campus-pro-camp-dia-4` (30-08-2024)
@@ -107,3 +102,7 @@
 - [x] `liga-ahorramas-fase1-j3` SBA (06-10-2024)
 - [x] `liga-ahorramas-fase1-j2` (29-09-2024)
 - [x] `liga-ahorramas-fase1-j1` Real Madrid (25-09-2024)
+- [x] `torneig-nord-j4` (08-09-2024)
+- [x] `torneig-nord-j3` (07-09-2024)
+- [x] `torneig-nord-j2` (07-09-2024)
+- [x] `torneig-nord-j1` (06-09-2024)

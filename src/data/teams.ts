@@ -122,6 +122,13 @@ const teamList: Team[] = [
     venue: venues["default"],
   },
   {
+    id: "mataro",
+    name: "Unió Esportiva Mataró",
+    logo: "/logos/mataro.png",
+    web: "https://www.uemataro.com",
+    venue: venues["default"],
+  },
+  {
     id: "obradoiro",
     name: "Obradoiro CAB",
     logo: "/logos/obradoiro.png",
@@ -164,11 +171,11 @@ const teamList: Team[] = [
     venue: venues["espiniella"],
   },
   {
-    id: "sba",
-    name: "Spanish Basketball Academy",
-    logo: "/logos/sba.png",
-    web: "https://www.spanishbasketballacademy.com/",
-    venue: venues["sba-arena"],
+    id: "sabadell",
+    name: "Sabadell BQ Vallés",
+    logo: "/logos/sabadell.png",
+    web: "https://bqsabadell.com",
+    venue: venues["default"],
   },
   {
     id: "san-jorge",
@@ -176,6 +183,13 @@ const teamList: Team[] = [
     logo: "/logos/san-jorge.jpg",
     web: "https://sanjorge.es",
     venue: venues["diaz-miguel"],
+  },
+  {
+    id: "sba",
+    name: "Spanish Basketball Academy",
+    logo: "/logos/sba.png",
+    web: "https://www.spanishbasketballacademy.com/",
+    venue: venues["sba-arena"],
   },
   {
     id: "seleccion-canarias",

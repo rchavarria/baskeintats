@@ -8,6 +8,11 @@ const venuesList: Venue[] = [
     maps: "https://maps.google.com/?q=Pabell%C3%B3n+Municipal+de+Alcobendas",
   },
   {
+    id: "alberto-maestro",
+    name: "CDM Alberto Maestro, Zaragoza",
+    maps: "https://maps.app.goo.gl/esNz3j423BjMt2La6"
+  },
+  {
     id: "alcala-selva",
     name: "Pabellón Municipal Alcalá de la Selva",
     maps: "https://maps.app.goo.gl/zCaer2Euadh2ZgWv6"
@@ -36,6 +41,11 @@ const venuesList: Venue[] = [
     id: "arroyo",
     name: "Polideportivo El Arroyo",
     maps: "https://maps.app.goo.gl/kXPkNNQREQmXUcit6"
+  },
+  {
+    id: "caja-magica",
+    name: "Pabellón Norte",
+    maps: "https://maps.app.goo.gl/vXg8X8bE22Vd9PVWA"
   },
   {
     id: "canaleja",
@@ -98,19 +108,14 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/zgkjCxwTECKA3ioA6"
   },
   {
-    id: "alberto-maestro",
-    name: "CDM Alberto Maestro, Zaragoza",
-    maps: "https://maps.app.goo.gl/esNz3j423BjMt2La6"
-  },
-  {
     id: "mora",
     name: "Mora de Rubielos",
     maps: "https://maps.app.goo.gl/NbqDdrLkJhzSXW1s8"
   },
   {
-    id: "caja-magica",
-    name: "Pabellón Norte",
-    maps: "https://maps.app.goo.gl/vXg8X8bE22Vd9PVWA"
+    id: "peralada",
+    name: "Pabellón Municipal de Deportes de Peralada",
+    maps: "https://maps.app.goo.gl/YD8pRpLHfZmYRhrv5"
   },
   {
     id: "pez-volador",
@@ -121,6 +126,11 @@ const venuesList: Venue[] = [
     id: "plantio",
     name: "Polideportivo El Plantío",
     maps: "https://maps.app.goo.gl/fxf4qD9A851t9SHMA"
+  },
+  {
+    id: "roser-llop",
+    name: "Polideportivo Municipal Roser Llop",
+    maps: "https://maps.app.goo.gl/LJYT4vWdCPpU7MTh6"
   },
   {
     id: "rubielos",
