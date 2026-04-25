@@ -113,6 +113,11 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/NbqDdrLkJhzSXW1s8"
   },
   {
+    id: "paraiso",
+    name: "Polideportivo José Antonio Paraíso",
+    maps: "https://maps.app.goo.gl/tNQ4RDSwCFeK8Yvb6"
+  },
+  {
     id: "peralada",
     name: "Pabellón Municipal de Deportes de Peralada",
     maps: "https://maps.app.goo.gl/YD8pRpLHfZmYRhrv5"

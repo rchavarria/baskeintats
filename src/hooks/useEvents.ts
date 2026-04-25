@@ -27,8 +27,11 @@ import {game_2025_01_29_real_madrid} from "../data/games/2025-01-29-real-madrid.
 import {game_2025_01_19_rozas} from "../data/games/2025-01-19-rozas.ts";
 import {game_2025_01_12_estudiantes} from "../data/games/2025-01-12-estudiantes.ts";
 import {game_2024_12_15_rozas} from "../data/games/2024-12-15-rozas.ts";
+import {game_2024_12_07_estudiantes} from "../data/games/2024-12-07-estudiantes.ts";
 import {game_2024_12_01_canoe} from "../data/games/2024-12-01-canoe.ts";
 import {game_2024_11_27_sba} from "../data/games/2024-11-27-sba.ts";
+import {game_2024_11_23_barca} from "../data/games/2024-11-23-barca.ts";
+import {game_2024_11_22_estudiantes} from "../data/games/2024-11-22-estudiantes.ts";
 import {game_2024_11_17_alcorcon} from "../data/games/2024-11-17-alcorcon.ts";
 import {game_2024_11_10_real_madrid} from "../data/games/2024-11-10-real-madrid.ts";
 import {game_2024_10_27_rozas} from "../data/games/2024-10-27-rozas.ts";
@@ -221,8 +224,11 @@ export function useEvents(): EventItem[] {
     game_2025_01_19_rozas,
     game_2025_01_12_estudiantes,
     game_2024_12_15_rozas,
+    game_2024_12_07_estudiantes,
     game_2024_12_01_canoe,
     game_2024_11_27_sba,
+    game_2024_11_23_barca,
+    game_2024_11_22_estudiantes,
     game_2024_11_17_alcorcon,
     game_2024_11_10_real_madrid,
     game_2024_10_27_rozas,
