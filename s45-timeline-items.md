@@ -1,16 +1,5 @@
 # Timeline Items - temporada-24-25
 
-## Logos y Webs federaciones
-
-- [ ] seleccion-aragon
-- [ ] seleccion-baleares
-- [ ] seleccion-canarias (solo web)
-- [ ] seleccion-cataluna
-- [ ] seleccion-galicia
-- [ ] seleccion-melilla
-- [ ] seleccion-murcia
-- [ ] seleccion-valencia
-
 ## Borrar videos del canal YT equivocado
 
 https://youtu.be/f97ZVJKFiUU
