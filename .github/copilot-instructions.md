@@ -50,10 +50,6 @@ Use relative Unix-style paths like `~/project/file` when executing CLI commands
 
 ```
 baskeintats/
-├── data/                    # TypeScript source data (teams, games)
-│   ├── games/               # Organized by season (e.g., 2025-26/)
-│   ├── teams.ts             # TypeScript data for Teams
-│   └── venues.ts            # TypeScript data for Venues
 ├── src/
 │   ├── components/          # React components
 │   │   ├── filters/         # Filter UI components
@@ -66,6 +62,10 @@ baskeintats/
 │   ├── model/               # Zod schemas (validation)
 │   ├── pages/               # Page components (routes)
 │   └── types/               # TypeScript type definitions
+├── data/                    # TypeScript source data (teams, games)
+│   ├── games/               # Organized by season (e.g., 2025-26/)
+│   ├── teams.ts             # TypeScript data for Teams
+│   └── venues.ts            # TypeScript data for Venues
 └── public/
     └── logos/               # Team logo images
 ```
