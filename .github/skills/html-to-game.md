@@ -67,41 +67,33 @@ The HTML input follows this structure:
 
 ### Metadata Extraction Rules
 
-| Field    | HTML Source                     | Example                      |
-|----------|---------------------------------|------------------------------|
-| `id`     | `"S56-"` + `<div id="...">`     | `"S56-liga-plata-f2-gd-j10"` |
-| `season` | Always fixed                    | `"2025-26"`                  |
-| `date`   | `date-is` attr + `🕜` paragraph | `"2026-03-22T17:15:00Z"`     |
-| `status` | Has `match-results` div?        | `"played"` or `"scheduled"`  |
+| Field    | HTML Source                     | Example                       |
+|----------|---------------------------------|-------------------------------|
+| `date`   | `date-is` attr + `🕜` paragraph | `"2026-03-22T17:15:00Z"`      |
+| `season` | Always fixed                    | `"2025-26"`                   |
+| `id`     | `"S56-"` + `<div id="...">`     | `"S56-liga-plata-f2-gd-j10"`  |
 | `type`   | Simple or advanced stats?       | `"game"` or `"advanced-game"` |
-
-### Field: `id`
-- Prefix `"S56-"` followed by the `id` attribute of the root `<div class="timeline-item">`
-- Example: `id="liga-u16-f2-j10"` → `"S56-liga-u16-f2-j10"`
-
-Compute prefix from `season` field. Examples:
-- Season `"2025-26"` → prefix `"S56-"`
-- Season `"2024-25"` → prefix `"S45-"`
-- Season `"2023-24"` → prefix `"S34-"`
-
-### Field: `season`
-Compute it based on the `date` field:
-- If `date` is between September 1, 2025 and June 30, 2026 → season is `"2025-26"`
-- If `date` is between September 1, 2024 and June 30, 2025 → season is `"2024-25"`
-- If `date` is between September 1, 2023 and June 30, 2024 → season is `"2023-24"`
 
 ### Field: `date`
 - Combine `date-is` attribute with time from `🕜` paragraph
 - Convert from `DD-MM-YYYY` to ISO format, convert to UTC timezone
 - Example: `date-is="22-03-2026"` + `🕜 17:15` → `"2026-03-22T16:15:00Z"`
 
-### Field: `status`
-- Check if `<div class="match-results">` exists with scores
-- If yes → `"played"`
-- If no results → `"scheduled"`
-- If marked as postponed → `"postponed"`
+### Field: `season`
+- If `date` is between September 1, 2025 and June 30, 2026 → season is `"2025-26"`
+- If `date` is between September 1, 2024 and June 30, 2025 → season is `"2024-25"`
+- If `date` is between September 1, 2023 and June 30, 2024 → season is `"2023-24"`
 
----
+### Field: `id`
+Compute prefix from `season` field. Examples:
+- Season `"2025-26"` → prefix `"S56-"`
+- Season `"2024-25"` → prefix `"S45-"`
+- Season `"2023-24"` → prefix `"S34-"`
+
+Then, set the prefix followed by the `id` attribute of the root `<div class="timeline-item">`
+
+- Example: `id="liga-u16-f2-j10"` → `"S56-liga-u16-f2-j10"`
+  Compute it based on the `date` field:
 
 ## Parsing Competition
 
