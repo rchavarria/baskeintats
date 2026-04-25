@@ -2,8 +2,6 @@
 
 ## Overview
 
-- [ ] Torneo FLL (19-11-2024)
-- [ ] Copa Ahorramas (05-12-2024)
 - [ ] CESA (03-01-2025)
 
 ## To Do
@@ -44,11 +42,8 @@
 - [ ] `liga-ahorramas-fase1-estadisticas` (16-12-2024)
 - [ ] `amistoso-fbm-cadete-2009` (15-12-2024)
 - [ ] `convocatoria-fbm-3` (10-12-2024)
-- [ ] `copa-ahorramas-j1` (07-12-2024)
 - [ ] `copa-ahorramas` (05-12-2024)
 - [ ] `torneo-fll-stats` (28-11-2024)
-- [ ] `torneo-fll-j2` (23-11-2024)
-- [ ] `torneo-fll-j1` (22-11-2024)
 - [ ] `torneo-fll` (19-11-2024)
 - [ ] `convocatoria-fbm-2` (07-11-2024)
 - [ ] `amistoso-murcia` (19-10-2024)
@@ -106,3 +101,6 @@
 - [x] `torneig-nord-j3` (07-09-2024)
 - [x] `torneig-nord-j2` (07-09-2024)
 - [x] `torneig-nord-j1` (06-09-2024)
+- [x] `copa-ahorramas-j1` (07-12-2024)
+- [x] `torneo-fll-j2` (23-11-2024)
+- [x] `torneo-fll-j1` (22-11-2024)
