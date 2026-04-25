@@ -8,10 +8,10 @@ export function useFilteredEvents() {
 
   return useMemo(() => {
     return events.filter((event) => {
-      if (filters.season) return event.season === filters.season;
+      if (filters.season && event.season !== filters.season) return false;
+      if (filters.eventType && event.type !== filters.eventType) return false;
       return true;
     });
-  }, [events, filters.season]);
+  }, [events, filters.season, filters.eventType]);
 }
-
 

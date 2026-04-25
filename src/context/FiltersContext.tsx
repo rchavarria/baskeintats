@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 
 export interface Filters {
   season: string;
+  eventType: string;
   competition: string;
   team: string;
   dateFrom: string;
@@ -17,6 +18,7 @@ interface FiltersContextValue {
 
 const defaultFilters: Filters = {
   season: "",
+  eventType: "",
   competition: "",
   team: "",
   dateFrom: "",

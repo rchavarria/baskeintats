@@ -6,14 +6,16 @@ import {DefaultCard} from "../components/events/DefaultCard.tsx";
 import {FriendlyGameCard} from "../components/events/FriendlyGameCard.tsx";
 import {StatsCard} from "../components/events/StatsCard.tsx";
 import {SeasonFilter} from "../components/filters/SeasonFilter.tsx";
+import {EventTypeFilter} from "../components/filters/EventTypeFilter.tsx";
 
 export function HomePage() {
   const events = useFilteredEvents();
 
   return (
     <div className="flex gap-6 items-start">
-      <aside className="w-1/5 shrink-0">
+      <aside className="w-1/5 shrink-0 flex flex-col gap-4">
         <SeasonFilter />
+        <EventTypeFilter />
       </aside>
       <main className="w-4/5 min-w-0">
         <h1 className="text-2xl font-bold text-gray-900 mb-6">Últimos partidos</h1>
