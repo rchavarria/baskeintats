@@ -249,7 +249,7 @@ const teamList: Team[] = [
   },
   {
     id: "seleccion-valencia",
-    name: "Selección Valenciana",
+    name: "Selección de Valencia",
     logo: "/logos/default.png",
     web: "https://example.com",
     venue: venues["default"],
