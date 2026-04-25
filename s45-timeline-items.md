@@ -1,8 +1,27 @@
 # Timeline Items - temporada-24-25
 
-## Overview
+## Logos y Webs federaciones
 
-- [ ] CESA (03-01-2025)
+- [ ] seleccion-aragon
+- [ ] seleccion-baleares
+- [ ] seleccion-canarias (solo web)
+- [ ] seleccion-cataluna
+- [ ] seleccion-galicia
+- [ ] seleccion-melilla
+- [ ] seleccion-murcia
+- [ ] seleccion-valencia
+
+## Borrar videos del canal YT equivocado
+
+https://youtu.be/f97ZVJKFiUU
+
+https://youtu.be/MTLvOWJDI4g
+
+https://youtu.be/7N-VaFhpM0E
+
+https://youtu.be/uY5rbGw_dzE
+
+https://youtu.be/fZp5eepvk1s
 
 ## To Do
 
@@ -27,20 +46,9 @@
 - [ ] `liga-ahorramas-fase2-estadisticas` (17-03-2024)
 - [ ] `liga-ahorramas-cadete-fase2-j8` (03-03-2025)
 - [ ] `cesa-resumen` (07-01-2025)
-- [ ] `cesa-final` (07-01-2025)
-- [ ] `cesa-semi-final` (06-01-2025)
-- [ ] `cesa-cuartos-final` (05-01-2025)
-- [ ] `cesa-j3` (04-01-2025)
-- [ ] `cesa-j2` (04-01-2025)
-- [ ] `cesa-j1` (03-01-2025)
-- [ ] `amistoso-fbm-canarias` (30-12-2024)
-- [ ] `amistoso-fbm-aragon` (28-12-2024)
-- [ ] `amistoso-fbm-catalunya` (27-12-2024)
 - [ ] `convocatoria-fbm-final` (23-12-2024)
-- [ ] `amistoso-fbm-valencia` (22-12-2024)
 - [ ] `convocatoria-fbm-4` (17-12-2024)
 - [ ] `liga-ahorramas-fase1-estadisticas` (16-12-2024)
-- [ ] `amistoso-fbm-cadete-2009` (15-12-2024)
 - [ ] `convocatoria-fbm-3` (10-12-2024)
 - [ ] `copa-ahorramas` (05-12-2024)
 - [ ] `torneo-fll-stats` (28-11-2024)
@@ -104,3 +112,14 @@
 - [x] `copa-ahorramas-j1` (07-12-2024)
 - [x] `torneo-fll-j2` (23-11-2024)
 - [x] `torneo-fll-j1` (22-11-2024)
+- [x] `amistoso-fbm-cadete-2009` (15-12-2024)
+- [x] `amistoso-fbm-canarias` (30-12-2024)
+- [x] `amistoso-fbm-aragon` (28-12-2024)
+- [x] `amistoso-fbm-catalunya` (27-12-2024)
+- [x] `amistoso-fbm-valencia` (22-12-2024)
+- [x] `cesa-final` (07-01-2025)
+- [x] `cesa-semi-final` (06-01-2025)
+- [x] `cesa-cuartos-final` (05-01-2025)
+- [x] `cesa-j3` (04-01-2025)
+- [x] `cesa-j2` (04-01-2025)
+- [x] `cesa-j1` (03-01-2025)

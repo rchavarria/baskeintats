@@ -26,6 +26,17 @@ import {game_2025_02_02_uros} from "../data/games/2025-02-02-uros.ts";
 import {game_2025_01_29_real_madrid} from "../data/games/2025-01-29-real-madrid.ts";
 import {game_2025_01_19_rozas} from "../data/games/2025-01-19-rozas.ts";
 import {game_2025_01_12_estudiantes} from "../data/games/2025-01-12-estudiantes.ts";
+import {game_2025_01_07_seleccion_valencia} from "../data/games/2025-01-07-seleccion-valencia.ts";
+import {game_2025_01_06_seleccion_galicia} from "../data/games/2025-01-06-seleccion-galicia.ts";
+import {game_2025_01_05_seleccion_baleares} from "../data/games/2025-01-05-seleccion-baleares.ts";
+import {game_2025_01_04_seleccion_canarias} from "../data/games/2025-01-04-seleccion-canarias.ts";
+import {game_2025_01_04_seleccion_melilla} from "../data/games/2025-01-04-seleccion-melilla.ts";
+import {game_2025_01_03_seleccion_murcia} from "../data/games/2025-01-03-seleccion-murcia.ts";
+import {game_2024_12_30_seleccion_canarias} from "../data/games/2024-12-30-seleccion-canarias.ts";
+import {game_2024_12_28_seleccion_aragon} from "../data/games/2024-12-28-seleccion-aragon.ts";
+import {game_2024_12_27_seleccion_cataluna} from "../data/games/2024-12-27-seleccion-cataluna.ts";
+import {game_2024_12_22_seleccion_valencia} from "../data/games/2024-12-22-seleccion-valencia.ts";
+import {game_2024_12_15_alcobendas} from "../data/games/2024-12-15-alcobendas.ts";
 import {game_2024_12_15_rozas} from "../data/games/2024-12-15-rozas.ts";
 import {game_2024_12_07_estudiantes} from "../data/games/2024-12-07-estudiantes.ts";
 import {game_2024_12_01_canoe} from "../data/games/2024-12-01-canoe.ts";
@@ -223,6 +234,17 @@ export function useEvents(): EventItem[] {
     game_2025_01_29_real_madrid,
     game_2025_01_19_rozas,
     game_2025_01_12_estudiantes,
+    game_2025_01_07_seleccion_valencia,
+    game_2025_01_06_seleccion_galicia,
+    game_2025_01_05_seleccion_baleares,
+    game_2025_01_04_seleccion_canarias,
+    game_2025_01_04_seleccion_melilla,
+    game_2025_01_03_seleccion_murcia,
+    game_2024_12_30_seleccion_canarias,
+    game_2024_12_28_seleccion_aragon,
+    game_2024_12_27_seleccion_cataluna,
+    game_2024_12_22_seleccion_valencia,
+    game_2024_12_15_alcobendas,
     game_2024_12_15_rozas,
     game_2024_12_07_estudiantes,
     game_2024_12_01_canoe,
