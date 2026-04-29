@@ -7,6 +7,7 @@ export const ReferenceSchema = z.object({
     "photo",        // 📸
     "stats",        // 📈
     "social-media", // 📱
+    "web",          // 💻
     "video",        // 🎥
   ]),
   label: z.string(),

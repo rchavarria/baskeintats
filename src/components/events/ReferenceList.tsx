@@ -6,6 +6,7 @@ const referenceTypeEmojiMap: Record<Reference["type"], string> = {
   "photo": "📸",
   "stats": "📈",
   "social-media": "📱",
+  "web": "💻",
   "video": "🎥",
 };
 
