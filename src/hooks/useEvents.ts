@@ -129,11 +129,13 @@ import {stat_2026_03_23_liga_plata_f2_gd} from "../data/games/2026-03-23-stat-li
 import {stat_2026_03_23_liga_plata_f2_gb} from "../data/games/2026-03-23-stat-liga-plata-f2-gb.ts";
 import {stat_2025_12_15_liga_oro_f1_g1} from "../data/games/2025-12-15-stat-liga-oro-f1-g1.ts";
 import {stat_2025_12_15_liga_plata_f1_g4} from "../data/games/2025-12-15-stat-liga-plata-f1-g4.ts";
+import {game_2026_04_25_zentro} from "../data/games/2026-04-25-zentro.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats;
 
 export function useEvents(): EventItem[] {
   const events: EventItem[] = [
+    game_2026_04_25_zentro,
     game_2026_04_20_zentro,
     game_2026_04_12_canoe,
     game_2026_04_11_canoe,

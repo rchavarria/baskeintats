@@ -7,7 +7,7 @@ export const game_2026_04_25_zentro: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-playoffs-j2",
   type: "advanced-game",
   season: "2025-26",
-  date: "2026-04-25T12:30:00Z",
+  date: "2026-04-25T11:15:00Z",
 
   competition: {
     name: "Liga Ahorramás - Oro",
@@ -21,18 +21,18 @@ export const game_2026_04_25_zentro: AdvancedGame = AdvancedGameSchema.parse({
   home: {
     club: teams["alcobendas"],
     category: "U16M",
-    scores: [],
+    scores: [ 15, 11, 21, 21 ],
   },
 
   away: {
     club: teams["zentro"],
     category: "U16M",
     opponent: true,
-    scores: [],
+    scores: [ 26, 31, 18, 30 ],
   },
 
   playerStats: {
-    time: 0 * 60 + 0,
+    time: 12 * 60 + 40,
     fieldGoals: {
       made: 0,
       attempted: 0,
@@ -49,46 +49,46 @@ export const game_2026_04_25_zentro: AdvancedGame = AdvancedGameSchema.parse({
       offensive: 0,
       defensive: 0,
     },
-    assists: 0,
+    assists: 1,
     steals: 0,
-    turnovers: 0,
+    turnovers: 2,
     blocks: {
       made: 0,
       received: 0,
     },
     faults: {
-      made: 0,
-      received: 0,
+      made: 3,
+      received: 1,
     },
-    plusMinus: 0,
-    efficiency: 0,
+    plusMinus: -15,
+    efficiency: -3,
   },
 
   videos: {
-    official: "https://youtu.be/-",
+    official: "https://youtu.be/vsUpa_ruBD8",
     others: [
       {
         label: "Canal Pou",
-        url: "https://youtu.be/-",
+        url: "https://youtu.be/4xKAsdlE3eM",
       },
-      // {
-      //   label: "Canal CBA/Zilberman",
-      //   url: "https://youtu.be/-",
-      // },
     ],
   },
 
   recap: {
-    title: "xxx",
+    title: "¡Se acabó!",
     lines: [
-      "yyy",
-      "yyy",
-      "yyy",
-      "yyy",
+      "Duele terminar así, pero no pudo ser. No hubo ninguna opción.",
+      "El oponente es demasiado fuerte, no hay nada que hacer, desearles buena suerte nada más.",
+      "Por nuestra parte, un mal partido, luchando contra los más grandes, pero sin posibilidad de hacer absolutamente nada",
     ],
   },
 
   references: [
+    {
+      type: "web",
+      label: "Fases finales Cadete",
+      url: "https://fbm.es/noticia-123-13246/fases-finales-de-la-liga-ahorramas-cadete",
+    },
     {
       type: "photo",
       label: "Fotos del mes de abril",
@@ -107,7 +107,7 @@ export const game_2026_04_25_zentro: AdvancedGame = AdvancedGameSchema.parse({
     {
       type: "article",
       label: "Crónica del partido",
-      url: "https://www.fbm.es/-",
+      url: "https://www.fbm.es/noticia-104-13239/liga-ahorramas-los-favoritos-no-fallan-y-se-citan-en-la-f4",
     },
   ],
 
