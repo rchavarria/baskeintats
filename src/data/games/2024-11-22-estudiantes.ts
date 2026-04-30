@@ -1,11 +1,11 @@
-import {FriendlyGameSchema} from "../../model/GameSchema.ts";
-import type {FriendlyGame} from "../../model/GameSchema.ts";
+import {GameSchema} from "../../model/GameSchema.ts";
+import type {Game} from "../../model/GameSchema.ts";
 import {venues} from "../venues.ts";
 import {teams} from "../teams.ts";
 
-export const game_2024_11_22_estudiantes: FriendlyGame = FriendlyGameSchema.parse({
+export const game_2024_11_22_estudiantes: Game = GameSchema.parse({
   id: "S45-torneo-fll-j1",
-  type: "friendly-game",
+  type: "game",
   season: "2024-25",
   date: "2024-11-22T17:00:00Z",
 
