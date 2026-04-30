@@ -129,6 +129,13 @@ const teamList: Team[] = [
     venue: venues["default"],
   },
   {
+    id: "murcia",
+    name: "UCAM Murcia",
+    logo: "/logos/ucam-murcia.png",
+    web: "https://www.ucamdeportes.com/ucamcb",
+    venue: venues["default"],
+  },
+  {
     id: "obradoiro",
     name: "Obradoiro CAB",
     logo: "/logos/obradoiro.png",

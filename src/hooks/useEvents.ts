@@ -54,6 +54,8 @@ import {game_2024_09_08_mataro} from "../data/games/2024-09-08-mataro.ts";
 import {game_2024_09_07_barca} from "../data/games/2024-09-07-barca.ts";
 import {game_2024_09_07_joventut} from "../data/games/2024-09-07-joventut.ts";
 import {game_2024_09_06_sabadell} from "../data/games/2024-09-06-sabadell.ts";
+import {game_2024_09_15_estudiantes} from "../data/games/2024-09-15-estudiantes.ts";
+import {game_2024_10_19_ucam_murcia} from "../data/games/2024-10-19-ucam-murcia.ts";
 import {game_2026_04_20_zentro} from "../data/games/2026-04-20-zentro.ts";
 import {game_2026_04_12_canoe} from "../data/games/2026-04-12-canoe.ts";
 import {game_2026_04_11_canoe} from "../data/games/2026-04-11-canoe.ts";
@@ -259,9 +261,11 @@ export function useEvents(): EventItem[] {
     game_2024_11_10_real_madrid,
     game_2024_10_27_rozas,
     game_2024_10_20_canoe,
+    game_2024_10_19_ucam_murcia,
     game_2024_10_06_sba,
     game_2024_09_29_alcorcon,
     game_2024_09_25_real_madrid,
+    game_2024_09_15_estudiantes,
     game_2024_09_08_mataro,
     game_2024_09_07_barca,
     game_2024_09_07_joventut,
