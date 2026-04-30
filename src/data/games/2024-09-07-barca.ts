@@ -32,16 +32,16 @@ export const game_2024_09_07_barca: Game = GameSchema.parse({
   },
 
   playerStats: {
-    time: 0,
-    fieldGoals: 0,
+    time: 21 * 60 + 56,
+    fieldGoals: 1,
     threePointers: 0,
     freeThrows: {
       made: 0,
       attempted: 0,
     },
-    faults: 0,
-    plusMinus: 0,
-    efficiency: 0,
+    faults: 1,
+    plusMinus: -25,
+    efficiency: 1,
   },
 
   videos: {

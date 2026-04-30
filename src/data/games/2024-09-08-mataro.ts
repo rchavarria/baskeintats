@@ -32,16 +32,16 @@ export const game_2024_09_08_mataro: Game = GameSchema.parse({
   },
 
   playerStats: {
-    time: 0,
-    fieldGoals: 0,
+    time: 18 * 60 + 18,
+    fieldGoals: 7,
     threePointers: 0,
     freeThrows: {
-      made: 0,
-      attempted: 0,
+      made: 1,
+      attempted: 3,
     },
-    faults: 0,
-    plusMinus: 0,
-    efficiency: 0,
+    faults: 3,
+    plusMinus: 21,
+    efficiency: 10,
   },
 
   videos: {

@@ -135,6 +135,7 @@ import {stat_2025_12_15_liga_oro_f1_g1} from "../data/games/2025-12-15-stat-liga
 import {stat_2025_12_15_liga_plata_f1_g4} from "../data/games/2025-12-15-stat-liga-plata-f1-g4.ts";
 import {game_2026_04_25_zentro} from "../data/games/2026-04-25-zentro.ts";
 import {game_2026_04_26_real_madrid} from "../data/games/2026-04-26-real-madrid.ts";
+import {stat_2024_09_08_torneig_nord} from "../data/games/2024-09-08-stat-torneig-nord.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats;
 
@@ -270,6 +271,7 @@ export function useEvents(): EventItem[] {
     game_2024_09_29_alcorcon,
     game_2024_09_25_real_madrid,
     game_2024_09_15_estudiantes,
+    stat_2024_09_08_torneig_nord,
     game_2024_09_08_mataro,
     game_2024_09_07_barca,
     game_2024_09_07_joventut,

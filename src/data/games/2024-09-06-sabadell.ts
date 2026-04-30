@@ -12,7 +12,7 @@ export const game_2024_09_06_sabadell: Game = GameSchema.parse({
   competition: {
     name: "Torneig Nord",
     category: "U15M",
-    phase: "Fase grupos",
+    phase: "Grupos",
     round: "Jornada 1",
   },
 
@@ -32,16 +32,16 @@ export const game_2024_09_06_sabadell: Game = GameSchema.parse({
   },
 
   playerStats: {
-    time: 0,
-    fieldGoals: 0,
+    time: 25 * 60 + 57,
+    fieldGoals: 3,
     threePointers: 0,
     freeThrows: {
       made: 0,
       attempted: 0,
     },
-    faults: 0,
-    plusMinus: 0,
-    efficiency: 0,
+    faults: 2,
+    plusMinus: 15,
+    efficiency: 4,
   },
 
   videos: {
