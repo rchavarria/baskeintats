@@ -12,7 +12,7 @@ export const game_2025_06_01_obradoiro: AdvancedGame = AdvancedGameSchema.parse(
   competition: {
     name: "Campeonato de España de Clubes",
     category: "U15M",
-    phase: "Fase de grupos",
+    phase: "Grupos",
     round: "J1",
   },
 
