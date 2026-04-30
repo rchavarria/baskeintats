@@ -297,6 +297,13 @@ const teamList: Team[] = [
     venue: venues["almendros"],
   },
   {
+    id: "torrejon",
+    name: "CB Torrejón",
+    logo: "/logos/torrejon.png",
+    web: "https://example.com",
+    venue: venues["default"],
+  },
+  {
     id: "tres-cantos",
     name: "Tres Cantos",
     logo: "/logos/tres-cantos-transparent.png",

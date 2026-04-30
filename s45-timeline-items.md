@@ -21,12 +21,6 @@ Amistoso contra Estu, 15-09-2024
 
 - [ ] Comprobar que los partidos de la Temp 24-25 están como U14M
 
-- [x] `amistoso-pretemporada-estudiantes` (15-09-2024)
-- [x] `amistoso-murcia` (19-10-2024)
-
-- [ ] `liga-ahorramas-cadete-play-in` (22-03-2025)
-- [ ] `liga-ahorramas-cadete-fase2-j8` (03-03-2025)
-
 - [ ] `liga-ahorramas-fase-final-estadisticas` (19-05-2025)
 - [ ] `mhl-zaragoza-estadisticas` (20-04-2024)
 - [ ] `liga-ahorramas-fase2-estadisticas` (17-03-2024)
@@ -122,3 +116,7 @@ Amistoso contra Estu, 15-09-2024
 - [x] `cesa-j3` (04-01-2025)
 - [x] `cesa-j2` (04-01-2025)
 - [x] `cesa-j1` (03-01-2025)
+- [x] `amistoso-pretemporada-estudiantes` (15-09-2024)
+- [x] `amistoso-murcia` (19-10-2024)
+- [x] `liga-ahorramas-cadete-play-in` (22-03-2025)
+- [x] `liga-ahorramas-cadete-fase2-j8` (03-03-2025)
