@@ -137,6 +137,7 @@ import {game_2026_04_25_zentro} from "../data/games/2026-04-25-zentro.ts";
 import {game_2026_04_26_real_madrid} from "../data/games/2026-04-26-real-madrid.ts";
 import {stat_2024_09_08_torneig_nord} from "../data/games/2024-09-08-stat-torneig-nord.ts";
 import {stat_2024_11_24_torneo_fll} from "../data/games/2024-11-24-stat-torneo-fll.ts";
+import {stat_2024_12_16_league_gold_f1} from "../data/games/2024-12-16-stat-liga-oro-f1.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats;
 
@@ -257,6 +258,7 @@ export function useEvents(): EventItem[] {
     game_2024_12_27_seleccion_cataluna,
     game_2024_12_22_seleccion_valencia,
     game_2024_12_15_alcobendas,
+    stat_2024_12_16_league_gold_f1,
     game_2024_12_15_rozas,
     game_2024_12_07_estudiantes,
     game_2024_12_01_canoe,
