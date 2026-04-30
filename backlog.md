@@ -1,11 +1,12 @@
 # Backlog
 
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
-- comenzar a transformar los partidos de la temporada 2024-2025
-- los filtros, en lugar de por equipo, por titulo de la ocmpetición: liga ahorramas, fll, torneig nord...
+- los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
+- los eventos de estadísticas (StatsCard), deben mostrar total y media de 2pt y 3pt
+- los eventos de estadísticas (StatsCard), deben mostrar las referencias, al menos los iconitos con enlaces, y tooltip con el texto
 
 - [Temporada 2024-25](s45-timeline-items.md)
-  - Hay 95 items, llevo 0
+  - Hay 95 items, llevo 58
 
 ## Done
 
