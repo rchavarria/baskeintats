@@ -3,6 +3,7 @@
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
 - los eventos de estadísticas (StatsCard), deben mostrar total y media de 2pt y 3pt
+- los eventos de estadísticas (StatsCard), deben mostrar la descrpción, todas las líneas de texto
 - los eventos de estadísticas (StatsCard), deben mostrar las referencias, al menos los iconitos con enlaces, y tooltip con el texto
 
 - [Temporada 2024-25](s45-timeline-items.md)
