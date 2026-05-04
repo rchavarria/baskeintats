@@ -18,10 +18,11 @@ export const AnnouncementSchema = z.object({
 
   title: z.string(),
   announcementType: z.enum([
-    "tournament",    // 🏆
-    "friendly-game", // 🫂
     "call-up",       // 📢
+    "camp",          // 🏕️
+    "friendly-game", // 🫂
     "milestone",     // 🚀
+    "tournament",    // 🏆
   ]),
   category: z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]),
 

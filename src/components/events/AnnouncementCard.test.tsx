@@ -3,6 +3,18 @@ import { MemoryRouter } from "react-router-dom";
 import { describe, it, expect } from "vitest";
 import { AnnouncementCard } from "./AnnouncementCard";
 import type { Announcement } from "../../model/AnnouncementSchema";
+import {announcement_2026_01_01_torneo_reyes} from "../../data/games/2026-01-01-torneo-reyes.ts";
+import {announcement_2025_12_26_torneo_cyl} from "../../data/games/2025-12-26-torneo-cyl.ts";
+import {announcement_2025_12_19_torneo_teruel} from "../../data/games/2025-12-19-torneo-teruel.ts";
+import {announcement_2025_12_17_convocatoria_fbm_1} from "../../data/games/2025-12-17-convocatoria-fbm-1.ts";
+import {announcement_2025_11_18_torneo_fll} from "../../data/games/2025-11-18-torneo-fll.ts";
+import {announcement_2025_08_26_comienzo_temporada} from "../../data/games/2025-08-26-comienzo-temporada.ts";
+import {announcement_2024_08_31_orbita_pro_camp_5} from "../../data/games/2024-08-31-orbita-pro-camp-j5.ts";
+import {announcement_2024_08_30_orbita_pro_camp_4} from "../../data/games/2024-08-30-orbita-pro-camp-j4.ts";
+import {announcement_2024_08_29_orbita_pro_camp_3} from "../../data/games/2024-08-29-orbita-pro-camp-j3.ts";
+import {announcement_2024_08_28_orbita_pro_camp_2} from "../../data/games/2024-08-28-orbita-pro-camp-j2.ts";
+import {announcement_2024_08_27_orbita_pro_camp_j1} from "../../data/games/2024-08-27-orbita-pro-camp-j1.ts";
+import {announcement_2024_08_26_comienzo_temporada} from "../../data/games/2024-08-26-comienzo-temporada.ts";
 
 const fakeAnnouncement: Announcement = {
   id: "torneo-reyes-2026",
@@ -72,6 +84,26 @@ describe("AnnouncementCard", () => {
 
     const link = screen.getByRole("link");
     expect(link).toHaveAttribute("href", "/announcements/torneo-reyes-2026");
+  });
+
+  it.each([
+    [announcement_2026_01_01_torneo_reyes],
+    [announcement_2025_12_26_torneo_cyl],
+    [announcement_2025_12_19_torneo_teruel],
+    [announcement_2025_12_17_convocatoria_fbm_1],
+    [announcement_2025_11_18_torneo_fll],
+    [announcement_2025_08_26_comienzo_temporada],
+    [announcement_2024_08_31_orbita_pro_camp_5],
+    [announcement_2024_08_30_orbita_pro_camp_4],
+    [announcement_2024_08_29_orbita_pro_camp_3],
+    [announcement_2024_08_28_orbita_pro_camp_2],
+    [announcement_2024_08_27_orbita_pro_camp_j1],
+    [announcement_2024_08_26_comienzo_temporada],
+  ])("renders announcement metadata and links to the detail page", (announcement) => {
+    renderWithRouter(<AnnouncementCard announcement={announcement} />);
+
+    expect(screen.getByText(announcement.title)).toBeInTheDocument();
+    expect(screen.getByText(announcement.category)).toBeInTheDocument();
   });
 });
 

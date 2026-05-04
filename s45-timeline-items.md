@@ -34,7 +34,13 @@ Amistoso contra Estu, 15-09-2024
 }
 ```
 
+- [ ] `cec-presentacion` (01-06-2025)
+- [ ] `mhl-zaragoza` (17-04-2025)
 - [ ] `season-end` (15-08-2025)
+- [ ] `copa-ahorramas` (05-12-2024)
+- [ ] `torneo-fll` (19-11-2024)
+- [ ] `torneig-nord` (06-09-2024)
+- 
 - [ ] `dme-team-camp-summary` (04-08-2025)
 - [ ] `dme-team-camp-weekend-j3` (02-08-2025)
 - [ ] `dme-team-camp-weekend-j2` (01-08-2025)
@@ -46,24 +52,13 @@ Amistoso contra Estu, 15-09-2024
 - [ ] `dme-team-camp-eoss` (26-07-2025)
 - [ ] `dme-team-camp` (23-07-2025)
 - [ ] `fbm-final-temporada` (22-07-2025)
-- [ ] `cec-presentacion` (01-06-2025)
-- [ ] `mhl-zaragoza` (17-04-2025)
 - [ ] `convocatoria-fbm-final` (23-12-2024)
 - [ ] `convocatoria-fbm-4` (17-12-2024)
 - [ ] `convocatoria-fbm-3` (10-12-2024)
-- [ ] `copa-ahorramas` (05-12-2024)
-- [ ] `torneo-fll` (19-11-2024)
 - [ ] `convocatoria-fbm-2` (07-11-2024)
 - [ ] `convocatoria-fbm-1` (09-10-2024)
 - [ ] `convocatoria-fbclm-2` (02-10-2024)
 - [ ] `convocatoria-fbclm-1` (18-09-2024)
-- [ ] `torneig-nord` (06-09-2024)
-- [ ] `campus-pro-camp-dia-5` (31-08-2024)
-- [ ] `campus-pro-camp-dia-4` (30-08-2024)
-- [ ] `campus-pro-camp-dia-3` (29-08-2024)
-- [ ] `campus-pro-camp-dia-2` (28-08-2024)
-- [ ] `campus-pro-camp-dia-1` (27-08-2024)
-- [ ] `comienzo-temporada` (26-08-2024)
 
 ## Done
 
@@ -132,3 +127,9 @@ Amistoso contra Estu, 15-09-2024
 - [x] `liga-ahorramas-fase2-estadisticas` (17-03-2025)
 - [x] `liga-ahorramas-fase-final-estadisticas` (19-05-2025)
 - [x] `mhl-zaragoza-estadisticas` (20-04-2025)
+- [x] `campus-pro-camp-dia-5` (31-08-2024)
+- [x] `campus-pro-camp-dia-4` (30-08-2024)
+- [x] `campus-pro-camp-dia-3` (29-08-2024)
+- [x] `campus-pro-camp-dia-2` (28-08-2024)
+- [x] `campus-pro-camp-dia-1` (27-08-2024)
+- [x] `comienzo-temporada` (26-08-2024)

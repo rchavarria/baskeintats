@@ -129,6 +129,12 @@ import {game_2025_09_13_canoe} from "../data/games/2025-09-13-canoe.ts";
 import {game_2025_09_07_godella} from "../data/games/2025-09-07-godella.ts";
 import {game_2025_09_06_rozas} from "../data/games/2025-09-06-rozas.ts";
 import {announcement_2025_08_26_comienzo_temporada} from "../data/games/2025-08-26-comienzo-temporada.ts";
+import {announcement_2024_08_31_orbita_pro_camp_5} from "../data/games/2024-08-31-orbita-pro-camp-j5.ts";
+import {announcement_2024_08_30_orbita_pro_camp_4} from "../data/games/2024-08-30-orbita-pro-camp-j4.ts";
+import {announcement_2024_08_29_orbita_pro_camp_3} from "../data/games/2024-08-29-orbita-pro-camp-j3.ts";
+import {announcement_2024_08_28_orbita_pro_camp_2} from "../data/games/2024-08-28-orbita-pro-camp-j2.ts";
+import {announcement_2024_08_27_orbita_pro_camp_j1} from "../data/games/2024-08-27-orbita-pro-camp-j1.ts";
+import {announcement_2024_08_26_comienzo_temporada} from "../data/games/2024-08-26-comienzo-temporada.ts";
 import {stat_2026_03_23_liga_plata_f2_gd} from "../data/games/2026-03-23-stat-liga-plata-f2-gd.ts";
 import {stat_2026_03_23_liga_plata_f2_gb} from "../data/games/2026-03-23-stat-liga-plata-f2-gb.ts";
 import {stat_2025_12_15_liga_oro_f1_g1} from "../data/games/2025-12-15-stat-liga-oro-f1-g1.ts";
@@ -290,6 +296,12 @@ export function useEvents(): EventItem[] {
     game_2024_09_07_barca,
     game_2024_09_07_joventut,
     game_2024_09_06_sabadell,
+    announcement_2024_08_31_orbita_pro_camp_5,
+    announcement_2024_08_30_orbita_pro_camp_4,
+    announcement_2024_08_29_orbita_pro_camp_3,
+    announcement_2024_08_28_orbita_pro_camp_2,
+    announcement_2024_08_27_orbita_pro_camp_j1,
+    announcement_2024_08_26_comienzo_temporada,
   ];
 
   return events;

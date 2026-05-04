@@ -1,10 +1,11 @@
 import type {Announcement} from "../../model/AnnouncementSchema.ts";
 
 const announcementToEmoji: Record<Announcement["announcementType"], string> = {
-  "tournament": "🏆",
-  "friendly-game": "🫂",
   "call-up": "📢",
+  "camp": "🏕️",
+  "friendly-game": "🫂",
   "milestone": "🚀",
+  "tournament": "🏆",
 };
 
 interface AnnouncementTypeEmojiProps {

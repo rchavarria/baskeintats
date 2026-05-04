@@ -24,6 +24,11 @@ describe("AnnouncementTypeEmoji", () => {
     expect(screen.getByText("🚀")).toBeInTheDocument();
   });
 
+  it("renders 🏕️ for camp", () => {
+    render(<AnnouncementTypeEmoji type="camp" />);
+    expect(screen.getByText("🏕️")).toBeInTheDocument();
+  });
+
   it("renders fallback emoji for unknown type", () => {
     render(<AnnouncementTypeEmoji type={"unknown" as Announcement["announcementType"]} />);
     expect(screen.getByText("❌❓🚨")).toBeInTheDocument();
