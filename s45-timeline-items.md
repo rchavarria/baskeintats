@@ -26,8 +26,6 @@ Amistoso contra Estu, 15-09-2024
 - [ ] `liga-ahorramas-fase2-estadisticas` (17-03-2025)
 - [ ] `cec-resumen` (08-06-2025) hacerlo como anuncios
 - [ ] `cesa-resumen` (07-01-2025) hacerlo como anuncios
-- [ ] stat `cec-resumen` (08-06-2025)
-- [x] stat `cesa-resumen` (07-01-2025)
 
 - [ ] `season-end` (15-08-2025)
 - [ ] `dme-team-camp-summary` (04-08-2025)
@@ -122,3 +120,5 @@ Amistoso contra Estu, 15-09-2024
 - [x] `torneig-nord-stats` (08-09-2024)
 - [x] `torneo-fll-stats` (28-11-2024)
 - [x] `liga-ahorramas-fase1-estadisticas` (16-12-2024)
+- [x] stat `cec-resumen` (08-06-2025)
+- [x] stat `cesa-resumen` (07-01-2025)

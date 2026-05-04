@@ -139,6 +139,7 @@ import {stat_2024_09_08_torneig_nord} from "../data/games/2024-09-08-stat-tornei
 import {stat_2024_11_24_torneo_fll} from "../data/games/2024-11-24-stat-torneo-fll.ts";
 import {stat_2024_12_16_league_gold_f1} from "../data/games/2024-12-16-stat-liga-oro-f1.ts";
 import {stat_2025_01_07_cesa} from "../data/games/2025-01-07-stat-cesa.ts";
+import {stat_2025_06_09_cec} from "../data/games/2025-06-09-stat-cec.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats;
 
@@ -221,6 +222,7 @@ export function useEvents(): EventItem[] {
     game_2025_09_07_godella,
     game_2025_09_06_rozas,
     announcement_2025_08_26_comienzo_temporada,
+    stat_2025_06_09_cec,
     game_2025_06_04_joventut,
     game_2025_06_03_barca,
     game_2025_06_02_elche,
