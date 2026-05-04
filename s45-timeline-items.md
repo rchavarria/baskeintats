@@ -24,8 +24,10 @@ Amistoso contra Estu, 15-09-2024
 - [ ] `liga-ahorramas-fase-final-estadisticas` (19-05-2025)
 - [ ] `mhl-zaragoza-estadisticas` (20-04-2025)
 - [ ] `liga-ahorramas-fase2-estadisticas` (17-03-2025)
-- [ ] `cec-resumen` (08-06-2025) ¿son como las estadísticas?
-- [ ] `cesa-resumen` (07-01-2025) ¿son como las estadísticas?
+- [ ] `cec-resumen` (08-06-2025) hacerlo como anuncios
+- [ ] `cesa-resumen` (07-01-2025) hacerlo como anuncios
+- [ ] stat `cec-resumen` (08-06-2025)
+- [x] stat `cesa-resumen` (07-01-2025)
 
 - [ ] `season-end` (15-08-2025)
 - [ ] `dme-team-camp-summary` (04-08-2025)

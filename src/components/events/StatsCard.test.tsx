@@ -11,6 +11,7 @@ import {stat_2025_12_15_liga_plata_f1_g4} from "../../data/games/2025-12-15-stat
 import {stat_2024_11_24_torneo_fll} from "../../data/games/2024-11-24-stat-torneo-fll.ts";
 import {stat_2024_09_08_torneig_nord} from "../../data/games/2024-09-08-stat-torneig-nord.ts";
 import {stat_2024_12_16_league_gold_f1} from "../../data/games/2024-12-16-stat-liga-oro-f1.ts";
+import {stat_2025_01_07_cesa} from "../../data/games/2025-01-07-stat-cesa.ts";
 
 function renderWithRouter(ui: React.ReactElement) {
   return render(<MemoryRouter>{ui}</MemoryRouter>);
@@ -24,6 +25,7 @@ describe("StatsCard", () => {
     [ stat_2025_12_15_liga_oro_f1_g1 ],
     [ stat_2025_12_15_liga_plata_f1_g4 ],
     [ stat_2025_11_23_torneo_fll ],
+    [ stat_2025_01_07_cesa ],
     [ stat_2024_12_16_league_gold_f1 ],
     [ stat_2024_11_24_torneo_fll ],
     [ stat_2024_09_08_torneig_nord ],
