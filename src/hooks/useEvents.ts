@@ -140,6 +140,7 @@ import {stat_2024_11_24_torneo_fll} from "../data/games/2024-11-24-stat-torneo-f
 import {stat_2024_12_16_league_gold_f1} from "../data/games/2024-12-16-stat-liga-oro-f1.ts";
 import {stat_2025_01_07_cesa} from "../data/games/2025-01-07-stat-cesa.ts";
 import {stat_2025_06_09_cec} from "../data/games/2025-06-09-stat-cec.ts";
+import {stat_2025_03_17_league_gold_f2} from "../data/games/2025-03-17-stat-league-gold-f2.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats;
 
@@ -239,6 +240,7 @@ export function useEvents(): EventItem[] {
     game_2025_04_18_alicante,
     game_2025_04_17_torrelodones,
     game_2025_03_22_torrejon,
+    stat_2025_03_17_league_gold_f2,
     game_2025_03_16_tres_cantos,
     game_2025_03_09_uros,
     game_2025_03_03_valcude,

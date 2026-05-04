@@ -23,7 +23,6 @@ Amistoso contra Estu, 15-09-2024
 
 - [ ] `liga-ahorramas-fase-final-estadisticas` (19-05-2025)
 - [ ] `mhl-zaragoza-estadisticas` (20-04-2025)
-- [ ] `liga-ahorramas-fase2-estadisticas` (17-03-2025)
 - [ ] `cec-resumen` (08-06-2025) hacerlo como anuncios
 - [ ] `cesa-resumen` (07-01-2025) hacerlo como anuncios
 
@@ -122,3 +121,4 @@ Amistoso contra Estu, 15-09-2024
 - [x] `liga-ahorramas-fase1-estadisticas` (16-12-2024)
 - [x] stat `cec-resumen` (08-06-2025)
 - [x] stat `cesa-resumen` (07-01-2025)
+- [x] `liga-ahorramas-fase2-estadisticas` (17-03-2025)

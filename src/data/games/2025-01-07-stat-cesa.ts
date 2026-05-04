@@ -42,4 +42,3 @@ export const stat_2025_01_07_cesa: Stats = StatsSchema.parse({
     },
   ],
 });
-

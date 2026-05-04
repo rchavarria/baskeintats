@@ -9,7 +9,7 @@ export const stat_2025_06_09_cec: Stats = StatsSchema.parse({
   id: "S45-stat-cesa",
   type: "stats",
   season: "2024-25",
-  date: "2025-01-07T00:00:00Z",
+  date: "2025-06-09T00:00:00Z",
 
   title: "Campeonato de España de Clubes FEB",
   category: "U14M",
@@ -55,4 +55,3 @@ export const stat_2025_06_09_cec: Stats = StatsSchema.parse({
     },
   ],
 });
-
