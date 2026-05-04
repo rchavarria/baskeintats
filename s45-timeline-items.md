@@ -21,9 +21,18 @@ Amistoso contra Estu, 15-09-2024
 
 - [ ] Comprobar que los partidos de la Temp 24-25 están como U14M
 
-- [ ] `mhl-zaragoza-estadisticas` (20-04-2025)
 - [ ] `cec-resumen` (08-06-2025) hacerlo como anuncios
 - [ ] `cesa-resumen` (07-01-2025) hacerlo como anuncios
+
+- [ ] stat_2025_04_20_mhl_zaragoza: Enlazar a la playlist de FFoFF, no de Canal CBA
+
+```json
+{
+  type: "video",
+  label: "Playlist con todos los partidos (Canal CBA)",
+  url: "https://youtube.com/playlist?list=PLgGU8EFzMB9vbafVUZwQLCHNkofdJGUTH",
+}
+```
 
 - [ ] `season-end` (15-08-2025)
 - [ ] `dme-team-camp-summary` (04-08-2025)
@@ -122,3 +131,4 @@ Amistoso contra Estu, 15-09-2024
 - [x] stat `cesa-resumen` (07-01-2025)
 - [x] `liga-ahorramas-fase2-estadisticas` (17-03-2025)
 - [x] `liga-ahorramas-fase-final-estadisticas` (19-05-2025)
+- [x] `mhl-zaragoza-estadisticas` (20-04-2025)

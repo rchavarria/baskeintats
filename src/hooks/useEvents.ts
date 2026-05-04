@@ -142,6 +142,7 @@ import {stat_2025_01_07_cesa} from "../data/games/2025-01-07-stat-cesa.ts";
 import {stat_2025_06_09_cec} from "../data/games/2025-06-09-stat-cec.ts";
 import {stat_2025_03_17_league_gold_f2} from "../data/games/2025-03-17-stat-league-gold-f2.ts";
 import {stat_2025_05_19_league_gold_final} from "../data/games/2025-05-19-stat-league-gold-final.ts";
+import {stat_2025_04_20_mhl_zaragoza} from "../data/games/2025-04-20-stat-mhl-zaragoza.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats;
 
@@ -235,6 +236,7 @@ export function useEvents(): EventItem[] {
     game_2025_05_11_alcorcon,
     game_2025_05_10_alcorcon,
     game_2025_04_27_alcorcon,
+    stat_2025_04_20_mhl_zaragoza,
     game_2025_04_20_laso,
     game_2025_04_19_rozas,
     game_2025_04_19_lleida,
