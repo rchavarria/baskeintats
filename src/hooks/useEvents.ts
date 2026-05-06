@@ -149,6 +149,12 @@ import {stat_2025_06_09_cec} from "../data/games/2025-06-09-stat-cec.ts";
 import {stat_2025_03_17_league_gold_f2} from "../data/games/2025-03-17-stat-league-gold-f2.ts";
 import {stat_2025_05_19_league_gold_final} from "../data/games/2025-05-19-stat-league-gold-final.ts";
 import {stat_2025_04_20_mhl_zaragoza} from "../data/games/2025-04-20-stat-mhl-zaragoza.ts";
+import {announcement_2025_08_15_season_end} from "../data/games/2025-08-15-season-end.ts";
+import {announcement_2025_06_01_cec_presentacion} from "../data/games/2025-06-01-cec-presentacion.ts";
+import {announcement_2025_04_17_mhl_zaragoza} from "../data/games/2025-04-17-mhl-zaragoza.ts";
+import {announcement_2024_12_05_copa_ahorramas} from "../data/games/2024-12-05-copa-ahorramas.ts";
+import {announcement_2024_11_19_torneo_fll} from "../data/games/2024-11-19-torneo-fll.ts";
+import {announcement_2024_09_06_torneig_nord} from "../data/games/2024-09-06-torneig-nord.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats;
 
@@ -231,11 +237,13 @@ export function useEvents(): EventItem[] {
     game_2025_09_07_godella,
     game_2025_09_06_rozas,
     announcement_2025_08_26_comienzo_temporada,
+    announcement_2025_08_15_season_end,
     stat_2025_06_09_cec,
     game_2025_06_04_joventut,
     game_2025_06_03_barca,
     game_2025_06_02_elche,
     game_2025_06_01_obradoiro,
+    announcement_2025_06_01_cec_presentacion,
     stat_2025_05_19_league_gold_final,
     game_2025_05_18_real_madrid,
     game_2025_05_17_rozas,
@@ -249,6 +257,7 @@ export function useEvents(): EventItem[] {
     game_2025_04_18_tarragona,
     game_2025_04_18_alicante,
     game_2025_04_17_torrelodones,
+    announcement_2025_04_17_mhl_zaragoza,
     game_2025_03_22_torrejon,
     stat_2025_03_17_league_gold_f2,
     game_2025_03_16_tres_cantos,
@@ -277,11 +286,13 @@ export function useEvents(): EventItem[] {
     stat_2024_12_16_league_gold_f1,
     game_2024_12_15_rozas,
     game_2024_12_07_estudiantes,
+    announcement_2024_12_05_copa_ahorramas,
     game_2024_12_01_canoe,
     game_2024_11_27_sba,
     stat_2024_11_24_torneo_fll,
     game_2024_11_23_barca,
     game_2024_11_22_estudiantes,
+    announcement_2024_11_19_torneo_fll,
     game_2024_11_17_alcorcon,
     game_2024_11_10_real_madrid,
     game_2024_10_27_rozas,
@@ -296,6 +307,7 @@ export function useEvents(): EventItem[] {
     game_2024_09_07_barca,
     game_2024_09_07_joventut,
     game_2024_09_06_sabadell,
+    announcement_2024_09_06_torneig_nord,
     announcement_2024_08_31_orbita_pro_camp_5,
     announcement_2024_08_30_orbita_pro_camp_4,
     announcement_2024_08_29_orbita_pro_camp_3,

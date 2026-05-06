@@ -19,10 +19,10 @@ Amistoso contra Estu, 15-09-2024
 
 ## To Do
 
-- [ ] Comprobar que los partidos de la Temp 24-25 están como U14M
-
 - [ ] `cec-resumen` (08-06-2025) hacerlo como anuncios
 - [ ] `cesa-resumen` (07-01-2025) hacerlo como anuncios
+
+- [ ] Comprobar que los partidos de la Temp 24-25 están como U14M
 
 - [ ] stat_2025_04_20_mhl_zaragoza: Enlazar a la playlist de FFoFF, no de Canal CBA
 
@@ -34,16 +34,9 @@ Amistoso contra Estu, 15-09-2024
 }
 ```
 
-- [ ] `cec-presentacion` (01-06-2025)
-- [ ] `mhl-zaragoza` (17-04-2025)
-- [ ] `season-end` (15-08-2025)
-- [ ] `copa-ahorramas` (05-12-2024)
-- [ ] `torneo-fll` (19-11-2024)
-- [ ] `torneig-nord` (06-09-2024)
-- 
 - [ ] `dme-team-camp-summary` (04-08-2025)
-- [ ] `dme-team-camp-weekend-j3` (02-08-2025)
-- [ ] `dme-team-camp-weekend-j2` (01-08-2025)
+- [ ] `dme-team-camp-weekend-j3` (02-08-2025) ¿qué le pasa que está oculto?
+- [ ] `dme-team-camp-weekend-j2` (01-08-2025) ¿qué le pasa que está oculto?
 - [ ] `dme-team-camp-weekend-j1` (01-08-2025)
 - [ ] `dme-team-camp-thursday` (31-07-2025)
 - [ ] `dme-team-camp-tuesday` (29-07-2025)
@@ -133,3 +126,9 @@ Amistoso contra Estu, 15-09-2024
 - [x] `campus-pro-camp-dia-2` (28-08-2024)
 - [x] `campus-pro-camp-dia-1` (27-08-2024)
 - [x] `comienzo-temporada` (26-08-2024)
+- [x] `cec-presentacion` (01-06-2025)
+- [x] `mhl-zaragoza` (17-04-2025)
+- [x] `season-end` (15-08-2025)
+- [x] `copa-ahorramas` (05-12-2024)
+- [x] `torneo-fll` (19-11-2024)
+- [x] `torneig-nord` (06-09-2024)
