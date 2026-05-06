@@ -8,7 +8,7 @@ export const announcement_2025_08_15_season_end: Announcement = AnnouncementSche
   date: "2025-08-15T00:00:00Z",
 
   title: "Fin de la temporada",
-  announcementType: "call-up",
+  announcementType: "milestone",
   category: "U14M",
 
   description: [

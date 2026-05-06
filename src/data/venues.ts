@@ -63,6 +63,11 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/iUNpmyC491SGmAdM8"
   },
   {
+    id: "criptana",
+    name: "Pabellón Municipal de Campo de Criptana",
+    maps: "https://maps.app.goo.gl/ngveVvuaJymoQosEA"
+  },
+  {
     id: "diaz-miguel",
     name: "Polideportivo Antonio Diaz Miguel",
     maps: "https://maps.app.goo.gl/96DUrWd9EPtoDiuR6"
@@ -96,6 +101,11 @@ const venuesList: Venue[] = [
     id: "juande",
     name: "Club Baloncesto Juan de Austria",
     maps: "https://maps.app.goo.gl/Fuw5GMYyVRm5NsLp7"
+  },
+  {
+    id: "herencia",
+    name: "Pabellón Municipal de Herencia",
+    maps: "https://maps.app.goo.gl/szzVTzpt7gBbGPQy5"
   },
   {
     id: "luz",

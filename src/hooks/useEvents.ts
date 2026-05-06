@@ -155,6 +155,14 @@ import {announcement_2025_04_17_mhl_zaragoza} from "../data/games/2025-04-17-mhl
 import {announcement_2024_12_05_copa_ahorramas} from "../data/games/2024-12-05-copa-ahorramas.ts";
 import {announcement_2024_11_19_torneo_fll} from "../data/games/2024-11-19-torneo-fll.ts";
 import {announcement_2024_09_06_torneig_nord} from "../data/games/2024-09-06-torneig-nord.ts";
+import {announcement_2025_07_22_fbm_final_temporada} from "../data/games/2025-07-22-fbm-final-temporada.ts";
+import {announcement_2024_12_23_convocatoria_fbm_final} from "../data/games/2024-12-23-convocatoria-fbm-final.ts";
+import {announcement_2024_12_17_convocatoria_fbm_4} from "../data/games/2024-12-17-convocatoria-fbm-4.ts";
+import {announcement_2024_12_10_convocatoria_fbm_3} from "../data/games/2024-12-10-convocatoria-fbm-3.ts";
+import {announcement_2024_11_07_convocatoria_fbm_2} from "../data/games/2024-11-07-convocatoria-fbm-2.ts";
+import {announcement_2024_10_09_convocatoria_fbm_1} from "../data/games/2024-10-09-convocatoria-fbm-1.ts";
+import {announcement_2024_10_02_convocatoria_fbclm_2} from "../data/games/2024-10-02-convocatoria-fbclm-2.ts";
+import {announcement_2024_09_18_convocatoria_fbclm_1} from "../data/games/2024-09-18-convocatoria-fbclm-1.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats;
 
@@ -238,6 +246,7 @@ export function useEvents(): EventItem[] {
     game_2025_09_06_rozas,
     announcement_2025_08_26_comienzo_temporada,
     announcement_2025_08_15_season_end,
+    announcement_2025_07_22_fbm_final_temporada,
     stat_2025_06_09_cec,
     game_2025_06_04_joventut,
     game_2025_06_03_barca,
@@ -281,10 +290,13 @@ export function useEvents(): EventItem[] {
     game_2024_12_30_seleccion_canarias,
     game_2024_12_28_seleccion_aragon,
     game_2024_12_27_seleccion_cataluna,
+    announcement_2024_12_23_convocatoria_fbm_final,
     game_2024_12_22_seleccion_valencia,
+    announcement_2024_12_17_convocatoria_fbm_4,
     game_2024_12_15_alcobendas,
     stat_2024_12_16_league_gold_f1,
     game_2024_12_15_rozas,
+    announcement_2024_12_10_convocatoria_fbm_3,
     game_2024_12_07_estudiantes,
     announcement_2024_12_05_copa_ahorramas,
     game_2024_12_01_canoe,
@@ -295,12 +307,16 @@ export function useEvents(): EventItem[] {
     announcement_2024_11_19_torneo_fll,
     game_2024_11_17_alcorcon,
     game_2024_11_10_real_madrid,
+    announcement_2024_11_07_convocatoria_fbm_2,
     game_2024_10_27_rozas,
     game_2024_10_20_canoe,
     game_2024_10_19_ucam_murcia,
+    announcement_2024_10_09_convocatoria_fbm_1,
     game_2024_10_06_sba,
+    announcement_2024_10_02_convocatoria_fbclm_2,
     game_2024_09_29_alcorcon,
     game_2024_09_25_real_madrid,
+    announcement_2024_09_18_convocatoria_fbclm_1,
     game_2024_09_15_estudiantes,
     stat_2024_09_08_torneig_nord,
     game_2024_09_08_mataro,

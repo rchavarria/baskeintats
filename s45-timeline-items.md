@@ -19,9 +19,6 @@ Amistoso contra Estu, 15-09-2024
 
 ## To Do
 
-- [ ] `cec-resumen` (08-06-2025) hacerlo como anuncios
-- [ ] `cesa-resumen` (07-01-2025) hacerlo como anuncios
-
 - [ ] Comprobar que los partidos de la Temp 24-25 están como U14M
 
 - [ ] stat_2025_04_20_mhl_zaragoza: Enlazar a la playlist de FFoFF, no de Canal CBA
@@ -44,14 +41,6 @@ Amistoso contra Estu, 15-09-2024
 - [ ] `dme-team-camp-eoss-summary` (27-07-2025)
 - [ ] `dme-team-camp-eoss` (26-07-2025)
 - [ ] `dme-team-camp` (23-07-2025)
-- [ ] `fbm-final-temporada` (22-07-2025)
-- [ ] `convocatoria-fbm-final` (23-12-2024)
-- [ ] `convocatoria-fbm-4` (17-12-2024)
-- [ ] `convocatoria-fbm-3` (10-12-2024)
-- [ ] `convocatoria-fbm-2` (07-11-2024)
-- [ ] `convocatoria-fbm-1` (09-10-2024)
-- [ ] `convocatoria-fbclm-2` (02-10-2024)
-- [ ] `convocatoria-fbclm-1` (18-09-2024)
 
 ## Done
 
@@ -132,3 +121,13 @@ Amistoso contra Estu, 15-09-2024
 - [x] `copa-ahorramas` (05-12-2024)
 - [x] `torneo-fll` (19-11-2024)
 - [x] `torneig-nord` (06-09-2024)
+- [x] `cec-resumen` (08-06-2025) hacerlo como anuncios
+- [x] `cesa-resumen` (07-01-2025) hacerlo como anuncios
+- [x] `fbm-final-temporada` (22-07-2025)
+- [x] `convocatoria-fbm-final` (23-12-2024)
+- [x] `convocatoria-fbm-4` (17-12-2024)
+- [x] `convocatoria-fbm-3` (10-12-2024)
+- [x] `convocatoria-fbm-2` (07-11-2024)
+- [x] `convocatoria-fbm-1` (09-10-2024)
+- [x] `convocatoria-fbclm-2` (02-10-2024)
+- [x] `convocatoria-fbclm-1` (18-09-2024)

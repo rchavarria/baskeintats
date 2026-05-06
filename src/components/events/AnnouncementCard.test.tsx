@@ -21,6 +21,14 @@ import {announcement_2025_04_17_mhl_zaragoza} from "../../data/games/2025-04-17-
 import {announcement_2024_12_05_copa_ahorramas} from "../../data/games/2024-12-05-copa-ahorramas.ts";
 import {announcement_2024_11_19_torneo_fll} from "../../data/games/2024-11-19-torneo-fll.ts";
 import {announcement_2024_09_06_torneig_nord} from "../../data/games/2024-09-06-torneig-nord.ts";
+import {announcement_2025_07_22_fbm_final_temporada} from "../../data/games/2025-07-22-fbm-final-temporada.ts";
+import {announcement_2024_12_23_convocatoria_fbm_final} from "../../data/games/2024-12-23-convocatoria-fbm-final.ts";
+import {announcement_2024_12_17_convocatoria_fbm_4} from "../../data/games/2024-12-17-convocatoria-fbm-4.ts";
+import {announcement_2024_12_10_convocatoria_fbm_3} from "../../data/games/2024-12-10-convocatoria-fbm-3.ts";
+import {announcement_2024_11_07_convocatoria_fbm_2} from "../../data/games/2024-11-07-convocatoria-fbm-2.ts";
+import {announcement_2024_10_09_convocatoria_fbm_1} from "../../data/games/2024-10-09-convocatoria-fbm-1.ts";
+import {announcement_2024_10_02_convocatoria_fbclm_2} from "../../data/games/2024-10-02-convocatoria-fbclm-2.ts";
+import {announcement_2024_09_18_convocatoria_fbclm_1} from "../../data/games/2024-09-18-convocatoria-fbclm-1.ts";
 
 const fakeAnnouncement: Announcement = {
   id: "torneo-reyes-2026",
@@ -101,10 +109,18 @@ describe("AnnouncementCard", () => {
     [announcement_2025_11_18_torneo_fll],
     [announcement_2025_08_26_comienzo_temporada],
     [announcement_2025_08_15_season_end],
+    [announcement_2025_07_22_fbm_final_temporada],
     [announcement_2025_06_01_cec_presentacion],
     [announcement_2025_04_17_mhl_zaragoza],
+    [announcement_2024_12_23_convocatoria_fbm_final],
+    [announcement_2024_12_17_convocatoria_fbm_4],
+    [announcement_2024_12_10_convocatoria_fbm_3],
     [announcement_2024_12_05_copa_ahorramas],
     [announcement_2024_11_19_torneo_fll],
+    [announcement_2024_11_07_convocatoria_fbm_2],
+    [announcement_2024_10_09_convocatoria_fbm_1],
+    [announcement_2024_10_02_convocatoria_fbclm_2],
+    [announcement_2024_09_18_convocatoria_fbclm_1],
     [announcement_2024_09_06_torneig_nord],
     [announcement_2024_08_31_orbita_pro_camp_5],
     [announcement_2024_08_30_orbita_pro_camp_4],
