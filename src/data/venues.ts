@@ -108,6 +108,11 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/szzVTzpt7gBbGPQy5"
   },
   {
+    id: "linea",
+    name: "Polideportivo Municipal de La Línea de la Concepción",
+    maps: "https://maps.app.goo.gl/DBmb83Nm6ZC84MNUA"
+  },
+  {
     id: "luz",
     name: "Polideportivo de La Luz",
     maps: "https://maps.app.goo.gl/j4SEUyNjvmMtvTmA6"

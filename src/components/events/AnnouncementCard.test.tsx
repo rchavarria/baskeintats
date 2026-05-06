@@ -29,6 +29,7 @@ import {announcement_2024_11_07_convocatoria_fbm_2} from "../../data/games/2024-
 import {announcement_2024_10_09_convocatoria_fbm_1} from "../../data/games/2024-10-09-convocatoria-fbm-1.ts";
 import {announcement_2024_10_02_convocatoria_fbclm_2} from "../../data/games/2024-10-02-convocatoria-fbclm-2.ts";
 import {announcement_2024_09_18_convocatoria_fbclm_1} from "../../data/games/2024-09-18-convocatoria-fbclm-1.ts";
+import {announcement_2026_05_17_cec} from "../../data/games/2026-05-17-cec.ts";
 
 const fakeAnnouncement: Announcement = {
   id: "torneo-reyes-2026",
@@ -102,6 +103,7 @@ describe("AnnouncementCard", () => {
   });
 
   it.each([
+    [announcement_2026_05_17_cec],
     [announcement_2026_01_01_torneo_reyes],
     [announcement_2025_12_26_torneo_cyl],
     [announcement_2025_12_19_torneo_teruel],
