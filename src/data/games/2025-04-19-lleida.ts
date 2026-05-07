@@ -11,7 +11,7 @@ export const game_2025_04_19_lleida: Game = GameSchema.parse({
 
   competition: {
     name: "MHL Zaragoza",
-    category: "U15M",
+    category: "U14M",
     phase: "Eliminatorias",
     round: "Cuartos",
   },
@@ -20,13 +20,13 @@ export const game_2025_04_19_lleida: Game = GameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [22, 19, 17, 4],
   },
 
   away: {
     club: teams["lleida"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [12, 8, 8, 11],
   },

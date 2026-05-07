@@ -19,8 +19,6 @@ Amistoso contra Estu, 15-09-2024
 
 ## To Do
 
-- [ ] Comprobar que los partidos de la Temp 24-25 están como U14M
-
 - [ ] stat_2025_04_20_mhl_zaragoza: Enlazar a la playlist de FFoFF, no de Canal CBA
 
 ```json
@@ -131,3 +129,4 @@ Amistoso contra Estu, 15-09-2024
 - [x] `convocatoria-fbm-1` (09-10-2024)
 - [x] `convocatoria-fbclm-2` (02-10-2024)
 - [x] `convocatoria-fbclm-1` (18-09-2024)
+- [x] Comprobar que los partidos de la Temp 24-25 están como U14M

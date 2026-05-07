@@ -11,7 +11,7 @@ export const game_2025_02_16_estudiantes: Game = GameSchema.parse({
 
   competition: {
     name: "Liga Ahorramás - Oro",
-    category: "U15M",
+    category: "U14M",
     phase: "Fase 2",
     round: "J6",
   },
@@ -20,13 +20,13 @@ export const game_2025_02_16_estudiantes: Game = GameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [12, 20, 23, 20],
   },
 
   away: {
     club: teams["estudiantes"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [11, 8, 13, 23],
   },

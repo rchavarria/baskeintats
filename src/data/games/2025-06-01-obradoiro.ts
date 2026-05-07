@@ -11,7 +11,7 @@ export const game_2025_06_01_obradoiro: AdvancedGame = AdvancedGameSchema.parse(
 
   competition: {
     name: "Campeonato de España de Clubes",
-    category: "U15M",
+    category: "U14M",
     phase: "Grupos",
     round: "J1",
   },
@@ -20,13 +20,13 @@ export const game_2025_06_01_obradoiro: AdvancedGame = AdvancedGameSchema.parse(
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [20, 29, 30, 11],
   },
 
   away: {
     club: teams["obradoiro"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [23, 7, 17, 25],
   },

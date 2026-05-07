@@ -11,7 +11,7 @@ export const game_2024_09_07_joventut: Game = GameSchema.parse({
 
   competition: {
     name: "Torneig Nord",
-    category: "U15M",
+    category: "U14M",
     phase: "Grupos",
     round: "Jornada 2",
   },
@@ -20,14 +20,14 @@ export const game_2024_09_07_joventut: Game = GameSchema.parse({
 
   home: {
     club: teams["joventut"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [12, 11, 12, 10],
   },
 
   away: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [21, 18, 25, 14],
   },
 

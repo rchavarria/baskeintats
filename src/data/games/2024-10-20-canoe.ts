@@ -11,7 +11,7 @@ export const game_2024_10_20_canoe: Game = GameSchema.parse({
 
   competition: {
     name: "Liga Ahorramás - Oro",
-    category: "U15M",
+    category: "U14M",
     phase: "Fase 1",
     round: "J4",
   },
@@ -20,13 +20,13 @@ export const game_2024_10_20_canoe: Game = GameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [21, 23, 19, 19],
   },
 
   away: {
     club: teams["canoe"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [14, 14, 16, 25],
   },

@@ -11,7 +11,7 @@ export const game_2025_06_02_elche: AdvancedGame = AdvancedGameSchema.parse({
 
   competition: {
     name: "Campeonato de España de Clubes",
-    category: "U15M",
+    category: "U14M",
     phase: "Grupos",
     round: "J2",
   },
@@ -20,13 +20,13 @@ export const game_2025_06_02_elche: AdvancedGame = AdvancedGameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [13, 23, 17, 7],
   },
 
   away: {
     club: teams["elche"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [20, 16, 23, 29],
   },

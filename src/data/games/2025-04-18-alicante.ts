@@ -11,7 +11,7 @@ export const game_2025_04_18_alicante: Game = GameSchema.parse({
 
   competition: {
     name: "MHL Zaragoza",
-    category: "U15M",
+    category: "U14M",
     phase: "Grupos",
     round: "J2",
   },
@@ -20,13 +20,13 @@ export const game_2025_04_18_alicante: Game = GameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [20, 18, 22, 6],
   },
 
   away: {
     club: teams["alicante"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [12, 13, 6, 2],
   },

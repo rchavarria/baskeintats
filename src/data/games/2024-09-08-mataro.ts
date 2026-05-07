@@ -11,7 +11,7 @@ export const game_2024_09_08_mataro: Game = GameSchema.parse({
 
   competition: {
     name: "Torneig Nord",
-    category: "U15M",
+    category: "U14M",
     phase: "Eliminatorias",
     round: "3º-4º Puesto",
   },
@@ -20,13 +20,13 @@ export const game_2024_09_08_mataro: Game = GameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [26, 23, 19, 15],
   },
 
   away: {
     club: teams["mataro"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [17, 21, 5, 23],
   },

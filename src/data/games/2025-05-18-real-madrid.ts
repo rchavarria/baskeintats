@@ -11,7 +11,7 @@ export const game_2025_05_18_real_madrid: AdvancedGame = AdvancedGameSchema.pars
 
   competition: {
     name: "Liga Ahorramás",
-    category: "U15M",
+    category: "U14M",
     phase: "Final 4",
     round: "Final",
   },
@@ -20,13 +20,13 @@ export const game_2025_05_18_real_madrid: AdvancedGame = AdvancedGameSchema.pars
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [20, 15, 13, 14],
   },
 
   away: {
     club: teams["real-madrid"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [23, 18, 19, 19],
   },

@@ -12,7 +12,7 @@ export const game_2025_06_04_joventut: AdvancedGame = AdvancedGameSchema.parse({
 
   competition: {
     name: "Campeonato de España de Clubes",
-    category: "U15M",
+    category: "U14M",
     phase: "Eliminatorias",
     round: "Octavos",
   },
@@ -21,13 +21,13 @@ export const game_2025_06_04_joventut: AdvancedGame = AdvancedGameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [14, 19, 15, 22],
   },
 
   away: {
     club: teams["joventut"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [18, 24, 19, 20],
   },
