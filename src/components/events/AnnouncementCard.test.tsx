@@ -30,6 +30,12 @@ import {announcement_2024_10_09_convocatoria_fbm_1} from "../../data/games/2024-
 import {announcement_2024_10_02_convocatoria_fbclm_2} from "../../data/games/2024-10-02-convocatoria-fbclm-2.ts";
 import {announcement_2024_09_18_convocatoria_fbclm_1} from "../../data/games/2024-09-18-convocatoria-fbclm-1.ts";
 import {announcement_2026_05_17_cec} from "../../data/games/2026-05-17-cec.ts";
+import {announcement_2025_07_23_dme_team_camp} from "../../data/games/2025-07-23-dme-team-camp.ts";
+import {announcement_2025_07_26_dme_team_camp_eoss} from "../../data/games/2025-07-26-dme-team-camp-eoss.ts";
+import {
+  announcement_2025_07_27_dme_team_camp_eoss_summary
+} from "../../data/games/2025-07-27-dme-team-camp-eoss-summary.ts";
+import {announcement_2025_08_04_dme_team_camp_summary} from "../../data/games/2025-08-04-dme-team-camp-summary.ts";
 
 const fakeAnnouncement: Announcement = {
   id: "torneo-reyes-2026",
@@ -111,6 +117,10 @@ describe("AnnouncementCard", () => {
     [announcement_2025_11_18_torneo_fll],
     [announcement_2025_08_26_comienzo_temporada],
     [announcement_2025_08_15_season_end],
+    [announcement_2025_08_04_dme_team_camp_summary],
+    [announcement_2025_07_27_dme_team_camp_eoss_summary],
+    [announcement_2025_07_26_dme_team_camp_eoss],
+    [announcement_2025_07_23_dme_team_camp],
     [announcement_2025_07_22_fbm_final_temporada],
     [announcement_2025_06_01_cec_presentacion],
     [announcement_2025_04_17_mhl_zaragoza],

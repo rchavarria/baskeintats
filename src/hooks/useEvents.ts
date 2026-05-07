@@ -164,6 +164,19 @@ import {announcement_2024_10_09_convocatoria_fbm_1} from "../data/games/2024-10-
 import {announcement_2024_10_02_convocatoria_fbclm_2} from "../data/games/2024-10-02-convocatoria-fbclm-2.ts";
 import {announcement_2024_09_18_convocatoria_fbclm_1} from "../data/games/2024-09-18-convocatoria-fbclm-1.ts";
 import {announcement_2026_05_17_cec} from "../data/games/2026-05-17-cec.ts";
+import {announcement_2025_07_23_dme_team_camp} from "../data/games/2025-07-23-dme-team-camp.ts";
+import {announcement_2025_07_26_dme_team_camp_eoss} from "../data/games/2025-07-26-dme-team-camp-eoss.ts";
+import {
+  announcement_2025_07_27_dme_team_camp_eoss_summary
+} from "../data/games/2025-07-27-dme-team-camp-eoss-summary.ts";
+import {game_2025_07_31_dme_others} from "../data/games/2025-07-31-dme-others.ts";
+import {game_2025_08_01_dme_red_black} from "../data/games/2025-08-01-dme-red-black.ts";
+import {announcement_2025_08_04_dme_team_camp_summary} from "../data/games/2025-08-04-dme-team-camp-summary.ts";
+import {game_2025_07_26_eoss_georgia} from "../data/games/2025-07-26-eoss-j5-georgia.ts";
+import {game_2025_07_26_eoss_bogans} from "../data/games/2025-07-26-eoss-j4-bogans.ts";
+import {game_2025_07_26_eoss_tnt} from "../data/games/2025-07-26-eoss-j3-tnt.ts";
+import {game_2025_07_26_eoss_florida} from "../data/games/2025-07-26-eoss-j2-florida.ts";
+import {game_2025_07_26_eoss_spartans} from "../data/games/2025-07-26-eoss-j1-spartans.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats;
 
@@ -248,6 +261,17 @@ export function useEvents(): EventItem[] {
     game_2025_09_06_rozas,
     announcement_2025_08_26_comienzo_temporada,
     announcement_2025_08_15_season_end,
+    announcement_2025_08_04_dme_team_camp_summary,
+    game_2025_08_01_dme_red_black,
+    game_2025_07_31_dme_others,
+    announcement_2025_07_27_dme_team_camp_eoss_summary,
+    game_2025_07_26_eoss_georgia,
+    game_2025_07_26_eoss_bogans,
+    game_2025_07_26_eoss_tnt,
+    game_2025_07_26_eoss_florida,
+    game_2025_07_26_eoss_spartans,
+    announcement_2025_07_26_dme_team_camp_eoss,
+    announcement_2025_07_23_dme_team_camp,
     announcement_2025_07_22_fbm_final_temporada,
     stat_2025_06_09_cec,
     game_2025_06_04_joventut,

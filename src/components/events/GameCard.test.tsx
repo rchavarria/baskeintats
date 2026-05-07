@@ -1,9 +1,14 @@
-import { render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
-import { describe, it, expect } from "vitest";
-import { GameCard } from "./GameCard";
-import type { Game } from "../../model/GameSchema";
+import {render, screen} from "@testing-library/react";
+import {MemoryRouter} from "react-router-dom";
+import {describe, expect, it} from "vitest";
+import {GameCard} from "./GameCard";
+import type {Game} from "../../model/GameSchema";
 import {game_2025_09_20_alcorcon} from "../../data/games/2025-09-20-alcorcon.ts";
+import {game_2025_07_26_eoss_spartans} from "../../data/games/2025-07-26-eoss-j1-spartans.ts";
+import {game_2025_07_26_eoss_georgia} from "../../data/games/2025-07-26-eoss-j5-georgia.ts";
+import {game_2025_07_26_eoss_bogans} from "../../data/games/2025-07-26-eoss-j4-bogans.ts";
+import {game_2025_07_26_eoss_tnt} from "../../data/games/2025-07-26-eoss-j3-tnt.ts";
+import {game_2025_07_26_eoss_florida} from "../../data/games/2025-07-26-eoss-j2-florida.ts";
 
 const fakeGame: Game = game_2025_09_20_alcorcon;
 
@@ -44,5 +49,19 @@ describe("GameCard", () => {
     const link = screen.getByRole("link");
     expect(link).toHaveAttribute("href", "/games/S56-liga-plata-f1-g4-j1");
   });
+
+  it.each([
+    [game_2025_07_26_eoss_georgia],
+    [game_2025_07_26_eoss_bogans],
+    [game_2025_07_26_eoss_tnt],
+    [game_2025_07_26_eoss_florida],
+    [game_2025_07_26_eoss_spartans],
+  ])("renders game to the detail page", (game) => {
+    renderWithRouter(<GameCard game={game} />);
+
+    expect(screen.getByText(game.home.club.name)).toBeInTheDocument();
+    expect(screen.getByText(game.away.club.name)).toBeInTheDocument();
+  });
+
 });
 

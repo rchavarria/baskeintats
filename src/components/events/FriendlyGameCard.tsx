@@ -19,8 +19,8 @@ export function FriendlyGameCard({ game }: FriendlyGameCardProps) {
       <div className="flex items-center justify-between text-xs text-gray-400 mb-3">
         <DateTimeDisplay isoDate={game.date} />
         <span>
-          🫂
-          {game.competition.name}
+          <span aria-hidden="true">🫂 </span>
+          <span>{game.competition.name}</span>
         </span>
       </div>
       <div className="flex items-center justify-between gap-4">

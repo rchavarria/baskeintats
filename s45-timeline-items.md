@@ -29,17 +29,6 @@ Amistoso contra Estu, 15-09-2024
 }
 ```
 
-- [ ] `dme-team-camp-summary` (04-08-2025)
-- [ ] `dme-team-camp-weekend-j3` (02-08-2025) ¿qué le pasa que está oculto?
-- [ ] `dme-team-camp-weekend-j2` (01-08-2025) ¿qué le pasa que está oculto?
-- [ ] `dme-team-camp-weekend-j1` (01-08-2025)
-- [ ] `dme-team-camp-thursday` (31-07-2025)
-- [ ] `dme-team-camp-tuesday` (29-07-2025)
-- [ ] `dme-team-camp-monday` (28-07-2025)
-- [ ] `dme-team-camp-eoss-summary` (27-07-2025)
-- [ ] `dme-team-camp-eoss` (26-07-2025)
-- [ ] `dme-team-camp` (23-07-2025)
-
 ## Done
 
 - [x] `cec-octavos` (04-06-2025)
@@ -130,3 +119,13 @@ Amistoso contra Estu, 15-09-2024
 - [x] `convocatoria-fbclm-2` (02-10-2024)
 - [x] `convocatoria-fbclm-1` (18-09-2024)
 - [x] Comprobar que los partidos de la Temp 24-25 están como U14M
+- [x] `dme-team-camp-weekend-j1` (01-08-2025)
+- [x] `dme-team-camp-thursday` (31-07-2025)
+- [x] `dme-team-camp-tuesday` (29-07-2025)
+- [x] `dme-team-camp-monday` (28-07-2025)
+- [x] `dme-team-camp-eoss-summary` (27-07-2025)
+- [x] `dme-team-camp` (23-07-2025)
+- [x] `dme-team-camp-summary` (04-08-2025)
+- [x] `dme-team-camp-eoss` (26-07-2025)
+- [x] `dme-team-camp-weekend-j3` (02-08-2025) ¿qué le pasa que está oculto?
+- [x] `dme-team-camp-weekend-j2` (01-08-2025) ¿qué le pasa que está oculto?

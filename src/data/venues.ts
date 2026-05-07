@@ -73,6 +73,11 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/96DUrWd9EPtoDiuR6"
   },
   {
+    id: "dme",
+    name: "DME Academy",
+    maps: "https://maps.app.goo.gl/-"
+  },
+  {
     id: "espiniella",
     name: "Pabellón Alfredo Espiniella",
     maps: "https://maps.app.goo.gl/vxTZoM83ScD9AjkU9"
@@ -126,6 +131,11 @@ const venuesList: Venue[] = [
     id: "mora",
     name: "Mora de Rubielos",
     maps: "https://maps.app.goo.gl/NbqDdrLkJhzSXW1s8"
+  },
+  {
+    id: "orange",
+    name: "Orange County Convention Center, OCCC",
+    maps: "https://maps.app.goo.gl/SpQ3FdLE5ae2pZNF6"
   },
   {
     id: "palos",

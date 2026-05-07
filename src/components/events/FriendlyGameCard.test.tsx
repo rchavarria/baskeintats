@@ -1,8 +1,10 @@
-import { render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
-import { describe, it, expect } from "vitest";
-import { FriendlyGameCard } from "./FriendlyGameCard";
-import { game_2025_09_06_rozas } from "../../data/games/2025-09-06-rozas.ts";
+import {render, screen} from "@testing-library/react";
+import {MemoryRouter} from "react-router-dom";
+import {describe, expect, it} from "vitest";
+import {FriendlyGameCard} from "./FriendlyGameCard";
+import {game_2025_09_06_rozas} from "../../data/games/2025-09-06-rozas.ts";
+import {game_2025_07_31_dme_others} from "../../data/games/2025-07-31-dme-others.ts";
+import {game_2025_08_01_dme_red_black} from "../../data/games/2025-08-01-dme-red-black.ts";
 
 const fakeGame = game_2025_09_06_rozas;
 
@@ -43,5 +45,17 @@ describe("FriendlyGameCard", () => {
     const link = screen.getByRole("link");
     expect(link).toHaveAttribute("href", "/games/S56-amistoso-rozas");
   });
+
+  it.each([
+    [game_2025_08_01_dme_red_black],
+    [game_2025_07_31_dme_others],
+  ])("renders friendly game to the detail page", (game) => {
+    renderWithRouter(<FriendlyGameCard game={game} />);
+
+    expect(screen.getByText(game.competition.name)).toBeInTheDocument();
+    expect(screen.getByText(game.home.club.name)).toBeInTheDocument();
+    expect(screen.getByText(game.away.club.name)).toBeInTheDocument();
+  });
+
 });
 
