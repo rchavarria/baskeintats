@@ -33,7 +33,7 @@ export const stat_2025_04_20_mhl_zaragoza: Stats = StatsSchema.parse({
     {
       type: "video",
       label: "Playlist con todos los partidos (Canal CBA)",
-      url: "https://youtube.com/playlist?list=PLgGU8EFzMB9vbafVUZwQLCHNkofdJGUTH",
+      url: "https://youtube.com/playlist?list=PL0J-VlEskgdZ2NShFtvIghO1ZZ9idVm3_",
     },
     {
       type: "photo",

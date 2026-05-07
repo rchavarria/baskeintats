@@ -1,13 +1,5 @@
 # Backlog
 
-- stat_2025_04_20_mhl_zaragoza: Enlazar a la playlist de FFoFF, no de Canal CBA
-```json
-{
-  type: "video",
-  label: "Playlist con todos los partidos (Canal CBA)",
-  url: "https://youtube.com/playlist?list=PLgGU8EFzMB9vbafVUZwQLCHNkofdJGUTH",
-}
-```
 - borrar videos del canal YT equivocado
   - https://youtu.be/f97ZVJKFiUU
   - https://youtu.be/MTLvOWJDI4g
@@ -21,11 +13,12 @@
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
 - los eventos de estadísticas (StatsCard), deben mostrar total y media de 2pt y 3pt
-- los eventos de estadísticas (StatsCard), deben mostrar la descrpción, todas las líneas de texto
+- los eventos de estadísticas (StatsCard), deben mostrar la descripción, todas las líneas de texto
 - los eventos de estadísticas (StatsCard), deben mostrar las referencias, al menos los iconitos con enlaces, y tooltip con el texto
 
 ## Done
 
+- 2026-05-07: stat_2025_04_20_mhl_zaragoza: Enlazar a la playlist de FFoFF, no de Canal CBA
 - 2026-05-07: Temporada 2024-25
 - 2026-04-22: unificar Game y AdvancedGame detail page, en uno solo, lo único que cambia es la parte de estadísticas, y debería poder apoyarse en los 3 formatters
 - 2026-04-19: eliminar código duplicado al mostrar detalles de partidos (normal Vs avanzado)
