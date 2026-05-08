@@ -75,22 +75,26 @@ export const game_2026_05_10_torrelodones: AdvancedGame = AdvancedGameSchema.par
   },
 
   recap: {
-    title: "xxx",
+    title: "Nada... es muy complicado",
     lines: [
-      "yyy",
+      "Primer partido contra ellos de toda la temporada",
+      "Pensábamos que podríamos competir, pero ha resultado imposible",
+      "Tampoco hemos hecho el mejor partido de la temporada, pero no ha estado mal",
+      "Pero ellos tienen dos grandes, nosotros un grande lesionado y otro a medias",
+      "Se hizo lo que se pudo",
     ],
   },
 
   references: [
     {
       type: "photo",
-      label: "Fotos del mes de mayo",
-      url: "https://www.flickr.com/photos/fbmadrid/albums/-",
+      label: "Fotos del mes de mayo (parece que solo infantiles)",
+      url: "https://www.flickr.com/photos/fbmadrid/albums/72177720333561000/",
     },
     {
       type: "document",
       label: "Informe de la jornada",
-      url: "https://fbm.es/informes.aspx?-",
+      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=16719&informe=resultados-clasificacion-proxima&ultima_jornada=108373&proxima_jornada=108374",
     },
     {
       type: "article",
@@ -100,7 +104,7 @@ export const game_2026_05_10_torrelodones: AdvancedGame = AdvancedGameSchema.par
     {
       type: "article",
       label: "Crónica de la jornada",
-      url: "https://www.fbm.es/noticia-999-99999",
+      url: "https://www.fbm.es/noticia-104-13278/liga-ahorramas-volando-hacia-las-fases-finales",
     },
   ],
 

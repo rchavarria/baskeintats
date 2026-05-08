@@ -83,6 +83,16 @@ describe("GameCard", () => {
   });
 
   it.each([
+    [game_2026_05_10_zentro],
+    [game_2026_05_10_torrelodones],
+  ])("renders S2025/26 game to the game card", (game) => {
+    renderWithRouter(<GameCard game={game} />);
+
+    expect(screen.getByText(game.home.club.name)).toBeInTheDocument();
+    expect(screen.getByText(game.away.club.name)).toBeInTheDocument();
+  });
+
+  it.each([
     [game_2024_05_20_certified_athletes],
     [game_2024_05_19_mexico],
     [game_2024_05_19_guyane],
