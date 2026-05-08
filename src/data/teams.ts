@@ -5,8 +5,8 @@ const teamList: Team[] = [
   {
     id: "alcala",
     name: "Baloncesto Alcalá de Henares",
-    logo: "/logos/baloncesto-alcala.jpg",
-    web: "https://example.com",
+    logo: "/logos/alcala.png",
+    web: "https://www.baloncestoalcala.es",
     venue: venues["espartales"],
   },
   {
@@ -131,9 +131,9 @@ const teamList: Team[] = [
   {
     id: "leganes",
     name: "CB Leganés",
-    logo: "/logos/default.png",
-    web: "https://example.com",
-    venue: venues["carlos-sastre"],
+    logo: "/logos/leganes.png",
+    web: "https://www.cbleganes.es/es",
+    venue: venues["leganes"],
   },
   {
     id: "laso",
@@ -213,11 +213,11 @@ const teamList: Team[] = [
     venue: venues["espiniella"],
   },
   {
-    id: "san-agustin-m",
+    id: "agustin",
     name: "CB San Agustín",
-    logo: "/logos/default.png",
-    web: "https://example.com",
-    venue: venues["san-agustin-m"],
+    logo: "/logos/agustin.png",
+    web: "https://www.colegiosanagustin-madrid.org/club-deportivo-colegio-san-agustin-madrid/",
+    venue: venues["agustin"],
   },
   {
     id: "sabadell",
@@ -336,7 +336,7 @@ const teamList: Team[] = [
     name: "CB Torrejón",
     logo: "/logos/torrejon.png",
     web: "https://example.com",
-    venue: venues["default"],
+    venue: venues["limones"],
   },
   {
     id: "tres-cantos",
@@ -390,8 +390,8 @@ const teamList: Team[] = [
   {
     id: "virgen-atocha",
     name: "CB Virgen de Atocha",
-    logo: "/logos/default.png",
-    web: "https://example.com",
+    logo: "/logos/virgen-atocha.png",
+    web: "https://sites.google.com/view/clubdeportivovirgendeatocha/deportes/baloncesto",
     venue: venues["stella-maris"],
   },
   {

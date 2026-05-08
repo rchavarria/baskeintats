@@ -26,7 +26,7 @@ export const game_2023_10_22_san_agustin: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["san-agustin-m"],
+    club: teams["agustin"],
     category: "U14M",
     opponent: true,
     scores: [22, 21, 22, 20],

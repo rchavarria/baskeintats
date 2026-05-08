@@ -1,21 +1,5 @@
 # Temporada 23-24, Eventos
 
-venues.ts — 6 nuevos pabellones añadidos:
-
-agustiniano — Colegio Agustiniano (Canoe)
-carlos-sastre — Pabellón Carlos Sastre (Leganés)
-espartales — Complejo Deportivo Espartales (Alcalá)
-javi-limones — Polideportivo Javi Limones (Torrejón)
-san-agustin-m — Polideportivo San Agustín, Alcobendas
-stella-maris — Colegio Stella Maris La Gavia (Virgen de Atocha)
-
-teams.ts — 4 nuevos equipos añadidos:
-
-alcala — Baloncesto Alcalá de Henares
-leganes — CB Leganés
-san-agustin-m — CB San Agustín
-virgen-atocha — CB Virgen de Atocha
-
 ## WIP
 
 - [ ] liga-ahorramas-fase1-j1 (24-09-2023)

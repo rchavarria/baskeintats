@@ -16,7 +16,7 @@ export const game_2023_11_12_leganes: Game = GameSchema.parse({
     round: "J6",
   },
 
-  venue: venues["carlos-sastre"],
+  venue: venues["leganes"],
 
   home: {
     club: teams["leganes"],

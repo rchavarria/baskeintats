@@ -17,7 +17,7 @@ export const game_2023_11_05_torrejon: Game = GameSchema.parse({
     round: "J5",
   },
 
-  venue: venues["javi-limones"],
+  venue: venues["limones"],
 
   home: {
     club: teams["torrejon"],

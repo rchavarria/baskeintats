@@ -8,34 +8,14 @@ const venuesList: Venue[] = [
     maps: "https://maps.google.com/?q=Pabell%C3%B3n+Municipal+de+Alcobendas",
   },
   {
-    id: "agustiniano",
-    name: "Colegio Agustiniano",
-    maps: "https://maps.app.goo.gl/7829yTZSpz7DPQWu9"
-  },
-  {
-    id: "carlos-sastre",
-    name: "Pabellón Carlos Sastre",
-    maps: "https://maps.app.goo.gl/6BLGpmu3GxpZcSSX7"
-  },
-  {
-    id: "espartales",
-    name: "Complejo Deportivo Espartales",
-    maps: "https://maps.app.goo.gl/F54AvWSC6hcZ3yWr6"
-  },
-  {
-    id: "javi-limones",
-    name: "Polideportivo Javi Limones",
-    maps: "https://maps.app.goo.gl/mb741XvChQkkQkiK6"
-  },
-  {
-    id: "san-agustin-m",
-    name: "Polideportivo San Agustín, Alcobendas",
+    id: "agustin",
+    name: "Polideportivo Colegio San Agustín",
     maps: "https://maps.app.goo.gl/DycUZKg8wHNuWAxM7"
   },
   {
-    id: "stella-maris",
-    name: "Colegio Stella Maris La Gavia",
-    maps: "https://maps.app.goo.gl/x3toQogK7WejQiqZ8"
+    id: "agustiniano",
+    name: "Colegio Agustiniano (Canoe)",
+    maps: "https://maps.app.goo.gl/7829yTZSpz7DPQWu9"
   },
   {
     id: "alberto-maestro",
@@ -108,6 +88,11 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/-"
   },
   {
+    id: "espartales",
+    name: "Complejo Deportivo Espartales, Alcalá",
+    maps: "https://maps.app.goo.gl/F54AvWSC6hcZ3yWr6"
+  },
+  {
     id: "espiniella",
     name: "Pabellón Alfredo Espiniella",
     maps: "https://maps.app.goo.gl/vxTZoM83ScD9AjkU9"
@@ -141,6 +126,16 @@ const venuesList: Venue[] = [
     id: "herencia",
     name: "Pabellón Municipal de Herencia",
     maps: "https://maps.app.goo.gl/szzVTzpt7gBbGPQy5"
+  },
+  {
+    id: "leganes",
+    name: "Pabellón Carlos Sastre",
+    maps: "https://maps.app.goo.gl/6BLGpmu3GxpZcSSX7"
+  },
+  {
+    id: "limones",
+    name: "Polideportivo Javi Limones",
+    maps: "https://maps.app.goo.gl/mb741XvChQkkQkiK6"
   },
   {
     id: "linea",
@@ -208,16 +203,6 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/xJY19tZfk9JZoCtz8"
   },
   {
-    id: "torrelodones",
-    name: "Polideportivo Municipal Torrelodones (José Antonio Mur Capelo)",
-    maps: "https://maps.app.goo.gl/iUnZhjReYBsBe4vi9"
-  },
-  {
-    id: "triangulo-oro",
-    name: "Triángulo de Oro, Madrid",
-    maps: "https://maps.app.goo.gl/GeTR1VyHre3BrNwQA"
-  },
-  {
     id: "san-agustin",
     name: "Polideportivo San Agustín, Zaragoza",
     maps: "https://maps.app.goo.gl/9DTopGuwRh6sRjGw7"
@@ -226,6 +211,21 @@ const venuesList: Venue[] = [
     id: "sba-arena",
     name: "SBA Arena",
     maps: "https://maps.app.goo.gl/VuXT5q4kwEMsbGQL9"
+  },
+  {
+    id: "stella-maris",
+    name: "Colegio Stella Maris (La Gavia)",
+    maps: "https://maps.app.goo.gl/x3toQogK7WejQiqZ8"
+  },
+  {
+    id: "torrelodones",
+    name: "Polideportivo Municipal Torrelodones (José Antonio Mur Capelo)",
+    maps: "https://maps.app.goo.gl/iUnZhjReYBsBe4vi9"
+  },
+  {
+    id: "triangulo-oro",
+    name: "Triángulo de Oro, Madrid",
+    maps: "https://maps.app.goo.gl/GeTR1VyHre3BrNwQA"
   },
   {
     id: "valcude",
