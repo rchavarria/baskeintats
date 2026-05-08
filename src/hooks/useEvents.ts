@@ -177,11 +177,15 @@ import {game_2025_07_26_eoss_bogans} from "../data/games/2025-07-26-eoss-j4-boga
 import {game_2025_07_26_eoss_tnt} from "../data/games/2025-07-26-eoss-j3-tnt.ts";
 import {game_2025_07_26_eoss_florida} from "../data/games/2025-07-26-eoss-j2-florida.ts";
 import {game_2025_07_26_eoss_spartans} from "../data/games/2025-07-26-eoss-j1-spartans.ts";
+import {game_2026_05_10_torrelodones} from "../data/games/2026-05-10-torrelodones.ts";
+import {game_2026_05_10_zentro} from "../data/games/2026-05-10-zentro.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats;
 
 export function useEvents(): EventItem[] {
   const events: EventItem[] = [
+    game_2026_05_10_zentro,
+    game_2026_05_10_torrelodones,
     announcement_2026_05_17_cec,
     game_2026_04_26_real_madrid,
     game_2026_04_25_zentro,

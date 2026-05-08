@@ -9,6 +9,8 @@ import {game_2025_07_26_eoss_georgia} from "../../data/games/2025-07-26-eoss-j5-
 import {game_2025_07_26_eoss_bogans} from "../../data/games/2025-07-26-eoss-j4-bogans.ts";
 import {game_2025_07_26_eoss_tnt} from "../../data/games/2025-07-26-eoss-j3-tnt.ts";
 import {game_2025_07_26_eoss_florida} from "../../data/games/2025-07-26-eoss-j2-florida.ts";
+import {game_2026_05_10_torrelodones} from "../../data/games/2026-05-10-torrelodones.ts";
+import {game_2026_05_10_zentro} from "../../data/games/2026-05-10-zentro.ts";
 
 const fakeGame: Game = game_2025_09_20_alcorcon;
 
@@ -57,6 +59,16 @@ describe("GameCard", () => {
     [game_2025_07_26_eoss_florida],
     [game_2025_07_26_eoss_spartans],
   ])("renders game to the detail page", (game) => {
+    renderWithRouter(<GameCard game={game} />);
+
+    expect(screen.getByText(game.home.club.name)).toBeInTheDocument();
+    expect(screen.getByText(game.away.club.name)).toBeInTheDocument();
+  });
+
+  it.each([
+    [game_2026_05_10_zentro],
+    [game_2026_05_10_torrelodones],
+  ])("renders S2025/26 game to the game card", (game) => {
     renderWithRouter(<GameCard game={game} />);
 
     expect(screen.getByText(game.home.club.name)).toBeInTheDocument();
