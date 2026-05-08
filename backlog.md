@@ -1,15 +1,5 @@
 # Backlog
 
-- borrar videos del canal YT equivocado
-  - https://youtu.be/f97ZVJKFiUU
-  - https://youtu.be/MTLvOWJDI4g
-  - https://youtu.be/7N-VaFhpM0E
-  - https://youtu.be/uY5rbGw_dzE
-  - https://youtu.be/fZp5eepvk1s
-- Amistoso contra Estu, 15-09-2024
-  - canal txingo: https://youtu.be/fgC1TllhLkg
-  - mover a canal ffoff
-  - borrar del canal txingo
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
 - los eventos de estadísticas (StatsCard), deben mostrar total y media de 2pt y 3pt
@@ -18,6 +8,8 @@
 
 ## Done
 
+- 2026-05-08: Amistoso contra Estu, 15-09-2024
+- 2026-05-08: borrar videos del canal YT equivocado
 - 2026-05-07: stat_2025_04_20_mhl_zaragoza: Enlazar a la playlist de FFoFF, no de Canal CBA
 - 2026-05-07: Temporada 2024-25
 - 2026-04-22: unificar Game y AdvancedGame detail page, en uno solo, lo único que cambia es la parte de estadísticas, y debería poder apoyarse en los 3 formatters
