@@ -8,6 +8,36 @@ const venuesList: Venue[] = [
     maps: "https://maps.google.com/?q=Pabell%C3%B3n+Municipal+de+Alcobendas",
   },
   {
+    id: "agustiniano",
+    name: "Colegio Agustiniano",
+    maps: "https://maps.app.goo.gl/7829yTZSpz7DPQWu9"
+  },
+  {
+    id: "carlos-sastre",
+    name: "Pabellón Carlos Sastre",
+    maps: "https://maps.app.goo.gl/6BLGpmu3GxpZcSSX7"
+  },
+  {
+    id: "espartales",
+    name: "Complejo Deportivo Espartales",
+    maps: "https://maps.app.goo.gl/F54AvWSC6hcZ3yWr6"
+  },
+  {
+    id: "javi-limones",
+    name: "Polideportivo Javi Limones",
+    maps: "https://maps.app.goo.gl/mb741XvChQkkQkiK6"
+  },
+  {
+    id: "san-agustin-m",
+    name: "Polideportivo San Agustín, Alcobendas",
+    maps: "https://maps.app.goo.gl/DycUZKg8wHNuWAxM7"
+  },
+  {
+    id: "stella-maris",
+    name: "Colegio Stella Maris La Gavia",
+    maps: "https://maps.app.goo.gl/x3toQogK7WejQiqZ8"
+  },
+  {
     id: "alberto-maestro",
     name: "CDM Alberto Maestro, Zaragoza",
     maps: "https://maps.app.goo.gl/esNz3j423BjMt2La6"

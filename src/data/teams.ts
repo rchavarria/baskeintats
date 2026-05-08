@@ -3,6 +3,13 @@ import { venues } from "./venues.ts";
 
 const teamList: Team[] = [
   {
+    id: "alcala",
+    name: "Baloncesto Alcalá de Henares",
+    logo: "/logos/baloncesto-alcala.jpg",
+    web: "https://example.com",
+    venue: venues["espartales"],
+  },
+  {
     id: "alcobendas",
     name: "CB Alcobendas",
     logo: "/logos/alcobendas-transparent.png",
@@ -122,6 +129,13 @@ const teamList: Team[] = [
     venue: venues["default"],
   },
   {
+    id: "leganes",
+    name: "CB Leganés",
+    logo: "/logos/default.png",
+    web: "https://example.com",
+    venue: venues["carlos-sastre"],
+  },
+  {
     id: "laso",
     name: "Laso Academy",
     logo: "/logos/laso-transparent.png",
@@ -197,6 +211,13 @@ const teamList: Team[] = [
     logo: "/logos/rozas-transparent.png",
     web: "https://cbrozas.es",
     venue: venues["espiniella"],
+  },
+  {
+    id: "san-agustin-m",
+    name: "CB San Agustín",
+    logo: "/logos/default.png",
+    web: "https://example.com",
+    venue: venues["san-agustin-m"],
   },
   {
     id: "sabadell",
@@ -365,6 +386,13 @@ const teamList: Team[] = [
     logo: "/logos/default.png",
     web: "https://unknown.com",
     venue: venues["orange"],
+  },
+  {
+    id: "virgen-atocha",
+    name: "CB Virgen de Atocha",
+    logo: "/logos/default.png",
+    web: "https://example.com",
+    venue: venues["stella-maris"],
   },
   {
     id: "valcude",

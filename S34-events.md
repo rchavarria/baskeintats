@@ -1,8 +1,22 @@
 # Temporada 23-24, Eventos
 
-Total de elementos: 62
+venues.ts — 6 nuevos pabellones añadidos:
 
-- [ ] comienzo-temporada (01-09-2023)
+agustiniano — Colegio Agustiniano (Canoe)
+carlos-sastre — Pabellón Carlos Sastre (Leganés)
+espartales — Complejo Deportivo Espartales (Alcalá)
+javi-limones — Polideportivo Javi Limones (Torrejón)
+san-agustin-m — Polideportivo San Agustín, Alcobendas
+stella-maris — Colegio Stella Maris La Gavia (Virgen de Atocha)
+
+teams.ts — 4 nuevos equipos añadidos:
+
+alcala — Baloncesto Alcalá de Henares
+leganes — CB Leganés
+san-agustin-m — CB San Agustín
+virgen-atocha — CB Virgen de Atocha
+
+## WIP
 
 - [ ] liga-ahorramas-fase1-j1 (24-09-2023)
 - [ ] liga-ahorramas-fase1-j2 (01-10-2023)
@@ -14,7 +28,6 @@ Total de elementos: 62
 - [ ] liga-ahorramas-fase1-j8 (19-11-2023)
 - [ ] liga-ahorramas-fase1-j9 (19-11-2023)
 - [ ] liga-ahorramas-fase1-j10 (17-12-2023)
-- [ ] liga-ahorramas-fase1-estadisticas (18-12-2023)
 - [ ] liga-ahorramas-fase2-j1 (14-01-2024)
 - [ ] liga-ahorramas-fase2-j2 (21-01-2024)
 - [ ] liga-ahorramas-fase2-j3 (28-01-2024)
@@ -25,7 +38,16 @@ Total de elementos: 62
 - [ ] liga-ahorramas-fase2-j8 (03-03-2024)
 - [ ] liga-ahorramas-fase2-j9 (10-03-2024)
 - [ ] liga-ahorramas-fase2-j10 (17-03-2024)
+
+## TODO 
+
+Total de elementos: 62
+
+- [ ] comienzo-temporada (01-09-2023)
+
+- [ ] liga-ahorramas-fase1-estadisticas (18-12-2023)
 - [ ] liga-ahorramas-fase2-estadisticas (18-03-2024)
+
 - [ ] liga-ahorramas-fase3-j1 (07-04-2024)
 - [ ] liga-ahorramas-fase3-j2 (13-04-2024)
 - [ ] liga-ahorramas-fase3-j3 (28-04-2024)
@@ -69,3 +91,5 @@ Total de elementos: 62
 - [ ] torneo-zaragoza-p5-6 (30-03-2024)
 - [ ] torneo-zaragoza-p5-8 (30-03-2024)
 - [ ] torneo-zaragoza-estadisticas (31-03-2024)
+
+## Done

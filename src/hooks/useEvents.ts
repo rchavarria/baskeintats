@@ -58,6 +58,26 @@ import {game_2024_09_07_joventut} from "../data/games/2024-09-07-joventut.ts";
 import {game_2024_09_06_sabadell} from "../data/games/2024-09-06-sabadell.ts";
 import {game_2024_09_15_estudiantes} from "../data/games/2024-09-15-estudiantes.ts";
 import {game_2024_10_19_ucam_murcia} from "../data/games/2024-10-19-ucam-murcia.ts";
+import {game_2024_03_17_virgen_atocha} from "../data/games/2024-03-17-virgen-atocha.ts";
+import {game_2024_03_10_tres_cantos} from "../data/games/2024-03-10-tres-cantos.ts";
+import {game_2024_03_03_canoe} from "../data/games/2024-03-03-canoe.ts";
+import {game_2024_02_25_alcala} from "../data/games/2024-02-25-alcala.ts";
+import {game_2024_02_24_juande} from "../data/games/2024-02-24-juande.ts";
+import {game_2024_02_11_virgen_atocha} from "../data/games/2024-02-11-virgen-atocha.ts";
+import {game_2024_02_04_tres_cantos} from "../data/games/2024-02-04-tres-cantos.ts";
+import {game_2024_01_28_canoe} from "../data/games/2024-01-28-canoe.ts";
+import {game_2024_01_21_alcala} from "../data/games/2024-01-21-alcala.ts";
+import {game_2024_01_14_juande} from "../data/games/2024-01-14-juande.ts";
+import {game_2023_12_17_torrejon} from "../data/games/2023-12-17-torrejon.ts";
+import {game_2023_12_03_san_agustin} from "../data/games/2023-12-03-san-agustin.ts";
+import {game_2023_11_26_torrelodones} from "../data/games/2023-11-26-torrelodones.ts";
+import {game_2023_11_19_rozas} from "../data/games/2023-11-19-rozas.ts";
+import {game_2023_11_12_leganes} from "../data/games/2023-11-12-leganes.ts";
+import {game_2023_11_05_torrejon} from "../data/games/2023-11-05-torrejon.ts";
+import {game_2023_10_22_san_agustin} from "../data/games/2023-10-22-san-agustin.ts";
+import {game_2023_10_08_torrelodones} from "../data/games/2023-10-08-torrelodones.ts";
+import {game_2023_10_01_rozas} from "../data/games/2023-10-01-rozas.ts";
+import {game_2023_09_24_leganes} from "../data/games/2023-09-24-leganes.ts";
 import {game_2026_04_20_zentro} from "../data/games/2026-04-20-zentro.ts";
 import {game_2026_04_12_canoe} from "../data/games/2026-04-12-canoe.ts";
 import {game_2026_04_11_canoe} from "../data/games/2026-04-11-canoe.ts";
@@ -360,6 +380,26 @@ export function useEvents(): EventItem[] {
     announcement_2024_08_28_orbita_pro_camp_2,
     announcement_2024_08_27_orbita_pro_camp_j1,
     announcement_2024_08_26_comienzo_temporada,
+    game_2024_03_17_virgen_atocha,
+    game_2024_03_10_tres_cantos,
+    game_2024_03_03_canoe,
+    game_2024_02_25_alcala,
+    game_2024_02_24_juande,
+    game_2024_02_11_virgen_atocha,
+    game_2024_02_04_tres_cantos,
+    game_2024_01_28_canoe,
+    game_2024_01_21_alcala,
+    game_2024_01_14_juande,
+    game_2023_12_17_torrejon,
+    game_2023_12_03_san_agustin,
+    game_2023_11_26_torrelodones,
+    game_2023_11_19_rozas,
+    game_2023_11_12_leganes,
+    game_2023_11_05_torrejon,
+    game_2023_10_22_san_agustin,
+    game_2023_10_08_torrelodones,
+    game_2023_10_01_rozas,
+    game_2023_09_24_leganes,
   ];
 
   return events;
