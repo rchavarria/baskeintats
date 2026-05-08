@@ -1,5 +1,6 @@
 # Backlog
 
+- Temporada 2023-24: [[S34-events.md]]
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
 - los eventos de estadísticas (StatsCard), deben mostrar total y media de 2pt y 3pt
