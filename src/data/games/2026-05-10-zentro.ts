@@ -11,7 +11,7 @@ export const game_2026_05_10_zentro: Game = GameSchema.parse({
 
   competition: {
     name: "Liga Ahorramás - Plata",
-    category: "U16M",
+    category: "U15M",
     phase: "Fase 3",
     round: "J2",
   },
@@ -20,7 +20,7 @@ export const game_2026_05_10_zentro: Game = GameSchema.parse({
 
   home: {
     club: teams["zentro"],
-    category: "U16M",
+    category: "U15M",
     opponent: true,
     scores: [ 0 ],
   },
@@ -55,17 +55,23 @@ export const game_2026_05_10_zentro: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "xxx",
+    title: "Nah... muy fácil",
     lines: [
-      "yyy",
+      "Partido muy soso",
+      "Ellos venían con un equipo ya medio deshecho",
+      "Algún grande está jugando con los infantiles",
+      "El base con los mayores",
+      "Y los que quedan... pues son bastante flojos para nosotros",
+      "Y aún así, pierden los papeles, se enfadan entre ellos y se ven malas caras",
+      "Aunque nosotros tampoco salimos bien parados: broncas de pista a pista, gritos del entrenador, mucho bote, juego lento...",
     ],
   },
 
   references: [
     {
       type: "photo",
-      label: "Fotos del mes de mayo",
-      url: "https://www.flickr.com/photos/fbmadrid/albums/-",
+      label: "Fotos del mes de mayo (parece que solo infantiles)",
+      url: "https://www.flickr.com/photos/fbmadrid/albums/72177720333561000/",
     },
     {
       type: "document",
@@ -80,7 +86,7 @@ export const game_2026_05_10_zentro: Game = GameSchema.parse({
     {
       type: "article",
       label: "Crónica del partido",
-      url: "https://www.fbm.es/noticia-999-99999",
+      url: "https://www.fbm.es/noticia-104-13278/liga-ahorramas-volando-hacia-las-fases-finales",
     },
   ],
 
