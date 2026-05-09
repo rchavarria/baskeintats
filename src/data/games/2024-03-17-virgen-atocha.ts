@@ -7,12 +7,12 @@ export const game_2024_03_17_virgen_atocha: Game = GameSchema.parse({
   id: "S34-liga-plata-f2-j10",
   type: "game",
   season: "2023-24",
-  date: "2024-03-17T10:45:00Z",
+  date: "2024-03-17T09:45:00Z",
   favourite: true,
 
   competition: {
     name: "Liga Ahorramás - Plata",
-    category: "U14M",
+    category: "U13M",
     phase: "Fase 2",
     round: "J10",
   },
@@ -21,7 +21,7 @@ export const game_2024_03_17_virgen_atocha: Game = GameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U14M",
+    category: "U13M",
     scores: [31, 19, 20, 24],
   },
 
@@ -33,23 +33,18 @@ export const game_2024_03_17_virgen_atocha: Game = GameSchema.parse({
   },
 
   playerStats: {
-    time: 0,
-    fieldGoals: 0,
+    time: 33 * 60 + 35,
+    fieldGoals: 10,
     threePointers: 0,
-    freeThrows: { made: 0, attempted: 0 },
-    faults: 0,
-    plusMinus: 0,
-    efficiency: 0,
+    freeThrows: { made: 3, attempted: 5 },
+    faults: 1,
+    plusMinus: 8,
+    efficiency: 20,
   },
 
   videos: {
     official: "https://youtu.be/2m3PFBTTKuE",
-    others: [
-      {
-        label: "🆚 Virgen de Atocha (2010)",
-        url: "https://youtu.be/1gmURHPCDTc",
-      },
-    ],
+    others: [],
   },
 
   recap: {

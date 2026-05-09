@@ -7,12 +7,12 @@ export const game_2023_09_24_leganes: Game = GameSchema.parse({
   id: "S34-liga-bronce-f1-j1",
   type: "game",
   season: "2023-24",
-  date: "2023-09-24T13:00:00Z",
+  date: "2023-09-24T11:00:00Z",
   favourite: true,
 
   competition: {
     name: "Liga Ahorramás - Bronce",
-    category: "U14M",
+    category: "U13M",
     phase: "Fase 1",
     round: "J1",
   },
@@ -21,7 +21,7 @@ export const game_2023_09_24_leganes: Game = GameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U14M",
+    category: "U13M",
     scores: [14, 21, 16, 28],
   },
 
@@ -29,17 +29,17 @@ export const game_2023_09_24_leganes: Game = GameSchema.parse({
     club: teams["leganes"],
     category: "U14M",
     opponent: true,
-    scores: [20, 1, 28, 13],
+    scores: [20, 16, 28, 13],
   },
 
   playerStats: {
-    time: 0,
-    fieldGoals: 0,
+    time: 18 * 60 + 53,
+    fieldGoals: 2,
     threePointers: 0,
-    freeThrows: { made: 0, attempted: 0 },
-    faults: 0,
-    plusMinus: 0,
-    efficiency: 0,
+    freeThrows: { made: 0, attempted: 1 },
+    faults: 4,
+    plusMinus: 11,
+    efficiency: -1,
   },
 
   videos: {

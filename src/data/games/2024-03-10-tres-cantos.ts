@@ -7,11 +7,11 @@ export const game_2024_03_10_tres_cantos: Game = GameSchema.parse({
   id: "S34-liga-plata-f2-j9",
   type: "game",
   season: "2023-24",
-  date: "2024-03-10T10:45:00Z",
+  date: "2024-03-10T09:45:00Z",
 
   competition: {
     name: "Liga Ahorramás - Plata",
-    category: "U14M",
+    category: "U13M",
     phase: "Fase 2",
     round: "J9",
   },
@@ -27,18 +27,18 @@ export const game_2024_03_10_tres_cantos: Game = GameSchema.parse({
 
   away: {
     club: teams["alcobendas"],
-    category: "U14M",
+    category: "U13M",
     scores: [9, 17, 19, 17],
   },
 
   playerStats: {
-    time: 0,
-    fieldGoals: 0,
+    time: 24 * 60 + 29,
+    fieldGoals: 7,
     threePointers: 0,
-    freeThrows: { made: 0, attempted: 0 },
-    faults: 0,
-    plusMinus: 0,
-    efficiency: 0,
+    freeThrows: { made: 1, attempted: 2 },
+    faults: 4,
+    plusMinus: 3,
+    efficiency: 10,
   },
 
   videos: {

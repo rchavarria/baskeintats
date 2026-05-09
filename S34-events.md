@@ -2,26 +2,15 @@
 
 ## WIP
 
-- [ ] liga-ahorramas-fase1-j1 (24-09-2023)
-- [ ] liga-ahorramas-fase1-j2 (01-10-2023)
-- [ ] liga-ahorramas-fase1-j3 (08-10-2023)
-- [ ] liga-ahorramas-fase1-j4 (22-10-2023)
-- [ ] liga-ahorramas-fase1-j5 (05-11-2023)
-- [ ] liga-ahorramas-fase1-j6 (12-11-2023)
-- [ ] liga-ahorramas-fase1-j7 (19-11-2023)
-- [ ] liga-ahorramas-fase1-j8 (19-11-2023)
-- [ ] liga-ahorramas-fase1-j9 (19-11-2023)
-- [ ] liga-ahorramas-fase1-j10 (17-12-2023)
-- [ ] liga-ahorramas-fase2-j1 (14-01-2024)
-- [ ] liga-ahorramas-fase2-j2 (21-01-2024)
-- [ ] liga-ahorramas-fase2-j3 (28-01-2024)
-- [ ] liga-ahorramas-fase2-j4 (04-02-2024)
-- [ ] liga-ahorramas-fase2-j5 (11-02-2024)
-- [ ] liga-ahorramas-fase2-j6 (24-02-2024)
-- [ ] liga-ahorramas-fase2-j7 (25-02-2024)
-- [ ] liga-ahorramas-fase2-j8 (03-03-2024)
 - [ ] liga-ahorramas-fase2-j9 (10-03-2024)
+    - video en el canal equivocado
+    - https://youtu.be/3BLWsg2Ypp8
+    - buscarlo en FFoFF o moverlo allí
+    - borrarlo del equivocado
+
 - [ ] liga-ahorramas-fase2-j10 (17-03-2024)
+  - borrar este del canal equiovcado
+  - https://youtu.be/1gmURHPCDTc
 
 ## TODO 
 
@@ -77,3 +66,24 @@ Total de elementos: 62
 - [ ] torneo-zaragoza-estadisticas (31-03-2024)
 
 ## Done
+
+- [x] liga-ahorramas-fase1-j1 (24-09-2023)
+- [x] liga-ahorramas-fase1-j2 (01-10-2023)
+- [x] liga-ahorramas-fase1-j3 (08-10-2023)
+- [x] liga-ahorramas-fase1-j4 (22-10-2023)
+- [x] liga-ahorramas-fase1-j5 (05-11-2023)
+- [x] liga-ahorramas-fase1-j6 (12-11-2023)
+- [x] liga-ahorramas-fase1-j7 (19-11-2023)
+- [x] liga-ahorramas-fase1-j8 (19-11-2023)
+- [x] liga-ahorramas-fase1-j9 (19-11-2023)
+- [x] liga-ahorramas-fase1-j10 (17-12-2023)
+- [x] liga-ahorramas-fase2-j1 (14-01-2024)
+- [x] liga-ahorramas-fase2-j2 (21-01-2024)
+- [x] liga-ahorramas-fase2-j3 (28-01-2024)
+- [x] liga-ahorramas-fase2-j4 (04-02-2024)
+- [x] liga-ahorramas-fase2-j5 (11-02-2024)
+- [x] liga-ahorramas-fase2-j6 (24-02-2024)
+- [x] liga-ahorramas-fase2-j7 (25-02-2024)
+- [x] liga-ahorramas-fase2-j8 (03-03-2024)
+- [x] liga-ahorramas-fase2-j9 (10-03-2024)
+- [x] liga-ahorramas-fase2-j10 (17-03-2024)

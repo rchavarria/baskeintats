@@ -7,12 +7,12 @@ export const game_2023_11_05_torrejon: Game = GameSchema.parse({
   id: "S34-liga-bronce-f1-j5",
   type: "game",
   season: "2023-24",
-  date: "2023-11-05T16:15:00Z",
+  date: "2023-11-05T15:15:00Z",
   favourite: true,
 
   competition: {
     name: "Liga Ahorramás - Bronce",
-    category: "U14M",
+    category: "U13M",
     phase: "Fase 1",
     round: "J5",
   },
@@ -28,18 +28,18 @@ export const game_2023_11_05_torrejon: Game = GameSchema.parse({
 
   away: {
     club: teams["alcobendas"],
-    category: "U14M",
+    category: "U13M",
     scores: [23, 26, 30, 6],
   },
 
   playerStats: {
-    time: 0,
-    fieldGoals: 0,
+    time: 19 * 60 + 4,
+    fieldGoals: 4,
     threePointers: 0,
-    freeThrows: { made: 0, attempted: 0 },
-    faults: 0,
-    plusMinus: 0,
-    efficiency: 0,
+    freeThrows: { made: 0, attempted: 1 },
+    faults: 2,
+    plusMinus: 24,
+    efficiency: 5,
   },
 
   videos: {

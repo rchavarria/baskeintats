@@ -7,12 +7,12 @@ export const game_2023_12_03_san_agustin: Game = GameSchema.parse({
   id: "S34-liga-bronce-f1-j9",
   type: "game",
   season: "2023-24",
-  date: "2023-12-03T10:45:00Z",
+  date: "2023-12-03T09:45:00Z",
   favourite: true,
 
   competition: {
     name: "Liga Ahorramás - Bronce",
-    category: "U14M",
+    category: "U13M",
     phase: "Fase 1",
     round: "J9",
   },
@@ -28,18 +28,18 @@ export const game_2023_12_03_san_agustin: Game = GameSchema.parse({
 
   away: {
     club: teams["alcobendas"],
-    category: "U14M",
+    category: "U13M",
     scores: [31, 19, 19, 24],
   },
 
   playerStats: {
-    time: 0,
-    fieldGoals: 0,
+    time: 22 * 60 + 33,
+    fieldGoals: 5,
     threePointers: 0,
     freeThrows: { made: 0, attempted: 0 },
-    faults: 0,
-    plusMinus: 0,
-    efficiency: 0,
+    faults: 4,
+    plusMinus: 23,
+    efficiency: 6,
   },
 
   videos: {

@@ -7,11 +7,11 @@ export const game_2024_02_25_alcala: Game = GameSchema.parse({
   id: "S34-liga-plata-f2-j7",
   type: "game",
   season: "2023-24",
-  date: "2024-02-25T19:00:00Z",
+  date: "2024-02-25T18:00:00Z",
 
   competition: {
     name: "Liga Ahorramás - Plata",
-    category: "U14M",
+    category: "U13M",
     phase: "Fase 2",
     round: "J7",
   },
@@ -20,7 +20,7 @@ export const game_2024_02_25_alcala: Game = GameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U14M",
+    category: "U13M",
     scores: [22, 22, 19, 23],
   },
 
@@ -32,13 +32,13 @@ export const game_2024_02_25_alcala: Game = GameSchema.parse({
   },
 
   playerStats: {
-    time: 0,
-    fieldGoals: 0,
+    time: 22 * 60 + 42,
+    fieldGoals: 9,
     threePointers: 0,
-    freeThrows: { made: 0, attempted: 0 },
-    faults: 0,
-    plusMinus: 0,
-    efficiency: 0,
+    freeThrows: { made: 1, attempted: 2 },
+    faults: 3,
+    plusMinus: -1,
+    efficiency: 15,
   },
 
   videos: {
