@@ -78,6 +78,18 @@ import {game_2023_10_22_san_agustin} from "../data/games/2023-10-22-san-agustin.
 import {game_2023_10_08_torrelodones} from "../data/games/2023-10-08-torrelodones.ts";
 import {game_2023_10_01_rozas} from "../data/games/2023-10-01-rozas.ts";
 import {game_2023_09_24_leganes} from "../data/games/2023-09-24-leganes.ts";
+import {game_2023_10_22_alcorcon} from "../data/games/2023-10-22-alcorcon.ts";
+import {game_2023_12_17_fuenlabrada} from "../data/games/2023-12-17-fuenlabrada.ts";
+import {game_2024_01_14_estudio} from "../data/games/2024-01-14-estudio.ts";
+import {game_2024_01_21_estudiantes} from "../data/games/2024-01-21-estudiantes.ts";
+import {game_2024_01_28_estudiantes} from "../data/games/2024-01-28-real-madrid.ts";
+import {game_2024_02_04_fuenlabrada} from "../data/games/2024-02-04-fuenlabrada.ts";
+import {game_2024_02_11_alcorcon} from "../data/games/2024-02-11-alcorcon.ts";
+import {game_2024_02_18_estudio} from "../data/games/2024-02-18-estudio.ts";
+import {game_2024_02_25_estudiantes} from "../data/games/2024-02-25-estudiantes.ts";
+import {game_2024_03_03_real_madrid} from "../data/games/2024-03-03-real-madrid.ts";
+import {game_2024_03_10_fuenlabrada} from "../data/games/2024-03-10-fuenlabrada.ts";
+import {game_2024_03_17_alcorcon} from "../data/games/2024-03-17-alcorcon.ts";
 import {game_2026_04_20_zentro} from "../data/games/2026-04-20-zentro.ts";
 import {game_2026_04_12_canoe} from "../data/games/2026-04-12-canoe.ts";
 import {game_2026_04_11_canoe} from "../data/games/2026-04-11-canoe.ts";
@@ -381,22 +393,34 @@ export function useEvents(): EventItem[] {
     announcement_2024_08_27_orbita_pro_camp_j1,
     announcement_2024_08_26_comienzo_temporada,
     game_2024_03_17_virgen_atocha,
+    game_2024_03_17_alcorcon,
     game_2024_03_10_tres_cantos,
+    game_2024_03_10_fuenlabrada,
     game_2024_03_03_canoe,
+    game_2024_03_03_real_madrid,
     game_2024_02_25_alcala,
+    game_2024_02_25_estudiantes,
     game_2024_02_24_juande,
+    game_2024_02_18_estudio,
     game_2024_02_11_virgen_atocha,
+    game_2024_02_11_alcorcon,
     game_2024_02_04_tres_cantos,
+    game_2024_02_04_fuenlabrada,
     game_2024_01_28_canoe,
+    game_2024_01_28_estudiantes,
     game_2024_01_21_alcala,
+    game_2024_01_21_estudiantes,
     game_2024_01_14_juande,
+    game_2024_01_14_estudio,
     game_2023_12_17_torrejon,
+    game_2023_12_17_fuenlabrada,
     game_2023_12_03_san_agustin,
     game_2023_11_26_torrelodones,
     game_2023_11_19_rozas,
     game_2023_11_12_leganes,
     game_2023_11_05_torrejon,
     game_2023_10_22_san_agustin,
+    game_2023_10_22_alcorcon,
     game_2023_10_08_torrelodones,
     game_2023_10_01_rozas,
     game_2023_09_24_leganes,

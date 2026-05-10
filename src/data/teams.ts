@@ -80,6 +80,13 @@ const teamList: Team[] = [
     venue: venues["default"],
   },
   {
+    id: "estudio",
+    name: "CD Estudio",
+    logo: "/logos/estudio.png",
+    web: "https://www.cdestudio.com/es",
+    venue: venues["paco-hernandez"],
+  },
+  {
     id: "estudiantes",
     name: "Estudiantes",
     logo: "/logos/estudiantes.png",

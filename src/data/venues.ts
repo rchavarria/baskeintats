@@ -163,6 +163,11 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/SpQ3FdLE5ae2pZNF6"
   },
   {
+    id: "paco-hernandez",
+    name: "Pabellón Paco Hernández",
+    maps: "https://maps.app.goo.gl/LSdx5g85nvRf4yye8"
+  },
+  {
     id: "palos",
     name: "Pabellón Nuevo Frontón, Palos de la Frontera",
     maps: "https://maps.app.goo.gl/UCyS55ZUaJrK6zcCA"
