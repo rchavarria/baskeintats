@@ -2,17 +2,11 @@
 
 ## WIP
 
-- [ ] liga-ahorramas-fase2-j9 (10-03-2024)
-    - video en el canal equivocado
-    - https://youtu.be/3BLWsg2Ypp8
-    - buscarlo en FFoFF o moverlo allí
-    - borrarlo del equivocado
+- [ ] liga-ahorramas-fase3-j1 (07-04-2024)
+- [ ] liga-ahorramas-fase3-j2 (13-04-2024)
+- [ ] liga-ahorramas-fase3-j3 (28-04-2024)
 
-- [ ] liga-ahorramas-fase2-j10 (17-03-2024)
-  - borrar este del canal equiovcado
-  - https://youtu.be/1gmURHPCDTc
-
-## TODO 
+## TODO
 
 Total de elementos: 62
 
@@ -20,10 +14,6 @@ Total de elementos: 62
 
 - [ ] liga-ahorramas-fase1-estadisticas (18-12-2023)
 - [ ] liga-ahorramas-fase2-estadisticas (18-03-2024)
-
-- [ ] liga-ahorramas-fase3-j1 (07-04-2024)
-- [ ] liga-ahorramas-fase3-j2 (13-04-2024)
-- [ ] liga-ahorramas-fase3-j3 (28-04-2024)
 - [ ] liga-ahorramas-fase3-estadisticas (09-06-2024)
 
 - [ ] liga-ahorramas-oro-fase3-j1 (26-05-2024)

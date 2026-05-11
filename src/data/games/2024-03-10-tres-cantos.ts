@@ -42,7 +42,7 @@ export const game_2024_03_10_tres_cantos: Game = GameSchema.parse({
   },
 
   videos: {
-    official: "https://youtu.be/3BLWsg2Ypp8",
+    official: "https://youtu.be/rEqN1CMmJN4",
     others: [],
   },
 
