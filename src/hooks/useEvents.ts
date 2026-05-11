@@ -93,6 +93,10 @@ import {game_2024_03_17_alcorcon} from "../data/games/2024-03-17-alcorcon.ts";
 import {game_2024_04_07_parla} from "../data/games/2024-04-07-parla.ts";
 import {game_2024_04_13_alcala} from "../data/games/2024-04-13-alcala.ts";
 import {game_2024_04_28_parla} from "../data/games/2024-04-28-parla.ts";
+import {game_2024_04_28_alcorcon} from "../data/games/2024-04-28-alcorcon.ts";
+import {game_2024_05_26_zentro} from "../data/games/2024-05-26-zentro.ts";
+import {game_2024_06_02_rozas} from "../data/games/2024-06-02-rozas.ts";
+import {game_2024_06_09_estudio} from "../data/games/2024-06-09-estudio.ts";
 import {game_2026_04_20_zentro} from "../data/games/2026-04-20-zentro.ts";
 import {game_2026_04_12_canoe} from "../data/games/2026-04-12-canoe.ts";
 import {game_2026_04_11_canoe} from "../data/games/2026-04-11-canoe.ts";
@@ -395,6 +399,10 @@ export function useEvents(): EventItem[] {
     announcement_2024_08_28_orbita_pro_camp_2,
     announcement_2024_08_27_orbita_pro_camp_j1,
     announcement_2024_08_26_comienzo_temporada,
+    game_2024_06_09_estudio,
+    game_2024_06_02_rozas,
+    game_2024_05_26_zentro,
+    game_2024_04_28_alcorcon,
     game_2024_04_28_parla,
     game_2024_04_13_alcala,
     game_2024_04_07_parla,

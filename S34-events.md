@@ -12,11 +12,6 @@ Total de elementos: 62
 - [ ] liga-ahorramas-fase2-estadisticas (18-03-2024)
 - [ ] liga-ahorramas-fase3-estadisticas (09-06-2024)
 
-- [ ] liga-ahorramas-oro-fase3-j1 (26-05-2024)
-- [ ] liga-ahorramas-oro-fase3-j2 (02-06-2024)
-- [ ] liga-ahorramas-oro-fase3-j3 (09-06-2024)
-- [ ] liga-ahorramas-playoffs-cuartos-1 (28-04-2024)
-
 - [ ] torneo-ardres (10-05-2024)
 - [ ] torneo-ardres-final (20-05-2024)
 - [ ] torneo-ardres-j1 (18-05-2024)
@@ -76,3 +71,7 @@ Total de elementos: 62
 - [x] liga-ahorramas-fase3-j1 (07-04-2024)
 - [x] liga-ahorramas-fase3-j2 (13-04-2024)
 - [x] liga-ahorramas-fase3-j3 (28-04-2024)
+- [x] liga-ahorramas-oro-fase3-j1 (26-05-2024)
+- [x] liga-ahorramas-oro-fase3-j2 (02-06-2024)
+- [x] liga-ahorramas-oro-fase3-j3 (09-06-2024)
+- [x] liga-ahorramas-playoffs-cuartos-1 (28-04-2024) Alcorcón
