@@ -2,10 +2,6 @@
 
 ## WIP
 
-- [ ] liga-ahorramas-fase3-j1 (07-04-2024)
-- [ ] liga-ahorramas-fase3-j2 (13-04-2024)
-- [ ] liga-ahorramas-fase3-j3 (28-04-2024)
-
 ## TODO
 
 Total de elementos: 62
@@ -77,3 +73,6 @@ Total de elementos: 62
 - [x] liga-ahorramas-oro-fase2-j8 (03-03-2024)
 - [x] liga-ahorramas-oro-fase2-j9 (10-03-2024)
 - [x] liga-ahorramas-oro-fase2-j10 (17-03-2024)
+- [x] liga-ahorramas-fase3-j1 (07-04-2024)
+- [x] liga-ahorramas-fase3-j2 (13-04-2024)
+- [x] liga-ahorramas-fase3-j3 (28-04-2024)

@@ -199,6 +199,13 @@ const teamList: Team[] = [
     venue: venues["default"],
   },
   {
+    id: "parla",
+    name: "Parla Básquet",
+    logo: "/logos/parla.png",
+    web: "https://www.parlabasquet.com/",
+    venue: venues["miguel-delibes"],
+  },
+  {
     id: "patrocinio",
     name: "Patrocinio San José",
     logo: "/logos/patrocinio-transparent.png",

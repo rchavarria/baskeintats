@@ -82,7 +82,7 @@ import {game_2023_10_22_alcorcon} from "../data/games/2023-10-22-alcorcon.ts";
 import {game_2023_12_17_fuenlabrada} from "../data/games/2023-12-17-fuenlabrada.ts";
 import {game_2024_01_14_estudio} from "../data/games/2024-01-14-estudio.ts";
 import {game_2024_01_21_estudiantes} from "../data/games/2024-01-21-estudiantes.ts";
-import {game_2024_01_28_estudiantes} from "../data/games/2024-01-28-real-madrid.ts";
+import {game_2024_01_28_real_madrid} from "../data/games/2024-01-28-real-madrid.ts";
 import {game_2024_02_04_fuenlabrada} from "../data/games/2024-02-04-fuenlabrada.ts";
 import {game_2024_02_11_alcorcon} from "../data/games/2024-02-11-alcorcon.ts";
 import {game_2024_02_18_estudio} from "../data/games/2024-02-18-estudio.ts";
@@ -90,6 +90,9 @@ import {game_2024_02_25_estudiantes} from "../data/games/2024-02-25-estudiantes.
 import {game_2024_03_03_real_madrid} from "../data/games/2024-03-03-real-madrid.ts";
 import {game_2024_03_10_fuenlabrada} from "../data/games/2024-03-10-fuenlabrada.ts";
 import {game_2024_03_17_alcorcon} from "../data/games/2024-03-17-alcorcon.ts";
+import {game_2024_04_07_parla} from "../data/games/2024-04-07-parla.ts";
+import {game_2024_04_13_alcala} from "../data/games/2024-04-13-alcala.ts";
+import {game_2024_04_28_parla} from "../data/games/2024-04-28-parla.ts";
 import {game_2026_04_20_zentro} from "../data/games/2026-04-20-zentro.ts";
 import {game_2026_04_12_canoe} from "../data/games/2026-04-12-canoe.ts";
 import {game_2026_04_11_canoe} from "../data/games/2026-04-11-canoe.ts";
@@ -392,6 +395,9 @@ export function useEvents(): EventItem[] {
     announcement_2024_08_28_orbita_pro_camp_2,
     announcement_2024_08_27_orbita_pro_camp_j1,
     announcement_2024_08_26_comienzo_temporada,
+    game_2024_04_28_parla,
+    game_2024_04_13_alcala,
+    game_2024_04_07_parla,
     game_2024_03_17_virgen_atocha,
     game_2024_03_17_alcorcon,
     game_2024_03_10_tres_cantos,
@@ -407,7 +413,7 @@ export function useEvents(): EventItem[] {
     game_2024_02_04_tres_cantos,
     game_2024_02_04_fuenlabrada,
     game_2024_01_28_canoe,
-    game_2024_01_28_estudiantes,
+    game_2024_01_28_real_madrid,
     game_2024_01_21_alcala,
     game_2024_01_21_estudiantes,
     game_2024_01_14_juande,

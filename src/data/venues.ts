@@ -108,6 +108,16 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/LSdx5g85nvRf4yye8"
   },
   {
+    id: "gredos",
+    name: "Colegio Gredos San Diego",
+    maps: "https://maps.app.goo.gl/zVvuPVerxLL74gDi8"
+  },
+  {
+    id: "miguel-delibes",
+    name: "Pabellón C.P. Miguel Delibes",
+    maps: "https://maps.app.goo.gl/VLfs7CQiVP7ViAyT7"
+  },
+  {
     id: "gil-hernandez",
     name: "Polideportivo Antonio Gil Hernández",
     maps: "https://maps.app.goo.gl/R7abEFTb3G8s6K7eA"

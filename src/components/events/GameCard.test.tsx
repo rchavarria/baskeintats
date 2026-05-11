@@ -11,6 +11,9 @@ import {game_2025_07_26_eoss_tnt} from "../../data/games/2025-07-26-eoss-j3-tnt.
 import {game_2025_07_26_eoss_florida} from "../../data/games/2025-07-26-eoss-j2-florida.ts";
 import {game_2026_05_10_torrelodones} from "../../data/games/2026-05-10-torrelodones.ts";
 import {game_2026_05_10_zentro} from "../../data/games/2026-05-10-zentro.ts";
+import {game_2024_04_07_parla} from "../../data/games/2024-04-07-parla.ts";
+import {game_2024_04_13_alcala} from "../../data/games/2024-04-13-alcala.ts";
+import {game_2024_04_28_parla} from "../../data/games/2024-04-28-parla.ts";
 
 const fakeGame: Game = game_2025_09_20_alcorcon;
 
@@ -59,6 +62,17 @@ describe("GameCard", () => {
     [game_2025_07_26_eoss_florida],
     [game_2025_07_26_eoss_spartans],
   ])("renders game to the detail page", (game) => {
+    renderWithRouter(<GameCard game={game} />);
+
+    expect(screen.getByText(game.home.club.name)).toBeInTheDocument();
+    expect(screen.getByText(game.away.club.name)).toBeInTheDocument();
+  });
+
+  it.each([
+    [game_2024_04_07_parla],
+    [game_2024_04_13_alcala],
+    [game_2024_04_28_parla],
+  ])("renders S2023/24 games to the game card", (game) => {
     renderWithRouter(<GameCard game={game} />);
 
     expect(screen.getByText(game.home.club.name)).toBeInTheDocument();
