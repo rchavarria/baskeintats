@@ -8,9 +8,12 @@ Total de elementos: 62
 
 - [ ] comienzo-temporada (01-09-2023)
 
-- [ ] liga-ahorramas-fase1-estadisticas (18-12-2023)
-- [ ] liga-ahorramas-fase2-estadisticas (18-03-2024)
-- [ ] liga-ahorramas-fase3-estadisticas (09-06-2024)
+- [ ] liga-ahorramas-oro-fase1-estadisticas (18-12-2023)
+- [ ] liga-ahorramas-oro-fase2-estadisticas (18-03-2024)
+- [ ] liga-ahorramas-oro-fase3-estadisticas (09-06-2024)
+- [ ] liga-ahorramas-plata-fase1-estadisticas (18-12-2023)
+- [ ] liga-ahorramas-plata-fase2-estadisticas (18-03-2024)
+- [ ] liga-ahorramas-plata-fase3-estadisticas (09-06-2024)
 
 - [ ] torneo-ardres (10-05-2024)
 - [ ] torneo-ardres-final (20-05-2024)
@@ -27,11 +30,6 @@ Total de elementos: 62
 - [ ] torneo-salou-estadisticas (05-05-2024)
  
 - [ ] torneo-zaragoza (26-03-2024)
-- [ ] torneo-zaragoza-grupos-j1 (28-03-2024)
-- [ ] torneo-zaragoza-grupos-j2 (29-03-2024)
-- [ ] torneo-zaragoza-grupos-j3 (30-03-2024)
-- [ ] torneo-zaragoza-p5-6 (30-03-2024)
-- [ ] torneo-zaragoza-p5-8 (30-03-2024)
 - [ ] torneo-zaragoza-estadisticas (31-03-2024)
 
 ## Done
@@ -75,3 +73,8 @@ Total de elementos: 62
 - [x] liga-ahorramas-oro-fase3-j2 (02-06-2024)
 - [x] liga-ahorramas-oro-fase3-j3 (09-06-2024)
 - [x] liga-ahorramas-playoffs-cuartos-1 (28-04-2024) Alcorcón
+- [x] torneo-zaragoza-grupos-j1 (28-03-2024)
+- [x] torneo-zaragoza-grupos-j2 (29-03-2024)
+- [x] torneo-zaragoza-grupos-j3 (30-03-2024)
+- [x] torneo-zaragoza-p5-6 (30-03-2024)
+- [x] torneo-zaragoza-p5-8 (30-03-2024)

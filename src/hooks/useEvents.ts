@@ -91,6 +91,11 @@ import {game_2024_03_03_real_madrid} from "../data/games/2024-03-03-real-madrid.
 import {game_2024_03_10_fuenlabrada} from "../data/games/2024-03-10-fuenlabrada.ts";
 import {game_2024_03_17_alcorcon} from "../data/games/2024-03-17-alcorcon.ts";
 import {game_2024_04_07_parla} from "../data/games/2024-04-07-parla.ts";
+import {game_2024_03_31_fuenlabrada} from "../data/games/2024-03-31-fuenlabrada.ts";
+import {game_2024_03_30_sp_burgos} from "../data/games/2024-03-30-sp-burgos.ts";
+import {game_2024_03_30_zaragoza} from "../data/games/2024-03-30-zaragoza.ts";
+import {game_2024_03_29_sp_burgos} from "../data/games/2024-03-29-sp-burgos.ts";
+import {game_2024_03_28_moncayo} from "../data/games/2024-03-28-moncayo.ts";
 import {game_2024_04_13_alcala} from "../data/games/2024-04-13-alcala.ts";
 import {game_2024_04_28_parla} from "../data/games/2024-04-28-parla.ts";
 import {game_2024_04_28_alcorcon} from "../data/games/2024-04-28-alcorcon.ts";
@@ -406,6 +411,11 @@ export function useEvents(): EventItem[] {
     game_2024_04_28_parla,
     game_2024_04_13_alcala,
     game_2024_04_07_parla,
+    game_2024_03_31_fuenlabrada,
+    game_2024_03_30_sp_burgos,
+    game_2024_03_30_zaragoza,
+    game_2024_03_29_sp_burgos,
+    game_2024_03_28_moncayo,
     game_2024_03_17_virgen_atocha,
     game_2024_03_17_alcorcon,
     game_2024_03_10_tres_cantos,

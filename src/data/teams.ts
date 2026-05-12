@@ -31,6 +31,13 @@ const teamList: Team[] = [
     venue: venues["default"],
   },
   {
+    id: "zaragoza",
+    name: "Casademont Zaragoza",
+    logo: "/logos/zaragoza.png",
+    web: "https://www.casademontzaragoza.es",
+    venue: venues["default"],
+  },
+  {
     id: "canoe",
     name: "Real Canoe",
     logo: "/logos/canoe-transparent.png",
@@ -227,11 +234,25 @@ const teamList: Team[] = [
     venue: venues["espiniella"],
   },
   {
+    id: "moncayo",
+    name: "Azulejos Moncayo CBZ",
+    logo: "/logos/moncayo.png",
+    web: "https://www.cbzaragoza.com/",
+    venue: venues["default"],
+  },
+  {
     id: "agustin",
     name: "CB San Agustín",
     logo: "/logos/agustin.png",
     web: "https://www.colegiosanagustin-madrid.org/club-deportivo-colegio-san-agustin-madrid/",
     venue: venues["agustin"],
+  },
+  {
+    id: "sp-burgos",
+    name: "San Pablo Burgos",
+    logo: "/logos/sp-burgos.png",
+    web: "https://www.sanpabloburgos.com",
+    venue: venues["default"],
   },
   {
     id: "sabadell",

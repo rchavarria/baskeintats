@@ -128,6 +128,16 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/apR6frcXSJFu2sxe6"
   },
   {
+    id: "lanuza",
+    name: "Pabellón Municipal Juan de Lanuza, Utebo, Zaragoza",
+    maps: "https://maps.app.goo.gl/1EAdUL2FMXpADMCF6"
+  },
+  {
+    id: "fuentes",
+    name: "Polideportivo Municipal Las Fuentes, Utebo, Zaragoza",
+    maps: "https://maps.app.goo.gl/JtjekaN65AM6rsQ67"
+  },
+  {
     id: "juande",
     name: "Club Baloncesto Juan de Austria",
     maps: "https://maps.app.goo.gl/Fuw5GMYyVRm5NsLp7"
