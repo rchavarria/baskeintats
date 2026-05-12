@@ -48,6 +48,11 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/NbqDdrLkJhzSXW1s8"
   },
   {
+    id: "ardres",
+    name: "Ardres, Francia",
+    maps: "https://maps.app.goo.gl/RJgXKLi9wKaPmwNo7"
+  },
+  {
     id: "arroyo",
     name: "Polideportivo El Arroyo",
     maps: "https://maps.app.goo.gl/kXPkNNQREQmXUcit6"

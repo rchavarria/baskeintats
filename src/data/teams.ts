@@ -457,6 +457,48 @@ const teamList: Team[] = [
     web: "https://zentrobasket.com",
     venue: venues["diaz-miguel"],
   },
+  {
+    id: "certified-athletes",
+    name: "Certified Athletes (Paris)",
+    logo: "/logos/default.png",
+    web: "https://example.com",
+    venue: venues["ardres"],
+  },
+  {
+    id: "mexico",
+    name: "Selección de México",
+    logo: "/logos/default.png",
+    web: "https://example.com",
+    venue: venues["default"],
+  },
+  {
+    id: "guyane",
+    name: "Guyane (Francia)",
+    logo: "/logos/default.png",
+    web: "https://example.com",
+    venue: venues["default"],
+  },
+  {
+    id: "pesaro",
+    name: "Pesaro (Italia)",
+    logo: "/logos/default.png",
+    web: "https://example.com",
+    venue: venues["default"],
+  },
+  {
+    id: "ban-e-lot",
+    name: "Ban E Lot (Francia)",
+    logo: "/logos/default.png",
+    web: "https://example.com",
+    venue: venues["default"],
+  },
+  {
+    id: "krvavec",
+    name: "Krvavec (Eslovenia)",
+    logo: "/logos/default.png",
+    web: "https://example.com",
+    venue: venues["default"],
+  },
 ];
 
 export const teams: Record<string, Team> = teamList.reduce((acc, team) => {

@@ -22,6 +22,12 @@ import {game_2024_03_31_fuenlabrada} from "../../data/games/2024-03-31-fuenlabra
 import {game_2024_05_03_humanitas} from "../../data/games/2024-05-03-humanitas.ts";
 import {game_2024_05_04_salvador} from "../../data/games/2024-05-04-salvador.ts";
 import {game_2024_05_05_rozas} from "../../data/games/2024-05-05-rozas.ts";
+import {game_2024_05_18_krvavec} from "../../data/games/2024-05-18-krvavec.ts";
+import {game_2024_05_18_ban_e_lot} from "../../data/games/2024-05-18-ban-e-lot.ts";
+import {game_2024_05_19_pesaro} from "../../data/games/2024-05-19-pesaro.ts";
+import {game_2024_05_19_guyane} from "../../data/games/2024-05-19-guyane.ts";
+import {game_2024_05_19_mexico} from "../../data/games/2024-05-19-mexico.ts";
+import {game_2024_05_20_certified_athletes} from "../../data/games/2024-05-20-certified-athletes.ts";
 
 const fakeGame: Game = game_2025_09_20_alcorcon;
 
@@ -77,6 +83,12 @@ describe("GameCard", () => {
   });
 
   it.each([
+    [game_2024_05_20_certified_athletes],
+    [game_2024_05_19_mexico],
+    [game_2024_05_19_guyane],
+    [game_2024_05_19_pesaro],
+    [game_2024_05_18_ban_e_lot],
+    [game_2024_05_18_krvavec],
     [game_2024_05_05_rozas],
     [game_2024_05_04_salvador],
     [game_2024_05_03_humanitas],
