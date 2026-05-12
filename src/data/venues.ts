@@ -123,9 +123,24 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/R7abEFTb3G8s6K7eA"
   },
   {
+    id: "cap-salou",
+    name: "Pabelló Cap de Salou",
+    maps: "https://maps.app.goo.gl/cZxLiExb8Rag3a247"
+  },
+  {
+    id: "jaume-i",
+    name: "Institut Jaume I",
+    maps: "https://maps.app.goo.gl/8BTEPGc4CsqCLB3K7"
+  },
+  {
     id: "juan-cierva",
     name: "Pabellón Juan de la Cierva",
     maps: "https://maps.app.goo.gl/apR6frcXSJFu2sxe6"
+  },
+  {
+    id: "salou",
+    name: "Pabelló Municipal de Salou",
+    maps: "https://maps.app.goo.gl/4n6iD9NQmDiMWedDA"
   },
   {
     id: "lanuza",

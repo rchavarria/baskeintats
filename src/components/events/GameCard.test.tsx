@@ -19,6 +19,9 @@ import {game_2024_03_29_sp_burgos} from "../../data/games/2024-03-29-sp-burgos.t
 import {game_2024_03_30_zaragoza} from "../../data/games/2024-03-30-zaragoza.ts";
 import {game_2024_03_30_sp_burgos} from "../../data/games/2024-03-30-sp-burgos.ts";
 import {game_2024_03_31_fuenlabrada} from "../../data/games/2024-03-31-fuenlabrada.ts";
+import {game_2024_05_03_humanitas} from "../../data/games/2024-05-03-humanitas.ts";
+import {game_2024_05_04_salvador} from "../../data/games/2024-05-04-salvador.ts";
+import {game_2024_05_05_rozas} from "../../data/games/2024-05-05-rozas.ts";
 
 const fakeGame: Game = game_2025_09_20_alcorcon;
 
@@ -74,6 +77,9 @@ describe("GameCard", () => {
   });
 
   it.each([
+    [game_2024_05_05_rozas],
+    [game_2024_05_04_salvador],
+    [game_2024_05_03_humanitas],
     [game_2024_03_31_fuenlabrada],
     [game_2024_03_30_sp_burgos],
     [game_2024_03_30_zaragoza],

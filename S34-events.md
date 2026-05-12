@@ -16,17 +16,15 @@ Total de elementos: 62
 - [ ] liga-ahorramas-plata-fase3-estadisticas (09-06-2024)
 
 - [ ] torneo-ardres (10-05-2024)
-- [ ] torneo-ardres-final (20-05-2024)
 - [ ] torneo-ardres-j1 (18-05-2024)
 - [ ] torneo-ardres-j2 (18-05-2024)
 - [ ] torneo-ardres-j3 (19-05-2024)
 - [ ] torneo-ardres-j4 (19-05-2024)
 - [ ] torneo-ardres-semis (19-05-2024)
+- [ ] torneo-ardres-final (20-05-2024)
+- [ ] torneo-ardres-estadísticas (20-05-2024) Si no están me las invento
 
 - [ ] torneo-salou (01-05-2024)
-- [ ] torneo-salou-j1 (03-05-2024)
-- [ ] torneo-salou-j2 (04-05-2024)
-- [ ] torneo-salou-j3 (05-05-2024)
 - [ ] torneo-salou-estadisticas (05-05-2024)
  
 - [ ] torneo-zaragoza (26-03-2024)
@@ -78,3 +76,6 @@ Total de elementos: 62
 - [x] torneo-zaragoza-grupos-j3 (30-03-2024)
 - [x] torneo-zaragoza-p5-6 (30-03-2024)
 - [x] torneo-zaragoza-p5-8 (30-03-2024)
+- [x] torneo-salou-j1 (03-05-2024)
+- [x] torneo-salou-j2 (04-05-2024)
+- [x] torneo-salou-j3 (05-05-2024)

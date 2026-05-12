@@ -100,6 +100,9 @@ import {game_2024_04_13_alcala} from "../data/games/2024-04-13-alcala.ts";
 import {game_2024_04_28_parla} from "../data/games/2024-04-28-parla.ts";
 import {game_2024_04_28_alcorcon} from "../data/games/2024-04-28-alcorcon.ts";
 import {game_2024_05_26_zentro} from "../data/games/2024-05-26-zentro.ts";
+import {game_2024_05_05_rozas} from "../data/games/2024-05-05-rozas.ts";
+import {game_2024_05_04_salvador} from "../data/games/2024-05-04-salvador.ts";
+import {game_2024_05_03_humanitas} from "../data/games/2024-05-03-humanitas.ts";
 import {game_2024_06_02_rozas} from "../data/games/2024-06-02-rozas.ts";
 import {game_2024_06_09_estudio} from "../data/games/2024-06-09-estudio.ts";
 import {game_2026_04_20_zentro} from "../data/games/2026-04-20-zentro.ts";
@@ -407,6 +410,9 @@ export function useEvents(): EventItem[] {
     game_2024_06_09_estudio,
     game_2024_06_02_rozas,
     game_2024_05_26_zentro,
+    game_2024_05_05_rozas,
+    game_2024_05_04_salvador,
+    game_2024_05_03_humanitas,
     game_2024_04_28_alcorcon,
     game_2024_04_28_parla,
     game_2024_04_13_alcala,

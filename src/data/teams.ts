@@ -108,6 +108,13 @@ const teamList: Team[] = [
     venue: venues["default"],
   },
   {
+    id: "humanitas",
+    name: "Humanitas",
+    logo: "/logos/default.png",
+    web: "https://example.com",
+    venue: venues["default"],
+  },
+  {
     id: "joventut",
     name: "Joventut de Badalona",
     logo: "/logos/joventut-transparent.png",
@@ -259,6 +266,13 @@ const teamList: Team[] = [
     name: "Sabadell BQ Vallés",
     logo: "/logos/sabadell.png",
     web: "https://bqsabadell.com",
+    venue: venues["default"],
+  },
+  {
+    id: "salvador",
+    name: "CB Salvador",
+    logo: "/logos/default.png",
+    web: "https://example.com",
     venue: venues["default"],
   },
   {
