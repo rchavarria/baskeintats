@@ -4,19 +4,6 @@
 
 ## TODO
 
-  Total de elementos: 62
-
-- [ ] liga-ahorramas-oro-fase1-estadisticas (18-12-2023)
-- [ ] liga-ahorramas-oro-fase2-estadisticas (18-03-2024)
-- [ ] liga-ahorramas-oro-fase3-estadisticas (09-06-2024)
-- [ ] liga-ahorramas-plata-fase1-estadisticas (18-12-2023)
-- [ ] liga-ahorramas-plata-fase2-estadisticas (18-03-2024)
-- [ ] liga-ahorramas-plata-fase3-estadisticas (09-06-2024)
-
-- [ ] torneo-salou-estadisticas (05-05-2024)
- 
-- [ ] torneo-zaragoza-estadisticas (31-03-2024)
-
 ## Done
 
 - [x] liga-ahorramas-fase1-j1 (24-09-2023)
@@ -76,3 +63,11 @@
 - [x] torneo-zaragoza (26-03-2024)
 - [x] torneo-salou (01-05-2024)
 - [x] torneo-ardres (10-05-2024)
+- [x] liga-ahorramas-oro-fase1-estadisticas (18-12-2023)
+- [x] liga-ahorramas-oro-fase2-estadisticas (18-03-2024)
+- [x] liga-ahorramas-oro-fase3-estadisticas (09-06-2024)
+- [x] liga-ahorramas-plata-fase1-estadisticas (18-12-2023)
+- [x] liga-ahorramas-plata-fase2-estadisticas (18-03-2024)
+- [x] liga-ahorramas-plata-fase3-estadisticas (09-06-2024)
+- [x] torneo-salou-estadisticas (05-05-2024)
+- [x] torneo-zaragoza-estadisticas (31-03-2024)

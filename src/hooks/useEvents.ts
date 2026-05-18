@@ -236,6 +236,12 @@ import {announcement_2023_09_01_comienzo_temporada} from "../data/games/2023-09-
 import {announcement_2024_03_26_torneo_zaragoza} from "../data/games/2024-03-26-torneo-zaragoza.ts";
 import {announcement_2024_05_01_salou} from "../data/games/2024-05-01-torneo-salou.ts";
 import {announcement_2024_05_10_ardres} from "../data/games/2024-05-10-torneo-ardres.ts";
+import {stat_2023_12_18_liga_gold_f1} from "../data/games/2023-12-18-stat-liga-gold-f1.ts";
+import {stat_2023_12_18_liga_bronze_f1} from "../data/games/2023-12-18-stat-liga-bronze-f1.ts";
+import {stat_2024_03_18_liga_gold_f2} from "../data/games/2024-03-18-stat-liga-gold-f2.ts";
+import {stat_2024_03_18_liga_silver_f2} from "../data/games/2024-03-18-stat-liga-silver-f2.ts";
+import {stat_2024_05_05_salou} from "../data/games/2024-05-05-stat-salou.ts";
+import {stat_2024_03_31_zaragoza} from "../data/games/2024-03-31-stat-zaragoza.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats;
 
@@ -427,6 +433,7 @@ export function useEvents(): EventItem[] {
     game_2024_05_18_ban_e_lot,
     game_2024_05_18_krvavec,
     announcement_2024_05_10_ardres,
+    stat_2024_05_05_salou,
     game_2024_05_05_rozas,
     game_2024_05_04_salvador,
     game_2024_05_03_humanitas,
@@ -435,12 +442,15 @@ export function useEvents(): EventItem[] {
     game_2024_04_28_parla,
     game_2024_04_13_alcala,
     game_2024_04_07_parla,
+    stat_2024_03_31_zaragoza,
     game_2024_03_31_fuenlabrada,
     game_2024_03_30_sp_burgos,
     game_2024_03_30_zaragoza,
     game_2024_03_29_sp_burgos,
     game_2024_03_28_moncayo,
     announcement_2024_03_26_torneo_zaragoza,
+    stat_2024_03_18_liga_gold_f2,
+    stat_2024_03_18_liga_silver_f2,
     game_2024_03_17_virgen_atocha,
     game_2024_03_17_alcorcon,
     game_2024_03_10_tres_cantos,
@@ -461,6 +471,8 @@ export function useEvents(): EventItem[] {
     game_2024_01_21_estudiantes,
     game_2024_01_14_juande,
     game_2024_01_14_estudio,
+    stat_2023_12_18_liga_gold_f1,
+    stat_2023_12_18_liga_bronze_f1,
     game_2023_12_17_torrejon,
     game_2023_12_17_fuenlabrada,
     game_2023_12_03_san_agustin,
