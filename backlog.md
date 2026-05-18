@@ -3,20 +3,16 @@
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
 - los eventos de estadísticas (StatsCard), deben mostrar total y media de 2pt y 3pt
-- los eventos de estadísticas (StatsCard), deben mostrar la descrpción, todas las líneas de texto
+- los eventos de estadísticas (StatsCard), deben mostrar la descripción, todas las líneas de texto
 - los eventos de estadísticas (StatsCard), deben mostrar las referencias, al menos los iconitos con enlaces, y tooltip con el texto
-
-- [Temporada 2024-25](s45-timeline-items.md)
-  - Hay 95 items, llevo 58
 
 ## Done
 
-- 2026-04-22: Temporada 2024-25
-  - _publicar_ videos del Torneig Nord
-    - J1 Sabadell
-    - J2 Joventut
-    - Semis Barça
-    - 3-4 Mataró
+- 2026-05-18: Temporada 2023-24
+- 2026-05-08: Amistoso contra Estu, 15-09-2024
+- 2026-05-08: borrar videos del canal YT equivocado
+- 2026-05-07: stat_2025_04_20_mhl_zaragoza: Enlazar a la playlist de FFoFF, no de Canal CBA
+- 2026-05-07: Temporada 2024-25
 - 2026-04-22: unificar Game y AdvancedGame detail page, en uno solo, lo único que cambia es la parte de estadísticas, y debería poder apoyarse en los 3 formatters
 - 2026-04-19: eliminar código duplicado al mostrar detalles de partidos (normal Vs avanzado)
 - 2026-04-17: añadir un Event que sea las estadísticas de una fase o de un torneo, de un grupo de Games vamos

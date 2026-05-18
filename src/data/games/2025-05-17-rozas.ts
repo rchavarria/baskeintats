@@ -11,7 +11,7 @@ export const game_2025_05_17_rozas: AdvancedGame = AdvancedGameSchema.parse({
 
   competition: {
     name: "Liga Ahorramás",
-    category: "U15M",
+    category: "U14M",
     phase: "Final 4",
     round: "Semis",
   },
@@ -20,13 +20,13 @@ export const game_2025_05_17_rozas: AdvancedGame = AdvancedGameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [21, 19, 19, 16],
   },
 
   away: {
     club: teams["rozas"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [11, 20, 13, 15],
   },

@@ -11,7 +11,7 @@ export const game_2024_09_29_alcorcon: Game = GameSchema.parse({
 
   competition: {
     name: "Liga Ahorramás - Oro",
-    category: "U15M",
+    category: "U14M",
     phase: "Fase 1",
     round: "J2",
   },
@@ -20,13 +20,13 @@ export const game_2024_09_29_alcorcon: Game = GameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [9, 19, 18, 21],
   },
 
   away: {
     club: teams["alcorcon"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [8, 8, 17, 17],
   },

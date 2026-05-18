@@ -58,6 +58,59 @@ import {game_2024_09_07_joventut} from "../data/games/2024-09-07-joventut.ts";
 import {game_2024_09_06_sabadell} from "../data/games/2024-09-06-sabadell.ts";
 import {game_2024_09_15_estudiantes} from "../data/games/2024-09-15-estudiantes.ts";
 import {game_2024_10_19_ucam_murcia} from "../data/games/2024-10-19-ucam-murcia.ts";
+import {game_2024_03_17_virgen_atocha} from "../data/games/2024-03-17-virgen-atocha.ts";
+import {game_2024_03_10_tres_cantos} from "../data/games/2024-03-10-tres-cantos.ts";
+import {game_2024_03_03_canoe} from "../data/games/2024-03-03-canoe.ts";
+import {game_2024_02_25_alcala} from "../data/games/2024-02-25-alcala.ts";
+import {game_2024_02_24_juande} from "../data/games/2024-02-24-juande.ts";
+import {game_2024_02_11_virgen_atocha} from "../data/games/2024-02-11-virgen-atocha.ts";
+import {game_2024_02_04_tres_cantos} from "../data/games/2024-02-04-tres-cantos.ts";
+import {game_2024_01_28_canoe} from "../data/games/2024-01-28-canoe.ts";
+import {game_2024_01_21_alcala} from "../data/games/2024-01-21-alcala.ts";
+import {game_2024_01_14_juande} from "../data/games/2024-01-14-juande.ts";
+import {game_2023_12_17_torrejon} from "../data/games/2023-12-17-torrejon.ts";
+import {game_2023_12_03_san_agustin} from "../data/games/2023-12-03-san-agustin.ts";
+import {game_2023_11_26_torrelodones} from "../data/games/2023-11-26-torrelodones.ts";
+import {game_2023_11_19_rozas} from "../data/games/2023-11-19-rozas.ts";
+import {game_2023_11_12_leganes} from "../data/games/2023-11-12-leganes.ts";
+import {game_2023_11_05_torrejon} from "../data/games/2023-11-05-torrejon.ts";
+import {game_2023_10_22_san_agustin} from "../data/games/2023-10-22-san-agustin.ts";
+import {game_2023_10_08_torrelodones} from "../data/games/2023-10-08-torrelodones.ts";
+import {game_2023_10_01_rozas} from "../data/games/2023-10-01-rozas.ts";
+import {game_2023_09_24_leganes} from "../data/games/2023-09-24-leganes.ts";
+import {game_2023_10_22_alcorcon} from "../data/games/2023-10-22-alcorcon.ts";
+import {game_2023_12_17_fuenlabrada} from "../data/games/2023-12-17-fuenlabrada.ts";
+import {game_2024_01_14_estudio} from "../data/games/2024-01-14-estudio.ts";
+import {game_2024_01_21_estudiantes} from "../data/games/2024-01-21-estudiantes.ts";
+import {game_2024_01_28_real_madrid} from "../data/games/2024-01-28-real-madrid.ts";
+import {game_2024_02_04_fuenlabrada} from "../data/games/2024-02-04-fuenlabrada.ts";
+import {game_2024_02_11_alcorcon} from "../data/games/2024-02-11-alcorcon.ts";
+import {game_2024_02_18_estudio} from "../data/games/2024-02-18-estudio.ts";
+import {game_2024_02_25_estudiantes} from "../data/games/2024-02-25-estudiantes.ts";
+import {game_2024_03_03_real_madrid} from "../data/games/2024-03-03-real-madrid.ts";
+import {game_2024_03_10_fuenlabrada} from "../data/games/2024-03-10-fuenlabrada.ts";
+import {game_2024_03_17_alcorcon} from "../data/games/2024-03-17-alcorcon.ts";
+import {game_2024_04_07_parla} from "../data/games/2024-04-07-parla.ts";
+import {game_2024_03_31_fuenlabrada} from "../data/games/2024-03-31-fuenlabrada.ts";
+import {game_2024_03_30_sp_burgos} from "../data/games/2024-03-30-sp-burgos.ts";
+import {game_2024_03_30_zaragoza} from "../data/games/2024-03-30-zaragoza.ts";
+import {game_2024_03_29_sp_burgos} from "../data/games/2024-03-29-sp-burgos.ts";
+import {game_2024_03_28_moncayo} from "../data/games/2024-03-28-moncayo.ts";
+import {game_2024_04_13_alcala} from "../data/games/2024-04-13-alcala.ts";
+import {game_2024_04_28_parla} from "../data/games/2024-04-28-parla.ts";
+import {game_2024_04_28_alcorcon} from "../data/games/2024-04-28-alcorcon.ts";
+import {game_2024_05_26_zentro} from "../data/games/2024-05-26-zentro.ts";
+import {game_2024_05_05_rozas} from "../data/games/2024-05-05-rozas.ts";
+import {game_2024_05_04_salvador} from "../data/games/2024-05-04-salvador.ts";
+import {game_2024_05_03_humanitas} from "../data/games/2024-05-03-humanitas.ts";
+import {game_2024_06_02_rozas} from "../data/games/2024-06-02-rozas.ts";
+import {game_2024_06_09_estudio} from "../data/games/2024-06-09-estudio.ts";
+import {game_2024_05_20_certified_athletes} from "../data/games/2024-05-20-certified-athletes.ts";
+import {game_2024_05_19_mexico} from "../data/games/2024-05-19-mexico.ts";
+import {game_2024_05_19_guyane} from "../data/games/2024-05-19-guyane.ts";
+import {game_2024_05_19_pesaro} from "../data/games/2024-05-19-pesaro.ts";
+import {game_2024_05_18_ban_e_lot} from "../data/games/2024-05-18-ban-e-lot.ts";
+import {game_2024_05_18_krvavec} from "../data/games/2024-05-18-krvavec.ts";
 import {game_2026_04_20_zentro} from "../data/games/2026-04-20-zentro.ts";
 import {game_2026_04_12_canoe} from "../data/games/2026-04-12-canoe.ts";
 import {game_2026_04_11_canoe} from "../data/games/2026-04-11-canoe.ts";
@@ -164,11 +217,38 @@ import {announcement_2024_10_09_convocatoria_fbm_1} from "../data/games/2024-10-
 import {announcement_2024_10_02_convocatoria_fbclm_2} from "../data/games/2024-10-02-convocatoria-fbclm-2.ts";
 import {announcement_2024_09_18_convocatoria_fbclm_1} from "../data/games/2024-09-18-convocatoria-fbclm-1.ts";
 import {announcement_2026_05_17_cec} from "../data/games/2026-05-17-cec.ts";
+import {announcement_2025_07_23_dme_team_camp} from "../data/games/2025-07-23-dme-team-camp.ts";
+import {announcement_2025_07_26_dme_team_camp_eoss} from "../data/games/2025-07-26-dme-team-camp-eoss.ts";
+import {
+  announcement_2025_07_27_dme_team_camp_eoss_summary
+} from "../data/games/2025-07-27-dme-team-camp-eoss-summary.ts";
+import {game_2025_07_31_dme_others} from "../data/games/2025-07-31-dme-others.ts";
+import {game_2025_08_01_dme_red_black} from "../data/games/2025-08-01-dme-red-black.ts";
+import {announcement_2025_08_04_dme_team_camp_summary} from "../data/games/2025-08-04-dme-team-camp-summary.ts";
+import {game_2025_07_26_eoss_georgia} from "../data/games/2025-07-26-eoss-j5-georgia.ts";
+import {game_2025_07_26_eoss_bogans} from "../data/games/2025-07-26-eoss-j4-bogans.ts";
+import {game_2025_07_26_eoss_tnt} from "../data/games/2025-07-26-eoss-j3-tnt.ts";
+import {game_2025_07_26_eoss_florida} from "../data/games/2025-07-26-eoss-j2-florida.ts";
+import {game_2025_07_26_eoss_spartans} from "../data/games/2025-07-26-eoss-j1-spartans.ts";
+import {game_2026_05_10_torrelodones} from "../data/games/2026-05-10-torrelodones.ts";
+import {game_2026_05_10_zentro} from "../data/games/2026-05-10-zentro.ts";
+import {announcement_2023_09_01_comienzo_temporada} from "../data/games/2023-09-01-comienzo-temporada.ts";
+import {announcement_2024_03_26_torneo_zaragoza} from "../data/games/2024-03-26-torneo-zaragoza.ts";
+import {announcement_2024_05_01_salou} from "../data/games/2024-05-01-torneo-salou.ts";
+import {announcement_2024_05_10_ardres} from "../data/games/2024-05-10-torneo-ardres.ts";
+import {stat_2023_12_18_liga_gold_f1} from "../data/games/2023-12-18-stat-liga-gold-f1.ts";
+import {stat_2023_12_18_liga_bronze_f1} from "../data/games/2023-12-18-stat-liga-bronze-f1.ts";
+import {stat_2024_03_18_liga_gold_f2} from "../data/games/2024-03-18-stat-liga-gold-f2.ts";
+import {stat_2024_03_18_liga_silver_f2} from "../data/games/2024-03-18-stat-liga-silver-f2.ts";
+import {stat_2024_05_05_salou} from "../data/games/2024-05-05-stat-salou.ts";
+import {stat_2024_03_31_zaragoza} from "../data/games/2024-03-31-stat-zaragoza.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats;
 
 export function useEvents(): EventItem[] {
   const events: EventItem[] = [
+    game_2026_05_10_zentro,
+    game_2026_05_10_torrelodones,
     announcement_2026_05_17_cec,
     game_2026_04_26_real_madrid,
     game_2026_04_25_zentro,
@@ -248,6 +328,17 @@ export function useEvents(): EventItem[] {
     game_2025_09_06_rozas,
     announcement_2025_08_26_comienzo_temporada,
     announcement_2025_08_15_season_end,
+    announcement_2025_08_04_dme_team_camp_summary,
+    game_2025_08_01_dme_red_black,
+    game_2025_07_31_dme_others,
+    announcement_2025_07_27_dme_team_camp_eoss_summary,
+    game_2025_07_26_eoss_georgia,
+    game_2025_07_26_eoss_bogans,
+    game_2025_07_26_eoss_tnt,
+    game_2025_07_26_eoss_florida,
+    game_2025_07_26_eoss_spartans,
+    announcement_2025_07_26_dme_team_camp_eoss,
+    announcement_2025_07_23_dme_team_camp,
     announcement_2025_07_22_fbm_final_temporada,
     stat_2025_06_09_cec,
     game_2025_06_04_joventut,
@@ -332,6 +423,69 @@ export function useEvents(): EventItem[] {
     announcement_2024_08_28_orbita_pro_camp_2,
     announcement_2024_08_27_orbita_pro_camp_j1,
     announcement_2024_08_26_comienzo_temporada,
+    game_2024_06_09_estudio,
+    game_2024_06_02_rozas,
+    game_2024_05_26_zentro,
+    game_2024_05_20_certified_athletes,
+    game_2024_05_19_mexico,
+    game_2024_05_19_guyane,
+    game_2024_05_19_pesaro,
+    game_2024_05_18_ban_e_lot,
+    game_2024_05_18_krvavec,
+    announcement_2024_05_10_ardres,
+    stat_2024_05_05_salou,
+    game_2024_05_05_rozas,
+    game_2024_05_04_salvador,
+    game_2024_05_03_humanitas,
+    announcement_2024_05_01_salou,
+    game_2024_04_28_alcorcon,
+    game_2024_04_28_parla,
+    game_2024_04_13_alcala,
+    game_2024_04_07_parla,
+    stat_2024_03_31_zaragoza,
+    game_2024_03_31_fuenlabrada,
+    game_2024_03_30_sp_burgos,
+    game_2024_03_30_zaragoza,
+    game_2024_03_29_sp_burgos,
+    game_2024_03_28_moncayo,
+    announcement_2024_03_26_torneo_zaragoza,
+    stat_2024_03_18_liga_gold_f2,
+    stat_2024_03_18_liga_silver_f2,
+    game_2024_03_17_virgen_atocha,
+    game_2024_03_17_alcorcon,
+    game_2024_03_10_tres_cantos,
+    game_2024_03_10_fuenlabrada,
+    game_2024_03_03_canoe,
+    game_2024_03_03_real_madrid,
+    game_2024_02_25_alcala,
+    game_2024_02_25_estudiantes,
+    game_2024_02_24_juande,
+    game_2024_02_18_estudio,
+    game_2024_02_11_virgen_atocha,
+    game_2024_02_11_alcorcon,
+    game_2024_02_04_tres_cantos,
+    game_2024_02_04_fuenlabrada,
+    game_2024_01_28_canoe,
+    game_2024_01_28_real_madrid,
+    game_2024_01_21_alcala,
+    game_2024_01_21_estudiantes,
+    game_2024_01_14_juande,
+    game_2024_01_14_estudio,
+    stat_2023_12_18_liga_gold_f1,
+    stat_2023_12_18_liga_bronze_f1,
+    game_2023_12_17_torrejon,
+    game_2023_12_17_fuenlabrada,
+    game_2023_12_03_san_agustin,
+    game_2023_11_26_torrelodones,
+    game_2023_11_19_rozas,
+    game_2023_11_12_leganes,
+    game_2023_11_05_torrejon,
+    game_2023_10_22_san_agustin,
+    game_2023_10_22_alcorcon,
+    game_2023_10_08_torrelodones,
+    game_2023_10_01_rozas,
+    game_2023_09_24_leganes,
+    announcement_2023_09_01_comienzo_temporada,
   ];
 
   return events;

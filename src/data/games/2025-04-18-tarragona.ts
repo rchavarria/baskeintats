@@ -11,7 +11,7 @@ export const game_2025_04_18_tarragona: Game = GameSchema.parse({
 
   competition: {
     name: "MHL Zaragoza",
-    category: "U15M",
+    category: "U14M",
     phase: "Grupos",
     round: "J3",
   },
@@ -20,13 +20,13 @@ export const game_2025_04_18_tarragona: Game = GameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [27, 26, 12, 9],
   },
 
   away: {
     club: teams["tarragona"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [14, 14, 11, 10],
   },

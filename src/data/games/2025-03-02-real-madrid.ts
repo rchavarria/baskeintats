@@ -11,7 +11,7 @@ export const game_2025_03_02_real_madrid: Game = GameSchema.parse({
 
   competition: {
     name: "Liga Ahorramás - Oro",
-    category: "U15M",
+    category: "U14M",
     phase: "Fase 2",
     round: "J8",
   },
@@ -20,13 +20,13 @@ export const game_2025_03_02_real_madrid: Game = GameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [15, 7, 26, 10],
   },
 
   away: {
     club: teams["real-madrid"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [31, 14, 14, 31],
   },

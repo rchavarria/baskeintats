@@ -11,7 +11,7 @@ export const game_2024_09_07_barca: Game = GameSchema.parse({
 
   competition: {
     name: "Torneig Nord",
-    category: "U15M",
+    category: "U14M",
     phase: "Eliminatorias",
     round: "Semis",
   },
@@ -20,14 +20,14 @@ export const game_2024_09_07_barca: Game = GameSchema.parse({
 
   home: {
     club: teams["barca"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [25, 23, 33, 21],
   },
 
   away: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [10, 10, 7, 3],
   },
 

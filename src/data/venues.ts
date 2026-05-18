@@ -8,6 +8,16 @@ const venuesList: Venue[] = [
     maps: "https://maps.google.com/?q=Pabell%C3%B3n+Municipal+de+Alcobendas",
   },
   {
+    id: "agustin",
+    name: "Polideportivo Colegio San Agustín",
+    maps: "https://maps.app.goo.gl/DycUZKg8wHNuWAxM7"
+  },
+  {
+    id: "agustiniano",
+    name: "Colegio Agustiniano (Canoe)",
+    maps: "https://maps.app.goo.gl/7829yTZSpz7DPQWu9"
+  },
+  {
     id: "alberto-maestro",
     name: "CDM Alberto Maestro, Zaragoza",
     maps: "https://maps.app.goo.gl/esNz3j423BjMt2La6"
@@ -36,6 +46,11 @@ const venuesList: Venue[] = [
     id: "antela",
     name: "Pabellón Antela Parada",
     maps: "https://maps.app.goo.gl/NbqDdrLkJhzSXW1s8"
+  },
+  {
+    id: "ardres",
+    name: "Ardres, Francia",
+    maps: "https://maps.app.goo.gl/RJgXKLi9wKaPmwNo7"
   },
   {
     id: "arroyo",
@@ -73,6 +88,16 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/96DUrWd9EPtoDiuR6"
   },
   {
+    id: "dme",
+    name: "DME Academy",
+    maps: "https://maps.app.goo.gl/-"
+  },
+  {
+    id: "espartales",
+    name: "Complejo Deportivo Espartales, Alcalá",
+    maps: "https://maps.app.goo.gl/F54AvWSC6hcZ3yWr6"
+  },
+  {
     id: "espiniella",
     name: "Pabellón Alfredo Espiniella",
     maps: "https://maps.app.goo.gl/vxTZoM83ScD9AjkU9"
@@ -88,14 +113,49 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/LSdx5g85nvRf4yye8"
   },
   {
+    id: "gredos",
+    name: "Colegio Gredos San Diego",
+    maps: "https://maps.app.goo.gl/zVvuPVerxLL74gDi8"
+  },
+  {
+    id: "miguel-delibes",
+    name: "Pabellón C.P. Miguel Delibes",
+    maps: "https://maps.app.goo.gl/VLfs7CQiVP7ViAyT7"
+  },
+  {
     id: "gil-hernandez",
     name: "Polideportivo Antonio Gil Hernández",
     maps: "https://maps.app.goo.gl/R7abEFTb3G8s6K7eA"
   },
   {
+    id: "cap-salou",
+    name: "Pabelló Cap de Salou",
+    maps: "https://maps.app.goo.gl/cZxLiExb8Rag3a247"
+  },
+  {
+    id: "jaume-i",
+    name: "Institut Jaume I",
+    maps: "https://maps.app.goo.gl/8BTEPGc4CsqCLB3K7"
+  },
+  {
     id: "juan-cierva",
     name: "Pabellón Juan de la Cierva",
     maps: "https://maps.app.goo.gl/apR6frcXSJFu2sxe6"
+  },
+  {
+    id: "salou",
+    name: "Pabelló Municipal de Salou",
+    maps: "https://maps.app.goo.gl/4n6iD9NQmDiMWedDA"
+  },
+  {
+    id: "lanuza",
+    name: "Pabellón Municipal Juan de Lanuza, Utebo, Zaragoza",
+    maps: "https://maps.app.goo.gl/1EAdUL2FMXpADMCF6"
+  },
+  {
+    id: "fuentes",
+    name: "Polideportivo Municipal Las Fuentes, Utebo, Zaragoza",
+    maps: "https://maps.app.goo.gl/JtjekaN65AM6rsQ67"
   },
   {
     id: "juande",
@@ -106,6 +166,16 @@ const venuesList: Venue[] = [
     id: "herencia",
     name: "Pabellón Municipal de Herencia",
     maps: "https://maps.app.goo.gl/szzVTzpt7gBbGPQy5"
+  },
+  {
+    id: "leganes",
+    name: "Pabellón Carlos Sastre",
+    maps: "https://maps.app.goo.gl/6BLGpmu3GxpZcSSX7"
+  },
+  {
+    id: "limones",
+    name: "Polideportivo Javi Limones",
+    maps: "https://maps.app.goo.gl/mb741XvChQkkQkiK6"
   },
   {
     id: "linea",
@@ -126,6 +196,16 @@ const venuesList: Venue[] = [
     id: "mora",
     name: "Mora de Rubielos",
     maps: "https://maps.app.goo.gl/NbqDdrLkJhzSXW1s8"
+  },
+  {
+    id: "orange",
+    name: "Orange County Convention Center, OCCC",
+    maps: "https://maps.app.goo.gl/SpQ3FdLE5ae2pZNF6"
+  },
+  {
+    id: "paco-hernandez",
+    name: "Pabellón Paco Hernández",
+    maps: "https://maps.app.goo.gl/LSdx5g85nvRf4yye8"
   },
   {
     id: "palos",
@@ -168,16 +248,6 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/xJY19tZfk9JZoCtz8"
   },
   {
-    id: "torrelodones",
-    name: "Polideportivo Municipal Torrelodones (José Antonio Mur Capelo)",
-    maps: "https://maps.app.goo.gl/iUnZhjReYBsBe4vi9"
-  },
-  {
-    id: "triangulo-oro",
-    name: "Triángulo de Oro, Madrid",
-    maps: "https://maps.app.goo.gl/GeTR1VyHre3BrNwQA"
-  },
-  {
     id: "san-agustin",
     name: "Polideportivo San Agustín, Zaragoza",
     maps: "https://maps.app.goo.gl/9DTopGuwRh6sRjGw7"
@@ -186,6 +256,21 @@ const venuesList: Venue[] = [
     id: "sba-arena",
     name: "SBA Arena",
     maps: "https://maps.app.goo.gl/VuXT5q4kwEMsbGQL9"
+  },
+  {
+    id: "stella-maris",
+    name: "Colegio Stella Maris (La Gavia)",
+    maps: "https://maps.app.goo.gl/x3toQogK7WejQiqZ8"
+  },
+  {
+    id: "torrelodones",
+    name: "Polideportivo Municipal Torrelodones (José Antonio Mur Capelo)",
+    maps: "https://maps.app.goo.gl/iUnZhjReYBsBe4vi9"
+  },
+  {
+    id: "triangulo-oro",
+    name: "Triángulo de Oro, Madrid",
+    maps: "https://maps.app.goo.gl/GeTR1VyHre3BrNwQA"
   },
   {
     id: "valcude",

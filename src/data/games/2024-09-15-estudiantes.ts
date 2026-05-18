@@ -45,7 +45,7 @@ export const game_2024_09_15_estudiantes: FriendlyGame = FriendlyGameSchema.pars
   },
 
   videos: {
-    official: "https://youtu.be/fgC1TllhLkg",
+    official: "https://youtu.be/cZGso00VXg0",
     others: [],
   },
 

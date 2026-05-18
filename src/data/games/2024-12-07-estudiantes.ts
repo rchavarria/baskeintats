@@ -11,7 +11,7 @@ export const game_2024_12_07_estudiantes: AdvancedGame = AdvancedGameSchema.pars
 
   competition: {
     name: "III Copa Ahorramás",
-    category: "U15M",
+    category: "U14M",
     phase: "",
     round: "Jornada 1",
   },
@@ -20,13 +20,13 @@ export const game_2024_12_07_estudiantes: AdvancedGame = AdvancedGameSchema.pars
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [28, 14, 13, 28],
   },
 
   away: {
     club: teams["estudiantes"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [15, 22, 24, 26],
   },

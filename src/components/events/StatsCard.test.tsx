@@ -16,6 +16,13 @@ import {stat_2025_06_09_cec} from "../../data/games/2025-06-09-stat-cec.ts";
 import {stat_2025_03_17_league_gold_f2} from "../../data/games/2025-03-17-stat-league-gold-f2.ts";
 import {stat_2025_05_19_league_gold_final} from "../../data/games/2025-05-19-stat-league-gold-final.ts";
 import {stat_2025_04_20_mhl_zaragoza} from "../../data/games/2025-04-20-stat-mhl-zaragoza.ts";
+import {stat_2023_12_18_liga_gold_f1} from "../../data/games/2023-12-18-stat-liga-gold-f1.ts";
+import {stat_2023_12_18_liga_bronze_f1} from "../../data/games/2023-12-18-stat-liga-bronze-f1.ts";
+import {stat_2024_03_18_liga_silver_f2} from "../../data/games/2024-03-18-stat-liga-silver-f2.ts";
+import {stat_2024_06_09_liga_bronze_f3} from "../../data/games/2024-06-09-stat-liga-bronze-f3.ts";
+import {stat_2024_06_09_liga_gold_f3} from "../../data/games/2024-06-09-stat-liga-gold-f3.ts";
+import {stat_2024_05_05_salou} from "../../data/games/2024-05-05-stat-salou.ts";
+import {stat_2024_03_31_zaragoza} from "../../data/games/2024-03-31-stat-zaragoza.ts";
 
 function renderWithRouter(ui: React.ReactElement) {
   return render(<MemoryRouter>{ui}</MemoryRouter>);
@@ -37,6 +44,13 @@ describe("StatsCard", () => {
     [ stat_2024_12_16_league_gold_f1 ],
     [ stat_2024_11_24_torneo_fll ],
     [ stat_2024_09_08_torneig_nord ],
+    [ stat_2024_06_09_liga_gold_f3 ],
+    [ stat_2024_06_09_liga_bronze_f3 ],
+    [ stat_2024_05_05_salou ],
+    [ stat_2024_03_31_zaragoza ],
+    [ stat_2024_03_18_liga_silver_f2 ],
+    [ stat_2023_12_18_liga_gold_f1 ],
+    [ stat_2023_12_18_liga_bronze_f1 ],
   ])("renders stats metadata and links to the stats detail page", (stats) => {
     renderWithRouter(<StatsCard stats={stats} />);
 

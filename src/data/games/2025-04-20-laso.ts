@@ -11,7 +11,7 @@ export const game_2025_04_20_laso: Game = GameSchema.parse({
 
   competition: {
     name: "MHL Zaragoza",
-    category: "U15M",
+    category: "U14M",
     phase: "Eliminatorias",
     round: "3º-4º",
   },
@@ -20,13 +20,13 @@ export const game_2025_04_20_laso: Game = GameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [16, 19, 14, 13],
   },
 
   away: {
     club: teams["laso"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [14, 9, 18, 10],
   },

@@ -11,7 +11,7 @@ export const game_2025_03_16_tres_cantos: Game = GameSchema.parse({
 
   competition: {
     name: "Liga Ahorramás - Oro",
-    category: "U15M",
+    category: "U14M",
     phase: "Fase 2",
     round: "J10",
   },
@@ -20,14 +20,14 @@ export const game_2025_03_16_tres_cantos: Game = GameSchema.parse({
 
   home: {
     club: teams["tres-cantos"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [9, 12, 2, 0],
   },
 
   away: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [18, 29, 26, 0],
   },
 

@@ -11,7 +11,7 @@ export const game_2025_06_03_barca: AdvancedGame = AdvancedGameSchema.parse({
 
   competition: {
     name: "Campeonato de España de Clubes",
-    category: "U15M",
+    category: "U14M",
     phase: "Grupos",
     round: "J3",
   },
@@ -20,13 +20,13 @@ export const game_2025_06_03_barca: AdvancedGame = AdvancedGameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [21, 12, 1, 0],
   },
 
   away: {
     club: teams["barca"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [18, 35, 32, 0],
   },

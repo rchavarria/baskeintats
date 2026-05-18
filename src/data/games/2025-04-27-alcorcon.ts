@@ -11,7 +11,7 @@ export const game_2025_04_27_alcorcon: Game = GameSchema.parse({
 
   competition: {
     name: "Liga Ahorramás",
-    category: "U15M",
+    category: "U14M",
     phase: "Play-Offs",
     round: "J1",
   },
@@ -20,13 +20,13 @@ export const game_2025_04_27_alcorcon: Game = GameSchema.parse({
 
   home: {
     club: teams["alcobendas"],
-    category: "U15M",
+    category: "U14M",
     scores: [19, 10, 22, 13],
   },
 
   away: {
     club: teams["alcorcon"],
-    category: "U15M",
+    category: "U14M",
     opponent: true,
     scores: [15, 11, 10, 14],
   },
