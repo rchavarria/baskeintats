@@ -1,6 +1,5 @@
 # Backlog
 
-- Temporada 2023-24: [[S34-events.md]]
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
 - los eventos de estadísticas (StatsCard), deben mostrar total y media de 2pt y 3pt
@@ -9,6 +8,7 @@
 
 ## Done
 
+- 2026-05-18: Temporada 2023-24
 - 2026-05-08: Amistoso contra Estu, 15-09-2024
 - 2026-05-08: borrar videos del canal YT equivocado
 - 2026-05-07: stat_2025_04_20_mhl_zaragoza: Enlazar a la playlist de FFoFF, no de Canal CBA
