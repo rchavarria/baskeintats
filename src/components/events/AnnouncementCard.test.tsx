@@ -36,6 +36,10 @@ import {
   announcement_2025_07_27_dme_team_camp_eoss_summary
 } from "../../data/games/2025-07-27-dme-team-camp-eoss-summary.ts";
 import {announcement_2025_08_04_dme_team_camp_summary} from "../../data/games/2025-08-04-dme-team-camp-summary.ts";
+import {announcement_2023_09_01_comienzo_temporada} from "../../data/games/2023-09-01-comienzo-temporada.ts";
+import {announcement_2024_03_26_torneo_zaragoza} from "../../data/games/2024-03-26-torneo-zaragoza.ts";
+import {announcement_2024_05_01_salou} from "../../data/games/2024-05-01-torneo-salou.ts";
+import {announcement_2024_05_10_ardres} from "../../data/games/2024-05-10-torneo-ardres.ts";
 
 const fakeAnnouncement: Announcement = {
   id: "torneo-reyes-2026",
@@ -140,6 +144,10 @@ describe("AnnouncementCard", () => {
     [announcement_2024_08_28_orbita_pro_camp_2],
     [announcement_2024_08_27_orbita_pro_camp_j1],
     [announcement_2024_08_26_comienzo_temporada],
+    [announcement_2024_05_10_ardres],
+    [announcement_2024_05_01_salou],
+    [announcement_2024_03_26_torneo_zaragoza],
+    [announcement_2023_09_01_comienzo_temporada],
   ])("renders announcement metadata and links to the detail page", (announcement) => {
     renderWithRouter(<AnnouncementCard announcement={announcement} />);
 

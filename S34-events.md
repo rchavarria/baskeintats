@@ -4,9 +4,7 @@
 
 ## TODO
 
-Total de elementos: 62
-
-- [ ] comienzo-temporada (01-09-2023)
+  Total de elementos: 62
 
 - [ ] liga-ahorramas-oro-fase1-estadisticas (18-12-2023)
 - [ ] liga-ahorramas-oro-fase2-estadisticas (18-03-2024)
@@ -15,12 +13,8 @@ Total de elementos: 62
 - [ ] liga-ahorramas-plata-fase2-estadisticas (18-03-2024)
 - [ ] liga-ahorramas-plata-fase3-estadisticas (09-06-2024)
 
-- [ ] torneo-ardres (10-05-2024)
-
-- [ ] torneo-salou (01-05-2024)
 - [ ] torneo-salou-estadisticas (05-05-2024)
  
-- [ ] torneo-zaragoza (26-03-2024)
 - [ ] torneo-zaragoza-estadisticas (31-03-2024)
 
 ## Done
@@ -78,3 +72,7 @@ Total de elementos: 62
 - [x] torneo-ardres-j4 (19-05-2024)
 - [x] torneo-ardres-semis (19-05-2024)
 - [x] torneo-ardres-final (20-05-2024)
+- [x] comienzo-temporada (01-09-2023)
+- [x] torneo-zaragoza (26-03-2024)
+- [x] torneo-salou (01-05-2024)
+- [x] torneo-ardres (10-05-2024)
