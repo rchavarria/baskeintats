@@ -232,8 +232,6 @@ import {game_2025_07_26_eoss_florida} from "../data/games/2025-07-26-eoss-j2-flo
 import {game_2025_07_26_eoss_spartans} from "../data/games/2025-07-26-eoss-j1-spartans.ts";
 import {game_2026_05_10_torrelodones} from "../data/games/2026-05-10-torrelodones.ts";
 import {game_2026_05_10_zentro} from "../data/games/2026-05-10-zentro.ts";
-import {game_2026_05_10_torrelodones} from "../data/games/2026-05-10-torrelodones.ts";
-import {game_2026_05_10_zentro} from "../data/games/2026-05-10-zentro.ts";
 import {announcement_2023_09_01_comienzo_temporada} from "../data/games/2023-09-01-comienzo-temporada.ts";
 import {announcement_2024_03_26_torneo_zaragoza} from "../data/games/2024-03-26-torneo-zaragoza.ts";
 import {announcement_2024_05_01_salou} from "../data/games/2024-05-01-torneo-salou.ts";
