@@ -31,6 +31,42 @@ export const PlayerStatsSchema = z.object({
 
 export type PlayerStats = z.infer<typeof PlayerStatsSchema>;
 
+/**
+ * All player stats set to 0, no stats were recorded for the advanced game
+ */
+export const EmptyAdvancedPlayerStats = {
+  time: 0,
+  fieldGoals: {
+    made: 0,
+    attempted: 0,
+  },
+  threePointers: {
+    made: 0,
+    attempted: 0,
+  },
+  freeThrows: {
+    made: 0,
+    attempted: 0,
+  },
+  rebounds: {
+    offensive: 0,
+    defensive: 0,
+  },
+  assists: 0,
+  steals: 0,
+  turnovers: 0,
+  blocks: {
+    made: 0,
+    received: 0,
+  },
+  faults: {
+    made: 0,
+    received: 0,
+  },
+  plusMinus: 0,
+  efficiency: 0,
+};
+
 export const AdvancedPlayerStatsSchema = z.object({
   time: z.number().int().nonnegative(),
   fieldGoals: z.object({

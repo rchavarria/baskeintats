@@ -28,6 +28,8 @@ import {game_2024_05_19_pesaro} from "../../data/games/2024-05-19-pesaro.ts";
 import {game_2024_05_19_guyane} from "../../data/games/2024-05-19-guyane.ts";
 import {game_2024_05_19_mexico} from "../../data/games/2024-05-19-mexico.ts";
 import {game_2024_05_20_certified_athletes} from "../../data/games/2024-05-20-certified-athletes.ts";
+import {game_2026_05_17_fuenlabrada} from "../../data/games/2026-05-17-fuenlabrada.ts";
+import {game_2026_05_14_fuenlabrada} from "../../data/games/2026-05-14-fuenlabrada.ts";
 
 const fakeGame: Game = game_2025_09_20_alcorcon;
 
@@ -83,6 +85,8 @@ describe("GameCard", () => {
   });
 
   it.each([
+    [game_2026_05_17_fuenlabrada],
+    [game_2026_05_14_fuenlabrada],
     [game_2026_05_10_zentro],
     [game_2026_05_10_torrelodones],
   ])("renders S2025/26 game to the game card", (game) => {
