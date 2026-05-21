@@ -1,5 +1,6 @@
 # Backlog
 
+- 📹 falta video del partido oro, fase 3, j1, torrelodones
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
 - los eventos de estadísticas (StatsCard), deben mostrar total y media de 2pt y 3pt
@@ -8,6 +9,7 @@
 
 ## Done
 
+- 2026-05-25: falta video del partido plata, fase 3, j1, zentro
 - 2026-05-18: Temporada 2023-24
 - 2026-05-08: Amistoso contra Estu, 15-09-2024
 - 2026-05-08: borrar videos del canal YT equivocado

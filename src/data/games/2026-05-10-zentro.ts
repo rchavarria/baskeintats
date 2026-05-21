@@ -22,34 +22,34 @@ export const game_2026_05_10_zentro: Game = GameSchema.parse({
     club: teams["zentro"],
     category: "U15M",
     opponent: true,
-    scores: [ 0 ],
+    scores: [ 17, 14, 18, 13 ],
   },
 
   away: {
     club: teams["alcobendas"],
     category: "U15M",
-    scores: [ 0 ],
+    scores: [ 19, 24, 22, 16 ],
   },
 
   playerStats: {
-    time: 0 * 60 + 0,
-    fieldGoals: 0,
+    time: 17 * 60 + 58,
+    fieldGoals: 2,
     threePointers: 0,
     freeThrows: {
       made: 0,
       attempted: 0,
     },
-    faults: 0,
-    plusMinus: 0,
-    efficiency: 0,
+    faults: 3,
+    plusMinus: 4,
+    efficiency: 1,
   },
 
   videos: {
-    official: "https://youtu.be/-",
+    official: "https://youtu.be/_FLyU9MOmN8",
     others: [
       {
         label: "Canal CBA",
-        url: "https://youtu.be/-",
+        url: "https://youtu.be/ChhGIR0hvGY",
       },
     ],
   },
