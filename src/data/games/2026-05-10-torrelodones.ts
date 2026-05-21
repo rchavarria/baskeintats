@@ -22,46 +22,46 @@ export const game_2026_05_10_torrelodones: AdvancedGame = AdvancedGameSchema.par
     club: teams["torrelodones"],
     category: "U16M",
     opponent: true,
-    scores: [ 0 ],
+    scores: [ 17, 23, 26, 11 ],
   },
 
   away: {
     club: teams["alcobendas"],
     category: "U16M",
-    scores: [ 0 ],
+    scores: [ 17, 7, 18, 15 ],
   },
 
   playerStats: {
-    time: 0 * 60 + 0,
+    time: 23 * 60 + 9,
     fieldGoals: {
-      made: 0,
-      attempted: 0,
+      made: 3,
+      attempted: 5,
     },
     threePointers: {
-      made: 0,
-      attempted: 0,
+      made: 1,
+      attempted: 1,
     },
     freeThrows: {
-      made: 0,
-      attempted: 0,
+      made: 1,
+      attempted: 2,
     },
     rebounds: {
-      offensive: 0,
-      defensive: 0,
+      offensive: 1,
+      defensive: 5,
     },
     assists: 0,
-    steals: 0,
-    turnovers: 0,
+    steals: 1,
+    turnovers: 4,
     blocks: {
       made: 0,
       received: 0,
     },
     faults: {
-      made: 0,
-      received: 0,
+      made: 1,
+      received: 1,
     },
-    plusMinus: 0,
-    efficiency: 0,
+    plusMinus: -15,
+    efficiency: 10,
   },
 
   videos: {
