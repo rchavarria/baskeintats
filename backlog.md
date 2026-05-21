@@ -1,6 +1,7 @@
 # Backlog
 
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
+- desplegar en GitHub, hacerlo público, que sea accesible desde fuera
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
 - los eventos de estadísticas (StatsCard), deben mostrar total y media de 2pt y 3pt
