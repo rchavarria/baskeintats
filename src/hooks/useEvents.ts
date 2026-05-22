@@ -244,11 +244,13 @@ import {stat_2024_05_05_salou} from "../data/games/2024-05-05-stat-salou.ts";
 import {stat_2024_03_31_zaragoza} from "../data/games/2024-03-31-stat-zaragoza.ts";
 import {game_2026_05_14_fuenlabrada} from "../data/games/2026-05-14-fuenlabrada.ts";
 import {game_2026_05_17_fuenlabrada} from "../data/games/2026-05-17-fuenlabrada.ts";
+import {game_2026_05_24_distrito} from "../data/games/2026-05-24-distrito.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats;
 
 export function useEvents(): EventItem[] {
   const events: EventItem[] = [
+    game_2026_05_24_distrito,
     game_2026_05_17_fuenlabrada,
     game_2026_05_14_fuenlabrada,
     game_2026_05_10_zentro,
