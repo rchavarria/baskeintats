@@ -7,6 +7,7 @@
 - los eventos de estadísticas (StatsCard), deben mostrar total y media de 2pt y 3pt
 - los eventos de estadísticas (StatsCard), deben mostrar la descripción, todas las líneas de texto
 - los eventos de estadísticas (StatsCard), deben mostrar las referencias, al menos los iconitos con enlaces, y tooltip con el texto
+- code splitting: separar datos de partidos por temporada usando dynamic import() para reducir el bundle principal (~374 KB). Cargar la temporada actual de forma estática y las anteriores bajo demanda. Crear un barrel por temporada (season-2023-24.ts, season-2024-25.ts, season-2025-26.ts) y hacer useEvents asíncrono con estado de loading.
 
 ## Done
 
