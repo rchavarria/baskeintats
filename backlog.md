@@ -3,7 +3,6 @@
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
-- los eventos de estadísticas (StatsCard), deben mostrar total y media de 2pt y 3pt
 - los eventos de estadísticas (StatsCard), deben mostrar la descripción, todas las líneas de texto
 - los eventos de estadísticas (StatsCard), deben mostrar las referencias, al menos los iconitos con enlaces, y tooltip con el texto
 - desplegar en GitHub Pages: añadir `base: '/baskeintats/'` en vite.config.ts, crear workflow en `.github/workflows/deploy.yml` (npm ci + build + actions/deploy-pages), configurar Settings → Pages → Source: "GitHub Actions", y añadir `public/404.html` con redirect para que react-router funcione al recargar
@@ -11,6 +10,7 @@
 
 ## Done
 
+- 2026-05-25: los eventos de estadísticas (StatsCard), deben mostrar total y media de 2pt y 3pt
 - 2026-05-25: falta video del partido plata, fase 3, j1, zentro
 - 2026-05-18: Temporada 2023-24
 - 2026-05-08: Amistoso contra Estu, 15-09-2024
