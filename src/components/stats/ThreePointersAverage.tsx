@@ -6,16 +6,17 @@ interface ThreePointersAverageProps {
   games: (Game | AdvancedGame)[];
 }
 
-export function ThreePointersAverage({ hasAdvanced, games }: ThreePointersAverageProps) {
+function BasicThreePointersAverage({ games }: { games: (Game | AdvancedGame)[] }) {
+  const totalMade = games.reduce((s, g) => s + (g as Game).playerStats.threePointers, 0);
+
+  return <>{(totalMade / games.length).toFixed(1)}</>;
+}
+
+function AdvancedThreePointersAverage({ games }: { games: (Game | AdvancedGame)[] }) {
   const totalMade = games.reduce((s, g) => {
     if (hasAdvancedPlayerStats(g)) return s + g.playerStats.threePointers.made;
     return s + g.playerStats.threePointers;
   }, 0);
-
-  if (!hasAdvanced) {
-    return <>{(totalMade / games.length).toFixed(1)}</>;
-  }
-
   const totalAttempted = games.reduce((s, g) => {
     if (hasAdvancedPlayerStats(g)) return s + g.playerStats.threePointers.attempted;
     return s;
@@ -28,3 +29,9 @@ export function ThreePointersAverage({ hasAdvanced, games }: ThreePointersAverag
   return <>{(totalMade / games.length).toFixed(1)}</>;
 }
 
+export function ThreePointersAverage({ hasAdvanced, games }: ThreePointersAverageProps) {
+  if (!hasAdvanced) {
+    return <BasicThreePointersAverage games={games} />;
+  }
+  return <AdvancedThreePointersAverage games={games} />;
+}

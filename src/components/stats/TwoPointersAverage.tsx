@@ -6,16 +6,17 @@ interface TwoPointersAverageProps {
   games: (Game | AdvancedGame)[];
 }
 
-export function TwoPointersAverage({ hasAdvanced, games }: TwoPointersAverageProps) {
+function BasicTwoPointersAverage({ games }: { games: (Game | AdvancedGame)[] }) {
+  const totalMade = games.reduce((s, g) => s + (g as Game).playerStats.fieldGoals, 0);
+
+  return <>{(totalMade / games.length).toFixed(1)}</>;
+}
+
+function AdvancedTwoPointersAverage({ games }: { games: (Game | AdvancedGame)[] }) {
   const totalMade = games.reduce((s, g) => {
     if (hasAdvancedPlayerStats(g)) return s + g.playerStats.fieldGoals.made;
     return s + g.playerStats.fieldGoals;
   }, 0);
-
-  if (!hasAdvanced) {
-    return <>{(totalMade / games.length).toFixed(1)}</>;
-  }
-
   const totalAttempted = games.reduce((s, g) => {
     if (hasAdvancedPlayerStats(g)) return s + g.playerStats.fieldGoals.attempted;
     return s;
@@ -28,3 +29,9 @@ export function TwoPointersAverage({ hasAdvanced, games }: TwoPointersAveragePro
   return <>{(totalMade / games.length).toFixed(1)}</>;
 }
 
+export function TwoPointersAverage({ hasAdvanced, games }: TwoPointersAverageProps) {
+  if (!hasAdvanced) {
+    return <BasicTwoPointersAverage games={games} />;
+  }
+  return <AdvancedTwoPointersAverage games={games} />;
+}
