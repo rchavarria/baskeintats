@@ -4,6 +4,10 @@ import type {AdvancedGame, Game} from "../../model/GameSchema.ts";
 import {DateDisplay} from "../ui/DateDisplay.tsx";
 import {PlayedTimeDisplay} from "../ui/PlayedTimeDisplay.tsx";
 import {ShortDateDisplay} from "../ui/ShortDateDisplay.tsx";
+import {ThreePointersTotal} from "../stats/ThreePointersTotal.tsx";
+import {ThreePointersAverage} from "../stats/ThreePointersAverage.tsx";
+import {TwoPointersTotal} from "../stats/TwoPointersTotal.tsx";
+import {TwoPointersAverage} from "../stats/TwoPointersAverage.tsx";
 
 interface StatsCardProps {
   stats: Stats;
@@ -60,6 +64,8 @@ export function StatsCard({ stats }: StatsCardProps) {
   const totalEfficiency = games.reduce((s, g) => s + g.playerStats.efficiency, 0);
   const n = games.length;
 
+  const hasAdvanced = games.some(g => hasAdvancedPlayerStats(g));
+
   const th = "px-2 py-1 text-left text-xs font-semibold text-gray-500 uppercase";
   const td = "px-2 py-1 text-xs text-gray-700";
   const summaryTd = "px-2 py-1 text-xs font-semibold text-gray-800";
@@ -112,8 +118,8 @@ export function StatsCard({ stats }: StatsCardProps) {
               <td className={summaryTd} colSpan={2}>Total</td>
               <td className={summaryTd}><PlayedTimeDisplay time={totalTime} /></td>
               <td className={summaryTd}>{totalPoints}</td>
-              <td className={summaryTd} />
-              <td className={summaryTd} />
+              <td className={summaryTd}><ThreePointersTotal hasAdvanced={hasAdvanced} games={games} /></td>
+              <td className={summaryTd}><TwoPointersTotal hasAdvanced={hasAdvanced} games={games} /></td>
               <td className={summaryTd}>{totalFtm}/{totalFta}</td>
               <td className={summaryTd}>{totalPlusMinus > 0 ? "+" : ""}{totalPlusMinus}</td>
               <td className={summaryTd}>{totalEfficiency}</td>
@@ -122,8 +128,8 @@ export function StatsCard({ stats }: StatsCardProps) {
               <td className={summaryTd} colSpan={2}>Media</td>
               <td className={summaryTd}><PlayedTimeDisplay time={Math.round(totalTime / n)} /></td>
               <td className={summaryTd}>{(totalPoints / n).toFixed(1)}</td>
-              <td className={summaryTd} />
-              <td className={summaryTd} />
+              <td className={summaryTd}><ThreePointersAverage hasAdvanced={hasAdvanced} games={games} /></td>
+              <td className={summaryTd}><TwoPointersAverage hasAdvanced={hasAdvanced} games={games} /></td>
               <td className={summaryTd}>{totalFta > 0 ? `${Math.round((totalFtm / totalFta) * 100)}%` : "-"}</td>
               <td className={summaryTd}>{(totalPlusMinus / n).toFixed(1)}</td>
               <td className={summaryTd}>{(totalEfficiency / n).toFixed(1)}</td>
