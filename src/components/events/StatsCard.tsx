@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import type {Stats} from "../../model/StatsSchema.ts";
 import type {AdvancedGame, Game} from "../../model/GameSchema.ts";
+import {hasAdvancedPlayerStats} from "../../lib/hasAdvancedPlayerStats.ts";
 import {DateDisplay} from "../ui/DateDisplay.tsx";
 import {PlayedTimeDisplay} from "../ui/PlayedTimeDisplay.tsx";
 import {ShortDateDisplay} from "../ui/ShortDateDisplay.tsx";
@@ -13,9 +14,6 @@ interface StatsCardProps {
   stats: Stats;
 }
 
-function hasAdvancedPlayerStats(game: Game | AdvancedGame): game is AdvancedGame {
-  return typeof game.playerStats.fieldGoals === "object";
-}
 
 function getOpponent(game: Game | AdvancedGame): string {
   if (game.home.opponent) return game.home.club.name;

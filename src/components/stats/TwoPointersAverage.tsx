@@ -1,17 +1,14 @@
 import type {AdvancedGame, Game} from "../../model/GameSchema.ts";
+import {hasAdvancedPlayerStats} from "../../lib/hasAdvancedPlayerStats.ts";
 
 interface TwoPointersAverageProps {
   hasAdvanced: boolean;
   games: (Game | AdvancedGame)[];
 }
 
-function isAdvancedGame(game: Game | AdvancedGame): game is AdvancedGame {
-  return typeof game.playerStats.fieldGoals === "object";
-}
-
 export function TwoPointersAverage({ hasAdvanced, games }: TwoPointersAverageProps) {
   const totalMade = games.reduce((s, g) => {
-    if (isAdvancedGame(g)) return s + g.playerStats.fieldGoals.made;
+    if (hasAdvancedPlayerStats(g)) return s + g.playerStats.fieldGoals.made;
     return s + g.playerStats.fieldGoals;
   }, 0);
 
@@ -20,7 +17,7 @@ export function TwoPointersAverage({ hasAdvanced, games }: TwoPointersAveragePro
   }
 
   const totalAttempted = games.reduce((s, g) => {
-    if (isAdvancedGame(g)) return s + g.playerStats.fieldGoals.attempted;
+    if (hasAdvancedPlayerStats(g)) return s + g.playerStats.fieldGoals.attempted;
     return s;
   }, 0);
 
