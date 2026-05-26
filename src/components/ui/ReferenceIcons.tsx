@@ -1,6 +1,6 @@
 import type {Reference} from "../../model/ReferenceSchema.ts";
 
-interface ReferenceLinksProps {
+interface ReferenceIconsProps {
   references: Reference[];
 }
 
@@ -16,7 +16,7 @@ function referenceEmoji(type: Reference["type"]): string {
   }
 }
 
-export function ReferenceLinks({ references }: ReferenceLinksProps) {
+export function ReferenceIcons({ references }: ReferenceIconsProps) {
   if (!references || references.length === 0) return null;
 
   return (

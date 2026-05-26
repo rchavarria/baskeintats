@@ -9,7 +9,7 @@ import {ThreePointersTotal} from "../stats/ThreePointersTotal.tsx";
 import {ThreePointersAverage} from "../stats/ThreePointersAverage.tsx";
 import {TwoPointersTotal} from "../stats/TwoPointersTotal.tsx";
 import {TwoPointersAverage} from "../stats/TwoPointersAverage.tsx";
-import {ReferenceLinks} from "../ui/ReferenceLinks.tsx";
+import {ReferenceIcons} from "../ui/ReferenceIcons.tsx";
 
 interface StatsCardProps {
   stats: Stats;
@@ -144,7 +144,7 @@ export function StatsCard({ stats }: StatsCardProps) {
         </div>
       )}
 
-      <ReferenceLinks references={stats.references} />
+      <ReferenceIcons references={stats.references} />
 
     </Link>
   );
