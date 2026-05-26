@@ -8,6 +8,7 @@ export const game_2026_05_24_real_madrid: Game = GameSchema.parse({
   type: "game",
   season: "2025-26",
   date: "2026-05-24T15:00:00Z",
+  favourite: true,
 
   competition: {
     name: "Liga Ahorramás - Plata",
