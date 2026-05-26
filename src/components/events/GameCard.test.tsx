@@ -34,6 +34,7 @@ import {game_2026_05_24_distrito} from "../../data/games/2026-05-24-distrito.ts"
 import {game_2026_05_24_real_madrid} from "../../data/games/2026-05-24-real-madrid.ts";
 import {game_2026_05_27_distrito} from "../../data/games/2026-05-27-distrito.ts";
 import {game_2026_05_30_zentro} from "../../data/games/2026-05-30-zentro.ts";
+import {game_2026_05_31_torrelodones} from "../../data/games/2026-05-31-torrelodones.ts";
 
 const fakeGame: Game = game_2025_09_20_alcorcon;
 
@@ -89,6 +90,7 @@ describe("GameCard", () => {
   });
 
   it.each([
+    [game_2026_05_31_torrelodones],
     [game_2026_05_30_zentro],
     [game_2026_05_27_distrito],
     [game_2026_05_24_real_madrid],
