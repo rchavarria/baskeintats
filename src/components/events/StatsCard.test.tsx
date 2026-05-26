@@ -232,4 +232,165 @@ describe("StatsCard", () => {
     expect(screen.getByText("Line #3 of description")).toBeInTheDocument();
   });
 
+  it("shows an article reference with 📰 emoji", () => {
+    const stats = {
+      id: "stat-ref-article",
+      type: "stats" as const,
+      season: "2025-26",
+      date: "2026-05-25T00:00:00Z",
+      title: "Tournament",
+      category: "U15M" as const,
+      games: [makeBasicGame("g1", "2026-05-23T00:00:00Z", "Opponent", 1, 2, 3, 4)],
+      description: [],
+      references: [{ type: "article" as const, label: "News article", url: "https://example.com/article" }],
+    };
+
+    renderWithRouter(<StatsCard stats={stats} />);
+
+    const ref = screen.getByTitle("News article");
+    expect(ref).toBeInTheDocument();
+    expect(ref).toHaveTextContent("📰");
+  });
+
+  it("shows a document reference with 💼 emoji", () => {
+    const stats = {
+      id: "stat-ref-document",
+      type: "stats" as const,
+      season: "2025-26",
+      date: "2026-05-25T00:00:00Z",
+      title: "Tournament",
+      category: "U15M" as const,
+      games: [makeBasicGame("g1", "2026-05-23T00:00:00Z", "Opponent", 1, 2, 3, 4)],
+      description: [],
+      references: [{ type: "document" as const, label: "Official document", url: "https://example.com/doc" }],
+    };
+
+    renderWithRouter(<StatsCard stats={stats} />);
+
+    const ref = screen.getByTitle("Official document");
+    expect(ref).toBeInTheDocument();
+    expect(ref).toHaveTextContent("💼");
+  });
+
+  it("shows a photo reference with 📸 emoji", () => {
+    const stats = {
+      id: "stat-ref-photo",
+      type: "stats" as const,
+      season: "2025-26",
+      date: "2026-05-25T00:00:00Z",
+      title: "Tournament",
+      category: "U15M" as const,
+      games: [makeBasicGame("g1", "2026-05-23T00:00:00Z", "Opponent", 1, 2, 3, 4)],
+      description: [],
+      references: [{ type: "photo" as const, label: "Team photo", url: "https://example.com/photo" }],
+    };
+
+    renderWithRouter(<StatsCard stats={stats} />);
+
+    const ref = screen.getByTitle("Team photo");
+    expect(ref).toBeInTheDocument();
+    expect(ref).toHaveTextContent("📸");
+  });
+
+  it("shows a stats reference with 📈 emoji", () => {
+    const stats = {
+      id: "stat-ref-stats",
+      type: "stats" as const,
+      season: "2025-26",
+      date: "2026-05-25T00:00:00Z",
+      title: "Tournament",
+      category: "U15M" as const,
+      games: [makeBasicGame("g1", "2026-05-23T00:00:00Z", "Opponent", 1, 2, 3, 4)],
+      description: [],
+      references: [{ type: "stats" as const, label: "Game stats", url: "https://example.com/stats" }],
+    };
+
+    renderWithRouter(<StatsCard stats={stats} />);
+
+    const ref = screen.getByTitle("Game stats");
+    expect(ref).toBeInTheDocument();
+    expect(ref).toHaveTextContent("📈");
+  });
+
+  it("shows a social-media reference with 📱 emoji", () => {
+    const stats = {
+      id: "stat-ref-social",
+      type: "stats" as const,
+      season: "2025-26",
+      date: "2026-05-25T00:00:00Z",
+      title: "Tournament",
+      category: "U15M" as const,
+      games: [makeBasicGame("g1", "2026-05-23T00:00:00Z", "Opponent", 1, 2, 3, 4)],
+      description: [],
+      references: [{ type: "social-media" as const, label: "Instagram post", url: "https://example.com/social" }],
+    };
+
+    renderWithRouter(<StatsCard stats={stats} />);
+
+    const ref = screen.getByTitle("Instagram post");
+    expect(ref).toBeInTheDocument();
+    expect(ref).toHaveTextContent("📱");
+  });
+
+  it("shows a web reference with 💻 emoji", () => {
+    const stats = {
+      id: "stat-ref-web",
+      type: "stats" as const,
+      season: "2025-26",
+      date: "2026-05-25T00:00:00Z",
+      title: "Tournament",
+      category: "U15M" as const,
+      games: [makeBasicGame("g1", "2026-05-23T00:00:00Z", "Opponent", 1, 2, 3, 4)],
+      description: [],
+      references: [{ type: "web" as const, label: "Official website", url: "https://example.com/web" }],
+    };
+
+    renderWithRouter(<StatsCard stats={stats} />);
+
+    const ref = screen.getByTitle("Official website");
+    expect(ref).toBeInTheDocument();
+    expect(ref).toHaveTextContent("💻");
+  });
+
+  it("shows a video reference with 🎥 emoji", () => {
+    const stats = {
+      id: "stat-ref-video",
+      type: "stats" as const,
+      season: "2025-26",
+      date: "2026-05-25T00:00:00Z",
+      title: "Tournament",
+      category: "U15M" as const,
+      games: [makeBasicGame("g1", "2026-05-23T00:00:00Z", "Opponent", 1, 2, 3, 4)],
+      description: [],
+      references: [{ type: "video" as const, label: "Game highlights", url: "https://example.com/video" }],
+    };
+
+    renderWithRouter(<StatsCard stats={stats} />);
+
+    const ref = screen.getByTitle("Game highlights");
+    expect(ref).toBeInTheDocument();
+    expect(ref).toHaveTextContent("🎥");
+  });
+
+  it("uses the reference label as the title attribute of the span", () => {
+    const stats = {
+      id: "stat-ref-title",
+      type: "stats" as const,
+      season: "2025-26",
+      date: "2026-05-25T00:00:00Z",
+      title: "Tournament",
+      category: "U15M" as const,
+      games: [makeBasicGame("g1", "2026-05-23T00:00:00Z", "Opponent", 1, 2, 3, 4)],
+      description: [],
+      references: [{ type: "web" as const, label: "My custom label", url: "https://example.com/web" }],
+    };
+
+    renderWithRouter(<StatsCard stats={stats} />);
+
+    const ref = screen.getByTitle("My custom label");
+    expect(ref).toBeInTheDocument();
+    expect(ref.tagName).toBe("SPAN");
+    expect(ref).toHaveAttribute("title", "My custom label");
+  });
+
 });
