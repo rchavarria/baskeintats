@@ -45,7 +45,7 @@ export const stat_2025_12_22_torneo_teruel: Stats = StatsSchema.parse({
     {
       type: "video",
       label: "Todos los partidos se han retransmitido por el canal de YouTube de InGame Productions",
-      url: "https://www.youtube.com/@ingameproducciones2327",
+      url: "https://www.youtube.com/@ingameproducciones",
     },
   ],
 });
