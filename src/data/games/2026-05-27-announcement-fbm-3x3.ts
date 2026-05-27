@@ -32,6 +32,16 @@ export const announcement_2026_05_27_fbm_3x3: Announcement = AnnouncementSchema.
   references: [
     {
       type: "social-media",
+      label: "Anuncio del calendario del Campeonato en Melilla",
+      url: "https://x.com/BaloncestoESP/status/2059243400743031148",
+    },
+    {
+      type: "document",
+      label: "Calendario Campeonato de España 3x3 U15",
+      url: "https://www.feb.es/Documentos/Archivo/upload/CALENDARIO%20CESA%203x3%20U15%20-%20Melilla%202026.pdf",
+    },
+    {
+      type: "social-media",
       label: "Anuncio de la convocatoria",
       url: "https://x.com/FBMadrid/status/2059584540595703966",
     },
