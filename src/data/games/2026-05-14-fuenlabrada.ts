@@ -65,8 +65,13 @@ export const game_2026_05_14_fuenlabrada: AdvancedGame = AdvancedGameSchema.pars
   },
 
   videos: {
-    official: "https://youtu.be/-",
-    others: [],
+    official: "https://youtu.be/MQDhN5svKF4",
+    others: [
+      {
+        label: "Canal Pou",
+        url: "https://youtu.be/Ij3Qf3jrbMs",
+      },
+    ],
   },
 
   recap: {
