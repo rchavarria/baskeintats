@@ -18,8 +18,10 @@ export const announcement_2026_05_27_fbm_3x3: Announcement = AnnouncementSchema.
     "Primera convocatoria con el objetivo de formar los combinados que representarán a la Comunidad de Madrid en el Campeonato de España de Selecciones Autonómicas 3x3 U13 y U15",
     "Hay compañeros muy diversos",
     "Muchos del Alcobendas: Lucas, Diego, Álvaro(s), Íker...",
-    "Otros de Zentro: Szmit, Darío, Tejo...",
-    "Y otros inesperados: Chino bueno, chino malo, Andy, desconocido...",
+    "Otros de Zentro: Szmit, Darío, Tejo... (que no acuden porque juegan contra el Real Madrid, que tampoco acuden)",
+    "Y otros inesperados: Chino bueno, chino malo, Andy, desconocido... (la mitad no acuden por lo que sea)",
+    "Orte y Fuzic dan bastante buena impresión",
+    "Entrenan un poco 3x3, bastante 5x5, esta semana anunciarán quién sigue adelante",
   ],
 
   schedule: [
