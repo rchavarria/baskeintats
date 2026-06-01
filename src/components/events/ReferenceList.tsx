@@ -1,18 +1,5 @@
 import type {Reference} from "../../model/ReferenceSchema.ts";
-
-const referenceTypeEmojiMap: Record<Reference["type"], string> = {
-  "article": "📰",
-  "document": "💼",
-  "photo": "📸",
-  "stats": "📈",
-  "social-media": "📱",
-  "web": "💻",
-  "video": "🎥",
-};
-
-function ReferenceTypeEmoji({ type }: { type: Reference["type"] }) {
-  return <>{referenceTypeEmojiMap[type] || "❌❓🚨"}</>;
-}
+import {ReferenceTypeEmoji} from "../ui/ReferenceTypeEmoji.tsx";
 
 interface ReferenceListProps {
   references: Reference[] | undefined;
@@ -39,4 +26,3 @@ export function ReferenceList({ references }: ReferenceListProps) {
     </div>
   );
 }
-

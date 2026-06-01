@@ -205,4 +205,31 @@ describe("StatsCard", () => {
     expect(screen.getByText("33%")).toBeInTheDocument();
     expect(screen.getByText("77%")).toBeInTheDocument();
   });
+
+  it("shows all lines of the 'description'", () => {
+    const stats = {
+      id: "stat",
+      type: "stats" as const,
+      season: "2025-26",
+      date: "2026-05-25T00:00:00Z",
+      title: "Tournament",
+      category: "U15M" as const,
+      games: [
+        makeBasicGame("g1", "2026-05-23T00:00:00Z", "Opponent", 1, 2, 3, 4),
+      ],
+      description: [
+        "Line #1 of description",
+        "Line #2 of description",
+        "Line #3 of description",
+      ],
+      references: [],
+    };
+
+    renderWithRouter(<StatsCard stats={stats} />);
+
+    expect(screen.getByText("Line #1 of description")).toBeInTheDocument();
+    expect(screen.getByText("Line #2 of description")).toBeInTheDocument();
+    expect(screen.getByText("Line #3 of description")).toBeInTheDocument();
+  });
+
 });
