@@ -2,7 +2,7 @@ import type {AdvancedGame} from "../../model/GameSchema.ts";
 import {AdvancedGameSchema} from "../../model/GameSchema.ts";
 import {venues} from "../venues.ts";
 import {teams} from "../teams.ts";
-import {EmptyPlayerStats} from "../../model/PlayerSchema.ts";
+import {EmptyAdvancedPlayerStats} from "../../model/PlayerSchema.ts";
 
 export const game_2026_05_31_torrelodones: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f3-j4",
@@ -32,7 +32,7 @@ export const game_2026_05_31_torrelodones: AdvancedGame = AdvancedGameSchema.par
     scores: [ 21, 23, 19, 29 ],
   },
 
-  playerStats: EmptyPlayerStats,
+  playerStats: EmptyAdvancedPlayerStats,
 
   videos: {
     official: "https://youtu.be/D1Pi5W__kZI",
