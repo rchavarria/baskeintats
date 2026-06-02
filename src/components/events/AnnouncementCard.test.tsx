@@ -41,6 +41,7 @@ import {announcement_2024_03_26_torneo_zaragoza} from "../../data/games/2024-03-
 import {announcement_2024_05_01_salou} from "../../data/games/2024-05-01-torneo-salou.ts";
 import {announcement_2024_05_10_ardres} from "../../data/games/2024-05-10-torneo-ardres.ts";
 import {announcement_2026_05_27_fbm_3x3} from "../../data/games/2026-05-27-announcement-fbm-3x3.ts";
+import {announcement_2026_06_02_fbm_3x3} from "../../data/games/2026-06-02-announcement-fbm-3x3.ts";
 
 const fakeAnnouncement: Announcement = {
   id: "torneo-reyes-2026",
@@ -114,6 +115,7 @@ describe("AnnouncementCard", () => {
   });
 
   it.each([
+    [announcement_2026_06_02_fbm_3x3],
     [announcement_2026_05_27_fbm_3x3],
     [announcement_2026_05_17_cec],
     [announcement_2026_01_01_torneo_reyes],
