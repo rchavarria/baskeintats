@@ -1,6 +1,5 @@
 # Backlog
 
-- desplegar en GitHub Pages: añadir `base: '/baskeintats/'` en vite.config.ts, crear workflow en `.github/workflows/deploy.yml` (npm ci + build + actions/deploy-pages), configurar Settings → Pages → Source: "GitHub Actions", y añadir `public/404.html` con redirect para que react-router funcione al recargar
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
@@ -9,6 +8,7 @@
 
 ## Done
 
+- 2026-06-03: desplegar en GitHub Pages
 - 2026-05-26: los eventos de estadísticas (StatsCard), deben mostrar las referencias, al menos los iconitos con enlaces, y tooltip con el texto
 - 2026-05-26: los eventos de estadísticas (StatsCard), deben mostrar la descripción, todas las líneas de texto
 - 2026-05-25: los eventos de estadísticas (StatsCard), deben mostrar total y media de 2pt y 3pt
