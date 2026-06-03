@@ -1,7 +1,7 @@
 import type {Team} from "../model/TeamSchema.ts";
 import {venues} from "./venues.ts";
 
-const basename = `/basketintats`;
+const basename = `/baskeintats`;
 
 const teamList: Team[] = [
   {
