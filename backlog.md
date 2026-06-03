@@ -1,6 +1,11 @@
 # Backlog
 
 - los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
+  - revisar nombres de las competiciones
+    - hay una cardinalidad muy grande
+    - especialmente con los amistosos
+    - o algunas competiciones que se podrían mezclar con otras
+    - filtra por temporada, y ve echando un ojo
 
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
