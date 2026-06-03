@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useEffect } from "react";
 import { useEvents } from "../../hooks/useEvents";
 import { useFiltersContext } from "../../context/FiltersContext";
 
@@ -10,11 +10,34 @@ export function CompetitionFilter() {
     const names = new Set<string>();
     for (const event of events) {
       const e = event as Record<string, unknown>;
+
+      // Respect active season filter
+      if (filters.season && (e.season as string) !== filters.season) {
+        continue;
+      }
+
+      // Respect active event type filter
+      if (filters.eventType && (e.type as string) !== filters.eventType) {
+        continue;
+      }
+
       const competition = e.competition as { name: string } | undefined;
-      if (competition?.name) names.add(competition.name);
+      if (!competition?.name) {
+        continue;
+      }
+
+      names.add(competition.name);
     }
+
     return [...names].sort((a, b) => a.localeCompare(b));
-  }, [events]);
+  }, [events, filters.season, filters.eventType]);
+
+  // Reset competition if it's no longer available under the current filters
+  useEffect(() => {
+    if (filters.competition && !competitions.includes(filters.competition)) {
+      setFilters({ competition: "" });
+    }
+  }, [competitions, filters.competition, setFilters]);
 
   return (
     <div className="bg-white rounded-xl shadow border border-gray-100 p-4">
