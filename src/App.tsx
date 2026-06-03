@@ -7,7 +7,7 @@ import {AnnouncementDetailPage} from "./pages/AnnouncementDetailPage.tsx";
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/baskeintats">
       <FiltersProvider>
         <Layout>
           <Routes>
