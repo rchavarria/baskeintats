@@ -1,10 +1,9 @@
 # Backlog
 
-- PR sobre stats
+- desplegar en GitHub Pages: añadir `base: '/baskeintats/'` en vite.config.ts, crear workflow en `.github/workflows/deploy.yml` (npm ci + build + actions/deploy-pages), configurar Settings → Pages → Source: "GitHub Actions", y añadir `public/404.html` con redirect para que react-router funcione al recargar
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
-- desplegar en GitHub Pages: añadir `base: '/baskeintats/'` en vite.config.ts, crear workflow en `.github/workflows/deploy.yml` (npm ci + build + actions/deploy-pages), configurar Settings → Pages → Source: "GitHub Actions", y añadir `public/404.html` con redirect para que react-router funcione al recargar
 - code splitting: separar datos de partidos por temporada usando dynamic import() para reducir el bundle principal (~374 KB). Cargar la temporada actual de forma estática y las anteriores bajo demanda. Crear un barrel por temporada (season-2023-24.ts, season-2024-25.ts, season-2025-26.ts) y hacer useEvents asíncrono con estado de loading.
 - mostrar marcador por cuartos, y si hay prórroga, mostrarla como "OT" o "PR", y mostrar el marcador de la prórroga
 
