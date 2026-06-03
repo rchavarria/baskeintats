@@ -1,7 +1,7 @@
 import type {Team} from "../model/TeamSchema.ts";
 import {venues} from "./venues.ts";
 
-const basename = `${basename}`;
+const basename = `/basketintats`;
 
 const teamList: Team[] = [
   {
@@ -502,3 +502,8 @@ const teamList: Team[] = [
     venue: venues["default"],
   },
 ];
+
+export const teams: Record<string, Team> = teamList.reduce((acc, team) => {
+  acc[team.id] = team;
+  return acc;
+}, {} as Record<string, Team>);
