@@ -10,7 +10,7 @@ export const game_2025_05_11_alcorcon: Game = GameSchema.parse({
   type: "game",
 
   competition: {
-    name: "Liga Ahorramás",
+    name: "Liga Ahorramás - Oro",
     category: "U14M",
     phase: "Play-Offs",
     round: "J3",
