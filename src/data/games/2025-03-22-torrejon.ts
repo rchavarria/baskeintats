@@ -10,7 +10,7 @@ export const game_2025_03_22_torrejon: Game = GameSchema.parse({
   date: "2025-03-22T17:30:00Z",
 
   competition: {
-    name: "Liga Ahorramás",
+    name: "Liga Ahorramás - Plata",
     category: "U16M",
     phase: "Play-in",
     round: "J1",

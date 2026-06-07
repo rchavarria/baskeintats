@@ -10,9 +10,9 @@ export const game_2025_09_18_distrito: FriendlyGame = FriendlyGameSchema.parse({
   date: "2025-09-18T18:00:00Z",
 
   competition: {
-    name: "Amistoso de pretemporada",
+    name: "Amistoso",
     category: "U15M",
-    phase: "",
+    phase: "Pretemporada",
     round: "",
   },
 

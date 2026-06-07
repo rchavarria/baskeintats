@@ -10,9 +10,9 @@ export const game_2025_09_13_canoe: FriendlyGame = FriendlyGameSchema.parse({
   date: "2025-09-13T09:30:00Z",
 
   competition: {
-    name: "Amistoso de pretemporada",
+    name: "Amistoso",
     category: "U16M",
-    phase: "",
+    phase: "Pretemporada",
     round: "",
   },
 

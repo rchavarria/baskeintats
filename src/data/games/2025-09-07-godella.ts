@@ -10,9 +10,9 @@ export const game_2025_09_07_godella: FriendlyGame = FriendlyGameSchema.parse({
   date: "2025-09-07T09:15:00Z",
 
   competition: {
-    name: "Amistoso de pretemporada",
+    name: "Amistoso",
     category: "U16M",
-    phase: "",
+    phase: "Pretemporada",
     round: "",
   },
 

@@ -10,9 +10,9 @@ export const game_2025_09_06_rozas: FriendlyGame = FriendlyGameSchema.parse({
   date: "2025-09-06T10:00:00Z",
 
   competition: {
-    name: "Amistoso de pretemporada",
+    name: "Amistoso",
     category: "U15M",
-    phase: "",
+    phase: "Pretemporada",
     round: "",
   },
 

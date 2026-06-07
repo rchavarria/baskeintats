@@ -20,6 +20,7 @@ const gameA = {
   date: "2026-01-10T18:00:00Z",
   home: { club: { id: "alcobendas", name: "CB Alcobendas" }, opponent: false },
   away: { club: { id: "canoe", name: "Real Canoe" }, opponent: true },
+  competition: { name: "Liga Autonómica" },
 };
 
 const gameB = {
@@ -29,6 +30,7 @@ const gameB = {
   date: "2026-02-15T17:00:00Z",
   home: { club: { id: "alcobendas", name: "CB Alcobendas" }, opponent: false },
   away: { club: { id: "rozas", name: "CB Rozas" }, opponent: true },
+  competition: { name: "Copa Comunidad" },
 };
 
 const gameC = {
@@ -38,6 +40,7 @@ const gameC = {
   date: "2025-03-10T17:00:00Z",
   home: { club: { id: "zentro", name: "Zentro Basket" }, opponent: true },
   away: { club: { id: "alcobendas", name: "CB Alcobendas" }, opponent: false },
+  competition: { name: "Liga Autonómica" },
 };
 
 const announcement = {
@@ -142,29 +145,30 @@ describe("useFilteredEvents", () => {
     });
   });
 
-  describe("opponentTeam filter", () => {
-    it("returns games where the away side is the opponent", () => {
-      withFilters({ opponentTeam: "canoe" });
+  describe("competition filter", () => {
+    it("returns only events matching the competition name", () => {
+      withFilters({ competition: "Copa Comunidad" });
       const { result } = renderHook(() => useFilteredEvents());
       expect(result.current).toHaveLength(1);
-      expect(result.current[0].id).toBe("game-a");
+      expect(result.current[0].id).toBe("game-b");
     });
 
-    it("returns games where the home side is the opponent", () => {
-      withFilters({ opponentTeam: "zentro" });
+    it("returns multiple events with the same competition name", () => {
+      withFilters({ competition: "Liga Autonómica" });
       const { result } = renderHook(() => useFilteredEvents());
-      expect(result.current).toHaveLength(1);
-      expect(result.current[0].id).toBe("game-c");
+      expect(result.current).toHaveLength(2);
+      expect(result.current.map((e) => e.id)).toContain("game-a");
+      expect(result.current.map((e) => e.id)).toContain("game-c");
     });
 
-    it("excludes events without home/away (announcements, stats)", () => {
-      withFilters({ opponentTeam: "canoe" });
+    it("excludes events without competition (announcements, stats)", () => {
+      withFilters({ competition: "Liga Autonómica" });
       const { result } = renderHook(() => useFilteredEvents());
       expect(result.current.every((e) => e.type !== "announcement" && e.type !== "stats")).toBe(true);
     });
 
-    it("returns empty list when no game matches the opponent", () => {
-      withFilters({ opponentTeam: "real-madrid" });
+    it("returns empty list when no event matches the competition", () => {
+      withFilters({ competition: "Champions League" });
       const { result } = renderHook(() => useFilteredEvents());
       expect(result.current).toHaveLength(0);
     });
@@ -178,15 +182,15 @@ describe("useFilteredEvents", () => {
       expect(result.current[0].id).toBe("game-a");
     });
 
-    it("filters by season AND opponentTeam simultaneously", () => {
-      withFilters({ season: "2025-26", opponentTeam: "rozas" });
+    it("filters by season AND competition simultaneously", () => {
+      withFilters({ season: "2025-26", competition: "Copa Comunidad" });
       const { result } = renderHook(() => useFilteredEvents());
       expect(result.current).toHaveLength(1);
       expect(result.current[0].id).toBe("game-b");
     });
 
     it("returns empty list when combined filters match nothing", () => {
-      withFilters({ season: "2024-25", opponentTeam: "canoe" });
+      withFilters({ season: "2024-25", competition: "Copa Comunidad" });
       const { result } = renderHook(() => useFilteredEvents());
       expect(result.current).toHaveLength(0);
     });

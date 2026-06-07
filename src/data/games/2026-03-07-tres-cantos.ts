@@ -10,9 +10,9 @@ export const game_2026_03_07_tres_cantos: Game = GameSchema.parse({
   type: "game",
 
   competition: {
-    name: "Liga Ahorramás",
+    name: "Liga Ahorramás - Plata",
     category: "U16M",
-    phase: "Plata - Grupo D",
+    phase: "Fase 2 - Grupo D",
     round: "J8",
   },
 

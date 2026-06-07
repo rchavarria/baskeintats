@@ -11,9 +11,9 @@ export const game_2025_07_26_eoss_spartans: Game = GameSchema.parse({
   date: "2025-07-26T09:00:00Z",
 
   competition: {
-    name: "End of Summer Slam - 9th - D3",
+    name: "DME Team Camp",
     category: "U16M",
-    phase: "Grupos",
+    phase: "End of Summer Slam - 9th - D3 - Grupos",
     round: "J1",
   },
 

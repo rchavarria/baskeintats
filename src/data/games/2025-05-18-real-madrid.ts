@@ -10,7 +10,7 @@ export const game_2025_05_18_real_madrid: AdvancedGame = AdvancedGameSchema.pars
   type: "advanced-game",
 
   competition: {
-    name: "Liga Ahorramás",
+    name: "Liga Ahorramás - Oro",
     category: "U14M",
     phase: "Final 4",
     round: "Final",

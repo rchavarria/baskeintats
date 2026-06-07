@@ -10,9 +10,9 @@ export const game_2024_12_27_seleccion_cataluna: AdvancedGame = AdvancedGameSche
   date: "2024-12-27T17:00:00Z",
 
   competition: {
-    name: "Preparación Selección de Madrid para CESA",
+    name: "Campeonato de España de Selecciones Autonómicas",
     category: "U14M",
-    phase: "Amistosos",
+    phase: "Amistosos preparativos",
     round: "J3",
   },
 

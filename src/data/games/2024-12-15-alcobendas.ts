@@ -10,9 +10,9 @@ export const game_2024_12_15_alcobendas: FriendlyGame = FriendlyGameSchema.parse
   date: "2024-12-15T18:00:00Z",
 
   competition: {
-    name: "Preparación Selección de Madrid para CESA",
+    name: "Campeonato de España de Selecciones Autonómicas",
     category: "U14M",
-    phase: "Amistosos",
+    phase: "Amistosos preparativos",
     round: "J1",
   },
 

@@ -10,7 +10,7 @@ export const game_2025_01_06_seleccion_galicia: AdvancedGame = AdvancedGameSchem
   date: "2025-01-06T18:30:00Z",
 
   competition: {
-    name: "Campeonato de España de Selecciones Autonómicas 2025",
+    name: "Campeonato de España de Selecciones Autonómicas",
     category: "U14M",
     phase: "Eliminatorias",
     round: "Semis",

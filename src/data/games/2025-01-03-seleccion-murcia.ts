@@ -10,7 +10,7 @@ export const game_2025_01_03_seleccion_murcia: AdvancedGame = AdvancedGameSchema
   date: "2025-01-03T12:30:00Z",
 
   competition: {
-    name: "Campeonato de España de Selecciones Autonómicas 2025",
+    name: "Campeonato de España de Selecciones Autonómicas",
     category: "U14M",
     phase: "Grupos",
     round: "J1",

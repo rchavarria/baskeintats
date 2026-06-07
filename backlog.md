@@ -2,13 +2,13 @@
 
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
-- los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
 - code splitting: separar datos de partidos por temporada usando dynamic import() para reducir el bundle principal (~374 KB). Cargar la temporada actual de forma estática y las anteriores bajo demanda. Crear un barrel por temporada (season-2023-24.ts, season-2024-25.ts, season-2025-26.ts) y hacer useEvents asíncrono con estado de loading.
 - mostrar marcador por cuartos, y si hay prórroga, mostrarla como "OT" o "PR", y mostrar el marcador de la prórroga
 - favicon como los htmls de las otras temporadas
 
 ## Done
 
+- 2026-06-07: los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
 - 2026-06-03: desplegar en GitHub Pages
 - 2026-05-26: los eventos de estadísticas (StatsCard), deben mostrar las referencias, al menos los iconitos con enlaces, y tooltip con el texto
 - 2026-05-26: los eventos de estadísticas (StatsCard), deben mostrar la descripción, todas las líneas de texto
