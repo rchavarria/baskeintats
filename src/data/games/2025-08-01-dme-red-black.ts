@@ -14,7 +14,7 @@ export const game_2025_08_01_dme_red_black: FriendlyGame = FriendlyGameSchema.pa
     name: "DME Team Camp",
     category: "U14M",
     phase: "Weekend",
-    round: "J1",
+    round: "J2",
   },
 
   venue: venues["dme"],

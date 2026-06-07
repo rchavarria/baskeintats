@@ -13,8 +13,8 @@ export const game_2025_07_31_dme_others: FriendlyGame = FriendlyGameSchema.parse
   competition: {
     name: "DME Team Camp",
     category: "U14M",
-    phase: "",
-    round: "",
+    phase: "Weekend",
+    round: "J1",
   },
 
   venue: venues["dme"],
