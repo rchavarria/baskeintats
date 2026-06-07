@@ -12,7 +12,7 @@ export const game_2024_10_19_ucam_murcia: FriendlyGame = FriendlyGameSchema.pars
   competition: {
     name: "Amistoso",
     category: "U14M",
-    phase: "",
+    phase: "Media temporada",
     round: "",
   },
 

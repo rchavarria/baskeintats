@@ -10,9 +10,9 @@ export const game_2024_09_15_estudiantes: FriendlyGame = FriendlyGameSchema.pars
   date: "2024-09-15T11:30:00Z",
 
   competition: {
-    name: "Amistoso de pretemporada",
+    name: "Amistoso",
     category: "U14M",
-    phase: "",
+    phase: "Pretemporada",
     round: "",
   },
 
