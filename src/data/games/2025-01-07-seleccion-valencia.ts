@@ -11,7 +11,7 @@ export const game_2025_01_07_seleccion_valencia: AdvancedGame = AdvancedGameSche
   favourite: true,
 
   competition: {
-    name: "Campeonato de España de Selecciones Autonómicas 2025",
+    name: "Campeonato de España de Selecciones Autonómicas",
     category: "U14M",
     phase: "Eliminatorias",
     round: "Final",

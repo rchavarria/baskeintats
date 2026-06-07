@@ -10,7 +10,7 @@ export const game_2025_01_04_seleccion_melilla: AdvancedGame = AdvancedGameSchem
   date: "2025-01-04T08:30:00Z",
 
   competition: {
-    name: "Campeonato de España de Selecciones Autonómicas 2025",
+    name: "Campeonato de España de Selecciones Autonómicas",
     category: "U14M",
     phase: "Grupos",
     round: "J2",
