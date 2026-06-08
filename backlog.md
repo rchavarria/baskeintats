@@ -1,5 +1,7 @@
 # Backlog
 
+- favicon como los htmls de las otras temporadas
+
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - mostrar edad de la competicion (en la tarjeta de la home, en el detalle del partido)
