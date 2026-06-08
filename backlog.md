@@ -33,7 +33,7 @@
 - 2026-04-17: va a ser complicado calcular el rival si cambiamos de equipo, añadir nuevo campo en GameSchema para guardar el rival, rellenarlo a mano
 - 2026-04-17: evento de estadísticas para: fll
   - la StatsCard tiene que pintar una tabla con los partidos
-    - el tiempo jugado en la tabla se debe mostrar como 09:43, crear componente UI para ello y reulizarlo por ahí
+    - el tiempo jugado en la tabla se debe mostrar como 09:43, crear componente UI para ello y reutilizarlo por ahí
 - 2026-04-16: tests para la UI para partidos amistosos
 - 2026-04-16: convertir partidos amistosos de la temporada 2025-2026
   - 1-mar-26, amistoso contra UCAM Murcia, en casa, pero no hay muchos datos que digamos, solo el video, si quieres más, tienes que analizarlo
