@@ -1,7 +1,5 @@
 # Backlog
 
-- favicon como los htmls de las otras temporadas
-
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
 - mostrar edad de la competicion (en la tarjeta de la home, en el detalle del partido)
@@ -10,6 +8,7 @@
 
 ## Done
 
+- 2026-06-08: favicon como los htmls de las otras temporadas
 - 2026-06-07: los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
 - 2026-06-03: desplegar en GitHub Pages
 - 2026-05-26: los eventos de estadísticas (StatsCard), deben mostrar las referencias, al menos los iconitos con enlaces, y tooltip con el texto
