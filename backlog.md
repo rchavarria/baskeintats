@@ -2,12 +2,13 @@
 
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
 - mostrar 🤩 o 😭 según el resultado del partido, aunque no sé exactamente donde
-- code splitting: separar datos de partidos por temporada usando dynamic import() para reducir el bundle principal (~374 KB). Cargar la temporada actual de forma estática y las anteriores bajo demanda. Crear un barrel por temporada (season-2023-24.ts, season-2024-25.ts, season-2025-26.ts) y hacer useEvents asíncrono con estado de loading.
+- mostrar edad de la competicion (en la tarjeta de la home, en el detalle del partido)
 - mostrar marcador por cuartos, y si hay prórroga, mostrarla como "OT" o "PR", y mostrar el marcador de la prórroga
-- favicon como los htmls de las otras temporadas
+- code splitting: separar datos de partidos por temporada usando dynamic import() para reducir el bundle principal (~374 KB). Cargar la temporada actual de forma estática y las anteriores bajo demanda. Crear un barrel por temporada (season-2023-24.ts, season-2024-25.ts, season-2025-26.ts) y hacer useEvents asíncrono con estado de loading.
 
 ## Done
 
+- 2026-06-08: favicon como los htmls de las otras temporadas
 - 2026-06-07: los filtros, en lugar de por equipo, por título de la competition: liga ahorramas, fll, torneig nord...
 - 2026-06-03: desplegar en GitHub Pages
 - 2026-05-26: los eventos de estadísticas (StatsCard), deben mostrar las referencias, al menos los iconitos con enlaces, y tooltip con el texto
@@ -31,7 +32,7 @@
 - 2026-04-17: va a ser complicado calcular el rival si cambiamos de equipo, añadir nuevo campo en GameSchema para guardar el rival, rellenarlo a mano
 - 2026-04-17: evento de estadísticas para: fll
   - la StatsCard tiene que pintar una tabla con los partidos
-    - el tiempo jugado en la tabla se debe mostrar como 09:43, crear componente UI para ello y reulizarlo por ahí
+    - el tiempo jugado en la tabla se debe mostrar como 09:43, crear componente UI para ello y reutilizarlo por ahí
 - 2026-04-16: tests para la UI para partidos amistosos
 - 2026-04-16: convertir partidos amistosos de la temporada 2025-2026
   - 1-mar-26, amistoso contra UCAM Murcia, en casa, pero no hay muchos datos que digamos, solo el video, si quieres más, tienes que analizarlo
