@@ -57,6 +57,11 @@ export const announcement_2026_06_09_fbm_3x3: Announcement = AnnouncementSchema.
       label: "Calendario Campeonato de España 3x3 U15",
       url: "https://www.feb.es/Documentos/Archivo/upload/CALENDARIO%20CESA%203x3%20U15%20-%20Melilla%202026.pdf",
     },
+    {
+      type: "article",
+      label: "Torneo de selecciones 3x3 (no vienen amigos de CLM, así que no nos interesa)",
+      url: "https://www.fbm.es/noticia-88-13391/torneo-de-selecciones-3x3-en-la-caja-m%C3%A1gica",
+    },
   ],
 
 });
