@@ -1,5 +1,6 @@
 # Backlog
 
+- 🖼️ diseñar una game card similar al ejemplo tomado del Valencia-R.Madrid, cuadrados redondeados, marcadores grandes, escudos grandes... a ver dónde meto la fecha, el título de la competición, la categoría, el emoji del resultado...
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
 - mostrar marcador por cuartos, y si hay prórroga, mostrarla como "OT" o "PR", y mostrar el marcador de la prórroga
 - code splitting: separar datos de partidos por temporada usando dynamic import() para reducir el bundle principal (~374 KB). Cargar la temporada actual de forma estática y las anteriores bajo demanda. Crear un barrel por temporada (season-2023-24.ts, season-2024-25.ts, season-2025-26.ts) y hacer useEvents asíncrono con estado de loading.
