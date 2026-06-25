@@ -3,6 +3,7 @@ import { useEvents } from "../hooks/useEvents.ts";
 import { totalPoints } from "../model/GameSchema";
 import { EmptyState } from "../components/ui/EmptyState";
 import {DateTimeDisplay} from "../components/ui/DateTimeDisplay.tsx";
+import {CategoryBadge} from "../components/ui/CategoryBadge.tsx";
 import { GameVideos } from "../components/events/GameVideos";
 import {ReferenceList} from "../components/events/ReferenceList.tsx";
 import { PlayerStatsSelector } from "../components/stats/PlayerStatsSelector";
@@ -28,8 +29,9 @@ export function GameDetailPage() {
       </Link>
 
       <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
-        <div className="text-xs text-gray-400 text-center mb-6">
-          {game.competition.name} · {game.competition.phase} · {game.competition.round}
+        <div className="text-xs text-gray-400 text-center mb-6 flex items-center justify-center gap-2">
+          <span>{game.competition.name} · {game.competition.phase} · {game.competition.round}</span>
+          <CategoryBadge category={game.competition.category} season={game.season} />
         </div>
 
         <div className="text-xs text-gray-400 text-center mb-4">
