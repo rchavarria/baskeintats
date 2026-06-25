@@ -2,6 +2,7 @@ import {totalPoints} from "../../model/GameSchema";
 import type {Game} from "../../model/GameSchema";
 import {Link} from "react-router-dom";
 import {DateTimeDisplay} from "../ui/DateTimeDisplay.tsx";
+import {CategoryBadge} from "../ui/CategoryBadge.tsx";
 import {GameResultEmoji} from "./GameResultEmoji.tsx";
 
 
@@ -20,6 +21,7 @@ export function GameCard({ game }: GameCardProps) {
     >
       <div className="flex items-center justify-between text-xs text-gray-400 mb-3">
         <DateTimeDisplay isoDate={game.date} />
+        <CategoryBadge category={game.competition.category} season={game.season} />
         <span>{game.competition.name} · {game.competition.phase} · {game.competition.round}</span>
       </div>
       <div className="flex items-center justify-between gap-4">

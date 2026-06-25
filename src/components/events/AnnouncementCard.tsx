@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import type {Announcement} from "../../model/AnnouncementSchema.ts";
 import {DateDisplay} from "../ui/DateDisplay.tsx";
+import {CategoryBadge} from "../ui/CategoryBadge.tsx";
 import {AnnouncementTypeEmoji} from "./AnnouncementEmojis.tsx";
 
 interface AnnouncementCardProps {
@@ -15,7 +16,7 @@ export function AnnouncementCard({ announcement }: AnnouncementCardProps) {
     >
       <div className="flex items-center justify-between text-xs text-gray-400 mb-3">
         <DateDisplay isoDate={announcement.date} />
-        <span>{announcement.category}</span>
+        <CategoryBadge category={announcement.category} season={announcement.season} />
       </div>
       <div className="flex items-center justify-center gap-3">
         <AnnouncementTypeEmoji type={announcement.announcementType} className="text-2xl" />

@@ -6,6 +6,7 @@ import {TimeDisplay} from "../components/ui/TimeDisplay.tsx";
 import {AnnouncementTypeEmoji} from "../components/events/AnnouncementEmojis.tsx";
 import {ReferenceList} from "../components/events/ReferenceList.tsx";
 import {DateDisplay} from "../components/ui/DateDisplay.tsx";
+import {CategoryBadge} from "../components/ui/CategoryBadge.tsx";
 
 export function AnnouncementDetailPage() {
   const { announcementId } = useParams<{ announcementId: string }>();
@@ -24,9 +25,9 @@ export function AnnouncementDetailPage() {
 
       {/* Header */}
       <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
-        <div className="text-xs text-gray-400 text-center mb-2">
-          {announcement.category && <span>{announcement.category} · </span>}
-          {announcement.announcementType}
+        <div className="text-xs text-gray-400 text-center mb-2 flex items-center justify-center gap-2">
+          <CategoryBadge category={announcement.category} season={announcement.season} />
+          <span>{announcement.announcementType}</span>
         </div>
 
         <div className="flex items-center justify-center gap-3 mb-4">

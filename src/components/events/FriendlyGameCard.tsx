@@ -2,6 +2,7 @@ import type {Game} from "../../model/GameSchema";
 import {totalPoints} from "../../model/GameSchema";
 import {Link} from "react-router-dom";
 import {DateTimeDisplay} from "../ui/DateTimeDisplay.tsx";
+import {CategoryBadge} from "../ui/CategoryBadge.tsx";
 import {GameResultEmoji} from "./GameResultEmoji.tsx";
 
 interface FriendlyGameCardProps {
@@ -19,6 +20,7 @@ export function FriendlyGameCard({ game }: FriendlyGameCardProps) {
     >
       <div className="flex items-center justify-between text-xs text-gray-400 mb-3">
         <DateTimeDisplay isoDate={game.date} />
+        <CategoryBadge category={game.competition.category} season={game.season} />
         <span>
           <span aria-hidden="true">🫂 </span>
           <span>{game.competition.name}</span>
