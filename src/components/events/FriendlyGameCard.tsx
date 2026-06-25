@@ -2,6 +2,7 @@ import type {Game} from "../../model/GameSchema";
 import {totalPoints} from "../../model/GameSchema";
 import {Link} from "react-router-dom";
 import {DateTimeDisplay} from "../ui/DateTimeDisplay.tsx";
+import {GameResultEmoji} from "./GameResultEmoji.tsx";
 
 interface FriendlyGameCardProps {
   game: Game;
@@ -36,9 +37,7 @@ export function FriendlyGameCard({ game }: FriendlyGameCardProps) {
           <img src={game.away.club.logo} alt={game.away.club.name} className="w-8 h-8 object-contain" />
         </div>
       </div>
-      <div className="mt-2 text-center text-xs text-gray-400">
-        {game.type === "game" ? "Jugado" : game.type}
-      </div>
+      <GameResultEmoji game={game} />
     </Link>
   );
 }

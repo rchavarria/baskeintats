@@ -53,6 +53,13 @@ describe("FriendlyGameCard", () => {
     expect(link).toHaveAttribute("href", "/games/S56-amistoso-rozas");
   });
 
+  it("shows the result emoji (win)", () => {
+    renderWithRouter(<FriendlyGameCard game={fakeGame} />);
+
+    // away (us) 66 vs home (opponent) 50 → win
+    expect(screen.getByLabelText("Victoria")).toBeInTheDocument();
+  });
+
   it.each([
     [game_2024_09_15_estudiantes],
     [game_2024_10_19_ucam_murcia],

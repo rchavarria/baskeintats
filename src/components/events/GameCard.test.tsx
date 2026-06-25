@@ -76,6 +76,13 @@ describe("GameCard", () => {
     expect(link).toHaveAttribute("href", "/games/S56-liga-plata-f1-g4-j1");
   });
 
+  it("shows the result emoji (loss)", () => {
+    renderWithRouter(<GameCard game={fakeGame} />);
+
+    // 71 vs 85, away marked as opponent → loss
+    expect(screen.getByLabelText("Derrota")).toBeInTheDocument();
+  });
+
   it.each([
     [game_2025_07_26_eoss_georgia],
     [game_2025_07_26_eoss_bogans],
