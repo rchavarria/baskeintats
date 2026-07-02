@@ -10,34 +10,60 @@ interface GameCardProps {
   game: Game;
 }
 
-export function GameCard({ game }: GameCardProps) {
+export function GameCard({game}: GameCardProps) {
   const homeScore = totalPoints(game.home.scores);
   const awayScore = totalPoints(game.away.scores);
 
   return (
     <Link
       to={`/games/${game.id}`}
-      className="block bg-white rounded-xl shadow hover:shadow-md transition p-4 border border-gray-100"
+      className="block rounded-2xl shadow hover:shadow-lg transition overflow-hidden bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600"
     >
-      <div className="flex items-center justify-between text-xs text-gray-400 mb-3">
+      {/* Meta row: fecha, competición (posición provisional) */}
+      <div className="flex items-center justify-between gap-2 px-4 pt-3 text-[11px] text-white/90">
         <DateTimeDisplay isoDate={game.date} />
-        <CategoryBadge category={game.competition.category} season={game.season} />
-        <span>{game.competition.name} · {game.competition.phase} · {game.competition.round}</span>
+        <span className="truncate">
+          {game.competition.name} · {game.competition.phase} · {game.competition.round}
+        </span>
       </div>
-      <div className="flex items-center justify-between gap-4">
-        <div className="flex-1 flex items-center justify-end gap-2">
-          <img src={game.home.club.logo} alt={game.home.club.name} className="w-8 h-8 object-contain" />
-          <p className="font-semibold text-gray-800">{game.home.club.name}</p>
+
+      {/* Marcador principal */}
+      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 px-4 py-4 sm:px-6 sm:py-5">
+        {/* Equipo local */}
+        <div className="flex items-center justify-end gap-3 min-w-0">
+          <p className="font-extrabold text-white text-lg sm:text-xl leading-tight text-right truncate">
+            {game.home.club.name}
+          </p>
+          <img
+            src={game.home.club.logo}
+            alt={game.home.club.name}
+            className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-md shrink-0"
+          />
         </div>
-        <div className="text-center font-bold text-lg text-gray-900 w-20">
-          {homeScore} — {awayScore}
+
+        {/* Tarjeta central oscura */}
+        <div className="bg-neutral-900 text-white rounded-2xl px-5 py-3 sm:px-6 sm:py-4 flex flex-col items-center justify-center min-w-[9rem] sm:min-w-[11rem] shadow-lg">
+          <CategoryBadge category={game.competition.category} season={game.season} />
+          <p className="font-extrabold text-3xl sm:text-4xl tabular-nums leading-none mt-1">
+            {homeScore} | {awayScore}
+          </p>
+          <div className="mt-1">
+            <GameResultEmoji game={game} />
+          </div>
         </div>
-        <div className="flex-1 flex items-center gap-2">
-          <p className="font-semibold text-gray-800">{game.away.club.name}</p>
-          <img src={game.away.club.logo} alt={game.away.club.name} className="w-8 h-8 object-contain" />
+
+        {/* Equipo visitante */}
+        <div className="flex items-center justify-start gap-3 min-w-0">
+          <img
+            src={game.away.club.logo}
+            alt={game.away.club.name}
+            className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-md shrink-0"
+          />
+          <p className="font-extrabold text-white text-lg sm:text-xl leading-tight text-left truncate">
+            {game.away.club.name}
+          </p>
         </div>
       </div>
-      <GameResultEmoji game={game} />
     </Link>
   );
 }
