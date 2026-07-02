@@ -19,9 +19,8 @@ export function GameCard({game}: GameCardProps) {
       to={`/games/${game.id}`}
       className="block rounded-2xl shadow hover:shadow-lg transition overflow-hidden bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600"
     >
-      {/* Meta row: fecha, competición (posición provisional) */}
-      <div className="flex items-center justify-between gap-2 px-4 pt-3 text-[11px] text-white/90">
-        <DateTimeDisplay isoDate={game.date} />
+      {/* Meta row: competición (posición provisional) */}
+      <div className="flex items-center justify-end gap-2 px-4 pt-3 text-[11px] text-white/90">
         <span className="truncate">
           {game.competition.name} · {game.competition.phase} · {game.competition.round}
         </span>
@@ -48,6 +47,9 @@ export function GameCard({game}: GameCardProps) {
             season={game.season}
             className="!bg-transparent !text-inherit !px-0"
           />
+          <div className="text-[11px] text-white/70 leading-tight">
+            <DateTimeDisplay isoDate={game.date} />
+          </div>
           <p className="font-extrabold text-3xl sm:text-4xl tabular-nums leading-none mt-1">
             {homeScore} | {awayScore}
           </p>
