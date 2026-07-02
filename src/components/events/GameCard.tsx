@@ -33,7 +33,7 @@ export function GameCard({game}: GameCardProps) {
       </div>
 
       {/* Marcador principal */}
-      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 px-4 py-4 sm:px-6 sm:py-5">
+      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 px-4 pt-1 pb-2 sm:px-6 sm:pt-2 sm:pb-2">
         {/* Equipo local */}
         <div className="flex items-center justify-end gap-3 min-w-0">
           <p className="font-extrabold text-white text-lg sm:text-xl leading-tight text-right truncate">
@@ -59,7 +59,7 @@ export function GameCard({game}: GameCardProps) {
               <div><TimeDisplay isoDate={game.date} /></div>
             </div>
           </div>
-          <p className="font-extrabold text-3xl sm:text-4xl tabular-nums leading-none mt-1">
+          <p className="font-extrabold text-4xl sm:text-5xl tabular-nums leading-none mt-1">
             {homeScore} | {awayScore}
           </p>
         </div>
