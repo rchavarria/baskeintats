@@ -20,8 +20,8 @@ export function GameCard({game}: GameCardProps) {
       to={`/games/${game.id}`}
       className="block rounded-2xl shadow hover:shadow-lg transition overflow-hidden bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600"
     >
-      {/* Meta row: competición (posición provisional) */}
-      <div className="flex items-center justify-end gap-2 px-4 pt-3 text-[11px] text-white/90">
+      {/* Título: competición · fase · jornada */}
+      <div className="px-4 pt-3 text-center text-white text-sm sm:text-base font-semibold">
         <span className="truncate">
           {game.competition.name} · {game.competition.phase} · {game.competition.round}
         </span>
