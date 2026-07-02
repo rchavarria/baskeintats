@@ -36,7 +36,7 @@ export function GameCard({game}: GameCardProps) {
       <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 px-4 pt-1 pb-2 sm:px-6 sm:pt-2 sm:pb-2">
         {/* Equipo local */}
         <div className="flex items-center justify-end gap-3 min-w-0">
-          <p className="font-extrabold text-white text-lg sm:text-xl leading-tight text-right truncate">
+          <p className="font-extrabold text-white text-lg sm:text-xl leading-tight text-right break-words">
             {game.home.club.name}
           </p>
           <img
@@ -71,7 +71,7 @@ export function GameCard({game}: GameCardProps) {
             alt={game.away.club.name}
             className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-md shrink-0"
           />
-          <p className="font-extrabold text-white text-lg sm:text-xl leading-tight text-left truncate">
+          <p className="font-extrabold text-white text-lg sm:text-xl leading-tight text-left break-words">
             {game.away.club.name}
           </p>
         </div>
