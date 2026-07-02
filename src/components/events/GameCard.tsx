@@ -1,7 +1,8 @@
 import {totalPoints} from "../../model/GameSchema";
 import type {Game} from "../../model/GameSchema";
 import {Link} from "react-router-dom";
-import {DateTimeDisplay} from "../ui/DateTimeDisplay.tsx";
+import {DateDisplay} from "../ui/DateDisplay.tsx";
+import {TimeDisplay} from "../ui/TimeDisplay.tsx";
 import {CategoryBadge} from "../ui/CategoryBadge.tsx";
 import {GameResultEmoji} from "./GameResultEmoji.tsx";
 
@@ -10,34 +11,71 @@ interface GameCardProps {
   game: Game;
 }
 
-export function GameCard({ game }: GameCardProps) {
+export function GameCard({game}: GameCardProps) {
   const homeScore = totalPoints(game.home.scores);
   const awayScore = totalPoints(game.away.scores);
 
   return (
     <Link
       to={`/games/${game.id}`}
-      className="block bg-white rounded-xl shadow hover:shadow-md transition p-4 border border-gray-100"
+      className="relative block rounded-2xl shadow hover:shadow-lg transition overflow-hidden bg-gradient-to-br from-rose-700 via-rose-800 to-rose-900"
     >
-      <div className="flex items-center justify-between text-xs text-gray-400 mb-3">
-        <DateTimeDisplay isoDate={game.date} />
-        <CategoryBadge category={game.competition.category} season={game.season} />
-        <span>{game.competition.name} · {game.competition.phase} · {game.competition.round}</span>
+      {/* Emoji del resultado en la esquina superior derecha */}
+      <GameResultEmoji
+        game={game}
+        className="absolute top-2 right-4 text-3xl sm:text-4xl leading-none"
+      />
+      {/* Título: competición · fase · jornada */}
+      <div className="px-4 pt-3 text-center text-white text-sm sm:text-base font-semibold">
+        <span className="truncate">
+          {game.competition.name} · {game.competition.phase} · {game.competition.round}
+        </span>
       </div>
-      <div className="flex items-center justify-between gap-4">
-        <div className="flex-1 flex items-center justify-end gap-2">
-          <img src={game.home.club.logo} alt={game.home.club.name} className="w-8 h-8 object-contain" />
-          <p className="font-semibold text-gray-800">{game.home.club.name}</p>
+
+      {/* Marcador principal */}
+      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 px-4 pt-1 pb-2 sm:px-6 sm:pt-2 sm:pb-2">
+        {/* Equipo local */}
+        <div className="flex items-center justify-end gap-3 min-w-0">
+          <p className="font-extrabold text-white text-lg sm:text-xl leading-tight text-right break-words">
+            {game.home.club.name}
+          </p>
+          <img
+            src={game.home.club.logo}
+            alt={game.home.club.name}
+            className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-md shrink-0"
+          />
         </div>
-        <div className="text-center font-bold text-lg text-gray-900 w-20">
-          {homeScore} — {awayScore}
+
+        {/* Tarjeta central oscura */}
+        <div className="bg-neutral-900 text-white rounded-2xl px-5 pt-1 pb-3 sm:px-6 sm:pt-1 sm:pb-4 flex flex-col items-center justify-center min-w-[9rem] sm:min-w-[11rem] shadow-lg">
+          <CategoryBadge
+            category={game.competition.category}
+            season={game.season}
+            className="!bg-transparent !text-inherit !px-0"
+          />
+          <div className="text-[11px] text-white/70 leading-tight text-center">
+            <div className="inline-block text-left">
+              <div><DateDisplay isoDate={game.date} /></div>
+              <div><TimeDisplay isoDate={game.date} /></div>
+            </div>
+          </div>
+          <p className="font-extrabold text-4xl sm:text-5xl tabular-nums leading-none mt-1">
+            {homeScore} | {awayScore}
+          </p>
         </div>
-        <div className="flex-1 flex items-center gap-2">
-          <p className="font-semibold text-gray-800">{game.away.club.name}</p>
-          <img src={game.away.club.logo} alt={game.away.club.name} className="w-8 h-8 object-contain" />
+
+        {/* Equipo visitante */}
+        <div className="flex items-center justify-start gap-3 min-w-0">
+          <img
+            src={game.away.club.logo}
+            alt={game.away.club.name}
+            className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-md shrink-0"
+          />
+          <p className="font-extrabold text-white text-lg sm:text-xl leading-tight text-left break-words">
+            {game.away.club.name}
+          </p>
         </div>
       </div>
-      <GameResultEmoji game={game} />
     </Link>
   );
 }

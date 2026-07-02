@@ -54,7 +54,7 @@ describe("GameCard", () => {
     renderWithRouter(<GameCard game={fakeGame} />);
 
     // 9+19+28+15=71 vs 30+25+12+18=85
-    expect(screen.getByText("71 — 85")).toBeInTheDocument();
+    expect(screen.getByText("71 | 85")).toBeInTheDocument();
   });
 
   it("renders competition info", () => {

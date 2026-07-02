@@ -1,11 +1,15 @@
 # Backlog
 
+- 💄 Diseñar tarjetas de partidos amistosos en la home para que se vean más acorde con las de los partidos: ¿por qué es diferente a un partido normal?
+- 💄 Diseñar tarjetas de estadísticas en la home para que se vean más acorde con las de los partidos
+- 💄 Diseñar tarjetas de anuncios en la home para que se vean más acorde con las de los partidos
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
 - mostrar marcador por cuartos, y si hay prórroga, mostrarla como "OT" o "PR", y mostrar el marcador de la prórroga
 - code splitting: separar datos de partidos por temporada usando dynamic import() para reducir el bundle principal (~374 KB). Cargar la temporada actual de forma estática y las anteriores bajo demanda. Crear un barrel por temporada (season-2023-24.ts, season-2024-25.ts, season-2025-26.ts) y hacer useEvents asíncrono con estado de loading.
 
 ## Done
 
+- 2026-07-02: diseñar una game card similar al ejemplo tomado del Valencia-R.Madrid, cuadrados redondeados, marcadores grandes, escudos grandes...
 - 2026-06-25: mostrar edad de la competicion (en la tarjeta de la home, en el detalle del partido)
 - 2026-06-25: mostrar 🤩 o 😭 según el resultado del partido en las tarjetas de la home (🤩 victoria, 😭 derrota, 😐 empate, 🤷 sin oponente definido)
 - 2026-06-08: favicon como los htmls de las otras temporadas
