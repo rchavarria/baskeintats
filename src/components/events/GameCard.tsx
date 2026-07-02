@@ -43,7 +43,11 @@ export function GameCard({game}: GameCardProps) {
 
         {/* Tarjeta central oscura */}
         <div className="bg-neutral-900 text-white rounded-2xl px-5 py-3 sm:px-6 sm:py-4 flex flex-col items-center justify-center min-w-[9rem] sm:min-w-[11rem] shadow-lg">
-          <CategoryBadge category={game.competition.category} season={game.season} />
+          <CategoryBadge
+            category={game.competition.category}
+            season={game.season}
+            className="!bg-transparent !text-inherit !px-0"
+          />
           <p className="font-extrabold text-3xl sm:text-4xl tabular-nums leading-none mt-1">
             {homeScore} | {awayScore}
           </p>
