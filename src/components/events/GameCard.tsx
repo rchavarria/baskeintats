@@ -1,7 +1,8 @@
 import {totalPoints} from "../../model/GameSchema";
 import type {Game} from "../../model/GameSchema";
 import {Link} from "react-router-dom";
-import {DateTimeDisplay} from "../ui/DateTimeDisplay.tsx";
+import {DateDisplay} from "../ui/DateDisplay.tsx";
+import {TimeDisplay} from "../ui/TimeDisplay.tsx";
 import {CategoryBadge} from "../ui/CategoryBadge.tsx";
 import {GameResultEmoji} from "./GameResultEmoji.tsx";
 
@@ -47,8 +48,11 @@ export function GameCard({game}: GameCardProps) {
             season={game.season}
             className="!bg-transparent !text-inherit !px-0"
           />
-          <div className="text-[11px] text-white/70 leading-tight">
-            <DateTimeDisplay isoDate={game.date} />
+          <div className="text-[11px] text-white/70 leading-tight text-center">
+            <div className="inline-block text-left">
+              <div><DateDisplay isoDate={game.date} /></div>
+              <div><TimeDisplay isoDate={game.date} /></div>
+            </div>
           </div>
           <p className="font-extrabold text-3xl sm:text-4xl tabular-nums leading-none mt-1">
             {homeScore} | {awayScore}
