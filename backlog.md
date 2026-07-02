@@ -7,6 +7,7 @@
 
 ## Done
 
+- 2026-07-02: diseñar una game card similar al ejemplo tomado del Valencia-R.Madrid, cuadrados redondeados, marcadores grandes, escudos grandes...
 - 2026-06-25: mostrar edad de la competicion (en la tarjeta de la home, en el detalle del partido)
 - 2026-06-25: mostrar 🤩 o 😭 según el resultado del partido en las tarjetas de la home (🤩 victoria, 😭 derrota, 😐 empate, 🤷 sin oponente definido)
 - 2026-06-08: favicon como los htmls de las otras temporadas
