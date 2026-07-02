@@ -18,7 +18,7 @@ export function GameCard({game}: GameCardProps) {
   return (
     <Link
       to={`/games/${game.id}`}
-      className="relative block rounded-2xl shadow hover:shadow-lg transition overflow-hidden bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600"
+      className="relative block rounded-2xl shadow hover:shadow-lg transition overflow-hidden bg-gradient-to-br from-rose-700 via-rose-800 to-rose-900"
     >
       {/* Emoji del resultado en la esquina superior derecha */}
       <GameResultEmoji
