@@ -3,6 +3,7 @@ import {totalPoints} from "../../model/GameSchema";
 
 interface GameResultEmojiProps {
   game: Game | AdvancedGame | FriendlyGame;
+  className?: string;
 }
 
 type Result = {
@@ -29,10 +30,10 @@ function computeResult(game: Game | AdvancedGame | FriendlyGame): Result {
   return {emoji: "😐", label: "Empate"};
 }
 
-export function GameResultEmoji({game}: GameResultEmojiProps) {
+export function GameResultEmoji({game, className}: GameResultEmojiProps) {
   const {emoji, label} = computeResult(game);
   return (
-    <div className="mt-2 text-center text-lg">
+    <div className={className ?? "mt-2 text-center text-lg"}>
       <span role="img" aria-label={label} title={label}>
         {emoji}
       </span>

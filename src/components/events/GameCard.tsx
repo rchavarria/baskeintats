@@ -18,8 +18,13 @@ export function GameCard({game}: GameCardProps) {
   return (
     <Link
       to={`/games/${game.id}`}
-      className="block rounded-2xl shadow hover:shadow-lg transition overflow-hidden bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600"
+      className="relative block rounded-2xl shadow hover:shadow-lg transition overflow-hidden bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600"
     >
+      {/* Emoji del resultado en la esquina superior derecha */}
+      <GameResultEmoji
+        game={game}
+        className="absolute top-2 right-4 text-3xl sm:text-4xl leading-none"
+      />
       {/* Título: competición · fase · jornada */}
       <div className="px-4 pt-3 text-center text-white text-sm sm:text-base font-semibold">
         <span className="truncate">
@@ -57,9 +62,6 @@ export function GameCard({game}: GameCardProps) {
           <p className="font-extrabold text-3xl sm:text-4xl tabular-nums leading-none mt-1">
             {homeScore} | {awayScore}
           </p>
-          <div className="mt-1">
-            <GameResultEmoji game={game} />
-          </div>
         </div>
 
         {/* Equipo visitante */}
