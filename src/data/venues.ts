@@ -118,6 +118,11 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/zVvuPVerxLL74gDi8"
   },
   {
+    id: "ideo",
+    name: "Colegio IDEO Madrid",
+    maps: "https://maps.app.goo.gl/txcSN2UPAWaMkUMP9"
+  },
+  {
     id: "miguel-delibes",
     name: "Pabellón C.P. Miguel Delibes",
     maps: "https://maps.app.goo.gl/VLfs7CQiVP7ViAyT7"
