@@ -252,11 +252,13 @@ import {game_2026_05_30_zentro} from "../data/games/2026-05-30-zentro.ts";
 import {game_2026_05_31_torrelodones} from "../data/games/2026-05-31-torrelodones.ts";
 import {announcement_2026_06_02_fbm_3x3} from "../data/games/2026-06-02-announcement-fbm-3x3.ts";
 import {announcement_2026_06_09_fbm_3x3} from "../data/games/2026-06-09-announcement-fbm-3x3.ts";
+import {announcement_2026_06_29_basketlife_camp} from "../data/games/2026-06-29-campus-basketlife.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats;
 
 export function useEvents(): EventItem[] {
   const events: EventItem[] = [
+    announcement_2026_06_29_basketlife_camp,
     announcement_2026_06_09_fbm_3x3,
     announcement_2026_06_02_fbm_3x3,
     game_2026_05_31_torrelodones,
