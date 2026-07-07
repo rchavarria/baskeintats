@@ -198,6 +198,11 @@ const venuesList: Venue[] = [
     maps: "https://maps.app.goo.gl/NbqDdrLkJhzSXW1s8"
   },
   {
+    id: "ontinyent",
+    name: "Colegio La Concepción, Ontinyent",
+    maps: "https://maps.app.goo.gl/XB8yqQX5SEfAx8vB6"
+  },
+  {
     id: "orange",
     name: "Orange County Convention Center, OCCC",
     maps: "https://maps.app.goo.gl/SpQ3FdLE5ae2pZNF6"
