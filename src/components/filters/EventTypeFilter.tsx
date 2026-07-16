@@ -9,6 +9,7 @@ const EVENT_TYPE_LABELS: Record<string, string> = {
   "scheduled": "Scheduled",
   "announcement": "Announcement",
   "stats": "Stats",
+  "scouting": "Scouting",
 };
 
 export function EventTypeFilter() {

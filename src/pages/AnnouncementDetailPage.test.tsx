@@ -3,6 +3,46 @@ import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { describe, it, expect } from "vitest";
 import { AnnouncementDetailPage } from "./AnnouncementDetailPage";
 import { announcement_2026_01_01_torneo_reyes } from "../data/games/2026-01-01-torneo-reyes.ts";
+import {announcement_2026_07_06_pindown_camp} from "../data/games/2026-07-06-pindown-camp.ts";
+import {announcement_2026_06_29_basketlife_camp} from "../data/games/2026-06-29-campus-basketlife.ts";
+import {announcement_2026_06_09_fbm_3x3} from "../data/games/2026-06-09-announcement-fbm-3x3.ts";
+import {announcement_2026_06_02_fbm_3x3} from "../data/games/2026-06-02-announcement-fbm-3x3.ts";
+import {announcement_2026_05_27_fbm_3x3} from "../data/games/2026-05-27-announcement-fbm-3x3.ts";
+import {announcement_2026_05_17_cec} from "../data/games/2026-05-17-cec.ts";
+import {announcement_2025_12_26_torneo_cyl} from "../data/games/2025-12-26-torneo-cyl.ts";
+import {announcement_2025_12_19_torneo_teruel} from "../data/games/2025-12-19-torneo-teruel.ts";
+import {announcement_2025_12_17_convocatoria_fbm_1} from "../data/games/2025-12-17-convocatoria-fbm-1.ts";
+import {announcement_2025_11_18_torneo_fll} from "../data/games/2025-11-18-torneo-fll.ts";
+import {announcement_2025_08_26_comienzo_temporada} from "../data/games/2025-08-26-comienzo-temporada.ts";
+import {announcement_2025_08_15_season_end} from "../data/games/2025-08-15-season-end.ts";
+import {announcement_2025_08_04_dme_team_camp_summary} from "../data/games/2025-08-04-dme-team-camp-summary.ts";
+import {
+  announcement_2025_07_27_dme_team_camp_eoss_summary
+} from "../data/games/2025-07-27-dme-team-camp-eoss-summary.ts";
+import {announcement_2025_07_26_dme_team_camp_eoss} from "../data/games/2025-07-26-dme-team-camp-eoss.ts";
+import {announcement_2025_07_23_dme_team_camp} from "../data/games/2025-07-23-dme-team-camp.ts";
+import {announcement_2025_07_22_fbm_final_temporada} from "../data/games/2025-07-22-fbm-final-temporada.ts";
+import {announcement_2025_06_01_cec_presentacion} from "../data/games/2025-06-01-cec-presentacion.ts";
+import {announcement_2025_04_17_mhl_zaragoza} from "../data/games/2025-04-17-mhl-zaragoza.ts";
+import {announcement_2024_12_23_convocatoria_fbm_final} from "../data/games/2024-12-23-convocatoria-fbm-final.ts";
+import {announcement_2024_12_17_convocatoria_fbm_4} from "../data/games/2024-12-17-convocatoria-fbm-4.ts";
+import {announcement_2024_12_10_convocatoria_fbm_3} from "../data/games/2024-12-10-convocatoria-fbm-3.ts";
+import {announcement_2024_11_19_torneo_fll} from "../data/games/2024-11-19-torneo-fll.ts";
+import {announcement_2024_11_07_convocatoria_fbm_2} from "../data/games/2024-11-07-convocatoria-fbm-2.ts";
+import {announcement_2024_10_09_convocatoria_fbm_1} from "../data/games/2024-10-09-convocatoria-fbm-1.ts";
+import {announcement_2024_10_02_convocatoria_fbclm_2} from "../data/games/2024-10-02-convocatoria-fbclm-2.ts";
+import {announcement_2024_09_18_convocatoria_fbclm_1} from "../data/games/2024-09-18-convocatoria-fbclm-1.ts";
+import {announcement_2024_09_06_torneig_nord} from "../data/games/2024-09-06-torneig-nord.ts";
+import {announcement_2024_08_31_orbita_pro_camp_5} from "../data/games/2024-08-31-orbita-pro-camp-j5.ts";
+import {announcement_2024_08_30_orbita_pro_camp_4} from "../data/games/2024-08-30-orbita-pro-camp-j4.ts";
+import {announcement_2024_08_29_orbita_pro_camp_3} from "../data/games/2024-08-29-orbita-pro-camp-j3.ts";
+import {announcement_2024_08_28_orbita_pro_camp_2} from "../data/games/2024-08-28-orbita-pro-camp-j2.ts";
+import {announcement_2024_08_27_orbita_pro_camp_j1} from "../data/games/2024-08-27-orbita-pro-camp-j1.ts";
+import {announcement_2024_08_26_comienzo_temporada} from "../data/games/2024-08-26-comienzo-temporada.ts";
+import {announcement_2024_05_10_ardres} from "../data/games/2024-05-10-torneo-ardres.ts";
+import {announcement_2024_05_01_salou} from "../data/games/2024-05-01-torneo-salou.ts";
+import {announcement_2024_03_26_torneo_zaragoza} from "../data/games/2024-03-26-torneo-zaragoza.ts";
+import {announcement_2023_09_01_comienzo_temporada} from "../data/games/2023-09-01-comienzo-temporada.ts";
 
 function renderWithRoute(announcementId: string) {
   return render(
@@ -15,12 +55,53 @@ function renderWithRoute(announcementId: string) {
 }
 
 describe("AnnouncementDetailPage", () => {
-  it("renders announcement title, category and type", () => {
-    renderWithRoute(announcement_2026_01_01_torneo_reyes.id);
 
-    expect(screen.getByText("I Torneo de Reyes")).toBeInTheDocument();
-    expect(screen.getByText(/U15M/)).toBeInTheDocument();
-    expect(screen.getByText(/tournament/)).toBeInTheDocument();
+  it.each([
+    announcement_2026_07_06_pindown_camp,
+    announcement_2026_06_29_basketlife_camp,
+    announcement_2026_06_09_fbm_3x3,
+    announcement_2026_06_02_fbm_3x3,
+    announcement_2026_05_27_fbm_3x3,
+    announcement_2026_05_17_cec,
+    announcement_2026_01_01_torneo_reyes,
+    announcement_2025_12_26_torneo_cyl,
+    announcement_2025_12_19_torneo_teruel,
+    announcement_2025_12_17_convocatoria_fbm_1,
+    announcement_2025_11_18_torneo_fll,
+    announcement_2025_08_26_comienzo_temporada,
+    announcement_2025_08_15_season_end,
+    announcement_2025_08_04_dme_team_camp_summary,
+    announcement_2025_07_27_dme_team_camp_eoss_summary,
+    announcement_2025_07_26_dme_team_camp_eoss,
+    announcement_2025_07_23_dme_team_camp,
+    announcement_2025_07_22_fbm_final_temporada,
+    announcement_2025_06_01_cec_presentacion,
+    announcement_2025_04_17_mhl_zaragoza,
+    announcement_2024_12_23_convocatoria_fbm_final,
+    announcement_2024_12_17_convocatoria_fbm_4,
+    announcement_2024_12_10_convocatoria_fbm_3,
+    announcement_2024_11_19_torneo_fll,
+    announcement_2024_11_07_convocatoria_fbm_2,
+    announcement_2024_10_09_convocatoria_fbm_1,
+    announcement_2024_10_02_convocatoria_fbclm_2,
+    announcement_2024_09_18_convocatoria_fbclm_1,
+    announcement_2024_09_06_torneig_nord,
+    announcement_2024_08_31_orbita_pro_camp_5,
+    announcement_2024_08_30_orbita_pro_camp_4,
+    announcement_2024_08_29_orbita_pro_camp_3,
+    announcement_2024_08_28_orbita_pro_camp_2,
+    announcement_2024_08_27_orbita_pro_camp_j1,
+    announcement_2024_08_26_comienzo_temporada,
+    announcement_2024_05_10_ardres,
+    announcement_2024_05_01_salou,
+    announcement_2024_03_26_torneo_zaragoza,
+    announcement_2023_09_01_comienzo_temporada,
+  ])("renders announcement title, category and type", (announcement) => {
+    renderWithRoute(announcement.id);
+
+    expect(screen.getByText(announcement.title)).toBeInTheDocument();
+    expect(screen.getByText(announcement.category)).toBeInTheDocument();
+    expect(screen.getByText(announcement.announcementType)).toBeInTheDocument();
   });
-});
 
+});

@@ -1,5 +1,6 @@
 # Backlog
 
+- eliminar duplicidad al declarar la categoría en los esquemas, extraer y exportar un CategorySchema, como el de StatsSchema
 - 💄 Diseñar tarjetas de partidos amistosos en la home para que se vean más acorde con las de los partidos: ¿por qué es diferente a un partido normal?
 - 💄 Diseñar tarjetas de estadísticas en la home para que se vean más acorde con las de los partidos
 - 💄 Diseñar tarjetas de anuncios en la home para que se vean más acorde con las de los partidos
@@ -9,6 +10,7 @@
 
 ## Done
 
+- 2026-07-16: nuevo tipo de evento: scouting
 - 2026-07-02: diseñar una game card similar al ejemplo tomado del Valencia-R.Madrid, cuadrados redondeados, marcadores grandes, escudos grandes...
 - 2026-06-25: mostrar edad de la competicion (en la tarjeta de la home, en el detalle del partido)
 - 2026-06-25: mostrar 🤩 o 😭 según el resultado del partido en las tarjetas de la home (🤩 victoria, 😭 derrota, 😐 empate, 🤷 sin oponente definido)
