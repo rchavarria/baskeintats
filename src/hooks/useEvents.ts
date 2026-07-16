@@ -1,6 +1,8 @@
 import type {AdvancedGame, FriendlyGame, Game, ScheduledGame} from "../model/GameSchema.ts";
 import type {Announcement} from "../model/AnnouncementSchema.ts";
 import type {Stats} from "../model/StatsSchema.ts";
+import type {Scouting} from "../model/ScoutingSchema.ts";
+import {scouting_2026_07_16_example} from "../data/games/2026-07-16-scouting-example.ts";
 import {game_2025_06_04_joventut} from "../data/games/2025-06-04-joventut.ts";
 import {game_2025_06_03_barca} from "../data/games/2025-06-03-barca.ts";
 import {game_2025_06_02_elche} from "../data/games/2025-06-02-elche.ts";
@@ -259,6 +261,7 @@ type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGa
 
 export function useEvents(): EventItem[] {
   const events: EventItem[] = [
+    scouting_2026_07_16_example,
     announcement_2026_07_06_pindown_camp,
     announcement_2026_06_29_basketlife_camp,
     announcement_2026_06_09_fbm_3x3,
