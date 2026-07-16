@@ -1,5 +1,6 @@
 # Backlog
 
+- eliminar duplicidad al declarar la categoría en los esquemas, extraer y exportar un CategorySchema, como el de StatsSchema
 - nuevo tipo de evento: scouting
 - 💄 Diseñar tarjetas de partidos amistosos en la home para que se vean más acorde con las de los partidos: ¿por qué es diferente a un partido normal?
 - 💄 Diseñar tarjetas de estadísticas en la home para que se vean más acorde con las de los partidos
