@@ -14,8 +14,8 @@ export function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/announcements/:announcementId" element={<AnnouncementDetailPage />} />
-            <Route path="/scouting/:scoutingId" element={<ScoutingDetailPage />} />
             <Route path="/games/:gameId" element={<GameDetailPage />} />
+            <Route path="/scouting/:scoutingId" element={<ScoutingDetailPage />} />
           </Routes>
         </Layout>
       </FiltersProvider>

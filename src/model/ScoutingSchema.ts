@@ -28,4 +28,3 @@ export const ScoutingSchema = z.object({
 });
 
 export type Scouting = z.infer<typeof ScoutingSchema>;
-
