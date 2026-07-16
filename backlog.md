@@ -1,5 +1,6 @@
 # Backlog
 
+- nuevo tipo de evento: scouting
 - 💄 Diseñar tarjetas de partidos amistosos en la home para que se vean más acorde con las de los partidos: ¿por qué es diferente a un partido normal?
 - 💄 Diseñar tarjetas de estadísticas en la home para que se vean más acorde con las de los partidos
 - 💄 Diseñar tarjetas de anuncios en la home para que se vean más acorde con las de los partidos
