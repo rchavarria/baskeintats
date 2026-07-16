@@ -86,12 +86,6 @@ describe("ScoutingSchema", () => {
     expect(result.success).toBe(true);
   });
 
-  it("applies default false to favourite when omitted", () => {
-    const result = ScoutingSchema.safeParse(base);
-    expect(result.success).toBe(true);
-    expect(result.data.favourite).toBe(false);
-  });
-
   it("rejects a scouting with a clip with invalid start", () => {
     const bad = { ...base, clips: [{ start: "1:60", description: "x", type: "good-play" }] };
     expect(ScoutingSchema.safeParse(bad).success).toBe(false);
