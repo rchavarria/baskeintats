@@ -18,12 +18,14 @@ export const ScoutingSchema = z.object({
   type: z.literal("scouting"),
   season: z.string(),
   date: z.iso.datetime(),
-  favourite: z.boolean().optional().default(false),
-  category: z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]),
 
   title: z.string(),
+  category: z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]),
+
   description: z.array(z.string()),
+
   video: z.url(),
+
   clips: z.array(ClipSchema),
 });
 
