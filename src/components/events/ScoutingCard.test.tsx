@@ -30,21 +30,19 @@ function renderWithRouter(ui: React.ReactElement) {
 }
 
 describe("ScoutingCard", () => {
+
   it("renders the title", () => {
     renderWithRouter(<ScoutingCard scouting={fakeScouting} />);
-
     expect(screen.getByText("Análisis de bloqueos directos")).toBeInTheDocument();
   });
 
   it("renders the category badge", () => {
     renderWithRouter(<ScoutingCard scouting={fakeScouting} />);
-
     expect(screen.getByText("U16M")).toBeInTheDocument();
   });
 
   it("renders the clip count badge", () => {
     renderWithRouter(<ScoutingCard scouting={fakeScouting} />);
-
     expect(screen.getByText(/3 clips/)).toBeInTheDocument();
   });
 
@@ -86,7 +84,6 @@ describe("ScoutingCard", () => {
 
   it("renders the date", () => {
     renderWithRouter(<ScoutingCard scouting={fakeScouting} />);
-
     expect(screen.getByText(/16.*jul.*2026/i)).toBeInTheDocument();
   });
 
@@ -99,15 +96,16 @@ describe("ScoutingCard", () => {
 
   it("renders the scouting icon", () => {
     renderWithRouter(<ScoutingCard scouting={fakeScouting} />);
-
     expect(screen.getByText("🔍")).toBeInTheDocument();
   });
 
-  it("renders real example data without errors", () => {
-    renderWithRouter(<ScoutingCard scouting={scouting_2026_07_16_example} />);
+  it.each([
+    scouting_2026_07_16_example,
+  ])("renders real example data without errors", (scouting) => {
+    renderWithRouter(<ScoutingCard scouting={scouting} />);
 
-    expect(screen.getByText(scouting_2026_07_16_example.title)).toBeInTheDocument();
-    expect(screen.getByText(scouting_2026_07_16_example.category)).toBeInTheDocument();
+    expect(screen.getByText(scouting.title)).toBeInTheDocument();
+    expect(screen.getByText(scouting.category)).toBeInTheDocument();
   });
 });
 
