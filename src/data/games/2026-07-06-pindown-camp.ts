@@ -20,6 +20,7 @@ export const announcement_2026_07_06_pindown_camp: Announcement = AnnouncementSc
     "Sobre todo, son chavales de 2010, pero hay hasta de canasta pequeña",
     "Va con otros amigos de Alcobendas",
     "Y luego también van otros de la liga: Rubianes...",
+    "Y por sorpresa aparecieron más compañeros/rivales: Rupérez, Vidal...",
     "Pindown se porta muy bien, y nos deja hacer algunas actividades por la tarde con ellos",
   ],
 
