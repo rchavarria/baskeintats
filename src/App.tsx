@@ -4,6 +4,7 @@ import {HomePage} from "./pages/HomePage";
 import {GameDetailPage} from "./pages/GameDetailPage";
 import {FiltersProvider} from "./context/FiltersContext";
 import {AnnouncementDetailPage} from "./pages/AnnouncementDetailPage.tsx";
+import {ScoutingDetailPage} from "./pages/ScoutingDetailPage.tsx";
 
 export function App() {
   return (
@@ -13,6 +14,7 @@ export function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/announcements/:announcementId" element={<AnnouncementDetailPage />} />
+            <Route path="/scouting/:scoutingId" element={<ScoutingDetailPage />} />
             <Route path="/games/:gameId" element={<GameDetailPage />} />
           </Routes>
         </Layout>
