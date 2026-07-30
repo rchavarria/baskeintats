@@ -256,11 +256,13 @@ import {announcement_2026_06_02_fbm_3x3} from "../data/games/2026-06-02-announce
 import {announcement_2026_06_09_fbm_3x3} from "../data/games/2026-06-09-announcement-fbm-3x3.ts";
 import {announcement_2026_06_29_basketlife_camp} from "../data/games/2026-06-29-campus-basketlife.ts";
 import {announcement_2026_07_06_pindown_camp} from "../data/games/2026-07-06-pindown-camp.ts";
+import {announcement_2026_07_21_season_summary} from "../data/games/2026-07-21-announcement-season-summary.ts";
 
 type EventItem = Announcement | Game | ScheduledGame | AdvancedGame | FriendlyGame | Stats | Scouting;
 
 export function useEvents(): EventItem[] {
   const events: EventItem[] = [
+    announcement_2026_07_21_season_summary,
     scouting_2026_07_16_example,
     announcement_2026_07_06_pindown_camp,
     announcement_2026_06_29_basketlife_camp,
