@@ -1,4 +1,5 @@
 import {z} from "zod";
+import {CategorySchema} from "./CategorySchema.ts";
 
 // "m:ss", "mm:ss" or "h:mm:ss"
 const timestampRegex = /^(\d+:)?[0-5]?\d:[0-5]\d$/;
@@ -20,7 +21,7 @@ export const ScoutingSchema = z.object({
   date: z.iso.datetime(),
 
   title: z.string(),
-  category: z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]),
+  category: CategorySchema,
 
   description: z.array(z.string()),
 

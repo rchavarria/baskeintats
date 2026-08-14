@@ -1,8 +1,7 @@
 import { z } from "zod";
+import { CategorySchema } from "./CategorySchema.ts";
 import { ReferenceSchema } from "./ReferenceSchema.ts";
 import { GameSchema, AdvancedGameSchema } from "./GameSchema.ts";
-
-const CategorySchema = z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]);
 
 export const StatsSchema = z.object({
   id: z.string(),

@@ -1,6 +1,6 @@
-const PLAYER_BIRTH_YEAR = 2011;
+import type {Category} from "../../model/CategorySchema.ts";
 
-export type Category = "U13M" | "U14M" | "U15M" | "U16M" | "U17M" | "U18M";
+const PLAYER_BIRTH_YEAR = 2011;
 
 interface CategoryBadgeProps {
   category: Category;

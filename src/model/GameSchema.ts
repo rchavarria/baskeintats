@@ -1,4 +1,5 @@
 import {z} from "zod";
+import {CategorySchema} from "./CategorySchema.ts";
 import {PlayerStatsSchema, AdvancedPlayerStatsSchema} from "./PlayerSchema.ts";
 import {TeamSchema} from "./TeamSchema.ts";
 import {VenueSchema} from "./VenueSchema.ts";
@@ -17,7 +18,7 @@ export const GameSchema = z.object({
 
   competition: z.object({
     name: z.string(),
-    category: z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]),
+    category: CategorySchema,
     phase: z.string(),
     // "J1", "J2", "3º-4º", "Semis", "Playoffs"
     round: z.string(),
@@ -27,14 +28,14 @@ export const GameSchema = z.object({
 
   home: z.object({
     club: TeamSchema,
-    category: z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]),
+    category: CategorySchema,
     opponent: z.boolean().optional().default(false),
     scores: z.array(z.number().int().nonnegative()),
   }),
 
   away: z.object({
     club: TeamSchema,
-    category: z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]),
+    category: CategorySchema,
     opponent: z.boolean().optional().default(false),
     scores: z.array(z.number().int().nonnegative()),
   }),

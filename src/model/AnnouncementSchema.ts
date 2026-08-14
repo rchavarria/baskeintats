@@ -1,4 +1,5 @@
 import {z} from "zod";
+import {CategorySchema} from "./CategorySchema.ts";
 import {VenueSchema} from "./VenueSchema.ts";
 import {ReferenceSchema} from "./ReferenceSchema.ts";
 
@@ -24,7 +25,7 @@ export const AnnouncementSchema = z.object({
     "milestone",     // 🚀
     "tournament",    // 🏆
   ]),
-  category: z.enum(["U13M", "U14M", "U15M", "U16M", "U17M", "U18M"]),
+  category: CategorySchema,
 
   venue: VenueSchema.optional(),
 
