@@ -1,6 +1,5 @@
 # Backlog
 
-- eliminar duplicidad al declarar la categoría en los esquemas, extraer y exportar un CategorySchema, como el de StatsSchema
 - 🗑️ eliminar `src/lib/filters.ts`: es código muerto (`filterGames` no se importa en ningún sitio, el filtrado real lo hace `useFilteredEvents`) y además tiene un import roto a `../types/game`, directorio que no existe (el tipo `Game` está en `src/model/GameSchema.ts`)
 - 💄 Diseñar tarjetas de partidos amistosos en la home para que se vean más acorde con las de los partidos: ¿por qué es diferente a un partido normal?
 - 💄 Diseñar tarjetas de estadísticas en la home para que se vean más acorde con las de los partidos
@@ -12,6 +11,7 @@
 
 ## Done
 
+- 2026-08-14: eliminar duplicidad al declarar la categoría en los esquemas, extraer y exportar un CategorySchema, como el de StatsSchema
 - 2026-07-16: nuevo tipo de evento: scouting
 - 2026-07-02: diseñar una game card similar al ejemplo tomado del Valencia-R.Madrid, cuadrados redondeados, marcadores grandes, escudos grandes...
 - 2026-06-25: mostrar edad de la competicion (en la tarjeta de la home, en el detalle del partido)
