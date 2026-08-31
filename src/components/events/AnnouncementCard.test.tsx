@@ -46,6 +46,7 @@ import {announcement_2026_06_09_fbm_3x3} from "../../data/games/2026-06-09-annou
 import {announcement_2026_06_29_basketlife_camp} from "../../data/games/2026-06-29-campus-basketlife.ts";
 import {announcement_2026_07_06_pindown_camp} from "../../data/games/2026-07-06-pindown-camp.ts";
 import {announcement_2026_07_21_season_summary} from "../../data/games/2026-07-21-announcement-season-summary.ts";
+import {announcement_2026_08_24_season_start} from "../../data/games/2026-08-24-announcement-season-start.ts";
 
 const fakeAnnouncement: Announcement = {
   id: "torneo-reyes-2026",
@@ -119,6 +120,7 @@ describe("AnnouncementCard", () => {
   });
 
   it.each([
+    announcement_2026_08_24_season_start,
     announcement_2026_07_21_season_summary,
     announcement_2026_07_06_pindown_camp,
     announcement_2026_06_29_basketlife_camp,
