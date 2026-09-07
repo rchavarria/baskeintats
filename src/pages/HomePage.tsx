@@ -3,7 +3,6 @@ import {GameCard} from "../components/events/GameCard";
 import {EmptyState} from "../components/ui/EmptyState";
 import {AnnouncementCard} from "../components/events/AnnouncementCard.tsx";
 import {DefaultCard} from "../components/events/DefaultCard.tsx";
-import {FriendlyGameCard} from "../components/events/FriendlyGameCard.tsx";
 import {StatsCard} from "../components/events/StatsCard.tsx";
 import {ScoutingCard} from "../components/events/ScoutingCard.tsx";
 import {SeasonFilter} from "../components/filters/SeasonFilter.tsx";
@@ -36,7 +35,6 @@ export function HomePage() {
                 case 'scouting':
                   return <ScoutingCard key={e.id} scouting={e} />;
                 case 'friendly-game':
-                  return <FriendlyGameCard key={e.id} game={e} />;
                 case 'advanced-game':
                 case 'game':
                   return <GameCard key={e.id} game={e} />;
