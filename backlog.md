@@ -1,6 +1,6 @@
 # Backlog
 
-- 💄 Diseñar tarjetas de partidos amistosos en la home para que se vean más acorde con las de los partidos: ¿por qué es diferente a un partido normal?
+- Añadir linter (biome) al proyecto
 - 💄 Diseñar tarjetas de estadísticas en la home para que se vean más acorde con las de los partidos
 - 💄 Diseñar tarjetas de anuncios en la home para que se vean más acorde con las de los partidos
 - 🐛 Creo que los enlaces de los scoutings deberían generarse con `t=seconds` en lugar de `t=minutes:seconds`
