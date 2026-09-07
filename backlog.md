@@ -11,6 +11,7 @@
 
 ## Done
 
+- 2026-09-07: unificar la tarjeta de partidos amistosos con la de partidos normales: `FriendlyGameCard` usaba el diseño antiguo aunque `FriendlyGame` es idéntico a `Game`; ahora `GameCard` pinta los tres tipos y los amistosos se distinguen solo con el emoji 🫂
 - 2026-08-31: eliminar `src/lib/filters.ts`: era código muerto (`filterGames` no se importaba en ningún sitio, el filtrado real lo hace `useFilteredEvents`) y tenía un import roto a `../types/game`
 - 2026-08-14: eliminar duplicidad al declarar la categoría en los esquemas, extraer y exportar un CategorySchema, como el de StatsSchema
 - 2026-07-16: nuevo tipo de evento: scouting
