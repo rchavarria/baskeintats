@@ -1,5 +1,5 @@
 import {totalPoints} from "../../model/GameSchema";
-import type {Game} from "../../model/GameSchema";
+import type {AdvancedGame, FriendlyGame, Game} from "../../model/GameSchema";
 import {Link} from "react-router-dom";
 import {DateDisplay} from "../ui/DateDisplay.tsx";
 import {TimeDisplay} from "../ui/TimeDisplay.tsx";
@@ -8,12 +8,16 @@ import {GameResultEmoji} from "./GameResultEmoji.tsx";
 
 
 interface GameCardProps {
-  game: Game;
+  game: Game | AdvancedGame | FriendlyGame;
 }
 
 export function GameCard({game}: GameCardProps) {
   const homeScore = totalPoints(game.home.scores);
   const awayScore = totalPoints(game.away.scores);
+  const isFriendly = game.type === "friendly-game";
+  const title = [game.competition.name, game.competition.phase, game.competition.round]
+    .filter(part => part && part.trim() !== "")
+    .join(" · ");
 
   return (
     <Link
@@ -28,7 +32,8 @@ export function GameCard({game}: GameCardProps) {
       {/* Título: competición · fase · jornada */}
       <div className="px-4 pt-3 text-center text-white text-sm sm:text-base font-semibold">
         <span className="truncate">
-          {game.competition.name} · {game.competition.phase} · {game.competition.round}
+          {isFriendly && <span aria-hidden="true">🫂 </span>}
+          {title}
         </span>
       </div>
 
