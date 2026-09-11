@@ -4,6 +4,7 @@ import {EmptyState} from "../components/ui/EmptyState";
 import {DateTimeDisplay} from "../components/ui/DateTimeDisplay.tsx";
 import {CategoryBadge} from "../components/ui/CategoryBadge.tsx";
 import type {Clip} from "../model/ScoutingSchema.ts";
+import {clipUrl} from "../lib/clipUrl.ts";
 
 function clipTypeEmoji(type: Clip["type"]): string {
   return type === "good-play" ? "🟢" : "🔴";
@@ -88,7 +89,7 @@ export function ScoutingDetailPage() {
                   {clipTypeEmoji(clip.type)}
                 </span>
                 <a
-                  href={`${scouting.video}&t=${clip.start}`}
+                  href={clipUrl(scouting.video, clip)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-gray-700 hover:text-indigo-600 hover:underline leading-snug"
