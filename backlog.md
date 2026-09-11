@@ -3,7 +3,6 @@
 - Añadir linter (biome) al proyecto
 - 💄 Diseñar tarjetas de estadísticas en la home para que se vean más acorde con las de los partidos
 - 💄 Diseñar tarjetas de anuncios en la home para que se vean más acorde con las de los partidos
-- 🐛 Creo que los enlaces de los scoutings deberían generarse con `t=seconds` en lugar de `t=minutes:seconds`
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
 - mostrar marcador por cuartos, y si hay prórroga, mostrarla como "OT" o "PR", y mostrar el marcador de la prórroga
 - code splitting: separar datos de partidos por temporada usando dynamic import() para reducir el bundle principal (~374 KB). Cargar la temporada actual de forma estática y las anteriores bajo demanda. Crear un barrel por temporada (season-2023-24.ts, season-2024-25.ts, season-2025-26.ts) y hacer useEvents asíncrono con estado de loading.
@@ -12,6 +11,7 @@
 
 ## Done
 
+- 2026-09-11: 🐛 los enlaces de los clips de scouting se generan con `t=seconds` en lugar de `t=minutes:seconds`: extraído `clipUrl` a `src/lib/clipUrl.ts`, que convierte el `start` (`m:ss`, `mm:ss`, `h:mm:ss`) a segundos totales y añade el parámetro con `?` o `&` según la URL
 - 2026-09-07: unificar la tarjeta de partidos amistosos con la de partidos normales: `FriendlyGameCard` usaba el diseño antiguo aunque `FriendlyGame` es idéntico a `Game`; ahora `GameCard` pinta los tres tipos y los amistosos se distinguen solo con el emoji 🫂
 - 2026-08-31: eliminar `src/lib/filters.ts`: era código muerto (`filterGames` no se importaba en ningún sitio, el filtrado real lo hace `useFilteredEvents`) y tenía un import roto a `../types/game`
 - 2026-08-14: eliminar duplicidad al declarar la categoría en los esquemas, extraer y exportar un CategorySchema, como el de StatsSchema
