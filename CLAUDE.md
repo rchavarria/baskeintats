@@ -11,6 +11,7 @@ Use these skills by referencing them with `@` or asking to "use skill X":
 
 ## Quick Commands
 
+- `npm test` - Run unit tests
 - `npm run build` - Build for production
 - `npm run dev` - Start dev server
 
