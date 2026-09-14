@@ -22,4 +22,27 @@ export const scouting_2026_07_23_spain_france: Scouting = ScoutingSchema.parse({
   // 📊 [stats](https://www.feb.es/Documentos/Archivo/upload/WhatsApp%20Image%202026-07-23%20at%2023.37.21.jpeg)
   video: "https://www.youtube.com/watch?v=0N4pPhaXGEI",
 
+  clips: [
+    {
+      start: "22:10",
+      description: "Saque de banda, malo, aunque lo salva Andrés Crespo, #8",
+      type: "bad-play",
+    },
+    {
+      start: "32:29",
+      description: "Muy buena circulación, sin poder pisar pintura, que termina con un triple fallado, rebote y corte",
+      type: "good-play",
+    },
+    {
+      start: "38:41",
+      description: "Ataque contra algo parecido a zona, se queda la esquina liberada, pase complicado, pero llega bien, y triplazo",
+      type: "good-play",
+    },
+    {
+      start: "1:27:00",
+      description: "Sale del bloqueo del poste, finta de tiro, tiro midi tras bote",
+      type: "good-play",
+    },
+  ],
+
 });
