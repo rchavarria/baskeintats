@@ -1,33 +1,7 @@
-import { createContext, useState, useContext } from "react";
+import { useState } from "react";
 import type { ReactNode } from "react";
-
-export interface Filters {
-  season: string;
-  eventType: string;
-  opponentTeam: string;
-  competition: string;
-  team: string;
-  dateFrom: string;
-  dateTo: string;
-}
-
-interface FiltersContextValue {
-  filters: Filters;
-  setFilters: (filters: Partial<Filters>) => void;
-  resetFilters: () => void;
-}
-
-const defaultFilters: Filters = {
-  season: "",
-  eventType: "",
-  opponentTeam: "",
-  competition: "",
-  team: "",
-  dateFrom: "",
-  dateTo: "",
-};
-
-const FiltersContext = createContext<FiltersContextValue | null>(null);
+import { defaultFilters, FiltersContext } from "./FiltersContextDefinition";
+import type { Filters } from "./FiltersContextDefinition";
 
 export function FiltersProvider({ children }: { children: ReactNode }) {
   const [filters, setFiltersState] = useState<Filters>(defaultFilters);
@@ -45,10 +19,4 @@ export function FiltersProvider({ children }: { children: ReactNode }) {
       {children}
     </FiltersContext.Provider>
   );
-}
-
-export function useFiltersContext() {
-  const ctx = useContext(FiltersContext);
-  if (!ctx) throw new Error("useFiltersContext must be used within FiltersProvider");
-  return ctx;
 }

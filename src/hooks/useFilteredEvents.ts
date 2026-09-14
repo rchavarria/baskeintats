@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useEvents } from "./useEvents";
-import { useFiltersContext } from "../context/FiltersContext";
+import { useFilters } from "./useFilters";
 
 
 function bySeason(season: string) {
@@ -38,7 +38,7 @@ function byCompetition(competitionName: string) {
 
 export function useFilteredEvents() {
   const events = useEvents();
-  const { filters } = useFiltersContext();
+  const { filters } = useFilters();
 
   return useMemo(
     () =>

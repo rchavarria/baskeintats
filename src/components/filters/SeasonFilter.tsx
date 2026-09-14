@@ -1,10 +1,10 @@
 import { useMemo } from "react";
 import { useEvents } from "../../hooks/useEvents";
-import { useFiltersContext } from "../../context/FiltersContext";
+import { useFilters } from "../../hooks/useFilters";
 
 export function SeasonFilter() {
   const events = useEvents();
-  const { filters, setFilters } = useFiltersContext();
+  const { filters, setFilters } = useFilters();
 
   const seasons = useMemo(
     () => [...new Set(events.map((e) => e.season))].sort().reverse(),

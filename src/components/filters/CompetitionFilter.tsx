@@ -1,10 +1,10 @@
 import { useMemo, useEffect } from "react";
 import { useEvents } from "../../hooks/useEvents";
-import { useFiltersContext } from "../../context/FiltersContext";
+import { useFilters } from "../../hooks/useFilters";
 
 export function CompetitionFilter() {
   const events = useEvents();
-  const { filters, setFilters } = useFiltersContext();
+  const { filters, setFilters } = useFilters();
 
   const competitions = useMemo(() => {
     const names = new Set<string>();

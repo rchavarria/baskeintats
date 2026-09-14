@@ -2,14 +2,14 @@ import { renderHook } from "@testing-library/react";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { useFilteredEvents } from "./useFilteredEvents";
 import { useEvents } from "./useEvents";
-import { useFiltersContext } from "../context/FiltersContext";
-import type { Filters } from "../context/FiltersContext";
+import { useFilters } from "./useFilters";
+import type { Filters } from "../context/FiltersContextDefinition";
 
 vi.mock("./useEvents");
-vi.mock("../context/FiltersContext");
+vi.mock("./useFilters");
 
 const mockUseEvents = vi.mocked(useEvents);
-const mockUseFiltersContext = vi.mocked(useFiltersContext);
+const mockUseFilters = vi.mocked(useFilters);
 
 // ─── Minimal mock events ────────────────────────────────────────────────────
 
@@ -71,7 +71,7 @@ function withFilters(partial: Partial<Filters>) {
     dateFrom: "",
     dateTo: "",
   };
-  mockUseFiltersContext.mockReturnValue({
+  mockUseFilters.mockReturnValue({
     filters: { ...defaults, ...partial },
     setFilters: vi.fn(),
     resetFilters: vi.fn(),
