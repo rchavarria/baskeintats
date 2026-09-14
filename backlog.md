@@ -4,6 +4,7 @@
 - 💄 Diseñar tarjetas de estadísticas en la home para que se vean más acorde con las de los partidos
 - 💄 Diseñar tarjetas de anuncios en la home para que se vean más acorde con las de los partidos
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
+- 🤸‍♂️ en los scoutings, o incluso en los partidos, amistosos o no, poder añadir datos sobre el roster de ambos equipos
 - mostrar marcador por cuartos, y si hay prórroga, mostrarla como "OT" o "PR", y mostrar el marcador de la prórroga
 - code splitting: separar datos de partidos por temporada usando dynamic import() para reducir el bundle principal (~374 KB). Cargar la temporada actual de forma estática y las anteriores bajo demanda. Crear un barrel por temporada (season-2023-24.ts, season-2024-25.ts, season-2025-26.ts) y hacer useEvents asíncrono con estado de loading.
 - 💄 Probar qué tal le sienta a la UI la fuente "Confortaa", inspirada en la fuente de los títulos de [esta web](https://everwildoutdoors.com/scotland-rules-swift-bricks-to-be-mandatory-in-all-new-buildings/)
