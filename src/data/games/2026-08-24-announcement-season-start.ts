@@ -36,5 +36,20 @@ export const announcement_2026_08_24_season_start: Announcement = AnnouncementSc
       label: "Temporadas anteriores",
       url: "https://fbm.es/documentos-119/Actualidad/Revistas-Resumen-temporada",
     },
+    {
+      type: "document",
+      label: "Nuestro calendario Cadete (Oro, grupo 2)",
+      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=17503&informe=calendario",
+    },
+    {
+      type: "document",
+      label: "Otro calendario Cadete (Oro, grupo 1)",
+      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=17502&informe=calendario",
+    },
+    {
+      type: "document",
+      label: "Nuestro calendario Junior (Oro, grupo 1)",
+      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=17494&informe=calendario",
+    },
   ],
 });
