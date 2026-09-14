@@ -23,13 +23,16 @@ Use relative Unix-style paths like `~/project/file` when executing CLI commands
 
 ## Available Scripts
 
-| Script             | Description                                       |
-|--------------------|---------------------------------------------------|
-| `npm run validate` | Validates TypeScript data can be correctly loaded |
-| `npm run dev`      | Generates data and starts the development server  |
-| `npm run build`    | Generates data and builds for production          |
-| `npm run build`    | Executes unit tests                               |
-| `npm run preview`  | Serves the production build                       |
+| Script               | Description                                       |
+|----------------------|---------------------------------------------------|
+| `npm run validate`   | Validates TypeScript data can be correctly loaded |
+| `npm run dev`        | Starts the development server                     |
+| `npm run build`      | Type-checks and builds for production             |
+| `npm run preview`    | Serves the production build                       |
+| `npm test`           | Executes unit tests                               |
+| `npm run test:watch` | Executes unit tests in watch mode                 |
+| `npm run lint`       | Runs Biome linter and format checks               |
+| `npm run format`     | Formats the code with Biome                       |
 
 ## Key Requirements
 
@@ -38,7 +41,7 @@ Use relative Unix-style paths like `~/project/file` when executing CLI commands
 - All code must be in TypeScript with strict type checking enabled
 - Check compilation errors by running `npm run build`
 - Check code works by running tests as `npm run test`
-- Follow Biome linting rules for code style and formatting
+- Follow the Biome linting and formatting rules defined in `biome.json` (`npm run lint`)
 - Include clear error messages with specific context
 - Write Vitest tests for backend services and critical business logic
 
@@ -62,10 +65,10 @@ baskeintats/
 │   ├── model/               # Zod schemas (validation)
 │   ├── pages/               # Page components (routes)
 │   └── types/               # TypeScript type definitions
-├── data/                    # TypeScript source data (teams, games)
-│   ├── games/               # Organized by season (e.g., 2025-26/)
-│   ├── teams.ts             # TypeScript data for Teams
-│   └── venues.ts            # TypeScript data for Venues
+│   └── data/                # TypeScript source data (teams, games, venues)
+│       ├── games/           # One file per event: `YYYY-MM-DD-slug.ts`
+│       ├── teams.ts         # TypeScript data for Teams
+│       └── venues.ts        # TypeScript data for Venues
 └── public/
     └── logos/               # Team logo images
 ```
@@ -149,21 +152,16 @@ export function useExample() {
 
 ### Adding a New Team
 
-1. Create `data/teams/{team-id}.yaml` with required fields
-2. Add team logo to `public/logos/`
-3. Run `npm run generate` to update `src/generated/teams.ts`
+1. Add the team entry to `src/data/teams.ts` with the required fields
+2. Add the team logo to `public/logos/`
+3. Run `npm run validate` to check the data still loads correctly
 
 ### Adding a New Game
 
-1. Create `data/games/{season}/{date}-{home}-vs-{away}.yaml`
-2. Follow the naming convention: `YYYY-MM-DD-home-team-vs-away-team.yaml`
-3. Reference teams by their ID (filename without `.yaml`)
-4. Run `npm run generate` to update `src/generated/games.ts`
-
-### Generated Files (DO NOT EDIT)
-
-- `src/generated/teams.ts` - All teams array and teamsMap
-- `src/generated/games.ts` - All games array sorted by date (newest first)
+1. Create `src/data/games/{date}-{opponent}.ts`
+2. Follow the naming convention: `YYYY-MM-DD-opponent.ts` (kebab-case)
+3. Reference teams and venues by their ID
+4. Run `npm run validate` to check the data still loads correctly
 
 ---
 
