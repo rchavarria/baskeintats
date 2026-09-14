@@ -10,6 +10,12 @@ export const scouting_2026_07_23_spain_france: Scouting = ScoutingSchema.parse({
   title: "Torneo de Cáceres: España vs Francia",
   category: "U16M",
 
+  description: [
+    "Partido de la selección española U16M contra Francia en el Torneo de Cáceres.",
+    "Un torneo de preparación para el Europeo U16M que se celebrará en agosto de 2026.",
+    "El resultado fue de 83-66 a favor de España.",
+  ],
+
   // - 23-jul, 20h,
   // 🎥 [España 🆚 Francia](https://www.youtube.com/watch?v=0N4pPhaXGEI)
   // 🗑️ [83-66](https://x.com/BaloncestoESP/status/2080437428863570028)
