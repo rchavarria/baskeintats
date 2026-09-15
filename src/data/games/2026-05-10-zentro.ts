@@ -1,7 +1,7 @@
-import type {Game} from "../../model/GameSchema.ts";
-import {GameSchema} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2026_05_10_zentro: Game = GameSchema.parse({
   id: "S56-liga-plata-f3-j2",
@@ -22,13 +22,13 @@ export const game_2026_05_10_zentro: Game = GameSchema.parse({
     club: teams["zentro"],
     category: "U15M",
     opponent: true,
-    scores: [ 17, 14, 18, 13 ],
+    scores: [17, 14, 18, 13],
   },
 
   away: {
     club: teams["alcobendas"],
     category: "U15M",
-    scores: [ 19, 24, 22, 16 ],
+    scores: [19, 24, 22, 16],
   },
 
   playerStats: {
@@ -89,5 +89,4 @@ export const game_2026_05_10_zentro: Game = GameSchema.parse({
       url: "https://www.fbm.es/noticia-104-13278/liga-ahorramas-volando-hacia-las-fases-finales",
     },
   ],
-
 });

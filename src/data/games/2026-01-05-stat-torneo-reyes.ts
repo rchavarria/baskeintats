@@ -1,9 +1,9 @@
-import type {Stats} from "../../model/StatsSchema.ts";
-import {StatsSchema} from "../../model/StatsSchema.ts";
-import {game_2026_01_02_fuenlabrada} from "./2026-01-02-fuenlabrada.ts";
-import {game_2026_01_02_zentro} from "./2026-01-02-zentro.ts";
-import {game_2026_01_03_laso} from "./2026-01-03-laso.ts";
-import {game_2026_01_04_zentro} from "./2026-01-04-zentro.ts";
+import type { Stats } from "../../model/StatsSchema.ts";
+import { StatsSchema } from "../../model/StatsSchema.ts";
+import { game_2026_01_02_fuenlabrada } from "./2026-01-02-fuenlabrada.ts";
+import { game_2026_01_02_zentro } from "./2026-01-02-zentro.ts";
+import { game_2026_01_03_laso } from "./2026-01-03-laso.ts";
+import { game_2026_01_04_zentro } from "./2026-01-04-zentro.ts";
 
 export const stat_2026_01_05_torneo_reyes: Stats = StatsSchema.parse({
   id: "S56-stat-torneo-reyes",
@@ -39,4 +39,3 @@ export const stat_2026_01_05_torneo_reyes: Stats = StatsSchema.parse({
     },
   ],
 });
-

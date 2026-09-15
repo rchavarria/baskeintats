@@ -1,6 +1,6 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2026_06_02_fbm_3x3: Announcement = AnnouncementSchema.parse({
   id: "S56-fbm-3x3-j2",
@@ -46,7 +46,8 @@ export const announcement_2026_06_02_fbm_3x3: Announcement = AnnouncementSchema.
     },
     {
       type: "article",
-      label: "Convocados para Castilla-la Mancha, incluyendo algunos amigos: Marcos, Bruno, Iñaki...",
+      label:
+        "Convocados para Castilla-la Mancha, incluyendo algunos amigos: Marcos, Bruno, Iñaki...",
       url: "https://fbclm.net/seleccionesfbclm-concentracion-preselecciones-regionales-3x3-u13-y-u15albacete-6-y-7-junio/",
     },
     {
@@ -55,5 +56,4 @@ export const announcement_2026_06_02_fbm_3x3: Announcement = AnnouncementSchema.
       url: "https://www.feb.es/Documentos/Archivo/upload/CALENDARIO%20CESA%203x3%20U15%20-%20Melilla%202026.pdf",
     },
   ],
-
 });

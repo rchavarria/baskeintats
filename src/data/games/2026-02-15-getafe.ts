@@ -87,4 +87,3 @@ export const game_2026_02_15_getafe: Game = GameSchema.parse({
     },
   ],
 });
-

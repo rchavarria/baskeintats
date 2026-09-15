@@ -1,10 +1,10 @@
-import type {Stats} from "../../model/StatsSchema.ts";
-import {StatsSchema} from "../../model/StatsSchema.ts";
-import {game_2025_04_27_alcorcon} from "./2025-04-27-alcorcon.ts";
-import {game_2025_05_10_alcorcon} from "./2025-05-10-alcorcon.ts";
-import {game_2025_05_11_alcorcon} from "./2025-05-11-alcorcon.ts";
-import {game_2025_05_17_rozas} from "./2025-05-17-rozas.ts";
-import {game_2025_05_18_real_madrid} from "./2025-05-18-real-madrid.ts";
+import type { Stats } from "../../model/StatsSchema.ts";
+import { StatsSchema } from "../../model/StatsSchema.ts";
+import { game_2025_04_27_alcorcon } from "./2025-04-27-alcorcon.ts";
+import { game_2025_05_10_alcorcon } from "./2025-05-10-alcorcon.ts";
+import { game_2025_05_11_alcorcon } from "./2025-05-11-alcorcon.ts";
+import { game_2025_05_17_rozas } from "./2025-05-17-rozas.ts";
+import { game_2025_05_18_real_madrid } from "./2025-05-18-real-madrid.ts";
 
 export const stat_2025_05_19_league_gold_final: Stats = StatsSchema.parse({
   id: "S45-stat-league-gold-final",
@@ -23,9 +23,7 @@ export const stat_2025_05_19_league_gold_final: Stats = StatsSchema.parse({
     game_2025_05_18_real_madrid,
   ],
 
-  description: [
-    "Estadísticas de los partidos de la fase",
-  ],
+  description: ["Estadísticas de los partidos de la fase"],
 
   references: [
     {

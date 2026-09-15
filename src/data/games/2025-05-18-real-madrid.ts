@@ -106,4 +106,3 @@ export const game_2025_05_18_real_madrid: AdvancedGame = AdvancedGameSchema.pars
     },
   ],
 });
-

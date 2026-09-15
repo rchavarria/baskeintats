@@ -47,7 +47,8 @@ export const game_2024_02_24_juande: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "Partido para olvidar, nos hemos centrado más en echarle la culpa a los árbitros (alguno perdió los papeles y lo expulsaron del pabellón) que en jugar, pero es que el rival estaba más preocupado de golpearnos que de jugar a baloncesto",
+    title:
+      "Partido para olvidar, nos hemos centrado más en echarle la culpa a los árbitros (alguno perdió los papeles y lo expulsaron del pabellón) que en jugar, pero es que el rival estaba más preocupado de golpearnos que de jugar a baloncesto",
     lines: [
       "Eso sí, nuestros chicos no dejan de pelear todos los partidos, se va notando que cada vez son más y más fuertes",
     ],
@@ -55,4 +56,3 @@ export const game_2024_02_24_juande: Game = GameSchema.parse({
 
   references: [],
 });
-

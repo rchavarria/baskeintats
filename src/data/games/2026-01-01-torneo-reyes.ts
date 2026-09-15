@@ -1,6 +1,6 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2026_01_01_torneo_reyes: Announcement = AnnouncementSchema.parse({
   id: "S56-torneo-reyes",

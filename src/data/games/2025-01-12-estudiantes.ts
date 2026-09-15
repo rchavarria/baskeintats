@@ -8,7 +8,7 @@ export const game_2025_01_12_estudiantes: Game = GameSchema.parse({
   season: "2024-25",
   date: "2025-01-12T12:00:00Z",
   type: "game",
-  
+
   competition: {
     name: "Liga Ahorramás - Oro",
     category: "U14M",

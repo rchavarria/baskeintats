@@ -107,4 +107,3 @@ export const game_2025_05_17_rozas: AdvancedGame = AdvancedGameSchema.parse({
     },
   ],
 });
-

@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2026_03_04_juande: Game = GameSchema.parse({
   id: "S56-liga-plata-f2-gd-j7",
@@ -92,4 +92,3 @@ export const game_2026_03_04_juande: Game = GameSchema.parse({
     },
   ],
 });
-

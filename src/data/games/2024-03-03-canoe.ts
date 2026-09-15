@@ -56,4 +56,3 @@ export const game_2024_03_03_canoe: Game = GameSchema.parse({
 
   references: [],
 });
-

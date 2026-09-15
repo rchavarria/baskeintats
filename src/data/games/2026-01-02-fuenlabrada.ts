@@ -61,4 +61,3 @@ export const game_2026_01_02_fuenlabrada: Game = GameSchema.parse({
 
   references: [],
 });
-

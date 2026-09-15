@@ -1,7 +1,7 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const announcement_2025_06_01_cec_presentacion: Announcement = AnnouncementSchema.parse({
   id: "S45-cec-presentacion",
@@ -72,4 +72,3 @@ export const announcement_2025_06_01_cec_presentacion: Announcement = Announceme
     },
   ],
 });
-

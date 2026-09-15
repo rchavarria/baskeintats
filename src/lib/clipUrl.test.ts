@@ -1,9 +1,9 @@
-import {describe, expect, it} from "vitest";
-import {clipUrl} from "./clipUrl.ts";
-import type {Clip} from "../model/ScoutingSchema.ts";
+import { describe, expect, it } from "vitest";
+import { clipUrl } from "./clipUrl.ts";
+import type { Clip } from "../model/ScoutingSchema.ts";
 
 function clip(start: string): Clip {
-  return {start, description: "A clip", type: "good-play"};
+  return { start, description: "A clip", type: "good-play" };
 }
 
 describe("clipUrl", () => {
@@ -24,7 +24,8 @@ describe("clipUrl", () => {
   });
 
   it("appends the time with & when the url already has a query string", () => {
-    expect(clipUrl("https://youtu.be/watch?v=abc", clip("0:30")))
-      .toBe("https://youtu.be/watch?v=abc&t=30");
+    expect(clipUrl("https://youtu.be/watch?v=abc", clip("0:30"))).toBe(
+      "https://youtu.be/watch?v=abc&t=30",
+    );
   });
 });

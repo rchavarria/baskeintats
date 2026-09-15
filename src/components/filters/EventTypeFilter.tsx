@@ -3,23 +3,20 @@ import { useEvents } from "../../hooks/useEvents";
 import { useFilters } from "../../hooks/useFilters";
 
 const EVENT_TYPE_LABELS: Record<string, string> = {
-  "game": "Game",
+  game: "Game",
   "advanced-game": "Game (advanced)",
   "friendly-game": "Friendly game",
-  "scheduled": "Scheduled",
-  "announcement": "Announcement",
-  "stats": "Stats",
-  "scouting": "Scouting",
+  scheduled: "Scheduled",
+  announcement: "Announcement",
+  stats: "Stats",
+  scouting: "Scouting",
 };
 
 export function EventTypeFilter() {
   const events = useEvents();
   const { filters, setFilters } = useFilters();
 
-  const eventTypes = useMemo(
-    () => [...new Set(events.map((e) => e.type))].sort(),
-    [events],
-  );
+  const eventTypes = useMemo(() => [...new Set(events.map((e) => e.type))].sort(), [events]);
 
   return (
     <div className="bg-white rounded-xl shadow border border-gray-100 p-4">
@@ -59,4 +56,3 @@ export function EventTypeFilter() {
     </div>
   );
 }
-

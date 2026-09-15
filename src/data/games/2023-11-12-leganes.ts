@@ -53,4 +53,3 @@ export const game_2023_11_12_leganes: Game = GameSchema.parse({
 
   references: [],
 });
-

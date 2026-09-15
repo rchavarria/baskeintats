@@ -48,10 +48,10 @@ export const game_2023_10_22_san_agustin: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "¡Partidazo contra unos mayores! Ganamos por la mínima, sufriendo mucho, pero menuda garra le han echado los chicos, impresionante",
+    title:
+      "¡Partidazo contra unos mayores! Ganamos por la mínima, sufriendo mucho, pero menuda garra le han echado los chicos, impresionante",
     lines: [],
   },
 
   references: [],
 });
-

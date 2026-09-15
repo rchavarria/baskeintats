@@ -59,4 +59,3 @@ export const game_2025_04_18_tarragona: Game = GameSchema.parse({
 
   references: [],
 });
-

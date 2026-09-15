@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2025_11_30_estudiantes: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f1-g1-j9",
@@ -102,6 +102,4 @@ export const game_2025_11_30_estudiantes: AdvancedGame = AdvancedGameSchema.pars
       url: "https://www.fbm.es/noticia-123-12967/liga-ahorramas-emoci%C3%B3n-hasta-el-final",
     },
   ],
-
 });
-

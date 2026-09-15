@@ -44,7 +44,6 @@ export const game_2025_02_02_uros: Game = GameSchema.parse({
     efficiency: 8,
   },
 
-
   videos: {
     official: "https://youtu.be/ZrwFg5j7nh4",
     others: [],

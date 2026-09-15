@@ -24,9 +24,7 @@ export function OpponentTeamFilter() {
 
   return (
     <div className="bg-white rounded-xl shadow border border-gray-100 p-4">
-      <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">
-        Opponent
-      </h2>
+      <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">Opponent</h2>
       <ul className="flex flex-col gap-1">
         <li>
           <button
@@ -60,4 +58,3 @@ export function OpponentTeamFilter() {
     </div>
   );
 }
-

@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2024_03_28_moncayo: Game = GameSchema.parse({
   id: "S34-torneo-zaragoza-j1",
@@ -53,4 +53,3 @@ export const game_2024_03_28_moncayo: Game = GameSchema.parse({
 
   references: [],
 });
-

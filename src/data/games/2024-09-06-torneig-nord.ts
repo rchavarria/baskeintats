@@ -1,7 +1,7 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {teams} from "../teams.ts";
-import {venues} from "../venues.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2024_09_06_torneig_nord: Announcement = AnnouncementSchema.parse({
   id: "S45-torneig-nord",
@@ -55,4 +55,3 @@ export const announcement_2024_09_06_torneig_nord: Announcement = AnnouncementSc
     },
   ],
 });
-

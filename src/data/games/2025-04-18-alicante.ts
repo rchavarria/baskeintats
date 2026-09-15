@@ -58,4 +58,3 @@ export const game_2025_04_18_alicante: Game = GameSchema.parse({
 
   references: [],
 });
-

@@ -97,4 +97,3 @@ export const game_2025_11_23_seleccion_madrid: AdvancedGame = AdvancedGameSchema
     },
   ],
 });
-

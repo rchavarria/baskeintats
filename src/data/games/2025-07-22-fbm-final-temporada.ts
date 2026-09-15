@@ -1,5 +1,5 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
 
 export const announcement_2025_07_22_fbm_final_temporada: Announcement = AnnouncementSchema.parse({
   id: "S45-fbm-final-temporada",
@@ -33,4 +33,3 @@ export const announcement_2025_07_22_fbm_final_temporada: Announcement = Announc
     },
   ],
 });
-

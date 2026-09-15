@@ -1,5 +1,5 @@
-import type {PlayerStats as PlayerStatsType} from "../../model/PlayerSchema";
-import {PlayerStatsFormatterImpl} from "../../lib/player-stats";
+import type { PlayerStats as PlayerStatsType } from "../../model/PlayerSchema";
+import { PlayerStatsFormatterImpl } from "../../lib/player-stats";
 
 interface PlayerStatsProps {
   stats: PlayerStatsType;
@@ -12,15 +12,12 @@ interface PlayerStatsProps {
 export function PlayerStats({ stats }: PlayerStatsProps) {
   const formatter = new PlayerStatsFormatterImpl(stats);
 
-
   return (
     <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
       <h2 className="font-semibold text-gray-700 mb-4">📈 Estadísticas del jugador</h2>
       <div className="grid grid-cols-4 gap-4 text-center">
         <div title="Minutos y segundos jugados en el partido">
-          <p className="text-3xl font-bold text-gray-900">
-            {formatter.formatPlayedTime()}
-          </p>
+          <p className="text-3xl font-bold text-gray-900">{formatter.formatPlayedTime()}</p>
           <p className="text-xs text-gray-400">Tiempo</p>
         </div>
         <div title="Triples (3 puntos) realizados">
@@ -55,4 +52,3 @@ export function PlayerStats({ stats }: PlayerStatsProps) {
     </div>
   );
 }
-

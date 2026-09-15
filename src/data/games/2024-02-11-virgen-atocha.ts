@@ -47,10 +47,10 @@ export const game_2024_02_11_virgen_atocha: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "Último partido de ida, y siguen ganándonos haciendo valer su físico, no su baloncesto, y da un poquito de rabia, porque aquí todos hemos tenido la impresión de que podíamos ganar, pero... los partidos hay que jugarlos",
+    title:
+      "Último partido de ida, y siguen ganándonos haciendo valer su físico, no su baloncesto, y da un poquito de rabia, porque aquí todos hemos tenido la impresión de que podíamos ganar, pero... los partidos hay que jugarlos",
     lines: [],
   },
 
   references: [],
 });
-

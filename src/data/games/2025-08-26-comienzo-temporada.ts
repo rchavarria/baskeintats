@@ -1,5 +1,5 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
 
 export const announcement_2025_08_26_comienzo_temporada: Announcement = AnnouncementSchema.parse({
   id: "S56-comienzo-temporada",
@@ -24,4 +24,3 @@ export const announcement_2025_08_26_comienzo_temporada: Announcement = Announce
     },
   ],
 });
-

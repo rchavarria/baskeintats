@@ -13,10 +13,10 @@
  * - AdvancedStatsFormatter             extended formatter interface (advanced stats)
  */
 
-export { PlayerStatsFormatterImpl } from './PlayerStatsFormatterImpl';
-export { AdvancedPlayerStatsFormatterImpl } from './AdvancedPlayerStatsFormatterImpl';
-export { NoStatsFormatter } from './NoStatsFormatter';
-export { getPlayerStatsVariant } from './getPlayerStatsVariant';
-export type { PlayerStatsVariant } from './getPlayerStatsVariant';
-export type { PlayerStatsFormatter } from './PlayerStatsFormatter';
-export type { AdvancedStatsFormatter } from './AdvancedStatsFormatter';
+export { PlayerStatsFormatterImpl } from "./PlayerStatsFormatterImpl";
+export { AdvancedPlayerStatsFormatterImpl } from "./AdvancedPlayerStatsFormatterImpl";
+export { NoStatsFormatter } from "./NoStatsFormatter";
+export { getPlayerStatsVariant } from "./getPlayerStatsVariant";
+export type { PlayerStatsVariant } from "./getPlayerStatsVariant";
+export type { PlayerStatsFormatter } from "./PlayerStatsFormatter";
+export type { AdvancedStatsFormatter } from "./AdvancedStatsFormatter";

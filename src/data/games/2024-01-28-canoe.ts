@@ -47,7 +47,8 @@ export const game_2024_01_28_canoe: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "Esto empieza a doler ya, no pueden con los mayores, la diferencia física se nota muchísimo",
+    title:
+      "Esto empieza a doler ya, no pueden con los mayores, la diferencia física se nota muchísimo",
     lines: [
       "Hoy un padre ha perdido un poco los nervios ya, porque nuestros jugadores se llevan unos golpes y unos empujones que no es normal",
     ],
@@ -55,4 +56,3 @@ export const game_2024_01_28_canoe: Game = GameSchema.parse({
 
   references: [],
 });
-

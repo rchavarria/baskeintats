@@ -21,4 +21,3 @@ export const StatsSchema = z.object({
 });
 
 export type Stats = z.infer<typeof StatsSchema>;
-

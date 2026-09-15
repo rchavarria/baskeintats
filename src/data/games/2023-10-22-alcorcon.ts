@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2023_10_22_alcorcon: Game = GameSchema.parse({
   id: "S34-liga-oro-f1-j4",
@@ -58,9 +58,9 @@ export const game_2023_10_22_alcorcon: Game = GameSchema.parse({
   references: [
     {
       type: "photo",
-      label: "El fotógrafo de la federación estaba por allí para tomar esta foto con el cachorro al fondo",
+      label:
+        "El fotógrafo de la federación estaba por allí para tomar esta foto con el cachorro al fondo",
       url: "https://flic.kr/p/2pb3dkj",
     },
   ],
 });
-

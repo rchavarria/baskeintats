@@ -72,4 +72,3 @@ export const game_2026_01_03_laso: Game = GameSchema.parse({
     },
   ],
 });
-

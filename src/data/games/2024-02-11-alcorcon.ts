@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2024_02_11_alcorcon: Game = GameSchema.parse({
   id: "S34-liga-oro-f2-j5",
@@ -58,4 +58,3 @@ export const game_2024_02_11_alcorcon: Game = GameSchema.parse({
 
   references: [],
 });
-

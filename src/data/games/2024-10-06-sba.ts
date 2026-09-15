@@ -77,4 +77,3 @@ export const game_2024_10_06_sba: Game = GameSchema.parse({
     },
   ],
 });
-

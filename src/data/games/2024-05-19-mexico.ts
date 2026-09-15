@@ -1,8 +1,8 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
-import {EmptyPlayerStats} from "../../model/PlayerSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
+import { EmptyPlayerStats } from "../../model/PlayerSchema.ts";
 
 export const game_2024_05_19_mexico: Game = GameSchema.parse({
   id: "S34-torneo-ardres-semis",
@@ -63,5 +63,4 @@ export const game_2024_05_19_mexico: Game = GameSchema.parse({
       url: "https://x.com/FBMadrid/status/1792213722145956008",
     },
   ],
-
 });

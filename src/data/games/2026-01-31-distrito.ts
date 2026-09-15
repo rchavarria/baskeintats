@@ -87,4 +87,3 @@ export const game_2026_01_31_distrito: Game = GameSchema.parse({
     },
   ],
 });
-

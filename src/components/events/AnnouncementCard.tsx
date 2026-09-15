@@ -1,8 +1,8 @@
-import {Link} from "react-router-dom";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {DateDisplay} from "../ui/DateDisplay.tsx";
-import {CategoryBadge} from "../ui/CategoryBadge.tsx";
-import {AnnouncementTypeEmoji} from "./AnnouncementEmojis.tsx";
+import { Link } from "react-router-dom";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { DateDisplay } from "../ui/DateDisplay.tsx";
+import { CategoryBadge } from "../ui/CategoryBadge.tsx";
+import { AnnouncementTypeEmoji } from "./AnnouncementEmojis.tsx";
 
 interface AnnouncementCardProps {
   announcement: Announcement;
@@ -24,7 +24,9 @@ export function AnnouncementCard({ announcement }: AnnouncementCardProps) {
       </div>
       <div className="mt-2 text-center text-xs text-gray-400">
         {announcement.description.slice(0, 2).map((line, i) => (
-          <p key={i} className="line-clamp-2">{line}</p>
+          <p key={i} className="line-clamp-2">
+            {line}
+          </p>
         ))}
         {announcement.description.length > 2 && (
           <p className="text-gray-400 text-xs text-center">· · ·</p>

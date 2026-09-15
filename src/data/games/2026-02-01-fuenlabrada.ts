@@ -87,4 +87,3 @@ export const game_2026_02_01_fuenlabrada: Game = GameSchema.parse({
     },
   ],
 });
-

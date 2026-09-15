@@ -1,10 +1,10 @@
-import { describe, it, expect } from 'vitest';
-import { AdvancedPlayerStatsFormatterImpl } from './AdvancedPlayerStatsFormatterImpl';
-import type { AdvancedPlayerStats } from '../../model/PlayerSchema';
+import { describe, it, expect } from "vitest";
+import { AdvancedPlayerStatsFormatterImpl } from "./AdvancedPlayerStatsFormatterImpl";
+import type { AdvancedPlayerStats } from "../../model/PlayerSchema";
 
-describe('AdvancedPlayerStatsFormatterImpl', () => {
-  describe('hasStats()', () => {
-    it('should return false when time === 0 AND points === 0', () => {
+describe("AdvancedPlayerStatsFormatterImpl", () => {
+  describe("hasStats()", () => {
+    it("should return false when time === 0 AND points === 0", () => {
       const stats: AdvancedPlayerStats = {
         time: 0,
         fieldGoals: { made: 0, attempted: 0 },
@@ -23,7 +23,7 @@ describe('AdvancedPlayerStatsFormatterImpl', () => {
       expect(formatter.hasStats()).toBe(false);
     });
 
-    it('should return true when time > 0 AND points === 0', () => {
+    it("should return true when time > 0 AND points === 0", () => {
       const stats: AdvancedPlayerStats = {
         time: 120,
         fieldGoals: { made: 0, attempted: 10 },
@@ -43,7 +43,7 @@ describe('AdvancedPlayerStatsFormatterImpl', () => {
     });
   });
 
-  describe('kind()', () => {
+  describe("kind()", () => {
     it('should return "advanced"', () => {
       const stats: AdvancedPlayerStats = {
         time: 1200,
@@ -60,12 +60,12 @@ describe('AdvancedPlayerStatsFormatterImpl', () => {
         efficiency: 15,
       };
       const formatter = new AdvancedPlayerStatsFormatterImpl(stats);
-      expect(formatter.kind()).toBe('advanced');
+      expect(formatter.kind()).toBe("advanced");
     });
   });
 
-  describe('formatPoints()', () => {
-    it('should calculate total points: 3*made3 + 2*made2 + madeLibres', () => {
+  describe("formatPoints()", () => {
+    it("should calculate total points: 3*made3 + 2*made2 + madeLibres", () => {
       const stats: AdvancedPlayerStats = {
         time: 0,
         fieldGoals: { made: 5, attempted: 12 },
@@ -82,11 +82,11 @@ describe('AdvancedPlayerStatsFormatterImpl', () => {
       };
       // Points: 3*3 + 2*5 + 2 = 9 + 10 + 2 = 21
       const formatter = new AdvancedPlayerStatsFormatterImpl(stats);
-      expect(formatter.formatPoints()).toBe('21');
+      expect(formatter.formatPoints()).toBe("21");
     });
   });
 
-  describe('formatFieldGoals()', () => {
+  describe("formatFieldGoals()", () => {
     it('should return "made/attempted (percentage%)" (advanced format)', () => {
       const stats: AdvancedPlayerStats = {
         time: 0,
@@ -103,11 +103,11 @@ describe('AdvancedPlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new AdvancedPlayerStatsFormatterImpl(stats);
-      expect(formatter.formatFieldGoals()).toBe('8/12 (66.7%)');
+      expect(formatter.formatFieldGoals()).toBe("8/12 (66.7%)");
     });
   });
 
-  describe('formatThreePointers()', () => {
+  describe("formatThreePointers()", () => {
     it('should return "made/attempted (percentage%)" (advanced format)', () => {
       const stats: AdvancedPlayerStats = {
         time: 0,
@@ -124,11 +124,11 @@ describe('AdvancedPlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new AdvancedPlayerStatsFormatterImpl(stats);
-      expect(formatter.formatThreePointers()).toBe('3/8 (37.5%)');
+      expect(formatter.formatThreePointers()).toBe("3/8 (37.5%)");
     });
   });
 
-  describe('formatFreeThrows()', () => {
+  describe("formatFreeThrows()", () => {
     it('should return "made/attempted (percentage%)"', () => {
       const stats: AdvancedPlayerStats = {
         time: 0,
@@ -145,11 +145,11 @@ describe('AdvancedPlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new AdvancedPlayerStatsFormatterImpl(stats);
-      expect(formatter.formatFreeThrows()).toBe('4/5 (80%)');
+      expect(formatter.formatFreeThrows()).toBe("4/5 (80%)");
     });
   });
 
-  describe('formatFaults()', () => {
+  describe("formatFaults()", () => {
     it('should return "made/received" (advanced: dual semantic)', () => {
       const stats: AdvancedPlayerStats = {
         time: 0,
@@ -166,11 +166,11 @@ describe('AdvancedPlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new AdvancedPlayerStatsFormatterImpl(stats);
-      expect(formatter.formatFaults()).toBe('2/1');
+      expect(formatter.formatFaults()).toBe("2/1");
     });
   });
 
-  describe('formatRebounds()', () => {
+  describe("formatRebounds()", () => {
     it('should return "offensive+defensive"', () => {
       const stats: AdvancedPlayerStats = {
         time: 0,
@@ -187,12 +187,12 @@ describe('AdvancedPlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new AdvancedPlayerStatsFormatterImpl(stats);
-      expect(formatter.formatRebounds()).toBe('2+4');
+      expect(formatter.formatRebounds()).toBe("2+4");
     });
   });
 
-  describe('formatAssists()', () => {
-    it('should return assists as string', () => {
+  describe("formatAssists()", () => {
+    it("should return assists as string", () => {
       const stats: AdvancedPlayerStats = {
         time: 0,
         fieldGoals: { made: 0, attempted: 0 },
@@ -208,12 +208,12 @@ describe('AdvancedPlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new AdvancedPlayerStatsFormatterImpl(stats);
-      expect(formatter.formatAssists()).toBe('3');
+      expect(formatter.formatAssists()).toBe("3");
     });
   });
 
-  describe('formatSteals()', () => {
-    it('should return steals as string', () => {
+  describe("formatSteals()", () => {
+    it("should return steals as string", () => {
       const stats: AdvancedPlayerStats = {
         time: 0,
         fieldGoals: { made: 0, attempted: 0 },
@@ -229,12 +229,12 @@ describe('AdvancedPlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new AdvancedPlayerStatsFormatterImpl(stats);
-      expect(formatter.formatSteals()).toBe('1');
+      expect(formatter.formatSteals()).toBe("1");
     });
   });
 
-  describe('formatTurnovers()', () => {
-    it('should return turnovers as string', () => {
+  describe("formatTurnovers()", () => {
+    it("should return turnovers as string", () => {
       const stats: AdvancedPlayerStats = {
         time: 0,
         fieldGoals: { made: 0, attempted: 0 },
@@ -250,11 +250,11 @@ describe('AdvancedPlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new AdvancedPlayerStatsFormatterImpl(stats);
-      expect(formatter.formatTurnovers()).toBe('2');
+      expect(formatter.formatTurnovers()).toBe("2");
     });
   });
 
-  describe('formatBlocks()', () => {
+  describe("formatBlocks()", () => {
     it('should return "made/received"', () => {
       const stats: AdvancedPlayerStats = {
         time: 0,
@@ -271,8 +271,7 @@ describe('AdvancedPlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new AdvancedPlayerStatsFormatterImpl(stats);
-      expect(formatter.formatBlocks()).toBe('1/0');
+      expect(formatter.formatBlocks()).toBe("1/0");
     });
   });
 });
-

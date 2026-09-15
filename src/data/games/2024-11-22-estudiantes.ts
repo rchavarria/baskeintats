@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2024_11_22_estudiantes: Game = GameSchema.parse({
   id: "S45-torneo-fll-j1",
@@ -50,7 +50,7 @@ export const game_2024_11_22_estudiantes: Game = GameSchema.parse({
       {
         label: "BasketCantera.TV",
         url: "https://youtu.be/ftjHAZU5448",
-      }
+      },
     ],
   },
 
@@ -71,4 +71,3 @@ export const game_2024_11_22_estudiantes: Game = GameSchema.parse({
     },
   ],
 });
-

@@ -87,4 +87,3 @@ export const game_2025_12_20_olivar: AdvancedGame = AdvancedGameSchema.parse({
 
   references: [],
 });
-

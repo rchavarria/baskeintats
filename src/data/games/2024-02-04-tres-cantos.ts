@@ -53,4 +53,3 @@ export const game_2024_02_04_tres_cantos: Game = GameSchema.parse({
 
   references: [],
 });
-

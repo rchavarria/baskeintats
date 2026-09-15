@@ -57,4 +57,3 @@ export const game_2024_03_17_virgen_atocha: Game = GameSchema.parse({
 
   references: [],
 });
-

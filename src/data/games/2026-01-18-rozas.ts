@@ -87,4 +87,3 @@ export const game_2026_01_18_rozas: Game = GameSchema.parse({
     },
   ],
 });
-

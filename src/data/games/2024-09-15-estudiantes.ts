@@ -1,7 +1,7 @@
-import {FriendlyGameSchema} from "../../model/GameSchema.ts";
-import type {FriendlyGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { FriendlyGameSchema } from "../../model/GameSchema.ts";
+import type { FriendlyGame } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2024_09_15_estudiantes: FriendlyGame = FriendlyGameSchema.parse({
   id: "S45-amistoso-pretemporada-estudiantes",
@@ -50,10 +50,10 @@ export const game_2024_09_15_estudiantes: FriendlyGame = FriendlyGameSchema.pars
   },
 
   recap: {
-    title: "Amistoso de gran nivel, si todo va como es debido, Estudiantes será un duro rival a final de temporada",
+    title:
+      "Amistoso de gran nivel, si todo va como es debido, Estudiantes será un duro rival a final de temporada",
     lines: [],
   },
 
   references: [],
 });
-

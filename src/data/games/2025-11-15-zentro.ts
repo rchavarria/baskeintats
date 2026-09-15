@@ -87,4 +87,3 @@ export const game_2025_11_15_zentro: Game = GameSchema.parse({
     },
   ],
 });
-

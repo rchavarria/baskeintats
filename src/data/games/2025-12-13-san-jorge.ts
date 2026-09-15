@@ -86,4 +86,3 @@ export const game_2025_12_13_san_jorge: Game = GameSchema.parse({
     },
   ],
 });
-

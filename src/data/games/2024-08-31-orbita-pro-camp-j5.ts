@@ -1,5 +1,5 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
 
 export const announcement_2024_08_31_orbita_pro_camp_5: Announcement = AnnouncementSchema.parse({
   id: "S45-orbita-pro-camp-j5",
@@ -11,9 +11,7 @@ export const announcement_2024_08_31_orbita_pro_camp_5: Announcement = Announcem
   announcementType: "camp",
   category: "U14M",
 
-  description: [
-    "Finaliza el Campus",
-  ],
+  description: ["Finaliza el Campus"],
 
   references: [
     {
@@ -28,4 +26,3 @@ export const announcement_2024_08_31_orbita_pro_camp_5: Announcement = Announcem
     },
   ],
 });
-

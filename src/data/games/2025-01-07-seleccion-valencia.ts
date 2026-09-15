@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2025_01_07_seleccion_valencia: AdvancedGame = AdvancedGameSchema.parse({
   id: "S45-cesa-final",
@@ -100,4 +100,3 @@ export const game_2025_01_07_seleccion_valencia: AdvancedGame = AdvancedGameSche
     },
   ],
 });
-

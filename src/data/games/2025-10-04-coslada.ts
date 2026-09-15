@@ -85,4 +85,3 @@ export const game_2025_10_04_coslada: Game = GameSchema.parse({
     },
   ],
 });
-

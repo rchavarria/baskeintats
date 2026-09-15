@@ -52,7 +52,7 @@ export const game_2025_04_20_laso: Game = GameSchema.parse({
   recap: {
     title: "¡Partido raro, raro!",
     lines: [
-      "Raro porque podría haber sido uno de los partidos del torneo, pero Laso no quiso jugar con \"los becados\", a nosotros nos faltaron varios jugadores porque no se encontraban bien...",
+      'Raro porque podría haber sido uno de los partidos del torneo, pero Laso no quiso jugar con "los becados", a nosotros nos faltaron varios jugadores porque no se encontraban bien...',
       "En resumen, no se puede sacar ninguna conclusión",
       "Todo el partido a medio gas, sin intensidad...",
       "También es verdad que es el último día, y los chicos deberían de estar reventados",
@@ -61,4 +61,3 @@ export const game_2025_04_20_laso: Game = GameSchema.parse({
 
   references: [],
 });
-

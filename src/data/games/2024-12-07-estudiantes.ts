@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2024_12_07_estudiantes: AdvancedGame = AdvancedGameSchema.parse({
   id: "S45-copa-ahorramas-j1",
@@ -91,4 +91,3 @@ export const game_2024_12_07_estudiantes: AdvancedGame = AdvancedGameSchema.pars
     },
   ],
 });
-

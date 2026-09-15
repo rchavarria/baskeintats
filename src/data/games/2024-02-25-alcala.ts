@@ -47,10 +47,10 @@ export const game_2024_02_25_alcala: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "¡Arggg! ¡Por qué poco! Este partido hemos estado a puntito, esta vez han visto las orejas al lobo",
+    title:
+      "¡Arggg! ¡Por qué poco! Este partido hemos estado a puntito, esta vez han visto las orejas al lobo",
     lines: [],
   },
 
   references: [],
 });
-

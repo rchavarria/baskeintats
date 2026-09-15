@@ -21,4 +21,3 @@ describe("PlayedTimeDisplay", () => {
     expect(screen.getByText("11:06")).toBeInTheDocument();
   });
 });
-

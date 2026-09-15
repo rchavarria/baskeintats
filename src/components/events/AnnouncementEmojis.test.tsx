@@ -34,4 +34,3 @@ describe("AnnouncementTypeEmoji", () => {
     expect(screen.getByText("❌❓🚨")).toBeInTheDocument();
   });
 });
-

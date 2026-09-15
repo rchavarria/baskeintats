@@ -48,10 +48,10 @@ export const game_2023_12_03_san_agustin: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "Victoria mucho más comoda que el partido de ida con ellos, se nota que el equipo va madurando y aprendiendo",
+    title:
+      "Victoria mucho más comoda que el partido de ida con ellos, se nota que el equipo va madurando y aprendiendo",
     lines: [],
   },
 
   references: [],
 });
-

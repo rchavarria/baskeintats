@@ -9,4 +9,3 @@ describe("ShortDateDisplay", () => {
     expect(screen.getByText("17-abr-2026")).toBeInTheDocument();
   });
 });
-

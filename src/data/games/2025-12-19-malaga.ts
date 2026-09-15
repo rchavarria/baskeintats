@@ -86,4 +86,3 @@ export const game_2025_12_19_malaga: AdvancedGame = AdvancedGameSchema.parse({
 
   references: [],
 });
-

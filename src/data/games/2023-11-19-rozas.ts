@@ -54,4 +54,3 @@ export const game_2023_11_19_rozas: Game = GameSchema.parse({
 
   references: [],
 });
-

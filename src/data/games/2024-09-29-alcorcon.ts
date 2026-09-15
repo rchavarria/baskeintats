@@ -86,4 +86,3 @@ export const game_2024_09_29_alcorcon: Game = GameSchema.parse({
     },
   ],
 });
-

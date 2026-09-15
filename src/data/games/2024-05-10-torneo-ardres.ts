@@ -1,7 +1,7 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {teams} from "../teams.ts";
-import {venues} from "../venues.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2024_05_10_ardres: Announcement = AnnouncementSchema.parse({
   id: "S34-torneo-ardres",
@@ -76,4 +76,3 @@ export const announcement_2024_05_10_ardres: Announcement = AnnouncementSchema.p
     },
   ],
 });
-

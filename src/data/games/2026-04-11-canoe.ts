@@ -1,7 +1,7 @@
-import type {Game} from "../../model/GameSchema.ts";
-import {GameSchema} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2026_04_11_canoe: Game = GameSchema.parse({
   id: "S56-liga-plata-pre-playoff-j2",
@@ -21,14 +21,14 @@ export const game_2026_04_11_canoe: Game = GameSchema.parse({
   home: {
     club: teams["alcobendas"],
     category: "U16M",
-    scores: [ 23, 15, 22, 21 ],
+    scores: [23, 15, 22, 21],
   },
 
   away: {
     club: teams["canoe"],
     category: "U16M",
     opponent: true,
-    scores: [ 21, 23, 18, 9 ],
+    scores: [21, 23, 18, 9],
   },
 
   playerStats: {
@@ -55,7 +55,7 @@ export const game_2026_04_11_canoe: Game = GameSchema.parse({
         label: "Canal CBA/Zilberman",
         url: "https://youtu.be/-",
       },
-    ]
+    ],
   },
 
   references: [
@@ -97,5 +97,4 @@ export const game_2026_04_11_canoe: Game = GameSchema.parse({
       "A por el tercer partido y el desempate, que promete ser más intenso todavía si cabe",
     ],
   },
-
 });

@@ -2,7 +2,6 @@ import { useMemo } from "react";
 import { useEvents } from "./useEvents";
 import { useFilters } from "./useFilters";
 
-
 function bySeason(season: string) {
   return (event: { season: string }) => {
     if (!season) {
@@ -22,7 +21,6 @@ function byEventType(eventType: string) {
     return event.type === eventType;
   };
 }
-
 
 function byCompetition(competitionName: string) {
   return (event: unknown) => {
@@ -49,4 +47,3 @@ export function useFilteredEvents() {
     [events, filters.season, filters.eventType, filters.competition],
   );
 }
-

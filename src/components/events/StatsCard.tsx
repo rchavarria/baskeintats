@@ -1,15 +1,15 @@
-import {Link} from "react-router-dom";
-import type {Stats} from "../../model/StatsSchema.ts";
-import type {AdvancedGame, Game} from "../../model/GameSchema.ts";
-import {hasAdvancedPlayerStats} from "../../lib/hasAdvancedPlayerStats.ts";
-import {DateDisplay} from "../ui/DateDisplay.tsx";
-import {PlayedTimeDisplay} from "../ui/PlayedTimeDisplay.tsx";
-import {ShortDateDisplay} from "../ui/ShortDateDisplay.tsx";
-import {ThreePointersTotal} from "../stats/ThreePointersTotal.tsx";
-import {ThreePointersAverage} from "../stats/ThreePointersAverage.tsx";
-import {TwoPointersTotal} from "../stats/TwoPointersTotal.tsx";
-import {TwoPointersAverage} from "../stats/TwoPointersAverage.tsx";
-import {ReferenceIcons} from "../ui/ReferenceIcons.tsx";
+import { Link } from "react-router-dom";
+import type { Stats } from "../../model/StatsSchema.ts";
+import type { AdvancedGame, Game } from "../../model/GameSchema.ts";
+import { hasAdvancedPlayerStats } from "../../lib/hasAdvancedPlayerStats.ts";
+import { DateDisplay } from "../ui/DateDisplay.tsx";
+import { PlayedTimeDisplay } from "../ui/PlayedTimeDisplay.tsx";
+import { ShortDateDisplay } from "../ui/ShortDateDisplay.tsx";
+import { ThreePointersTotal } from "../stats/ThreePointersTotal.tsx";
+import { ThreePointersAverage } from "../stats/ThreePointersAverage.tsx";
+import { TwoPointersTotal } from "../stats/TwoPointersTotal.tsx";
+import { TwoPointersAverage } from "../stats/TwoPointersAverage.tsx";
+import { ReferenceIcons } from "../ui/ReferenceIcons.tsx";
 
 interface StatsCardProps {
   stats: Stats;
@@ -62,7 +62,7 @@ export function StatsCard({ stats }: StatsCardProps) {
   const totalEfficiency = games.reduce((s, g) => s + g.playerStats.efficiency, 0);
   const n = games.length;
 
-  const hasAdvanced = games.some(g => hasAdvancedPlayerStats(g));
+  const hasAdvanced = games.some((g) => hasAdvancedPlayerStats(g));
 
   const th = "px-2 py-1 text-left text-xs font-semibold text-gray-500 uppercase";
   const td = "px-2 py-1 text-xs text-gray-700";
@@ -101,34 +101,64 @@ export function StatsCard({ stats }: StatsCardProps) {
           <tbody>
             {games.map((game) => (
               <tr key={game.id} className="border-b border-gray-100">
-                <td className={td}><ShortDateDisplay isoDate={game.date} /></td>
+                <td className={td}>
+                  <ShortDateDisplay isoDate={game.date} />
+                </td>
                 <td className={td}>{getOpponent(game)}</td>
-                <td className={td}><PlayedTimeDisplay time={game.playerStats.time} /></td>
+                <td className={td}>
+                  <PlayedTimeDisplay time={game.playerStats.time} />
+                </td>
                 <td className={td}>{getPoints(game)}</td>
                 <td className={td}>{getThreePointers(game)}</td>
                 <td className={td}>{getTwoPointers(game)}</td>
                 <td className={td}>{getFt(game)}</td>
-                <td className={td}>{game.playerStats.plusMinus > 0 ? "+" : ""}{game.playerStats.plusMinus}</td>
+                <td className={td}>
+                  {game.playerStats.plusMinus > 0 ? "+" : ""}
+                  {game.playerStats.plusMinus}
+                </td>
                 <td className={td}>{game.playerStats.efficiency}</td>
               </tr>
             ))}
             <tr className="bg-gray-50">
-              <td className={summaryTd} colSpan={2}>Total</td>
-              <td className={summaryTd}><PlayedTimeDisplay time={totalTime} /></td>
+              <td className={summaryTd} colSpan={2}>
+                Total
+              </td>
+              <td className={summaryTd}>
+                <PlayedTimeDisplay time={totalTime} />
+              </td>
               <td className={summaryTd}>{totalPoints}</td>
-              <td className={summaryTd}><ThreePointersTotal hasAdvanced={hasAdvanced} games={games} /></td>
-              <td className={summaryTd}><TwoPointersTotal hasAdvanced={hasAdvanced} games={games} /></td>
-              <td className={summaryTd}>{totalFtm}/{totalFta}</td>
-              <td className={summaryTd}>{totalPlusMinus > 0 ? "+" : ""}{totalPlusMinus}</td>
+              <td className={summaryTd}>
+                <ThreePointersTotal hasAdvanced={hasAdvanced} games={games} />
+              </td>
+              <td className={summaryTd}>
+                <TwoPointersTotal hasAdvanced={hasAdvanced} games={games} />
+              </td>
+              <td className={summaryTd}>
+                {totalFtm}/{totalFta}
+              </td>
+              <td className={summaryTd}>
+                {totalPlusMinus > 0 ? "+" : ""}
+                {totalPlusMinus}
+              </td>
               <td className={summaryTd}>{totalEfficiency}</td>
             </tr>
             <tr className="border-b border-gray-200 bg-gray-50">
-              <td className={summaryTd} colSpan={2}>Media</td>
-              <td className={summaryTd}><PlayedTimeDisplay time={Math.round(totalTime / n)} /></td>
+              <td className={summaryTd} colSpan={2}>
+                Media
+              </td>
+              <td className={summaryTd}>
+                <PlayedTimeDisplay time={Math.round(totalTime / n)} />
+              </td>
               <td className={summaryTd}>{(totalPoints / n).toFixed(1)}</td>
-              <td className={summaryTd}><ThreePointersAverage hasAdvanced={hasAdvanced} games={games} /></td>
-              <td className={summaryTd}><TwoPointersAverage hasAdvanced={hasAdvanced} games={games} /></td>
-              <td className={summaryTd}>{totalFta > 0 ? `${Math.round((totalFtm / totalFta) * 100)}%` : "-"}</td>
+              <td className={summaryTd}>
+                <ThreePointersAverage hasAdvanced={hasAdvanced} games={games} />
+              </td>
+              <td className={summaryTd}>
+                <TwoPointersAverage hasAdvanced={hasAdvanced} games={games} />
+              </td>
+              <td className={summaryTd}>
+                {totalFta > 0 ? `${Math.round((totalFtm / totalFta) * 100)}%` : "-"}
+              </td>
               <td className={summaryTd}>{(totalPlusMinus / n).toFixed(1)}</td>
               <td className={summaryTd}>{(totalEfficiency / n).toFixed(1)}</td>
             </tr>
@@ -139,13 +169,14 @@ export function StatsCard({ stats }: StatsCardProps) {
       {stats.description.length > 0 && (
         <div className="mt-3 px-2 space-y-1">
           {stats.description.map((line, idx) => (
-            <p key={idx} className="text-xs text-gray-600">{line}</p>
+            <p key={idx} className="text-xs text-gray-600">
+              {line}
+            </p>
           ))}
         </div>
       )}
 
       <ReferenceIcons references={stats.references} />
-
     </Link>
   );
 }

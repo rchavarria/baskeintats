@@ -97,4 +97,3 @@ export const game_2025_11_22_joventut: AdvancedGame = AdvancedGameSchema.parse({
     },
   ],
 });
-

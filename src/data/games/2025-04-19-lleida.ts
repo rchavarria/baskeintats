@@ -58,4 +58,3 @@ export const game_2025_04_19_lleida: Game = GameSchema.parse({
 
   references: [],
 });
-

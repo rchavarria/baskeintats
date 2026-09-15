@@ -85,4 +85,3 @@ export const game_2025_12_19_torrent: AdvancedGame = AdvancedGameSchema.parse({
 
   references: [],
 });
-

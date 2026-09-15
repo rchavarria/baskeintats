@@ -1,5 +1,5 @@
-import type {AdvancedGame, Game} from "../../model/GameSchema.ts";
-import {hasAdvancedPlayerStats} from "../../lib/hasAdvancedPlayerStats.ts";
+import type { AdvancedGame, Game } from "../../model/GameSchema.ts";
+import { hasAdvancedPlayerStats } from "../../lib/hasAdvancedPlayerStats.ts";
 
 interface ThreePointersAverageProps {
   hasAdvanced: boolean;

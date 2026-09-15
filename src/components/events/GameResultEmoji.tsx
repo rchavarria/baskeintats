@@ -1,5 +1,5 @@
-import type {AdvancedGame, FriendlyGame, Game} from "../../model/GameSchema";
-import {totalPoints} from "../../model/GameSchema";
+import type { AdvancedGame, FriendlyGame, Game } from "../../model/GameSchema";
+import { totalPoints } from "../../model/GameSchema";
 
 interface GameResultEmojiProps {
   game: Game | AdvancedGame | FriendlyGame;
@@ -17,7 +17,7 @@ function computeResult(game: Game | AdvancedGame | FriendlyGame): Result {
 
   if (homeIsOpponent === awayIsOpponent) {
     // both true or both false → cannot determine
-    return {emoji: "🤷", label: "Resultado desconocido"};
+    return { emoji: "🤷", label: "Resultado desconocido" };
   }
 
   const ownScores = homeIsOpponent ? game.away.scores : game.home.scores;
@@ -25,13 +25,13 @@ function computeResult(game: Game | AdvancedGame | FriendlyGame): Result {
   const own = totalPoints(ownScores);
   const opp = totalPoints(opponentScores);
 
-  if (own > opp) return {emoji: "🤩", label: "Victoria"};
-  if (own < opp) return {emoji: "😭", label: "Derrota"};
-  return {emoji: "😐", label: "Empate"};
+  if (own > opp) return { emoji: "🤩", label: "Victoria" };
+  if (own < opp) return { emoji: "😭", label: "Derrota" };
+  return { emoji: "😐", label: "Empate" };
 }
 
-export function GameResultEmoji({game, className}: GameResultEmojiProps) {
-  const {emoji, label} = computeResult(game);
+export function GameResultEmoji({ game, className }: GameResultEmojiProps) {
+  const { emoji, label } = computeResult(game);
   return (
     <div className={className ?? "mt-2 text-center text-lg"}>
       <span role="img" aria-label={label} title={label}>
@@ -40,4 +40,3 @@ export function GameResultEmoji({game, className}: GameResultEmojiProps) {
     </div>
   );
 }
-

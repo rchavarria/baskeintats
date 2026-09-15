@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2025_03_03_valcude: Game = GameSchema.parse({
   id: "S45-liga-ahorramas-cadete-f2-j8",
@@ -59,4 +59,3 @@ export const game_2025_03_03_valcude: Game = GameSchema.parse({
 
   references: [],
 });
-

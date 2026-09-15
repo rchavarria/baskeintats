@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2024_03_10_fuenlabrada: Game = GameSchema.parse({
   id: "S34-liga-oro-f2-j9",
@@ -52,11 +52,8 @@ export const game_2024_03_10_fuenlabrada: Game = GameSchema.parse({
 
   recap: {
     title: "¡WoW! Menudo último cuarto, remontando a tope, llegando a la prórroga, y rematando",
-    lines: [
-      "Increíble, si es que cuando se ponen, se ponen",
-    ],
+    lines: ["Increíble, si es que cuando se ponen, se ponen"],
   },
 
   references: [],
 });
-

@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2025_09_20_real_madrid: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f1-g1-j1",
@@ -94,6 +94,4 @@ export const game_2025_09_20_real_madrid: AdvancedGame = AdvancedGameSchema.pars
       url: "https://fbm.es/noticia-123-12834/liga-ahorramas-menudo-inicio-de-competici%C3%B3n!",
     },
   ],
-
 });
-

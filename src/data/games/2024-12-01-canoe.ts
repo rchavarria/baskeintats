@@ -81,4 +81,3 @@ export const game_2024_12_01_canoe: Game = GameSchema.parse({
     },
   ],
 });
-

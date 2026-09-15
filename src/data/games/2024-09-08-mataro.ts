@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2024_09_08_mataro: Game = GameSchema.parse({
   id: "S45-torneig-nord-j4",
@@ -74,4 +74,3 @@ export const game_2024_09_08_mataro: Game = GameSchema.parse({
     },
   ],
 });
-

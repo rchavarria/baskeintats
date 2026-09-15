@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2024_03_03_real_madrid: Game = GameSchema.parse({
   id: "S34-liga-oro-f2-j8",
@@ -50,10 +50,10 @@ export const game_2024_03_03_real_madrid: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "Resultado esperado, pero lo importante es que sigan jugando bien, como saben hacerlo, compartiendo el balón, siendo generosos",
+    title:
+      "Resultado esperado, pero lo importante es que sigan jugando bien, como saben hacerlo, compartiendo el balón, siendo generosos",
     lines: [],
   },
 
   references: [],
 });
-

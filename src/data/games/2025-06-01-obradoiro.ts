@@ -96,4 +96,3 @@ export const game_2025_06_01_obradoiro: AdvancedGame = AdvancedGameSchema.parse(
     },
   ],
 });
-

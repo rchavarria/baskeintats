@@ -164,7 +164,9 @@ describe("useFilteredEvents", () => {
     it("excludes events without competition (announcements, stats)", () => {
       withFilters({ competition: "Liga Autonómica" });
       const { result } = renderHook(() => useFilteredEvents());
-      expect(result.current.every((e) => e.type !== "announcement" && e.type !== "stats")).toBe(true);
+      expect(result.current.every((e) => e.type !== "announcement" && e.type !== "stats")).toBe(
+        true,
+      );
     });
 
     it("returns empty list when no event matches the competition", () => {
@@ -196,4 +198,3 @@ describe("useFilteredEvents", () => {
     });
   });
 });
-

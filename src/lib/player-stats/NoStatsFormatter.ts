@@ -1,4 +1,4 @@
-import type { AdvancedStatsFormatter } from './AdvancedStatsFormatter';
+import type { AdvancedStatsFormatter } from "./AdvancedStatsFormatter";
 
 /**
  * NoStatsFormatter
@@ -14,40 +14,40 @@ export class NoStatsFormatter implements AdvancedStatsFormatter {
     return false;
   }
 
-  kind(): 'none' | 'basic' | 'advanced' {
-    return 'none';
+  kind(): "none" | "basic" | "advanced" {
+    return "none";
   }
 
   formatPlayedTime(): string {
-    return '00:00';
+    return "00:00";
   }
 
   formatPoints(): string {
-    return '-';
+    return "-";
   }
 
   formatFieldGoals(): string {
-    return '-';
+    return "-";
   }
 
   formatThreePointers(): string {
-    return '-';
+    return "-";
   }
 
   formatFreeThrows(): string {
-    return '-';
+    return "-";
   }
 
   formatFaults(): string {
-    return '-';
+    return "-";
   }
 
   formatPlusMinus(): string {
-    return '-';
+    return "-";
   }
 
   formatEfficiency(): string {
-    return '-';
+    return "-";
   }
 
   // ============================================================
@@ -55,23 +55,22 @@ export class NoStatsFormatter implements AdvancedStatsFormatter {
   // ============================================================
 
   formatRebounds(): string {
-    return '-';
+    return "-";
   }
 
   formatAssists(): string {
-    return '-';
+    return "-";
   }
 
   formatSteals(): string {
-    return '-';
+    return "-";
   }
 
   formatTurnovers(): string {
-    return '-';
+    return "-";
   }
 
   formatBlocks(): string {
-    return '-';
+    return "-";
   }
 }
-

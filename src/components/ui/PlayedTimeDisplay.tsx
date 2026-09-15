@@ -10,4 +10,3 @@ export function PlayedTimeDisplay({ time }: PlayedTimeDisplayProps) {
 
   return <span>{`${minutes}:${seconds}`}</span>;
 }
-

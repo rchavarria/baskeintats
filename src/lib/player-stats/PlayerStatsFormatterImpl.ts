@@ -1,5 +1,5 @@
-import type { PlayerStats } from '../../model/PlayerSchema';
-import type { PlayerStatsFormatter } from './PlayerStatsFormatter';
+import type { PlayerStats } from "../../model/PlayerSchema";
+import type { PlayerStatsFormatter } from "./PlayerStatsFormatter";
 
 /**
  * PlayerStatsFormatterImpl
@@ -20,15 +20,15 @@ export class PlayerStatsFormatterImpl implements PlayerStatsFormatter {
     return !(this.stats.time === 0 && this.getTotalPoints() === 0);
   }
 
-  kind(): 'none' | 'basic' | 'advanced' {
-    return 'basic';
+  kind(): "none" | "basic" | "advanced" {
+    return "basic";
   }
 
   formatPlayedTime(): string {
     const minutes = Math.floor(this.stats.time / 60)
       .toString()
-      .padStart(2, '0');
-    const seconds = (this.stats.time % 60).toString().padStart(2, '0');
+      .padStart(2, "0");
+    const seconds = (this.stats.time % 60).toString().padStart(2, "0");
     return `${minutes}:${seconds}`;
   }
 
@@ -59,7 +59,7 @@ export class PlayerStatsFormatterImpl implements PlayerStatsFormatter {
     const pm = this.stats.plusMinus;
     if (pm > 0) return `+${pm}`;
     if (pm < 0) return `${pm}`;
-    return '0';
+    return "0";
   }
 
   formatEfficiency(): string {
@@ -86,11 +86,6 @@ export class PlayerStatsFormatterImpl implements PlayerStatsFormatter {
    */
   private getTotalPoints(): number {
     const twoPointers = this.stats.fieldGoals;
-    return (
-      3 * this.stats.threePointers +
-      2 * twoPointers +
-      this.stats.freeThrows.made
-    );
+    return 3 * this.stats.threePointers + 2 * twoPointers + this.stats.freeThrows.made;
   }
 }
-

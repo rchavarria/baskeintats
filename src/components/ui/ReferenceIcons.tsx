@@ -1,5 +1,5 @@
-import type {Reference} from "../../model/ReferenceSchema.ts";
-import {ReferenceTypeEmoji} from "./ReferenceTypeEmoji.tsx";
+import type { Reference } from "../../model/ReferenceSchema.ts";
+import { ReferenceTypeEmoji } from "./ReferenceTypeEmoji.tsx";
 
 interface ReferenceIconsProps {
   references: Reference[];

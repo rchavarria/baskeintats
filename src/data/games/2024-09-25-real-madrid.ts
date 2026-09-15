@@ -76,4 +76,3 @@ export const game_2024_09_25_real_madrid: Game = GameSchema.parse({
     },
   ],
 });
-

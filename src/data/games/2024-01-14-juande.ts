@@ -47,10 +47,10 @@ export const game_2024_01_14_juande: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "No pudo ser, han jugado muy bien, pero acusamos mucho el físico. Son un año mayores y lo han hecho valer",
+    title:
+      "No pudo ser, han jugado muy bien, pero acusamos mucho el físico. Son un año mayores y lo han hecho valer",
     lines: [],
   },
 
   references: [],
 });
-

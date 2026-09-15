@@ -86,4 +86,3 @@ export const game_2025_11_30_valcude: Game = GameSchema.parse({
     },
   ],
 });
-

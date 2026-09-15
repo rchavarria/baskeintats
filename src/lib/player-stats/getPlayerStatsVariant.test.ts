@@ -1,6 +1,6 @@
-import { describe, it, expect } from 'vitest';
-import { getPlayerStatsVariant } from './getPlayerStatsVariant';
-import type { PlayerStats, AdvancedPlayerStats } from '../../model/PlayerSchema';
+import { describe, it, expect } from "vitest";
+import { getPlayerStatsVariant } from "./getPlayerStatsVariant";
+import type { PlayerStats, AdvancedPlayerStats } from "../../model/PlayerSchema";
 
 const emptyBasicStats: PlayerStats = {
   time: 0,
@@ -27,21 +27,21 @@ const emptyAdvancedStats: AdvancedPlayerStats = {
   efficiency: 0,
 };
 
-describe('getPlayerStatsVariant', () => {
+describe("getPlayerStatsVariant", () => {
   describe("variant 'none'", () => {
-    it('returns none for PlayerStats with time=0 and points=0', () => {
+    it("returns none for PlayerStats with time=0 and points=0", () => {
       const result = getPlayerStatsVariant(emptyBasicStats);
-      expect(result.kind).toBe('none');
+      expect(result.kind).toBe("none");
     });
 
-    it('returns none for AdvancedPlayerStats with time=0 and points=0', () => {
+    it("returns none for AdvancedPlayerStats with time=0 and points=0", () => {
       const result = getPlayerStatsVariant(emptyAdvancedStats);
-      expect(result.kind).toBe('none');
+      expect(result.kind).toBe("none");
     });
   });
 
   describe("variant 'basic'", () => {
-    it('returns basic when fieldGoals is a number', () => {
+    it("returns basic when fieldGoals is a number", () => {
       const stats: PlayerStats = {
         ...emptyBasicStats,
         time: 900,
@@ -49,29 +49,29 @@ describe('getPlayerStatsVariant', () => {
         threePointers: 1,
       };
       const result = getPlayerStatsVariant(stats);
-      expect(result.kind).toBe('basic');
+      expect(result.kind).toBe("basic");
     });
 
-    it('returns basic (not none) when time > 0 and points === 0 (bad game)', () => {
+    it("returns basic (not none) when time > 0 and points === 0 (bad game)", () => {
       const stats: PlayerStats = { ...emptyBasicStats, time: 600 };
       const result = getPlayerStatsVariant(stats);
-      expect(result.kind).toBe('basic');
+      expect(result.kind).toBe("basic");
     });
 
-    it('typed narrowing: result.stats is PlayerStats when kind is basic', () => {
+    it("typed narrowing: result.stats is PlayerStats when kind is basic", () => {
       const stats: PlayerStats = { ...emptyBasicStats, time: 900, fieldGoals: 3, threePointers: 1 };
       const result = getPlayerStatsVariant(stats);
-      if (result.kind === 'basic') {
+      if (result.kind === "basic") {
         // TypeScript should narrow result.stats to PlayerStats here
-        expect(typeof result.stats.fieldGoals).toBe('number');
+        expect(typeof result.stats.fieldGoals).toBe("number");
       } else {
-        throw new Error('Expected basic variant');
+        throw new Error("Expected basic variant");
       }
     });
   });
 
   describe("variant 'advanced'", () => {
-    it('returns advanced when fieldGoals is an object', () => {
+    it("returns advanced when fieldGoals is an object", () => {
       const stats: AdvancedPlayerStats = {
         ...emptyAdvancedStats,
         time: 1200,
@@ -80,10 +80,10 @@ describe('getPlayerStatsVariant', () => {
         freeThrows: { made: 1, attempted: 2 },
       };
       const result = getPlayerStatsVariant(stats);
-      expect(result.kind).toBe('advanced');
+      expect(result.kind).toBe("advanced");
     });
 
-    it('typed narrowing: result.stats is AdvancedPlayerStats when kind is advanced', () => {
+    it("typed narrowing: result.stats is AdvancedPlayerStats when kind is advanced", () => {
       const stats: AdvancedPlayerStats = {
         ...emptyAdvancedStats,
         time: 600,
@@ -91,12 +91,11 @@ describe('getPlayerStatsVariant', () => {
         threePointers: { made: 1, attempted: 3 },
       };
       const result = getPlayerStatsVariant(stats);
-      if (result.kind === 'advanced') {
-        expect(typeof result.stats.fieldGoals).toBe('object');
+      if (result.kind === "advanced") {
+        expect(typeof result.stats.fieldGoals).toBe("object");
       } else {
-        throw new Error('Expected advanced variant');
+        throw new Error("Expected advanced variant");
       }
     });
   });
 });
-

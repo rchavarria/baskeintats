@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2025_12_13_patrocinio: Game = GameSchema.parse({
   id: "S56-liga-oro-f1-g1-j8",
@@ -76,6 +76,4 @@ export const game_2025_12_13_patrocinio: Game = GameSchema.parse({
       url: "https://www.fbm.es/noticia-104-12989/concluye-la-primera-fase-de-la-liga-ahorramas",
     },
   ],
-
 });
-

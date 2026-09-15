@@ -1,8 +1,8 @@
-import type {Game} from "../../model/GameSchema.ts";
-import {GameSchema} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
-import {EmptyPlayerStats} from "../../model/PlayerSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
+import { EmptyPlayerStats } from "../../model/PlayerSchema.ts";
 
 export const game_2025_07_26_eoss_georgia: Game = GameSchema.parse({
   id: "S45-eoss-j5",
@@ -22,14 +22,14 @@ export const game_2025_07_26_eoss_georgia: Game = GameSchema.parse({
   home: {
     club: teams["dme-spain"],
     category: "U14M",
-    scores: [ 50 ],
+    scores: [50],
   },
 
   away: {
     club: teams["usa-georgia"],
     category: "U14M",
     opponent: true,
-    scores: [ 44 ],
+    scores: [44],
   },
 
   playerStats: EmptyPlayerStats,
@@ -41,11 +41,8 @@ export const game_2025_07_26_eoss_georgia: Game = GameSchema.parse({
 
   recap: {
     title: "¡¡Final!!",
-    lines: [
-      "Y se llevan el campeonato, ¡¡toma ya!!",
-    ],
+    lines: ["Y se llevan el campeonato, ¡¡toma ya!!"],
   },
 
   references: [],
-
 });

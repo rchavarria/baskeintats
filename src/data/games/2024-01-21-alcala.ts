@@ -47,10 +47,10 @@ export const game_2024_01_21_alcala: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "Otra vez lo mismo, nos han ganado por la fuerza bruta. Jugamos mejor que ellos, pero hay mucha diferencia física, y la usan",
+    title:
+      "Otra vez lo mismo, nos han ganado por la fuerza bruta. Jugamos mejor que ellos, pero hay mucha diferencia física, y la usan",
     lines: [],
   },
 
   references: [],
 });
-

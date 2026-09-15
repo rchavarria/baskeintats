@@ -2,17 +2,17 @@ import { useParams, Link } from "react-router-dom";
 import { useEvents } from "../hooks/useEvents.ts";
 import { totalPoints } from "../model/GameSchema";
 import { EmptyState } from "../components/ui/EmptyState";
-import {DateTimeDisplay} from "../components/ui/DateTimeDisplay.tsx";
-import {CategoryBadge} from "../components/ui/CategoryBadge.tsx";
+import { DateTimeDisplay } from "../components/ui/DateTimeDisplay.tsx";
+import { CategoryBadge } from "../components/ui/CategoryBadge.tsx";
 import { GameVideos } from "../components/events/GameVideos";
-import {ReferenceList} from "../components/events/ReferenceList.tsx";
+import { ReferenceList } from "../components/events/ReferenceList.tsx";
 import { PlayerStatsSelector } from "../components/stats/PlayerStatsSelector";
 
 export function GameDetailPage() {
   const { gameId } = useParams<{ gameId: string }>();
   const games = useEvents();
 
-  const game = games.find(g => g.id === gameId);
+  const game = games.find((g) => g.id === gameId);
 
   if (!game) {
     return <EmptyState message="Partido no encontrado" />;
@@ -30,21 +30,31 @@ export function GameDetailPage() {
 
       <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
         <div className="text-xs text-gray-400 text-center mb-6 flex items-center justify-center gap-2">
-          <span>{game.competition.name} · {game.competition.phase} · {game.competition.round}</span>
+          <span>
+            {game.competition.name} · {game.competition.phase} · {game.competition.round}
+          </span>
           <CategoryBadge category={game.competition.category} season={game.season} />
         </div>
 
         <div className="text-xs text-gray-400 text-center mb-4">
-          <DateTimeDisplay isoDate={game.date}/> · {game.venue.name}
+          <DateTimeDisplay isoDate={game.date} /> · {game.venue.name}
         </div>
 
         <div className="flex items-center justify-center gap-4">
           <div className="flex items-center gap-3 flex-1 justify-end">
-            <img src={game.home.club.logo} alt={game.home.club.name} className="w-12 h-12 object-contain"/>
+            <img
+              src={game.home.club.logo}
+              alt={game.home.club.name}
+              className="w-12 h-12 object-contain"
+            />
             <div className="text-right">
               <p className="font-bold text-lg text-gray-900">{game.home.club.name}</p>
               <div className="flex justify-end gap-1 mt-1 text-xs text-gray-400">
-                {game.home.scores.map((s, i) => <span key={i}>Q{i + 1}: {s}</span>)}
+                {game.home.scores.map((s, i) => (
+                  <span key={i}>
+                    Q{i + 1}: {s}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
@@ -57,10 +67,18 @@ export function GameDetailPage() {
             <div className="text-left">
               <p className="font-bold text-lg text-gray-900">{game.away.club.name}</p>
               <div className="flex justify-start gap-1 mt-1 text-xs text-gray-400">
-                {game.away.scores.map((s, i) => <span key={i}>Q{i + 1}: {s}</span>)}
+                {game.away.scores.map((s, i) => (
+                  <span key={i}>
+                    Q{i + 1}: {s}
+                  </span>
+                ))}
               </div>
             </div>
-            <img src={game.away.club.logo} alt={game.away.club.name} className="w-12 h-12 object-contain"/>
+            <img
+              src={game.away.club.logo}
+              alt={game.away.club.name}
+              className="w-12 h-12 object-contain"
+            />
           </div>
         </div>
       </div>
@@ -73,16 +91,15 @@ export function GameDetailPage() {
         <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
           <h2 className="font-semibold text-gray-700 mb-3">🏀 Crónica</h2>
           <h3>{game.recap.title}</h3>
-          {
-            game.recap.lines.map(((line, i) => (
-              <p key={i} className="text-gray-600 leading-relaxed whitespace-pre-line">{line}</p>
-            )))
-          }
+          {game.recap.lines.map((line, i) => (
+            <p key={i} className="text-gray-600 leading-relaxed whitespace-pre-line">
+              {line}
+            </p>
+          ))}
         </div>
       )}
 
       <ReferenceList references={game.references} />
-
     </div>
   );
 }

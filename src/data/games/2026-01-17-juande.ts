@@ -81,4 +81,3 @@ export const game_2026_01_17_juande: Game = GameSchema.parse({
     },
   ],
 });
-

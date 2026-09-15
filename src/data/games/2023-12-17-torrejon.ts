@@ -48,7 +48,8 @@ export const game_2023_12_17_torrejon: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "¡Humillación! La peor derrota que he visto, y encima, a un equipo un año mayor que ellos, impresionante",
+    title:
+      "¡Humillación! La peor derrota que he visto, y encima, a un equipo un año mayor que ellos, impresionante",
     lines: [
       "Y con este partido finalizamos la primera fase. La siguiente fase, subimos a plata 😍",
     ],
@@ -56,4 +57,3 @@ export const game_2023_12_17_torrejon: Game = GameSchema.parse({
 
   references: [],
 });
-

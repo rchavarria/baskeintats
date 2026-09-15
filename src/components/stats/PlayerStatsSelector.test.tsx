@@ -1,7 +1,7 @@
-import { render, screen } from '@testing-library/react';
-import { describe, it, expect } from 'vitest';
-import { PlayerStatsSelector } from './PlayerStatsSelector';
-import type { PlayerStats, AdvancedPlayerStats } from '../../model/PlayerSchema';
+import { render, screen } from "@testing-library/react";
+import { describe, it, expect } from "vitest";
+import { PlayerStatsSelector } from "./PlayerStatsSelector";
+import type { PlayerStats, AdvancedPlayerStats } from "../../model/PlayerSchema";
 
 const emptyBasicStats: PlayerStats = {
   time: 0,
@@ -38,34 +38,37 @@ const advancedStats: AdvancedPlayerStats = {
   efficiency: 18,
 };
 
-describe('PlayerStatsSelector', () => {
-  describe('renders NoPlayerStats', () => {
+describe("PlayerStatsSelector", () => {
+  describe("renders NoPlayerStats", () => {
     // Migrated from PlayerStats.test.tsx
-    it('when stats is undefined', () => {
+    it("when stats is undefined", () => {
       render(<PlayerStatsSelector stats={undefined} />);
-      expect(screen.getByText('No hay estadísticas disponibles para este partido')).toBeInTheDocument();
+      expect(
+        screen.getByText("No hay estadísticas disponibles para este partido"),
+      ).toBeInTheDocument();
     });
 
-    it('when time === 0 and points === 0 (PlayerStats)', () => {
+    it("when time === 0 and points === 0 (PlayerStats)", () => {
       render(<PlayerStatsSelector stats={emptyBasicStats} />);
-      expect(screen.getByText('No hay estadísticas disponibles para este partido')).toBeInTheDocument();
+      expect(
+        screen.getByText("No hay estadísticas disponibles para este partido"),
+      ).toBeInTheDocument();
     });
   });
 
-  describe('renders PlayerStats', () => {
-    it('when variant is basic', () => {
+  describe("renders PlayerStats", () => {
+    it("when variant is basic", () => {
       render(<PlayerStatsSelector stats={basicStats} />);
-      expect(screen.getByText('📈 Estadísticas del jugador')).toBeInTheDocument();
-      expect(screen.getByText('14:27')).toBeInTheDocument();
+      expect(screen.getByText("📈 Estadísticas del jugador")).toBeInTheDocument();
+      expect(screen.getByText("14:27")).toBeInTheDocument();
     });
   });
 
-  describe('renders AdvancedPlayerStats', () => {
-    it('when variant is advanced', () => {
+  describe("renders AdvancedPlayerStats", () => {
+    it("when variant is advanced", () => {
       render(<PlayerStatsSelector stats={advancedStats} />);
-      expect(screen.getByText('📈 Estadísticas del jugador')).toBeInTheDocument();
-      expect(screen.getByText('11:06')).toBeInTheDocument();
+      expect(screen.getByText("📈 Estadísticas del jugador")).toBeInTheDocument();
+      expect(screen.getByText("11:06")).toBeInTheDocument();
     });
   });
 });
-

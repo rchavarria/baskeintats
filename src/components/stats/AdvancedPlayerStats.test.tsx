@@ -26,4 +26,3 @@ describe("AdvancedPlayerStats", () => {
     expect(screen.getByText("📈 Estadísticas del jugador")).toBeInTheDocument();
   });
 });
-

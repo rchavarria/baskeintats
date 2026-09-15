@@ -1,6 +1,6 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2026_05_27_fbm_3x3: Announcement = AnnouncementSchema.parse({
   id: "S56-fbm-3x3",
@@ -53,5 +53,4 @@ export const announcement_2026_05_27_fbm_3x3: Announcement = AnnouncementSchema.
       url: "https://www.fbm.es/noticia-88-13355/concentraci%C3%B3n-de-las-preselecciones-3x3-u13-y-u15#CM/104784.aspx",
     },
   ],
-
 });

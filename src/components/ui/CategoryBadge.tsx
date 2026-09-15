@@ -1,4 +1,4 @@
-import type {Category} from "../../model/CategorySchema.ts";
+import type { Category } from "../../model/CategorySchema.ts";
 
 const PLAYER_BIRTH_YEAR = 2011;
 

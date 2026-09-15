@@ -4,7 +4,6 @@ import { PlayerStats } from "./PlayerStats";
 import type { PlayerStats as PlayerStatsType } from "../../model/PlayerSchema";
 
 describe("PlayerStats", () => {
-
   it("displays player stats when there is data", () => {
     const stats: PlayerStatsType = {
       time: 14 * 60 + 27,
@@ -22,5 +21,4 @@ describe("PlayerStats", () => {
     expect(screen.getByText("14:27")).toBeInTheDocument(); // 867 segundos = 14:27
     expect(screen.getByText("17")).toBeInTheDocument(); // puntos: 3*1 + 2*5 + 4 = 17
   });
-
 });

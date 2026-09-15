@@ -7,7 +7,7 @@
  * - NoStatsFormatter (null object, también implementa esta interfaz)
  */
 
-import type { PlayerStatsFormatter } from './PlayerStatsFormatter';
+import type { PlayerStatsFormatter } from "./PlayerStatsFormatter";
 
 export interface AdvancedStatsFormatter extends PlayerStatsFormatter {
   /**
@@ -40,4 +40,3 @@ export interface AdvancedStatsFormatter extends PlayerStatsFormatter {
    */
   formatBlocks(): string;
 }
-

@@ -1,7 +1,7 @@
-import {FriendlyGameSchema} from "../../model/GameSchema.ts";
-import type {FriendlyGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { FriendlyGameSchema } from "../../model/GameSchema.ts";
+import type { FriendlyGame } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2025_12_28_oporto: FriendlyGame = FriendlyGameSchema.parse({
   id: "S56-torneo-cyl-j2",
@@ -21,7 +21,7 @@ export const game_2025_12_28_oporto: FriendlyGame = FriendlyGameSchema.parse({
   home: {
     club: teams["seleccion-madrid"],
     category: "U15M",
-    scores: [ 0, 40, 0, 58],
+    scores: [0, 40, 0, 58],
   },
 
   away: {
@@ -55,7 +55,7 @@ export const game_2025_12_28_oporto: FriendlyGame = FriendlyGameSchema.parse({
       "Con los portugueses sí que pudimos",
       "La primera mitad fue super igualada, con contínuos cambios de líder",
       "Pero la segunda parte fue nuestra totalmente, en palabras del entrenador",
-      "El entrenador también tuvo unas palabras/gestos para con nosotros, como: \"ostrás con los de Alcobendas\", \"imparable\" o \"pffff\" (ante una defensa inquebrantable)",
+      'El entrenador también tuvo unas palabras/gestos para con nosotros, como: "ostrás con los de Alcobendas", "imparable" o "pffff" (ante una defensa inquebrantable)',
     ],
   },
 
@@ -67,4 +67,3 @@ export const game_2025_12_28_oporto: FriendlyGame = FriendlyGameSchema.parse({
     },
   ],
 });
-

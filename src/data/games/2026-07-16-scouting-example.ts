@@ -1,5 +1,5 @@
-import {ScoutingSchema} from "../../model/ScoutingSchema.ts";
-import type {Scouting} from "../../model/ScoutingSchema.ts";
+import { ScoutingSchema } from "../../model/ScoutingSchema.ts";
+import type { Scouting } from "../../model/ScoutingSchema.ts";
 
 export const scouting_2026_07_16_example: Scouting = ScoutingSchema.parse({
   id: "S56-scouting-example",
@@ -39,5 +39,4 @@ export const scouting_2026_07_16_example: Scouting = ScoutingSchema.parse({
       type: "bad-play",
     },
   ],
-
 });

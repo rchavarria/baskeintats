@@ -60,4 +60,3 @@ export const game_2025_04_17_torrelodones: Game = GameSchema.parse({
 
   references: [],
 });
-

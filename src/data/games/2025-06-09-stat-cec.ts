@@ -1,9 +1,9 @@
-import type {Stats} from "../../model/StatsSchema.ts";
-import {StatsSchema} from "../../model/StatsSchema.ts";
-import {game_2025_06_01_obradoiro} from "./2025-06-01-obradoiro.ts";
-import {game_2025_06_02_elche} from "./2025-06-02-elche.ts";
-import {game_2025_06_03_barca} from "./2025-06-03-barca.ts";
-import {game_2025_06_04_joventut} from "./2025-06-04-joventut.ts";
+import type { Stats } from "../../model/StatsSchema.ts";
+import { StatsSchema } from "../../model/StatsSchema.ts";
+import { game_2025_06_01_obradoiro } from "./2025-06-01-obradoiro.ts";
+import { game_2025_06_02_elche } from "./2025-06-02-elche.ts";
+import { game_2025_06_03_barca } from "./2025-06-03-barca.ts";
+import { game_2025_06_04_joventut } from "./2025-06-04-joventut.ts";
 
 export const stat_2025_06_09_cec: Stats = StatsSchema.parse({
   id: "S45-stat-cesa",
@@ -40,7 +40,8 @@ export const stat_2025_06_09_cec: Stats = StatsSchema.parse({
     },
     {
       type: "article",
-      label: "Hay algunos artículos de la Federación de Madrid, pero solo hablan de equipos a partir de cuartos, no de nosotros: Semifinales",
+      label:
+        "Hay algunos artículos de la Federación de Madrid, pero solo hablan de equipos a partir de cuartos, no de nosotros: Semifinales",
       url: "https://fbm.es/noticia-99-12677/cuatro-equipos-madrile%C3%B1os-en-semifinales",
     },
     {

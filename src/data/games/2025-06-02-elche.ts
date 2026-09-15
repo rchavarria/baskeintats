@@ -91,4 +91,3 @@ export const game_2025_06_02_elche: AdvancedGame = AdvancedGameSchema.parse({
     },
   ],
 });
-

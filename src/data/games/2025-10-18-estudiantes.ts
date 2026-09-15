@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2025_10_18_estudiantes: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f1-g1-j4",
@@ -100,6 +100,4 @@ export const game_2025_10_18_estudiantes: AdvancedGame = AdvancedGameSchema.pars
       url: "https://fbm.es/noticia-123-12886/espect%C3%A1culo-en-la-liga-ahorramas!",
     },
   ],
-
 });
-

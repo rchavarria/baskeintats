@@ -1,6 +1,6 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2026_08_24_season_start: Announcement = AnnouncementSchema.parse({
   id: "S67-season-start",
@@ -37,5 +37,4 @@ export const announcement_2026_08_24_season_start: Announcement = AnnouncementSc
       url: "https://fbm.es/documentos-119/Actualidad/Revistas-Resumen-temporada",
     },
   ],
-
 });

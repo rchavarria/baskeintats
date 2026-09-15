@@ -91,5 +91,4 @@ export const game_2025_06_03_barca: AdvancedGame = AdvancedGameSchema.parse({
       url: "https://baloncestoenvivo.feb.es/partido/2471617",
     },
   ],
-
 });

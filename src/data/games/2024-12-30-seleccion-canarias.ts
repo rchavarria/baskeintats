@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2024_12_30_seleccion_canarias: AdvancedGame = AdvancedGameSchema.parse({
   id: "S45-amistoso-fbm-canarias",
@@ -84,4 +84,3 @@ export const game_2024_12_30_seleccion_canarias: AdvancedGame = AdvancedGameSche
     },
   ],
 });
-

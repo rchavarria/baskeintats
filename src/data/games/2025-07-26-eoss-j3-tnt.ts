@@ -1,8 +1,8 @@
-import type {Game} from "../../model/GameSchema.ts";
-import {GameSchema} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
-import {EmptyPlayerStats} from "../../model/PlayerSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
+import { EmptyPlayerStats } from "../../model/PlayerSchema.ts";
 
 export const game_2025_07_26_eoss_tnt: Game = GameSchema.parse({
   id: "S45-eoss-j3",
@@ -22,14 +22,14 @@ export const game_2025_07_26_eoss_tnt: Game = GameSchema.parse({
   home: {
     club: teams["dme-spain"],
     category: "U14M",
-    scores: [ 52 ],
+    scores: [52],
   },
 
   away: {
     club: teams["usa-tnt"],
     category: "U14M",
     opponent: true,
-    scores: [ 17 ],
+    scores: [17],
   },
 
   playerStats: EmptyPlayerStats,
@@ -45,5 +45,4 @@ export const game_2025_07_26_eoss_tnt: Game = GameSchema.parse({
   },
 
   references: [],
-
 });

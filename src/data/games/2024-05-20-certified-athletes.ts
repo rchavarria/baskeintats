@@ -1,8 +1,8 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
-import {EmptyPlayerStats} from "../../model/PlayerSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
+import { EmptyPlayerStats } from "../../model/PlayerSchema.ts";
 
 export const game_2024_05_20_certified_athletes: Game = GameSchema.parse({
   id: "S34-torneo-ardres-final",
@@ -66,14 +66,15 @@ export const game_2024_05_20_certified_athletes: Game = GameSchema.parse({
     },
     {
       type: "video",
-      label: "(Actualización, abril del 2025) Casi un año después, cae en nuestras manos un vídeo promocional del equipo Certified Athletes: 1, 2, 3 family",
+      label:
+        "(Actualización, abril del 2025) Casi un año después, cae en nuestras manos un vídeo promocional del equipo Certified Athletes: 1, 2, 3 family",
       url: "https://youtu.be/2rr5xa2lRts",
     },
     {
       type: "social-media",
-      label: "(Actualización, mayo del 2026) Los equipos participantes comienzan a promocionar la edición de este año",
+      label:
+        "(Actualización, mayo del 2026) Los equipos participantes comienzan a promocionar la edición de este año",
       url: "https://www.instagram.com/p/DYEXH-poEb6/",
     },
   ],
-
 });

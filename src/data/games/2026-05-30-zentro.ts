@@ -1,7 +1,7 @@
-import type {Game} from "../../model/GameSchema.ts";
-import {GameSchema} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2026_05_30_zentro: Game = GameSchema.parse({
   id: "S56-liga-plata-f3-j4",
@@ -22,14 +22,14 @@ export const game_2026_05_30_zentro: Game = GameSchema.parse({
   home: {
     club: teams["alcobendas"],
     category: "U15M",
-    scores: [ 12, 19, 26, 16, 9 ],
+    scores: [12, 19, 26, 16, 9],
   },
 
   away: {
     club: teams["zentro"],
     category: "U15M",
     opponent: true,
-    scores: [ 16, 23, 17, 17, 6 ],
+    scores: [16, 23, 17, 17, 6],
   },
 
   playerStats: {
@@ -73,5 +73,4 @@ export const game_2026_05_30_zentro: Game = GameSchema.parse({
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=15622&informe=resultados-clasificacion-proxima&ultima_jornada=106478&proxima_jornada=106479",
     },
   ],
-
 });

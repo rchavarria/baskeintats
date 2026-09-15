@@ -39,7 +39,11 @@ describe("ReferenceList", () => {
   });
 
   it("renders fallback emoji for unknown reference type", () => {
-    const ref = { type: "unknown" as Reference["type"], label: "Mystery link", url: "https://example.com" };
+    const ref = {
+      type: "unknown" as Reference["type"],
+      label: "Mystery link",
+      url: "https://example.com",
+    };
     render(<ReferenceList references={[ref]} />);
     expect(screen.getByText(/❌❓🚨/)).toBeInTheDocument();
   });
@@ -63,4 +67,3 @@ describe("ReferenceList", () => {
     expect(links[1]).toHaveAttribute("href", "https://flickr.com/album");
   });
 });
-

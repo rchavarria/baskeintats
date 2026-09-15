@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2026_03_29_distrito: Game = GameSchema.parse({
   id: "S56-liga-plata-play-in",
@@ -55,7 +55,7 @@ export const game_2026_03_29_distrito: Game = GameSchema.parse({
         label: "Canal CBA",
         url: "https://youtu.be/HarLceE-9_s",
       },
-    ]
+    ],
   },
 
   references: [
@@ -90,5 +90,4 @@ export const game_2026_03_29_distrito: Game = GameSchema.parse({
       "Y hasta aquí ha llegado la competición. Creo que podemos estar muy contentos con el resultado.",
     ],
   },
-
 });

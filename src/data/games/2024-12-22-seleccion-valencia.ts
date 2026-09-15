@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2024_12_22_seleccion_valencia: AdvancedGame = AdvancedGameSchema.parse({
   id: "S45-amistoso-fbm-valencia",
@@ -70,7 +70,8 @@ export const game_2024_12_22_seleccion_valencia: AdvancedGame = AdvancedGameSche
   },
 
   recap: {
-    title: "Amistoso de la selección de Madrid contra la selección de Valencia como preparación del Campeonato de España",
+    title:
+      "Amistoso de la selección de Madrid contra la selección de Valencia como preparación del Campeonato de España",
     lines: [],
   },
 
@@ -92,4 +93,3 @@ export const game_2024_12_22_seleccion_valencia: AdvancedGame = AdvancedGameSche
     },
   ],
 });
-

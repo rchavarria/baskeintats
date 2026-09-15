@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { venues } from "../venues.ts";
+import { teams } from "../teams.ts";
 
 export const game_2025_11_16_rozas: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f1-g1-j7",
@@ -100,6 +100,4 @@ export const game_2025_11_16_rozas: AdvancedGame = AdvancedGameSchema.parse({
       url: "https://www.fbm.es/noticia-104-12931/sube-la-temperatura-en-la-liga-ahorramas",
     },
   ],
-
 });
-
