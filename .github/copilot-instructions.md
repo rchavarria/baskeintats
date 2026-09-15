@@ -8,7 +8,8 @@ performance.
 ### Technology Stack
 
 - **React 19** + **TypeScript 5.9** + **Vite 8**
-- **Tailwind CSS 3** for styling
+- **Tailwind CSS 4** for styling (CSS-first config via `@import "tailwindcss"` in `src/index.css`, no
+  `tailwind.config.ts`/`postcss.config.js`; integrated with the `@tailwindcss/vite` plugin)
 - **React Router 7** for navigation
 - **Chart.js 4** + **react-chartjs-2** for charts (pending implementation)
 - **Zod 4** for runtime schema validation
