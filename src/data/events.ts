@@ -257,6 +257,7 @@ import { scouting_2026_07_12_spain_france } from "./games/2026-07-12-scouting-sp
 import { scouting_2026_07_16_example } from "./games/2026-07-16-scouting-example.ts";
 import { announcement_2026_07_21_season_summary } from "./games/2026-07-21-announcement-season-summary.ts";
 import { scouting_2026_07_23_spain_france } from "./games/2026-07-23-scouting-spain-france.ts";
+import { scouting_2026_08_14_spain_latvia } from "./games/2026-08-14-scouting-spain-latvia.ts";
 import { announcement_2026_08_24_season_start } from "./games/2026-08-24-announcement-season-start.ts";
 
 type EventItem =
@@ -272,6 +273,7 @@ export function getEvents(): EventItem[] {
   const events: EventItem[] = [
     announcement_2026_08_24_season_start,
     announcement_2026_07_21_season_summary,
+    scouting_2026_08_14_spain_latvia,
     scouting_2026_07_23_spain_france,
     scouting_2026_07_16_example,
     scouting_2026_07_12_spain_france,
