@@ -1,5 +1,5 @@
-import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
 import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
 
 export const announcement_2024_08_26_comienzo_temporada: Announcement = AnnouncementSchema.parse({
   id: "S45-comienzo-temporada",

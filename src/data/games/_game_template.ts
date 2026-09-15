@@ -1,7 +1,7 @@
 import type { Game } from "../../model/GameSchema.ts";
 import { GameSchema } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const _game_template: Game = GameSchema.parse({
   id: "S56-liga-plata-f1-g1-j1",

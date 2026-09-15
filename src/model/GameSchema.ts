@@ -1,9 +1,9 @@
 import { z } from "zod";
 import { CategorySchema } from "./CategorySchema.ts";
-import { PlayerStatsSchema, AdvancedPlayerStatsSchema } from "./PlayerSchema.ts";
+import { AdvancedPlayerStatsSchema, PlayerStatsSchema } from "./PlayerSchema.ts";
+import { ReferenceSchema } from "./ReferenceSchema.ts";
 import { TeamSchema } from "./TeamSchema.ts";
 import { VenueSchema } from "./VenueSchema.ts";
-import { ReferenceSchema } from "./ReferenceSchema.ts";
 
 export function totalPoints(scores: number[]): number {
   return scores.reduce((sum, s) => sum + s, 0);

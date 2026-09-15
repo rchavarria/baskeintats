@@ -1,5 +1,5 @@
-import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
 import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
 import { venues } from "../venues.ts";
 
 export const announcement_2026_07_21_season_summary: Announcement = AnnouncementSchema.parse({

@@ -1,5 +1,5 @@
-import { useFilters } from "../../hooks/useFilters";
 import { useEvents } from "../../hooks/useEvents.ts";
+import { useFilters } from "../../hooks/useFilters";
 
 export function FilterBar() {
   const { filters, setFilters, resetFilters } = useFilters();

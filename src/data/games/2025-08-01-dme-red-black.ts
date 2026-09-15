@@ -1,8 +1,8 @@
-import { FriendlyGameSchema } from "../../model/GameSchema.ts";
 import type { FriendlyGame } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
-import { teams } from "../teams.ts";
+import { FriendlyGameSchema } from "../../model/GameSchema.ts";
 import { EmptyPlayerStats } from "../../model/PlayerSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_08_01_dme_red_black: FriendlyGame = FriendlyGameSchema.parse({
   id: "S45-dme-red-black",

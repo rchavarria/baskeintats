@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_03_31_fuenlabrada: Game = GameSchema.parse({
   id: "S34-torneo-zaragoza-p5-6",

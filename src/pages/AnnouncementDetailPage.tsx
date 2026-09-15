@@ -1,19 +1,19 @@
 import { Link, useParams } from "react-router-dom";
-import { useEvents } from "../hooks/useEvents.ts";
-import { EmptyState } from "../components/ui/EmptyState";
-import { DateTimeDisplay } from "../components/ui/DateTimeDisplay.tsx";
-import { TimeDisplay } from "../components/ui/TimeDisplay.tsx";
 import { AnnouncementTypeEmoji } from "../components/events/AnnouncementEmojis.tsx";
 import { ReferenceList } from "../components/events/ReferenceList.tsx";
-import { DateDisplay } from "../components/ui/DateDisplay.tsx";
 import { CategoryBadge } from "../components/ui/CategoryBadge.tsx";
+import { DateDisplay } from "../components/ui/DateDisplay.tsx";
+import { DateTimeDisplay } from "../components/ui/DateTimeDisplay.tsx";
+import { EmptyState } from "../components/ui/EmptyState";
+import { TimeDisplay } from "../components/ui/TimeDisplay.tsx";
+import { useEvents } from "../hooks/useEvents.ts";
 
 export function AnnouncementDetailPage() {
   const { announcementId } = useParams<{ announcementId: string }>();
   const events = useEvents();
 
   const announcement = events.find((e) => e.id === announcementId);
-  if (!announcement || announcement.type !== "announcement") {
+  if (announcement?.type !== "announcement") {
     return <EmptyState message="Anuncio no encontrado" />;
   }
 

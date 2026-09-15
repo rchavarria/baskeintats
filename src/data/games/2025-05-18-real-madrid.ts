@@ -1,7 +1,7 @@
-import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import type { AdvancedGame } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_05_18_real_madrid: AdvancedGame = AdvancedGameSchema.parse({
   id: "S45-liga-ahorramas-f4-final",

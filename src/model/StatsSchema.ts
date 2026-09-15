@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { CategorySchema } from "./CategorySchema.ts";
+import { AdvancedGameSchema, GameSchema } from "./GameSchema.ts";
 import { ReferenceSchema } from "./ReferenceSchema.ts";
-import { GameSchema, AdvancedGameSchema } from "./GameSchema.ts";
 
 export const StatsSchema = z.object({
   id: z.string(),

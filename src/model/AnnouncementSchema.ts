@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { CategorySchema } from "./CategorySchema.ts";
-import { VenueSchema } from "./VenueSchema.ts";
 import { ReferenceSchema } from "./ReferenceSchema.ts";
+import { VenueSchema } from "./VenueSchema.ts";
 
 export const ScheduleEntrySchema = z.object({
   label: z.string().optional(),

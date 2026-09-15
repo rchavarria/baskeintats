@@ -1,7 +1,7 @@
-import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import type { AdvancedGame } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_01_04_seleccion_melilla: AdvancedGame = AdvancedGameSchema.parse({
   id: "S45-cesa-j2",

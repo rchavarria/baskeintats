@@ -1,4 +1,4 @@
-import type { PlayerStats, AdvancedPlayerStats } from "../../model/PlayerSchema";
+import type { AdvancedPlayerStats, PlayerStats } from "../../model/PlayerSchema";
 
 /**
  * Discriminated union representing the three possible player stats variants.

@@ -1,8 +1,8 @@
 import type { Stats } from "../../model/StatsSchema.ts";
 import { StatsSchema } from "../../model/StatsSchema.ts";
 import { game_2025_01_03_seleccion_murcia } from "./2025-01-03-seleccion-murcia.ts";
-import { game_2025_01_04_seleccion_melilla } from "./2025-01-04-seleccion-melilla.ts";
 import { game_2025_01_04_seleccion_canarias } from "./2025-01-04-seleccion-canarias.ts";
+import { game_2025_01_04_seleccion_melilla } from "./2025-01-04-seleccion-melilla.ts";
 import { game_2025_01_05_seleccion_baleares } from "./2025-01-05-seleccion-baleares.ts";
 import { game_2025_01_06_seleccion_galicia } from "./2025-01-06-seleccion-galicia.ts";
 import { game_2025_01_07_seleccion_valencia } from "./2025-01-07-seleccion-valencia.ts";

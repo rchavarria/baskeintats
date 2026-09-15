@@ -1,7 +1,7 @@
 import type { Stats } from "../../model/StatsSchema.ts";
 import { StatsSchema } from "../../model/StatsSchema.ts";
-import { game_2023_12_17_fuenlabrada } from "./2023-12-17-fuenlabrada.ts";
 import { game_2023_10_22_alcorcon } from "./2023-10-22-alcorcon.ts";
+import { game_2023_12_17_fuenlabrada } from "./2023-12-17-fuenlabrada.ts";
 
 export const stat_2023_12_18_liga_gold_f1: Stats = StatsSchema.parse({
   id: "S34-stat-liga-gold-f1",

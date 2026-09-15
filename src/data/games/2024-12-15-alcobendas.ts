@@ -1,7 +1,7 @@
-import { FriendlyGameSchema } from "../../model/GameSchema.ts";
 import type { FriendlyGame } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { FriendlyGameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_12_15_alcobendas: FriendlyGame = FriendlyGameSchema.parse({
   id: "S45-amistoso-fbm-alcobendas",

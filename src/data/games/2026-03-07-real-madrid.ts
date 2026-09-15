@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_03_07_real_madrid: Game = GameSchema.parse({
   id: "S56-liga-plata-f2-gb-j8",

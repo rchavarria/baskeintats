@@ -1,5 +1,5 @@
-import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
 import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
 import { teams } from "../teams.ts";
 import { venues } from "../venues.ts";
 

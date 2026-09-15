@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
-import type { Stats } from "../../model/StatsSchema.ts";
-import type { AdvancedGame, Game } from "../../model/GameSchema.ts";
 import { hasAdvancedPlayerStats } from "../../lib/hasAdvancedPlayerStats.ts";
+import type { AdvancedGame, Game } from "../../model/GameSchema.ts";
+import type { Stats } from "../../model/StatsSchema.ts";
+import { ThreePointersAverage } from "../stats/ThreePointersAverage.tsx";
+import { ThreePointersTotal } from "../stats/ThreePointersTotal.tsx";
+import { TwoPointersAverage } from "../stats/TwoPointersAverage.tsx";
+import { TwoPointersTotal } from "../stats/TwoPointersTotal.tsx";
 import { DateDisplay } from "../ui/DateDisplay.tsx";
 import { PlayedTimeDisplay } from "../ui/PlayedTimeDisplay.tsx";
-import { ShortDateDisplay } from "../ui/ShortDateDisplay.tsx";
-import { ThreePointersTotal } from "../stats/ThreePointersTotal.tsx";
-import { ThreePointersAverage } from "../stats/ThreePointersAverage.tsx";
-import { TwoPointersTotal } from "../stats/TwoPointersTotal.tsx";
-import { TwoPointersAverage } from "../stats/TwoPointersAverage.tsx";
 import { ReferenceIcons } from "../ui/ReferenceIcons.tsx";
+import { ShortDateDisplay } from "../ui/ShortDateDisplay.tsx";
 
 interface StatsCardProps {
   stats: Stats;

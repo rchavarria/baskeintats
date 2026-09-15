@@ -1,10 +1,10 @@
 import { Link, useParams } from "react-router-dom";
-import { useEvents } from "../hooks/useEvents.ts";
-import { EmptyState } from "../components/ui/EmptyState";
-import { DateTimeDisplay } from "../components/ui/DateTimeDisplay.tsx";
 import { CategoryBadge } from "../components/ui/CategoryBadge.tsx";
-import type { Clip } from "../model/ScoutingSchema.ts";
+import { DateTimeDisplay } from "../components/ui/DateTimeDisplay.tsx";
+import { EmptyState } from "../components/ui/EmptyState";
+import { useEvents } from "../hooks/useEvents.ts";
 import { clipUrl } from "../lib/clipUrl.ts";
+import type { Clip } from "../model/ScoutingSchema.ts";
 
 function clipTypeEmoji(type: Clip["type"]): string {
   return type === "good-play" ? "🟢" : "🔴";
@@ -19,7 +19,7 @@ export function ScoutingDetailPage() {
   const events = useEvents();
 
   const scouting = events.find((e) => e.id === scoutingId);
-  if (!scouting || scouting.type !== "scouting") {
+  if (scouting?.type !== "scouting") {
     return <EmptyState message="Scouting no encontrado" />;
   }
 

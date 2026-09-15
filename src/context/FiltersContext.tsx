@@ -1,7 +1,7 @@
-import { useState } from "react";
 import type { ReactNode } from "react";
-import { defaultFilters, FiltersContext } from "./FiltersContextDefinition";
+import { useState } from "react";
 import type { Filters } from "./FiltersContextDefinition";
+import { defaultFilters, FiltersContext } from "./FiltersContextDefinition";
 
 export function FiltersProvider({ children }: { children: ReactNode }) {
   const [filters, setFiltersState] = useState<Filters>(defaultFilters);

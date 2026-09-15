@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import { describe, it, expect } from "vitest";
-import { ReferenceList } from "./ReferenceList";
+import { describe, expect, it } from "vitest";
 import type { Reference } from "../../model/ReferenceSchema";
+import { ReferenceList } from "./ReferenceList";
 
 function makeReference(type: Reference["type"], label: string): Reference {
   return { type, label, url: "https://example.com" };

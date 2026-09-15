@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { describe, expect, it } from "vitest";
-import { GameDetailPage } from "./GameDetailPage";
 import { game_2026_04_12_canoe } from "../data/games/2026-04-12-canoe.ts";
 import { useEvents } from "../hooks/useEvents.ts";
+import { GameDetailPage } from "./GameDetailPage";
 
 function renderWithRoute(gameId: string) {
   return render(

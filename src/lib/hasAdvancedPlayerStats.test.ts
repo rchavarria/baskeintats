@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
+import type { AdvancedGame, Game } from "../model/GameSchema.ts";
 import { hasAdvancedPlayerStats } from "./hasAdvancedPlayerStats.ts";
-import type { Game, AdvancedGame } from "../model/GameSchema.ts";
 
 describe("hasAdvancedPlayerStats", () => {
   it("returns false for a basic game where fieldGoals is a number", () => {

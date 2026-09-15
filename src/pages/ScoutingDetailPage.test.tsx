@@ -1,10 +1,10 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { describe, expect, it } from "vitest";
-import { ScoutingDetailPage } from "./ScoutingDetailPage";
-import { scouting_2026_07_16_example } from "../data/games/2026-07-16-scouting-example.ts";
 import { scouting_2026_07_12_spain_france } from "../data/games/2026-07-12-scouting-spain-france.ts";
+import { scouting_2026_07_16_example } from "../data/games/2026-07-16-scouting-example.ts";
 import { scouting_2026_07_23_spain_france } from "../data/games/2026-07-23-scouting-spain-france.ts";
+import { ScoutingDetailPage } from "./ScoutingDetailPage";
 
 function renderWithRoute(scoutingId: string) {
   return render(

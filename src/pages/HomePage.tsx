@@ -1,13 +1,13 @@
-import { useFilteredEvents } from "../hooks/useFilteredEvents.ts";
-import { GameCard } from "../components/events/GameCard";
-import { EmptyState } from "../components/ui/EmptyState";
 import { AnnouncementCard } from "../components/events/AnnouncementCard.tsx";
 import { DefaultCard } from "../components/events/DefaultCard.tsx";
-import { StatsCard } from "../components/events/StatsCard.tsx";
+import { GameCard } from "../components/events/GameCard";
 import { ScoutingCard } from "../components/events/ScoutingCard.tsx";
-import { SeasonFilter } from "../components/filters/SeasonFilter.tsx";
-import { EventTypeFilter } from "../components/filters/EventTypeFilter.tsx";
+import { StatsCard } from "../components/events/StatsCard.tsx";
 import { CompetitionFilter } from "../components/filters/CompetitionFilter.tsx";
+import { EventTypeFilter } from "../components/filters/EventTypeFilter.tsx";
+import { SeasonFilter } from "../components/filters/SeasonFilter.tsx";
+import { EmptyState } from "../components/ui/EmptyState";
+import { useFilteredEvents } from "../hooks/useFilteredEvents.ts";
 
 export function HomePage() {
   const events = useFilteredEvents();

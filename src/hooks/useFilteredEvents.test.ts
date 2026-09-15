@@ -1,9 +1,9 @@
 import { renderHook } from "@testing-library/react";
-import { describe, it, expect, vi, beforeEach } from "vitest";
-import { useFilteredEvents } from "./useFilteredEvents";
-import { useEvents } from "./useEvents";
-import { useFilters } from "./useFilters";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import type { Filters } from "../context/FiltersContextDefinition";
+import { useEvents } from "./useEvents";
+import { useFilteredEvents } from "./useFilteredEvents";
+import { useFilters } from "./useFilters";
 
 vi.mock("./useEvents");
 vi.mock("./useFilters");

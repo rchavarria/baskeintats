@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import { describe, it, expect } from "vitest";
-import { ScoutingCard } from "./ScoutingCard";
-import type { Scouting } from "../../model/ScoutingSchema";
+import { describe, expect, it } from "vitest";
 import { scouting_2026_07_16_example } from "../../data/games/2026-07-16-scouting-example.ts";
+import type { Scouting } from "../../model/ScoutingSchema";
+import { ScoutingCard } from "./ScoutingCard";
 
 const fakeScouting: Scouting = {
   id: "scouting-fake-001",

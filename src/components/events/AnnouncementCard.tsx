@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import type { Announcement } from "../../model/AnnouncementSchema.ts";
-import { DateDisplay } from "../ui/DateDisplay.tsx";
 import { CategoryBadge } from "../ui/CategoryBadge.tsx";
+import { DateDisplay } from "../ui/DateDisplay.tsx";
 import { AnnouncementTypeEmoji } from "./AnnouncementEmojis.tsx";
 
 interface AnnouncementCardProps {

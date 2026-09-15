@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import { describe, it, expect } from "vitest";
-import { PlayerStats } from "./PlayerStats";
+import { describe, expect, it } from "vitest";
 import type { PlayerStats as PlayerStatsType } from "../../model/PlayerSchema";
+import { PlayerStats } from "./PlayerStats";
 
 describe("PlayerStats", () => {
   it("displays player stats when there is data", () => {

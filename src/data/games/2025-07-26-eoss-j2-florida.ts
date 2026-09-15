@@ -1,8 +1,8 @@
 import type { Game } from "../../model/GameSchema.ts";
 import { GameSchema } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
-import { teams } from "../teams.ts";
 import { EmptyPlayerStats } from "../../model/PlayerSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_07_26_eoss_florida: Game = GameSchema.parse({
   id: "S45-eoss-j2",

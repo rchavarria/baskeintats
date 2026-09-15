@@ -1,7 +1,7 @@
 import type { Game } from "../../model/GameSchema.ts";
 import { GameSchema } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_04_11_canoe: Game = GameSchema.parse({
   id: "S56-liga-plata-pre-playoff-j2",

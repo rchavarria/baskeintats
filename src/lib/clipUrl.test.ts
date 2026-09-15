@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { clipUrl } from "./clipUrl.ts";
 import type { Clip } from "../model/ScoutingSchema.ts";
+import { clipUrl } from "./clipUrl.ts";
 
 function clip(start: string): Clip {
   return { start, description: "A clip", type: "good-play" };

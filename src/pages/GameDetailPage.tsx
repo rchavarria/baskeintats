@@ -1,12 +1,12 @@
-import { useParams, Link } from "react-router-dom";
-import { useEvents } from "../hooks/useEvents.ts";
-import { totalPoints } from "../model/GameSchema";
-import { EmptyState } from "../components/ui/EmptyState";
-import { DateTimeDisplay } from "../components/ui/DateTimeDisplay.tsx";
-import { CategoryBadge } from "../components/ui/CategoryBadge.tsx";
+import { Link, useParams } from "react-router-dom";
 import { GameVideos } from "../components/events/GameVideos";
 import { ReferenceList } from "../components/events/ReferenceList.tsx";
 import { PlayerStatsSelector } from "../components/stats/PlayerStatsSelector";
+import { CategoryBadge } from "../components/ui/CategoryBadge.tsx";
+import { DateTimeDisplay } from "../components/ui/DateTimeDisplay.tsx";
+import { EmptyState } from "../components/ui/EmptyState";
+import { useEvents } from "../hooks/useEvents.ts";
+import { totalPoints } from "../model/GameSchema";
 
 export function GameDetailPage() {
   const { gameId } = useParams<{ gameId: string }>();

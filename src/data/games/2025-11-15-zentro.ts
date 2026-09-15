@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_11_15_zentro: Game = GameSchema.parse({
   id: "S56-liga-plata-f1-g4-j7",

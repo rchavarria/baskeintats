@@ -1,7 +1,7 @@
-import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import type { AdvancedGame } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_09_28_rozas: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f1-g1-j2",

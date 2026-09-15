@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import { GameResultEmoji } from "./GameResultEmoji";
 import type { Game } from "../../model/GameSchema";
+import { GameResultEmoji } from "./GameResultEmoji";
 
 function makeGame(overrides: {
   homeOpponent?: boolean;

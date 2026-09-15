@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import type { Scouting } from "../../model/ScoutingSchema.ts";
-import { DateDisplay } from "../ui/DateDisplay.tsx";
 import { CategoryBadge } from "../ui/CategoryBadge.tsx";
+import { DateDisplay } from "../ui/DateDisplay.tsx";
 
 interface ScoutingCardProps {
   scouting: Scouting;

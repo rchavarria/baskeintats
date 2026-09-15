@@ -1,5 +1,5 @@
-import type { AdvancedPlayerStats as AdvancedPlayerStatsType } from "../../model/PlayerSchema";
 import { AdvancedPlayerStatsFormatterImpl } from "../../lib/player-stats";
+import type { AdvancedPlayerStats as AdvancedPlayerStatsType } from "../../model/PlayerSchema";
 
 interface AdvancedPlayerStatsProps {
   stats: AdvancedPlayerStatsType;

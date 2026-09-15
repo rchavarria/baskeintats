@@ -1,6 +1,6 @@
-import { describe, it, expect } from "vitest";
+import { describe, expect, it } from "vitest";
+import type { AdvancedPlayerStats, PlayerStats } from "../../model/PlayerSchema";
 import { getPlayerStatsVariant } from "./getPlayerStatsVariant";
-import type { PlayerStats, AdvancedPlayerStats } from "../../model/PlayerSchema";
 
 const emptyBasicStats: PlayerStats = {
   time: 0,

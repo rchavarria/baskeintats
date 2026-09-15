@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import { describe, it, expect } from "vitest";
+import { describe, expect, it } from "vitest";
+import type { AdvancedPlayerStats, PlayerStats } from "../../model/PlayerSchema";
 import { PlayerStatsSelector } from "./PlayerStatsSelector";
-import type { PlayerStats, AdvancedPlayerStats } from "../../model/PlayerSchema";
 
 const emptyBasicStats: PlayerStats = {
   time: 0,

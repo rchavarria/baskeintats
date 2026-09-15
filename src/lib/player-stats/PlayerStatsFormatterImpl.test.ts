@@ -1,6 +1,6 @@
-import { describe, it, expect } from "vitest";
-import { PlayerStatsFormatterImpl } from "./PlayerStatsFormatterImpl";
+import { describe, expect, it } from "vitest";
 import type { PlayerStats } from "../../model/PlayerSchema";
+import { PlayerStatsFormatterImpl } from "./PlayerStatsFormatterImpl";
 
 describe("PlayerStatsFormatterImpl", () => {
   describe("hasStats()", () => {

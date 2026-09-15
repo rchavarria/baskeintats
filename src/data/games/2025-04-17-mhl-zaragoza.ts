@@ -1,7 +1,7 @@
-import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
 import type { Announcement } from "../../model/AnnouncementSchema.ts";
-import { venues } from "../venues.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2025_04_17_mhl_zaragoza: Announcement = AnnouncementSchema.parse({
   id: "S45-mhl-zaragoza",

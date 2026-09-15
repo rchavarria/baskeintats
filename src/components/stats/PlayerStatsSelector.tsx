@@ -1,9 +1,8 @@
-import type { PlayerStats } from "../../model/PlayerSchema";
-import type { AdvancedPlayerStats } from "../../model/PlayerSchema";
 import { getPlayerStatsVariant } from "../../lib/player-stats";
-import { PlayerStats as PlayerStatsView } from "./PlayerStats";
+import type { AdvancedPlayerStats, PlayerStats } from "../../model/PlayerSchema";
 import { AdvancedPlayerStats as AdvancedPlayerStatsView } from "./AdvancedPlayerStats";
 import { NoPlayerStats } from "./NoPlayerStats";
+import { PlayerStats as PlayerStatsView } from "./PlayerStats";
 
 interface PlayerStatsSelectorProps {
   /**

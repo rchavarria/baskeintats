@@ -1,5 +1,5 @@
-import { ScoutingSchema } from "../../model/ScoutingSchema.ts";
 import type { Scouting } from "../../model/ScoutingSchema.ts";
+import { ScoutingSchema } from "../../model/ScoutingSchema.ts";
 
 export const scouting_2026_07_12_spain_france: Scouting = ScoutingSchema.parse({
   id: "S56-scouting-spain-france",

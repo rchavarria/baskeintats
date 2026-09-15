@@ -1,9 +1,9 @@
 import type { Stats } from "../../model/StatsSchema.ts";
 import { StatsSchema } from "../../model/StatsSchema.ts";
 import { game_2024_04_28_alcorcon } from "./2024-04-28-alcorcon.ts";
-import { game_2024_06_09_estudio } from "./2024-06-09-estudio.ts";
-import { game_2024_06_02_rozas } from "./2024-06-02-rozas.ts";
 import { game_2024_05_26_zentro } from "./2024-05-26-zentro.ts";
+import { game_2024_06_02_rozas } from "./2024-06-02-rozas.ts";
+import { game_2024_06_09_estudio } from "./2024-06-09-estudio.ts";
 
 export const stat_2024_06_09_liga_gold_f3: Stats = StatsSchema.parse({
   id: "S34-stat-liga-gold-f3",

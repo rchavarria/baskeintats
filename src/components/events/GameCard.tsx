@@ -1,9 +1,9 @@
-import { totalPoints } from "../../model/GameSchema";
-import type { AdvancedGame, FriendlyGame, Game } from "../../model/GameSchema";
 import { Link } from "react-router-dom";
+import type { AdvancedGame, FriendlyGame, Game } from "../../model/GameSchema";
+import { totalPoints } from "../../model/GameSchema";
+import { CategoryBadge } from "../ui/CategoryBadge.tsx";
 import { DateDisplay } from "../ui/DateDisplay.tsx";
 import { TimeDisplay } from "../ui/TimeDisplay.tsx";
-import { CategoryBadge } from "../ui/CategoryBadge.tsx";
 import { GameResultEmoji } from "./GameResultEmoji.tsx";
 
 interface GameCardProps {

@@ -1,7 +1,7 @@
-import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import type { AdvancedGame } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_12_19_torrent: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-torneo-teruel-j2",

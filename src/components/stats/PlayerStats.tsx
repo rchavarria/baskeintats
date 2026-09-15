@@ -1,5 +1,5 @@
-import type { PlayerStats as PlayerStatsType } from "../../model/PlayerSchema";
 import { PlayerStatsFormatterImpl } from "../../lib/player-stats";
+import type { PlayerStats as PlayerStatsType } from "../../model/PlayerSchema";
 
 interface PlayerStatsProps {
   stats: PlayerStatsType;

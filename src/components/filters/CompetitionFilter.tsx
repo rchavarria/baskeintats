@@ -1,4 +1,4 @@
-import { useMemo, useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import { useEvents } from "../../hooks/useEvents";
 import { useFilters } from "../../hooks/useFilters";
 
