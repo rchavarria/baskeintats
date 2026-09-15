@@ -1,6 +1,5 @@
 # Backlog
 
-- Añadir linter (biome) al proyecto
 - 💄 Diseñar tarjetas de estadísticas en la home para que se vean más acorde con las de los partidos
 - 💄 Diseñar tarjetas de anuncios en la home para que se vean más acorde con las de los partidos
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
@@ -12,6 +11,7 @@
 
 ## Done
 
+- 2026-09-15: Añadir linter (biome) al proyecto
 - 2026-09-11: 🐛 los enlaces de los clips de scouting se generan con `t=seconds` en lugar de `t=minutes:seconds`: extraído `clipUrl` a `src/lib/clipUrl.ts`, que convierte el `start` (`m:ss`, `mm:ss`, `h:mm:ss`) a segundos totales y añade el parámetro con `?` o `&` según la URL
 - 2026-09-07: unificar la tarjeta de partidos amistosos con la de partidos normales: `FriendlyGameCard` usaba el diseño antiguo aunque `FriendlyGame` es idéntico a `Game`; ahora `GameCard` pinta los tres tipos y los amistosos se distinguen solo con el emoji 🫂
 - 2026-08-31: eliminar `src/lib/filters.ts`: era código muerto (`filterGames` no se importaba en ningún sitio, el filtrado real lo hace `useFilteredEvents`) y tenía un import roto a `../types/game`
