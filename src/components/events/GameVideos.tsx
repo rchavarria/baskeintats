@@ -23,8 +23,8 @@ export function GameVideos({ videos, opponent }: GameVideosProps) {
 
       {hasOtherVideos && (
         <ul className="mt-2 list-disc list-inside">
-          {videos.others.map((v, i) => (
-            <li key={i}>
+          {videos.others.map((v) => (
+            <li key={v.url}>
               <a
                 href={v.url}
                 target="_blank"

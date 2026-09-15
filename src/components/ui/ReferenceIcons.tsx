@@ -10,9 +10,10 @@ export function ReferenceIcons({ references }: ReferenceIconsProps) {
 
   return (
     <div className="mt-3 px-2 flex justify-center gap-4">
-      {references.map((ref, idx) => (
+      {references.map((ref) => (
+        // TODO check URLs unicity so that this key can be simpler
         <span
-          key={idx}
+          key={`${ref.type}-${ref.label}-${ref.url}`}
           role="link"
           title={ref.label}
           className="cursor-pointer text-2xl"

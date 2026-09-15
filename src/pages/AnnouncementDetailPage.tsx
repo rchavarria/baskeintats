@@ -44,8 +44,8 @@ export function AnnouncementDetailPage() {
       {/* Description */}
       <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
         <h2 className="font-semibold text-gray-700 mb-3">📝 Descripción</h2>
-        {announcement.description.map((line, i) => (
-          <p key={i} className="text-gray-600 leading-relaxed mb-2">
+        {announcement.description.map((line) => (
+          <p key={line} className="text-gray-600 leading-relaxed mb-2">
             {line}
           </p>
         ))}
@@ -56,9 +56,9 @@ export function AnnouncementDetailPage() {
         <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
           <h2 className="font-semibold text-gray-700 mb-3">📆 Calendario</h2>
           <div className="space-y-3 flex flex-col items-center">
-            {announcement.schedule.map((entry, i) => (
+            {announcement.schedule.map((entry) => (
               <div
-                key={i}
+                key={`${entry.date}-${entry.label ?? ""}-${entry.opponent ?? ""}`}
                 className="flex flex-col gap-1 min-w-[40%] border border-gray-200 rounded-lg p-3"
               >
                 {entry.label && (

@@ -47,8 +47,8 @@ export function ScoutingDetailPage() {
       {/* Description */}
       <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
         <h2 className="font-semibold text-gray-700 mb-3">📝 Descripción</h2>
-        {scouting.description.map((line, i) => (
-          <p key={i} className="text-gray-600 leading-relaxed mb-2">
+        {scouting.description.map((line) => (
+          <p key={line} className="text-gray-600 leading-relaxed mb-2">
             {line}
           </p>
         ))}
@@ -73,8 +73,11 @@ export function ScoutingDetailPage() {
         <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
           <h2 className="font-semibold text-gray-700 mb-4">🎞️ Clips ({scouting.clips.length})</h2>
           <ol className="flex flex-col gap-3">
-            {scouting.clips.map((clip, i) => (
-              <li key={i} className="flex items-start gap-3 border border-gray-100 rounded-lg p-3">
+            {scouting.clips.map((clip) => (
+              <li
+                key={clip.start}
+                className="flex items-start gap-3 border border-gray-100 rounded-lg p-3"
+              >
                 <span className="shrink-0 font-mono text-sm font-semibold text-gray-500 w-14 text-right pt-0.5">
                   {clip.start}
                 </span>

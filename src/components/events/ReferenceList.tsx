@@ -12,9 +12,10 @@ export function ReferenceList({ references }: ReferenceListProps) {
     <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
       <h2 className="font-semibold text-gray-700 mb-3">🔗 Enlaces de interés</h2>
 
-      {references.map((ref, i) => (
+      {references.map((ref) => (
+        // TODO check URLs unicity so that this key can be simpler
         <a
-          key={i}
+          key={`${ref.type}-${ref.label}-${ref.url}`}
           href={ref.url}
           target="_blank"
           rel="noopener noreferrer"

@@ -23,8 +23,8 @@ export function AnnouncementCard({ announcement }: AnnouncementCardProps) {
         <p className="font-semibold text-gray-800 text-center">{announcement.title}</p>
       </div>
       <div className="mt-2 text-center text-xs text-gray-400">
-        {announcement.description.slice(0, 2).map((line, i) => (
-          <p key={i} className="line-clamp-2">
+        {announcement.description.slice(0, 2).map((line) => (
+          <p key={line} className="line-clamp-2">
             {line}
           </p>
         ))}

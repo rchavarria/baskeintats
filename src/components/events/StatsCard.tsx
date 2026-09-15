@@ -168,8 +168,8 @@ export function StatsCard({ stats }: StatsCardProps) {
 
       {stats.description.length > 0 && (
         <div className="mt-3 px-2 space-y-1">
-          {stats.description.map((line, idx) => (
-            <p key={idx} className="text-xs text-gray-600">
+          {stats.description.map((line) => (
+            <p key={line} className="text-xs text-gray-600">
               {line}
             </p>
           ))}

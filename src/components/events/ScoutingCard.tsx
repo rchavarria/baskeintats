@@ -27,8 +27,8 @@ export function ScoutingCard({ scouting }: ScoutingCardProps) {
         <p className="font-semibold text-gray-800">{scouting.title}</p>
       </div>
       <div className="text-xs text-gray-400">
-        {scouting.description.slice(0, 2).map((line, i) => (
-          <p key={i} className="line-clamp-2">
+        {scouting.description.slice(0, 2).map((line) => (
+          <p key={line} className="line-clamp-2">
             {line}
           </p>
         ))}

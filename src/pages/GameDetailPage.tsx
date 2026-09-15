@@ -51,6 +51,7 @@ export function GameDetailPage() {
               <p className="font-bold text-lg text-gray-900">{game.home.club.name}</p>
               <div className="flex justify-end gap-1 mt-1 text-xs text-gray-400">
                 {game.home.scores.map((s, i) => (
+                  // biome-ignore lint/suspicious/noArrayIndexKey: the index is the quarter number itself; this is a fixed-length, never-reordered list
                   <span key={i}>
                     Q{i + 1}: {s}
                   </span>
@@ -68,6 +69,7 @@ export function GameDetailPage() {
               <p className="font-bold text-lg text-gray-900">{game.away.club.name}</p>
               <div className="flex justify-start gap-1 mt-1 text-xs text-gray-400">
                 {game.away.scores.map((s, i) => (
+                  // biome-ignore lint/suspicious/noArrayIndexKey: the index is the quarter number itself; this is a fixed-length, never-reordered list
                   <span key={i}>
                     Q{i + 1}: {s}
                   </span>
@@ -91,8 +93,8 @@ export function GameDetailPage() {
         <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
           <h2 className="font-semibold text-gray-700 mb-3">🏀 Crónica</h2>
           <h3>{game.recap.title}</h3>
-          {game.recap.lines.map((line, i) => (
-            <p key={i} className="text-gray-600 leading-relaxed whitespace-pre-line">
+          {game.recap.lines.map((line) => (
+            <p key={line} className="text-gray-600 leading-relaxed whitespace-pre-line">
               {line}
             </p>
           ))}
