@@ -259,6 +259,7 @@ import { announcement_2026_07_21_season_summary } from "./games/2026-07-21-annou
 import { scouting_2026_07_23_spain_france } from "./games/2026-07-23-scouting-spain-france.ts";
 import { scouting_2026_08_14_spain_latvia } from "./games/2026-08-14-scouting-spain-latvia.ts";
 import { announcement_2026_08_24_season_start } from "./games/2026-08-24-announcement-season-start.ts";
+import { game_2026_09_17_coslada } from "./games/2026-09-17-coslada.ts";
 
 type EventItem =
   | Announcement
@@ -271,6 +272,7 @@ type EventItem =
 
 export function getEvents(): EventItem[] {
   const events: EventItem[] = [
+    game_2026_09_17_coslada,
     announcement_2026_08_24_season_start,
     announcement_2026_07_21_season_summary,
     scouting_2026_08_14_spain_latvia,
