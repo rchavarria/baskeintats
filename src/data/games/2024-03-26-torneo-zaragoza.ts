@@ -13,7 +13,7 @@ export const announcement_2024_03_26_torneo_zaragoza: Announcement = Announcemen
   announcementType: "tournament",
   category: "U14M",
 
-  venue: venues["fuentes"],
+  venue: venues.fuentes,
 
   description: ["Torneo acompañando al equipo infantil de 2010 (un año mayores) en Zaragoza"],
 
@@ -21,7 +21,7 @@ export const announcement_2024_03_26_torneo_zaragoza: Announcement = Announcemen
     {
       label: "Grupos - J1",
       date: "2024-03-28T14:30:00Z",
-      opponent: teams["moncayo"].name,
+      opponent: teams.moncayo.name,
     },
     {
       label: "Grupos - J2",
@@ -31,7 +31,7 @@ export const announcement_2024_03_26_torneo_zaragoza: Announcement = Announcemen
     {
       label: "Grupos - J3",
       date: "2024-03-30T10:00:00Z",
-      opponent: teams["zaragoza"].name,
+      opponent: teams.zaragoza.name,
     },
     {
       label: "Semis",

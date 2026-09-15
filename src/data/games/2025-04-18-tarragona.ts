@@ -19,13 +19,13 @@ export const game_2025_04_18_tarragona: Game = GameSchema.parse({
   venue: venues["alberto-maestro"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [27, 26, 12, 9],
   },
 
   away: {
-    club: teams["tarragona"],
+    club: teams.tarragona,
     category: "U14M",
     opponent: true,
     scores: [14, 14, 11, 10],

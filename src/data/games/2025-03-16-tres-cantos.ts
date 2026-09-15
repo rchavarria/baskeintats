@@ -16,7 +16,7 @@ export const game_2025_03_16_tres_cantos: Game = GameSchema.parse({
     round: "J10",
   },
 
-  venue: venues["luz"],
+  venue: venues.luz,
 
   home: {
     club: teams["tres-cantos"],
@@ -26,7 +26,7 @@ export const game_2025_03_16_tres_cantos: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [18, 29, 26, 0],
   },

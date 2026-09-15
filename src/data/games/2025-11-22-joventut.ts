@@ -19,13 +19,13 @@ export const game_2025_11_22_joventut: AdvancedGame = AdvancedGameSchema.parse({
   venue: venues["triangulo-oro"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [23, 16, 25, 18],
   },
 
   away: {
-    club: teams["joventut"],
+    club: teams.joventut,
     category: "U15M",
     opponent: true,
     scores: [8, 16, 21, 20],

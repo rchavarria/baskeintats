@@ -13,7 +13,7 @@ export const announcement_2024_12_05_copa_ahorramas: Announcement = Announcement
   announcementType: "tournament",
   category: "U14M",
 
-  venue: venues["paraiso"],
+  venue: venues.paraiso,
 
   description: [
     "Torneo de seis categorías: 3 masculinas, 3 femeninas; junior, cadete e infantil",
@@ -25,7 +25,7 @@ export const announcement_2024_12_05_copa_ahorramas: Announcement = Announcement
     {
       label: "Semis",
       date: "2024-12-07T15:00:00Z",
-      opponent: teams["estudiantes"].name,
+      opponent: teams.estudiantes.name,
     },
     {
       label: "Final",

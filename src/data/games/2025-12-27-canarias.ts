@@ -16,7 +16,7 @@ export const game_2025_12_27_canarias: FriendlyGame = FriendlyGameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["wurzburg"],
+  venue: venues.wurzburg,
 
   home: {
     club: teams["seleccion-madrid"],

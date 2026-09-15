@@ -19,14 +19,14 @@ export const game_2026_02_15_getafe: Game = GameSchema.parse({
   venue: venues["juan-cierva"],
 
   home: {
-    club: teams["getafe"],
+    club: teams.getafe,
     category: "U16M",
     opponent: true,
     scores: [12, 14, 16, 8],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [14, 33, 18, 15],
   },

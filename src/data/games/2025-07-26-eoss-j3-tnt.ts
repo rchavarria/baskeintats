@@ -17,7 +17,7 @@ export const game_2025_07_26_eoss_tnt: Game = GameSchema.parse({
     round: "Cuartos",
   },
 
-  venue: venues["orange"],
+  venue: venues.orange,
 
   home: {
     club: teams["dme-spain"],

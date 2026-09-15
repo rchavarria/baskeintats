@@ -19,13 +19,13 @@ export const game_2024_09_08_mataro: Game = GameSchema.parse({
   venue: venues["roser-llop"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [26, 23, 19, 15],
   },
 
   away: {
-    club: teams["mataro"],
+    club: teams.mataro,
     category: "U14M",
     opponent: true,
     scores: [17, 21, 5, 23],

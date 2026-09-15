@@ -19,14 +19,14 @@ export const game_2026_03_22_getafe: Game = GameSchema.parse({
   venue: venues["felipe-reyes"],
 
   home: {
-    club: teams["getafe"],
+    club: teams.getafe,
     category: "U16M",
     opponent: true,
     scores: [11, 13, 16, 10],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [9, 21, 20, 17],
   },

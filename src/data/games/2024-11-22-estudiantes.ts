@@ -25,7 +25,7 @@ export const game_2024_11_22_estudiantes: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["estudiantes"],
+    club: teams.estudiantes,
     category: "U15M",
     opponent: true,
     scores: [18, 23, 31, 28],

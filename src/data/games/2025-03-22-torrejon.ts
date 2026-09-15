@@ -16,16 +16,16 @@ export const game_2025_03_22_torrejon: Game = GameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [22, 13, 20, 19],
   },
 
   away: {
-    club: teams["torrejon"],
+    club: teams.torrejon,
     category: "U16M",
     opponent: true,
     scores: [15, 17, 19, 19],

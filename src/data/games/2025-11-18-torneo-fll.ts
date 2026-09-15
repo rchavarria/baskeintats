@@ -31,7 +31,7 @@ export const announcement_2025_11_18_torneo_fll: Announcement = AnnouncementSche
     {
       label: "Grupos - J2",
       date: "2025-11-22T09:15:00Z",
-      opponent: teams["joventut"].name,
+      opponent: teams.joventut.name,
     },
     {
       label: "3º-4º Puesto",

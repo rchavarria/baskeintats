@@ -16,17 +16,17 @@ export const game_2023_11_12_leganes: Game = GameSchema.parse({
     round: "J6",
   },
 
-  venue: venues["leganes"],
+  venue: venues.leganes,
 
   home: {
-    club: teams["leganes"],
+    club: teams.leganes,
     category: "U14M",
     opponent: true,
     scores: [17, 18, 30, 20],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [19, 20, 20, 13],
   },

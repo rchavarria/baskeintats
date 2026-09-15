@@ -16,17 +16,17 @@ export const game_2024_09_06_sabadell: Game = GameSchema.parse({
     round: "Jornada 1",
   },
 
-  venue: venues["peralada"],
+  venue: venues.peralada,
 
   home: {
-    club: teams["sabadell"],
+    club: teams.sabadell,
     category: "U14M",
     opponent: true,
     scores: [7, 17, 7, 14],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [17, 17, 13, 8],
   },

@@ -17,10 +17,10 @@ export const game_2024_03_17_virgen_atocha: Game = GameSchema.parse({
     round: "J10",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [31, 19, 20, 24],
   },

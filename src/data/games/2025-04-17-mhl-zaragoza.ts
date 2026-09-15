@@ -25,17 +25,17 @@ export const announcement_2025_04_17_mhl_zaragoza: Announcement = AnnouncementSc
     {
       label: "Grupos - J1",
       date: "2025-04-17T15:45:00Z",
-      opponent: teams["torrelodones"].name,
+      opponent: teams.torrelodones.name,
     },
     {
       label: "Grupos - J2",
       date: "2025-04-18T10:45:00Z",
-      opponent: teams["alicante"].name,
+      opponent: teams.alicante.name,
     },
     {
       label: "Grupos - J3",
       date: "2025-04-18T17:00:00Z",
-      opponent: teams["tarragona"].name,
+      opponent: teams.tarragona.name,
     },
     {
       label: "Cuartos",

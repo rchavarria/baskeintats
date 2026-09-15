@@ -12,7 +12,7 @@ export const announcement_2025_07_23_dme_team_camp: Announcement = AnnouncementS
   announcementType: "camp",
   category: "U14M",
 
-  venue: venues["dme"],
+  venue: venues.dme,
 
   description: [
     "Comienza el campamento en EEUU en la academia DME",

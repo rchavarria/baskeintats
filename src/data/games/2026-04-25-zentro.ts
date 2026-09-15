@@ -16,16 +16,16 @@ export const game_2026_04_25_zentro: AdvancedGame = AdvancedGameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [15, 11, 21, 21],
   },
 
   away: {
-    club: teams["zentro"],
+    club: teams.zentro,
     category: "U16M",
     opponent: true,
     scores: [26, 31, 18, 30],

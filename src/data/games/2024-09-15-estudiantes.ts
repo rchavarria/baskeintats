@@ -16,16 +16,16 @@ export const game_2024_09_15_estudiantes: FriendlyGame = FriendlyGameSchema.pars
     round: "",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [0, 0, 0, 65],
   },
 
   away: {
-    club: teams["estudiantes"],
+    club: teams.estudiantes,
     category: "U14M",
     opponent: true,
     scores: [0, 0, 0, 57],

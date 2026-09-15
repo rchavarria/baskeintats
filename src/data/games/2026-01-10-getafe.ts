@@ -16,16 +16,16 @@ export const game_2026_01_10_getafe: Game = GameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [15, 18, 19, 14],
   },
 
   away: {
-    club: teams["getafe"],
+    club: teams.getafe,
     category: "U16M",
     opponent: true,
     scores: [11, 19, 7, 20],

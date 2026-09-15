@@ -16,16 +16,16 @@ export const game_2026_04_11_canoe: Game = GameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [23, 15, 22, 21],
   },
 
   away: {
-    club: teams["canoe"],
+    club: teams.canoe,
     category: "U16M",
     opponent: true,
     scores: [21, 23, 18, 9],

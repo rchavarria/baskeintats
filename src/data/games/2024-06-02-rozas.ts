@@ -16,17 +16,17 @@ export const game_2024_06_02_rozas: Game = GameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["espiniella"],
+  venue: venues.espiniella,
 
   home: {
-    club: teams["rozas"],
+    club: teams.rozas,
     category: "U14M",
     opponent: true,
     scores: [17, 20, 11, 23],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [23, 25, 19, 22],
   },

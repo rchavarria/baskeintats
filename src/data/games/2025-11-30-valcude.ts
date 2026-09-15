@@ -16,16 +16,16 @@ export const game_2025_11_30_valcude: Game = GameSchema.parse({
     round: "J9",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [27, 19, 27, 14],
   },
 
   away: {
-    club: teams["valcude"],
+    club: teams.valcude,
     category: "U16M",
     opponent: true,
     scores: [16, 18, 11, 2],

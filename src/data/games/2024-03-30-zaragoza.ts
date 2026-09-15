@@ -16,16 +16,16 @@ export const game_2024_03_30_zaragoza: Game = GameSchema.parse({
     round: "J3",
   },
 
-  venue: venues["lanuza"],
+  venue: venues.lanuza,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [14, 19, 4, 12],
   },
 
   away: {
-    club: teams["zaragoza"],
+    club: teams.zaragoza,
     category: "U14M",
     opponent: true,
     scores: [10, 33, 25, 6],

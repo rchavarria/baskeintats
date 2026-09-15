@@ -12,7 +12,7 @@ export const announcement_2026_08_24_season_start: Announcement = AnnouncementSc
   announcementType: "milestone",
   category: "U16M",
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   description: [
     "Comenzamos nueva temporada, hoy, primer entrenamiento",

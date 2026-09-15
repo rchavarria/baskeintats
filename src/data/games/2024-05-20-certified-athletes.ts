@@ -18,7 +18,7 @@ export const game_2024_05_20_certified_athletes: Game = GameSchema.parse({
     round: "Final",
   },
 
-  venue: venues["ardres"],
+  venue: venues.ardres,
 
   home: {
     club: teams["seleccion-madrid"],

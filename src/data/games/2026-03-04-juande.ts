@@ -16,17 +16,17 @@ export const game_2026_03_04_juande: Game = GameSchema.parse({
     round: "J7",
   },
 
-  venue: venues["juande"],
+  venue: venues.juande,
 
   home: {
-    club: teams["juande"],
+    club: teams.juande,
     category: "U16M",
     opponent: true,
     scores: [9, 22, 11, 7],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [27, 20, 18, 23],
   },

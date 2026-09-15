@@ -13,7 +13,7 @@ export const announcement_2025_08_04_dme_team_camp_summary: Announcement = Annou
     announcementType: "camp",
     category: "U14M",
 
-    venue: venues["dme"],
+    venue: venues.dme,
 
     description: [
       "Todo lo bueno se acaba, y este campamento también 😭",

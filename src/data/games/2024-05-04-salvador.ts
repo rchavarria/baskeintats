@@ -16,16 +16,16 @@ export const game_2024_05_04_salvador: Game = GameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["salou"],
+  venue: venues.salou,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [20, 13, 13, 10],
   },
 
   away: {
-    club: teams["salvador"],
+    club: teams.salvador,
     category: "U14M",
     opponent: true,
     scores: [8, 4, 3, 10],

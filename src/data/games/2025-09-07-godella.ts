@@ -16,16 +16,16 @@ export const game_2025_09_07_godella: FriendlyGame = FriendlyGameSchema.parse({
     round: "",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [21, 19, 14, 27],
   },
 
   away: {
-    club: teams["godella"],
+    club: teams.godella,
     category: "U16M",
     opponent: true,
     scores: [18, 23, 12, 8],

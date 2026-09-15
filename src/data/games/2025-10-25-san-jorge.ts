@@ -16,10 +16,10 @@ export const game_2025_10_25_san_jorge: Game = GameSchema.parse({
     round: "J5",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [16, 15, 23, 9],
   },

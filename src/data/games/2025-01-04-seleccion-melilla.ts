@@ -16,7 +16,7 @@ export const game_2025_01_04_seleccion_melilla: AdvancedGame = AdvancedGameSchem
     round: "J2",
   },
 
-  venue: venues["palos"],
+  venue: venues.palos,
 
   home: {
     club: teams["seleccion-madrid"],

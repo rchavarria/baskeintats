@@ -19,14 +19,14 @@ export const game_2026_02_08_canoe: Game = GameSchema.parse({
   venue: venues["pez-volador"],
 
   home: {
-    club: teams["canoe"],
+    club: teams.canoe,
     category: "U16M",
     opponent: true,
     scores: [17, 17, 17, 30],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [13, 14, 16, 18],
   },

@@ -12,7 +12,7 @@ export const announcement_2026_07_06_pindown_camp: Announcement = AnnouncementSc
   announcementType: "camp",
   category: "U15M",
 
-  venue: venues["ideo"],
+  venue: venues.ideo,
 
   description: [
     "Campus Élite Pindown",

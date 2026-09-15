@@ -16,16 +16,16 @@ export const game_2024_02_25_alcala: Game = GameSchema.parse({
     round: "J7",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [22, 22, 19, 23],
   },
 
   away: {
-    club: teams["alcala"],
+    club: teams.alcala,
     category: "U14M",
     opponent: true,
     scores: [16, 24, 33, 17],

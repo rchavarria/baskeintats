@@ -25,7 +25,7 @@ export const game_2024_12_15_alcobendas: FriendlyGame = FriendlyGameSchema.parse
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     opponent: true,
     scores: [15, 12, 10, 30],

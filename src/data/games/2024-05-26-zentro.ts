@@ -16,16 +16,16 @@ export const game_2024_05_26_zentro: Game = GameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [28, 18, 23, 18],
   },
 
   away: {
-    club: teams["zentro"],
+    club: teams.zentro,
     category: "U14M",
     opponent: true,
     scores: [15, 12, 11, 7],

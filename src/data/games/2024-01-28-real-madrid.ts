@@ -16,10 +16,10 @@ export const game_2024_01_28_real_madrid: Game = GameSchema.parse({
     round: "J3",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [23, 15, 14, 17],
   },

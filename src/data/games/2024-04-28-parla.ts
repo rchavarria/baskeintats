@@ -17,16 +17,16 @@ export const game_2024_04_28_parla: Game = GameSchema.parse({
     round: "J3",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [17, 17, 26, 11],
   },
 
   away: {
-    club: teams["parla"],
+    club: teams.parla,
     category: "U14M",
     opponent: true,
     scores: [9, 15, 10, 19],

@@ -16,10 +16,10 @@ export const game_2024_02_04_tres_cantos: Game = GameSchema.parse({
     round: "J4",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [6, 13, 15, 20],
   },

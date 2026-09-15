@@ -16,10 +16,10 @@ export const game_2025_11_09_real_madrid: AdvancedGame = AdvancedGameSchema.pars
     round: "J6",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [12, 23, 17, 19],
   },

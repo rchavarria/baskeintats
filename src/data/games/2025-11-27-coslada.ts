@@ -16,17 +16,17 @@ export const game_2025_11_27_coslada: Game = GameSchema.parse({
     round: "J8",
   },
 
-  venue: venues["plantio"],
+  venue: venues.plantio,
 
   home: {
-    club: teams["coslada"],
+    club: teams.coslada,
     category: "U16M",
     opponent: true,
     scores: [11, 28, 20, 25],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [22, 20, 19, 6],
   },

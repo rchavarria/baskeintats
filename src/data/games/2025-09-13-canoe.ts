@@ -16,16 +16,16 @@ export const game_2025_09_13_canoe: FriendlyGame = FriendlyGameSchema.parse({
     round: "",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [12, 16, 15, 18],
   },
 
   away: {
-    club: teams["canoe"],
+    club: teams.canoe,
     category: "U16M",
     opponent: true,
     scores: [17, 21, 20, 12],

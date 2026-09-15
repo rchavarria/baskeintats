@@ -17,7 +17,7 @@ export const game_2024_05_18_ban_e_lot: Game = GameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["ardres"],
+  venue: venues.ardres,
 
   home: {
     club: teams["seleccion-madrid"],

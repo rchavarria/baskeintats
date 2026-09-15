@@ -16,16 +16,16 @@ export const game_2024_10_19_ucam_murcia: FriendlyGame = FriendlyGameSchema.pars
     round: "",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [22, 9, 21, 16],
   },
 
   away: {
-    club: teams["murcia"],
+    club: teams.murcia,
     category: "U14M",
     opponent: true,
     scores: [13, 20, 16, 27],

@@ -16,17 +16,17 @@ export const game_2026_01_11_alcorcon: Game = GameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["canaleja"],
+  venue: venues.canaleja,
 
   home: {
-    club: teams["alcorcon"],
+    club: teams.alcorcon,
     category: "U16M",
     opponent: true,
     scores: [17, 19, 13, 17],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [29, 22, 18, 19],
   },

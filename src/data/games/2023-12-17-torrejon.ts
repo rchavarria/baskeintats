@@ -17,16 +17,16 @@ export const game_2023_12_17_torrejon: Game = GameSchema.parse({
     round: "J10",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [25, 25, 7, 0],
   },
 
   away: {
-    club: teams["torrejon"],
+    club: teams.torrejon,
     category: "U14M",
     opponent: true,
     scores: [3, 4, 0, 0],

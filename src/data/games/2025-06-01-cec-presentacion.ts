@@ -31,17 +31,17 @@ export const announcement_2025_06_01_cec_presentacion: Announcement = Announceme
     {
       label: "Grupos - J1",
       date: "2025-06-01T08:30:00Z",
-      opponent: teams["obradoiro"].name,
+      opponent: teams.obradoiro.name,
     },
     {
       label: "Grupos - J2",
       date: "2025-06-02T08:30:00Z",
-      opponent: teams["elche"].name,
+      opponent: teams.elche.name,
     },
     {
       label: "Grupos - J3",
       date: "2025-06-03T10:30:00Z",
-      opponent: teams["barca"].name,
+      opponent: teams.barca.name,
     },
     {
       label: "Octavos",

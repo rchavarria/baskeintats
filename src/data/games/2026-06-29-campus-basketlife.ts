@@ -12,7 +12,7 @@ export const announcement_2026_06_29_basketlife_camp: Announcement = Announcemen
   announcementType: "camp",
   category: "U15M",
 
-  venue: venues["ontinyent"],
+  venue: venues.ontinyent,
 
   description: [
     "Campus Basket Life, en Ontinyent",

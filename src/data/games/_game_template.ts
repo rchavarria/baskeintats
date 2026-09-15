@@ -16,16 +16,16 @@ export const _game_template: Game = GameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [0, 0, 0, 0],
   },
 
   away: {
-    club: teams["canoe"],
+    club: teams.canoe,
     category: "U16M",
     opponent: true,
     scores: [0, 0, 0, 0],

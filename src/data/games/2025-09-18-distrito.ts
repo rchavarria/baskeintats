@@ -16,16 +16,16 @@ export const game_2025_09_18_distrito: FriendlyGame = FriendlyGameSchema.parse({
     round: "",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [24, 17, 23, 24],
   },
 
   away: {
-    club: teams["distrito"],
+    club: teams.distrito,
     category: "U15M",
     opponent: true,
     scores: [5, 11, 17, 17],

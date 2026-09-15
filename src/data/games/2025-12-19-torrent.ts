@@ -16,16 +16,16 @@ export const game_2025_12_19_torrent: AdvancedGame = AdvancedGameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["manzanera"],
+  venue: venues.manzanera,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [31, 29, 20, 22],
   },
 
   away: {
-    club: teams["torrent"],
+    club: teams.torrent,
     category: "U15M",
     opponent: true,
     scores: [17, 7, 22, 13],

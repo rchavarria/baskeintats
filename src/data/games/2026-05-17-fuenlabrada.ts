@@ -17,17 +17,17 @@ export const game_2026_05_17_fuenlabrada: AdvancedGame = AdvancedGameSchema.pars
     round: "J2",
   },
 
-  venue: venues["arroyo"],
+  venue: venues.arroyo,
 
   home: {
-    club: teams["fuenlabrada"],
+    club: teams.fuenlabrada,
     category: "U16M",
     opponent: true,
     scores: [10, 24, 20, 26],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [13, 10, 16, 23],
   },

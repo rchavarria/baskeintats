@@ -19,14 +19,14 @@ export const game_2025_11_30_estudiantes: AdvancedGame = AdvancedGameSchema.pars
   venue: venues["caja-magica"],
 
   home: {
-    club: teams["estudiantes"],
+    club: teams.estudiantes,
     category: "U16M",
     opponent: true,
     scores: [31, 32, 22, 18],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [15, 7, 18, 12],
   },

@@ -17,16 +17,16 @@ export const game_2026_05_31_torrelodones: AdvancedGame = AdvancedGameSchema.par
     round: "J4",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [24, 13, 19, 19],
   },
 
   away: {
-    club: teams["torrelodones"],
+    club: teams.torrelodones,
     category: "U16M",
     opponent: true,
     scores: [21, 23, 19, 29],

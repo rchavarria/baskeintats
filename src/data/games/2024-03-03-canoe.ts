@@ -16,16 +16,16 @@ export const game_2024_03_03_canoe: Game = GameSchema.parse({
     round: "J8",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [19, 10, 12, 16],
   },
 
   away: {
-    club: teams["canoe"],
+    club: teams.canoe,
     category: "U14M",
     opponent: true,
     scores: [21, 11, 25, 6],

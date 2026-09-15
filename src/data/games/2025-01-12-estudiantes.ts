@@ -19,14 +19,14 @@ export const game_2025_01_12_estudiantes: Game = GameSchema.parse({
   venue: venues["caja-magica"],
 
   home: {
-    club: teams["estudiantes"],
+    club: teams.estudiantes,
     category: "U14M",
     opponent: true,
     scores: [14, 14, 9, 18],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [23, 14, 11, 15],
   },

@@ -16,16 +16,16 @@ export const game_2024_02_25_estudiantes: Game = GameSchema.parse({
     round: "J7",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [15, 15, 20, 24],
   },
 
   away: {
-    club: teams["estudiantes"],
+    club: teams.estudiantes,
     category: "U14M",
     opponent: true,
     scores: [22, 17, 23, 19],

@@ -16,17 +16,17 @@ export const game_2024_01_28_canoe: Game = GameSchema.parse({
     round: "J3",
   },
 
-  venue: venues["agustiniano"],
+  venue: venues.agustiniano,
 
   home: {
-    club: teams["canoe"],
+    club: teams.canoe,
     category: "U14M",
     opponent: true,
     scores: [15, 23, 32, 17],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [15, 14, 16, 13],
   },

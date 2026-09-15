@@ -17,7 +17,7 @@ export const game_2024_05_19_mexico: Game = GameSchema.parse({
     round: "Semis",
   },
 
-  venue: venues["ardres"],
+  venue: venues.ardres,
 
   home: {
     club: teams["seleccion-madrid"],
@@ -26,7 +26,7 @@ export const game_2024_05_19_mexico: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["mexico"],
+    club: teams.mexico,
     category: "U13M",
     opponent: true,
     scores: [17],

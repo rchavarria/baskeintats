@@ -20,14 +20,14 @@ export const game_2024_04_07_parla: Game = GameSchema.parse({
   venue: venues["miguel-delibes"],
 
   home: {
-    club: teams["parla"],
+    club: teams.parla,
     category: "U14M",
     opponent: true,
     scores: [11, 14, 15, 7],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [24, 18, 15, 12],
   },

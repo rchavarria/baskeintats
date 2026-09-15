@@ -16,16 +16,16 @@ export const game_2024_12_15_rozas: Game = GameSchema.parse({
     round: "J10",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [21, 13, 16, 20],
   },
 
   away: {
-    club: teams["rozas"],
+    club: teams.rozas,
     category: "U14M",
     opponent: true,
     scores: [23, 19, 18, 23],

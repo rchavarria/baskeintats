@@ -17,17 +17,17 @@ export const game_2023_12_03_san_agustin: Game = GameSchema.parse({
     round: "J9",
   },
 
-  venue: venues["agustin"],
+  venue: venues.agustin,
 
   home: {
-    club: teams["agustin"],
+    club: teams.agustin,
     category: "U14M",
     opponent: true,
     scores: [20, 20, 16, 16],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [31, 19, 19, 24],
   },

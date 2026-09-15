@@ -16,16 +16,16 @@ export const game_2024_03_28_moncayo: Game = GameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["fuentes"],
+  venue: venues.fuentes,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [23, 20, 19, 21],
   },
 
   away: {
-    club: teams["moncayo"],
+    club: teams.moncayo,
     category: "U14M",
     opponent: true,
     scores: [22, 9, 8, 9],

@@ -19,14 +19,14 @@ export const game_2026_05_10_zentro: Game = GameSchema.parse({
   venue: venues["diaz-miguel"],
 
   home: {
-    club: teams["zentro"],
+    club: teams.zentro,
     category: "U15M",
     opponent: true,
     scores: [17, 14, 18, 13],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [19, 24, 22, 16],
   },

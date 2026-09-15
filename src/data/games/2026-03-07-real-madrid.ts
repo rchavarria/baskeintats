@@ -16,7 +16,7 @@ export const game_2026_03_07_real_madrid: Game = GameSchema.parse({
     round: "J8",
   },
 
-  venue: venues["valdebebas"],
+  venue: venues.valdebebas,
 
   home: {
     club: teams["real-madrid"],
@@ -26,7 +26,7 @@ export const game_2026_03_07_real_madrid: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [20, 18, 2, 16],
   },

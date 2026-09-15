@@ -16,16 +16,16 @@ export const game_2025_05_11_alcorcon: Game = GameSchema.parse({
     round: "J3",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [20, 15, 19, 20],
   },
 
   away: {
-    club: teams["alcorcon"],
+    club: teams.alcorcon,
     category: "U14M",
     opponent: true,
     scores: [28, 17, 14, 12],

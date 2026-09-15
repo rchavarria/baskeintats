@@ -13,7 +13,7 @@ export const announcement_2025_12_26_torneo_cyl: Announcement = AnnouncementSche
 
   category: "U16M",
 
-  venue: venues["wurzburg"],
+  venue: venues.wurzburg,
 
   description: [
     "Torneo cadete de segundo año, con las selecciones cadete de Castilla y León y Canarias para su preparación para el CESA 2026",

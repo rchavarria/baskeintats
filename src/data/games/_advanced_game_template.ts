@@ -16,10 +16,10 @@ export const _advanced_game_template: AdvancedGame = AdvancedGameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [0, 0, 0, 0],
   },

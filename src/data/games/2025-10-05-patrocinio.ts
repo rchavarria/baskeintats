@@ -19,14 +19,14 @@ export const game_2025_10_05_patrocinio: AdvancedGame = AdvancedGameSchema.parse
   venue: venues["triangulo-oro"],
 
   home: {
-    club: teams["patrocinio"],
+    club: teams.patrocinio,
     category: "U16M",
     opponent: true,
     scores: [21, 20, 14, 20, 9],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [20, 17, 27, 11, 15],
   },

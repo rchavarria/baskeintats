@@ -17,16 +17,16 @@ export const game_2023_11_19_rozas: Game = GameSchema.parse({
     round: "J7",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [23, 18, 14, 14],
   },
 
   away: {
-    club: teams["rozas"],
+    club: teams.rozas,
     category: "U13M",
     opponent: true,
     scores: [6, 10, 13, 14],

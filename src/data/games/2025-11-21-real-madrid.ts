@@ -26,7 +26,7 @@ export const game_2025_11_21_real_madrid: AdvancedGame = AdvancedGameSchema.pars
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [6, 18, 20, 17],
   },

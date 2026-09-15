@@ -16,16 +16,16 @@ export const game_2025_10_18_estudiantes: AdvancedGame = AdvancedGameSchema.pars
     round: "J4",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [17, 14, 16, 13],
   },
 
   away: {
-    club: teams["estudiantes"],
+    club: teams.estudiantes,
     category: "U16M",
     opponent: true,
     scores: [29, 22, 20, 26],

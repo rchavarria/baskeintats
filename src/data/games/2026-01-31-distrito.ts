@@ -16,17 +16,17 @@ export const game_2026_01_31_distrito: Game = GameSchema.parse({
     round: "J4",
   },
 
-  venue: venues["circular"],
+  venue: venues.circular,
 
   home: {
-    club: teams["distrito"],
+    club: teams.distrito,
     category: "U16M",
     opponent: true,
     scores: [24, 29, 21, 20],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [20, 19, 23, 26],
   },

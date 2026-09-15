@@ -17,16 +17,16 @@ export const game_2024_06_09_estudio: Game = GameSchema.parse({
     round: "J3",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [27, 19, 30, 8],
   },
 
   away: {
-    club: teams["estudio"],
+    club: teams.estudio,
     category: "U14M",
     opponent: true,
     scores: [21, 20, 12, 22],

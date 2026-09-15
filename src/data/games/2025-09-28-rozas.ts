@@ -16,16 +16,16 @@ export const game_2025_09_28_rozas: AdvancedGame = AdvancedGameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [15, 25, 17, 14, 13],
   },
 
   away: {
-    club: teams["rozas"],
+    club: teams.rozas,
     category: "U16M",
     opponent: true,
     scores: [20, 18, 20, 13, 14],

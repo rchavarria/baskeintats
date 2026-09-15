@@ -19,13 +19,13 @@ export const game_2025_04_18_alicante: Game = GameSchema.parse({
   venue: venues["san-agustin"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [20, 18, 22, 6],
   },
 
   away: {
-    club: teams["alicante"],
+    club: teams.alicante,
     category: "U14M",
     opponent: true,
     scores: [12, 13, 6, 2],

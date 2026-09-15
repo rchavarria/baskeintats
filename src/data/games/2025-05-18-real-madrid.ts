@@ -16,10 +16,10 @@ export const game_2025_05_18_real_madrid: AdvancedGame = AdvancedGameSchema.pars
     round: "Final",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [20, 15, 13, 14],
   },

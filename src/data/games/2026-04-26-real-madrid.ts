@@ -16,10 +16,10 @@ export const game_2026_04_26_real_madrid: Game = GameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [13, 17, 18, 13],
   },

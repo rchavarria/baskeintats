@@ -16,16 +16,16 @@ export const game_2024_11_27_sba: Game = GameSchema.parse({
     round: "J8",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [34, 19, 20, 24],
   },
 
   away: {
-    club: teams["sba"],
+    club: teams.sba,
     category: "U14M",
     opponent: true,
     scores: [17, 9, 16, 12],

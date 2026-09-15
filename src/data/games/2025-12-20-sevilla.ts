@@ -19,13 +19,13 @@ export const game_2025_12_20_sevilla: AdvancedGame = AdvancedGameSchema.parse({
   venue: venues["alcala-selva"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [14, 15, 10, 22],
   },
 
   away: {
-    club: teams["sevilla"],
+    club: teams.sevilla,
     category: "U15M",
     opponent: true,
     scores: [5, 19, 15, 18],

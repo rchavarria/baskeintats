@@ -16,7 +16,7 @@ export const game_2025_12_28_oporto: FriendlyGame = FriendlyGameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["wurzburg"],
+  venue: venues.wurzburg,
 
   home: {
     club: teams["seleccion-madrid"],
@@ -25,7 +25,7 @@ export const game_2025_12_28_oporto: FriendlyGame = FriendlyGameSchema.parse({
   },
 
   away: {
-    club: teams["oporto"],
+    club: teams.oporto,
     category: "U16M",
     opponent: true,
     scores: [0, 41, 0, 30],

@@ -16,16 +16,16 @@ export const game_2025_12_13_patrocinio: Game = GameSchema.parse({
     round: "J8",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [22, 18, 15, 18],
   },
 
   away: {
-    club: teams["patrocinio"],
+    club: teams.patrocinio,
     category: "U16M",
     opponent: true,
     scores: [27, 18, 20, 15],

@@ -12,7 +12,7 @@ export const announcement_2024_10_02_convocatoria_fbclm_2: Announcement = Announ
   announcementType: "call-up",
   category: "U14M",
 
-  venue: venues["herencia"],
+  venue: venues.herencia,
 
   description: [
     "🏀 La FBCLM nos convoca para asistir a las concentraciones de la preselección infantil",

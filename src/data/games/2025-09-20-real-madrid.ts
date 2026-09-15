@@ -16,7 +16,7 @@ export const game_2025_09_20_real_madrid: AdvancedGame = AdvancedGameSchema.pars
     round: "J1",
   },
 
-  venue: venues["valdebebas"],
+  venue: venues.valdebebas,
 
   home: {
     club: teams["real-madrid"],
@@ -26,7 +26,7 @@ export const game_2025_09_20_real_madrid: AdvancedGame = AdvancedGameSchema.pars
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [9, 12, 9, 7],
   },

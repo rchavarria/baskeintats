@@ -16,17 +16,17 @@ export const game_2024_09_07_barca: Game = GameSchema.parse({
     round: "Semis",
   },
 
-  venue: venues["peralada"],
+  venue: venues.peralada,
 
   home: {
-    club: teams["barca"],
+    club: teams.barca,
     category: "U14M",
     opponent: true,
     scores: [25, 23, 33, 21],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [10, 10, 7, 3],
   },

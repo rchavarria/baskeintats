@@ -19,7 +19,7 @@ export const game_2025_11_23_seleccion_madrid: AdvancedGame = AdvancedGameSchema
   venue: venues["triangulo-oro"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [22, 14, 18, 19],
   },

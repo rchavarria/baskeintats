@@ -17,7 +17,7 @@ export const game_2025_07_31_dme_others: FriendlyGame = FriendlyGameSchema.parse
     round: "J1",
   },
 
-  venue: venues["dme"],
+  venue: venues.dme,
 
   home: {
     club: teams["dme-spain"],

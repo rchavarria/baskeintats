@@ -16,16 +16,16 @@ export const game_2025_03_09_uros: Game = GameSchema.parse({
     round: "J9",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [25, 16, 29, 21],
   },
 
   away: {
-    club: teams["uros"],
+    club: teams.uros,
     category: "U14M",
     opponent: true,
     scores: [8, 18, 20, 9],

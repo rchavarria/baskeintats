@@ -16,16 +16,16 @@ export const game_2025_12_20_olivar: AdvancedGame = AdvancedGameSchema.parse({
     round: "J3",
   },
 
-  venue: venues["manzanera"],
+  venue: venues.manzanera,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [16, 19, 22, 15],
   },
 
   away: {
-    club: teams["olivar"],
+    club: teams.olivar,
     category: "U15M",
     opponent: true,
     scores: [14, 14, 16, 10],

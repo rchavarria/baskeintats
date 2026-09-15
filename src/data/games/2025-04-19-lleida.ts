@@ -19,13 +19,13 @@ export const game_2025_04_19_lleida: Game = GameSchema.parse({
   venue: venues["alberto-maestro"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [22, 19, 17, 4],
   },
 
   away: {
-    club: teams["lleida"],
+    club: teams.lleida,
     category: "U14M",
     opponent: true,
     scores: [12, 8, 8, 11],

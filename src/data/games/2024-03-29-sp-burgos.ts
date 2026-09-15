@@ -16,10 +16,10 @@ export const game_2024_03_29_sp_burgos: Game = GameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["fuentes"],
+  venue: venues.fuentes,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [29, 18, 18, 0],
   },

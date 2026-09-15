@@ -17,7 +17,7 @@ export const game_2024_05_18_krvavec: Game = GameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["ardres"],
+  venue: venues.ardres,
 
   home: {
     club: teams["seleccion-madrid"],
@@ -26,7 +26,7 @@ export const game_2024_05_18_krvavec: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["krvavec"],
+    club: teams.krvavec,
     category: "U13M",
     opponent: true,
     scores: [18],

@@ -19,13 +19,13 @@ export const game_2025_06_03_barca: AdvancedGame = AdvancedGameSchema.parse({
   venue: venues["gil-hernandez"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [21, 12, 1, 0],
   },
 
   away: {
-    club: teams["barca"],
+    club: teams.barca,
     category: "U14M",
     opponent: true,
     scores: [18, 35, 32, 0],

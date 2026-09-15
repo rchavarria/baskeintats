@@ -17,16 +17,16 @@ export const game_2025_12_21_elche: AdvancedGame = AdvancedGameSchema.parse({
     round: "5º",
   },
 
-  venue: venues["manzanera"],
+  venue: venues.manzanera,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [17, 18, 20, 24],
   },
 
   away: {
-    club: teams["elche"],
+    club: teams.elche,
     category: "U15M",
     opponent: true,
     scores: [32, 13, 15, 13],

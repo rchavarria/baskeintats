@@ -16,17 +16,17 @@ export const game_2026_05_27_distrito: AdvancedGame = AdvancedGameSchema.parse({
     round: "J6",
   },
 
-  venue: venues["circular"],
+  venue: venues.circular,
 
   home: {
-    club: teams["distrito"],
+    club: teams.distrito,
     category: "U16M",
     opponent: true,
     scores: [21, 34, 18, 19, 4],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [29, 22, 25, 16, 9],
   },

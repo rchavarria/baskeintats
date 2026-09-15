@@ -13,7 +13,7 @@ export const announcement_2024_05_01_salou: Announcement = AnnouncementSchema.pa
   announcementType: "tournament",
   category: "U14M",
 
-  venue: venues["salou"],
+  venue: venues.salou,
 
   description: [
     "Torneo con nuestro equipo de 2011, pero que jugará contra equipos de 2010, buscando rivales de nuestro nivel",
@@ -24,17 +24,17 @@ export const announcement_2024_05_01_salou: Announcement = AnnouncementSchema.pa
     {
       label: "Eliminatorias - J1",
       date: "2024-05-03T09:00:00Z",
-      opponent: teams["humanitas"].name,
+      opponent: teams.humanitas.name,
     },
     {
       label: "Eliminatorias - J2",
       date: "2024-05-04T08:00:00Z",
-      opponent: teams["salvador"].name,
+      opponent: teams.salvador.name,
     },
     {
       label: "Eliminatorias - J3",
       date: "2024-05-05T10:00:00Z",
-      opponent: teams["rozas"].name,
+      opponent: teams.rozas.name,
     },
   ],
 

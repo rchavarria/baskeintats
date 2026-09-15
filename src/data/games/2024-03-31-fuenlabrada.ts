@@ -16,16 +16,16 @@ export const game_2024_03_31_fuenlabrada: Game = GameSchema.parse({
     round: "Puestos 5-6",
   },
 
-  venue: venues["lanuza"],
+  venue: venues.lanuza,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [12, 11, 21, 12],
   },
 
   away: {
-    club: teams["fuenlabrada"],
+    club: teams.fuenlabrada,
     category: "U14M",
     opponent: true,
     scores: [17, 12, 17, 19],

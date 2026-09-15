@@ -26,7 +26,7 @@ export const game_2024_02_11_virgen_atocha: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [13, 9, 22, 16],
   },

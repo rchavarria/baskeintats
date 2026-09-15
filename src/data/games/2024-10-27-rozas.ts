@@ -19,14 +19,14 @@ export const game_2024_10_27_rozas: Game = GameSchema.parse({
   venue: venues["ceip-san-jose"],
 
   home: {
-    club: teams["rozas"],
+    club: teams.rozas,
     category: "U14M",
     opponent: true,
     scores: [18, 25, 16, 8],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [9, 14, 19, 20],
   },

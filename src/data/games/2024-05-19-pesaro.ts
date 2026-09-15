@@ -17,7 +17,7 @@ export const game_2024_05_19_pesaro: Game = GameSchema.parse({
     round: "J3",
   },
 
-  venue: venues["ardres"],
+  venue: venues.ardres,
 
   home: {
     club: teams["seleccion-madrid"],
@@ -26,7 +26,7 @@ export const game_2024_05_19_pesaro: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["pesaro"],
+    club: teams.pesaro,
     category: "U13M",
     opponent: true,
     scores: [14],

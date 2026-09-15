@@ -12,7 +12,7 @@ export const announcement_2025_07_26_dme_team_camp_eoss: Announcement = Announce
   announcementType: "tournament",
   category: "U14M",
 
-  venue: venues["orange"],
+  venue: venues.orange,
 
   description: [
     "Torneo enorme que se celebra en el Orange County Convention Center",

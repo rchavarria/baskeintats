@@ -19,14 +19,14 @@ export const game_2026_04_20_zentro: AdvancedGame = AdvancedGameSchema.parse({
   venue: venues["diaz-miguel"],
 
   home: {
-    club: teams["zentro"],
+    club: teams.zentro,
     category: "U16M",
     opponent: true,
     scores: [20, 30, 28, 23],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [6, 16, 17, 7],
   },

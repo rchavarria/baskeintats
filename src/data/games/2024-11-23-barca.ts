@@ -25,7 +25,7 @@ export const game_2024_11_23_barca: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["barca"],
+    club: teams.barca,
     category: "U15M",
     opponent: true,
     scores: [33, 26, 22, 23],

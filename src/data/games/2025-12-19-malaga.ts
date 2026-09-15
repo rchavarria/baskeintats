@@ -16,16 +16,16 @@ export const game_2025_12_19_malaga: AdvancedGame = AdvancedGameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["rubielos"],
+  venue: venues.rubielos,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [17, 11, 15, 11],
   },
 
   away: {
-    club: teams["malaga"],
+    club: teams.malaga,
     category: "U15M",
     opponent: true,
     scores: [13, 14, 16, 15],

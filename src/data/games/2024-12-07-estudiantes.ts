@@ -16,16 +16,16 @@ export const game_2024_12_07_estudiantes: AdvancedGame = AdvancedGameSchema.pars
     round: "Jornada 1",
   },
 
-  venue: venues["paraiso"],
+  venue: venues.paraiso,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [28, 14, 13, 28],
   },
 
   away: {
-    club: teams["estudiantes"],
+    club: teams.estudiantes,
     category: "U14M",
     opponent: true,
     scores: [15, 22, 24, 26],

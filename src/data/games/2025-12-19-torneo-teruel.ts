@@ -13,7 +13,7 @@ export const announcement_2025_12_19_torneo_teruel: Announcement = AnnouncementS
 
   category: "U15M",
 
-  venue: venues["mora"],
+  venue: venues.mora,
 
   description: [
     "Torneo cadete de primer año, celebrado en la provincia de Teruel, en la comarca de Gúdar-Javalambre",

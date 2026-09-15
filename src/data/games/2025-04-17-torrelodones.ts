@@ -19,13 +19,13 @@ export const game_2025_04_17_torrelodones: Game = GameSchema.parse({
   venue: venues["san-agustin"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [23, 23, 15, 12],
   },
 
   away: {
-    club: teams["torrelodones"],
+    club: teams.torrelodones,
     category: "U14M",
     opponent: true,
     scores: [14, 11, 8, 14],

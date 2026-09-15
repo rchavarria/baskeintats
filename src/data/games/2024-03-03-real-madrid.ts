@@ -16,7 +16,7 @@ export const game_2024_03_03_real_madrid: Game = GameSchema.parse({
     round: "J8",
   },
 
-  venue: venues["valdebebas"],
+  venue: venues.valdebebas,
 
   home: {
     club: teams["real-madrid"],
@@ -26,7 +26,7 @@ export const game_2024_03_03_real_madrid: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [12, 24, 10, 11],
   },

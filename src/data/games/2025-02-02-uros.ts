@@ -16,17 +16,17 @@ export const game_2025_02_02_uros: Game = GameSchema.parse({
     round: "J4",
   },
 
-  venue: venues["almendros"],
+  venue: venues.almendros,
 
   home: {
-    club: teams["uros"],
+    club: teams.uros,
     category: "U14M",
     opponent: true,
     scores: [13, 7, 10, 22],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [25, 36, 14, 15],
   },

@@ -17,7 +17,7 @@ export const game_2025_08_01_dme_red_black: FriendlyGame = FriendlyGameSchema.pa
     round: "J2",
   },
 
-  venue: venues["dme"],
+  venue: venues.dme,
 
   home: {
     club: teams["dme-spain"],

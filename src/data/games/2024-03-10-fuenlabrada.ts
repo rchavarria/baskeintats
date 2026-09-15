@@ -17,16 +17,16 @@ export const game_2024_03_10_fuenlabrada: Game = GameSchema.parse({
     round: "J9",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [14, 17, 19, 25, 9],
   },
 
   away: {
-    club: teams["fuenlabrada"],
+    club: teams.fuenlabrada,
     category: "U14M",
     opponent: true,
     scores: [16, 22, 19, 18, 7],

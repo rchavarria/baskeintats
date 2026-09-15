@@ -19,13 +19,13 @@ export const game_2025_04_20_laso: Game = GameSchema.parse({
   venue: venues["alberto-maestro"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [16, 19, 14, 13],
   },
 
   away: {
-    club: teams["laso"],
+    club: teams.laso,
     category: "U14M",
     opponent: true,
     scores: [14, 9, 18, 10],

@@ -13,7 +13,7 @@ export const announcement_2025_07_27_dme_team_camp_eoss_summary: Announcement =
     announcementType: "tournament",
     category: "U14M",
 
-    venue: venues["orange"],
+    venue: venues.orange,
 
     description: ["🤩 Vencedores del evento (en su categoría)"],
 

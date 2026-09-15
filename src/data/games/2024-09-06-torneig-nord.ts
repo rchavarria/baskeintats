@@ -25,12 +25,12 @@ export const announcement_2024_09_06_torneig_nord: Announcement = AnnouncementSc
     {
       label: "Grupos - J1",
       date: "2024-09-06T09:45:00Z",
-      opponent: teams["sabadell"].name,
+      opponent: teams.sabadell.name,
     },
     {
       label: "Grupos - J2",
       date: "2024-09-07T09:45:00Z",
-      opponent: teams["joventut"].name,
+      opponent: teams.joventut.name,
     },
     {
       label: "Semis",

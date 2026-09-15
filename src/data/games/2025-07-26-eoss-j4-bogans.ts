@@ -17,7 +17,7 @@ export const game_2025_07_26_eoss_bogans: Game = GameSchema.parse({
     round: "Semis",
   },
 
-  venue: venues["orange"],
+  venue: venues.orange,
 
   home: {
     club: teams["dme-spain"],
