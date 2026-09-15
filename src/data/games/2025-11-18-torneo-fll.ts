@@ -86,11 +86,6 @@ export const announcement_2025_11_18_torneo_fll: Announcement = AnnouncementSche
       url: "https://www.fbm.es/noticia-96-12953/volver-al-torneo-fll-para-ganarlo-de-nuevo",
     },
     {
-      type: "document",
-      label: "Antiguos ganadores",
-      url: "https://www.fbm.es/noticia-96-12953/volver-al-torneo-fll-para-ganarlo-de-nuevo",
-    },
-    {
       type: "article",
       label: "Artículo: Cuenta atrás para el XVI Toreno FLL",
       url: "https://www.fbm.es/noticia-96-12917/cuenta-atr%C3%A1s-para-el-xvi-torneo-fundaci%C3%B3n-leucemia-y-linfoma",
