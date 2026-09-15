@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Cancel superseded runs when a PR receives new commits
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Lint, test and build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm clean-install --no-audit --no-fund
+
+      - name: Lint
+        run: npm run lint:ci
+
+      - name: Run tests
+        run: npm test
+
+      - name: Validate data
+        run: npm run validate
+
+      - name: Build
+        run: npm run build
+
