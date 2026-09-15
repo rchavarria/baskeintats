@@ -62,11 +62,6 @@ export const announcement_2025_12_26_torneo_cyl: Announcement = AnnouncementSche
     },
     {
       type: "document",
-      label: "Roster de la selección de Castilla y León",
-      url: "https://www.instagram.com/p/DS5rKeNiL6e/",
-    },
-    {
-      type: "document",
       label: "Artículo con la convocatoria madrileña",
       url: "https://www.fbm.es/noticia-87-12994/concentraciones-cadete-e-infantil-de-primer-a%C3%B1o#CM",
     },
