@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { useEvents } from "../hooks/useEvents";
+import { getEvents } from "./events";
 
 /**
  * React `key` uniqueness guard.
@@ -10,8 +10,7 @@ import { useEvents } from "../hooks/useEvents";
  * data with a duplicated key would otherwise only surface as a React runtime warning.
  */
 
-// biome-ignore lint/correctness/useHookAtTopLevel: useEvents is a plain data loader, not a React hook
-const events = useEvents();
+const events = getEvents();
 
 function findDuplicates(keys: string[]): string[] {
   const counts = new Map<string, number>();

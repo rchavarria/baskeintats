@@ -6,11 +6,11 @@ import { DateDisplay } from "../components/ui/DateDisplay.tsx";
 import { DateTimeDisplay } from "../components/ui/DateTimeDisplay.tsx";
 import { EmptyState } from "../components/ui/EmptyState";
 import { TimeDisplay } from "../components/ui/TimeDisplay.tsx";
-import { useEvents } from "../hooks/useEvents.ts";
+import { getEvents } from "../data/events.ts";
 
 export function AnnouncementDetailPage() {
   const { announcementId } = useParams<{ announcementId: string }>();
-  const events = useEvents();
+  const events = getEvents();
 
   const announcement = events.find((e) => e.id === announcementId);
   if (announcement?.type !== "announcement") {

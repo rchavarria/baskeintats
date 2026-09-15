@@ -5,12 +5,12 @@ import { PlayerStatsSelector } from "../components/stats/PlayerStatsSelector";
 import { CategoryBadge } from "../components/ui/CategoryBadge.tsx";
 import { DateTimeDisplay } from "../components/ui/DateTimeDisplay.tsx";
 import { EmptyState } from "../components/ui/EmptyState";
-import { useEvents } from "../hooks/useEvents.ts";
+import { getEvents } from "../data/events.ts";
 import { totalPoints } from "../model/GameSchema";
 
 export function GameDetailPage() {
   const { gameId } = useParams<{ gameId: string }>();
-  const games = useEvents();
+  const games = getEvents();
 
   const game = games.find((g) => g.id === gameId);
 

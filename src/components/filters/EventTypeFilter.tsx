@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { useEvents } from "../../hooks/useEvents";
+import { getEvents } from "../../data/events";
 import { useFilters } from "../../hooks/useFilters";
 
 const EVENT_TYPE_LABELS: Record<string, string> = {
@@ -13,7 +13,7 @@ const EVENT_TYPE_LABELS: Record<string, string> = {
 };
 
 export function EventTypeFilter() {
-  const events = useEvents();
+  const events = getEvents();
   const { filters, setFilters } = useFilters();
 
   const eventTypes = useMemo(() => [...new Set(events.map((e) => e.type))].sort(), [events]);

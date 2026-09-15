@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { CategoryBadge } from "../components/ui/CategoryBadge.tsx";
 import { DateTimeDisplay } from "../components/ui/DateTimeDisplay.tsx";
 import { EmptyState } from "../components/ui/EmptyState";
-import { useEvents } from "../hooks/useEvents.ts";
+import { getEvents } from "../data/events.ts";
 import { clipUrl } from "../lib/clipUrl.ts";
 import type { Clip } from "../model/ScoutingSchema.ts";
 
@@ -16,7 +16,7 @@ function clipTypeLabel(type: Clip["type"]): string {
 
 export function ScoutingDetailPage() {
   const { scoutingId } = useParams<{ scoutingId: string }>();
-  const events = useEvents();
+  const events = getEvents();
 
   const scouting = events.find((e) => e.id === scoutingId);
   if (scouting?.type !== "scouting") {

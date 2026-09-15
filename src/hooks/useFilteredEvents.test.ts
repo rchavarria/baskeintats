@@ -1,14 +1,14 @@
 import { renderHook } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import type { Filters } from "../context/FiltersContextDefinition";
-import { useEvents } from "./useEvents";
+import { getEvents } from "../data/events";
 import { useFilteredEvents } from "./useFilteredEvents";
 import { useFilters } from "./useFilters";
 
-vi.mock("./useEvents");
+vi.mock("../data/events");
 vi.mock("./useFilters");
 
-const mockUseEvents = vi.mocked(useEvents);
+const mockGetEvents = vi.mocked(getEvents);
 const mockUseFilters = vi.mocked(useFilters);
 
 // ─── Minimal mock events ────────────────────────────────────────────────────
@@ -83,7 +83,7 @@ function withFilters(partial: Partial<Filters>) {
 describe("useFilteredEvents", () => {
   beforeEach(() => {
     // biome-ignore lint/suspicious/noExplicitAny: test mock
-    mockUseEvents.mockReturnValue(allEvents as any);
+    mockGetEvents.mockReturnValue(allEvents as any);
     withFilters({});
   });
 

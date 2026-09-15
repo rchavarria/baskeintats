@@ -1,9 +1,9 @@
 import { useMemo } from "react";
-import { useEvents } from "../../hooks/useEvents";
+import { getEvents } from "../../data/events";
 import { useFilters } from "../../hooks/useFilters";
 
 export function SeasonFilter() {
-  const events = useEvents();
+  const events = getEvents();
   const { filters, setFilters } = useFilters();
 
   const seasons = useMemo(

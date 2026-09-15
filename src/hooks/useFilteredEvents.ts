@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { useEvents } from "./useEvents";
+import { getEvents } from "../data/events";
 import { useFilters } from "./useFilters";
 
 function bySeason(season: string) {
@@ -35,7 +35,7 @@ function byCompetition(competitionName: string) {
 }
 
 export function useFilteredEvents() {
-  const events = useEvents();
+  const events = getEvents();
   const { filters } = useFilters();
 
   return useMemo(

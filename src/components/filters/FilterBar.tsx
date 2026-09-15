@@ -1,9 +1,9 @@
-import { useEvents } from "../../hooks/useEvents.ts";
+import { getEvents } from "../../data/events.ts";
 import { useFilters } from "../../hooks/useFilters";
 
 export function FilterBar() {
   const { filters, setFilters, resetFilters } = useFilters();
-  const games = useEvents();
+  const games = getEvents();
 
   const seasons = [...new Set(games.map((g) => g.season))].sort().reverse();
   const competitions = [...new Set(games.map((g) => g.competition))].sort();

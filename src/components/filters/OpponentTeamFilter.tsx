@@ -1,11 +1,11 @@
 import { useMemo } from "react";
-import { useEvents } from "../../hooks/useEvents";
+import { getEvents } from "../../data/events";
 import { useFilters } from "../../hooks/useFilters";
 
 type TeamOption = { id: string; name: string };
 
 export function OpponentTeamFilter() {
-  const events = useEvents();
+  const events = getEvents();
   const { filters, setFilters } = useFilters();
 
   const opponents = useMemo<TeamOption[]>(() => {
