@@ -20,7 +20,7 @@
       "react": "recommended"
     },
     "rules": {
-      "recommended": true,
+      "preset": "recommended",
       "a11y": "off",
       "style": {
         "useComponentExportOnlyModules": "error"
