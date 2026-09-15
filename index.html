@@ -11,7 +11,7 @@
       // Decode the redirect from 404.html so React Router sees the original URL
       (((l) => {
         if (l.search[1] === '/') {
-          var decoded = l.search.slice(1).split('&').map((s) => s.replace(/~and~/g, '&')).join('?');
+          const decoded = l.search.slice(1).split('&').map((s) => s.replace(/~and~/g, '&')).join('?');
           window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
         }
       })(window.location));
