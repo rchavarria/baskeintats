@@ -52,13 +52,9 @@ describe("event data produces unique React keys", () => {
     expect(duplicates).toEqual([]);
   });
 
-  it("has unique type+label+url references per event", () => {
+  it("has unique url references per event", () => {
     const duplicates = collectDuplicates((e) =>
-      Array.isArray(e.references)
-        ? e.references.map(
-            (r: { type: string; label: string; url: string }) => `${r.type}-${r.label}-${r.url}`,
-          )
-        : undefined,
+      Array.isArray(e.references) ? e.references.map((r: { url: string }) => r.url) : undefined,
     );
     expect(duplicates).toEqual([]);
   });
@@ -75,11 +71,9 @@ describe("event data produces unique React keys", () => {
     expect(duplicates).toEqual([]);
   });
 
-  it("has unique start+type clips per scouting", () => {
+  it("has unique start clips per scouting", () => {
     const duplicates = collectDuplicates((e) =>
-      Array.isArray(e.clips)
-        ? e.clips.map((c: { start: string; type: string }) => `${c.start}-${c.type}`)
-        : undefined,
+      Array.isArray(e.clips) ? e.clips.map((c: { start: string }) => c.start) : undefined,
     );
     expect(duplicates).toEqual([]);
   });
