@@ -25,7 +25,7 @@ export const announcement_2026_08_24_season_start: Announcement = AnnouncementSc
 
   schedule: [
     {
-      label: "Arrnca la nueva temporada",
+      label: "Arranca la nueva temporada",
       date: "2026-08-24T00:00:00Z",
     },
   ],
