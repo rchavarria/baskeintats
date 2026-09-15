@@ -1,3 +1,7 @@
+# temp templates to build game data
+src/data/games/anouncement.html
+src/data/games/game.html
+
 # Generated code with `npm run generate`
 src/generated
 
