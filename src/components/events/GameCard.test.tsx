@@ -45,6 +45,7 @@ import { game_2026_05_30_zentro } from "../../data/games/2026-05-30-zentro.ts";
 import { game_2026_05_31_torrelodones } from "../../data/games/2026-05-31-torrelodones.ts";
 import type { Game } from "../../model/GameSchema";
 import { GameCard } from "./GameCard";
+import { game_2026_09_17_coslada } from "../../data/games/2026-09-17-coslada.ts";
 
 const fakeGame: Game = game_2025_09_20_alcorcon;
 
@@ -221,6 +222,7 @@ describe("GameCard (friendly game)", () => {
     [game_2025_09_18_distrito],
     [game_2025_12_27_canarias],
     [game_2025_12_28_oporto],
+    [game_2026_09_17_coslada],
   ])("renders friendly games to the game card", (game) => {
     renderWithRouter(<GameCard game={game} />);
 
