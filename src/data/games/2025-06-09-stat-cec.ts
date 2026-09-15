@@ -6,7 +6,7 @@ import { game_2025_06_03_barca } from "./2025-06-03-barca.ts";
 import { game_2025_06_04_joventut } from "./2025-06-04-joventut.ts";
 
 export const stat_2025_06_09_cec: Stats = StatsSchema.parse({
-  id: "S45-stat-cesa",
+  id: "S45-stat-cec",
   type: "stats",
   season: "2024-25",
   date: "2025-06-09T00:00:00Z",
