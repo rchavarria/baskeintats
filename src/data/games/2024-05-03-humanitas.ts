@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_05_03_humanitas: Game = GameSchema.parse({
   id: "S34-torneo-salou-j1",
@@ -19,13 +19,13 @@ export const game_2024_05_03_humanitas: Game = GameSchema.parse({
   venue: venues["cap-salou"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [17, 1, 11, 9],
   },
 
   away: {
-    club: teams["humanitas"],
+    club: teams.humanitas,
     category: "U14M",
     opponent: true,
     scores: [7, 20, 13, 4],

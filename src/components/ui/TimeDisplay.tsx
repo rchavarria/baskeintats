@@ -10,4 +10,3 @@ export function TimeDisplay({ isoDate }: TimeDisplayProps) {
 
   return <span>⏰ {time}</span>;
 }
-

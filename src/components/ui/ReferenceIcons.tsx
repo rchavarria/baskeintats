@@ -1,5 +1,5 @@
-import type {Reference} from "../../model/ReferenceSchema.ts";
-import {ReferenceTypeEmoji} from "./ReferenceTypeEmoji.tsx";
+import type { Reference } from "../../model/ReferenceSchema.ts";
+import { ReferenceTypeEmoji } from "./ReferenceTypeEmoji.tsx";
 
 interface ReferenceIconsProps {
   references: Reference[];
@@ -10,9 +10,9 @@ export function ReferenceIcons({ references }: ReferenceIconsProps) {
 
   return (
     <div className="mt-3 px-2 flex justify-center gap-4">
-      {references.map((ref, idx) => (
+      {references.map((ref) => (
         <span
-          key={idx}
+          key={ref.url}
           role="link"
           title={ref.label}
           className="cursor-pointer text-2xl"

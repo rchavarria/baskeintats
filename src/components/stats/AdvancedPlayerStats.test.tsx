@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import { AdvancedPlayerStats } from "./AdvancedPlayerStats";
 import type { AdvancedPlayerStats as AdvancedPlayerStatsType } from "../../model/PlayerSchema";
+import { AdvancedPlayerStats } from "./AdvancedPlayerStats";
 
 describe("AdvancedPlayerStats", () => {
   it("renders played time using mm:ss format", () => {
@@ -26,4 +26,3 @@ describe("AdvancedPlayerStats", () => {
     expect(screen.getByText("📈 Estadísticas del jugador")).toBeInTheDocument();
   });
 });
-

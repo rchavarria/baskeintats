@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import { describe, it, expect } from "vitest";
-import { AnnouncementTypeEmoji } from "./AnnouncementEmojis";
+import { describe, expect, it } from "vitest";
 import type { Announcement } from "../../model/AnnouncementSchema";
+import { AnnouncementTypeEmoji } from "./AnnouncementEmojis";
 
 describe("AnnouncementTypeEmoji", () => {
   it("renders 🏆 for tournament", () => {
@@ -34,4 +34,3 @@ describe("AnnouncementTypeEmoji", () => {
     expect(screen.getByText("❌❓🚨")).toBeInTheDocument();
   });
 });
-

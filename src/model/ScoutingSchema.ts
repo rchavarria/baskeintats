@@ -1,5 +1,5 @@
-import {z} from "zod";
-import {CategorySchema} from "./CategorySchema.ts";
+import { z } from "zod";
+import { CategorySchema } from "./CategorySchema.ts";
 
 // "m:ss", "mm:ss" or "h:mm:ss"
 const timestampRegex = /^(\d+:)?[0-5]?\d:[0-5]\d$/;

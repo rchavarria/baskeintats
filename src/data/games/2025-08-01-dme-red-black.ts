@@ -1,8 +1,8 @@
-import {FriendlyGameSchema} from "../../model/GameSchema.ts";
-import type {FriendlyGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
-import {EmptyPlayerStats} from "../../model/PlayerSchema.ts";
+import type { FriendlyGame } from "../../model/GameSchema.ts";
+import { FriendlyGameSchema } from "../../model/GameSchema.ts";
+import { EmptyPlayerStats } from "../../model/PlayerSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_08_01_dme_red_black: FriendlyGame = FriendlyGameSchema.parse({
   id: "S45-dme-red-black",
@@ -17,19 +17,19 @@ export const game_2025_08_01_dme_red_black: FriendlyGame = FriendlyGameSchema.pa
     round: "J2",
   },
 
-  venue: venues["dme"],
+  venue: venues.dme,
 
   home: {
     club: teams["dme-spain"],
     category: "U14M",
-    scores: [ 66 ],
+    scores: [66],
   },
 
   away: {
     club: teams["dme-red-black"],
     category: "U14M",
     opponent: true,
-    scores: [ 50 ],
+    scores: [50],
   },
 
   playerStats: EmptyPlayerStats,
@@ -61,6 +61,4 @@ export const game_2025_08_01_dme_red_black: FriendlyGame = FriendlyGameSchema.pa
       url: "https://www.instagram.com/p/DM0CkdkRFdt",
     },
   ],
-
 });
-

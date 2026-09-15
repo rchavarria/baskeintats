@@ -1,5 +1,5 @@
-import {ScoutingSchema} from "../../model/ScoutingSchema.ts";
-import type {Scouting} from "../../model/ScoutingSchema.ts";
+import type { Scouting } from "../../model/ScoutingSchema.ts";
+import { ScoutingSchema } from "../../model/ScoutingSchema.ts";
 
 export const scouting_2026_07_12_spain_france: Scouting = ScoutingSchema.parse({
   id: "S56-scouting-spain-france",
@@ -10,10 +10,7 @@ export const scouting_2026_07_12_spain_france: Scouting = ScoutingSchema.parse({
   title: "Torneo de la Amistad: España vs Francia",
   category: "U15M",
 
-  description: [
-    "first line of the description to show",
-    "second line",
-  ],
+  description: ["first line of the description to show", "second line"],
 
   video: "https://www.youtube.com/watch?v=xFq8UrknD4Y",
 
@@ -50,7 +47,8 @@ export const scouting_2026_07_12_spain_france: Scouting = ScoutingSchema.parse({
     },
     {
       start: "44:35",
-      description: "Mano a mano, lo coje Lucas (algo mejor), termina Bucero cogiendo buen rebote, fallando bandeja",
+      description:
+        "Mano a mano, lo coje Lucas (algo mejor), termina Bucero cogiendo buen rebote, fallando bandeja",
       type: "good-play",
     },
     {
@@ -74,5 +72,4 @@ export const scouting_2026_07_12_spain_france: Scouting = ScoutingSchema.parse({
       type: "bad-play",
     },
   ],
-
 });

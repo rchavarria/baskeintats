@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_02_01_fuenlabrada: Game = GameSchema.parse({
   id: "S56-liga-plata-f2-gb-j4",
@@ -16,16 +16,16 @@ export const game_2026_02_01_fuenlabrada: Game = GameSchema.parse({
     round: "J4",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [18, 21, 29, 25],
   },
 
   away: {
-    club: teams["fuenlabrada"],
+    club: teams.fuenlabrada,
     category: "U15M",
     opponent: true,
     scores: [21, 21, 19, 30],
@@ -87,4 +87,3 @@ export const game_2026_02_01_fuenlabrada: Game = GameSchema.parse({
     },
   ],
 });
-

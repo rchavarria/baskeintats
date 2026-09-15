@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_01_03_laso: Game = GameSchema.parse({
   id: "S56-torneo-reyes-semis",
@@ -16,16 +16,16 @@ export const game_2026_01_03_laso: Game = GameSchema.parse({
     round: "Semis",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [27, 26, 24, 22],
   },
 
   away: {
-    club: teams["laso"],
+    club: teams.laso,
     category: "U15M",
     opponent: true,
     scores: [23, 17, 11, 14],
@@ -72,4 +72,3 @@ export const game_2026_01_03_laso: Game = GameSchema.parse({
     },
   ],
 });
-

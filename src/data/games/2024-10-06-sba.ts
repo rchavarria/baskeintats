@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_10_06_sba: Game = GameSchema.parse({
   id: "S45-liga-oro-f1-j3",
@@ -19,14 +19,14 @@ export const game_2024_10_06_sba: Game = GameSchema.parse({
   venue: venues["sba-arena"],
 
   home: {
-    club: teams["sba"],
+    club: teams.sba,
     category: "U14M",
     opponent: true,
     scores: [24, 29, 15, 21],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [29, 27, 31, 24],
   },
@@ -77,4 +77,3 @@ export const game_2024_10_06_sba: Game = GameSchema.parse({
     },
   ],
 });
-

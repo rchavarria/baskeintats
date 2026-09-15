@@ -1,13 +1,13 @@
-import type {Reference} from "../../model/ReferenceSchema.ts";
+import type { Reference } from "../../model/ReferenceSchema.ts";
 
 const referenceTypeEmojiMap: Record<Reference["type"], string> = {
-  "article": "📰",
-  "document": "💼",
-  "photo": "📸",
-  "stats": "📈",
+  article: "📰",
+  document: "💼",
+  photo: "📸",
+  stats: "📈",
   "social-media": "📱",
-  "web": "💻",
-  "video": "🎥",
+  web: "💻",
+  video: "🎥",
 };
 
 export function ReferenceTypeEmoji({ type }: { type: Reference["type"] }) {

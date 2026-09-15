@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_09_28_rozas: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f1-g1-j2",
@@ -16,16 +16,16 @@ export const game_2025_09_28_rozas: AdvancedGame = AdvancedGameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [15, 25, 17, 14, 13],
   },
 
   away: {
-    club: teams["rozas"],
+    club: teams.rozas,
     category: "U16M",
     opponent: true,
     scores: [20, 18, 20, 13, 14],
@@ -102,6 +102,4 @@ export const game_2025_09_28_rozas: AdvancedGame = AdvancedGameSchema.parse({
       url: "https://www.fbm.es/noticia-104-12851/liga-ahorramas-la-emoci%C3%B3n-est%C3%A1-servida",
     },
   ],
-
 });
-

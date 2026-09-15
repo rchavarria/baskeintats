@@ -1,9 +1,9 @@
+import { getEvents } from "../../data/events.ts";
 import { useFilters } from "../../hooks/useFilters";
-import { useEvents } from "../../hooks/useEvents.ts";
 
 export function FilterBar() {
   const { filters, setFilters, resetFilters } = useFilters();
-  const games = useEvents();
+  const games = getEvents();
 
   const seasons = [...new Set(games.map((g) => g.season))].sort().reverse();
   const competitions = [...new Set(games.map((g) => g.competition))].sort();
@@ -18,7 +18,9 @@ export function FilterBar() {
       >
         <option value="">Todas las temporadas</option>
         {seasons.map((s) => (
-          <option key={s} value={s}>{s}</option>
+          <option key={s} value={s}>
+            {s}
+          </option>
         ))}
       </select>
 
@@ -29,7 +31,9 @@ export function FilterBar() {
       >
         <option value="">Todas las competiciones</option>
         {competitions.map((c) => (
-          <option key={c} value={c}>{c}</option>
+          <option key={c} value={c}>
+            {c}
+          </option>
         ))}
       </select>
 
@@ -40,7 +44,9 @@ export function FilterBar() {
       >
         <option value="">Todos los equipos</option>
         {teams.map((t) => (
-          <option key={t} value={t}>{t}</option>
+          <option key={t} value={t}>
+            {t}
+          </option>
         ))}
       </select>
 

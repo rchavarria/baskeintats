@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_12_15_rozas: Game = GameSchema.parse({
   id: "S45-liga-oro-f1-j10",
@@ -16,16 +16,16 @@ export const game_2024_12_15_rozas: Game = GameSchema.parse({
     round: "J10",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [21, 13, 16, 20],
   },
 
   away: {
-    club: teams["rozas"],
+    club: teams.rozas,
     category: "U14M",
     opponent: true,
     scores: [23, 19, 18, 23],
@@ -76,4 +76,3 @@ export const game_2024_12_15_rozas: Game = GameSchema.parse({
     },
   ],
 });
-

@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const _advanced_game_template: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f1-g1-j1",
@@ -16,19 +16,19 @@ export const _advanced_game_template: AdvancedGame = AdvancedGameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
-    scores: [ 0, 0, 0, 0 ],
+    scores: [0, 0, 0, 0],
   },
 
   away: {
     club: teams["real-madrid"],
     category: "U16M",
     opponent: true,
-    scores: [ 0, 0, 0, 0 ],
+    scores: [0, 0, 0, 0],
   },
 
   playerStats: {
@@ -80,10 +80,7 @@ export const _advanced_game_template: AdvancedGame = AdvancedGameSchema.parse({
 
   recap: {
     title: "xxx",
-    lines: [
-      "yyy",
-      "zzz",
-    ],
+    lines: ["yyy", "zzz"],
   },
 
   references: [
@@ -108,6 +105,4 @@ export const _advanced_game_template: AdvancedGame = AdvancedGameSchema.parse({
       url: "https://fbm.es/-",
     },
   ],
-
 });
-

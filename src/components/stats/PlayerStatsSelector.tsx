@@ -1,9 +1,8 @@
-import type { PlayerStats } from '../../model/PlayerSchema';
-import type { AdvancedPlayerStats } from '../../model/PlayerSchema';
-import { getPlayerStatsVariant } from '../../lib/player-stats';
-import { PlayerStats as PlayerStatsView } from './PlayerStats';
-import { AdvancedPlayerStats as AdvancedPlayerStatsView } from './AdvancedPlayerStats';
-import { NoPlayerStats } from './NoPlayerStats';
+import { getPlayerStatsVariant } from "../../lib/player-stats";
+import type { AdvancedPlayerStats, PlayerStats } from "../../model/PlayerSchema";
+import { AdvancedPlayerStats as AdvancedPlayerStatsView } from "./AdvancedPlayerStats";
+import { NoPlayerStats } from "./NoPlayerStats";
+import { PlayerStats as PlayerStatsView } from "./PlayerStats";
 
 interface PlayerStatsSelectorProps {
   /**
@@ -32,12 +31,11 @@ export function PlayerStatsSelector({ stats }: PlayerStatsSelectorProps) {
   const variant = getPlayerStatsVariant(stats);
 
   switch (variant.kind) {
-    case 'none':
+    case "none":
       return <NoPlayerStats />;
-    case 'basic':
+    case "basic":
       return <PlayerStatsView stats={variant.stats} />;
-    case 'advanced':
+    case "advanced":
       return <AdvancedPlayerStatsView stats={variant.stats} />;
   }
 }
-

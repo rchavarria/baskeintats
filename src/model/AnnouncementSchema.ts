@@ -1,7 +1,7 @@
-import {z} from "zod";
-import {CategorySchema} from "./CategorySchema.ts";
-import {VenueSchema} from "./VenueSchema.ts";
-import {ReferenceSchema} from "./ReferenceSchema.ts";
+import { z } from "zod";
+import { CategorySchema } from "./CategorySchema.ts";
+import { ReferenceSchema } from "./ReferenceSchema.ts";
+import { VenueSchema } from "./VenueSchema.ts";
 
 export const ScheduleEntrySchema = z.object({
   label: z.string().optional(),
@@ -19,11 +19,11 @@ export const AnnouncementSchema = z.object({
 
   title: z.string(),
   announcementType: z.enum([
-    "call-up",       // 📢
-    "camp",          // 🏕️
+    "call-up", // 📢
+    "camp", // 🏕️
     "friendly-game", // 🫂
-    "milestone",     // 🚀
-    "tournament",    // 🏆
+    "milestone", // 🚀
+    "tournament", // 🏆
   ]),
   category: CategorySchema,
 

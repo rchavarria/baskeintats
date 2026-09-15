@@ -1,9 +1,9 @@
-import {render, screen} from "@testing-library/react";
-import {MemoryRouter, Route, Routes} from "react-router-dom";
-import {describe, expect, it} from "vitest";
-import {GameDetailPage} from "./GameDetailPage";
-import {game_2026_04_12_canoe} from "../data/games/2026-04-12-canoe.ts";
-import {useEvents} from "../hooks/useEvents.ts";
+import { render, screen } from "@testing-library/react";
+import { MemoryRouter, Route, Routes } from "react-router-dom";
+import { describe, expect, it } from "vitest";
+import { getEvents } from "../data/events.ts";
+import { game_2026_04_12_canoe } from "../data/games/2026-04-12-canoe.ts";
+import { GameDetailPage } from "./GameDetailPage";
 
 function renderWithRoute(gameId: string) {
   return render(
@@ -11,7 +11,7 @@ function renderWithRoute(gameId: string) {
       <Routes>
         <Route path="/games/:gameId" element={<GameDetailPage />} />
       </Routes>
-    </MemoryRouter>
+    </MemoryRouter>,
   );
 }
 
@@ -23,13 +23,12 @@ describe("GameDetailPage", () => {
   });
 
   describe("full game list", () => {
-    const gameIds = useEvents()
-      .filter(e => [ "game", "advanced-game" ].includes(e.type))
-      .map(g => [ g.id ]);
+    const gameIds = getEvents()
+      .filter((e) => ["game", "advanced-game"].includes(e.type))
+      .map((g) => [g.id]);
 
     it.each(gameIds)("renders game %s", (gameId: string) => {
       renderWithRoute(gameId);
     });
   });
 });
-

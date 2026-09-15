@@ -1,7 +1,7 @@
-import {FriendlyGameSchema} from "../../model/GameSchema.ts";
-import type {FriendlyGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { FriendlyGame } from "../../model/GameSchema.ts";
+import { FriendlyGameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_12_27_canarias: FriendlyGame = FriendlyGameSchema.parse({
   id: "S56-torneo-cyl-j1",
@@ -16,7 +16,7 @@ export const game_2025_12_27_canarias: FriendlyGame = FriendlyGameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["wurzburg"],
+  venue: venues.wurzburg,
 
   home: {
     club: teams["seleccion-madrid"],
@@ -66,4 +66,3 @@ export const game_2025_12_27_canarias: FriendlyGame = FriendlyGameSchema.parse({
     },
   ],
 });
-

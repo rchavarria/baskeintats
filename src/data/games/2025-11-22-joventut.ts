@@ -1,7 +1,7 @@
-import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import type { AdvancedGame } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_11_22_joventut: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-torneo-fll-j2",
@@ -19,13 +19,13 @@ export const game_2025_11_22_joventut: AdvancedGame = AdvancedGameSchema.parse({
   venue: venues["triangulo-oro"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [23, 16, 25, 18],
   },
 
   away: {
-    club: teams["joventut"],
+    club: teams.joventut,
     category: "U15M",
     opponent: true,
     scores: [8, 16, 21, 20],
@@ -97,4 +97,3 @@ export const game_2025_11_22_joventut: AdvancedGame = AdvancedGameSchema.parse({
     },
   ],
 });
-

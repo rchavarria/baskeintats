@@ -1,10 +1,10 @@
-import type {Stats} from "../../model/StatsSchema.ts";
-import {StatsSchema} from "../../model/StatsSchema.ts";
-import {game_2025_12_19_malaga} from "./2025-12-19-malaga.ts";
-import {game_2025_12_19_torrent} from "./2025-12-19-torrent.ts";
-import {game_2025_12_20_olivar} from "./2025-12-20-olivar.ts";
-import {game_2025_12_20_sevilla} from "./2025-12-20-sevilla.ts";
-import {game_2025_12_21_elche} from "./2025-12-21-elche.ts";
+import type { Stats } from "../../model/StatsSchema.ts";
+import { StatsSchema } from "../../model/StatsSchema.ts";
+import { game_2025_12_19_malaga } from "./2025-12-19-malaga.ts";
+import { game_2025_12_19_torrent } from "./2025-12-19-torrent.ts";
+import { game_2025_12_20_olivar } from "./2025-12-20-olivar.ts";
+import { game_2025_12_20_sevilla } from "./2025-12-20-sevilla.ts";
+import { game_2025_12_21_elche } from "./2025-12-21-elche.ts";
 
 export const stat_2025_12_22_torneo_teruel: Stats = StatsSchema.parse({
   id: "S56-stat-torneo-teruel",
@@ -27,8 +27,8 @@ export const stat_2025_12_22_torneo_teruel: Stats = StatsSchema.parse({
     "Aunque la sensación es que podríamos haberlo ganado, al menos, haber jugado la final",
     "Pero un mal primer partido nos arrastró abajo en la tabla",
     "Aun así, la sensación final es muy satisfactoria, creo que los cachorros han conectado, " +
-    "este torneo ha sido un punto de inflexión en el equipo, en su confianza como equipo, " +
-    "han sido capaces de sacar adelante varias situaciones complicadas",
+      "este torneo ha sido un punto de inflexión en el equipo, en su confianza como equipo, " +
+      "han sido capaces de sacar adelante varias situaciones complicadas",
   ],
 
   references: [
@@ -44,7 +44,8 @@ export const stat_2025_12_22_torneo_teruel: Stats = StatsSchema.parse({
     },
     {
       type: "video",
-      label: "Todos los partidos se han retransmitido por el canal de YouTube de InGame Productions",
+      label:
+        "Todos los partidos se han retransmitido por el canal de YouTube de InGame Productions",
       url: "https://www.youtube.com/@ingameproducciones",
     },
   ],

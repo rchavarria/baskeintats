@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_01_17_juande: Game = GameSchema.parse({
   id: "S56-liga-plata-f2-gd-j2",
@@ -16,16 +16,16 @@ export const game_2026_01_17_juande: Game = GameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [25, 17, 9, 22],
   },
 
   away: {
-    club: teams["juande"],
+    club: teams.juande,
     category: "U16M",
     opponent: true,
     scores: [11, 16, 22, 19],
@@ -81,4 +81,3 @@ export const game_2026_01_17_juande: Game = GameSchema.parse({
     },
   ],
 });
-

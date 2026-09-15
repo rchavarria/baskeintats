@@ -1,6 +1,6 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2025_12_19_torneo_teruel: Announcement = AnnouncementSchema.parse({
   id: "S56-torneo-teruel",
@@ -13,7 +13,7 @@ export const announcement_2025_12_19_torneo_teruel: Announcement = AnnouncementS
 
   category: "U15M",
 
-  venue: venues["mora"],
+  venue: venues.mora,
 
   description: [
     "Torneo cadete de primer año, celebrado en la provincia de Teruel, en la comarca de Gúdar-Javalambre",
@@ -76,7 +76,8 @@ export const announcement_2025_12_19_torneo_teruel: Announcement = AnnouncementS
     },
     {
       type: "article",
-      label: "La prensa local, el Diario de Teruel, publica Lo mejor del basket juvenil en España se volverá a ver en Gúdar Javalambre",
+      label:
+        "La prensa local, el Diario de Teruel, publica Lo mejor del basket juvenil en España se volverá a ver en Gúdar Javalambre",
       url: "https://www.diariodeteruel.es/deportes/lo-mejor-del-basket-juvenil-en-espana-se-volvera-a-ver-en-gudar-javalambre",
     },
   ],

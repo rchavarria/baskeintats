@@ -680,7 +680,7 @@ Examples:
 
 ## Add the New Announcement to the Events List
 
-After generating the new announcement file, update `src/hooks/useEvents.ts`:
+After generating the new announcement file, update `src/data/events.ts`:
 
 - Add an import statement for it
 - Include it in the returned array, placed chronologically (newest first)

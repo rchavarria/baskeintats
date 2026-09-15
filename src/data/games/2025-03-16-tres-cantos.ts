@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_03_16_tres_cantos: Game = GameSchema.parse({
   id: "S45-liga-oro-fase2-j10",
@@ -16,7 +16,7 @@ export const game_2025_03_16_tres_cantos: Game = GameSchema.parse({
     round: "J10",
   },
 
-  venue: venues["luz"],
+  venue: venues.luz,
 
   home: {
     club: teams["tres-cantos"],
@@ -26,7 +26,7 @@ export const game_2025_03_16_tres_cantos: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [18, 29, 26, 0],
   },

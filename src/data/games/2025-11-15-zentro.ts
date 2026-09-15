@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_11_15_zentro: Game = GameSchema.parse({
   id: "S56-liga-plata-f1-g4-j7",
@@ -16,16 +16,16 @@ export const game_2025_11_15_zentro: Game = GameSchema.parse({
     round: "J7",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [21, 21, 23, 21],
   },
 
   away: {
-    club: teams["zentro"],
+    club: teams.zentro,
     category: "U15M",
     opponent: true,
     scores: [17, 15, 21, 23],
@@ -87,4 +87,3 @@ export const game_2025_11_15_zentro: Game = GameSchema.parse({
     },
   ],
 });
-

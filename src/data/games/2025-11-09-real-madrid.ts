@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_11_09_real_madrid: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f1-g1-j6",
@@ -16,10 +16,10 @@ export const game_2025_11_09_real_madrid: AdvancedGame = AdvancedGameSchema.pars
     round: "J6",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [12, 23, 17, 19],
   },
@@ -106,6 +106,4 @@ export const game_2025_11_09_real_madrid: AdvancedGame = AdvancedGameSchema.pars
       url: "https://www.fbm.es/noticia-88-12905/concentraci%C3%B3n-de-las-preselecciones-auton%C3%B3micas",
     },
   ],
-
 });
-

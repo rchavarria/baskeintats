@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_01_02_fuenlabrada: Game = GameSchema.parse({
   id: "S56-torneo-reyes-j1",
@@ -16,16 +16,16 @@ export const game_2026_01_02_fuenlabrada: Game = GameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [18, 32, 26, 21],
   },
 
   away: {
-    club: teams["fuenlabrada"],
+    club: teams.fuenlabrada,
     category: "U15M",
     opponent: true,
     scores: [13, 21, 17, 13],
@@ -61,4 +61,3 @@ export const game_2026_01_02_fuenlabrada: Game = GameSchema.parse({
 
   references: [],
 });
-

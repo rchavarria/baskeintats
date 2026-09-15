@@ -1,7 +1,7 @@
-import {FriendlyGameSchema} from "../../model/GameSchema.ts";
-import type {FriendlyGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { FriendlyGame } from "../../model/GameSchema.ts";
+import { FriendlyGameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_12_15_alcobendas: FriendlyGame = FriendlyGameSchema.parse({
   id: "S45-amistoso-fbm-alcobendas",
@@ -25,7 +25,7 @@ export const game_2024_12_15_alcobendas: FriendlyGame = FriendlyGameSchema.parse
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     opponent: true,
     scores: [15, 12, 10, 30],
@@ -50,10 +50,10 @@ export const game_2024_12_15_alcobendas: FriendlyGame = FriendlyGameSchema.parse
   },
 
   recap: {
-    title: "Amistoso contra unos cadetes de 2009 y 2010 para probar qué tal funciona el equipo de la selección",
+    title:
+      "Amistoso contra unos cadetes de 2009 y 2010 para probar qué tal funciona el equipo de la selección",
     lines: [],
   },
 
   references: [],
 });
-

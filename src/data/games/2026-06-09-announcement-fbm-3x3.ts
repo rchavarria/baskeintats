@@ -1,6 +1,6 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2026_06_09_fbm_3x3: Announcement = AnnouncementSchema.parse({
   id: "S56-fbm-3x3-j3",
@@ -63,5 +63,4 @@ export const announcement_2026_06_09_fbm_3x3: Announcement = AnnouncementSchema.
       url: "https://www.fbm.es/noticia-88-13391/torneo-de-selecciones-3x3-en-la-caja-m%C3%A1gica",
     },
   ],
-
 });

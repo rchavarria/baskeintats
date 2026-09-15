@@ -1,6 +1,6 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2025_12_26_torneo_cyl: Announcement = AnnouncementSchema.parse({
   id: "S56-torneo-cyl",
@@ -13,7 +13,7 @@ export const announcement_2025_12_26_torneo_cyl: Announcement = AnnouncementSche
 
   category: "U16M",
 
-  venue: venues["wurzburg"],
+  venue: venues.wurzburg,
 
   description: [
     "Torneo cadete de segundo año, con las selecciones cadete de Castilla y León y Canarias para su preparación para el CESA 2026",
@@ -62,14 +62,8 @@ export const announcement_2025_12_26_torneo_cyl: Announcement = AnnouncementSche
     },
     {
       type: "document",
-      label: "Roster de la selección de Castilla y León",
-      url: "https://www.instagram.com/p/DS5rKeNiL6e/",
-    },
-    {
-      type: "document",
       label: "Artículo con la convocatoria madrileña",
       url: "https://www.fbm.es/noticia-87-12994/concentraciones-cadete-e-infantil-de-primer-a%C3%B1o#CM",
     },
   ],
 });
-

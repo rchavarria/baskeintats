@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_05_10_torrelodones: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f3-j1",
@@ -16,19 +16,19 @@ export const game_2026_05_10_torrelodones: AdvancedGame = AdvancedGameSchema.par
     round: "J1",
   },
 
-  venue: venues["torrelodones"],
+  venue: venues.torrelodones,
 
   home: {
-    club: teams["torrelodones"],
+    club: teams.torrelodones,
     category: "U16M",
     opponent: true,
-    scores: [ 17, 23, 26, 11 ],
+    scores: [17, 23, 26, 11],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
-    scores: [ 17, 7, 18, 15 ],
+    scores: [17, 7, 18, 15],
   },
 
   playerStats: {
@@ -107,6 +107,4 @@ export const game_2026_05_10_torrelodones: AdvancedGame = AdvancedGameSchema.par
       url: "https://www.fbm.es/noticia-104-13278/liga-ahorramas-volando-hacia-las-fases-finales",
     },
   ],
-
 });
-

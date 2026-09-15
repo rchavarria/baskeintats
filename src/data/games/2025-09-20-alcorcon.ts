@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_09_20_alcorcon: Game = GameSchema.parse({
   id: "S56-liga-plata-f1-g4-j1",
@@ -16,16 +16,16 @@ export const game_2025_09_20_alcorcon: Game = GameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [9, 19, 28, 15],
   },
 
   away: {
-    club: teams["alcorcon"],
+    club: teams.alcorcon,
     category: "U16M",
     opponent: true,
     scores: [30, 25, 12, 18],
@@ -82,4 +82,3 @@ export const game_2025_09_20_alcorcon: Game = GameSchema.parse({
     },
   ],
 });
-

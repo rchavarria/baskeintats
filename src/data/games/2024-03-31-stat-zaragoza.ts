@@ -1,10 +1,10 @@
-import type {Stats} from "../../model/StatsSchema.ts";
-import {StatsSchema} from "../../model/StatsSchema.ts";
-import {game_2024_03_31_fuenlabrada} from "./2024-03-31-fuenlabrada.ts";
-import {game_2024_03_30_sp_burgos} from "./2024-03-30-sp-burgos.ts";
-import {game_2024_03_30_zaragoza} from "./2024-03-30-zaragoza.ts";
-import {game_2024_03_29_sp_burgos} from "./2024-03-29-sp-burgos.ts";
-import {game_2024_03_28_moncayo} from "./2024-03-28-moncayo.ts";
+import type { Stats } from "../../model/StatsSchema.ts";
+import { StatsSchema } from "../../model/StatsSchema.ts";
+import { game_2024_03_28_moncayo } from "./2024-03-28-moncayo.ts";
+import { game_2024_03_29_sp_burgos } from "./2024-03-29-sp-burgos.ts";
+import { game_2024_03_30_sp_burgos } from "./2024-03-30-sp-burgos.ts";
+import { game_2024_03_30_zaragoza } from "./2024-03-30-zaragoza.ts";
+import { game_2024_03_31_fuenlabrada } from "./2024-03-31-fuenlabrada.ts";
 
 export const stat_2024_03_31_zaragoza: Stats = StatsSchema.parse({
   id: "S34-stat-zaragoza",
@@ -30,4 +30,3 @@ export const stat_2024_03_31_zaragoza: Stats = StatsSchema.parse({
 
   references: [],
 });
-

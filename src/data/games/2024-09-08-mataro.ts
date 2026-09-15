@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_09_08_mataro: Game = GameSchema.parse({
   id: "S45-torneig-nord-j4",
@@ -19,13 +19,13 @@ export const game_2024_09_08_mataro: Game = GameSchema.parse({
   venue: venues["roser-llop"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [26, 23, 19, 15],
   },
 
   away: {
-    club: teams["mataro"],
+    club: teams.mataro,
     category: "U14M",
     opponent: true,
     scores: [17, 21, 5, 23],
@@ -74,4 +74,3 @@ export const game_2024_09_08_mataro: Game = GameSchema.parse({
     },
   ],
 });
-

@@ -1,6 +1,6 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2025_07_23_dme_team_camp: Announcement = AnnouncementSchema.parse({
   id: "S45-dme-team-camp",
@@ -12,7 +12,7 @@ export const announcement_2025_07_23_dme_team_camp: Announcement = AnnouncementS
   announcementType: "camp",
   category: "U14M",
 
-  venue: venues["dme"],
+  venue: venues.dme,
 
   description: [
     "Comienza el campamento en EEUU en la academia DME",

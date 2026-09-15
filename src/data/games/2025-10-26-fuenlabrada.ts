@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_10_26_fuenlabrada: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f1-g1-j5",
@@ -16,17 +16,17 @@ export const game_2025_10_26_fuenlabrada: AdvancedGame = AdvancedGameSchema.pars
     round: "J5",
   },
 
-  venue: venues["arroyo"],
+  venue: venues.arroyo,
 
   home: {
-    club: teams["fuenlabrada"],
+    club: teams.fuenlabrada,
     category: "U16M",
     opponent: true,
     scores: [25, 27, 17, 17],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [22, 11, 12, 21],
   },
@@ -100,6 +100,4 @@ export const game_2025_10_26_fuenlabrada: AdvancedGame = AdvancedGameSchema.pars
       url: "https://www.fbm.es/noticia-104-12902/finaliz%C3%B3-la-primera-vuelta-de-la-liga-ahorramas",
     },
   ],
-
 });
-

@@ -1,7 +1,7 @@
-import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import type { AdvancedGame } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_12_21_elche: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-torneo-teruel-j5",
@@ -17,16 +17,16 @@ export const game_2025_12_21_elche: AdvancedGame = AdvancedGameSchema.parse({
     round: "5º",
   },
 
-  venue: venues["manzanera"],
+  venue: venues.manzanera,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [17, 18, 20, 24],
   },
 
   away: {
-    club: teams["elche"],
+    club: teams.elche,
     category: "U15M",
     opponent: true,
     scores: [32, 13, 15, 13],
@@ -96,4 +96,3 @@ export const game_2025_12_21_elche: AdvancedGame = AdvancedGameSchema.parse({
     },
   ],
 });
-

@@ -1,7 +1,7 @@
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_05_27_distrito: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f3-j6",
@@ -16,19 +16,19 @@ export const game_2026_05_27_distrito: AdvancedGame = AdvancedGameSchema.parse({
     round: "J6",
   },
 
-  venue: venues["circular"],
+  venue: venues.circular,
 
   home: {
-    club: teams["distrito"],
+    club: teams.distrito,
     category: "U16M",
     opponent: true,
-    scores: [ 21, 34, 18, 19, 4 ],
+    scores: [21, 34, 18, 19, 4],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
-    scores: [ 29, 22, 25, 16, 9 ],
+    scores: [29, 22, 25, 16, 9],
   },
 
   playerStats: {
@@ -93,5 +93,4 @@ export const game_2026_05_27_distrito: AdvancedGame = AdvancedGameSchema.parse({
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=16719&informe=resultados-clasificacion-proxima&ultima_jornada=108378&proxima_jornada=108379",
     },
   ],
-
 });

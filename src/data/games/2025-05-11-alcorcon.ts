@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_05_11_alcorcon: Game = GameSchema.parse({
   id: "S45-liga-ahorramas-playoffs-j3",
@@ -16,16 +16,16 @@ export const game_2025_05_11_alcorcon: Game = GameSchema.parse({
     round: "J3",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [20, 15, 19, 20],
   },
 
   away: {
-    club: teams["alcorcon"],
+    club: teams.alcorcon,
     category: "U14M",
     opponent: true,
     scores: [28, 17, 14, 12],
@@ -88,4 +88,3 @@ export const game_2025_05_11_alcorcon: Game = GameSchema.parse({
     },
   ],
 });
-

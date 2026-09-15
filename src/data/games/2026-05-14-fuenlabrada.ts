@@ -1,7 +1,7 @@
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_05_14_fuenlabrada: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f3-j5",
@@ -16,19 +16,19 @@ export const game_2026_05_14_fuenlabrada: AdvancedGame = AdvancedGameSchema.pars
     round: "J5",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
-    scores: [ 14, 23, 24, 18 ],
+    scores: [14, 23, 24, 18],
   },
 
   away: {
-    club: teams["fuenlabrada"],
+    club: teams.fuenlabrada,
     category: "U16M",
     opponent: true,
-    scores: [ 27, 21, 34, 35 ],
+    scores: [27, 21, 34, 35],
   },
 
   playerStats: {
@@ -94,5 +94,4 @@ export const game_2026_05_14_fuenlabrada: AdvancedGame = AdvancedGameSchema.pars
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=16719&informe=resultados-clasificacion-proxima&ultima_jornada=108377&proxima_jornada=108378",
     },
   ],
-
 });

@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_03_22_getafe: Game = GameSchema.parse({
   id: "S56-liga-plata-f2-gd-j10",
@@ -19,14 +19,14 @@ export const game_2026_03_22_getafe: Game = GameSchema.parse({
   venue: venues["felipe-reyes"],
 
   home: {
-    club: teams["getafe"],
+    club: teams.getafe,
     category: "U16M",
     opponent: true,
     scores: [11, 13, 16, 10],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [9, 21, 20, 17],
   },
@@ -85,5 +85,4 @@ export const game_2026_03_22_getafe: Game = GameSchema.parse({
       url: "https://www.fbm.es/noticia-104-13169/liga-ahorramas-un-espectacular-fin-de-semana-dicta-sentencia",
     },
   ],
-
 });

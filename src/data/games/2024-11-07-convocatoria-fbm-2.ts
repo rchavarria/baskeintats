@@ -1,6 +1,6 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2024_11_07_convocatoria_fbm_2: Announcement = AnnouncementSchema.parse({
   id: "S45-convocatoria-fbm-2",
@@ -52,4 +52,3 @@ export const announcement_2024_11_07_convocatoria_fbm_2: Announcement = Announce
     },
   ],
 });
-

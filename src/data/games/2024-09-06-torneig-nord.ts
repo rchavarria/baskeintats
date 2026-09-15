@@ -1,7 +1,7 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {teams} from "../teams.ts";
-import {venues} from "../venues.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2024_09_06_torneig_nord: Announcement = AnnouncementSchema.parse({
   id: "S45-torneig-nord",
@@ -25,12 +25,12 @@ export const announcement_2024_09_06_torneig_nord: Announcement = AnnouncementSc
     {
       label: "Grupos - J1",
       date: "2024-09-06T09:45:00Z",
-      opponent: teams["sabadell"].name,
+      opponent: teams.sabadell.name,
     },
     {
       label: "Grupos - J2",
       date: "2024-09-07T09:45:00Z",
-      opponent: teams["joventut"].name,
+      opponent: teams.joventut.name,
     },
     {
       label: "Semis",
@@ -55,4 +55,3 @@ export const announcement_2024_09_06_torneig_nord: Announcement = AnnouncementSc
     },
   ],
 });
-

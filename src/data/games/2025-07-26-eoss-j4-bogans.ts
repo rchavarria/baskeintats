@@ -1,8 +1,8 @@
-import type {Game} from "../../model/GameSchema.ts";
-import {GameSchema} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
-import {EmptyPlayerStats} from "../../model/PlayerSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { EmptyPlayerStats } from "../../model/PlayerSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_07_26_eoss_bogans: Game = GameSchema.parse({
   id: "S45-eoss-j4",
@@ -17,19 +17,19 @@ export const game_2025_07_26_eoss_bogans: Game = GameSchema.parse({
     round: "Semis",
   },
 
-  venue: venues["orange"],
+  venue: venues.orange,
 
   home: {
     club: teams["dme-spain"],
     category: "U14M",
-    scores: [ 61 ],
+    scores: [61],
   },
 
   away: {
     club: teams["usa-bogans"],
     category: "U14M",
     opponent: true,
-    scores: [ 58 ],
+    scores: [58],
   },
 
   playerStats: EmptyPlayerStats,
@@ -48,5 +48,4 @@ export const game_2025_07_26_eoss_bogans: Game = GameSchema.parse({
   },
 
   references: [],
-
 });

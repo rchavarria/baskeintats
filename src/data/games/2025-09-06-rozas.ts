@@ -1,7 +1,7 @@
-import {FriendlyGameSchema} from "../../model/GameSchema.ts";
-import type {FriendlyGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { FriendlyGame } from "../../model/GameSchema.ts";
+import { FriendlyGameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_09_06_rozas: FriendlyGame = FriendlyGameSchema.parse({
   id: "S56-amistoso-rozas",
@@ -16,17 +16,17 @@ export const game_2025_09_06_rozas: FriendlyGame = FriendlyGameSchema.parse({
     round: "",
   },
 
-  venue: venues["espiniella"],
+  venue: venues.espiniella,
 
   home: {
-    club: teams["rozas"],
+    club: teams.rozas,
     category: "U15M",
     opponent: true,
     scores: [13, 15, 10, 12],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [14, 30, 6, 16],
   },
@@ -59,6 +59,4 @@ export const game_2025_09_06_rozas: FriendlyGame = FriendlyGameSchema.parse({
   },
 
   references: [],
-
 });
-

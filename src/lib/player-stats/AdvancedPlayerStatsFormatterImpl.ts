@@ -1,5 +1,5 @@
-import type { AdvancedPlayerStats } from '../../model/PlayerSchema';
-import type { AdvancedStatsFormatter } from './AdvancedStatsFormatter';
+import type { AdvancedPlayerStats } from "../../model/PlayerSchema";
+import type { AdvancedStatsFormatter } from "./AdvancedStatsFormatter";
 
 /**
  * AdvancedPlayerStatsFormatterImpl
@@ -20,15 +20,15 @@ export class AdvancedPlayerStatsFormatterImpl implements AdvancedStatsFormatter 
     return !(this.stats.time === 0 && this.getTotalPoints() === 0);
   }
 
-  kind(): 'none' | 'basic' | 'advanced' {
-    return 'advanced';
+  kind(): "none" | "basic" | "advanced" {
+    return "advanced";
   }
 
   formatPlayedTime(): string {
     const minutes = Math.floor(this.stats.time / 60)
       .toString()
-      .padStart(2, '0');
-    const seconds = (this.stats.time % 60).toString().padStart(2, '0');
+      .padStart(2, "0");
+    const seconds = (this.stats.time % 60).toString().padStart(2, "0");
     return `${minutes}:${seconds}`;
   }
 
@@ -64,7 +64,7 @@ export class AdvancedPlayerStatsFormatterImpl implements AdvancedStatsFormatter 
     const pm = this.stats.plusMinus;
     if (pm > 0) return `+${pm}`;
     if (pm < 0) return `${pm}`;
-    return '0';
+    return "0";
   }
 
   formatEfficiency(): string {
@@ -123,4 +123,3 @@ export class AdvancedPlayerStatsFormatterImpl implements AdvancedStatsFormatter 
     );
   }
 }
-

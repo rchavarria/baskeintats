@@ -1,8 +1,8 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
-import {EmptyPlayerStats} from "../../model/PlayerSchema.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { EmptyPlayerStats } from "../../model/PlayerSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_05_19_guyane: Game = GameSchema.parse({
   id: "S34-torneo-ardres-j4",
@@ -17,7 +17,7 @@ export const game_2024_05_19_guyane: Game = GameSchema.parse({
     round: "J4",
   },
 
-  venue: venues["ardres"],
+  venue: venues.ardres,
 
   home: {
     club: teams["seleccion-madrid"],
@@ -26,7 +26,7 @@ export const game_2024_05_19_guyane: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["guyane"],
+    club: teams.guyane,
     category: "U13M",
     opponent: true,
     scores: [14],
@@ -45,5 +45,4 @@ export const game_2024_05_19_guyane: Game = GameSchema.parse({
   },
 
   references: [],
-
 });

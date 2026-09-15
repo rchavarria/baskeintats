@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2023_10_08_torrelodones: Game = GameSchema.parse({
   id: "S34-liga-bronce-f1-j3",
@@ -17,17 +17,17 @@ export const game_2023_10_08_torrelodones: Game = GameSchema.parse({
     round: "J3",
   },
 
-  venue: venues["torrelodones"],
+  venue: venues.torrelodones,
 
   home: {
-    club: teams["torrelodones"],
+    club: teams.torrelodones,
     category: "U13M",
     opponent: true,
     scores: [6, 11, 11, 8],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [24, 24, 18, 20],
   },
@@ -54,4 +54,3 @@ export const game_2023_10_08_torrelodones: Game = GameSchema.parse({
 
   references: [],
 });
-

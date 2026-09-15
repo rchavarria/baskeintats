@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2023_12_17_fuenlabrada: Game = GameSchema.parse({
   id: "S34-liga-oro-f1-j10",
@@ -16,16 +16,16 @@ export const game_2023_12_17_fuenlabrada: Game = GameSchema.parse({
     round: "J10",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [23, 27, 15, 14, 12],
   },
 
   away: {
-    club: teams["fuenlabrada"],
+    club: teams.fuenlabrada,
     category: "U14M",
     opponent: true,
     scores: [16, 22, 30, 11, 19],
@@ -56,4 +56,3 @@ export const game_2023_12_17_fuenlabrada: Game = GameSchema.parse({
 
   references: [],
 });
-

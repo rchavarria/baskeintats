@@ -1,5 +1,5 @@
-import type {AdvancedGame, Game} from "../../model/GameSchema.ts";
-import {hasAdvancedPlayerStats} from "../../lib/hasAdvancedPlayerStats.ts";
+import { hasAdvancedPlayerStats } from "../../lib/hasAdvancedPlayerStats.ts";
+import type { AdvancedGame, Game } from "../../model/GameSchema.ts";
 
 interface TwoPointersTotalProps {
   hasAdvanced: boolean;
@@ -22,7 +22,11 @@ function AdvancedTwoPointersTotal({ games }: { games: (Game | AdvancedGame)[] })
     return s;
   }, 0);
 
-  return <>{totalMade}/{totalAttempted}</>;
+  return (
+    <>
+      {totalMade}/{totalAttempted}
+    </>
+  );
 }
 
 export function TwoPointersTotal({ hasAdvanced, games }: TwoPointersTotalProps) {

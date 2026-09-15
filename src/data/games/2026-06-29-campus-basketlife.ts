@@ -1,6 +1,6 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2026_06_29_basketlife_camp: Announcement = AnnouncementSchema.parse({
   id: "S56-basketlife-camp",
@@ -12,7 +12,7 @@ export const announcement_2026_06_29_basketlife_camp: Announcement = Announcemen
   announcementType: "camp",
   category: "U15M",
 
-  venue: venues["ontinyent"],
+  venue: venues.ontinyent,
 
   description: [
     "Campus Basket Life, en Ontinyent",

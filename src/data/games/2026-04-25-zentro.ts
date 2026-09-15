@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_04_25_zentro: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-playoffs-j2",
@@ -16,19 +16,19 @@ export const game_2026_04_25_zentro: AdvancedGame = AdvancedGameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
-    scores: [ 15, 11, 21, 21 ],
+    scores: [15, 11, 21, 21],
   },
 
   away: {
-    club: teams["zentro"],
+    club: teams.zentro,
     category: "U16M",
     opponent: true,
-    scores: [ 26, 31, 18, 30 ],
+    scores: [26, 31, 18, 30],
   },
 
   playerStats: {
@@ -110,6 +110,4 @@ export const game_2026_04_25_zentro: AdvancedGame = AdvancedGameSchema.parse({
       url: "https://www.fbm.es/noticia-104-13239/liga-ahorramas-los-favoritos-no-fallan-y-se-citan-en-la-f4",
     },
   ],
-
 });
-

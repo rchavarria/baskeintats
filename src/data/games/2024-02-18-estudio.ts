@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_02_18_estudio: Game = GameSchema.parse({
   id: "S34-liga-oro-f2-j6",
@@ -19,14 +19,14 @@ export const game_2024_02_18_estudio: Game = GameSchema.parse({
   venue: venues["paco-hernandez"],
 
   home: {
-    club: teams["estudio"],
+    club: teams.estudio,
     category: "U14M",
     opponent: true,
     scores: [25, 10, 18, 19],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [9, 16, 17, 14],
   },
@@ -58,4 +58,3 @@ export const game_2024_02_18_estudio: Game = GameSchema.parse({
 
   references: [],
 });
-

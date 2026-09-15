@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_12_01_canoe: Game = GameSchema.parse({
   id: "S45-liga-oro-f1-j9",
@@ -19,14 +19,14 @@ export const game_2024_12_01_canoe: Game = GameSchema.parse({
   venue: venues["pez-volador"],
 
   home: {
-    club: teams["canoe"],
+    club: teams.canoe,
     category: "U14M",
     opponent: true,
     scores: [21, 13, 17, 21],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [17, 16, 15, 20],
   },
@@ -81,4 +81,3 @@ export const game_2024_12_01_canoe: Game = GameSchema.parse({
     },
   ],
 });
-

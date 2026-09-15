@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2023_12_03_san_agustin: Game = GameSchema.parse({
   id: "S34-liga-bronce-f1-j9",
@@ -17,17 +17,17 @@ export const game_2023_12_03_san_agustin: Game = GameSchema.parse({
     round: "J9",
   },
 
-  venue: venues["agustin"],
+  venue: venues.agustin,
 
   home: {
-    club: teams["agustin"],
+    club: teams.agustin,
     category: "U14M",
     opponent: true,
     scores: [20, 20, 16, 16],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [31, 19, 19, 24],
   },
@@ -48,10 +48,10 @@ export const game_2023_12_03_san_agustin: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "Victoria mucho más comoda que el partido de ida con ellos, se nota que el equipo va madurando y aprendiendo",
+    title:
+      "Victoria mucho más comoda que el partido de ida con ellos, se nota que el equipo va madurando y aprendiendo",
     lines: [],
   },
 
   references: [],
 });
-

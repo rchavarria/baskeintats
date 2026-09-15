@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_04_20_laso: Game = GameSchema.parse({
   id: "S45-mhl-zaragoza-final-consolacion",
@@ -19,13 +19,13 @@ export const game_2025_04_20_laso: Game = GameSchema.parse({
   venue: venues["alberto-maestro"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [16, 19, 14, 13],
   },
 
   away: {
-    club: teams["laso"],
+    club: teams.laso,
     category: "U14M",
     opponent: true,
     scores: [14, 9, 18, 10],
@@ -52,7 +52,7 @@ export const game_2025_04_20_laso: Game = GameSchema.parse({
   recap: {
     title: "¡Partido raro, raro!",
     lines: [
-      "Raro porque podría haber sido uno de los partidos del torneo, pero Laso no quiso jugar con \"los becados\", a nosotros nos faltaron varios jugadores porque no se encontraban bien...",
+      'Raro porque podría haber sido uno de los partidos del torneo, pero Laso no quiso jugar con "los becados", a nosotros nos faltaron varios jugadores porque no se encontraban bien...',
       "En resumen, no se puede sacar ninguna conclusión",
       "Todo el partido a medio gas, sin intensidad...",
       "También es verdad que es el último día, y los chicos deberían de estar reventados",
@@ -61,4 +61,3 @@ export const game_2025_04_20_laso: Game = GameSchema.parse({
 
   references: [],
 });
-

@@ -1,7 +1,7 @@
-import type {Game} from "../../model/GameSchema.ts";
-import {GameSchema} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_04_26_real_madrid: Game = GameSchema.parse({
   id: "S56-liga-plata-f3-j1",
@@ -16,19 +16,19 @@ export const game_2026_04_26_real_madrid: Game = GameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
-    scores: [ 13, 17, 18, 13 ],
+    scores: [13, 17, 18, 13],
   },
 
   away: {
     club: teams["real-madrid"],
     category: "U16M",
     opponent: true,
-    scores: [ 36, 32, 17, 20 ],
+    scores: [36, 32, 17, 20],
   },
 
   playerStats: {
@@ -86,5 +86,4 @@ export const game_2026_04_26_real_madrid: Game = GameSchema.parse({
       url: "https://www.fbm.es/noticia-104-13239/liga-ahorramas-los-favoritos-no-fallan-y-se-citan-en-la-f4",
     },
   ],
-
 });

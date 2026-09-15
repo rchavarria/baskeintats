@@ -1,7 +1,7 @@
-import {render, screen} from "@testing-library/react";
-import {describe, expect, it} from "vitest";
-import {GameResultEmoji} from "./GameResultEmoji";
-import type {Game} from "../../model/GameSchema";
+import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
+import type { Game } from "../../model/GameSchema";
+import { GameResultEmoji } from "./GameResultEmoji";
 
 function makeGame(overrides: {
   homeOpponent?: boolean;
@@ -11,13 +11,13 @@ function makeGame(overrides: {
 }): Game {
   return {
     home: {
-      club: {name: "H", logo: ""} as never,
+      club: { name: "H", logo: "" } as never,
       category: "U15M",
       opponent: overrides.homeOpponent ?? false,
       scores: overrides.homeScores,
     },
     away: {
-      club: {name: "A", logo: ""} as never,
+      club: { name: "A", logo: "" } as never,
       category: "U15M",
       opponent: overrides.awayOpponent ?? false,
       scores: overrides.awayScores,
@@ -98,4 +98,3 @@ describe("GameResultEmoji", () => {
     expect(screen.getByLabelText("Resultado desconocido")).toHaveTextContent("🤷");
   });
 });
-

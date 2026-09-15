@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_03_17_distrito: Game = GameSchema.parse({
   id: "S56-liga-plata-f2-gd-j9",
@@ -16,16 +16,16 @@ export const game_2026_03_17_distrito: Game = GameSchema.parse({
     round: "J9",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [25, 26, 35, 20],
   },
 
   away: {
-    club: teams["distrito"],
+    club: teams.distrito,
     category: "U16M",
     opponent: true,
     scores: [30, 25, 21, 18],
@@ -89,4 +89,3 @@ export const game_2026_03_17_distrito: Game = GameSchema.parse({
     },
   ],
 });
-

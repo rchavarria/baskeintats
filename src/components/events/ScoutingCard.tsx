@@ -1,13 +1,13 @@
-import {Link} from "react-router-dom";
-import type {Scouting} from "../../model/ScoutingSchema.ts";
-import {DateDisplay} from "../ui/DateDisplay.tsx";
-import {CategoryBadge} from "../ui/CategoryBadge.tsx";
+import { Link } from "react-router-dom";
+import type { Scouting } from "../../model/ScoutingSchema.ts";
+import { CategoryBadge } from "../ui/CategoryBadge.tsx";
+import { DateDisplay } from "../ui/DateDisplay.tsx";
 
 interface ScoutingCardProps {
   scouting: Scouting;
 }
 
-export function ScoutingCard({scouting}: ScoutingCardProps) {
+export function ScoutingCard({ scouting }: ScoutingCardProps) {
   return (
     <Link
       to={`/scouting/${scouting.id}`}
@@ -27,14 +27,13 @@ export function ScoutingCard({scouting}: ScoutingCardProps) {
         <p className="font-semibold text-gray-800">{scouting.title}</p>
       </div>
       <div className="text-xs text-gray-400">
-        {scouting.description.slice(0, 2).map((line, i) => (
-          <p key={i} className="line-clamp-2">{line}</p>
+        {scouting.description.slice(0, 2).map((line) => (
+          <p key={line} className="line-clamp-2">
+            {line}
+          </p>
         ))}
-        {scouting.description.length > 2 && (
-          <p className="text-gray-400 text-xs">· · ·</p>
-        )}
+        {scouting.description.length > 2 && <p className="text-gray-400 text-xs">· · ·</p>}
       </div>
     </Link>
   );
 }
-

@@ -1,19 +1,19 @@
-import {Link, useParams} from "react-router-dom";
-import {useEvents} from "../hooks/useEvents.ts";
-import {EmptyState} from "../components/ui/EmptyState";
-import {DateTimeDisplay} from "../components/ui/DateTimeDisplay.tsx";
-import {TimeDisplay} from "../components/ui/TimeDisplay.tsx";
-import {AnnouncementTypeEmoji} from "../components/events/AnnouncementEmojis.tsx";
-import {ReferenceList} from "../components/events/ReferenceList.tsx";
-import {DateDisplay} from "../components/ui/DateDisplay.tsx";
-import {CategoryBadge} from "../components/ui/CategoryBadge.tsx";
+import { Link, useParams } from "react-router-dom";
+import { AnnouncementTypeEmoji } from "../components/events/AnnouncementEmojis.tsx";
+import { ReferenceList } from "../components/events/ReferenceList.tsx";
+import { CategoryBadge } from "../components/ui/CategoryBadge.tsx";
+import { DateDisplay } from "../components/ui/DateDisplay.tsx";
+import { DateTimeDisplay } from "../components/ui/DateTimeDisplay.tsx";
+import { EmptyState } from "../components/ui/EmptyState";
+import { TimeDisplay } from "../components/ui/TimeDisplay.tsx";
+import { getEvents } from "../data/events.ts";
 
 export function AnnouncementDetailPage() {
   const { announcementId } = useParams<{ announcementId: string }>();
-  const events = useEvents();
+  const events = getEvents();
 
-  const announcement = events.find(e => e.id === announcementId);
-  if (!announcement || announcement.type !== "announcement") {
+  const announcement = events.find((e) => e.id === announcementId);
+  if (announcement?.type !== "announcement") {
     return <EmptyState message="Anuncio no encontrado" />;
   }
 
@@ -36,7 +36,7 @@ export function AnnouncementDetailPage() {
         </div>
 
         <div className="text-xs text-gray-400 text-center">
-          <DateTimeDisplay isoDate={announcement.date}/>
+          <DateTimeDisplay isoDate={announcement.date} />
           {announcement.venue && <> · {announcement.venue.name}</>}
         </div>
       </div>
@@ -44,8 +44,10 @@ export function AnnouncementDetailPage() {
       {/* Description */}
       <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
         <h2 className="font-semibold text-gray-700 mb-3">📝 Descripción</h2>
-        {announcement.description.map((line, i) => (
-          <p key={i} className="text-gray-600 leading-relaxed mb-2">{line}</p>
+        {announcement.description.map((line) => (
+          <p key={line} className="text-gray-600 leading-relaxed mb-2">
+            {line}
+          </p>
         ))}
       </div>
 
@@ -54,16 +56,21 @@ export function AnnouncementDetailPage() {
         <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
           <h2 className="font-semibold text-gray-700 mb-3">📆 Calendario</h2>
           <div className="space-y-3 flex flex-col items-center">
-            {announcement.schedule.map((entry, i) => (
-              <div key={i} className="flex flex-col gap-1 min-w-[40%] border border-gray-200 rounded-lg p-3">
+            {announcement.schedule.map((entry) => (
+              <div
+                key={`${entry.date}-${entry.label ?? ""}-${entry.opponent ?? ""}`}
+                className="flex flex-col gap-1 min-w-[40%] border border-gray-200 rounded-lg p-3"
+              >
                 {entry.label && (
-                  <span className="text-base font-semibold text-gray-800 text-center">{entry.label}</span>
+                  <span className="text-base font-semibold text-gray-800 text-center">
+                    {entry.label}
+                  </span>
                 )}
                 <span className="text-sm text-gray-600">
-                  <DateDisplay isoDate={entry.date}/>
+                  <DateDisplay isoDate={entry.date} />
                 </span>
                 <span className="text-sm text-gray-500">
-                  <TimeDisplay isoDate={entry.date}/>
+                  <TimeDisplay isoDate={entry.date} />
                 </span>
                 {entry.opponent && (
                   <span className="text-sm text-gray-500">🆚 {entry.opponent}</span>

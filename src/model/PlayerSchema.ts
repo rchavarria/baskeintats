@@ -1,4 +1,4 @@
-import {z} from "zod";
+import { z } from "zod";
 
 /**
  * All player stats set to 0, no stats were recorded for the game
@@ -101,4 +101,3 @@ export const AdvancedPlayerStatsSchema = z.object({
 });
 
 export type AdvancedPlayerStats = z.infer<typeof AdvancedPlayerStatsSchema>;
-

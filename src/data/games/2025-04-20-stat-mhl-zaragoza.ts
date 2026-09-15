@@ -1,11 +1,11 @@
-import type {Stats} from "../../model/StatsSchema.ts";
-import {StatsSchema} from "../../model/StatsSchema.ts";
-import {game_2025_04_17_torrelodones} from "./2025-04-17-torrelodones.ts";
-import {game_2025_04_18_alicante} from "./2025-04-18-alicante.ts";
-import {game_2025_04_18_tarragona} from "./2025-04-18-tarragona.ts";
-import {game_2025_04_19_lleida} from "./2025-04-19-lleida.ts";
-import {game_2025_04_19_rozas} from "./2025-04-19-rozas.ts";
-import {game_2025_04_20_laso} from "./2025-04-20-laso.ts";
+import type { Stats } from "../../model/StatsSchema.ts";
+import { StatsSchema } from "../../model/StatsSchema.ts";
+import { game_2025_04_17_torrelodones } from "./2025-04-17-torrelodones.ts";
+import { game_2025_04_18_alicante } from "./2025-04-18-alicante.ts";
+import { game_2025_04_18_tarragona } from "./2025-04-18-tarragona.ts";
+import { game_2025_04_19_lleida } from "./2025-04-19-lleida.ts";
+import { game_2025_04_19_rozas } from "./2025-04-19-rozas.ts";
+import { game_2025_04_20_laso } from "./2025-04-20-laso.ts";
 
 export const stat_2025_04_20_mhl_zaragoza: Stats = StatsSchema.parse({
   id: "S45-stat-mhl-zaragoza",
@@ -25,9 +25,7 @@ export const stat_2025_04_20_mhl_zaragoza: Stats = StatsSchema.parse({
     game_2025_04_20_laso,
   ],
 
-  description: [
-    "Estadísticas de los partidos del torneo",
-  ],
+  description: ["Estadísticas de los partidos del torneo"],
 
   references: [
     {

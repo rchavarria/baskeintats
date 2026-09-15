@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import { describe, it, expect } from "vitest";
-import { ScoutingCard } from "./ScoutingCard";
-import type { Scouting } from "../../model/ScoutingSchema";
+import { describe, expect, it } from "vitest";
 import { scouting_2026_07_16_example } from "../../data/games/2026-07-16-scouting-example.ts";
+import type { Scouting } from "../../model/ScoutingSchema";
+import { ScoutingCard } from "./ScoutingCard";
 
 const fakeScouting: Scouting = {
   id: "scouting-fake-001",
@@ -13,10 +13,7 @@ const fakeScouting: Scouting = {
   favourite: false,
   category: "U16M",
   title: "Análisis de bloqueos directos",
-  description: [
-    "Primera línea de descripción.",
-    "Segunda línea de descripción.",
-  ],
+  description: ["Primera línea de descripción.", "Segunda línea de descripción."],
   video: "https://www.youtube.com/watch?v=example",
   clips: [
     { start: "1:23", description: "Buen bloqueo directo.", type: "good-play" },
@@ -30,7 +27,6 @@ function renderWithRouter(ui: React.ReactElement) {
 }
 
 describe("ScoutingCard", () => {
-
   it("renders the title", () => {
     renderWithRouter(<ScoutingCard scouting={fakeScouting} />);
     expect(screen.getByText("Análisis de bloqueos directos")).toBeInTheDocument();
@@ -68,11 +64,7 @@ describe("ScoutingCard", () => {
   it("shows ellipsis when description has more than 2 lines", () => {
     const longDesc: Scouting = {
       ...fakeScouting,
-      description: [
-        "Primera línea.",
-        "Segunda línea.",
-        "Tercera línea oculta.",
-      ],
+      description: ["Primera línea.", "Segunda línea.", "Tercera línea oculta."],
     };
     renderWithRouter(<ScoutingCard scouting={longDesc} />);
 
@@ -99,13 +91,10 @@ describe("ScoutingCard", () => {
     expect(screen.getByText("🔍")).toBeInTheDocument();
   });
 
-  it.each([
-    scouting_2026_07_16_example,
-  ])("renders real example data without errors", (scouting) => {
+  it.each([scouting_2026_07_16_example])("renders real example data without errors", (scouting) => {
     renderWithRouter(<ScoutingCard scouting={scouting} />);
 
     expect(screen.getByText(scouting.title)).toBeInTheDocument();
     expect(screen.getByText(scouting.category)).toBeInTheDocument();
   });
 });
-

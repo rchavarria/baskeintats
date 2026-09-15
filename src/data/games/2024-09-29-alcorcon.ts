@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_09_29_alcorcon: Game = GameSchema.parse({
   id: "S45-liga-oro-f1-j2",
@@ -16,16 +16,16 @@ export const game_2024_09_29_alcorcon: Game = GameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [9, 19, 18, 21],
   },
 
   away: {
-    club: teams["alcorcon"],
+    club: teams.alcorcon,
     category: "U14M",
     opponent: true,
     scores: [8, 8, 17, 17],
@@ -86,4 +86,3 @@ export const game_2024_09_29_alcorcon: Game = GameSchema.parse({
     },
   ],
 });
-

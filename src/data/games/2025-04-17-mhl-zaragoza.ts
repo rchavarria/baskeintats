@@ -1,7 +1,7 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2025_04_17_mhl_zaragoza: Announcement = AnnouncementSchema.parse({
   id: "S45-mhl-zaragoza",
@@ -25,17 +25,17 @@ export const announcement_2025_04_17_mhl_zaragoza: Announcement = AnnouncementSc
     {
       label: "Grupos - J1",
       date: "2025-04-17T15:45:00Z",
-      opponent: teams["torrelodones"].name,
+      opponent: teams.torrelodones.name,
     },
     {
       label: "Grupos - J2",
       date: "2025-04-18T10:45:00Z",
-      opponent: teams["alicante"].name,
+      opponent: teams.alicante.name,
     },
     {
       label: "Grupos - J3",
       date: "2025-04-18T17:00:00Z",
-      opponent: teams["tarragona"].name,
+      opponent: teams.tarragona.name,
     },
     {
       label: "Cuartos",
@@ -69,4 +69,3 @@ export const announcement_2025_04_17_mhl_zaragoza: Announcement = AnnouncementSc
     },
   ],
 });
-

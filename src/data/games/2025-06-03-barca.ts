@@ -1,7 +1,7 @@
-import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import type { AdvancedGame } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_06_03_barca: AdvancedGame = AdvancedGameSchema.parse({
   id: "S45-cec-grupos-j3",
@@ -19,13 +19,13 @@ export const game_2025_06_03_barca: AdvancedGame = AdvancedGameSchema.parse({
   venue: venues["gil-hernandez"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [21, 12, 1, 0],
   },
 
   away: {
-    club: teams["barca"],
+    club: teams.barca,
     category: "U14M",
     opponent: true,
     scores: [18, 35, 32, 0],
@@ -91,5 +91,4 @@ export const game_2025_06_03_barca: AdvancedGame = AdvancedGameSchema.parse({
       url: "https://baloncestoenvivo.feb.es/partido/2471617",
     },
   ],
-
 });

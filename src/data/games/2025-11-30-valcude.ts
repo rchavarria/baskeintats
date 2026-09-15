@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_11_30_valcude: Game = GameSchema.parse({
   id: "S56-liga-plata-f1-g4-j9",
@@ -16,16 +16,16 @@ export const game_2025_11_30_valcude: Game = GameSchema.parse({
     round: "J9",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [27, 19, 27, 14],
   },
 
   away: {
-    club: teams["valcude"],
+    club: teams.valcude,
     category: "U16M",
     opponent: true,
     scores: [16, 18, 11, 2],
@@ -86,4 +86,3 @@ export const game_2025_11_30_valcude: Game = GameSchema.parse({
     },
   ],
 });
-

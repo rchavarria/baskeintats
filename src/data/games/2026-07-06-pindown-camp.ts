@@ -1,6 +1,6 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2026_07_06_pindown_camp: Announcement = AnnouncementSchema.parse({
   id: "S56-pindown-camp",
@@ -12,7 +12,7 @@ export const announcement_2026_07_06_pindown_camp: Announcement = AnnouncementSc
   announcementType: "camp",
   category: "U15M",
 
-  venue: venues["ideo"],
+  venue: venues.ideo,
 
   description: [
     "Campus Élite Pindown",

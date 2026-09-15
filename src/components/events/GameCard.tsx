@@ -1,22 +1,21 @@
-import {totalPoints} from "../../model/GameSchema";
-import type {AdvancedGame, FriendlyGame, Game} from "../../model/GameSchema";
-import {Link} from "react-router-dom";
-import {DateDisplay} from "../ui/DateDisplay.tsx";
-import {TimeDisplay} from "../ui/TimeDisplay.tsx";
-import {CategoryBadge} from "../ui/CategoryBadge.tsx";
-import {GameResultEmoji} from "./GameResultEmoji.tsx";
-
+import { Link } from "react-router-dom";
+import type { AdvancedGame, FriendlyGame, Game } from "../../model/GameSchema";
+import { totalPoints } from "../../model/GameSchema";
+import { CategoryBadge } from "../ui/CategoryBadge.tsx";
+import { DateDisplay } from "../ui/DateDisplay.tsx";
+import { TimeDisplay } from "../ui/TimeDisplay.tsx";
+import { GameResultEmoji } from "./GameResultEmoji.tsx";
 
 interface GameCardProps {
   game: Game | AdvancedGame | FriendlyGame;
 }
 
-export function GameCard({game}: GameCardProps) {
+export function GameCard({ game }: GameCardProps) {
   const homeScore = totalPoints(game.home.scores);
   const awayScore = totalPoints(game.away.scores);
   const isFriendly = game.type === "friendly-game";
   const title = [game.competition.name, game.competition.phase, game.competition.round]
-    .filter(part => part && part.trim() !== "")
+    .filter((part) => part && part.trim() !== "")
     .join(" · ");
 
   return (
@@ -60,8 +59,12 @@ export function GameCard({game}: GameCardProps) {
           />
           <div className="text-[11px] text-white/70 leading-tight text-center">
             <div className="inline-block text-left">
-              <div><DateDisplay isoDate={game.date} /></div>
-              <div><TimeDisplay isoDate={game.date} /></div>
+              <div>
+                <DateDisplay isoDate={game.date} />
+              </div>
+              <div>
+                <TimeDisplay isoDate={game.date} />
+              </div>
             </div>
           </div>
           <p className="font-extrabold text-4xl sm:text-5xl tabular-nums leading-none mt-1">

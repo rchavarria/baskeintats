@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_10_05_patrocinio: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f1-g1-j3",
@@ -19,14 +19,14 @@ export const game_2025_10_05_patrocinio: AdvancedGame = AdvancedGameSchema.parse
   venue: venues["triangulo-oro"],
 
   home: {
-    club: teams["patrocinio"],
+    club: teams.patrocinio,
     category: "U16M",
     opponent: true,
     scores: [21, 20, 14, 20, 9],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [20, 17, 27, 11, 15],
   },
@@ -100,6 +100,4 @@ export const game_2025_10_05_patrocinio: AdvancedGame = AdvancedGameSchema.parse
       url: "https://www.fbm.es/noticia-104-12862/liga-ahorramas-emoci%C3%B3n-hasta-el-%C3%BAltimo-segundo",
     },
   ],
-
 });
-

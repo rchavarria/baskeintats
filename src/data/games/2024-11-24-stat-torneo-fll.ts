@@ -1,7 +1,7 @@
-import type {Stats} from "../../model/StatsSchema.ts";
-import {StatsSchema} from "../../model/StatsSchema.ts";
-import {game_2024_11_22_estudiantes} from "./2024-11-22-estudiantes.ts";
-import {game_2024_11_23_barca} from "./2024-11-23-barca.ts";
+import type { Stats } from "../../model/StatsSchema.ts";
+import { StatsSchema } from "../../model/StatsSchema.ts";
+import { game_2024_11_22_estudiantes } from "./2024-11-22-estudiantes.ts";
+import { game_2024_11_23_barca } from "./2024-11-23-barca.ts";
 
 export const stat_2024_11_24_torneo_fll: Stats = StatsSchema.parse({
   id: "S45-stat-torneo-fll",
@@ -12,14 +12,9 @@ export const stat_2024_11_24_torneo_fll: Stats = StatsSchema.parse({
   title: "XV Torneo Fundación Leucemia y Linfoma (FLL)",
   category: "U15M",
 
-  games: [
-    game_2024_11_22_estudiantes,
-    game_2024_11_23_barca,
-  ],
+  games: [game_2024_11_22_estudiantes, game_2024_11_23_barca],
 
-  description: [
-    "Estadísticas de los partidos del torneo",
-  ],
+  description: ["Estadísticas de los partidos del torneo"],
 
   references: [
     {
@@ -34,4 +29,3 @@ export const stat_2024_11_24_torneo_fll: Stats = StatsSchema.parse({
     },
   ],
 });
-

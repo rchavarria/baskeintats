@@ -1,7 +1,7 @@
-import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import type { AdvancedGame } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_06_01_obradoiro: AdvancedGame = AdvancedGameSchema.parse({
   id: "S45-cec-grupos-j1",
@@ -19,13 +19,13 @@ export const game_2025_06_01_obradoiro: AdvancedGame = AdvancedGameSchema.parse(
   venue: venues["andres-estrada"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [20, 29, 30, 11],
   },
 
   away: {
-    club: teams["obradoiro"],
+    club: teams.obradoiro,
     category: "U14M",
     opponent: true,
     scores: [23, 7, 17, 25],
@@ -96,4 +96,3 @@ export const game_2025_06_01_obradoiro: AdvancedGame = AdvancedGameSchema.parse(
     },
   ],
 });
-

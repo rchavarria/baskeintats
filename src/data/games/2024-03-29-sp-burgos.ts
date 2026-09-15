@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_03_29_sp_burgos: Game = GameSchema.parse({
   id: "S34-torneo-zaragoza-j2",
@@ -16,10 +16,10 @@ export const game_2024_03_29_sp_burgos: Game = GameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["fuentes"],
+  venue: venues.fuentes,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [29, 18, 18, 0],
   },
@@ -56,4 +56,3 @@ export const game_2024_03_29_sp_burgos: Game = GameSchema.parse({
 
   references: [],
 });
-

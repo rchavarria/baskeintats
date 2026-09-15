@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2023_10_01_rozas: Game = GameSchema.parse({
   id: "S34-liga-bronce-f1-j2",
@@ -17,17 +17,17 @@ export const game_2023_10_01_rozas: Game = GameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["espiniella"],
+  venue: venues.espiniella,
 
   home: {
-    club: teams["rozas"],
+    club: teams.rozas,
     category: "U13M",
     opponent: true,
     scores: [9, 9, 12, 8],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [20, 11, 18, 12],
   },
@@ -54,4 +54,3 @@ export const game_2023_10_01_rozas: Game = GameSchema.parse({
 
   references: [],
 });
-

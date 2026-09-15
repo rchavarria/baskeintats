@@ -1,6 +1,6 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2024_12_17_convocatoria_fbm_4: Announcement = AnnouncementSchema.parse({
   id: "S45-convocatoria-fbm-4",
@@ -36,7 +36,8 @@ export const announcement_2024_12_17_convocatoria_fbm_4: Announcement = Announce
     },
     {
       type: "article",
-      label: "La Federación Española de Baloncesto ha publicado el calendario del campeonato, del 3 al 7 de enero, en Huelva",
+      label:
+        "La Federación Española de Baloncesto ha publicado el calendario del campeonato, del 3 al 7 de enero, en Huelva",
       url: "https://www.feb.es/2024/12/3/baloncesto/publicado-calendario-del-campeonato-espana-infantil-cadete-2025/100856.aspx",
     },
     {
@@ -46,4 +47,3 @@ export const announcement_2024_12_17_convocatoria_fbm_4: Announcement = Announce
     },
   ],
 });
-

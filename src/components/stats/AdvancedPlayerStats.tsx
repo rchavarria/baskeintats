@@ -1,5 +1,5 @@
-import type {AdvancedPlayerStats as AdvancedPlayerStatsType} from "../../model/PlayerSchema";
-import {AdvancedPlayerStatsFormatterImpl} from "../../lib/player-stats";
+import { AdvancedPlayerStatsFormatterImpl } from "../../lib/player-stats";
+import type { AdvancedPlayerStats as AdvancedPlayerStatsType } from "../../model/PlayerSchema";
 
 interface AdvancedPlayerStatsProps {
   stats: AdvancedPlayerStatsType;
@@ -12,21 +12,16 @@ interface AdvancedPlayerStatsProps {
 export function AdvancedPlayerStats({ stats }: AdvancedPlayerStatsProps) {
   const formatter = new AdvancedPlayerStatsFormatterImpl(stats);
 
-
   return (
     <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
       <h2 className="font-semibold text-gray-700 mb-4">📈 Estadísticas del jugador</h2>
       <div className="grid grid-cols-4 gap-4 text-center">
         <div title="Minutos y segundos jugados en el partido">
-          <p className="text-2xl font-bold text-gray-900">
-            {formatter.formatPlayedTime()}
-          </p>
+          <p className="text-2xl font-bold text-gray-900">{formatter.formatPlayedTime()}</p>
           <p className="text-xs text-gray-400">Tiempo</p>
         </div>
         <div title="Triples (3 puntos) realizados sobre intentos">
-          <p className="text-lg font-bold text-gray-900">
-            {formatter.formatThreePointers()}
-          </p>
+          <p className="text-lg font-bold text-gray-900">{formatter.formatThreePointers()}</p>
           <p className="text-xs text-gray-400">3P</p>
         </div>
         <div title="Tiros de campo (2 puntos) realizados sobre intentos">
@@ -58,9 +53,7 @@ export function AdvancedPlayerStats({ stats }: AdvancedPlayerStatsProps) {
           <p className="text-xs text-gray-400">+/-</p>
         </div>
         <div title="Rebotes ofensivos y defensivos">
-          <p className="text-lg font-bold text-gray-900">
-            {formatter.formatRebounds()}
-          </p>
+          <p className="text-lg font-bold text-gray-900">{formatter.formatRebounds()}</p>
           <p className="text-xs text-gray-400">Rebotes (O+D)</p>
         </div>
         <div title="Tapones cometidos sobre recibidos">
@@ -79,4 +72,3 @@ export function AdvancedPlayerStats({ stats }: AdvancedPlayerStatsProps) {
     </div>
   );
 }
-

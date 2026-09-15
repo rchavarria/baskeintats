@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_09_07_joventut: Game = GameSchema.parse({
   id: "S45-torneig-nord-j2",
@@ -19,14 +19,14 @@ export const game_2024_09_07_joventut: Game = GameSchema.parse({
   venue: venues["roser-llop"],
 
   home: {
-    club: teams["joventut"],
+    club: teams.joventut,
     category: "U14M",
     opponent: true,
     scores: [12, 11, 12, 10],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [21, 18, 25, 14],
   },
@@ -70,4 +70,3 @@ export const game_2024_09_07_joventut: Game = GameSchema.parse({
     },
   ],
 });
-

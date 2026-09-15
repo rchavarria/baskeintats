@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_03_10_tres_cantos: Game = GameSchema.parse({
   id: "S34-liga-plata-f2-j9",
@@ -16,7 +16,7 @@ export const game_2024_03_10_tres_cantos: Game = GameSchema.parse({
     round: "J9",
   },
 
-  venue: venues["luz"],
+  venue: venues.luz,
 
   home: {
     club: teams["tres-cantos"],
@@ -26,7 +26,7 @@ export const game_2024_03_10_tres_cantos: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [9, 17, 19, 17],
   },
@@ -55,4 +55,3 @@ export const game_2024_03_10_tres_cantos: Game = GameSchema.parse({
 
   references: [],
 });
-

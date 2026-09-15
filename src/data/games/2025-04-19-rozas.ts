@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_04_19_rozas: Game = GameSchema.parse({
   id: "S45-mhl-zaragoza-semis",
@@ -19,13 +19,13 @@ export const game_2025_04_19_rozas: Game = GameSchema.parse({
   venue: venues["alberto-maestro"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [18, 13, 17, 10],
   },
 
   away: {
-    club: teams["rozas"],
+    club: teams.rozas,
     category: "U14M",
     opponent: true,
     scores: [19, 10, 10, 23],
@@ -60,4 +60,3 @@ export const game_2025_04_19_rozas: Game = GameSchema.parse({
 
   references: [],
 });
-

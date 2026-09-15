@@ -1,5 +1,5 @@
-import type {Scouting} from "../../model/ScoutingSchema.ts";
-import {ScoutingSchema} from "../../model/ScoutingSchema.ts";
+import type { Scouting } from "../../model/ScoutingSchema.ts";
+import { ScoutingSchema } from "../../model/ScoutingSchema.ts";
 
 export const scouting_2026_07_23_spain_france: Scouting = ScoutingSchema.parse({
   id: "S56-scouting-u16-spain-france",
@@ -30,12 +30,14 @@ export const scouting_2026_07_23_spain_france: Scouting = ScoutingSchema.parse({
     },
     {
       start: "32:29",
-      description: "Muy buena circulación, sin poder pisar pintura, que termina con un triple fallado, rebote y corte",
+      description:
+        "Muy buena circulación, sin poder pisar pintura, que termina con un triple fallado, rebote y corte",
       type: "good-play",
     },
     {
       start: "38:41",
-      description: "Ataque contra algo parecido a zona, se queda la esquina liberada, pase complicado, pero llega bien, y triplazo",
+      description:
+        "Ataque contra algo parecido a zona, se queda la esquina liberada, pase complicado, pero llega bien, y triplazo",
       type: "good-play",
     },
     {
@@ -44,5 +46,4 @@ export const scouting_2026_07_23_spain_france: Scouting = ScoutingSchema.parse({
       type: "good-play",
     },
   ],
-
 });

@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_12_13_san_jorge: Game = GameSchema.parse({
   id: "S56-liga-plata-f1-g4-j10",
@@ -26,7 +26,7 @@ export const game_2025_12_13_san_jorge: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [25, 18, 21, 13],
   },
@@ -86,4 +86,3 @@ export const game_2025_12_13_san_jorge: Game = GameSchema.parse({
     },
   ],
 });
-

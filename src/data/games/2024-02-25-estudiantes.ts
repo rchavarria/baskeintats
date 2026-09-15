@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_02_25_estudiantes: Game = GameSchema.parse({
   id: "S34-liga-oro-f2-j7",
@@ -16,16 +16,16 @@ export const game_2024_02_25_estudiantes: Game = GameSchema.parse({
     round: "J7",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [15, 15, 20, 24],
   },
 
   away: {
-    club: teams["estudiantes"],
+    club: teams.estudiantes,
     category: "U14M",
     opponent: true,
     scores: [22, 17, 23, 19],
@@ -50,10 +50,10 @@ export const game_2024_02_25_estudiantes: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "Parece que se van entonando otra vez. Si es que lo sabemos, estos chicos pueden jugar realmente bien",
+    title:
+      "Parece que se van entonando otra vez. Si es que lo sabemos, estos chicos pueden jugar realmente bien",
     lines: [],
   },
 
   references: [],
 });
-

@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_01_28_canoe: Game = GameSchema.parse({
   id: "S34-liga-plata-f2-j3",
@@ -16,17 +16,17 @@ export const game_2024_01_28_canoe: Game = GameSchema.parse({
     round: "J3",
   },
 
-  venue: venues["agustiniano"],
+  venue: venues.agustiniano,
 
   home: {
-    club: teams["canoe"],
+    club: teams.canoe,
     category: "U14M",
     opponent: true,
     scores: [15, 23, 32, 17],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [15, 14, 16, 13],
   },
@@ -47,7 +47,8 @@ export const game_2024_01_28_canoe: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "Esto empieza a doler ya, no pueden con los mayores, la diferencia física se nota muchísimo",
+    title:
+      "Esto empieza a doler ya, no pueden con los mayores, la diferencia física se nota muchísimo",
     lines: [
       "Hoy un padre ha perdido un poco los nervios ya, porque nuestros jugadores se llevan unos golpes y unos empujones que no es normal",
     ],
@@ -55,4 +56,3 @@ export const game_2024_01_28_canoe: Game = GameSchema.parse({
 
   references: [],
 });
-

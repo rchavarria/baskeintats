@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_01_21_alcala: Game = GameSchema.parse({
   id: "S34-liga-plata-f2-j2",
@@ -16,17 +16,17 @@ export const game_2024_01_21_alcala: Game = GameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["espartales"],
+  venue: venues.espartales,
 
   home: {
-    club: teams["alcala"],
+    club: teams.alcala,
     category: "U14M",
     opponent: true,
     scores: [12, 22, 18, 21],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [17, 15, 24, 9],
   },
@@ -47,10 +47,10 @@ export const game_2024_01_21_alcala: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "Otra vez lo mismo, nos han ganado por la fuerza bruta. Jugamos mejor que ellos, pero hay mucha diferencia física, y la usan",
+    title:
+      "Otra vez lo mismo, nos han ganado por la fuerza bruta. Jugamos mejor que ellos, pero hay mucha diferencia física, y la usan",
     lines: [],
   },
 
   references: [],
 });
-

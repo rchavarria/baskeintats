@@ -1,7 +1,7 @@
-import {FriendlyGameSchema} from "../../model/GameSchema.ts";
-import type {FriendlyGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { FriendlyGame } from "../../model/GameSchema.ts";
+import { FriendlyGameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_09_18_distrito: FriendlyGame = FriendlyGameSchema.parse({
   id: "S56-amistoso-distrito",
@@ -16,16 +16,16 @@ export const game_2025_09_18_distrito: FriendlyGame = FriendlyGameSchema.parse({
     round: "",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [24, 17, 23, 24],
   },
 
   away: {
-    club: teams["distrito"],
+    club: teams.distrito,
     category: "U15M",
     opponent: true,
     scores: [5, 11, 17, 17],
@@ -57,6 +57,4 @@ export const game_2025_09_18_distrito: FriendlyGame = FriendlyGameSchema.parse({
   },
 
   references: [],
-
 });
-

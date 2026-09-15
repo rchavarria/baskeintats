@@ -20,7 +20,7 @@ export interface PlayerStatsFormatter {
    * Discriminante de tipo de estadísticas.
    * @returns 'none' | 'basic' | 'advanced'
    */
-  kind(): 'none' | 'basic' | 'advanced';
+  kind(): "none" | "basic" | "advanced";
 
   /**
    * Formatea el tiempo jugado.
@@ -76,4 +76,3 @@ export interface PlayerStatsFormatter {
    */
   formatEfficiency(): string;
 }
-

@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_11_23_barca: Game = GameSchema.parse({
   id: "S45-torneo-fll-j2",
@@ -25,7 +25,7 @@ export const game_2024_11_23_barca: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["barca"],
+    club: teams.barca,
     category: "U15M",
     opponent: true,
     scores: [33, 26, 22, 23],
@@ -50,7 +50,7 @@ export const game_2024_11_23_barca: Game = GameSchema.parse({
       {
         label: "BasketCantera.TV",
         url: "https://youtu.be/N6Vxxi995_U",
-      }
+      },
     ],
   },
 
@@ -71,4 +71,3 @@ export const game_2024_11_23_barca: Game = GameSchema.parse({
     },
   ],
 });
-

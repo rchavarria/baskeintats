@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_11_16_rozas: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f1-g1-j7",
@@ -16,17 +16,17 @@ export const game_2025_11_16_rozas: AdvancedGame = AdvancedGameSchema.parse({
     round: "J7",
   },
 
-  venue: venues["espiniella"],
+  venue: venues.espiniella,
 
   home: {
-    club: teams["rozas"],
+    club: teams.rozas,
     category: "U16M",
     opponent: true,
     scores: [16, 10, 15, 21],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [14, 15, 23, 20],
   },
@@ -100,6 +100,4 @@ export const game_2025_11_16_rozas: AdvancedGame = AdvancedGameSchema.parse({
       url: "https://www.fbm.es/noticia-104-12931/sube-la-temperatura-en-la-liga-ahorramas",
     },
   ],
-
 });
-

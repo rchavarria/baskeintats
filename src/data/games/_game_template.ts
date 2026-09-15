@@ -1,7 +1,7 @@
-import type {Game} from "../../model/GameSchema.ts";
-import {GameSchema} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const _game_template: Game = GameSchema.parse({
   id: "S56-liga-plata-f1-g1-j1",
@@ -16,19 +16,19 @@ export const _game_template: Game = GameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
-    scores: [ 0, 0, 0, 0 ],
+    scores: [0, 0, 0, 0],
   },
 
   away: {
-    club: teams["canoe"],
+    club: teams.canoe,
     category: "U16M",
     opponent: true,
-    scores: [ 0, 0, 0, 0 ],
+    scores: [0, 0, 0, 0],
   },
 
   playerStats: {
@@ -60,10 +60,7 @@ export const _game_template: Game = GameSchema.parse({
 
   recap: {
     title: "xxx",
-    lines: [
-      "yyy",
-      "zzz",
-    ],
+    lines: ["yyy", "zzz"],
   },
 
   references: [
@@ -88,5 +85,4 @@ export const _game_template: Game = GameSchema.parse({
       url: "https://fbm.es/-",
     },
   ],
-
 });

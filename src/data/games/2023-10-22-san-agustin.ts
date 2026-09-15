@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2023_10_22_san_agustin: Game = GameSchema.parse({
   id: "S34-liga-bronce-f1-j4",
@@ -17,16 +17,16 @@ export const game_2023_10_22_san_agustin: Game = GameSchema.parse({
     round: "J4",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [16, 14, 23, 33],
   },
 
   away: {
-    club: teams["agustin"],
+    club: teams.agustin,
     category: "U14M",
     opponent: true,
     scores: [22, 21, 22, 20],
@@ -48,10 +48,10 @@ export const game_2023_10_22_san_agustin: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "¡Partidazo contra unos mayores! Ganamos por la mínima, sufriendo mucho, pero menuda garra le han echado los chicos, impresionante",
+    title:
+      "¡Partidazo contra unos mayores! Ganamos por la mínima, sufriendo mucho, pero menuda garra le han echado los chicos, impresionante",
     lines: [],
   },
 
   references: [],
 });
-

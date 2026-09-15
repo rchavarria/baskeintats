@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: npm clean-install --no-audit --no-fund
 
+      - name: Lint
+        run: npm run lint:ci
+
       - name: Run tests
         run: npm test
 

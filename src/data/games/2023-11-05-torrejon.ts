@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2023_11_05_torrejon: Game = GameSchema.parse({
   id: "S34-liga-bronce-f1-j5",
@@ -17,17 +17,17 @@ export const game_2023_11_05_torrejon: Game = GameSchema.parse({
     round: "J5",
   },
 
-  venue: venues["limones"],
+  venue: venues.limones,
 
   home: {
-    club: teams["torrejon"],
+    club: teams.torrejon,
     category: "U14M",
     opponent: true,
     scores: [9, 11, 12, 3],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [23, 26, 30, 6],
   },
@@ -54,4 +54,3 @@ export const game_2023_11_05_torrejon: Game = GameSchema.parse({
 
   references: [],
 });
-

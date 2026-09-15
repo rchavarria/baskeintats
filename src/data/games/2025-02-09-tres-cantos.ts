@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_02_09_tres_cantos: Game = GameSchema.parse({
   id: "S45-liga-oro-fase2-j5",
@@ -16,10 +16,10 @@ export const game_2025_02_09_tres_cantos: Game = GameSchema.parse({
     round: "J5",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [24, 21, 24, 29],
   },

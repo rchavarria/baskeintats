@@ -1,8 +1,8 @@
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
-import {EmptyAdvancedPlayerStats} from "../../model/PlayerSchema.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import { EmptyAdvancedPlayerStats } from "../../model/PlayerSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_05_31_torrelodones: AdvancedGame = AdvancedGameSchema.parse({
   id: "S56-liga-oro-f3-j4",
@@ -17,19 +17,19 @@ export const game_2026_05_31_torrelodones: AdvancedGame = AdvancedGameSchema.par
     round: "J4",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
-    scores: [ 24, 13, 19, 19 ],
+    scores: [24, 13, 19, 19],
   },
 
   away: {
-    club: teams["torrelodones"],
+    club: teams.torrelodones,
     category: "U16M",
     opponent: true,
-    scores: [ 21, 23, 19, 29 ],
+    scores: [21, 23, 19, 29],
   },
 
   playerStats: EmptyAdvancedPlayerStats,
@@ -60,5 +60,4 @@ export const game_2026_05_31_torrelodones: AdvancedGame = AdvancedGameSchema.par
       url: "https://fbm.es/informes.aspx?delegacion=1&grupo=16719&informe=resultados-clasificacion-proxima&ultima_jornada=108376&proxima_jornada=108377",
     },
   ],
-
 });

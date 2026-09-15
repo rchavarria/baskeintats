@@ -1,5 +1,5 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
 
 export const announcement_2024_08_28_orbita_pro_camp_2: Announcement = AnnouncementSchema.parse({
   id: "S45-orbita-pro-camp-j2",
@@ -33,4 +33,3 @@ export const announcement_2024_08_28_orbita_pro_camp_2: Announcement = Announcem
     },
   ],
 });
-

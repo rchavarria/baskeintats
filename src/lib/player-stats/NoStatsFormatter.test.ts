@@ -1,135 +1,134 @@
-import { describe, it, expect } from 'vitest';
-import { NoStatsFormatter } from './NoStatsFormatter';
+import { describe, expect, it } from "vitest";
+import { NoStatsFormatter } from "./NoStatsFormatter";
 
-describe('NoStatsFormatter', () => {
-  describe('hasStats()', () => {
-    it('should always return false', () => {
+describe("NoStatsFormatter", () => {
+  describe("hasStats()", () => {
+    it("should always return false", () => {
       const formatter = new NoStatsFormatter();
       expect(formatter.hasStats()).toBe(false);
     });
   });
 
-  describe('kind()', () => {
+  describe("kind()", () => {
     it('should return "none"', () => {
       const formatter = new NoStatsFormatter();
-      expect(formatter.kind()).toBe('none');
+      expect(formatter.kind()).toBe("none");
     });
   });
 
-  describe('formatPlayedTime()', () => {
+  describe("formatPlayedTime()", () => {
     it('should return "00:00" placeholder', () => {
       const formatter = new NoStatsFormatter();
-      expect(formatter.formatPlayedTime()).toBe('00:00');
+      expect(formatter.formatPlayedTime()).toBe("00:00");
     });
   });
 
-  describe('formatPoints()', () => {
+  describe("formatPoints()", () => {
     it('should return "-" placeholder', () => {
       const formatter = new NoStatsFormatter();
-      expect(formatter.formatPoints()).toBe('-');
+      expect(formatter.formatPoints()).toBe("-");
     });
   });
 
-  describe('formatFieldGoals()', () => {
+  describe("formatFieldGoals()", () => {
     it('should return "-" placeholder', () => {
       const formatter = new NoStatsFormatter();
-      expect(formatter.formatFieldGoals()).toBe('-');
+      expect(formatter.formatFieldGoals()).toBe("-");
     });
   });
 
-  describe('formatThreePointers()', () => {
+  describe("formatThreePointers()", () => {
     it('should return "-" placeholder', () => {
       const formatter = new NoStatsFormatter();
-      expect(formatter.formatThreePointers()).toBe('-');
+      expect(formatter.formatThreePointers()).toBe("-");
     });
   });
 
-  describe('formatFreeThrows()', () => {
+  describe("formatFreeThrows()", () => {
     it('should return "-" placeholder', () => {
       const formatter = new NoStatsFormatter();
-      expect(formatter.formatFreeThrows()).toBe('-');
+      expect(formatter.formatFreeThrows()).toBe("-");
     });
   });
 
-  describe('formatFaults()', () => {
+  describe("formatFaults()", () => {
     it('should return "-" placeholder', () => {
       const formatter = new NoStatsFormatter();
-      expect(formatter.formatFaults()).toBe('-');
+      expect(formatter.formatFaults()).toBe("-");
     });
   });
 
-  describe('formatPlusMinus()', () => {
+  describe("formatPlusMinus()", () => {
     it('should return "-" placeholder', () => {
       const formatter = new NoStatsFormatter();
-      expect(formatter.formatPlusMinus()).toBe('-');
+      expect(formatter.formatPlusMinus()).toBe("-");
     });
   });
 
-  describe('formatEfficiency()', () => {
+  describe("formatEfficiency()", () => {
     it('should return "-" placeholder', () => {
       const formatter = new NoStatsFormatter();
-      expect(formatter.formatEfficiency()).toBe('-');
+      expect(formatter.formatEfficiency()).toBe("-");
     });
   });
 
-  describe('formatRebounds()', () => {
+  describe("formatRebounds()", () => {
     it('should return "-" placeholder', () => {
       const formatter = new NoStatsFormatter();
-      expect(formatter.formatRebounds()).toBe('-');
+      expect(formatter.formatRebounds()).toBe("-");
     });
   });
 
-  describe('formatAssists()', () => {
+  describe("formatAssists()", () => {
     it('should return "-" placeholder', () => {
       const formatter = new NoStatsFormatter();
-      expect(formatter.formatAssists()).toBe('-');
+      expect(formatter.formatAssists()).toBe("-");
     });
   });
 
-  describe('formatSteals()', () => {
+  describe("formatSteals()", () => {
     it('should return "-" placeholder', () => {
       const formatter = new NoStatsFormatter();
-      expect(formatter.formatSteals()).toBe('-');
+      expect(formatter.formatSteals()).toBe("-");
     });
   });
 
-  describe('formatTurnovers()', () => {
+  describe("formatTurnovers()", () => {
     it('should return "-" placeholder', () => {
       const formatter = new NoStatsFormatter();
-      expect(formatter.formatTurnovers()).toBe('-');
+      expect(formatter.formatTurnovers()).toBe("-");
     });
   });
 
-  describe('formatBlocks()', () => {
+  describe("formatBlocks()", () => {
     it('should return "-" placeholder', () => {
       const formatter = new NoStatsFormatter();
-      expect(formatter.formatBlocks()).toBe('-');
+      expect(formatter.formatBlocks()).toBe("-");
     });
   });
 
-  describe('polimorfismo', () => {
-    it('should be compatible with AdvancedStatsFormatter interface', () => {
+  describe("polimorfismo", () => {
+    it("should be compatible with AdvancedStatsFormatter interface", () => {
       const formatter = new NoStatsFormatter();
 
       // All base methods should be available
-      expect(typeof formatter.hasStats).toBe('function');
-      expect(typeof formatter.kind).toBe('function');
-      expect(typeof formatter.formatPlayedTime).toBe('function');
-      expect(typeof formatter.formatPoints).toBe('function');
-      expect(typeof formatter.formatFieldGoals).toBe('function');
-      expect(typeof formatter.formatThreePointers).toBe('function');
-      expect(typeof formatter.formatFreeThrows).toBe('function');
-      expect(typeof formatter.formatFaults).toBe('function');
-      expect(typeof formatter.formatPlusMinus).toBe('function');
-      expect(typeof formatter.formatEfficiency).toBe('function');
+      expect(typeof formatter.hasStats).toBe("function");
+      expect(typeof formatter.kind).toBe("function");
+      expect(typeof formatter.formatPlayedTime).toBe("function");
+      expect(typeof formatter.formatPoints).toBe("function");
+      expect(typeof formatter.formatFieldGoals).toBe("function");
+      expect(typeof formatter.formatThreePointers).toBe("function");
+      expect(typeof formatter.formatFreeThrows).toBe("function");
+      expect(typeof formatter.formatFaults).toBe("function");
+      expect(typeof formatter.formatPlusMinus).toBe("function");
+      expect(typeof formatter.formatEfficiency).toBe("function");
 
       // All advanced methods should be available
-      expect(typeof formatter.formatRebounds).toBe('function');
-      expect(typeof formatter.formatAssists).toBe('function');
-      expect(typeof formatter.formatSteals).toBe('function');
-      expect(typeof formatter.formatTurnovers).toBe('function');
-      expect(typeof formatter.formatBlocks).toBe('function');
+      expect(typeof formatter.formatRebounds).toBe("function");
+      expect(typeof formatter.formatAssists).toBe("function");
+      expect(typeof formatter.formatSteals).toBe("function");
+      expect(typeof formatter.formatTurnovers).toBe("function");
+      expect(typeof formatter.formatBlocks).toBe("function");
     });
   });
 });
-

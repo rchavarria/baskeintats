@@ -1,14 +1,14 @@
-import type {Stats} from "../../model/StatsSchema.ts";
-import {StatsSchema} from "../../model/StatsSchema.ts";
-import {game_2024_09_25_real_madrid} from "./2024-09-25-real-madrid.ts";
-import {game_2024_09_29_alcorcon} from "./2024-09-29-alcorcon.ts";
-import {game_2024_10_06_sba} from "./2024-10-06-sba.ts";
-import {game_2024_10_20_canoe} from "./2024-10-20-canoe.ts";
-import {game_2024_10_27_rozas} from "./2024-10-27-rozas.ts";
-import {game_2024_11_10_real_madrid} from "./2024-11-10-real-madrid.ts";
-import {game_2024_11_17_alcorcon} from "./2024-11-17-alcorcon.ts";
-import {game_2024_11_27_sba} from "./2024-11-27-sba.ts";
-import {game_2024_12_01_canoe} from "./2024-12-01-canoe.ts";
+import type { Stats } from "../../model/StatsSchema.ts";
+import { StatsSchema } from "../../model/StatsSchema.ts";
+import { game_2024_09_25_real_madrid } from "./2024-09-25-real-madrid.ts";
+import { game_2024_09_29_alcorcon } from "./2024-09-29-alcorcon.ts";
+import { game_2024_10_06_sba } from "./2024-10-06-sba.ts";
+import { game_2024_10_20_canoe } from "./2024-10-20-canoe.ts";
+import { game_2024_10_27_rozas } from "./2024-10-27-rozas.ts";
+import { game_2024_11_10_real_madrid } from "./2024-11-10-real-madrid.ts";
+import { game_2024_11_17_alcorcon } from "./2024-11-17-alcorcon.ts";
+import { game_2024_11_27_sba } from "./2024-11-27-sba.ts";
+import { game_2024_12_01_canoe } from "./2024-12-01-canoe.ts";
 
 export const stat_2024_12_16_league_gold_f1: Stats = StatsSchema.parse({
   id: "S45-stat-league-gold-phase1",
@@ -31,10 +31,7 @@ export const stat_2024_12_16_league_gold_f1: Stats = StatsSchema.parse({
     game_2024_12_01_canoe,
   ],
 
-  description: [
-    "Estadísticas de los partidos del torneo",
-  ],
+  description: ["Estadísticas de los partidos del torneo"],
 
   references: [],
 });
-

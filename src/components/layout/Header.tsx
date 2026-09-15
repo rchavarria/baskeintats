@@ -11,17 +11,13 @@ export function Header() {
           <NavLink
             to="/"
             end
-            className={({ isActive }) =>
-              isActive ? "text-orange-400" : "hover:text-orange-300"
-            }
+            className={({ isActive }) => (isActive ? "text-orange-400" : "hover:text-orange-300")}
           >
             Home
           </NavLink>
           <NavLink
             to="/games"
-            className={({ isActive }) =>
-              isActive ? "text-orange-400" : "hover:text-orange-300"
-            }
+            className={({ isActive }) => (isActive ? "text-orange-400" : "hover:text-orange-300")}
           >
             Games
           </NavLink>

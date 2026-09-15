@@ -14,6 +14,8 @@ Use these skills by referencing them with `@` or asking to "use skill X":
 - `npm test` - Run unit tests
 - `npm run build` - Build for production
 - `npm run dev` - Start dev server
+- `npm run lint` - Run Biome linter and format checks
+- `npm run format` - Format the code with Biome
 
 ## Key Paths
 

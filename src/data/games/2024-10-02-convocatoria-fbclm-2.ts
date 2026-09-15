@@ -1,6 +1,6 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2024_10_02_convocatoria_fbclm_2: Announcement = AnnouncementSchema.parse({
   id: "S45-convocatoria-fbclm-2",
@@ -12,12 +12,12 @@ export const announcement_2024_10_02_convocatoria_fbclm_2: Announcement = Announ
   announcementType: "call-up",
   category: "U14M",
 
-  venue: venues["herencia"],
+  venue: venues.herencia,
 
   description: [
     "🏀 La FBCLM nos convoca para asistir a las concentraciones de la preselección infantil",
     "A esta convocatoria ya no podemos asistir, por calendario de la Liga Ahorramás",
-    "Así que nuestro viaje con ellos termina aquí"
+    "Así que nuestro viaje con ellos termina aquí",
   ],
 
   schedule: [
@@ -35,4 +35,3 @@ export const announcement_2024_10_02_convocatoria_fbclm_2: Announcement = Announ
     },
   ],
 });
-

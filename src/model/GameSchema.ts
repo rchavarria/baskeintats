@@ -1,9 +1,9 @@
-import {z} from "zod";
-import {CategorySchema} from "./CategorySchema.ts";
-import {PlayerStatsSchema, AdvancedPlayerStatsSchema} from "./PlayerSchema.ts";
-import {TeamSchema} from "./TeamSchema.ts";
-import {VenueSchema} from "./VenueSchema.ts";
-import {ReferenceSchema} from "./ReferenceSchema.ts";
+import { z } from "zod";
+import { CategorySchema } from "./CategorySchema.ts";
+import { AdvancedPlayerStatsSchema, PlayerStatsSchema } from "./PlayerSchema.ts";
+import { ReferenceSchema } from "./ReferenceSchema.ts";
+import { TeamSchema } from "./TeamSchema.ts";
+import { VenueSchema } from "./VenueSchema.ts";
 
 export function totalPoints(scores: number[]): number {
   return scores.reduce((sum, s) => sum + s, 0);
@@ -44,10 +44,14 @@ export const GameSchema = z.object({
 
   videos: z.object({
     official: z.url(),
-    others: z.array(z.object({
-      label: z.string(),
-      url: z.url(),
-    })).optional(),
+    others: z
+      .array(
+        z.object({
+          label: z.string(),
+          url: z.url(),
+        }),
+      )
+      .optional(),
   }),
 
   recap: z.object({
@@ -56,30 +60,25 @@ export const GameSchema = z.object({
   }),
 
   references: z.array(ReferenceSchema),
-
 });
 
 export type Game = z.infer<typeof GameSchema>;
 
 // scheduled game is an incomplete one, with different `type`
-export const ScheduledGameSchema = GameSchema
-  .partial()
-  .extend({
-    type: z.literal("scheduled"),
-  });
+export const ScheduledGameSchema = GameSchema.partial().extend({
+  type: z.literal("scheduled"),
+});
 export type ScheduledGame = z.infer<typeof ScheduledGameSchema>;
 
 // advanced game has the same structure as Game, but with advanced player stats
-export const AdvancedGameSchema = GameSchema
-  .extend({
-    type: z.literal("advanced-game"),
-    playerStats: AdvancedPlayerStatsSchema,
-  });
+export const AdvancedGameSchema = GameSchema.extend({
+  type: z.literal("advanced-game"),
+  playerStats: AdvancedPlayerStatsSchema,
+});
 export type AdvancedGame = z.infer<typeof AdvancedGameSchema>;
 
 // friendly game has the same structure as Game, but with a different type
-export const FriendlyGameSchema = GameSchema
-  .extend({
-    type: z.literal("friendly-game"),
-  });
+export const FriendlyGameSchema = GameSchema.extend({
+  type: z.literal("friendly-game"),
+});
 export type FriendlyGame = z.infer<typeof FriendlyGameSchema>;

@@ -1,10 +1,10 @@
 import { useMemo } from "react";
-import { useEvents } from "../../hooks/useEvents";
-import { useFiltersContext } from "../../context/FiltersContext";
+import { getEvents } from "../../data/events";
+import { useFilters } from "../../hooks/useFilters";
 
 export function SeasonFilter() {
-  const events = useEvents();
-  const { filters, setFilters } = useFiltersContext();
+  const events = getEvents();
+  const { filters, setFilters } = useFilters();
 
   const seasons = useMemo(
     () => [...new Set(events.map((e) => e.season))].sort().reverse(),
@@ -13,9 +13,7 @@ export function SeasonFilter() {
 
   return (
     <div className="bg-white rounded-xl shadow border border-gray-100 p-4">
-      <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">
-        Season
-      </h2>
+      <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">Season</h2>
       <ul className="flex flex-col gap-1">
         <li>
           <button
@@ -49,4 +47,3 @@ export function SeasonFilter() {
     </div>
   );
 }
-

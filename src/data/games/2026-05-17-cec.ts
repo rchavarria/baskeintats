@@ -1,6 +1,6 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2026_05_17_cec: Announcement = AnnouncementSchema.parse({
   id: "S56-cec",
@@ -12,7 +12,7 @@ export const announcement_2026_05_17_cec: Announcement = AnnouncementSchema.pars
   announcementType: "tournament",
   category: "U16M",
 
-  venue: venues["linea"],
+  venue: venues.linea,
 
   description: [
     "Campeonato cadete masculino",

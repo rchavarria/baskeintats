@@ -992,7 +992,7 @@ Examples:
 
 ## Add the new game to the game list
 
-After generating the new game file, update `src/hooks/useEvents.ts`:
+After generating the new game file, update `src/data/events.ts`:
 
 - add an import statement for it
 - include it in the returned array

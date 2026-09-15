@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_04_13_alcala: Game = GameSchema.parse({
   id: "S34-liga-bronce-f3-j2",
@@ -16,17 +16,17 @@ export const game_2024_04_13_alcala: Game = GameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["gredos"],
+  venue: venues.gredos,
 
   home: {
-    club: teams["alcala"],
+    club: teams.alcala,
     category: "U14M",
     opponent: true,
     scores: [13, 20, 15, 19],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [26, 14, 8, 17],
   },
@@ -60,4 +60,3 @@ export const game_2024_04_13_alcala: Game = GameSchema.parse({
 
   references: [],
 });
-

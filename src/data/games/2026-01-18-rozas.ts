@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_01_18_rozas: Game = GameSchema.parse({
   id: "S56-liga-plata-f2-gb-j2",
@@ -19,14 +19,14 @@ export const game_2026_01_18_rozas: Game = GameSchema.parse({
   venue: venues["ceip-san-jose"],
 
   home: {
-    club: teams["rozas"],
+    club: teams.rozas,
     category: "U16M",
     opponent: true,
     scores: [16, 8, 16, 13],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [16, 16, 15, 10],
   },
@@ -87,4 +87,3 @@ export const game_2026_01_18_rozas: Game = GameSchema.parse({
     },
   ],
 });
-

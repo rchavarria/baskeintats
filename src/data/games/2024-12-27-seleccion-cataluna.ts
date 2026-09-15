@@ -1,7 +1,7 @@
-import {AdvancedGameSchema} from "../../model/GameSchema.ts";
-import type {AdvancedGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { AdvancedGame } from "../../model/GameSchema.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_12_27_seleccion_cataluna: AdvancedGame = AdvancedGameSchema.parse({
   id: "S45-amistoso-fbm-catalunya",
@@ -70,7 +70,8 @@ export const game_2024_12_27_seleccion_cataluna: AdvancedGame = AdvancedGameSche
   },
 
   recap: {
-    title: "Primer partido de un torneo amistoso con Aragón, Cataluña y Valencia como preparación del Campeonato de España",
+    title:
+      "Primer partido de un torneo amistoso con Aragón, Cataluña y Valencia como preparación del Campeonato de España",
     lines: [],
   },
 
@@ -87,4 +88,3 @@ export const game_2024_12_27_seleccion_cataluna: AdvancedGame = AdvancedGameSche
     },
   ],
 });
-

@@ -1,4 +1,4 @@
-import {useEvents} from "../src/hooks/useEvents";
+import { getEvents } from "../src/data/events";
 
-const games = useEvents();
-console.log('Loaded #events:', Object.keys(games).length);
+const games = getEvents();
+console.log("Loaded #events:", Object.keys(games).length);

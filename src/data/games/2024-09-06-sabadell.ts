@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_09_06_sabadell: Game = GameSchema.parse({
   id: "S45-torneig-nord-j1",
@@ -16,17 +16,17 @@ export const game_2024_09_06_sabadell: Game = GameSchema.parse({
     round: "Jornada 1",
   },
 
-  venue: venues["peralada"],
+  venue: venues.peralada,
 
   home: {
-    club: teams["sabadell"],
+    club: teams.sabadell,
     category: "U14M",
     opponent: true,
     scores: [7, 17, 7, 14],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [17, 17, 13, 8],
   },
@@ -55,7 +55,8 @@ export const game_2024_09_06_sabadell: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "Aunque ganamos el partido, el equipo no jugó bien. Era su primer partido como equipo, y se notó.",
+    title:
+      "Aunque ganamos el partido, el equipo no jugó bien. Era su primer partido como equipo, y se notó.",
     lines: [],
   },
 
@@ -67,4 +68,3 @@ export const game_2024_09_06_sabadell: Game = GameSchema.parse({
     },
   ],
 });
-

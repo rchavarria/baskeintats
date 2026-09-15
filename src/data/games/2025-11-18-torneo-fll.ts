@@ -1,7 +1,7 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2025_11_18_torneo_fll: Announcement = AnnouncementSchema.parse({
   id: "S56-torneo-fll",
@@ -31,7 +31,7 @@ export const announcement_2025_11_18_torneo_fll: Announcement = AnnouncementSche
     {
       label: "Grupos - J2",
       date: "2025-11-22T09:15:00Z",
-      opponent: teams["joventut"].name,
+      opponent: teams.joventut.name,
     },
     {
       label: "3º-4º Puesto",
@@ -81,12 +81,8 @@ export const announcement_2025_11_18_torneo_fll: Announcement = AnnouncementSche
     },
     {
       type: "document",
-      label: "Artículos que no hablan mucho de nuestros chicos, pero sí del torneo: Antiguos ganadores",
-      url: "https://www.fbm.es/noticia-96-12953/volver-al-torneo-fll-para-ganarlo-de-nuevo",
-    },
-    {
-      type: "document",
-      label: "Antiguos ganadores",
+      label:
+        "Artículos que no hablan mucho de nuestros chicos, pero sí del torneo: Antiguos ganadores",
       url: "https://www.fbm.es/noticia-96-12953/volver-al-torneo-fll-para-ganarlo-de-nuevo",
     },
     {
@@ -116,4 +112,3 @@ export const announcement_2025_11_18_torneo_fll: Announcement = AnnouncementSche
     },
   ],
 });
-

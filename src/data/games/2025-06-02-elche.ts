@@ -1,7 +1,7 @@
-import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import type { AdvancedGame } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_06_02_elche: AdvancedGame = AdvancedGameSchema.parse({
   id: "S45-cec-grupos-j2",
@@ -16,16 +16,16 @@ export const game_2025_06_02_elche: AdvancedGame = AdvancedGameSchema.parse({
     round: "J2",
   },
 
-  venue: venues["aljaraque"],
+  venue: venues.aljaraque,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [13, 23, 17, 7],
   },
 
   away: {
-    club: teams["elche"],
+    club: teams.elche,
     category: "U14M",
     opponent: true,
     scores: [20, 16, 23, 29],
@@ -91,4 +91,3 @@ export const game_2025_06_02_elche: AdvancedGame = AdvancedGameSchema.parse({
     },
   ],
 });
-

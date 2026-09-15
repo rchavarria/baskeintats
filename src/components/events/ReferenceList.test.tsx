@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import { describe, it, expect } from "vitest";
-import { ReferenceList } from "./ReferenceList";
+import { describe, expect, it } from "vitest";
 import type { Reference } from "../../model/ReferenceSchema";
+import { ReferenceList } from "./ReferenceList";
 
 function makeReference(type: Reference["type"], label: string): Reference {
   return { type, label, url: "https://example.com" };
@@ -39,7 +39,11 @@ describe("ReferenceList", () => {
   });
 
   it("renders fallback emoji for unknown reference type", () => {
-    const ref = { type: "unknown" as Reference["type"], label: "Mystery link", url: "https://example.com" };
+    const ref = {
+      type: "unknown" as Reference["type"],
+      label: "Mystery link",
+      url: "https://example.com",
+    };
     render(<ReferenceList references={[ref]} />);
     expect(screen.getByText(/❌❓🚨/)).toBeInTheDocument();
   });
@@ -63,4 +67,3 @@ describe("ReferenceList", () => {
     expect(links[1]).toHaveAttribute("href", "https://flickr.com/album");
   });
 });
-

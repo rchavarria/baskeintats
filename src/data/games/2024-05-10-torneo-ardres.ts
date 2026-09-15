@@ -1,7 +1,7 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {teams} from "../teams.ts";
-import {venues} from "../venues.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2024_05_10_ardres: Announcement = AnnouncementSchema.parse({
   id: "S34-torneo-ardres",
@@ -13,7 +13,7 @@ export const announcement_2024_05_10_ardres: Announcement = AnnouncementSchema.p
   announcementType: "tournament",
   category: "U14M",
 
-  venue: venues["ardres"],
+  venue: venues.ardres,
 
   description: [
     "Torneo internacional que la Federación de Madrid nos convoca. No sabíamos nada acerca del torneo, pero es una oportunidad increíble, tanto de participar en un torneo de este tipo como de ir con la selección madrileña",
@@ -24,7 +24,7 @@ export const announcement_2024_05_10_ardres: Announcement = AnnouncementSchema.p
     {
       label: "Grupos - J1",
       date: "2024-05-18T14:20:00Z",
-      opponent: teams["krvavec"].name,
+      opponent: teams.krvavec.name,
     },
     {
       label: "Grupos - J2",
@@ -34,17 +34,17 @@ export const announcement_2024_05_10_ardres: Announcement = AnnouncementSchema.p
     {
       label: "Grupos - J3",
       date: "2024-05-19T07:50:00Z",
-      opponent: teams["pesaro"].name,
+      opponent: teams.pesaro.name,
     },
     {
       label: "Grupos - J4",
       date: "2024-05-19T09:30:00Z",
-      opponent: teams["guyane"].name,
+      opponent: teams.guyane.name,
     },
     {
       label: "Semis",
       date: "2024-05-19T13:40:00Z",
-      opponent: teams["mexico"].name,
+      opponent: teams.mexico.name,
     },
     {
       label: "Final",
@@ -76,4 +76,3 @@ export const announcement_2024_05_10_ardres: Announcement = AnnouncementSchema.p
     },
   ],
 });
-

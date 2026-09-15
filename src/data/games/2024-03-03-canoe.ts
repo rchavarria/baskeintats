@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_03_03_canoe: Game = GameSchema.parse({
   id: "S34-liga-plata-f2-j8",
@@ -16,16 +16,16 @@ export const game_2024_03_03_canoe: Game = GameSchema.parse({
     round: "J8",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [19, 10, 12, 16],
   },
 
   away: {
-    club: teams["canoe"],
+    club: teams.canoe,
     category: "U14M",
     opponent: true,
     scores: [21, 11, 25, 6],
@@ -56,4 +56,3 @@ export const game_2024_03_03_canoe: Game = GameSchema.parse({
 
   references: [],
 });
-

@@ -1,10 +1,10 @@
-import { useMemo, useEffect } from "react";
-import { useEvents } from "../../hooks/useEvents";
-import { useFiltersContext } from "../../context/FiltersContext";
+import { useEffect, useMemo } from "react";
+import { getEvents } from "../../data/events";
+import { useFilters } from "../../hooks/useFilters";
 
 export function CompetitionFilter() {
-  const events = useEvents();
-  const { filters, setFilters } = useFiltersContext();
+  const events = getEvents();
+  const { filters, setFilters } = useFilters();
 
   const competitions = useMemo(() => {
     const names = new Set<string>();
@@ -77,4 +77,3 @@ export function CompetitionFilter() {
     </div>
   );
 }
-

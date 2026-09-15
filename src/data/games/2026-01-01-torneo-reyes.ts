@@ -1,6 +1,6 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2026_01_01_torneo_reyes: Announcement = AnnouncementSchema.parse({
   id: "S56-torneo-reyes",
@@ -13,7 +13,7 @@ export const announcement_2026_01_01_torneo_reyes: Announcement = AnnouncementSc
 
   category: "U15M",
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   description: [
     "Torneo cadete de primer año organizado por el club donde han invitado a equipos U15 de muy alto nivel, sobre todo de Madrid",

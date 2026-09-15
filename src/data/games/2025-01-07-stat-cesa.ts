@@ -1,11 +1,11 @@
-import type {Stats} from "../../model/StatsSchema.ts";
-import {StatsSchema} from "../../model/StatsSchema.ts";
-import {game_2025_01_03_seleccion_murcia} from "./2025-01-03-seleccion-murcia.ts";
-import {game_2025_01_04_seleccion_melilla} from "./2025-01-04-seleccion-melilla.ts";
-import {game_2025_01_04_seleccion_canarias} from "./2025-01-04-seleccion-canarias.ts";
-import {game_2025_01_05_seleccion_baleares} from "./2025-01-05-seleccion-baleares.ts";
-import {game_2025_01_06_seleccion_galicia} from "./2025-01-06-seleccion-galicia.ts";
-import {game_2025_01_07_seleccion_valencia} from "./2025-01-07-seleccion-valencia.ts";
+import type { Stats } from "../../model/StatsSchema.ts";
+import { StatsSchema } from "../../model/StatsSchema.ts";
+import { game_2025_01_03_seleccion_murcia } from "./2025-01-03-seleccion-murcia.ts";
+import { game_2025_01_04_seleccion_canarias } from "./2025-01-04-seleccion-canarias.ts";
+import { game_2025_01_04_seleccion_melilla } from "./2025-01-04-seleccion-melilla.ts";
+import { game_2025_01_05_seleccion_baleares } from "./2025-01-05-seleccion-baleares.ts";
+import { game_2025_01_06_seleccion_galicia } from "./2025-01-06-seleccion-galicia.ts";
+import { game_2025_01_07_seleccion_valencia } from "./2025-01-07-seleccion-valencia.ts";
 
 export const stat_2025_01_07_cesa: Stats = StatsSchema.parse({
   id: "S45-stat-cesa",
@@ -48,7 +48,8 @@ export const stat_2025_01_07_cesa: Stats = StatsSchema.parse({
     },
     {
       type: "article",
-      label: "No solo ha sido la infantil la que ha cosechado triunfos, otras selecciones madrileñas también",
+      label:
+        "No solo ha sido la infantil la que ha cosechado triunfos, otras selecciones madrileñas también",
       url: "https://www.fbm.es/noticia-123-12317/%C3%A9xito-de-las-selecciones-madrile%C3%B1as",
     },
     {
@@ -68,7 +69,8 @@ export const stat_2025_01_07_cesa: Stats = StatsSchema.parse({
     },
     {
       type: "article",
-      label: "Rematando ya el campeonato, unas palabras del entrenador: Los campeones de España, uno a uno",
+      label:
+        "Rematando ya el campeonato, unas palabras del entrenador: Los campeones de España, uno a uno",
       url: "https://www.fbm.es/noticia-123-12323/los-campeones-de-espa%C3%B1a,-uno-a-uno",
     },
     {

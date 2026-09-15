@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_04_19_lleida: Game = GameSchema.parse({
   id: "S45-mhl-zaragoza-cuartos",
@@ -19,13 +19,13 @@ export const game_2025_04_19_lleida: Game = GameSchema.parse({
   venue: venues["alberto-maestro"],
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [22, 19, 17, 4],
   },
 
   away: {
-    club: teams["lleida"],
+    club: teams.lleida,
     category: "U14M",
     opponent: true,
     scores: [12, 8, 8, 11],
@@ -58,4 +58,3 @@ export const game_2025_04_19_lleida: Game = GameSchema.parse({
 
   references: [],
 });
-

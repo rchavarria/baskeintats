@@ -1,7 +1,7 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const announcement_2024_11_19_torneo_fll: Announcement = AnnouncementSchema.parse({
   id: "S45-torneo-fll",
@@ -24,12 +24,12 @@ export const announcement_2024_11_19_torneo_fll: Announcement = AnnouncementSche
     {
       label: "Grupos - J1",
       date: "2024-11-22T17:00:00Z",
-      opponent: teams["estudiantes"].name,
+      opponent: teams.estudiantes.name,
     },
     {
       label: "Grupos - J2",
       date: "2024-11-23T08:00:00Z",
-      opponent: teams["barca"].name,
+      opponent: teams.barca.name,
     },
   ],
 
@@ -61,4 +61,3 @@ export const announcement_2024_11_19_torneo_fll: Announcement = AnnouncementSche
     },
   ],
 });
-

@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_01_10_getafe: Game = GameSchema.parse({
   id: "S56-liga-plata-f2-gb-j1",
@@ -16,16 +16,16 @@ export const game_2026_01_10_getafe: Game = GameSchema.parse({
     round: "J1",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [15, 18, 19, 14],
   },
 
   away: {
-    club: teams["getafe"],
+    club: teams.getafe,
     category: "U16M",
     opponent: true,
     scores: [11, 19, 7, 20],
@@ -87,4 +87,3 @@ export const game_2026_01_10_getafe: Game = GameSchema.parse({
     },
   ],
 });
-

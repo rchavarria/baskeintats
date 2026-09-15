@@ -1,8 +1,8 @@
-import {FriendlyGameSchema} from "../../model/GameSchema.ts";
-import type {FriendlyGame} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
-import {EmptyPlayerStats} from "../../model/PlayerSchema.ts";
+import type { FriendlyGame } from "../../model/GameSchema.ts";
+import { FriendlyGameSchema } from "../../model/GameSchema.ts";
+import { EmptyPlayerStats } from "../../model/PlayerSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_07_31_dme_others: FriendlyGame = FriendlyGameSchema.parse({
   id: "S45-dme-others",
@@ -17,19 +17,19 @@ export const game_2025_07_31_dme_others: FriendlyGame = FriendlyGameSchema.parse
     round: "J1",
   },
 
-  venue: venues["dme"],
+  venue: venues.dme,
 
   home: {
     club: teams["dme-spain"],
     category: "U14M",
-    scores: [ 73 ],
+    scores: [73],
   },
 
   away: {
     club: teams["dme-others"],
     category: "U14M",
     opponent: true,
-    scores: [ 72 ],
+    scores: [72],
   },
 
   playerStats: EmptyPlayerStats,
@@ -46,9 +46,7 @@ export const game_2025_07_31_dme_others: FriendlyGame = FriendlyGameSchema.parse
 
   recap: {
     title: "Preparando los partidos de este fin de semana",
-    lines: [
-      "Partido amistoso preparando el fin de semana",
-    ],
+    lines: ["Partido amistoso preparando el fin de semana"],
   },
 
   references: [
@@ -63,6 +61,4 @@ export const game_2025_07_31_dme_others: FriendlyGame = FriendlyGameSchema.parse
       url: "https://www.instagram.com/p/DM3UPlLRgSv/",
     },
   ],
-
 });
-

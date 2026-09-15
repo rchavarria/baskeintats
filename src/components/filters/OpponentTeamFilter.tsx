@@ -1,12 +1,12 @@
 import { useMemo } from "react";
-import { useEvents } from "../../hooks/useEvents";
-import { useFiltersContext } from "../../context/FiltersContext";
+import { getEvents } from "../../data/events";
+import { useFilters } from "../../hooks/useFilters";
 
 type TeamOption = { id: string; name: string };
 
 export function OpponentTeamFilter() {
-  const events = useEvents();
-  const { filters, setFilters } = useFiltersContext();
+  const events = getEvents();
+  const { filters, setFilters } = useFilters();
 
   const opponents = useMemo<TeamOption[]>(() => {
     const map = new Map<string, string>();
@@ -24,9 +24,7 @@ export function OpponentTeamFilter() {
 
   return (
     <div className="bg-white rounded-xl shadow border border-gray-100 p-4">
-      <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">
-        Opponent
-      </h2>
+      <h2 className="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">Opponent</h2>
       <ul className="flex flex-col gap-1">
         <li>
           <button
@@ -60,4 +58,3 @@ export function OpponentTeamFilter() {
     </div>
   );
 }
-

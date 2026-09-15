@@ -1,7 +1,7 @@
-import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import type { AdvancedGame } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2025_05_17_rozas: AdvancedGame = AdvancedGameSchema.parse({
   id: "S45-liga-ahorramas-f4-semis",
@@ -16,16 +16,16 @@ export const game_2025_05_17_rozas: AdvancedGame = AdvancedGameSchema.parse({
     round: "Semis",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [21, 19, 19, 16],
   },
 
   away: {
-    club: teams["rozas"],
+    club: teams.rozas,
     category: "U14M",
     opponent: true,
     scores: [11, 20, 13, 15],
@@ -107,4 +107,3 @@ export const game_2025_05_17_rozas: AdvancedGame = AdvancedGameSchema.parse({
     },
   ],
 });
-

@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_03_22_canoe: Game = GameSchema.parse({
   id: "S56-liga-plata-f2-gb-j10",
@@ -16,16 +16,16 @@ export const game_2026_03_22_canoe: Game = GameSchema.parse({
     round: "J10",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U15M",
     scores: [29, 18, 17, 18],
   },
 
   away: {
-    club: teams["canoe"],
+    club: teams.canoe,
     category: "U16M",
     opponent: true,
     scores: [16, 20, 19, 19],
@@ -91,4 +91,3 @@ export const game_2026_03_22_canoe: Game = GameSchema.parse({
     },
   ],
 });
-

@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_03_07_tres_cantos: Game = GameSchema.parse({
   id: "S56-liga-plata-f2-gd-j8",
@@ -16,7 +16,7 @@ export const game_2026_03_07_tres_cantos: Game = GameSchema.parse({
     round: "J8",
   },
 
-  venue: venues["luz"],
+  venue: venues.luz,
 
   home: {
     club: teams["tres-cantos"],
@@ -26,7 +26,7 @@ export const game_2026_03_07_tres_cantos: Game = GameSchema.parse({
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [13, 28, 15, 12, 15],
   },
@@ -92,4 +92,3 @@ export const game_2026_03_07_tres_cantos: Game = GameSchema.parse({
     },
   ],
 });
-

@@ -1,10 +1,10 @@
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import {Layout} from "./components/layout/Layout";
-import {HomePage} from "./pages/HomePage";
-import {GameDetailPage} from "./pages/GameDetailPage";
-import {FiltersProvider} from "./context/FiltersContext";
-import {AnnouncementDetailPage} from "./pages/AnnouncementDetailPage.tsx";
-import {ScoutingDetailPage} from "./pages/ScoutingDetailPage.tsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Layout } from "./components/layout/Layout";
+import { FiltersProvider } from "./context/FiltersContext";
+import { AnnouncementDetailPage } from "./pages/AnnouncementDetailPage.tsx";
+import { GameDetailPage } from "./pages/GameDetailPage";
+import { HomePage } from "./pages/HomePage";
+import { ScoutingDetailPage } from "./pages/ScoutingDetailPage.tsx";
 
 export function App() {
   return (

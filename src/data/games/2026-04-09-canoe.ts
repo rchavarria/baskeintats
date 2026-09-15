@@ -1,7 +1,7 @@
-import type {Game} from "../../model/GameSchema.ts";
-import {GameSchema} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_04_09_canoe: Game = GameSchema.parse({
   id: "S56-liga-plata-pre-playoff-j1",
@@ -19,16 +19,16 @@ export const game_2026_04_09_canoe: Game = GameSchema.parse({
   venue: venues["pez-volador"],
 
   home: {
-    club: teams["canoe"],
+    club: teams.canoe,
     category: "U16M",
     opponent: true,
-    scores: [ 16, 23, 25, 20 ],
+    scores: [16, 23, 25, 20],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
-    scores: [ 27, 11, 21, 20 ],
+    scores: [27, 11, 21, 20],
   },
 
   playerStats: {
@@ -55,7 +55,7 @@ export const game_2026_04_09_canoe: Game = GameSchema.parse({
         label: "Canal CBA/Zilberman",
         url: "https://youtu.be/-",
       },
-    ]
+    ],
   },
 
   references: [
@@ -90,5 +90,4 @@ export const game_2026_04_09_canoe: Game = GameSchema.parse({
       "Ahora nos quedan dos finales, si perdemos, para casa",
     ],
   },
-
 });

@@ -1,10 +1,10 @@
-import { describe, it, expect } from 'vitest';
-import { PlayerStatsFormatterImpl } from './PlayerStatsFormatterImpl';
-import type { PlayerStats } from '../../model/PlayerSchema';
+import { describe, expect, it } from "vitest";
+import type { PlayerStats } from "../../model/PlayerSchema";
+import { PlayerStatsFormatterImpl } from "./PlayerStatsFormatterImpl";
 
-describe('PlayerStatsFormatterImpl', () => {
-  describe('hasStats()', () => {
-    it('should return false when time === 0 AND points === 0', () => {
+describe("PlayerStatsFormatterImpl", () => {
+  describe("hasStats()", () => {
+    it("should return false when time === 0 AND points === 0", () => {
       const stats: PlayerStats = {
         time: 0,
         fieldGoals: 0,
@@ -18,7 +18,7 @@ describe('PlayerStatsFormatterImpl', () => {
       expect(formatter.hasStats()).toBe(false);
     });
 
-    it('should return true when time > 0 AND points === 0 (bad game)', () => {
+    it("should return true when time > 0 AND points === 0 (bad game)", () => {
       const stats: PlayerStats = {
         time: 120,
         fieldGoals: 0,
@@ -32,7 +32,7 @@ describe('PlayerStatsFormatterImpl', () => {
       expect(formatter.hasStats()).toBe(true);
     });
 
-    it('should return true when time === 0 AND points > 0 (impossible, but true)', () => {
+    it("should return true when time === 0 AND points > 0 (impossible, but true)", () => {
       const stats: PlayerStats = {
         time: 0,
         fieldGoals: 5,
@@ -46,7 +46,7 @@ describe('PlayerStatsFormatterImpl', () => {
       expect(formatter.hasStats()).toBe(true);
     });
 
-    it('should return true when time > 0 AND points > 0', () => {
+    it("should return true when time > 0 AND points > 0", () => {
       const stats: PlayerStats = {
         time: 1200,
         fieldGoals: 8,
@@ -61,7 +61,7 @@ describe('PlayerStatsFormatterImpl', () => {
     });
   });
 
-  describe('kind()', () => {
+  describe("kind()", () => {
     it('should return "basic"', () => {
       const stats: PlayerStats = {
         time: 1200,
@@ -73,12 +73,12 @@ describe('PlayerStatsFormatterImpl', () => {
         efficiency: 15,
       };
       const formatter = new PlayerStatsFormatterImpl(stats);
-      expect(formatter.kind()).toBe('basic');
+      expect(formatter.kind()).toBe("basic");
     });
   });
 
-  describe('formatPlayedTime()', () => {
-    it('should format seconds to MM:SS', () => {
+  describe("formatPlayedTime()", () => {
+    it("should format seconds to MM:SS", () => {
       const stats: PlayerStats = {
         time: 754, // 12:34
         fieldGoals: 0,
@@ -89,10 +89,10 @@ describe('PlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new PlayerStatsFormatterImpl(stats);
-      expect(formatter.formatPlayedTime()).toBe('12:34');
+      expect(formatter.formatPlayedTime()).toBe("12:34");
     });
 
-    it('should pad with zeros', () => {
+    it("should pad with zeros", () => {
       const stats: PlayerStats = {
         time: 65, // 01:05
         fieldGoals: 0,
@@ -103,12 +103,12 @@ describe('PlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new PlayerStatsFormatterImpl(stats);
-      expect(formatter.formatPlayedTime()).toBe('01:05');
+      expect(formatter.formatPlayedTime()).toBe("01:05");
     });
   });
 
-  describe('formatPoints()', () => {
-    it('should calculate total points: 3*threePointers + 2*fieldGoals + freeThrows', () => {
+  describe("formatPoints()", () => {
+    it("should calculate total points: 3*threePointers + 2*fieldGoals + freeThrows", () => {
       const stats: PlayerStats = {
         time: 0,
         fieldGoals: 8,
@@ -120,12 +120,12 @@ describe('PlayerStatsFormatterImpl', () => {
       };
       // Points: 3*3 + 2*8 + 2 = 9 + 16 + 2 = 27
       const formatter = new PlayerStatsFormatterImpl(stats);
-      expect(formatter.formatPoints()).toBe('27');
+      expect(formatter.formatPoints()).toBe("27");
     });
   });
 
-  describe('formatFieldGoals()', () => {
-    it('should return number as string (basic format)', () => {
+  describe("formatFieldGoals()", () => {
+    it("should return number as string (basic format)", () => {
       const stats: PlayerStats = {
         time: 0,
         fieldGoals: 8,
@@ -136,12 +136,12 @@ describe('PlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new PlayerStatsFormatterImpl(stats);
-      expect(formatter.formatFieldGoals()).toBe('8');
+      expect(formatter.formatFieldGoals()).toBe("8");
     });
   });
 
-  describe('formatThreePointers()', () => {
-    it('should return number as string (basic format)', () => {
+  describe("formatThreePointers()", () => {
+    it("should return number as string (basic format)", () => {
       const stats: PlayerStats = {
         time: 0,
         fieldGoals: 0,
@@ -152,11 +152,11 @@ describe('PlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new PlayerStatsFormatterImpl(stats);
-      expect(formatter.formatThreePointers()).toBe('3');
+      expect(formatter.formatThreePointers()).toBe("3");
     });
   });
 
-  describe('formatFreeThrows()', () => {
+  describe("formatFreeThrows()", () => {
     it('should return "made/attempted (percentage%)"', () => {
       const stats: PlayerStats = {
         time: 0,
@@ -168,10 +168,10 @@ describe('PlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new PlayerStatsFormatterImpl(stats);
-      expect(formatter.formatFreeThrows()).toBe('4/5 (80%)');
+      expect(formatter.formatFreeThrows()).toBe("4/5 (80%)");
     });
 
-    it('should handle division by zero', () => {
+    it("should handle division by zero", () => {
       const stats: PlayerStats = {
         time: 0,
         fieldGoals: 0,
@@ -182,12 +182,12 @@ describe('PlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new PlayerStatsFormatterImpl(stats);
-      expect(formatter.formatFreeThrows()).toBe('0/0 (0%)');
+      expect(formatter.formatFreeThrows()).toBe("0/0 (0%)");
     });
   });
 
-  describe('formatFaults()', () => {
-    it('should return number as string (basic: simple number)', () => {
+  describe("formatFaults()", () => {
+    it("should return number as string (basic: simple number)", () => {
       const stats: PlayerStats = {
         time: 0,
         fieldGoals: 0,
@@ -198,11 +198,11 @@ describe('PlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new PlayerStatsFormatterImpl(stats);
-      expect(formatter.formatFaults()).toBe('2');
+      expect(formatter.formatFaults()).toBe("2");
     });
   });
 
-  describe('formatPlusMinus()', () => {
+  describe("formatPlusMinus()", () => {
     it('should return "+X" for positive values', () => {
       const stats: PlayerStats = {
         time: 0,
@@ -214,7 +214,7 @@ describe('PlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new PlayerStatsFormatterImpl(stats);
-      expect(formatter.formatPlusMinus()).toBe('+5');
+      expect(formatter.formatPlusMinus()).toBe("+5");
     });
 
     it('should return "-X" for negative values', () => {
@@ -228,7 +228,7 @@ describe('PlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new PlayerStatsFormatterImpl(stats);
-      expect(formatter.formatPlusMinus()).toBe('-3');
+      expect(formatter.formatPlusMinus()).toBe("-3");
     });
 
     it('should return "0" for zero', () => {
@@ -242,12 +242,12 @@ describe('PlayerStatsFormatterImpl', () => {
         efficiency: 0,
       };
       const formatter = new PlayerStatsFormatterImpl(stats);
-      expect(formatter.formatPlusMinus()).toBe('0');
+      expect(formatter.formatPlusMinus()).toBe("0");
     });
   });
 
-  describe('formatEfficiency()', () => {
-    it('should return efficiency as string', () => {
+  describe("formatEfficiency()", () => {
+    it("should return efficiency as string", () => {
       const stats: PlayerStats = {
         time: 0,
         fieldGoals: 0,
@@ -258,8 +258,7 @@ describe('PlayerStatsFormatterImpl', () => {
         efficiency: 15,
       };
       const formatter = new PlayerStatsFormatterImpl(stats);
-      expect(formatter.formatEfficiency()).toBe('15');
+      expect(formatter.formatEfficiency()).toBe("15");
     });
   });
 });
-

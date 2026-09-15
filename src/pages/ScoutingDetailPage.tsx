@@ -1,10 +1,10 @@
-import {Link, useParams} from "react-router-dom";
-import {useEvents} from "../hooks/useEvents.ts";
-import {EmptyState} from "../components/ui/EmptyState";
-import {DateTimeDisplay} from "../components/ui/DateTimeDisplay.tsx";
-import {CategoryBadge} from "../components/ui/CategoryBadge.tsx";
-import type {Clip} from "../model/ScoutingSchema.ts";
-import {clipUrl} from "../lib/clipUrl.ts";
+import { Link, useParams } from "react-router-dom";
+import { CategoryBadge } from "../components/ui/CategoryBadge.tsx";
+import { DateTimeDisplay } from "../components/ui/DateTimeDisplay.tsx";
+import { EmptyState } from "../components/ui/EmptyState";
+import { getEvents } from "../data/events.ts";
+import { clipUrl } from "../lib/clipUrl.ts";
+import type { Clip } from "../model/ScoutingSchema.ts";
 
 function clipTypeEmoji(type: Clip["type"]): string {
   return type === "good-play" ? "🟢" : "🔴";
@@ -15,11 +15,11 @@ function clipTypeLabel(type: Clip["type"]): string {
 }
 
 export function ScoutingDetailPage() {
-  const {scoutingId} = useParams<{scoutingId: string}>();
-  const events = useEvents();
+  const { scoutingId } = useParams<{ scoutingId: string }>();
+  const events = getEvents();
 
-  const scouting = events.find(e => e.id === scoutingId);
-  if (!scouting || scouting.type !== "scouting") {
+  const scouting = events.find((e) => e.id === scoutingId);
+  if (scouting?.type !== "scouting") {
     return <EmptyState message="Scouting no encontrado" />;
   }
 
@@ -47,8 +47,10 @@ export function ScoutingDetailPage() {
       {/* Description */}
       <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
         <h2 className="font-semibold text-gray-700 mb-3">📝 Descripción</h2>
-        {scouting.description.map((line, i) => (
-          <p key={i} className="text-gray-600 leading-relaxed mb-2">{line}</p>
+        {scouting.description.map((line) => (
+          <p key={line} className="text-gray-600 leading-relaxed mb-2">
+            {line}
+          </p>
         ))}
       </div>
 
@@ -69,13 +71,11 @@ export function ScoutingDetailPage() {
       {/* Clips */}
       {scouting.clips.length > 0 && (
         <div className="bg-white rounded-xl shadow p-6 border border-gray-100 mb-6">
-          <h2 className="font-semibold text-gray-700 mb-4">
-            🎞️ Clips ({scouting.clips.length})
-          </h2>
+          <h2 className="font-semibold text-gray-700 mb-4">🎞️ Clips ({scouting.clips.length})</h2>
           <ol className="flex flex-col gap-3">
-            {scouting.clips.map((clip, i) => (
+            {scouting.clips.map((clip) => (
               <li
-                key={i}
+                key={clip.start}
                 className="flex items-start gap-3 border border-gray-100 rounded-lg p-3"
               >
                 <span className="shrink-0 font-mono text-sm font-semibold text-gray-500 w-14 text-right pt-0.5">
@@ -104,4 +104,3 @@ export function ScoutingDetailPage() {
     </div>
   );
 }
-

@@ -1,15 +1,15 @@
 import { renderHook } from "@testing-library/react";
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
+import type { Filters } from "../context/FiltersContextDefinition";
+import { getEvents } from "../data/events";
 import { useFilteredEvents } from "./useFilteredEvents";
-import { useEvents } from "./useEvents";
-import { useFiltersContext } from "../context/FiltersContext";
-import type { Filters } from "../context/FiltersContext";
+import { useFilters } from "./useFilters";
 
-vi.mock("./useEvents");
-vi.mock("../context/FiltersContext");
+vi.mock("../data/events");
+vi.mock("./useFilters");
 
-const mockUseEvents = vi.mocked(useEvents);
-const mockUseFiltersContext = vi.mocked(useFiltersContext);
+const mockGetEvents = vi.mocked(getEvents);
+const mockUseFilters = vi.mocked(useFilters);
 
 // ─── Minimal mock events ────────────────────────────────────────────────────
 
@@ -71,7 +71,7 @@ function withFilters(partial: Partial<Filters>) {
     dateFrom: "",
     dateTo: "",
   };
-  mockUseFiltersContext.mockReturnValue({
+  mockUseFilters.mockReturnValue({
     filters: { ...defaults, ...partial },
     setFilters: vi.fn(),
     resetFilters: vi.fn(),
@@ -83,7 +83,7 @@ function withFilters(partial: Partial<Filters>) {
 describe("useFilteredEvents", () => {
   beforeEach(() => {
     // biome-ignore lint/suspicious/noExplicitAny: test mock
-    mockUseEvents.mockReturnValue(allEvents as any);
+    mockGetEvents.mockReturnValue(allEvents as any);
     withFilters({});
   });
 
@@ -164,7 +164,9 @@ describe("useFilteredEvents", () => {
     it("excludes events without competition (announcements, stats)", () => {
       withFilters({ competition: "Liga Autonómica" });
       const { result } = renderHook(() => useFilteredEvents());
-      expect(result.current.every((e) => e.type !== "announcement" && e.type !== "stats")).toBe(true);
+      expect(result.current.every((e) => e.type !== "announcement" && e.type !== "stats")).toBe(
+        true,
+      );
     });
 
     it("returns empty list when no event matches the competition", () => {
@@ -196,4 +198,3 @@ describe("useFilteredEvents", () => {
     });
   });
 });
-

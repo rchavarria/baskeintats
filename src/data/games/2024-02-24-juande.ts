@@ -1,7 +1,7 @@
-import { GameSchema } from "../../model/GameSchema.ts";
 import type { Game } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_02_24_juande: Game = GameSchema.parse({
   id: "S34-liga-plata-f2-j6",
@@ -16,17 +16,17 @@ export const game_2024_02_24_juande: Game = GameSchema.parse({
     round: "J6",
   },
 
-  venue: venues["juande"],
+  venue: venues.juande,
 
   home: {
-    club: teams["juande"],
+    club: teams.juande,
     category: "U14M",
     opponent: true,
     scores: [22, 12, 25, 13],
   },
 
   away: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U13M",
     scores: [13, 13, 8, 6],
   },
@@ -47,7 +47,8 @@ export const game_2024_02_24_juande: Game = GameSchema.parse({
   },
 
   recap: {
-    title: "Partido para olvidar, nos hemos centrado más en echarle la culpa a los árbitros (alguno perdió los papeles y lo expulsaron del pabellón) que en jugar, pero es que el rival estaba más preocupado de golpearnos que de jugar a baloncesto",
+    title:
+      "Partido para olvidar, nos hemos centrado más en echarle la culpa a los árbitros (alguno perdió los papeles y lo expulsaron del pabellón) que en jugar, pero es que el rival estaba más preocupado de golpearnos que de jugar a baloncesto",
     lines: [
       "Eso sí, nuestros chicos no dejan de pelear todos los partidos, se va notando que cada vez son más y más fuertes",
     ],
@@ -55,4 +56,3 @@ export const game_2024_02_24_juande: Game = GameSchema.parse({
 
   references: [],
 });
-

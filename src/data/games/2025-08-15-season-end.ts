@@ -1,5 +1,5 @@
-import {AnnouncementSchema} from "../../model/AnnouncementSchema.ts";
-import type {Announcement} from "../../model/AnnouncementSchema.ts";
+import type { Announcement } from "../../model/AnnouncementSchema.ts";
+import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
 
 export const announcement_2025_08_15_season_end: Announcement = AnnouncementSchema.parse({
   id: "S45-season-end",
@@ -11,10 +11,7 @@ export const announcement_2025_08_15_season_end: Announcement = AnnouncementSche
   announcementType: "milestone",
   category: "U14M",
 
-  description: [
-    "Ha sido un año brutal, deseando de comenzar de nuevo",
-  ],
+  description: ["Ha sido un año brutal, deseando de comenzar de nuevo"],
 
   references: [],
 });
-

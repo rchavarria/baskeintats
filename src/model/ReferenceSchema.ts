@@ -1,14 +1,14 @@
-import {z} from "zod";
+import { z } from "zod";
 
 export const ReferenceSchema = z.object({
   type: z.enum([
-    "article",      // 📰
-    "document",     // 💼
-    "photo",        // 📸
-    "stats",        // 📈
+    "article", // 📰
+    "document", // 💼
+    "photo", // 📸
+    "stats", // 📈
     "social-media", // 📱
-    "web",          // 💻
-    "video",        // 🎥
+    "web", // 💻
+    "video", // 🎥
   ]),
   label: z.string(),
   url: z.url(),

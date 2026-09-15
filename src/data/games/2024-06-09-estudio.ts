@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2024_06_09_estudio: Game = GameSchema.parse({
   id: "S34-liga-ahorramas-oro-f3-j3",
@@ -17,16 +17,16 @@ export const game_2024_06_09_estudio: Game = GameSchema.parse({
     round: "J3",
   },
 
-  venue: venues["antela"],
+  venue: venues.antela,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [27, 19, 30, 8],
   },
 
   away: {
-    club: teams["estudio"],
+    club: teams.estudio,
     category: "U14M",
     opponent: true,
     scores: [21, 20, 12, 22],
@@ -49,9 +49,7 @@ export const game_2024_06_09_estudio: Game = GameSchema.parse({
 
   recap: {
     title: "¡Se acabó!",
-    lines: [
-      "Último partido, un doloroso adiós",
-    ],
+    lines: ["Último partido, un doloroso adiós"],
   },
 
   references: [],

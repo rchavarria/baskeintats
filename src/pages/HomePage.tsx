@@ -1,13 +1,13 @@
-import {useFilteredEvents} from "../hooks/useFilteredEvents.ts";
-import {GameCard} from "../components/events/GameCard";
-import {EmptyState} from "../components/ui/EmptyState";
-import {AnnouncementCard} from "../components/events/AnnouncementCard.tsx";
-import {DefaultCard} from "../components/events/DefaultCard.tsx";
-import {StatsCard} from "../components/events/StatsCard.tsx";
-import {ScoutingCard} from "../components/events/ScoutingCard.tsx";
-import {SeasonFilter} from "../components/filters/SeasonFilter.tsx";
-import {EventTypeFilter} from "../components/filters/EventTypeFilter.tsx";
-import {CompetitionFilter} from "../components/filters/CompetitionFilter.tsx";
+import { AnnouncementCard } from "../components/events/AnnouncementCard.tsx";
+import { DefaultCard } from "../components/events/DefaultCard.tsx";
+import { GameCard } from "../components/events/GameCard";
+import { ScoutingCard } from "../components/events/ScoutingCard.tsx";
+import { StatsCard } from "../components/events/StatsCard.tsx";
+import { CompetitionFilter } from "../components/filters/CompetitionFilter.tsx";
+import { EventTypeFilter } from "../components/filters/EventTypeFilter.tsx";
+import { SeasonFilter } from "../components/filters/SeasonFilter.tsx";
+import { EmptyState } from "../components/ui/EmptyState";
+import { useFilteredEvents } from "../hooks/useFilteredEvents.ts";
 
 export function HomePage() {
   const events = useFilteredEvents();
@@ -25,24 +25,22 @@ export function HomePage() {
           <EmptyState message="No hay partidos recientes" />
         ) : (
           <div className="flex flex-col gap-4">
-            {
-              events.map(e => {
-                switch (e.type) {
-                case 'announcement':
+            {events.map((e) => {
+              switch (e.type) {
+                case "announcement":
                   return <AnnouncementCard key={e.id} announcement={e} />;
-                case 'stats':
+                case "stats":
                   return <StatsCard key={e.id} stats={e} />;
-                case 'scouting':
+                case "scouting":
                   return <ScoutingCard key={e.id} scouting={e} />;
-                case 'friendly-game':
-                case 'advanced-game':
-                case 'game':
+                case "friendly-game":
+                case "advanced-game":
+                case "game":
                   return <GameCard key={e.id} game={e} />;
                 default:
                   return <DefaultCard key={e.id} game={e} />;
-                }
-              })
-            }
+              }
+            })}
           </div>
         )}
       </main>

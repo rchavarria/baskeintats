@@ -1,7 +1,7 @@
-import {GameSchema} from "../../model/GameSchema.ts";
-import type {Game} from "../../model/GameSchema.ts";
-import {venues} from "../venues.ts";
-import {teams} from "../teams.ts";
+import type { Game } from "../../model/GameSchema.ts";
+import { GameSchema } from "../../model/GameSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2023_10_22_alcorcon: Game = GameSchema.parse({
   id: "S34-liga-oro-f1-j4",
@@ -17,16 +17,16 @@ export const game_2023_10_22_alcorcon: Game = GameSchema.parse({
     round: "J4",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U14M",
     scores: [8, 26, 19, 26],
   },
 
   away: {
-    club: teams["alcorcon"],
+    club: teams.alcorcon,
     category: "U14M",
     opponent: true,
     scores: [19, 9, 28, 15],
@@ -58,9 +58,9 @@ export const game_2023_10_22_alcorcon: Game = GameSchema.parse({
   references: [
     {
       type: "photo",
-      label: "El fotógrafo de la federación estaba por allí para tomar esta foto con el cachorro al fondo",
+      label:
+        "El fotógrafo de la federación estaba por allí para tomar esta foto con el cachorro al fondo",
       url: "https://flic.kr/p/2pb3dkj",
     },
   ],
 });
-
