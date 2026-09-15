@@ -46,6 +46,7 @@ import { game_2026_05_31_torrelodones } from "../../data/games/2026-05-31-torrel
 import type { Game } from "../../model/GameSchema";
 import { GameCard } from "./GameCard";
 import { game_2026_09_17_coslada } from "../../data/games/2026-09-17-coslada.ts";
+import { game_2024_12_15_alcobendas } from "../../data/games/2024-12-15-alcobendas.ts";
 
 const fakeGame: Game = game_2025_09_20_alcorcon;
 
@@ -214,8 +215,9 @@ describe("GameCard (friendly game)", () => {
   it.each([
     [game_2024_09_15_estudiantes],
     [game_2024_10_19_ucam_murcia],
-    [game_2025_08_01_dme_red_black],
+    [game_2024_12_15_alcobendas],
     [game_2025_07_31_dme_others],
+    [game_2025_08_01_dme_red_black],
     [game_2025_09_06_rozas],
     [game_2025_09_07_godella],
     [game_2025_09_13_canoe],
