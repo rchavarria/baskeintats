@@ -1,8 +1,8 @@
 import type { FriendlyGame } from "../../model/GameSchema.ts";
 import { FriendlyGameSchema } from "../../model/GameSchema.ts";
-import { venues } from "../venues.ts";
-import { teams } from "../teams.ts";
 import { EmptyPlayerStats } from "../../model/PlayerSchema.ts";
+import { teams } from "../teams.ts";
+import { venues } from "../venues.ts";
 
 export const game_2026_09_17_coslada: FriendlyGame = FriendlyGameSchema.parse({
   id: "S67-amistoso-coslada",
@@ -17,16 +17,16 @@ export const game_2026_09_17_coslada: FriendlyGame = FriendlyGameSchema.parse({
     round: "",
   },
 
-  venue: venues["ferrandiz"],
+  venue: venues.ferrandiz,
 
   home: {
-    club: teams["alcobendas"],
+    club: teams.alcobendas,
     category: "U16M",
     scores: [0],
   },
 
   away: {
-    club: teams["coslada"],
+    club: teams.coslada,
     category: "U18M",
     opponent: true,
     scores: [0],
