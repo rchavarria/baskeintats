@@ -22,14 +22,14 @@ export const game_2026_09_17_coslada: FriendlyGame = FriendlyGameSchema.parse({
   home: {
     club: teams.alcobendas,
     category: "U16M",
-    scores: [0],
+    scores: [4, 19, 11, 13],
   },
 
   away: {
     club: teams.coslada,
     category: "U18M",
     opponent: true,
-    scores: [0],
+    scores: [27, 13, 14, 11],
   },
 
   playerStats: EmptyPlayerStats,
