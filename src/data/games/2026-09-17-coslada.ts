@@ -35,7 +35,7 @@ export const game_2026_09_17_coslada: FriendlyGame = FriendlyGameSchema.parse({
   playerStats: EmptyPlayerStats,
 
   videos: {
-    official: "https://youtu.be/-",
+    official: "https://youtu.be/cNYzmIf1QDg",
     others: [],
   },
 
