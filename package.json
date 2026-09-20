@@ -12,7 +12,7 @@
     "test:watch": "vitest",
     "lint": "biome check .",
     "lint:ci": "biome ci . --error-on-warnings --max-diagnostics=none --reporter=github",
-    "format": "biome format --write ."
+    "format": "biome check . --write"
   },
   "dependencies": {
     "react": "^19.2.4",

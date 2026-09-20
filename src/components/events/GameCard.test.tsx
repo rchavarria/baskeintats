@@ -20,6 +20,7 @@ import { game_2024_05_19_pesaro } from "../../data/games/2024-05-19-pesaro.ts";
 import { game_2024_05_20_certified_athletes } from "../../data/games/2024-05-20-certified-athletes.ts";
 import { game_2024_09_15_estudiantes } from "../../data/games/2024-09-15-estudiantes.ts";
 import { game_2024_10_19_ucam_murcia } from "../../data/games/2024-10-19-ucam-murcia.ts";
+import { game_2024_12_15_alcobendas } from "../../data/games/2024-12-15-alcobendas.ts";
 import { game_2025_07_26_eoss_spartans } from "../../data/games/2025-07-26-eoss-j1-spartans.ts";
 import { game_2025_07_26_eoss_florida } from "../../data/games/2025-07-26-eoss-j2-florida.ts";
 import { game_2025_07_26_eoss_tnt } from "../../data/games/2025-07-26-eoss-j3-tnt.ts";
@@ -32,8 +33,27 @@ import { game_2025_09_07_godella } from "../../data/games/2025-09-07-godella.ts"
 import { game_2025_09_13_canoe } from "../../data/games/2025-09-13-canoe.ts";
 import { game_2025_09_18_distrito } from "../../data/games/2025-09-18-distrito.ts";
 import { game_2025_09_20_alcorcon } from "../../data/games/2025-09-20-alcorcon.ts";
+import { game_2025_09_20_real_madrid } from "../../data/games/2025-09-20-real-madrid.ts";
+import { game_2025_09_28_rozas } from "../../data/games/2025-09-28-rozas.ts";
+import { game_2025_10_05_patrocinio } from "../../data/games/2025-10-05-patrocinio.ts";
+import { game_2025_10_18_estudiantes } from "../../data/games/2025-10-18-estudiantes.ts";
+import { game_2025_10_26_fuenlabrada } from "../../data/games/2025-10-26-fuenlabrada.ts";
+import { game_2025_11_09_real_madrid } from "../../data/games/2025-11-09-real-madrid.ts";
+import { game_2025_11_16_rozas } from "../../data/games/2025-11-16-rozas.ts";
+import { game_2025_11_21_real_madrid } from "../../data/games/2025-11-21-real-madrid.ts";
+import { game_2025_11_22_joventut } from "../../data/games/2025-11-22-joventut.ts";
+import { game_2025_11_23_seleccion_madrid } from "../../data/games/2025-11-23-seleccion-madrid.ts";
+import { game_2025_11_30_estudiantes } from "../../data/games/2025-11-30-estudiantes.ts";
+import { game_2025_12_14_fuenlabrada } from "../../data/games/2025-12-14-fuenlabrada.ts";
+import { game_2025_12_19_malaga } from "../../data/games/2025-12-19-malaga.ts";
+import { game_2025_12_19_torrent } from "../../data/games/2025-12-19-torrent.ts";
+import { game_2025_12_20_olivar } from "../../data/games/2025-12-20-olivar.ts";
+import { game_2025_12_20_sevilla } from "../../data/games/2025-12-20-sevilla.ts";
+import { game_2025_12_21_elche } from "../../data/games/2025-12-21-elche.ts";
 import { game_2025_12_27_canarias } from "../../data/games/2025-12-27-canarias.ts";
 import { game_2025_12_28_oporto } from "../../data/games/2025-12-28-oporto.ts";
+import { game_2026_04_20_zentro } from "../../data/games/2026-04-20-zentro.ts";
+import { game_2026_04_25_zentro } from "../../data/games/2026-04-25-zentro.ts";
 import { game_2026_05_10_torrelodones } from "../../data/games/2026-05-10-torrelodones.ts";
 import { game_2026_05_10_zentro } from "../../data/games/2026-05-10-zentro.ts";
 import { game_2026_05_14_fuenlabrada } from "../../data/games/2026-05-14-fuenlabrada.ts";
@@ -43,6 +63,7 @@ import { game_2026_05_24_real_madrid } from "../../data/games/2026-05-24-real-ma
 import { game_2026_05_27_distrito } from "../../data/games/2026-05-27-distrito.ts";
 import { game_2026_05_30_zentro } from "../../data/games/2026-05-30-zentro.ts";
 import { game_2026_05_31_torrelodones } from "../../data/games/2026-05-31-torrelodones.ts";
+import { game_2026_09_17_coslada } from "../../data/games/2026-09-17-coslada.ts";
 import type { Game } from "../../model/GameSchema";
 import { GameCard } from "./GameCard";
 
@@ -116,6 +137,25 @@ describe("GameCard", () => {
     [game_2026_05_14_fuenlabrada],
     [game_2026_05_10_zentro],
     [game_2026_05_10_torrelodones],
+    [game_2026_04_25_zentro],
+    [game_2026_04_20_zentro],
+    [game_2025_12_21_elche],
+    [game_2025_12_20_sevilla],
+    [game_2025_12_20_olivar],
+    [game_2025_12_19_torrent],
+    [game_2025_12_19_malaga],
+    [game_2025_12_14_fuenlabrada],
+    [game_2025_11_30_estudiantes],
+    [game_2025_11_23_seleccion_madrid],
+    [game_2025_11_22_joventut],
+    [game_2025_11_21_real_madrid],
+    [game_2025_11_16_rozas],
+    [game_2025_11_09_real_madrid],
+    [game_2025_10_26_fuenlabrada],
+    [game_2025_10_18_estudiantes],
+    [game_2025_10_05_patrocinio],
+    [game_2025_09_28_rozas],
+    [game_2025_09_20_real_madrid],
   ])("renders S2025/26 game to the game card", (game) => {
     renderWithRouter(<GameCard game={game} />);
 
@@ -213,14 +253,16 @@ describe("GameCard (friendly game)", () => {
   it.each([
     [game_2024_09_15_estudiantes],
     [game_2024_10_19_ucam_murcia],
-    [game_2025_08_01_dme_red_black],
+    [game_2024_12_15_alcobendas],
     [game_2025_07_31_dme_others],
+    [game_2025_08_01_dme_red_black],
     [game_2025_09_06_rozas],
     [game_2025_09_07_godella],
     [game_2025_09_13_canoe],
     [game_2025_09_18_distrito],
     [game_2025_12_27_canarias],
     [game_2025_12_28_oporto],
+    [game_2026_09_17_coslada],
   ])("renders friendly games to the game card", (game) => {
     renderWithRouter(<GameCard game={game} />);
 
