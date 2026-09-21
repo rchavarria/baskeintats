@@ -65,13 +65,8 @@ export const game_2026_09_20_sba: AdvancedGame = AdvancedGameSchema.parse({
   },
 
   videos: {
-    official: "https://youtu.be/-",
-    others: [
-      {
-        label: "Canal Pou",
-        url: "https://youtu.be/-",
-      },
-    ],
+    official: "https://youtu.be/CdS_UBvzzg8",
+    others: [],
   },
 
   recap: {
