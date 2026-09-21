@@ -67,6 +67,7 @@ import { game_2026_09_17_coslada } from "../../data/games/2026-09-17-coslada.ts"
 import { game_2026_09_20_sba } from "../../data/games/2026-09-20-sba.ts";
 import type { Game } from "../../model/GameSchema";
 import { GameCard } from "./GameCard";
+import {game_2026_09_18_alcobendas_u22} from "../../data/games/2026-09-18-alcobendas-u22.ts";
 
 const fakeGame: Game = game_2025_09_20_alcorcon;
 
@@ -270,8 +271,19 @@ describe("GameCard (friendly game)", () => {
     [game_2025_09_18_distrito],
     [game_2025_12_27_canarias],
     [game_2025_12_28_oporto],
+  ])("renders friendly games to the game card, 2025/26 season", (game) => {
+    renderWithRouter(<GameCard game={game} />);
+
+    expect(screen.getByText("🫂")).toBeInTheDocument();
+    expect(screen.getByText(new RegExp(game.competition.name))).toBeInTheDocument();
+    expect(screen.getByText(game.home.club.name)).toBeInTheDocument();
+    expect(screen.getByText(game.away.club.name)).toBeInTheDocument();
+  });
+
+  it.each([
     [game_2026_09_17_coslada],
-  ])("renders friendly games to the game card", (game) => {
+    [game_2026_09_18_alcobendas_u22],
+  ])("renders friendly games to the game card, 2026/27 season", (game) => {
     renderWithRouter(<GameCard game={game} />);
 
     expect(screen.getByText("🫂")).toBeInTheDocument();
