@@ -64,6 +64,7 @@ import { game_2026_05_27_distrito } from "../../data/games/2026-05-27-distrito.t
 import { game_2026_05_30_zentro } from "../../data/games/2026-05-30-zentro.ts";
 import { game_2026_05_31_torrelodones } from "../../data/games/2026-05-31-torrelodones.ts";
 import { game_2026_09_17_coslada } from "../../data/games/2026-09-17-coslada.ts";
+import { game_2026_09_20_sba } from "../../data/games/2026-09-20-sba.ts";
 import type { Game } from "../../model/GameSchema";
 import { GameCard } from "./GameCard";
 
@@ -112,6 +113,13 @@ describe("GameCard", () => {
 
     // 71 vs 85, away marked as opponent → loss
     expect(screen.getByLabelText("Derrota")).toBeInTheDocument();
+  });
+
+  it.each([[game_2026_09_20_sba]])("renders S2025/26 game to the game card", (game) => {
+    renderWithRouter(<GameCard game={game} />);
+
+    expect(screen.getByText(game.home.club.name)).toBeInTheDocument();
+    expect(screen.getByText(game.away.club.name)).toBeInTheDocument();
   });
 
   it.each([
