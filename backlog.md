@@ -1,6 +1,5 @@
 # Backlog
 
-- 💄 Diseñar tarjetas de estadísticas en la home para que se vean más acorde con las de los partidos
 - 💄 Diseñar tarjetas de anuncios en la home para que se vean más acorde con las de los partidos
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
 - 🤸‍♂️ en los scoutings, o incluso en los partidos, amistosos o no, poder añadir datos sobre el roster de ambos equipos
@@ -11,6 +10,7 @@
 
 ## Done
 
+- 2026-09-23: Diseñar tarjetas de estadísticas en la home para que se vean más acorde con las de los partidos: `StatsCard` usa `rounded-2xl` con borde rojo (`rose-800`) y una cabecera con el mismo degradado rojo que `GameCard` (📈 + título en blanco y una píldora oscura con `CategoryBadge` y fecha); el cuerpo con la tabla sigue en blanco y el pie (descripción y referencias) también es rojo
 - 2026-09-15: Añadir linter (biome) al proyecto
 - 2026-09-11: 🐛 los enlaces de los clips de scouting se generan con `t=seconds` en lugar de `t=minutes:seconds`: extraído `clipUrl` a `src/lib/clipUrl.ts`, que convierte el `start` (`m:ss`, `mm:ss`, `h:mm:ss`) a segundos totales y añade el parámetro con `?` o `&` según la URL
 - 2026-09-07: unificar la tarjeta de partidos amistosos con la de partidos normales: `FriendlyGameCard` usaba el diseño antiguo aunque `FriendlyGame` es idéntico a `Game`; ahora `GameCard` pinta los tres tipos y los amistosos se distinguen solo con el emoji 🫂
