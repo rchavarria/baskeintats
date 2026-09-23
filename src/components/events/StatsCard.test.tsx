@@ -143,11 +143,12 @@ describe("StatsCard", () => {
     [stat_2024_03_18_liga_silver_f2],
     [stat_2023_12_18_liga_gold_f1],
     [stat_2023_12_18_liga_bronze_f1],
-  ])("renders stats metadata and links to the stats detail page", (stats) => {
-    renderWithRouter(<StatsCard stats={stats} />);
+  ])("renders stats metadata without linking to a detail page", (stats) => {
+    const { container } = renderWithRouter(<StatsCard stats={stats} />);
 
     expect(screen.getByText(stats.title)).toBeInTheDocument();
     expect(screen.getByText(stats.category)).toBeInTheDocument();
+    expect(container.querySelector('a[href*="/stats/"]')).toBeNull();
     // expect(screen.getByText(/23.*de.*noviembre.*de.*2025/i)).toBeInTheDocument();
   });
 

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { hasAdvancedPlayerStats } from "../../lib/hasAdvancedPlayerStats.ts";
 import type { AdvancedGame, Game } from "../../model/GameSchema.ts";
 import type { Stats } from "../../model/StatsSchema.ts";
@@ -6,6 +5,7 @@ import { ThreePointersAverage } from "../stats/ThreePointersAverage.tsx";
 import { ThreePointersTotal } from "../stats/ThreePointersTotal.tsx";
 import { TwoPointersAverage } from "../stats/TwoPointersAverage.tsx";
 import { TwoPointersTotal } from "../stats/TwoPointersTotal.tsx";
+import { CategoryBadge } from "../ui/CategoryBadge.tsx";
 import { DateDisplay } from "../ui/DateDisplay.tsx";
 import { PlayedTimeDisplay } from "../ui/PlayedTimeDisplay.tsx";
 import { ReferenceIcons } from "../ui/ReferenceIcons.tsx";
@@ -69,22 +69,33 @@ export function StatsCard({ stats }: StatsCardProps) {
   const summaryTd = "px-2 py-1 text-xs font-semibold text-gray-800";
 
   return (
-    <Link
-      to={`/stats/${stats.id}`}
-      className="block bg-white rounded-xl shadow hover:shadow-md transition p-4 border border-gray-100"
-    >
-      <div className="flex items-center justify-between text-xs text-gray-400 mb-3">
-        <DateDisplay isoDate={stats.date} />
-        <span>{stats.category}</span>
+    <div className="bg-white rounded-2xl shadow overflow-hidden border-2 border-rose-800">
+      {/* Header: same red gradient as the game cards */}
+      <div className="bg-gradient-to-br from-rose-700 via-rose-800 to-rose-900 px-4 py-3 flex items-center justify-between gap-3">
+        <div className="flex items-center gap-3 min-w-0">
+          <span className="text-2xl sm:text-3xl leading-none" aria-hidden="true">
+            📈
+          </span>
+          <p className="font-extrabold text-white text-base sm:text-lg leading-tight break-words">
+            {stats.title}
+          </p>
+        </div>
+
+        {/* Dark pill with category and date */}
+        <div className="bg-neutral-900 text-white rounded-xl px-3 py-1 flex flex-col items-center shrink-0 shadow-lg">
+          <CategoryBadge
+            category={stats.category}
+            season={stats.season}
+            className="!bg-transparent !text-inherit !px-0 font-semibold"
+          />
+          <span className="text-[11px] text-white/70 leading-tight">
+            <DateDisplay isoDate={stats.date} />
+          </span>
+        </div>
       </div>
 
-      <div className="flex items-center justify-center gap-3 mb-2">
-        <span className="text-2xl">📈</span>
-        <p className="font-semibold text-gray-800 text-center">{stats.title}</p>
-      </div>
-
-      <div className="mt-3 overflow-x-auto">
-        <table className="mx-auto w-[80%] text-left border-collapse">
+      <div className="p-4 overflow-x-auto">
+        <table className="w-full text-left border-collapse">
           <thead>
             <tr className="border-b border-gray-200">
               <th className={th}>Fecha</th>
@@ -166,17 +177,21 @@ export function StatsCard({ stats }: StatsCardProps) {
         </table>
       </div>
 
-      {stats.description.length > 0 && (
-        <div className="mt-3 px-2 space-y-1">
-          {stats.description.map((line) => (
-            <p key={line} className="text-xs text-gray-600">
-              {line}
-            </p>
-          ))}
+      {(stats.description.length > 0 || stats.references.length > 0) && (
+        <div className="bg-gradient-to-br from-rose-700 via-rose-800 to-rose-900 px-4 py-3">
+          {stats.description.length > 0 && (
+            <div className="px-2 space-y-1">
+              {stats.description.map((line) => (
+                <p key={line} className="text-xs text-white/90">
+                  {line}
+                </p>
+              ))}
+            </div>
+          )}
+
+          <ReferenceIcons references={stats.references} />
         </div>
       )}
-
-      <ReferenceIcons references={stats.references} />
-    </Link>
+    </div>
   );
 }
