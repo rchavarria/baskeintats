@@ -67,6 +67,7 @@ import { game_2026_09_17_coslada } from "../../data/games/2026-09-17-coslada.ts"
 import { game_2026_09_18_alcobendas_u22 } from "../../data/games/2026-09-18-alcobendas-u22.ts";
 import { game_2026_09_20_sba } from "../../data/games/2026-09-20-sba.ts";
 import { game_2026_09_23_alcobendas_2010 } from "../../data/games/2026-09-23-alcobendas-2010.ts";
+import { game_2026_09_26_torrelodones } from "../../data/games/2026-09-26-torrelodones.ts";
 import type { Game } from "../../model/GameSchema";
 import { GameCard } from "./GameCard";
 
@@ -130,12 +131,15 @@ describe("GameCard", () => {
     expect(screen.getByText(game.away.club.name)).toBeInTheDocument();
   });
 
-  it.each([[game_2026_09_20_sba]])("renders S2026/27 game to the game card", (game) => {
-    renderWithRouter(<GameCard game={game} />);
+  it.each([[game_2026_09_20_sba], [game_2026_09_26_torrelodones]])(
+    "renders S2026/27 game to the game card",
+    (game) => {
+      renderWithRouter(<GameCard game={game} />);
 
-    expect(screen.getByText(game.home.club.name)).toBeInTheDocument();
-    expect(screen.getByText(game.away.club.name)).toBeInTheDocument();
-  });
+      expect(screen.getByText(game.home.club.name)).toBeInTheDocument();
+      expect(screen.getByText(game.away.club.name)).toBeInTheDocument();
+    },
+  );
 
   it.each([
     [game_2026_05_31_torrelodones],
@@ -197,16 +201,6 @@ describe("GameCard", () => {
     expect(screen.getByText(game.home.club.name)).toBeInTheDocument();
     expect(screen.getByText(game.away.club.name)).toBeInTheDocument();
   });
-
-  it.each([[game_2026_05_10_zentro], [game_2026_05_10_torrelodones]])(
-    "renders S2025/26 game to the game card",
-    (game) => {
-      renderWithRouter(<GameCard game={game} />);
-
-      expect(screen.getByText(game.home.club.name)).toBeInTheDocument();
-      expect(screen.getByText(game.away.club.name)).toBeInTheDocument();
-    },
-  );
 });
 
 describe("GameCard (friendly game)", () => {
