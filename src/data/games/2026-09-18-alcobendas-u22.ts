@@ -8,7 +8,7 @@ export const game_2026_09_18_alcobendas_u22: FriendlyGame = FriendlyGameSchema.p
   id: "S67-amistoso-alcobendas-u22",
   type: "friendly-game",
   season: "2026-27",
-  date: "2026-09-18T21:00:00Z",
+  date: "2026-09-18T19:00:00Z",
 
   competition: {
     name: "Amistoso",
