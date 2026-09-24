@@ -262,6 +262,7 @@ import { announcement_2026_08_24_season_start } from "./games/2026-08-24-announc
 import { game_2026_09_17_coslada } from "./games/2026-09-17-coslada.ts";
 import { game_2026_09_18_alcobendas_u22 } from "./games/2026-09-18-alcobendas-u22.ts";
 import { game_2026_09_20_sba } from "./games/2026-09-20-sba.ts";
+import { game_2026_09_23_alcobendas_2010 } from "./games/2026-09-23-alcobendas-2010.ts";
 
 type EventItem =
   | Announcement
@@ -274,6 +275,7 @@ type EventItem =
 
 export function getEvents(): EventItem[] {
   const events: EventItem[] = [
+    game_2026_09_23_alcobendas_2010,
     game_2026_09_20_sba,
     game_2026_09_18_alcobendas_u22,
     game_2026_09_17_coslada,
