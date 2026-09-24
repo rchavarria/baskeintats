@@ -31,4 +31,14 @@ describe("GameDetailPage", () => {
       renderWithRoute(gameId);
     });
   });
+
+  describe("full friendly game list", () => {
+    const gameIds = getEvents()
+      .filter((e) => ["friendly-game"].includes(e.type))
+      .map((g) => [g.id]);
+
+    it.each(gameIds)("renders game %s", (gameId: string) => {
+      renderWithRoute(gameId);
+    });
+  });
 });
