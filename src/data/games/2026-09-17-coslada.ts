@@ -8,7 +8,7 @@ export const game_2026_09_17_coslada: FriendlyGame = FriendlyGameSchema.parse({
   id: "S67-amistoso-coslada",
   type: "friendly-game",
   season: "2026-27",
-  date: "2026-09-17T19:00:00Z",
+  date: "2026-09-17T17:00:00Z",
 
   competition: {
     name: "Amistoso",

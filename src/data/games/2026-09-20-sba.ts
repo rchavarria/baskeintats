@@ -7,7 +7,7 @@ export const game_2026_09_20_sba: AdvancedGame = AdvancedGameSchema.parse({
   id: "S67-liga-junior-oro-f1-j1",
   type: "advanced-game",
   season: "2026-27",
-  date: "2026-09-20T12:30:00Z",
+  date: "2026-09-20T10:30:00Z",
 
   competition: {
     name: "Liga Ahorramás - Junior - Oro",
