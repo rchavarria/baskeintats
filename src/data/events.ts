@@ -265,6 +265,7 @@ import { game_2026_09_20_sba } from "./games/2026-09-20-sba.ts";
 import { game_2026_09_23_alcobendas_2010 } from "./games/2026-09-23-alcobendas-2010.ts";
 import { game_2026_09_26_torrelodones } from "./games/2026-09-26-torrelodones.ts";
 import { game_2026_09_27_torrejon } from "./games/2026-09-27-torrejon.ts";
+import { game_2026_09_29_estudiantes } from "./games/2026-09-29-estudiantes.ts";
 
 type EventItem =
   | Announcement
@@ -277,6 +278,7 @@ type EventItem =
 
 export function getEvents(): EventItem[] {
   const events: EventItem[] = [
+    game_2026_09_29_estudiantes,
     game_2026_09_27_torrejon,
     game_2026_09_26_torrelodones,
     game_2026_09_23_alcobendas_2010,
