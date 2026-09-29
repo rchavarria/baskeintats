@@ -12,7 +12,7 @@ export const game_2026_09_26_torrelodones: AdvancedGame = AdvancedGameSchema.par
   competition: {
     name: "Liga Ahorramás - Cadete - Oro",
     category: "U16M",
-    phase: "Fase 1",
+    phase: "Fase 1 - Grupo 2",
     round: "J2",
   },
 

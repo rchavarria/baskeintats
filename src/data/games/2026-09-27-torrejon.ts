@@ -12,7 +12,7 @@ export const game_2026_09_27_torrejon: AdvancedGame = AdvancedGameSchema.parse({
   competition: {
     name: "Liga Ahorramás - Junior - Oro",
     category: "U18M",
-    phase: "Fase 1",
+    phase: "Fase 1 - Grupo 1",
     round: "J2",
   },
 
