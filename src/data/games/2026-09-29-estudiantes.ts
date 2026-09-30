@@ -3,85 +3,84 @@ import { AdvancedGameSchema } from "../../model/GameSchema.ts";
 import { teams } from "../teams.ts";
 import { venues } from "../venues.ts";
 
-export const game_2026_09_26_torrelodones: AdvancedGame = AdvancedGameSchema.parse({
-  id: "S67-liga-oro-f1-j2",
+export const game_2026_09_29_estudiantes: AdvancedGame = AdvancedGameSchema.parse({
+  id: "S67-liga-oro-f1-j1",
   type: "advanced-game",
   season: "2026-27",
-  date: "2026-09-26T17:30:00Z",
+  date: "2026-09-29T17:00:00Z",
 
   competition: {
     name: "Liga Ahorramás - Cadete - Oro",
     category: "U16M",
     phase: "Fase 1 - Grupo 2",
-    round: "J2",
+    round: "J6",
   },
 
-  venue: venues.torrelodones,
+  venue: venues["caja-magica"],
 
   home: {
-    club: teams.torrelodones,
+    club: teams.estudiantes,
     category: "U16M",
     opponent: true,
-    scores: [21, 19, 17, 31],
+    scores: [14, 20, 14, 12],
   },
 
   away: {
     club: teams.alcobendas,
     category: "U16M",
-    scores: [19, 29, 19, 14],
+    scores: [14, 17, 10, 11],
   },
 
   playerStats: {
-    time: 27 * 60 + 13,
+    time: 13 * 60 + 54,
     fieldGoals: {
-      made: 8,
-      attempted: 9,
+      made: 2,
+      attempted: 6,
     },
     threePointers: {
-      made: 0,
+      made: 1,
       attempted: 4,
     },
     freeThrows: {
-      made: 7,
-      attempted: 10,
+      made: 0,
+      attempted: 0,
     },
     rebounds: {
-      offensive: 2,
-      defensive: 5,
+      offensive: 0,
+      defensive: 2,
     },
-    assists: 0,
-    steals: 2,
-    turnovers: 3,
+    assists: 2,
+    steals: 0,
+    turnovers: 4,
     blocks: {
-      made: 1,
+      made: 0,
       received: 0,
     },
     faults: {
-      made: 3,
-      received: 6,
+      made: 4,
+      received: 0,
     },
-    plusMinus: -9,
-    efficiency: 25,
+    plusMinus: 2,
+    efficiency: -4,
   },
 
   videos: {
-    official: "https://youtu.be/ur2_GO1mACE",
+    official: "https://youtu.be/Hi1maY2soJc",
     others: [
       {
         label: "Canal CBA",
-        url: "https://youtu.be/SRX4kd1zLs8",
+        url: "https://youtu.be/xmD6ew0ZgBc",
       },
     ],
   },
 
   recap: {
-    title: "¡Qué rabia!",
+    title: "¡Hemos perdido una gran oportunidad!",
     lines: [
-      "Era nuestro, lo teníamos, nos lo habíamos trabajado durante 3 cuartos",
-      "Pero el otro equipo echó el resto el último cuarto, nos recortó, nos acojonamos y nos mordieron",
-      "El marcador final no refleja el partido, cuando quedaban 30 segundos, estábamos empatados",
-      "Le llegó la bola a nuestro cachorro, estaba liberado, tiro de 3... pero no entra",
-      "A partir de ahí, nos volvemos locos, cometemos muchas faltas y meten todos los tiros libres",
+      "Veníamos a este partido con el miedo de perder de muchos puntos",
+      "Pero empezamos el partido y fue bastante igualado, estaba siendo un partido con muy pocos puntos, con lo que la diferencia se mantenía siempre muy pequeña",
+      "Lo malo es que no nos creímos capaces y no supimos jugar con suficiente intensidad para ganar en el último cuarto",
+      "Pero lo teníamos. Era para nosotros. Y otro partido donde nos pudo el miedo a ganar",
     ],
   },
 

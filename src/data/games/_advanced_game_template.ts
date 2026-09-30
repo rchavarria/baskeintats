@@ -4,15 +4,15 @@ import { teams } from "../teams.ts";
 import { venues } from "../venues.ts";
 
 export const _advanced_game_template: AdvancedGame = AdvancedGameSchema.parse({
-  id: "S56-liga-oro-f1-g1-j1",
+  id: "S67-liga-oro-f1-g1-j1",
   type: "advanced-game",
-  season: "2025-26",
-  date: "2026-04-20T00:00:00Z",
+  season: "2026-27",
+  date: "2026-10-20T00:00:00Z",
 
   competition: {
     name: "Liga Ahorramás - Oro",
     category: "U16M",
-    phase: "Fase 1 - Grupo 1",
+    phase: "Fase 1 - Grupo 2",
     round: "J1",
   },
 
@@ -79,8 +79,11 @@ export const _advanced_game_template: AdvancedGame = AdvancedGameSchema.parse({
   },
 
   recap: {
-    title: "xxx",
-    lines: ["yyy", "zzz"],
+    title: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    lines: [
+      "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+    ],
   },
 
   references: [
