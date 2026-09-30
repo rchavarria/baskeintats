@@ -4,7 +4,7 @@ import { teams } from "../teams.ts";
 import { venues } from "../venues.ts";
 
 export const _advanced_game_template: AdvancedGame = AdvancedGameSchema.parse({
-  id: "S67-liga-oro-f1-g1-j1",
+  id: "S67-liga-oro-f1-g2-j1",
   type: "advanced-game",
   season: "2026-27",
   date: "2026-10-20T00:00:00Z",
