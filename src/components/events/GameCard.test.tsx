@@ -70,6 +70,7 @@ import { game_2026_09_23_alcobendas_2010 } from "../../data/games/2026-09-23-alc
 import { game_2026_09_26_torrelodones } from "../../data/games/2026-09-26-torrelodones.ts";
 import { game_2026_09_27_torrejon } from "../../data/games/2026-09-27-torrejon.ts";
 import { game_2026_09_29_estudiantes } from "../../data/games/2026-09-29-estudiantes.ts";
+import { game_2026_10_04_alcorcon } from "../../data/games/2026-10-04-alcorcon.ts";
 import type { Game } from "../../model/GameSchema";
 import { GameCard } from "./GameCard";
 
@@ -138,6 +139,7 @@ describe("GameCard", () => {
     [game_2026_09_26_torrelodones],
     [game_2026_09_27_torrejon],
     [game_2026_09_29_estudiantes],
+    [game_2026_10_04_alcorcon],
   ])("renders S2026/27 game to the game card", (game) => {
     renderWithRouter(<GameCard game={game} />);
 
