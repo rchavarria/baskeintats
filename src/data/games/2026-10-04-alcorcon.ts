@@ -88,7 +88,7 @@ export const game_2026_10_04_alcorcon: AdvancedGame = AdvancedGameSchema.parse({
     {
       type: "photo",
       label: "Fotos del mes de octubre",
-      url: "https://www.flickr.com/photos/fbmadrid/albums/-",
+      url: "https://www.flickr.com/photos/fbmadrid/albums/72177720336020609",
     },
     {
       type: "document",

@@ -267,6 +267,7 @@ import { game_2026_09_26_torrelodones } from "./games/2026-09-26-torrelodones.ts
 import { game_2026_09_27_torrejon } from "./games/2026-09-27-torrejon.ts";
 import { game_2026_09_29_estudiantes } from "./games/2026-09-29-estudiantes.ts";
 import { game_2026_10_04_alcorcon } from "./games/2026-10-04-alcorcon.ts";
+import { announcement_2026_10_06_fbm } from "./games/2026-10-06-convocatoria-fbm.ts";
 
 type EventItem =
   | Announcement
@@ -279,6 +280,7 @@ type EventItem =
 
 export function getEvents(): EventItem[] {
   const events: EventItem[] = [
+    announcement_2026_10_06_fbm,
     game_2026_10_04_alcorcon,
     game_2026_09_29_estudiantes,
     game_2026_09_27_torrejon,
