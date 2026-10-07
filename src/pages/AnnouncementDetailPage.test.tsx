@@ -55,7 +55,6 @@ function renderWithRoute(announcementId: string) {
 }
 
 describe("AnnouncementDetailPage", () => {
-
   it.each([
     announcement_2026_07_06_pindown_camp,
     announcement_2026_06_29_basketlife_camp,
@@ -104,15 +103,14 @@ describe("AnnouncementDetailPage", () => {
     expect(screen.getByText(announcement.announcementType)).toBeInTheDocument();
   });
 
-  it.each([
-    announcement_2026_10_06_fbm,
-    announcement_2026_08_24_season_start,
-  ])("renders 2026-27 season announcements: title, category and type", (announcement) => {
-    renderWithRoute(announcement.id);
+  it.each([announcement_2026_10_06_fbm, announcement_2026_08_24_season_start])(
+    "renders 2026-27 season announcements: title, category and type",
+    (announcement) => {
+      renderWithRoute(announcement.id);
 
-    expect(screen.getByText(announcement.title)).toBeInTheDocument();
-    expect(screen.getByText(announcement.category)).toBeInTheDocument();
-    expect(screen.getByText(announcement.announcementType)).toBeInTheDocument();
-  });
-
+      expect(screen.getByText(announcement.title)).toBeInTheDocument();
+      expect(screen.getByText(announcement.category)).toBeInTheDocument();
+      expect(screen.getByText(announcement.announcementType)).toBeInTheDocument();
+    },
+  );
 });

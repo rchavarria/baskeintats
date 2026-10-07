@@ -160,13 +160,13 @@ describe("AnnouncementCard", () => {
     expect(screen.getByText(announcement.category)).toBeInTheDocument();
   });
 
-  it.each([
-    announcement_2026_10_06_fbm,
-    announcement_2026_08_24_season_start,
-  ])("renders 2026-27 season announcements", (announcement) => {
-    renderWithRouter(<AnnouncementCard announcement={announcement} />);
+  it.each([announcement_2026_10_06_fbm, announcement_2026_08_24_season_start])(
+    "renders 2026-27 season announcements",
+    (announcement) => {
+      renderWithRouter(<AnnouncementCard announcement={announcement} />);
 
-    expect(screen.getByText(announcement.title)).toBeInTheDocument();
-    expect(screen.getByText(announcement.category)).toBeInTheDocument();
-  });
+      expect(screen.getByText(announcement.title)).toBeInTheDocument();
+      expect(screen.getByText(announcement.category)).toBeInTheDocument();
+    },
+  );
 });
