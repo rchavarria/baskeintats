@@ -1,5 +1,6 @@
 ---
 agent: 'agent'
+title: 'Extract player stats from FBM box score (paste PDF content, fill playerStats)'
 ---
 Extract the advanced statistics of **player number 55 from Alcobendas** from the FBM box score text pasted by the user, and fill in the `playerStats` object of the attached game file (`src/data/games/YYYY-MM-DD-opponent.ts`).
 

@@ -1,5 +1,6 @@
 ---
 agent: 'agent'
+title: 'Extract scores from attached image and update the game file'
 ---
 Extract the quarter-by-quarter scores of a basketball game from the attached image and add them to the attached game description file (a TypeScript file under `src/data/games/`).
 
