@@ -1,5 +1,6 @@
 # Backlog
 
+- 🖼️ Falta enlace al álbum de fotos de octubre, en el partido de Alcorcón
 - 💄 Diseñar tarjetas de anuncios en la home para que se vean más acorde con las de los partidos
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
 - 🤸‍♂️ en los scoutings, o incluso en los partidos, amistosos o no, poder añadir datos sobre el roster de ambos equipos
