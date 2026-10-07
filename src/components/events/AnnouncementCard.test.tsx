@@ -43,6 +43,7 @@ import { announcement_2026_06_29_basketlife_camp } from "../../data/games/2026-0
 import { announcement_2026_07_06_pindown_camp } from "../../data/games/2026-07-06-pindown-camp.ts";
 import { announcement_2026_07_21_season_summary } from "../../data/games/2026-07-21-announcement-season-summary.ts";
 import { announcement_2026_08_24_season_start } from "../../data/games/2026-08-24-announcement-season-start.ts";
+import { announcement_2026_10_06_fbm } from "../../data/games/2026-10-06-convocatoria-fbm.ts";
 import type { Announcement } from "../../model/AnnouncementSchema";
 import { AnnouncementCard } from "./AnnouncementCard";
 
@@ -111,7 +112,6 @@ describe("AnnouncementCard", () => {
   });
 
   it.each([
-    announcement_2026_08_24_season_start,
     announcement_2026_07_21_season_summary,
     announcement_2026_07_06_pindown_camp,
     announcement_2026_06_29_basketlife_camp,
@@ -154,6 +154,16 @@ describe("AnnouncementCard", () => {
     announcement_2024_03_26_torneo_zaragoza,
     announcement_2023_09_01_comienzo_temporada,
   ])("renders announcement metadata and links to the detail page", (announcement) => {
+    renderWithRouter(<AnnouncementCard announcement={announcement} />);
+
+    expect(screen.getByText(announcement.title)).toBeInTheDocument();
+    expect(screen.getByText(announcement.category)).toBeInTheDocument();
+  });
+
+  it.each([
+    announcement_2026_10_06_fbm,
+    announcement_2026_08_24_season_start,
+  ])("renders 2026-27 season announcements", (announcement) => {
     renderWithRouter(<AnnouncementCard announcement={announcement} />);
 
     expect(screen.getByText(announcement.title)).toBeInTheDocument();
