@@ -47,11 +47,16 @@ export const announcement_2026_10_06_fbm: Announcement = AnnouncementSchema.pars
       label: "Nota de prensa de la convocatoria",
       url: "https://www.fbm.es/noticia-88-13565/concentraciones-puente-de-octubre-2026",
     },
-    // {
-    //   type: "article",
-    //   label: "El club recompensa el esfuerzo",
-    //   url: "https://x.com/cbalcobendas/status/2001980957205918111",
-    // },
+    {
+      type: "article",
+      label: "Las selecciones se ponen en marcha",
+      url: "https://www.fbm.es/noticia-88-13566/las-selecciones-se-ponen-en-marcha",
+    },
+    {
+      type: "photo",
+      label: "Concentraciones puente de octubre 2026",
+      url: "https://www.flickr.com/photos/fbmadrid/55584578153/in/album-72177720336101675",
+    },
   ],
 });
 
