@@ -20,6 +20,10 @@ export const announcement_2026_10_06_fbm: Announcement = AnnouncementSchema.pars
     "En esta primera convocatoria hay muchos convocados",
     "Va a ser muy difícil poder seguir todo el proceso, hay muchos chavales y muy buenos",
     "La convocatoria consta de 3 entrenamientos, de viernes a domingo",
+    "Conclusión:",
+    "'Hay mucho nivel', palabras literales",
+    "Y también hay muy poca seriedad. Muchos jugadores (especialmente de academias o aspirantes a academias) no se presentan a todos los entrenamientos",
+    "Me parece una falta de respeto por parte de los clubs que no permitan asistir convenientemente a las convocatorias",
   ],
 
   schedule: [
