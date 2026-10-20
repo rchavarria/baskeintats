@@ -99,12 +99,12 @@ export const _advanced_game_template: AdvancedGame = AdvancedGameSchema.parse({
     },
     {
       type: "article",
-      label: "Previa del partido",
+      label: "Previa de la jornada",
       url: "https://fbm.es/previa",
     },
     {
       type: "article",
-      label: "Crónica del partido",
+      label: "Crónica de la jornada",
       url: "https://fbm.es/cronica",
     },
   ],
