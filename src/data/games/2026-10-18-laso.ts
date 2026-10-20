@@ -21,68 +21,68 @@ export const game_2026_10_18_laso: AdvancedGame = AdvancedGameSchema.parse({
   home: {
     club: teams.alcobendas,
     category: "U16M",
-    scores: [0, 0, 0, 0],
+    scores: [17, 17, 18, 16],
   },
 
   away: {
     club: teams.laso,
     category: "U16M",
     opponent: true,
-    scores: [0, 0, 0, 0],
+    scores: [23, 18, 28, 26],
   },
 
   playerStats: {
-    time: 0 * 60 + 0,
+    time: 29 * 60 + 22,
     fieldGoals: {
-      made: 0,
-      attempted: 0,
+      made: 2,
+      attempted: 7,
     },
     threePointers: {
-      made: 0,
-      attempted: 0,
+      made: 2,
+      attempted: 3,
     },
     freeThrows: {
-      made: 0,
-      attempted: 0,
+      made: 4,
+      attempted: 6,
     },
     rebounds: {
-      offensive: 0,
-      defensive: 0,
+      offensive: 2,
+      defensive: 2,
     },
     assists: 0,
-    steals: 0,
-    turnovers: 0,
+    steals: 3,
+    turnovers: 4,
     blocks: {
       made: 0,
-      received: 0,
+      received: 1,
     },
     faults: {
-      made: 0,
-      received: 0,
+      made: 1,
+      received: 5,
     },
-    plusMinus: 0,
-    efficiency: 0,
+    plusMinus: -17,
+    efficiency: 12,
   },
 
   videos: {
-    official: "https://youtu.be/official",
+    official: "https://youtu.be/haFSdL1POvY",
     others: [
       {
-        label: "Canal Pou",
-        url: "https://youtu.be/pou",
-      },
-      {
-        label: "Canal CBA/Zilberman",
-        url: "https://youtu.be/cba",
+        label: "Canal CBA",
+        url: "https://youtu.be/K5be_59-dlM",
       },
     ],
   },
 
   recap: {
-    title: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    title: "Duele la derrota, pero era el resultado esperado",
     lines: [
-      "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
-      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "Casi sin notarlo, ya en el primer cuarto se despegaron un poco de nosotros",
+      "Durante el resto de partido conseguimos aguantar",
+      "Fuimos competitivos hasta los minutos finales",
+      "Creo que el contrincante lo tenía todo bastante controlado. Si nos acercábamos, sacaba al grande y nos volvían a coger ventaja",
+      "Cerca del final estuvimos cerquita, a 6 puntos nada más",
+      "Pero ya en los minutos finales, se escaparon del todo",
     ],
   },
 
@@ -103,13 +103,13 @@ export const game_2026_10_18_laso: AdvancedGame = AdvancedGameSchema.parse({
     },
     {
       type: "article",
-      label: "Previa del partido",
-      url: "https://fbm.es/previa",
+      label: "Previa de la jornada",
+      url: "https://www.fbm.es/noticia-104-13577/la-liga-ahorramas-regresa-a-lo-grande",
     },
     {
       type: "article",
-      label: "Crónica del partido",
-      url: "https://fbm.es/cronica",
+      label: "Crónica de la jornada",
+      url: "https://www.fbm.es/noticia-123-13586/la-emoción-no-da-tregua-en-la-liga-ahorramas",
     },
   ],
 });
