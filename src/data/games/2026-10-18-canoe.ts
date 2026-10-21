@@ -22,90 +22,93 @@ export const game_2026_10_18_canoe: AdvancedGame = AdvancedGameSchema.parse({
     club: teams.canoe,
     category: "U18M",
     opponent: true,
-    scores: [0, 0, 0, 0],
+    scores: [23, 30, 22, 19],
   },
 
   away: {
     club: teams.alcobendas,
     category: "U18M",
-    scores: [0, 0, 0, 0],
+    scores: [20, 24, 16, 16],
   },
 
   playerStats: {
-    time: 0 * 60 + 0,
+    time: 7 * 60 + 37,
     fieldGoals: {
-      made: 0,
-      attempted: 0,
+      made: 1,
+      attempted: 1,
     },
     threePointers: {
       made: 0,
-      attempted: 0,
+      attempted: 1,
     },
     freeThrows: {
       made: 0,
       attempted: 0,
     },
     rebounds: {
-      offensive: 0,
-      defensive: 0,
+      offensive: 1,
+      defensive: 1,
     },
-    assists: 0,
+    assists: 1,
     steals: 0,
-    turnovers: 0,
+    turnovers: 1,
     blocks: {
       made: 0,
-      received: 0,
+      received: 1,
     },
     faults: {
-      made: 0,
+      made: 1,
       received: 0,
     },
-    plusMinus: 0,
-    efficiency: 0,
+    plusMinus: -7,
+    efficiency: 1,
   },
 
   videos: {
-    official: "https://youtu.be/official",
+    official: "https://youtu.be/0ilIBtFCwPY",
     others: [
       {
         label: "Canal Pou",
-        url: "https://youtu.be/pou",
-      },
-      {
-        label: "Canal CBA/Zilberman",
-        url: "https://youtu.be/cba",
+        url: "https://youtu.be/ywE5BhXaoDg",
       },
     ],
   },
 
   recap: {
-    title: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    title: "Aquí también se nos complica la cosa",
     lines: [
-      "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
-      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "Sabíamos que iba a ser un partido disputado, incluso con posibilidades de victoria",
+      "Pero pronto se nos empezó a complicar la cosa",
+      "Hubo momentos en el partido que pudimos darle la vuelta al marcador, pero no cuajó",
+      "Hemos estado flojos en defensa, necesitamos más intensidad",
+      "Y los faros del equipo han tenido mal día, se han cargado de faltas pronto, y eso nos ha lastrado un poco también",
     ],
   },
 
   references: [
     {
       type: "photo",
-      label: "Fotos del mes de ?",
-      url: "https://www.flickr.com/photos/fbmadrid/albums/72177720329176624",
+      label: "Fotos del mes de octubre",
+      url: "https://www.flickr.com/photos/fbmadrid/albums/72177720336020609",
     },
     {
       type: "document",
       label: "Informe de la jornada",
-      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=14615&informe=resultados-clasificacion-proxima&ultima_jornada=93792&proxima_jornada=93793",
+      // Grupo 17494 = Liga Ahorramás - Junior - Oro
+      // F1 - J2 = 110611
+      // F1 - J3 = 110612
+      // F1 - J4 = 110613
+      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=17494&informe=resultados-clasificacion-proxima&ultima_jornada=110613&proxima_jornada=110614",
     },
     {
       type: "article",
       label: "Previa de la jornada",
-      url: "https://fbm.es/previa",
+      url: "https://www.fbm.es/noticia-104-13577/la-liga-ahorramas-regresa-a-lo-grande",
     },
     {
       type: "article",
       label: "Crónica de la jornada",
-      url: "https://fbm.es/cronica",
+      url: "https://www.fbm.es/noticia-123-13586/la-emoción-no-da-tregua-en-la-liga-ahorramas",
     },
   ],
 });
