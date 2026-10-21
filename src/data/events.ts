@@ -271,6 +271,7 @@ import { announcement_2026_10_06_fbm } from "./games/2026-10-06-convocatoria-fbm
 import { game_2026_10_18_canoe } from "./games/2026-10-18-canoe.ts";
 import { game_2026_10_18_laso } from "./games/2026-10-18-laso.ts";
 import { game_2026_10_25_real_madrid } from "./games/2026-10-25-real-madrid.ts";
+import { game_2026_10_25_zentro } from "./games/2026-10-25-zentro.ts";
 
 type EventItem =
   | Announcement
@@ -283,6 +284,7 @@ type EventItem =
 
 export function getEvents(): EventItem[] {
   const events: EventItem[] = [
+    game_2026_10_25_zentro,
     game_2026_10_25_real_madrid,
     game_2026_10_18_laso,
     game_2026_10_18_canoe,
