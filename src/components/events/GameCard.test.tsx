@@ -74,6 +74,7 @@ import { game_2026_10_04_alcorcon } from "../../data/games/2026-10-04-alcorcon.t
 import { game_2026_10_18_canoe } from "../../data/games/2026-10-18-canoe.ts";
 import { game_2026_10_18_laso } from "../../data/games/2026-10-18-laso.ts";
 import { game_2026_10_25_real_madrid } from "../../data/games/2026-10-25-real-madrid.ts";
+import { game_2026_10_25_zentro } from "../../data/games/2026-10-25-zentro.ts";
 import type { Game } from "../../model/GameSchema";
 import { GameCard } from "./GameCard";
 
@@ -146,6 +147,7 @@ describe("GameCard", () => {
     [game_2026_10_18_laso],
     [game_2026_10_18_canoe],
     [game_2026_10_25_real_madrid],
+    [game_2026_10_25_zentro],
   ])("renders S2026/27 game to the game card", (game) => {
     renderWithRouter(<GameCard game={game} />);
 
