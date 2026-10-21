@@ -268,6 +268,8 @@ import { game_2026_09_27_torrejon } from "./games/2026-09-27-torrejon.ts";
 import { game_2026_09_29_estudiantes } from "./games/2026-09-29-estudiantes.ts";
 import { game_2026_10_04_alcorcon } from "./games/2026-10-04-alcorcon.ts";
 import { announcement_2026_10_06_fbm } from "./games/2026-10-06-convocatoria-fbm.ts";
+import { game_2026_10_18_canoe } from "./games/2026-10-18-canoe.ts";
+import { game_2026_10_18_laso } from "./games/2026-10-18-laso.ts";
 
 type EventItem =
   | Announcement
@@ -280,6 +282,8 @@ type EventItem =
 
 export function getEvents(): EventItem[] {
   const events: EventItem[] = [
+    game_2026_10_18_laso,
+    game_2026_10_18_canoe,
     announcement_2026_10_06_fbm,
     game_2026_10_04_alcorcon,
     game_2026_09_29_estudiantes,

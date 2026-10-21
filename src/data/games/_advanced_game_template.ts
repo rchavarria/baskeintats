@@ -65,15 +65,15 @@ export const _advanced_game_template: AdvancedGame = AdvancedGameSchema.parse({
   },
 
   videos: {
-    official: "https://youtu.be/-",
+    official: "https://youtu.be/official",
     others: [
       {
         label: "Canal Pou",
-        url: "https://youtu.be/-",
+        url: "https://youtu.be/pou",
       },
       {
         label: "Canal CBA/Zilberman",
-        url: "https://youtu.be/-",
+        url: "https://youtu.be/cba",
       },
     ],
   },
@@ -99,13 +99,13 @@ export const _advanced_game_template: AdvancedGame = AdvancedGameSchema.parse({
     },
     {
       type: "article",
-      label: "Previa del partido",
-      url: "https://fbm.es/-",
+      label: "Previa de la jornada",
+      url: "https://fbm.es/previa",
     },
     {
       type: "article",
-      label: "Crónica del partido",
-      url: "https://fbm.es/-",
+      label: "Crónica de la jornada",
+      url: "https://fbm.es/cronica",
     },
   ],
 });

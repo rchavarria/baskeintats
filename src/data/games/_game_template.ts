@@ -76,13 +76,13 @@ export const _game_template: Game = GameSchema.parse({
     },
     {
       type: "article",
-      label: "Previa del partido",
-      url: "https://fbm.es/-",
+      label: "Previa de la jornada",
+      url: "https://fbm.es/previa",
     },
     {
       type: "article",
-      label: "Crónica del partido",
-      url: "https://fbm.es/-",
+      label: "Crónica de la jornada",
+      url: "https://fbm.es/cronica",
     },
   ],
 });
