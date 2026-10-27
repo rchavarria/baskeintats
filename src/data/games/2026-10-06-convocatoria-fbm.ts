@@ -3,7 +3,7 @@ import { AnnouncementSchema } from "../../model/AnnouncementSchema.ts";
 import { venues } from "../venues.ts";
 
 export const announcement_2026_10_06_fbm: Announcement = AnnouncementSchema.parse({
-  id: "567-convocatoria-fbm-1",
+  id: "S67-convocatoria-fbm-1",
   type: "announcement",
   season: "2026-27",
   date: "2026-10-06T00:00:00Z",
