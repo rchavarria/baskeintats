@@ -22,67 +22,68 @@ export const game_2026_10_25_zentro: AdvancedGame = AdvancedGameSchema.parse({
     club: teams.zentro,
     category: "U16M",
     opponent: true,
-    scores: [0, 0, 0, 0],
+    scores: [24, 25, 18, 26],
   },
 
   away: {
     club: teams.alcobendas,
     category: "U16M",
-    scores: [0, 0, 0, 0],
+    scores: [13, 8, 19, 13],
   },
 
   playerStats: {
-    time: 0 * 60 + 0,
+    time: 27 * 60 + 11,
     fieldGoals: {
-      made: 0,
-      attempted: 0,
+      made: 1,
+      attempted: 6,
     },
     threePointers: {
-      made: 0,
-      attempted: 0,
+      made: 1,
+      attempted: 4,
     },
     freeThrows: {
-      made: 0,
-      attempted: 0,
+      made: 2,
+      attempted: 6,
     },
     rebounds: {
-      offensive: 0,
-      defensive: 0,
+      offensive: 1,
+      defensive: 2,
     },
-    assists: 0,
+    assists: 1,
     steals: 0,
-    turnovers: 0,
+    turnovers: 3,
     blocks: {
       made: 0,
       received: 0,
     },
     faults: {
-      made: 0,
-      received: 0,
+      made: 2,
+      received: 4,
     },
-    plusMinus: 0,
-    efficiency: 0,
+    plusMinus: -17,
+    efficiency: -2,
   },
 
   videos: {
-    official: "https://youtu.be/official",
+    official: "https://youtu.be/tfrYbKtiP3Q",
     others: [
       {
-        label: "Canal Pou",
-        url: "https://youtu.be/pou",
-      },
-      {
-        label: "Canal CBA/Zilberman",
-        url: "https://youtu.be/cba",
+        label: "Canal CBA",
+        url: "https://youtu.be/Mj7Zq0vcrtI",
       },
     ],
   },
 
   recap: {
-    title: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    title: "¡Joder qué paliza!",
     lines: [
-      "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
-      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "No había muchas esperanzas, después de ver lo que Zentro estaba haciendo",
+      "Pero joder... Esta paliza tampoco",
+      "Es que no han tenido compasión ninguna",
+      "Desde el primer cuarto ya quedó claro que no podríamos hacer mucho",
+      "Pero en el segundo cuarto, incluso nuestro entrenador ya se había rendido",
+      "El tercer cuarto cogimos un poco de ritmo",
+      "Y el último más de lo mismo",
     ],
   },
 
@@ -105,12 +106,12 @@ export const game_2026_10_25_zentro: AdvancedGame = AdvancedGameSchema.parse({
     {
       type: "article",
       label: "Previa de la jornada",
-      url: "https://fbm.es/previa",
+      url: "https://www.fbm.es/noticia-104-13591/liga-ahorramas-grandes-duelos-a-la-vista",
     },
     {
       type: "article",
       label: "Crónica de la jornada",
-      url: "https://fbm.es/cronica",
+      url: "https://www.fbm.es/noticia-104-13596/la-liga-ahorramas-cierra-la-primera-vuelta-con-muchas-emociones",
     },
   ],
 });
