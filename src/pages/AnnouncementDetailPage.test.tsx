@@ -42,6 +42,7 @@ import { announcement_2026_06_29_basketlife_camp } from "../data/games/2026-06-2
 import { announcement_2026_07_06_pindown_camp } from "../data/games/2026-07-06-pindown-camp.ts";
 import { announcement_2026_08_24_season_start } from "../data/games/2026-08-24-announcement-season-start.ts";
 import { announcement_2026_10_06_fbm } from "../data/games/2026-10-06-convocatoria-fbm.ts";
+import { announcement_2026_10_26_fbm } from "../data/games/2026-10-26-convocatoria-fbm.ts";
 import { AnnouncementDetailPage } from "./AnnouncementDetailPage";
 
 function renderWithRoute(announcementId: string) {
@@ -103,14 +104,15 @@ describe("AnnouncementDetailPage", () => {
     expect(screen.getByText(announcement.announcementType)).toBeInTheDocument();
   });
 
-  it.each([announcement_2026_10_06_fbm, announcement_2026_08_24_season_start])(
-    "renders 2026-27 season announcements: title, category and type",
-    (announcement) => {
-      renderWithRoute(announcement.id);
+  it.each([
+    announcement_2026_10_26_fbm,
+    announcement_2026_10_06_fbm,
+    announcement_2026_08_24_season_start,
+  ])("renders 2026-27 season announcements: title, category and type", (announcement) => {
+    renderWithRoute(announcement.id);
 
-      expect(screen.getByText(announcement.title)).toBeInTheDocument();
-      expect(screen.getByText(announcement.category)).toBeInTheDocument();
-      expect(screen.getByText(announcement.announcementType)).toBeInTheDocument();
-    },
-  );
+    expect(screen.getByText(announcement.title)).toBeInTheDocument();
+    expect(screen.getByText(announcement.category)).toBeInTheDocument();
+    expect(screen.getByText(announcement.announcementType)).toBeInTheDocument();
+  });
 });
