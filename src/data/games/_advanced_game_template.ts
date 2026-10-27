@@ -89,8 +89,8 @@ export const _advanced_game_template: AdvancedGame = AdvancedGameSchema.parse({
   references: [
     {
       type: "photo",
-      label: "Fotos del mes de ?",
-      url: "https://www.flickr.com/photos/fbmadrid/albums/72177720329176624",
+      label: "Fotos del mes de octubre",
+      url: "https://www.flickr.com/photos/fbmadrid/albums/72177720336020609",
     },
     {
       type: "document",
