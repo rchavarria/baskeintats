@@ -21,21 +21,21 @@ export const game_2026_10_25_real_madrid: AdvancedGame = AdvancedGameSchema.pars
   home: {
     club: teams.alcobendas,
     category: "U18M",
-    scores: [0, 0, 0, 0],
+    scores: [9, 13, 13, 25],
   },
 
   away: {
     club: teams["real-madrid"],
     category: "U18M",
     opponent: true,
-    scores: [0, 0, 0, 0],
+    scores: [39, 33, 35, 24],
   },
 
   playerStats: {
-    time: 0 * 60 + 0,
+    time: 8 * 60 + 7,
     fieldGoals: {
       made: 0,
-      attempted: 0,
+      attempted: 1,
     },
     threePointers: {
       made: 0,
@@ -58,39 +58,37 @@ export const game_2026_10_25_real_madrid: AdvancedGame = AdvancedGameSchema.pars
     },
     faults: {
       made: 0,
-      received: 0,
+      received: 1,
     },
-    plusMinus: 0,
+    plusMinus: -3,
     efficiency: 0,
   },
 
   videos: {
-    official: "https://youtu.be/official",
+    official: "https://youtu.be/kH6mw-GcF0E",
     others: [
       {
         label: "Canal Pou",
-        url: "https://youtu.be/pou",
-      },
-      {
-        label: "Canal CBA/Zilberman",
-        url: "https://youtu.be/cba",
+        url: "https://youtu.be/exHC3aulnww",
       },
     ],
   },
 
   recap: {
-    title: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    title: "Nada especial, justo lo esperado",
     lines: [
-      "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
-      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "Bueno, en realidad sí, que le hemos metido 60 puntos al Madriz",
+      "Me alegro que viniera el junior real del Madrid,",
+      "así han podido disfrutar de jugar contra uno de los mejores equipos de Europa",
+      "Dato curioso que compartió el entrenador: han tirado más de 3 que de 2",
     ],
   },
 
   references: [
     {
       type: "photo",
-      label: "Fotos del mes de ?",
-      url: "https://www.flickr.com/photos/fbmadrid/albums/72177720329176624",
+      label: "Fotos del partido",
+      url: "https://www.flickr.com/photos/fbmadrid/55613343326/in/album-72177720336020609",
     },
     {
       type: "document",
@@ -105,12 +103,27 @@ export const game_2026_10_25_real_madrid: AdvancedGame = AdvancedGameSchema.pars
     {
       type: "article",
       label: "Previa de la jornada",
-      url: "https://fbm.es/previa",
+      url: "https://www.fbm.es/noticia-104-13591/liga-ahorramas-grandes-duelos-a-la-vista",
     },
     {
       type: "article",
       label: "Crónica de la jornada",
-      url: "https://fbm.es/cronica",
+      url: "https://www.fbm.es/noticia-104-13596/la-liga-ahorramas-cierra-la-primera-vuelta-con-muchas-emociones",
+    },
+    {
+      type: "social-media",
+      label: "Balón al aire",
+      url: "https://x.com/FBMadrid/status/2114332350993621378",
+    },
+    {
+      type: "social-media",
+      label: "Llegamos al descanso",
+      url: "https://x.com/FBMadrid/status/2114341751620022475",
+    },
+    {
+      type: "social-media",
+      label: "Final del partido: 60-131",
+      url: "https://x.com/FBMadrid/status/2114356772672590046",
     },
   ],
 });
