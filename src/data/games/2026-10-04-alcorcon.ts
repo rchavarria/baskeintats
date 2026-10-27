@@ -10,7 +10,7 @@ export const game_2026_10_04_alcorcon: AdvancedGame = AdvancedGameSchema.parse({
   date: "2026-10-04T11:15:00Z",
 
   competition: {
-    name: "Liga Ahorramás - Oro",
+    name: "Liga Ahorramás - Cadete - Oro",
     category: "U16M",
     phase: "Fase 1 - Grupo 2",
     round: "J3",
