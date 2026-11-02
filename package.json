@@ -15,7 +15,7 @@
     "format": "biome check . --write"
   },
   "dependencies": {
-    "react": "^19.2.4",
+    "react": "^19.3.1",
     "react-dom": "^19.3.0",
     "react-router-dom": "^7.18.4",
     "zod": "4.6.5"
