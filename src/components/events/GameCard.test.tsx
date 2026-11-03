@@ -75,6 +75,7 @@ import { game_2026_10_18_canoe } from "../../data/games/2026-10-18-canoe.ts";
 import { game_2026_10_18_laso } from "../../data/games/2026-10-18-laso.ts";
 import { game_2026_10_25_real_madrid } from "../../data/games/2026-10-25-real-madrid.ts";
 import { game_2026_10_25_zentro } from "../../data/games/2026-10-25-zentro.ts";
+import { game_2026_11_01 } from "../../data/games/2026-11-01-seleccion.ts";
 import type { Game } from "../../model/GameSchema";
 import { GameCard } from "./GameCard";
 
@@ -289,7 +290,7 @@ describe("GameCard (friendly game)", () => {
     expect(screen.getByText(game.away.club.name)).toBeInTheDocument();
   });
 
-  it.each([[game_2026_09_17_coslada]])(
+  it.each([[game_2026_09_17_coslada, game_2026_11_01]])(
     "renders friendly games to the game card, 2026/27 season",
     (game) => {
       renderWithRouter(<GameCard game={game} />);
