@@ -49,11 +49,21 @@ export const announcement_2026_10_26_fbm: Announcement = AnnouncementSchema.pars
       label: "Nota de prensa de la convocatoria",
       url: "https://www.fbm.es/noticia-88-13598/concentraci%C3%B3n-de-las-selecciones-puente-de-todos-los-santos",
     },
-    // {
-    //   type: "photo",
-    //   label: "Concentraciones puente de octubre 2026",
-    //   url: "https://www.flickr.com/photos/fbmadrid/55584578153/in/album-72177720336101675",
-    // },
+    {
+      type: "social-media",
+      label: "Crónica de la convocatoria",
+      url: "https://x.com/FBMadrid/status/2117523877257445470",
+    },
+    {
+      type: "article",
+      label: "Un puente hacia los Campeonatos de España",
+      url: "https://www.fbm.es/noticia-88-13600/un-puente-hacia-los-campeonatos-de-espa%C3%B1a",
+    },
+    {
+      type: "photo",
+      label: "Concentraciones puente de noviembre 2026",
+      url: "https://www.flickr.com/photos/fbmadrid/55627024453/in/album-72177720336442456",
+    },
   ],
 });
 
