@@ -10,7 +10,7 @@ export const _advanced_game_template: AdvancedGame = AdvancedGameSchema.parse({
   date: "2026-10-20T00:00:00Z",
 
   competition: {
-    name: "Liga Ahorramás - Oro",
+    name: "Liga Ahorramás - Cadete - Oro",
     category: "U16M",
     phase: "Fase 1 - Grupo 2",
     round: "J1",
