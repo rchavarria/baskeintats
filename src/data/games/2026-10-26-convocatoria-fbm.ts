@@ -64,6 +64,11 @@ export const announcement_2026_10_26_fbm: Announcement = AnnouncementSchema.pars
       label: "Concentraciones puente de noviembre 2026",
       url: "https://www.flickr.com/photos/fbmadrid/55627024453/in/album-72177720336442456",
     },
+    {
+      type: "social-media",
+      label: "Confirmación sede y fechas del CESA 2027",
+      url: "https://x.com/BaloncestoESP/status/2117620310887530710",
+    },
   ],
 });
 
