@@ -1,6 +1,5 @@
 import type { FriendlyGame } from "../../model/GameSchema.ts";
 import { FriendlyGameSchema } from "../../model/GameSchema.ts";
-import { EmptyPlayerStats } from "../../model/PlayerSchema.ts";
 import { teams } from "../teams.ts";
 import { venues } from "../venues.ts";
 
