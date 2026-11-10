@@ -4,7 +4,7 @@ import { teams } from "../teams.ts";
 import { venues } from "../venues.ts";
 
 export const game_2026_11_08_estudiantes: AdvancedGame = AdvancedGameSchema.parse({
-  id: "S67-liga-oro-f1-g2-j6",
+  id: "S67-liga-oro-f1-g2-j1",
   type: "advanced-game",
   season: "2026-27",
   date: "2026-11-08T10:30:00Z",
@@ -13,7 +13,7 @@ export const game_2026_11_08_estudiantes: AdvancedGame = AdvancedGameSchema.pars
     name: "Liga Ahorramás - Cadete - Oro",
     category: "U16M",
     phase: "Fase 1 - Grupo 2",
-    round: "J6",
+    round: "J1",
   },
 
   venue: venues.antela,
@@ -21,68 +21,69 @@ export const game_2026_11_08_estudiantes: AdvancedGame = AdvancedGameSchema.pars
   home: {
     club: teams.alcobendas,
     category: "U16M",
-    scores: [0, 0, 0, 0],
+    scores: [22, 21, 17, 11],
   },
 
   away: {
     club: teams.estudiantes,
     category: "U16M",
     opponent: true,
-    scores: [0, 0, 0, 0],
+    scores: [25, 17, 12, 24],
   },
 
   playerStats: {
-    time: 0 * 60 + 0,
+    time: 29 * 60 + 7,
     fieldGoals: {
-      made: 0,
-      attempted: 0,
+      made: 4,
+      attempted: 9,
     },
     threePointers: {
-      made: 0,
-      attempted: 0,
+      made: 1,
+      attempted: 3,
     },
     freeThrows: {
-      made: 0,
-      attempted: 0,
+      made: 3,
+      attempted: 4,
     },
     rebounds: {
-      offensive: 0,
-      defensive: 0,
+      offensive: 2,
+      defensive: 2,
     },
-    assists: 0,
-    steals: 0,
-    turnovers: 0,
+    assists: 1,
+    steals: 2,
+    turnovers: 1,
     blocks: {
-      made: 0,
+      made: 1,
       received: 0,
     },
     faults: {
-      made: 0,
-      received: 0,
+      made: 5,
+      received: 2,
     },
-    plusMinus: 0,
-    efficiency: 0,
+    plusMinus: -11,
+    efficiency: 10,
   },
 
   videos: {
-    official: "https://youtu.be/official",
+    official: "https://youtu.be/u8AJw0atlZ4",
     others: [
       {
-        label: "Canal Pou",
-        url: "https://youtu.be/pou",
-      },
-      {
-        label: "Canal CBA/Zilberman",
-        url: "https://youtu.be/cba",
+        label: "Canal CBA",
+        url: "https://youtu.be/6eJG0xrAMxI",
       },
     ],
   },
 
   recap: {
-    title: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    title: "¡El cuarto 'casi'!",
     lines: [
-      "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
-      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "Otra maldita vez, y esta vez lo teníamos casi todo de cara",
+      "Casi. Otro más. Y ya van cuatro",
+      "Hacia el final del partido, íbamos algún punto arriba",
+      "Pero el cansancio hace mella, y los últimos minutos nos ha faltado un poquitín",
+      "Eso, y a ellos les ha sobrado suerte, con dos triples a tablero, feísimos, de pura suerte",
+      "Pero canastas, al fin y al cabo",
+      "Y ya está, otra victoria más que se nos escapa",
     ],
   },
 
@@ -106,12 +107,12 @@ export const game_2026_11_08_estudiantes: AdvancedGame = AdvancedGameSchema.pars
     {
       type: "article",
       label: "Previa de la jornada",
-      url: "https://fbm.es/previa",
+      url: "https://www.fbm.es/noticia-104-13606/liga-ahorramas-arranca-la-segunda-vuelta",
     },
     {
       type: "article",
       label: "Crónica de la jornada",
-      url: "https://fbm.es/cronica",
+      url: "https://www.fbm.es/noticia-123-13614/la-liga-ahorramas-sube-su-intensidad-en-la-segunda-vuelta",
     },
   ],
 });
