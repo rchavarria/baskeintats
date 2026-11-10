@@ -21,68 +21,69 @@ export const game_2026_11_08_sba: AdvancedGame = AdvancedGameSchema.parse({
   home: {
     club: teams.alcobendas,
     category: "U18M",
-    scores: [0, 0, 0, 0],
+    scores: [11, 32, 27, 20],
   },
 
   away: {
     club: teams.sba,
     category: "U18M",
     opponent: true,
-    scores: [0, 0, 0, 0],
+    scores: [32, 21, 22, 35],
   },
 
   playerStats: {
-    time: 0 * 60 + 0,
+    time: 12 * 60 + 21,
     fieldGoals: {
-      made: 0,
-      attempted: 0,
+      made: 1,
+      attempted: 3,
     },
     threePointers: {
-      made: 0,
-      attempted: 0,
+      made: 2,
+      attempted: 2,
     },
     freeThrows: {
-      made: 0,
-      attempted: 0,
+      made: 1,
+      attempted: 3,
     },
     rebounds: {
       offensive: 0,
-      defensive: 0,
+      defensive: 3,
     },
-    assists: 0,
+    assists: 1,
     steals: 0,
-    turnovers: 0,
+    turnovers: 1,
     blocks: {
       made: 0,
       received: 0,
     },
     faults: {
       made: 0,
-      received: 0,
+      received: 2,
     },
-    plusMinus: 0,
-    efficiency: 0,
+    plusMinus: -4,
+    efficiency: 10,
   },
 
   videos: {
-    official: "https://youtu.be/official",
+    official: "https://youtu.be/go9AWn84-pg",
     others: [
       {
         label: "Canal Pou",
-        url: "https://youtu.be/pou",
-      },
-      {
-        label: "Canal CBA/Zilberman",
-        url: "https://youtu.be/cba",
+        url: "https://youtu.be/DXi7rauGad0",
       },
     ],
   },
 
   recap: {
-    title: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    title: "¡Partido raro donde los haya!",
     lines: [
-      "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
-      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "El primer cuarto fue demoledor, muchos asistentes echaban la culpa a los árbitros",
+      "El segundo ya fue algo mejor, remontando",
+      "Pero con varios jugadores con 4 faltas. ¡Antes del descanso! No podía ser",
+      "Y a falta de 3 segundos para el descanso, el entrenador pierde los papeles y se lleva dos técnicas",
+      "El tercer cuarto aguantamos, sin entrenador, pero los cachorros lo daban todo",
+      "El último cuarto fue un desastre, varios jugadores con 5 faltas, la moral por los suelos, los árbitros de mal en peor...",
+      "Una lástima, porque los nuestros demostraron que podían con ellos, que no eran mejores, pero el público perdió los papeles",
     ],
   },
 
@@ -106,12 +107,12 @@ export const game_2026_11_08_sba: AdvancedGame = AdvancedGameSchema.parse({
     {
       type: "article",
       label: "Previa de la jornada",
-      url: "https://fbm.es/previa",
+      url: "https://www.fbm.es/noticia-104-13606/liga-ahorramas-arranca-la-segunda-vuelta",
     },
     {
       type: "article",
       label: "Crónica de la jornada",
-      url: "https://fbm.es/cronica",
+      url: "https://www.fbm.es/noticia-123-13614/la-liga-ahorramas-sube-su-intensidad-en-la-segunda-vuelta",
     },
   ],
 });
