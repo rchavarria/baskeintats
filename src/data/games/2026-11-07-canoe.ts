@@ -13,7 +13,7 @@ export const game_2026_11_07_canoe: AdvancedGame = AdvancedGameSchema.parse({
     name: "Liga Ahorramás - Junior - Oro",
     category: "U18M",
     phase: "Fase 1 - Grupo 1",
-    round: "J7",
+    round: "J9",
   },
 
   venue: venues.antela,
@@ -21,18 +21,18 @@ export const game_2026_11_07_canoe: AdvancedGame = AdvancedGameSchema.parse({
   home: {
     club: teams.alcobendas,
     category: "U18M",
-    scores: [0, 0, 0, 0],
+    scores: [26, 17, 17, 25, 10],
   },
 
   away: {
     club: teams.canoe,
     category: "U18M",
     opponent: true,
-    scores: [0, 0, 0, 0],
+    scores: [24, 22, 22, 17, 9],
   },
 
   playerStats: {
-    time: 0 * 60 + 0,
+    time: 3 * 60 + 10,
     fieldGoals: {
       made: 0,
       attempted: 0,
@@ -46,12 +46,12 @@ export const game_2026_11_07_canoe: AdvancedGame = AdvancedGameSchema.parse({
       attempted: 0,
     },
     rebounds: {
-      offensive: 0,
-      defensive: 0,
+      offensive: 1,
+      defensive: 1,
     },
-    assists: 0,
-    steals: 0,
-    turnovers: 0,
+    assists: 1,
+    steals: 1,
+    turnovers: 2,
     blocks: {
       made: 0,
       received: 0,
@@ -60,29 +60,28 @@ export const game_2026_11_07_canoe: AdvancedGame = AdvancedGameSchema.parse({
       made: 0,
       received: 0,
     },
-    plusMinus: 0,
-    efficiency: 0,
+    plusMinus: 4,
+    efficiency: 2,
   },
 
   videos: {
-    official: "https://youtu.be/official",
+    official: "https://youtu.be/xS8Smxr4KSM",
     others: [
       {
         label: "Canal Pou",
-        url: "https://youtu.be/pou",
-      },
-      {
-        label: "Canal CBA/Zilberman",
-        url: "https://youtu.be/cba",
+        url: "https://youtu.be/3ymQRiTquFU",
       },
     ],
   },
 
   recap: {
-    title: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    title: "¡Por la mínima!",
     lines: [
-      "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
-      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "¡Uff, qué sufrimiento, por favor!",
+      "Al final, una victoria para los grandes",
+      "El nuestro no participó mucho, aunque no lo entiendo, tampoco lo hizo tan mal",
+      "El entrenador sabrá",
+      "Bueno, al menos, se llevan una victoria, el cachorro ha participado y otro partido más para aprender",
     ],
   },
 
@@ -106,12 +105,12 @@ export const game_2026_11_07_canoe: AdvancedGame = AdvancedGameSchema.parse({
     {
       type: "article",
       label: "Previa de la jornada",
-      url: "https://fbm.es/previa",
+      url: "https://www.fbm.es/noticia-104-13606/liga-ahorramas-arranca-la-segunda-vuelta",
     },
     {
       type: "article",
       label: "Crónica de la jornada",
-      url: "https://fbm.es/cronica",
+      url: "https://www.fbm.es/noticia-123-13614/la-liga-ahorramas-sube-su-intensidad-en-la-segunda-vuelta",
     },
   ],
 });
