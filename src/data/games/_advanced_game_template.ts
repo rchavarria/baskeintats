@@ -13,7 +13,7 @@ export const _advanced_game_template: AdvancedGame = AdvancedGameSchema.parse({
     name: "Liga Ahorramás - Cadete - Oro",
     category: "U16M",
     phase: "Fase 1 - Grupo 2",
-    round: "J1",
+    round: "J8",
   },
 
   venue: venues.antela,
