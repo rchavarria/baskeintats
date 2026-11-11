@@ -90,8 +90,8 @@ export const game_2026_11_08_sba: AdvancedGame = AdvancedGameSchema.parse({
   references: [
     {
       type: "photo",
-      label: "Fotos del mes de octubre",
-      url: "https://www.flickr.com/photos/fbmadrid/albums/72177720336020609",
+      label: "Fotos del mes de noviembre",
+      url: "https://www.flickr.com/photos/fbmadrid/albums/72177720336815217",
     },
     {
       type: "document",
