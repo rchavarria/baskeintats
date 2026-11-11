@@ -97,12 +97,13 @@ export const game_2026_11_08_estudiantes: AdvancedGame = AdvancedGameSchema.pars
       type: "document",
       label: "Informe de la jornada",
       // Grupo 17503 = Liga Ahorramás - Cadete - Oro
-      // F1 - G2 - J2 = Última jornada 110841
+      // F1 - G2 - J1 = Última jornada 110840
+      // F1 - G2 - J2 = 110841
       // F1 - G2 - J3 = 110842
       // F1 - G2 - J4 = 110843
       // F1 - G2 - J5 = 110844
       // F1 - G2 - J6 = 110845
-      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=17503&informe=resultados-clasificacion-proxima&ultima_jornada=110845&proxima_jornada=110846",
+      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=17503&informe=resultados-clasificacion-proxima&ultima_jornada=110840&proxima_jornada=110841",
     },
     {
       type: "article",
