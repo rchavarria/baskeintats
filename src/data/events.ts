@@ -277,6 +277,7 @@ import { game_2026_11_01 } from "./games/2026-11-01-seleccion.ts";
 import { game_2026_11_07_canoe } from "./games/2026-11-07-canoe.ts";
 import { game_2026_11_08_estudiantes } from "./games/2026-11-08-estudiantes.ts";
 import { game_2026_11_08_sba } from "./games/2026-11-08-sba.ts";
+import { game_2026_11_15_torrejon } from "./games/2026-11-15-torrejon.ts";
 import { game_2026_11_15_torrelodones } from "./games/2026-11-15-torrelodones.ts";
 
 type EventItem =
@@ -290,6 +291,7 @@ type EventItem =
 
 export function getEvents(): EventItem[] {
   const events: EventItem[] = [
+    game_2026_11_15_torrejon,
     game_2026_11_15_torrelodones,
     game_2026_11_08_sba,
     game_2026_11_08_estudiantes,
