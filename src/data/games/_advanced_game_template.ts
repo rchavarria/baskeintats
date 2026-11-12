@@ -89,13 +89,13 @@ export const _advanced_game_template: AdvancedGame = AdvancedGameSchema.parse({
   references: [
     {
       type: "photo",
-      label: "Fotos del mes de octubre",
-      url: "https://www.flickr.com/photos/fbmadrid/albums/72177720336020609",
+      label: "Fotos del mes de noviembre",
+      url: "https://www.flickr.com/photos/fbmadrid/albums/72177720336815217",
     },
     {
       type: "document",
       label: "Informe de la jornada",
-      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=14615&informe=resultados-clasificacion-proxima&ultima_jornada=93792&proxima_jornada=93793",
+      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=17503&informe=resultados-clasificacion-proxima&ultima_jornada=93792&proxima_jornada=93793",
     },
     {
       type: "article",
