@@ -39,7 +39,10 @@ describe("ScoutingCard", () => {
 
   it("renders the clip count badge", () => {
     renderWithRouter(<ScoutingCard scouting={fakeScouting} />);
-    expect(screen.getByText(/3 clips/)).toBeInTheDocument();
+    const clipCount = screen.getByText(/3 clips/);
+    expect(clipCount).toBeInTheDocument();
+    expect(clipCount).toHaveClass("bg-white/15");
+    expect(clipCount).not.toHaveClass("bg-neutral-900");
   });
 
   it("renders singular clip label when only one clip", () => {
