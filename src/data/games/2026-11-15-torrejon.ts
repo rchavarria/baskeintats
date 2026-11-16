@@ -22,24 +22,24 @@ export const game_2026_11_15_torrejon: AdvancedGame = AdvancedGameSchema.parse({
     club: teams.torrejon,
     category: "U18M",
     opponent: true,
-    scores: [0, 0, 0, 0],
+    scores: [26, 32, 30, 21],
   },
 
   away: {
     club: teams.alcobendas,
     category: "U18M",
-    scores: [0, 0, 0, 0],
+    scores: [33, 11, 13, 16],
   },
 
   playerStats: {
-    time: 0 * 60 + 0,
+    time: 12 * 60 + 32,
     fieldGoals: {
       made: 0,
-      attempted: 0,
+      attempted: 2,
     },
     threePointers: {
       made: 0,
-      attempted: 0,
+      attempted: 2,
     },
     freeThrows: {
       made: 0,
@@ -47,7 +47,7 @@ export const game_2026_11_15_torrejon: AdvancedGame = AdvancedGameSchema.parse({
     },
     rebounds: {
       offensive: 0,
-      defensive: 0,
+      defensive: 2,
     },
     assists: 0,
     steals: 0,
@@ -57,55 +57,52 @@ export const game_2026_11_15_torrejon: AdvancedGame = AdvancedGameSchema.parse({
       received: 0,
     },
     faults: {
-      made: 0,
+      made: 2,
       received: 0,
     },
-    plusMinus: 0,
-    efficiency: 0,
+    plusMinus: -23,
+    efficiency: -4,
   },
 
   videos: {
-    official: "https://youtu.be/official",
-    others: [
-      {
-        label: "Canal Pou",
-        url: "https://youtu.be/pou",
-      },
-      {
-        label: "Canal CBA/Zilberman",
-        url: "https://youtu.be/cba",
-      },
-    ],
+    // no hay video, pero al menos está la playlist de los júniors
+    official: "https://www.youtube.com/playlist?list=PLW4ozstQEst8",
+    others: [],
   },
 
   recap: {
-    title: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    title: "Una apisonadora nos pasó por encima",
     lines: [
-      "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
-      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "No tengo muy claro qué pasó, porque llegamos ya casi al descanso",
+      "Comenzamos bastante bien, aguantando el tirón",
+      "Pero antes de llegar al descanso, y justo después, fue brutal",
+      "Luego, ya, el último cuarto, un suplicio para nosotros, deseando que acabase el partido",
     ],
   },
 
   references: [
     {
       type: "photo",
-      label: "Fotos del mes de octubre",
-      url: "https://www.flickr.com/photos/fbmadrid/albums/72177720336020609",
+      label: "Fotos del mes de noviembre",
+      url: "https://www.flickr.com/photos/fbmadrid/albums/72177720336815217",
     },
     {
       type: "document",
       label: "Informe de la jornada",
-      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=14615&informe=resultados-clasificacion-proxima&ultima_jornada=93792&proxima_jornada=93793",
+      // Grupo 17494 = Liga Ahorramás - Junior - Oro
+      // ...
+      // F1 - J7 = 110617
+      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=17494&informe=resultados-clasificacion-proxima&ultima_jornada=110617&proxima_jornada=110618",
     },
     {
       type: "article",
       label: "Previa de la jornada",
-      url: "https://fbm.es/previa",
+      url: "https://www.fbm.es/noticia-104-13619/la-lucha-por-los-lideratos-enciende-la-liga-ahorramas",
     },
     {
       type: "article",
       label: "Crónica de la jornada",
-      url: "https://fbm.es/cronica",
+      url: "https://www.fbm.es/noticia-104-13624/liga-ahorramas-tres-invictos-caen-en-la-s%C3%A9ptima-jornada",
     },
   ],
 });
