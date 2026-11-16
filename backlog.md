@@ -1,7 +1,6 @@
 # Backlog
 
 - 🤸‍♂️ pasar los highlights de xbotgo a timestamps del video contra Torrelodones
-- 💄 depurar los logos, quedarme solo con los _transparentes_, pero quitándoles el sufijo ese
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
 - 🤸‍♂️ en los scoutings, o incluso en los partidos, amistosos o no, poder añadir datos sobre el roster de ambos equipos
 - code splitting: separar datos de partidos por temporada usando dynamic import() para reducir el bundle principal (~374 KB). Cargar la temporada actual de forma estática y las anteriores bajo demanda. Crear un barrel por temporada (season-2023-24.ts, season-2024-25.ts, season-2025-26.ts) y hacer getEvents asíncrono con estado de loading.
@@ -10,6 +9,7 @@
 
 ## Done
 
+- 2026-11-16: depurar los logos, quedarme solo con los _transparentes_, pero quitándoles el sufijo ese
 - 2026-11-13: mostrar marcador por cuartos, y si hay prórroga, mostrarla como "OT" o "PR", y mostrar el marcador de la prórroga
 - 2026-11-13: Diseñar tarjetas de anuncios en la home para que se vean más acorde con las de los partidos
 - 2026-09-23: Diseñar tarjetas de estadísticas en la home para que se vean más acorde con las de los partidos: `StatsCard` usa `rounded-2xl` con borde rojo (`rose-800`) y una cabecera con el mismo degradado rojo que `GameCard` (📈 + título en blanco y una píldora oscura con `CategoryBadge` y fecha); el cuerpo con la tabla sigue en blanco y el pie (descripción y referencias) también es rojo
