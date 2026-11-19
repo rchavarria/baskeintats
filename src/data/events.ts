@@ -280,6 +280,7 @@ import { game_2026_11_08_sba } from "./games/2026-11-08-sba.ts";
 import { game_2026_11_15_torrejon } from "./games/2026-11-15-torrejon.ts";
 import { game_2026_11_15_torrelodones } from "./games/2026-11-15-torrelodones.ts";
 import { game_2026_11_22_alcorcon } from "./games/2026-11-22-alcorcon.ts";
+import { game_2026_11_22_san_jorge } from "./games/2026-11-22-san-jorge.ts";
 
 type EventItem =
   | Announcement
@@ -292,6 +293,7 @@ type EventItem =
 
 export function getEvents(): EventItem[] {
   const events: EventItem[] = [
+    game_2026_11_22_san_jorge,
     game_2026_11_22_alcorcon,
     game_2026_11_15_torrejon,
     game_2026_11_15_torrelodones,
