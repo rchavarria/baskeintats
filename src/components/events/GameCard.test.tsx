@@ -81,6 +81,7 @@ import { game_2026_11_08_estudiantes } from "../../data/games/2026-11-08-estudia
 import { game_2026_11_08_sba } from "../../data/games/2026-11-08-sba.ts";
 import { game_2026_11_15_torrejon } from "../../data/games/2026-11-15-torrejon.ts";
 import { game_2026_11_15_torrelodones } from "../../data/games/2026-11-15-torrelodones.ts";
+import { game_2026_11_22_alcorcon } from "../../data/games/2026-11-22-alcorcon.ts";
 import type { Game } from "../../model/GameSchema";
 import { GameCard } from "./GameCard";
 
@@ -159,6 +160,7 @@ describe("GameCard", () => {
     [game_2026_11_08_sba],
     [game_2026_11_15_torrelodones],
     [game_2026_11_15_torrejon],
+    [game_2026_11_22_alcorcon],
   ])("renders S2026/27 game to the game card", (game) => {
     renderWithRouter(<GameCard game={game} />);
 
