@@ -1,5 +1,6 @@
 # Backlog
 
+- 🤸‍♂️ pasar los highlights de xbotgo a timestamps del video contra Alcorcón
 - 🤸‍♂️ pasar los highlights de xbotgo a timestamps del video contra Torrelodones
 - 📹 falta video del partido oro, fase 3, j1, torrelodones
 - 🤸‍♂️ en los scoutings, o incluso en los partidos, amistosos o no, poder añadir datos sobre el roster de ambos equipos
