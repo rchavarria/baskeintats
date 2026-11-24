@@ -19,70 +19,70 @@ export const game_2026_11_22_alcorcon: AdvancedGame = AdvancedGameSchema.parse({
   venue: venues.antela,
 
   home: {
-    club: teams.alcobendas,
-    category: "U16M",
-    scores: [0, 0, 0, 0],
-  },
-
-  away: {
     club: teams.alcorcon,
     category: "U16M",
     opponent: true,
-    scores: [0, 0, 0, 0],
+    scores: [12, 18, 20, 23],
+  },
+
+  away: {
+    club: teams.alcobendas,
+    category: "U16M",
+    scores: [28, 15, 18, 21],
   },
 
   playerStats: {
-    time: 0 * 60 + 0,
+    time: 29 * 60 + 48,
     fieldGoals: {
-      made: 0,
-      attempted: 0,
+      made: 7,
+      attempted: 8,
     },
     threePointers: {
-      made: 0,
-      attempted: 0,
+      made: 2,
+      attempted: 7,
     },
     freeThrows: {
-      made: 0,
-      attempted: 0,
+      made: 5,
+      attempted: 8,
     },
     rebounds: {
-      offensive: 0,
-      defensive: 0,
+      offensive: 4,
+      defensive: 6,
     },
-    assists: 0,
+    assists: 1,
     steals: 0,
-    turnovers: 0,
+    turnovers: 4,
     blocks: {
       made: 0,
-      received: 0,
+      received: 1,
     },
     faults: {
-      made: 0,
-      received: 0,
+      made: 3,
+      received: 6,
     },
-    plusMinus: 0,
-    efficiency: 0,
+    plusMinus: 10,
+    efficiency: 25,
   },
 
   videos: {
-    official: "https://youtu.be/official",
+    official: "https://youtu.be/VX-LuHKFw7w",
     others: [
       {
-        label: "Canal Pou",
-        url: "https://youtu.be/pou",
-      },
-      {
-        label: "Canal CBA/Zilberman",
-        url: "https://youtu.be/cba",
+        label: "Canal CBA",
+        url: "https://youtu.be/100LksIAjB4",
       },
     ],
   },
 
   recap: {
-    title: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    title: "¡Otra más!",
     lines: [
-      "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
-      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "Otra revancha que nos cobramos",
+      "Empezamos como un tiro, un primer cuarto para enmarcar, dábamos miedo",
+      "Pero fue el único cuarto que ganamos",
+      "Y, otra vez, a punto estuvimos de cagarla en los minutos finales. Van a ser nuestra espada de Damocles",
+      "Todo el partido viviendo de las rentas del primer cuarto, imagínate cómo fue ese cuarto",
+      "Al final, merecida victoria, y merecida revancha",
     ],
   },
 
@@ -104,12 +104,12 @@ export const game_2026_11_22_alcorcon: AdvancedGame = AdvancedGameSchema.parse({
     {
       type: "article",
       label: "Previa de la jornada",
-      url: "https://fbm.es/previa",
+      url: "https://www.fbm.es/noticia-104-13629/duelos-directos-y-lideratos-en-juego-en-la-liga-ahorramas",
     },
     {
       type: "article",
       label: "Crónica de la jornada",
-      url: "https://fbm.es/cronica",
+      url: "https://www.fbm.es/noticia-104-13639/liga-ahorramas-emoci%C3%B3n-hasta-el-final",
     },
   ],
 });
