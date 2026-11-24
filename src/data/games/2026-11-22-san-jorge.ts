@@ -21,21 +21,21 @@ export const game_2026_11_22_san_jorge: AdvancedGame = AdvancedGameSchema.parse(
   home: {
     club: teams.alcobendas,
     category: "U18M",
-    scores: [0, 0, 0, 0],
+    scores: [25, 24, 15, 19],
   },
 
   away: {
     club: teams["san-jorge"],
     category: "U18M",
     opponent: true,
-    scores: [0, 0, 0, 0],
+    scores: [9, 12, 21, 20],
   },
 
   playerStats: {
-    time: 0 * 60 + 0,
+    time: 10 * 60 + 55,
     fieldGoals: {
-      made: 0,
-      attempted: 0,
+      made: 1,
+      attempted: 1,
     },
     threePointers: {
       made: 0,
@@ -49,40 +49,38 @@ export const game_2026_11_22_san_jorge: AdvancedGame = AdvancedGameSchema.parse(
       offensive: 0,
       defensive: 0,
     },
-    assists: 0,
+    assists: 1,
     steals: 0,
     turnovers: 0,
     blocks: {
       made: 0,
-      received: 0,
+      received: 1,
     },
     faults: {
       made: 0,
       received: 0,
     },
-    plusMinus: 0,
-    efficiency: 0,
+    plusMinus: 4,
+    efficiency: 2,
   },
 
   videos: {
-    official: "https://youtu.be/official",
+    official: "https://youtu.be/-x7Mc2iG6qs",
     others: [
       {
         label: "Canal Pou",
-        url: "https://youtu.be/pou",
-      },
-      {
-        label: "Canal CBA/Zilberman",
-        url: "https://youtu.be/cba",
+        url: "https://youtu.be/r9tSxYGEUQ4",
       },
     ],
   },
 
   recap: {
-    title: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    title: "Otra a la buchaca",
     lines: [
-      "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
-      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "En el partido de ida, San Jorge nos pasó por encima",
+      "En esta ocasión, hemos sido nosotros los mejores",
+      "El partido comenzó igualadillo, pero pronto pusimos tierra de por medio",
+      "Con africanos o sin ellos, fueron incapaces de remontarnos",
     ],
   },
 
@@ -103,12 +101,12 @@ export const game_2026_11_22_san_jorge: AdvancedGame = AdvancedGameSchema.parse(
     {
       type: "article",
       label: "Previa de la jornada",
-      url: "https://fbm.es/previa",
+      url: "https://www.fbm.es/noticia-104-13629/duelos-directos-y-lideratos-en-juego-en-la-liga-ahorramas",
     },
     {
       type: "article",
       label: "Crónica de la jornada",
-      url: "https://fbm.es/cronica",
+      url: "https://www.fbm.es/noticia-104-13639/liga-ahorramas-emoci%C3%B3n-hasta-el-final",
     },
   ],
 });
