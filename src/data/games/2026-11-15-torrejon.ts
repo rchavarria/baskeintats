@@ -91,8 +91,8 @@ export const game_2026_11_15_torrejon: AdvancedGame = AdvancedGameSchema.parse({
       label: "Informe de la jornada",
       // Grupo 17494 = Liga Ahorramás - Junior - Oro
       // ...
-      // F1 - J7 = 110617
-      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=17494&informe=resultados-clasificacion-proxima&ultima_jornada=110617&proxima_jornada=110618",
+      // F1 - J7 = 110616
+      url: "https://fbm.es/informes.aspx?delegacion=1&grupo=17494&informe=resultados-clasificacion-proxima&ultima_jornada=110616&proxima_jornada=110617",
     },
     {
       type: "article",
